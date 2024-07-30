@@ -49,6 +49,24 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/bindings/amqp1/': [
+        {
+          text: 'AMQP 1-0',
+          link: '/bindings/amqp1',
+          items: [
+            {
+              text: '0.1.0',
+              base: '/bindings/amqp1/0.1.0',
+              items: [
+                { text: 'channel', link: '/channel' },
+                { text: 'message', link: '/message' },
+                { text: 'operation', link: '/operation' },
+                { text: 'server', link: '/server' },
+              ]
+            }
+          ]
+        }
       ]
     },
 
