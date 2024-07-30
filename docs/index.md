@@ -17,6 +17,7 @@ hero:
 features:
     - title: AMQP 0-9-1
       details: Advanced Message Queueing Protocol open standard application layer protocol for message-oriented middleware
+      link: /bindings/amqp/index.md
     - title: AMQP 1-0
       details: Advanced Message Queueing Protocol open standard application layer protocol for message-oriented middleware
     - title: Amazon SNS

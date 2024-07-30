@@ -1,0 +1,193 @@
+---
+layout: doc
+---
+
+<script setup lang="ts">
+import {JsonViewer} from "vue3-json-viewer";
+import "vue3-json-viewer/dist/index.css";
+
+const schema = {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://asyncapi.com/bindings/amqp/0.3.0/operation.json",
+  "title": "AMQP operation bindings object",
+  "description": "This object contains information about the operation representation in AMQP.",
+  "type": "object",
+  "additionalProperties": false,
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": {
+      "$ref": "http://asyncapi.com/definitions/3.0.0/specificationExtension.json"
+    }
+  },
+  "properties": {
+    "expiration": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "TTL (Time-To-Live) for the message. It MUST be greater than or equal to zero."
+    },
+    "userId": {
+      "type": "string",
+      "description": "Identifies the user who has sent the message."
+    },
+    "cc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The routing keys the message should be routed to at the time of publishing."
+    },
+    "priority": {
+      "type": "integer",
+      "description": "A priority for the message."
+    },
+    "deliveryMode": {
+      "type": "integer",
+      "enum": [1,2],
+      "description": "Delivery mode of the message. Its value MUST be either 1 (transient) or 2 (persistent)."
+    },
+    "mandatory": {
+      "type": "boolean",
+      "description": "Whether the message is mandatory or not."
+    },
+    "bcc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Like cc but consumers will not receive this information."
+    },
+    "timestamp": {
+      "type": "boolean",
+      "description": "Whether the message should include a timestamp or not."
+    },
+    "ack": {
+      "type": "boolean",
+      "description": "Whether the consumer should ack the message or not."
+    },
+    "bindingVersion": {
+      "type": "string",
+      "enum": [
+        "0.3.0"
+      ],
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed."
+    }
+  },
+  "examples": [
+    {
+      "expiration": 100000,
+      "userId": "guest",
+      "cc": [
+        "user.logs"
+      ],
+      "priority": 10,
+      "deliveryMode": 2,
+      "mandatory": false,
+      "bcc": [
+        "external.audit"
+      ],
+      "timestamp": true,
+      "ack": false,
+      "bindingVersion": "0.3.0"
+    }
+  ]
+};
+</script>
+
+# AMQP 0-9-1 operation binding
+
+Contains information about the message representation in AMQP.
+
+## Structure
+
+<JsonViewer :value="schema" copyable theme="dark"/>
+
+## Examples
+
+```json
+{
+  "expiration": 100000,
+  "userId": "guest",
+  "cc": [
+    "user.logs"
+  ],
+  "priority": 10,
+  "deliveryMode": 2,
+  "mandatory": false,
+  "bcc": [
+    "external.audit"
+  ],
+  "timestamp": true,
+  "ack": false,
+  "bindingVersion": "0.3.0"
+}
+```
+
+## Migration guide
+
+Bad news, something was deprecated
+
+### Reply to
+
+`replyTo` field was removed, so you can't use it anymore
+
+```json
+{
+  "expiration": {
+    "type": "integer",
+    "minimum": 0,
+    "description": "TTL (Time-To-Live) for the message. It MUST be greater than or equal to zero."
+  },
+  "userId": {
+    "type": "string",
+    "description": "Identifies the user who has sent the message."
+  },
+  "cc": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "description": "The routing keys the message should be routed to at the time of publishing."
+  },
+  "priority": {
+    "type": "integer",
+    "description": "A priority for the message."
+  },
+  "deliveryMode": {
+    "type": "integer",
+      "enum": [
+        1,
+        2
+      ],
+      "description": "Delivery mode of the message. Its value MUST be either 1 (transient) or 2 (persistent)."
+    },
+  "mandatory": {
+    "type": "boolean",
+    "description": "Whether the message is mandatory or not."
+  },
+  "bcc": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "description": "Like cc but consumers will not receive this information."
+  },
+  "replyTo": { // [!code --]
+    "type": "string", // [!code --]
+    "description": "Name of the queue where the consumer should send the response." // [!code --]
+  }, // [!code --]
+  "timestamp": {
+    "type": "boolean",
+    "description": "Whether the message should include a timestamp or not."
+  },
+  "ack": {
+    "type": "boolean",
+    "description": "Whether the consumer should ack the message or not."
+  },
+  "bindingVersion": {
+    "type": "string",
+    "enum": [
+      "0.3.0"
+    ],
+    "description": "The version of this binding. If omitted, \"latest\" MUST be assumed."
+  }
+}
+```
