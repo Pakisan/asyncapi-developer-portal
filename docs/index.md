@@ -26,6 +26,7 @@ features:
       details: Managed messaging service for communication, allowing messaging between decoupled microservices applications or directly to users
     - title: Amazon SQS
       details: Fully managed message queuing for microservices, distributed systems, and serverless applications
+      link: /bindings/amazon-sqs
     - title: Anypoint MQ
       details: Multi-tenant, cloud-based message queuing service for exchanging data asynchronously between your applications
     - title: Apache Kafka
