@@ -67,6 +67,24 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/bindings/amazon-sns': [
+        {
+          text: 'Amazon SNS',
+          link: '/bindings/amazon-sns',
+          items: [
+            {
+              text: '0.1.0',
+              base: '/bindings/amazon-sns/0.1.0',
+              items: [
+                { text: 'channel', link: '/channel' },
+                { text: 'message', link: '/message' },
+                { text: 'operation', link: '/operation' },
+                { text: 'server', link: '/server' },
+              ]
+            }
+          ]
+        }
       ]
     },
 

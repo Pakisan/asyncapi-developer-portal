@@ -22,6 +22,7 @@ features:
       details: Advanced Message Queueing Protocol open standard application layer protocol for message-oriented middleware
       link: /bindings/amqp1/index.md
     - title: Amazon SNS
+      link: /bindings/amazon-sns
       details: Managed messaging service for communication, allowing messaging between decoupled microservices applications or directly to users
     - title: Amazon SQS
       details: Fully managed message queuing for microservices, distributed systems, and serverless applications
