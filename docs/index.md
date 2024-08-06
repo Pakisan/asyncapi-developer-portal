@@ -29,6 +29,7 @@ features:
       link: /bindings/amazon-sqs
     - title: Anypoint MQ
       details: Multi-tenant, cloud-based message queuing service for exchanging data asynchronously between your applications
+      link: /bindings/anypointmq
     - title: Apache Kafka
       details: Open-source distributed event streaming platform
     - title: Apache Pulsar

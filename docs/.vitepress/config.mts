@@ -113,6 +113,24 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/bindings/anypointmq': [
+        {
+          text: 'Anypoint MQ',
+          link: '/bindings/anypointmq',
+          items: [
+            {
+              text: '0.0.1',
+              base: '/bindings/anypointmq/0.0.1',
+              items: [
+                { text: 'channel', link: '/channel' },
+                { text: 'message', link: '/message' },
+                { text: 'operation', link: '/operation' },
+                { text: 'server', link: '/server' },
+              ]
+            }
+          ]
+        }
       ]
     },
 
