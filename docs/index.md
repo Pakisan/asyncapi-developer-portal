@@ -32,6 +32,7 @@ features:
       link: /bindings/anypointmq
     - title: Apache Kafka
       details: Open-source distributed event streaming platform
+      link: /bindings/apache-kafka
     - title: Apache Pulsar
       details: Open-source, distributed messaging and streaming platform built for the cloud
     - title: Google Cloud Pub/Sub

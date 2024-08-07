@@ -131,6 +131,24 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/bindings/apache-kafka': [
+        {
+          text: 'Apache Kafka',
+          link: '/bindings/apache-kafka',
+          items: [
+            {
+              text: '0.1.0',
+              base: '/bindings/apache-kafka/0.1.0',
+              items: [
+                { text: 'channel', link: '/channel' },
+                { text: 'message', link: '/message' },
+                { text: 'operation', link: '/operation' },
+                { text: 'server', link: '/server' },
+              ]
+            }
+          ]
+        }
       ]
     },
 
