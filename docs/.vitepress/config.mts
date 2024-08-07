@@ -2,20 +2,20 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "AsyncAPI Bindings",
-  description: "A VitePress Site",
+  title: "AsyncAPI Developer Network",
+  description: "Everything you should to now about",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Bindings', link: '/bindings' }
     ],
 
     sidebar: {
-      '/bindings/amqp/': [
+      '/bindings': [
         {
           text: 'AMQP',
-          link: '/bindings/amqp',
+          collapsed: true,
           items: [
             {
               text: '0.1.0',
@@ -48,12 +48,10 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/bindings/amqp1/': [
+        },
         {
           text: 'AMQP 1-0',
-          link: '/bindings/amqp1',
+          collapsed: true,
           items: [
             {
               text: '0.1.0',
@@ -66,12 +64,10 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/bindings/amazon-sns': [
+        },
         {
           text: 'Amazon SNS',
-          link: '/bindings/amazon-sns',
+          collapsed: true,
           items: [
             {
               text: '0.1.0',
@@ -84,12 +80,10 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/bindings/amazon-sqs': [
+        },
         {
           text: 'Amazon SQS',
-          link: '/bindings/amazon-sqs',
+          collapsed: true,
           items: [
             {
               text: '0.1.0',
@@ -112,12 +106,10 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/bindings/anypointmq': [
+        },
         {
           text: 'Anypoint MQ',
-          link: '/bindings/anypointmq',
+          collapsed: true,
           items: [
             {
               text: '0.0.1',
@@ -130,12 +122,10 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/bindings/apache-kafka': [
+        },
         {
           text: 'Apache Kafka',
-          link: '/bindings/apache-kafka',
+          collapsed: true,
           items: [
             {
               text: '0.1.0',
