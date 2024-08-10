@@ -1,58 +1,27 @@
 ---
+title: Anypoint MQ channel binding
 layout: doc
+prev: false
+next: false
+head:
+  - - meta
+    - name: "og:title"
+      content: "Anypoint MQ channel binding"
+  - - meta
+    - name: "og:description"
+      content: "How to use Anypoint MQ with AsyncAPI channel binding"
+  - - meta
+    - name: "og:image"
+      content: "/bindings/anypointmq.jpeg"
 ---
 
-<script setup lang="ts">
-import {JsonViewer} from "vue3-json-viewer";
-import "vue3-json-viewer/dist/index.css";
+# {{ $frontmatter.title }}
 
-const schema = {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://asyncapi.com/bindings/anypointmq/0.0.1/channel.json",
-  "title": "Anypoint MQ channel bindings object",
-  "description": "This object contains configuration for describing an Anypoint MQ exchange, queue, or FIFO queue as an AsyncAPI channel. This objects only contains configuration that can not be provided in the AsyncAPI standard channel object.",
-  "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/specificationExtension.json"
-    }
-  },
-  "properties": {
-    "destination": {
-      "type": "string",
-      "description": "The destination (queue or exchange) name for this channel. SHOULD only be specified if the channel name differs from the actual destination name, such as when the channel name is not a valid destination name in Anypoint MQ. Defaults to the channel name."
-    },
-    "destinationType": {
-      "type": "string",
-      "enum": ["exchange", "queue", "fifo-queue"],
-      "default": "queue",
-      "description": "The type of destination. SHOULD be specified to document the messaging model (publish/subscribe, point-to-point, strict message ordering) supported by this channel."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.0.1"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
-
-  },
-  "examples": [
-    {
-      "destination":     "user-signup-exchg",
-      "destinationType": "exchange",
-      "bindingVersion":  "0.0.1"
-    }
-  ]
-};
-</script>
-
-# Anypoint MQ channel binding
+Contains information about the channel representation in Anypoint MQ.
 
 ## Structure
 
-<JsonViewer :value="schema" copyable theme="dark"/>
+<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/anypointmq/0.0.1/channel.json"/>
 
 ## Examples
 

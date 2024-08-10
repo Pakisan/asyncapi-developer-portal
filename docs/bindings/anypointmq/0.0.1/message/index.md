@@ -1,65 +1,27 @@
 ---
+title: Anypoint MQ message binding
 layout: doc
+prev: false
+next: false
+head:
+  - - meta
+    - name: "og:title"
+      content: "Anypoint MQ message binding"
+  - - meta
+    - name: "og:description"
+      content: "How to use Anypoint MQ with AsyncAPI message binding"
+  - - meta
+    - name: "og:image"
+      content: "/bindings/anypointmq.jpeg"
 ---
 
-<script setup lang="ts">
-import {JsonViewer} from "vue3-json-viewer";
-import "vue3-json-viewer/dist/index.css";
+# {{ $frontmatter.title }}
 
-const schema = {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://asyncapi.com/bindings/anypointmq/0.0.1/message.json",
-  "title": "Anypoint MQ message bindings object",
-  "description": "This object contains configuration for describing an Anypoint MQ message as an AsyncAPI message. This objects only contains configuration that can not be provided in the AsyncAPI standard message object.",
-  "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/specificationExtension.json"
-    }
-  },
-  "properties": {
-    "headers": {
-      "oneOf": [
-        {
-          "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json"
-        },
-        {
-          "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json"
-        }
-      ],
-      "description": "A Schema object containing the definitions for Anypoint MQ-specific headers (protocol headers). This schema MUST be of type 'object' and have a 'properties' key. Examples of Anypoint MQ protocol headers are 'messageId' and 'messageGroupId'."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.0.1"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
-
-  },
-  "examples": [
-    {
-      "headers": {
-        "type": "object",
-        "properties": {
-          "messageId": {
-            "type": "string"
-          }
-        }
-      },
-      "bindingVersion": "0.0.1"
-    }
-  ]
-};
-</script>
-
-# Anypoint MQ message binding
+Contains information about the message representation in Anypoint MQ.
 
 ## Structure
 
-<JsonViewer :value="schema" copyable theme="dark"/>
+<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/anypointmq/0.0.1/message.json"/>
 
 ## Examples
 
