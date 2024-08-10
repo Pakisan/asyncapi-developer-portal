@@ -1,60 +1,27 @@
 ---
+title: Apache Kafka message binding
 layout: doc
+prev: false
+next: false
+head:
+  - - meta
+    - name: "og:title"
+      content: "Apache Kafka message binding"
+  - - meta
+    - name: "og:description"
+      content: "How to use Apache Kafka with AsyncAPI message binding"
+  - - meta
+    - name: "og:image"
+      content: "/bindings/apache-kafka.png"
 ---
 
-<script setup lang="ts">
-import {JsonViewer} from "vue3-json-viewer";
-import "vue3-json-viewer/dist/index.css";
+# {{ $frontmatter.title }}
 
-const schema = {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://asyncapi.com/bindings/kafka/0.1.0/message.json",
-  "title": "Kafka message bindings object",
-  "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/specificationExtension.json"
-    }
-  },
-  "properties": {
-    "key": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json",
-      "description": "The message key."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.1.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
-  },
-  "examples": [
-    {
-      "key": {
-        "type": "string",
-        "enum": [
-          "myKey"
-        ]
-      },
-      "bindingVersion": "0.1.0"
-    },
-    {
-      "key": {
-        "$ref": "path/to/user-create.avsc#/UserCreate"
-      },
-      "bindingVersion": "0.2.0"
-    }
-  ]
-};
-</script>
-
-# Apache Kafka message binding
+Contains information about the message representation in Apache Kafka.
 
 ## Structure
 
-<JsonViewer :value="schema" copyable theme="dark"/>
+<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/kafka/0.1.0/message.json"/>
 
 ## Examples
 
