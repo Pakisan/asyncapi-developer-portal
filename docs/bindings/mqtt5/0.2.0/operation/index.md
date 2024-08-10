@@ -18,7 +18,7 @@ head:
 # {{ $frontmatter.title }}
 
 > [!WARNING]
-> MQTT version 5 specific bindings are deprecated in favor of [MQTT operation binding](../../../mqtt/0.2.0/operation) that are not version specific.
+> MQTT version 5 specific bindings are deprecated in favor of [MQTT operation binding](../../../mqtt/0.2.0/operation/index.md) that are not version specific.
 
 > [!NOTE]
 > This object MUST NOT contain any properties. Its name is reserved for future use.

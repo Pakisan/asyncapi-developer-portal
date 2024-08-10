@@ -18,7 +18,7 @@ head:
 # {{ $frontmatter.title }}
 
 > [!WARNING]
-> MQTT version 5 specific bindings are deprecated in favor of [MQTT operation binding](../../../mqtt/0.2.0/server) that are not version specific.
+> MQTT version 5 specific bindings are deprecated in favor of [MQTT operation binding](../../../mqtt/0.2.0/server/index.md) that are not version specific.
 
 Contains information about the server representation in MQTT.
 
