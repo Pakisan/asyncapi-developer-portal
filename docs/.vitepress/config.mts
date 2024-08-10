@@ -250,6 +250,22 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: 'IBM MQ',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/ibmmq/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
             }
           ]
         }
