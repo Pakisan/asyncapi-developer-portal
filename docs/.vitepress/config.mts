@@ -366,6 +366,22 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: 'Redis',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/redis/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
             }
           ]
         }
