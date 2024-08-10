@@ -27,8 +27,8 @@ Contains information about the server representation in IBM MQ.
 
 ```json
 {
-    "type": "jms",
-    "description": "JMS stream message",
+    "groupId": "PRODCLSTR1",
+    "cipherSpec": "ANY_TLS12_OR_HIGHER",
     "bindingVersion": "0.1.0"
 }
 ```
