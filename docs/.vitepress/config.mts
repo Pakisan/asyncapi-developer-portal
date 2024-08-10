@@ -266,6 +266,22 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: 'Jakarta Messaging API (JMS)',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.0.1',
+                  base: '/bindings/jms/0.0.1',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
             }
           ]
         }
