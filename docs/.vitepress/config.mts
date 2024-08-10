@@ -188,6 +188,32 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: 'Google Cloud Pub/Sub',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/googlepubsub/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                },
+                {
+                  text: '0.2.0',
+                  base: '/bindings/googlepubsub/0.2.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
             }
           ]
         }
