@@ -398,6 +398,22 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: 'WebSockets',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/websockets/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
             }
           ]
         }
