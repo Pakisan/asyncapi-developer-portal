@@ -396,6 +396,16 @@ export default defineConfig({
                     { text: 'operation', link: '/operation/' },
                     { text: 'server', link: '/server/' },
                   ]
+                },
+                {
+                  text: '0.2.0',
+                  base: '/bindings/solace/0.2.0',
+                  items: [
+                    { text: 'channel', link: '/channel/' },
+                    { text: 'message', link: '/message/' },
+                    { text: 'operation', link: '/operation/' },
+                    { text: 'server', link: '/server/' },
+                  ]
                 }
               ]
             },
