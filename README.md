@@ -1,4 +1,4 @@
-# AsyncAPI Developer Portal
+# AsyncAPI Developer Network
 
 Everything you should to know about AsyncAPI
 
