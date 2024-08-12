@@ -1,4 +1,5 @@
 {
+  "name": "asyncapi-developer-portal",
   "dependencies": {
     "vitepress": "^1.3.1",
     "vue3-json-viewer": "^2.2.2"
