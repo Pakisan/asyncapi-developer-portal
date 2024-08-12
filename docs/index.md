@@ -13,5 +13,9 @@ features:
       details: WIP
     - title: Schemes
       details: WIP
+head:
+  - - meta
+    - name: "og:image"
+      content: "/asyncapi.png"
 ---
 
