@@ -427,10 +427,6 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Pakisan/asyncapi-developer-portal' }
     ],
 
-    sitemap: {
-      hostname: 'https://asyncapi-developer-portal.netlify.app'
-    },
-
     head: [
       [
         'script',
@@ -450,5 +446,9 @@ export default defineConfig({
       message: 'Released under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License</a> with ❤️ for <a href="https://asyncapi.com">AsyncAPI community</a>.',
       copyright: 'Copyright © 2024-present <a href="https://github.com/Pakisan">Pavel Bodiachevskii</a> & <a href="https://asyncapi.com">AsyncAPI community</a>'
     }
-  }
+  },
+
+  sitemap: {
+    hostname: 'https://asyncapi-developer-portal.netlify.app'
+  },
 })
