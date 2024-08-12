@@ -420,6 +420,9 @@ export default defineConfig({
       ]
     },
 
+    editLink: {
+      pattern: 'https://github.com/Pakisan/asyncapi-developer-portal/edit/master/docs/:path'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Pakisan/asyncapi-developer-portal' }
     ]
