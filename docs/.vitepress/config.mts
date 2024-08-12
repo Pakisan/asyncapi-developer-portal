@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "AsyncAPI Developer Network",
-  description: "Everything you should to now about",
+  description: "Everything you should to now about AsyncAPI",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -425,6 +425,25 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Pakisan/asyncapi-developer-portal' }
+    ],
+
+    sitemap: {
+      hostname: 'https://asyncapi-developer-portal.netlify.app'
+    },
+
+    head: [
+      [
+        'script',
+        { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-G03BQZSMD1' }
+      ],
+      [
+        'script',
+        {},
+        `window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-G03BQZSMD1');`
+      ]
     ]
   }
 })
