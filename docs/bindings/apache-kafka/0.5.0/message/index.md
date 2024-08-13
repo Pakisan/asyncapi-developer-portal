@@ -40,11 +40,11 @@ Contains information about the message representation in Apache Kafka.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Bad news, this version contains property changes
+### Changed
 
-### key
+#### key
 
 Key type was extended
 
@@ -58,9 +58,9 @@ Key type was extended
             {
                 "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json"
             },
-            { // [!code --]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/avroSchema_v1.json" // [!code --]
-            } // [!code --]
+            { // [!code ++]
+                "$ref": "http://asyncapi.com/definitions/3.0.0/avroSchema_v1.json" // [!code ++]
+            } // [!code ++]
         ],
         "description": "The message key."
     }

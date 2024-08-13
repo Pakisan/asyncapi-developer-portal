@@ -42,96 +42,44 @@ Contains information about the message representation in Apache Kafka.
 
 ## Migration guide
 
-Good news, this version introduces new properties
+### Added
 
-### schemaIdLocation
+#### schemaIdLocation
+
+If a Schema Registry is used when performing this operation, tells where the id of schema is stored.
+
 ```json
 {
-    "key": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json",
-      "description": "The message key."
-    },
     "schemaIdLocation": { // [!code ++]
       "type": "string", // [!code ++]
       "description": "If a Schema Registry is used when performing this operation, tells where the id of schema is stored.", // [!code ++]
       "enum": ["header", "payload"] // [!code ++]
-    }, // [!code ++]
-    "schemaIdPayloadEncoding": {
-      "type": "string",
-      "description": "Number of bytes or vendor specific values when schema id is encoded in payload."
-    },
-    "schemaLookupStrategy": {
-      "type": "string",
-      "description": "Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.3.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
+    } // [!code ++]
 }
 ```
 
-### schemaIdPayloadEncoding
+#### schemaIdPayloadEncoding
+
+Number of bytes or vendor specific values when schema id is encoded in payload.
 
 ```json
 {
-    "key": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json",
-      "description": "The message key."
-    },
-    "schemaIdLocation": {
-      "type": "string",
-      "description": "If a Schema Registry is used when performing this operation, tells where the id of schema is stored.",
-      "enum": ["header", "payload"]
-    },
     "schemaIdPayloadEncoding": { // [!code ++]
       "type": "string", // [!code ++]
       "description": "Number of bytes or vendor specific values when schema id is encoded in payload." // [!code ++]
-    }, // [!code ++]
-    "schemaLookupStrategy": {
-      "type": "string",
-      "description": "Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.3.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
+    } // [!code ++]
 }
 ```
 
-### schemaLookupStrategy
+#### schemaLookupStrategy
+
+Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied.
 
 ```json
 {
-    "key": {
-      "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json",
-      "description": "The message key."
-    },
-    "schemaIdLocation": {
-      "type": "string",
-      "description": "If a Schema Registry is used when performing this operation, tells where the id of schema is stored.",
-      "enum": ["header", "payload"]
-    },
-    "schemaIdPayloadEncoding": {
-      "type": "string",
-      "description": "Number of bytes or vendor specific values when schema id is encoded in payload."
-    },
     "schemaLookupStrategy": { // [!code ++]
       "type": "string", // [!code ++]
       "description": "Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied." // [!code ++]
-    }, // [!code ++]
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.3.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
+    } // [!code ++]
 }
 ```

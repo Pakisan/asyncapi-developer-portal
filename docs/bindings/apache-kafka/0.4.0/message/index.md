@@ -42,9 +42,9 @@ Contains information about the message representation in Apache Kafka.
 
 ## Migration guide
 
-Bad news, this version contains property changes
+### Changed
 
-### key
+#### key
 
 Key type was extended
 

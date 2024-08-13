@@ -39,7 +39,7 @@ Contains information about the operation representation in Apache Kafka.
             "myClientId"
         ]
     },
-    "bindingVersion": "0.1.0"
+    "bindingVersion": "0.3.0"
 }
 ```
 

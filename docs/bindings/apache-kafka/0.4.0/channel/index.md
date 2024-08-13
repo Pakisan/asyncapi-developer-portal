@@ -30,32 +30,20 @@ Contains information about the message representation in Apache Kafka.
     "topic": "my-specific-topic",
     "partitions": 20,
     "replicas": 3,
-    "bindingVersion": "0.3.0"
+    "bindingVersion": "0.4.0"
 }
 ```
 
 ## Migration guide
 
-Good news, new property was introduces
+### Added
 
-### topicConfiguration
+#### topicConfiguration
+
+Topic configuration properties that are relevant for the API
 
 ```json
 {
-    "topic": {
-        "type": "string",
-        "description": "Kafka topic name if different from channel name."
-    },
-    "partitions": {
-        "type": "integer",
-        "minimum": 1,
-        "description": "Number of partitions configured on this topic."
-    },
-    "replicas": {
-        "type": "integer",
-        "minimum": 1,
-        "description": "Number of replicas configured on this topic."
-    },
     "topicConfiguration" : { // [!code ++]
         "description": "Topic configuration properties that are relevant for the API.", // [!code ++]
         "type": "object", // [!code ++]
@@ -90,13 +78,6 @@ Good news, new property was introduces
                 "minimum": 0 // [!code ++]
             } // [!code ++]
         } // [!code ++]
-    }, // [!code ++]
-    "bindingVersion": {
-        "type": "string",
-        "enum": [
-            "0.4.0"
-        ],
-        "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
+    } // [!code ++]
 }
 ```
