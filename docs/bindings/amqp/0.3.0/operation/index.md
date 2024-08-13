@@ -46,8 +46,6 @@ Contains information about the operation representation in AMQP.
 
 ## Migration guide
 
-Bad news, something was deprecated
-
 ### Removed
 
 #### replyTo

@@ -59,8 +59,6 @@ Contains information about the channel representation in AMQP.
 
 ## Migration guide
 
-Good news, nothing was deprecated
-
 ### Added
 
 #### vhost
