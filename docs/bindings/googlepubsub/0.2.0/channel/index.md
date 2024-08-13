@@ -45,61 +45,14 @@ Contains information about the channel representation in Google Cloud Pub/Sub.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Bad news, property was removed
+### Removed
 
-### topic
+#### topic
 
 ```json
 {
-    "bindingVersion": {
-        "type": "string",
-        "enum": [
-            "0.1.0"
-        ],
-        "description": "The version of this binding."
-    },
-    "labels": {
-        "type": "object"
-    },
-    "messageRetentionDuration": {
-        "type": "string"
-    },
-    "messageStoragePolicy": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-            "allowedPersistenceRegions": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
-            }
-        }
-    },
-    "schemaSettings": {
-        "type": "object",
-        "additionalItems": false,
-        "properties": {
-            "encoding": {
-                "type": "string"
-            },
-            "firstRevisionId": {
-                "type": "string"
-            },
-            "lastRevisionId": {
-                "type": "string"
-            },
-            "name": {
-                "type": "string"
-            }
-        },
-        "required": [
-            "encoding",
-            "name"
-        ]
-    },
     "topic": { // [!code --]
         "type": "string" // [!code --]
     } // [!code --]

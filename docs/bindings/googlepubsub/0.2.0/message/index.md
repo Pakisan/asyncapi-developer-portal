@@ -33,25 +33,14 @@ Contains information about the message representation in Google Cloud Pub/Sub.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Bad news, property was removed
+### Removed
+
+#### schema.`type`
 
 ```json
 {
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.1.0"
-      ],
-      "description": "The version of this binding."
-    },
-    "attributes": {
-      "type": "object"
-    },
-    "orderingKey": {
-      "type": "string"
-    },
     "schema": {
       "type": "object",
       "additionalItems": false,
