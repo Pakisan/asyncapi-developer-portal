@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig, HeadConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -493,6 +493,22 @@ export default defineConfig({
          gtag('config', 'G-G03BQZSMD1');`
     ]
   ],
+
+  transformHead: ({ pageData }) => {
+    const headers: HeadConfig[] = pageData.frontmatter.head ?? [];
+
+    let ogImagePath: string = "";
+    headers.forEach(header => {
+      if (header[1].name === "og:image") {
+        ogImagePath = header[1].content;
+      }
+    })
+
+    if (ogImagePath.length > 0) {
+      headers.push(['meta', { property: 'og:image', content: `https://asyncapi-developer-portal.netlify.app${ogImagePath}` }])
+    }
+    return headers
+  },
 
   sitemap: {
     hostname: 'https://asyncapi-developer-portal.netlify.app'
