@@ -32,13 +32,13 @@ Contains information about the channel representation in Solace.
 }
 ```
 
-## Migration guide
+## Changelog
 
 ### Changed
 
 #### msvVpn
 
-`msvVpn` was renamed to `msgVpn` due type error
+`msvVpn` was renamed to `msgVpn` due typo error
 
 ```json
 {
@@ -46,13 +46,6 @@ Contains information about the channel representation in Solace.
     "msgVpn": { // [!code ++]
       "type": "string",
       "description": "The name of the Virtual Private Network to connect to on the Solace broker."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.2.0"
-      ],
-      "description": "The version of this binding."
     }
 }
 ```

@@ -49,92 +49,42 @@ Contains information about the channel representation in Solace.
 }
 ```
 
-## Migration guide
+## Changelog
 
 ### Added
 
-#### Queue: maxTtl
+#### queue.`maxTtl`
 
 The maximum TTL to apply to messages to be spooled
 
 ```json
 {
-  "properties": {
-    "destinationType": {
-      "type": "string",
-      "const": "queue",
-      "description": "If the type is queue, then the subscriber can bind to the queue. The queue subscribes to the given topicSubscriptions. If no topicSubscriptions are provied, the queue will subscribe to the topic as represented by the channel name."
-    },
     "queue": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the queue"
-        },
-        "topicSubscriptions": {
-          "type": "array",
-          "description": "The list of topics that the queue subscribes to.",
-          "items": {
-            "type": "string"
-          }
-        },
-        "accessType": {
-          "type": "string",
-          "enum": [
-            "exclusive",
-            "nonexclusive"
-          ]
-        },
-        "maxTtl": { // [!code ++]
-          "type": "string", // [!code ++]
-          "description": "The maximum TTL to apply to messages to be spooled." // [!code ++]
-        } // [!code ++]
-      }
+        "type": "object",
+        "properties": {
+            "maxTtl": { // [!code ++]
+                "type": "string", // [!code ++]
+                "description": "The maximum TTL to apply to messages to be spooled." // [!code ++]
+            } // [!code ++]
+        }
     }
-  }
 }
 ```
 
-#### Queue: maxMsgSpoolUsage
+#### queue.`maxMsgSpoolUsage`
 
 The maximum amount of message spool that the given queue may use
 
 ```json
 {
-  "properties": {
-    "destinationType": {
-      "type": "string",
-      "const": "queue",
-      "description": "If the type is queue, then the subscriber can bind to the queue. The queue subscribes to the given topicSubscriptions. If no topicSubscriptions are provied, the queue will subscribe to the topic as represented by the channel name."
-    },
     "queue": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "The name of the queue"
-        },
-        "topicSubscriptions": {
-          "type": "array",
-          "description": "The list of topics that the queue subscribes to.",
-          "items": {
-            "type": "string"
-          }
-        },
-        "accessType": {
-          "type": "string",
-          "enum": [
-            "exclusive",
-            "nonexclusive"
-          ]
-        },
-        "maxMsgSpoolUsage": { // [!code ++]
-          "type": "string", // [!code ++]
-          "description": "The maximum amount of message spool that the given queue may use" // [!code ++]
-        } // [!code ++]
-      }
+        "type": "object",
+        "properties": {
+            "maxMsgSpoolUsage": { // [!code ++]
+                "type": "string", // [!code ++]
+                "description": "The maximum amount of message spool that the given queue may use" // [!code ++]
+            } // [!code ++]
+        }
     }
-  }
 }
 ```

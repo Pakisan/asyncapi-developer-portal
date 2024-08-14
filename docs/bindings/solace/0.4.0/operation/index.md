@@ -49,7 +49,7 @@ Contains information about the channel representation in Solace.
 }
 ```
 
-## Migration guide
+## Changelog
 
 ### Added
 
