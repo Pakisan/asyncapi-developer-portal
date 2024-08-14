@@ -44,7 +44,7 @@ Contains information about the operation representation in HTTP.
         },
         "additionalProperties": false
       },
-      "bindingVersion": "0.1.0"
+      "bindingVersion": "0.2.0"
 }
 ```
 
@@ -67,13 +67,15 @@ Contains information about the operation representation in HTTP.
         },
         "additionalProperties": false
     },
-    "bindingVersion": "0.1.0"
+    "bindingVersion": "0.2.0"
 }
 ```
 
-## Migration guide
+## Changelog
 
-Bad news, properties were changed
+### Removed
+
+#### type
 
 ```json
 {
@@ -84,22 +86,18 @@ Bad news, properties were changed
         "response" // [!code --]
       ], // [!code --]
       "description": "Required. Type of operation. Its value MUST be either 'request' or 'response'." // [!code --]
-    }, // [!code --]
-    "method": {
-      "type": "string",
-      "enum": [
-        "GET",
-        "PUT",
-        "POST",
-        "PATCH",
-        "DELETE",
-        "HEAD",
-        "OPTIONS",
-        "CONNECT",
-        "TRACE"
-      ],
-      "description": "When 'type' is 'request', this is the HTTP method, otherwise it MUST be ignored. Its value MUST be one of 'GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS', 'CONNECT', and 'TRACE'."
-    },
+    } // [!code --]
+}
+```
+
+### Changed
+
+#### query
+
+`query` can't be `Reference` anymore. Only `Schema`
+
+```json
+{
     "query": {
       "oneOf": [ // [!code --]
         { // [!code --]
@@ -110,13 +108,6 @@ Bad news, properties were changed
         } // [!code --]
       ], // [!code --]
       "description": "A Schema object containing the definitions for each query parameter. This schema MUST be of type 'object' and have a properties key."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.2.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
     }
 }
 ```

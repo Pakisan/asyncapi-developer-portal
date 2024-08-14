@@ -42,22 +42,24 @@ Contains information about the message representation in HTTP.
 }
 ```
 
-## Migration guide
+### Changed
 
-Bad news, property type was changed
+#### headers
 
-### headers
+`headers` can't be `Reference` anymore. Only `Schema`
 
 ```json
 {
-      "oneOf": [ // [!code --]
-        { // [!code --]
-          "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json"
-        }, // [!code --]
-        { // [!code --]
-          "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json" // [!code --]
-        } // [!code --]
-      ], // [!code --]
-      "description": "\tA Schema object containing the definitions for HTTP-specific headers. This schema MUST be of type 'object' and have a 'properties' key."
+    "headers": {
+        "oneOf": [ // [!code --]
+            { // [!code --]
+                "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json"
+            }, // [!code --]
+            { // [!code --]
+                "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json" // [!code --]
+            } // [!code --]
+        ], // [!code --]
+        "description": "\tA Schema object containing the definitions for HTTP-specific headers. This schema MUST be of type 'object' and have a 'properties' key."
+    }
 }
 ```
