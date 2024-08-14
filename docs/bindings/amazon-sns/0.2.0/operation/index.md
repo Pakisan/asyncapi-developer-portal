@@ -91,6 +91,6 @@ You may also use it for multiple consumers with the same protocol, instead of re
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

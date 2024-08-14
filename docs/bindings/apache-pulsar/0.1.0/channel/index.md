@@ -44,6 +44,6 @@ Contains information about the channel representation in Apache Kafka.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

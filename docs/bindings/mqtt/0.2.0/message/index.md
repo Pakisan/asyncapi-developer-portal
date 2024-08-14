@@ -37,6 +37,6 @@ Contains information about the message representation in MQTT.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

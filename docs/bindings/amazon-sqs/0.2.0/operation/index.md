@@ -61,6 +61,6 @@ Contains information about the operation representation in Amazon SQS.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

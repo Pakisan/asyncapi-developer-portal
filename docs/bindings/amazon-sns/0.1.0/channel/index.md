@@ -51,6 +51,6 @@ To mark a channel as SNS, but use default values for the channel properties, jus
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

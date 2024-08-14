@@ -34,6 +34,6 @@ Contains information about the message representation in Apache Kafka.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

@@ -79,6 +79,6 @@ Dead Letter Queue Object. (If you define the DLQ externally, the Identifier also
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

@@ -39,6 +39,6 @@ Contains information about the server representation in Jakarta Messaging API.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

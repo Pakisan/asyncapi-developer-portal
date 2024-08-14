@@ -55,6 +55,6 @@ Contains information about the channel representation in AMQP.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

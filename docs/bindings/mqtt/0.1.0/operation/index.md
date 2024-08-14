@@ -33,6 +33,6 @@ Contains information about the server operation in MQTT.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

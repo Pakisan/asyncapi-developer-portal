@@ -72,6 +72,6 @@ Contains information about the operation representation in HTTP.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed

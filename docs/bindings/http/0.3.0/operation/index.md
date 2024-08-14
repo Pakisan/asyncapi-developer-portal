@@ -73,4 +73,4 @@ Contains information about the operation representation in HTTP.
 
 ## Changelog
 
-Good news, nothing was deprecated or changed
+Good news, nothing was changed
