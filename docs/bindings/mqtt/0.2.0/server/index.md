@@ -42,9 +42,15 @@ Contains information about the server representation in MQTT.
 }
 ```
 
-## Migration guide
+## Changelog
 
-Good news, new properties were introduced
+### Added
+
+#### sessionExpiryInterval
+
+Interval time in seconds or a Schema Object containing the definition of the interval. 
+
+The broker maintains a session for a disconnected client until this interval expires.
 
 ```json
 {
@@ -62,7 +68,16 @@ Good news, new properties were introduced
             } //   [!code ++]
         ], //   [!code ++]
         "description": "Interval time in seconds or a Schema Object containing the definition of the interval.  The broker maintains a session for a disconnected client until this interval expires." //   [!code ++]
-    }, //   [!code ++]
+    }//   [!code ++]
+}
+```
+
+#### maximumPacketSize
+
+Number of bytes or a Schema Object representing the Maximum Packet Size the Client is willing to accept.
+
+```json
+{
     "maximumPacketSize": { //   [!code ++]
         "oneOf": [ //   [!code ++]
             { //   [!code ++]
