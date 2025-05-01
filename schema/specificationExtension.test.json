@@ -1,0 +1,52 @@
+{
+  "target": "http://localhost:5173/specificationExtension.json",
+  "$comment": "An arbitrary comment! Put whatever you want here",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    },
+    {
+      "description": "The `x-array` property is valid",
+      "valid": true,
+      "data": {
+        "x-array": [[], true, null, 1, "string", {}]
+      }
+    },
+    {
+      "description": "The `x-boolean` property is valid",
+      "valid": true,
+      "data": {
+        "x-boolean": true
+      }
+    },
+    {
+      "description": "The `x-number` property is valid",
+      "valid": true,
+      "data": {
+        "x-number": 1
+      }
+    },
+    {
+      "description": "The `x-string` property is valid",
+      "valid": true,
+      "data": {
+        "x-string": "string"
+      }
+    },
+    {
+      "description": "The `x-object` property is valid",
+      "valid": true,
+      "data": {
+        "x-object": {
+          "array": [[], true, null, 1, "string", {}],
+          "boolean": true,
+          "number": 1,
+          "string": "string",
+          "object": {}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost:5173/specificationExtension.json",
+  "type": "object",
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\-_]+$": {
+      "type": [ "array", "boolean", "null", "number", "string", "object" ]
+    }
+  },
+  "additionalProperties": false
+}
