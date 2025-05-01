@@ -1,0 +1,55 @@
+{
+  "target": "http://localhost:5173/tag.json",
+  "$comment": "Tag test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `name` is present",
+      "valid": true,
+      "data": {
+        "name": "This is a Tag name"
+      }
+    },
+    {
+      "description": "Is valid when `externalDocs` is reference",
+      "valid": true,
+      "data": {
+        "name": "This is a Tag name",
+        "externalDocs": {
+          "$ref": "https://external-documentation.com"
+        }
+      }
+    },
+    {
+      "description": "Is valid when `externalDocs` is object",
+      "valid": true,
+      "data": {
+        "name": "This is a Tag name",
+        "externalDocs": {
+          "url": "https://external-documentation.com",
+          "description": "External Documentation description"
+        }
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "name": "This is a Tag name",
+        "x-string": "string value"
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "name": "This is a Tag name",
+        "unknownProperty": "unknown property value"
+      }
+    }
+  ]
+}
