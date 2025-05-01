@@ -1,0 +1,16 @@
+{
+  "target": "http://localhost:5173/info/extensions/x/0.1.0/schema.json",
+  "$comment": "Contact test cases",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": ""
+    },
+    {
+      "description": "Is valid when contains string",
+      "valid": true,
+      "data": "sambhavgupta75"
+    }
+  ]
+}
