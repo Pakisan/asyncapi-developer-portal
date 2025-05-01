@@ -1,0 +1,55 @@
+{
+  "target": "http://localhost:5173/reference.json",
+  "$comment": "Reference test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `$ref` is URL",
+      "valid": true,
+      "data": {
+        "$ref": "https://external.com/some/thing.json"
+      }
+    },
+    {
+      "description": "Is valid when `$ref` is local reference",
+      "valid": true,
+      "data": {
+        "$ref": "#/some/thing.json"
+      }
+    },
+    {
+      "description": "Is valid when `$ref` is file path",
+      "valid": true,
+      "data": {
+        "$ref": "../some/thing.json"
+      }
+    },
+    {
+      "description": "Is not valid when correctly extended",
+      "valid": false,
+      "data": {
+        "$ref": "#/some/thing.json",
+        "x-string": "string value"
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "$ref": "#/some/thing.json",
+        "unknownProperty": "unknown property value"
+      }
+    },
+    {
+      "description": "Is not valid when `$ref` is not a string",
+      "valid": false,
+      "data": {
+        "$ref": {}
+      }
+    }
+  ]
+}
