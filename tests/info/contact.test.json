@@ -1,0 +1,44 @@
+{
+  "target": "http://localhost:5173/contact.json",
+  "$comment": "Contact test cases",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "name": "AsyncApi",
+        "url": "https://www.asyncapi.com",
+        "email": "java@asyncapi.com"
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "name": "AsyncApi",
+        "url": "https://www.asyncapi.com",
+        "email": "java@asyncapi.com",
+        "x-number": 0,
+        "x-string": "",
+        "x-object": {
+          "property": {}
+        }
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "name": "AsyncApi",
+        "url": "https://www.asyncapi.com",
+        "email": "java@asyncapi.com",
+        "ext-number": 1
+      }
+    }
+  ]
+}
