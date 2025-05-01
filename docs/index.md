@@ -16,7 +16,8 @@ features:
       icon:
         src: /security-icon.svg
     - title: Schemes
-      details: WIP
+      link: /schemes
+      details: Everything you should to now about AsyncAPI schemes
       icon:
         src: /json-schema-icon.svg
 head:
