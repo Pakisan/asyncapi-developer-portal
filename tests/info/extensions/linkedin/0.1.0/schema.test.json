@@ -1,0 +1,16 @@
+{
+  "target": "http://localhost:5173/info/extensions/linkedin/0.1.0/schema.json",
+  "$comment": "Contact test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": ""
+    },
+    {
+      "description": "Is valid when it's correct link to LinkedIn profile",
+      "valid": true,
+      "data": "https://www.linkedin.com/in/pavel-bo/"
+    }
+  ]
+}
