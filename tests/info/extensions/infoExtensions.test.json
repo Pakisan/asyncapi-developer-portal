@@ -1,0 +1,19 @@
+{
+  "target": "http://localhost:5173/info/infoExtensions.json",
+  "$comment": "Contact test cases",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    },
+    {
+      "description": "Object is valid",
+      "valid": true,
+      "data": {
+        "x-x": "sambhavgupta75",
+        "x-linkedin": "https://www.linkedin.com/in/pavel-bo/"
+      }
+    }
+  ]
+}
