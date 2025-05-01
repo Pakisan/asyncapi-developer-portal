@@ -1,0 +1,44 @@
+{
+  "target": "http://localhost:5173/externalDocs.json",
+  "$comment": "External Documentation test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when only `url` present",
+      "valid": true,
+      "data": {
+        "url": "https://external-documentation.com"
+      }
+    },
+    {
+      "description": "Is valid when `url` and `description` are present",
+      "valid": true,
+      "data": {
+        "url": "https://external-documentation.com",
+        "description": "External Documentation description"
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "url": "https://external-documentation.com",
+        "description": "External Documentation description",
+        "x-string": "string value"
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "url": "https://external-documentation.com",
+        "description": "External Documentation description",
+        "unknownProperty": "unknown property value"
+      }
+    }
+  ]
+}
