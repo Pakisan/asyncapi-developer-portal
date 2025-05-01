@@ -1,0 +1,102 @@
+{
+  "target": "http://localhost:5173/info/info.json",
+  "$comment": "Contact test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Object is valid",
+      "valid": true,
+      "data": {
+        "title": "AsyncApi sample",
+        "version": "2.0",
+        "description": "short description",
+        "termsOfService": "https://www.asyncapi.com/about/",
+        "contact": {
+          "name": "AsyncApi",
+          "url": "https://www.asyncapi.com",
+          "email": "java@asyncapi.com"
+        },
+        "license": {
+          "name": "Apache License 2.0",
+          "url": "https://www.apache.org/licenses/"
+        },
+        "tags": [
+          {
+            "$ref": "https://example.com"
+          },
+          {
+            "name": "user",
+            "description": "User-related messages",
+            "externalDocs": {
+              "description" : "Find more info here",
+              "url" : "https://example.com"
+            }
+          }
+        ],
+        "externalDocs": {
+          "description": "Find more info here",
+          "url": "https://example.com"
+        }
+      }
+    },
+    {
+      "description": "Object is valid when `externalDocs` is object",
+      "valid": true,
+      "data": {
+        "title": "AsyncApi sample",
+        "version": "2.0",
+        "externalDocs": {
+          "description": "Find more info here",
+          "url": "https://example.com"
+        }
+      }
+    },
+    {
+      "description": "Object is valid when `externalDocs` is reference",
+      "valid": true,
+      "data": {
+        "title": "AsyncApi sample",
+        "version": "2.0",
+        "externalDocs": {
+          "$ref": "https://example.com"
+        }
+      }
+    },
+    {
+      "description": "Object is valid when only required properties are present",
+      "valid": true,
+      "data": {
+        "title": "AsyncApi sample",
+        "version": "2.0"
+      }
+    },
+    {
+      "description": "Not valid when tags contains duplicates",
+      "valid": false,
+      "data": {
+        "title": "AsyncApi sample",
+        "version": "2.0",
+        "tags": [
+          {
+            "$ref": "https://example.com"
+          },
+          {
+            "$ref": "https://example.com"
+          },
+          {
+            "name": "user",
+            "description": "User-related messages",
+            "externalDocs": {
+              "description" : "Find more info here",
+              "url" : "https://example.com"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
