@@ -1,0 +1,48 @@
+{
+  "target": "http://localhost:5173/license.json",
+  "$comment": "License test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid with only required properties",
+      "valid": true,
+      "data": {
+        "name": "Apache License 2.0"
+      }
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/"
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/",
+        "x-number": 0,
+        "x-string": "",
+        "x-object": {
+          "property": {}
+        }
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "name": "Apache License 2.0",
+        "url": "https://www.apache.org/licenses/",
+        "ext-number": 1
+      }
+    }
+  ]
+}
