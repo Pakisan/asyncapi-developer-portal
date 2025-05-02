@@ -1,0 +1,49 @@
+{
+  "target": "http://localhost:5173/security-schemes/symmetricEncryption.json",
+  "$comment": "Symmetric Encryption Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is symmetricEncryption",
+      "valid": true,
+      "data": {
+        "type": "symmetricEncryption",
+        "description": "userPassword"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not symmetricEncryption",
+      "valid": false,
+      "data": {
+        "type": "symmetric-encryption",
+        "description": "symmetricEncryption"
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "symmetricEncryption",
+        "description": "symmetricEncryption",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "symmetricEncryption",
+        "description": "symmetricEncryption",
+        "ext-number": 1
+      }
+    }
+  ]
+}
