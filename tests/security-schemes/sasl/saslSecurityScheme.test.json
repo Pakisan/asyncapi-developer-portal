@@ -1,0 +1,43 @@
+{
+  "target": "http://localhost:5173/security-schemes/sasl/saslSecurityScheme.json",
+  "$comment": "Asymmetric Encryption Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is plain",
+      "valid": true,
+      "data": {
+        "type": "plain",
+        "description": "plain"
+      }
+    },
+    {
+      "description": "Is valid when `type` is gssapi",
+      "valid": true,
+      "data": {
+        "type": "gssapi",
+        "description": "gssapi"
+      }
+    },
+    {
+      "description": "Is valid when `type` is scramSha256",
+      "valid": true,
+      "data": {
+        "type": "scramSha256",
+        "description": "scramSha256"
+      }
+    },
+    {
+      "description": "Is valid when `type` is scramSha512",
+      "valid": true,
+      "data": {
+        "type": "scramSha512",
+        "description": "scramSha512"
+      }
+    }
+  ]
+}

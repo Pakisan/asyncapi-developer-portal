@@ -1,0 +1,57 @@
+{
+  "target": "http://localhost:5173/security-schemes/sasl/saslScramSecurityScheme.json",
+  "$comment": "Asymmetric Encryption Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is scramSha256",
+      "valid": true,
+      "data": {
+        "type": "scramSha256",
+        "description": "scramSha256"
+      }
+    },
+    {
+      "description": "Is valid when `type` is scramSha512",
+      "valid": true,
+      "data": {
+        "type": "scramSha512",
+        "description": "scramSha512"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not in scramSha256 and scramSha512",
+      "valid": false,
+      "data": {
+        "type": "scram-sha-512",
+        "description": "scramSha512"
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "scramSha512",
+        "description": "scramSha512",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "scramSha512",
+        "description": "scramSha512",
+        "ext-number": 1
+      }
+    }
+  ]
+}

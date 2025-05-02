@@ -1,0 +1,49 @@
+{
+  "target": "http://localhost:5173/security-schemes/sasl/saslGssapiSecurityScheme.json",
+  "$comment": "Asymmetric Encryption Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is gssapi",
+      "valid": true,
+      "data": {
+        "type": "gssapi",
+        "description": "gssapi"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not gssapi",
+      "valid": false,
+      "data": {
+        "type": "gssapi-type",
+        "description": "gssapi"
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "gssapi",
+        "description": "gssapi",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "gssapi",
+        "description": "gssapi",
+        "ext-number": 1
+      }
+    }
+  ]
+}

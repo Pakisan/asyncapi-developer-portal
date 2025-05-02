@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost:5173/security-schemes/sasl/saslPlainSecurityScheme.json",
+  "type": "object",
+  "required": [ "type" ],
+  "properties": {
+    "description": {
+      "description": "A short description for security scheme.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of the security scheme. Valid values",
+      "type": "string",
+      "enum": [ "plain" ]
+    }
+  },
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
+}
