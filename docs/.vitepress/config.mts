@@ -9,7 +9,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Bindings', link: '/bindings', activeMatch: '\/bindings.+' },
-      { text: 'Schemes', link: '/schemes', activeMatch: '\/schemes.+' }
+      { text: 'Schemes', link: '/schemes', activeMatch: '\/schemes.+' },
+      { text: 'Security schemes', link: '/security-schemes', activeMatch: '\/security-schemes.+' }
     ],
 
     sidebar: {
