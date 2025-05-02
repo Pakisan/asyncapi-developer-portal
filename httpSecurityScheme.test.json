@@ -1,0 +1,11 @@
+{
+  "target": "http://localhost:5173/security-schemes/http/httpSecurityScheme.json",
+  "$comment": "HTTP Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    }
+  ]
+}

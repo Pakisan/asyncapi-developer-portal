@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://localhost:5173/security-schemes/http/httpSecurityScheme.json",
+  "oneOf": [
+    {
+      "$ref": "http://localhost:5173/security-schemes/http/nonBearerHTTPSecurityScheme.json"
+    },
+    {
+      "$ref": "http://localhost:5173/security-schemes/http/bearerHTTPSecurityScheme.json"
+    },
+    {
+      "$ref": "http://localhost:5173/security-schemes/http/apiKeyHTTPSecurityScheme.json"
+    }
+  ]
+}

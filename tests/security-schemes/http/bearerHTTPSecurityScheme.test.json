@@ -1,0 +1,71 @@
+{
+  "target": "http://localhost:5173/security-schemes/http/bearerHTTPSecurityScheme.json",
+  "$comment": "Bearer HTTP Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when only required properties are present",
+      "valid": true,
+      "data": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not http",
+      "valid": false,
+      "data": {
+        "type": "https",
+        "scheme": "bearer"
+      }
+    },
+    {
+      "description": "Is not valid when `scheme` is not bearer",
+      "valid": false,
+      "data": {
+        "type": "http",
+        "scheme": "token"
+      }
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "type": "http",
+        "description": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT",
+        "ext-number": 1
+      }
+    }
+  ]
+}

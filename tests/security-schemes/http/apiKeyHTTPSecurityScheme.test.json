@@ -1,0 +1,102 @@
+{
+  "target": "http://localhost:5173/security-schemes/http/apiKeyHTTPSecurityScheme.json",
+  "$comment": "API Key HTTP Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when only required properties are present",
+      "valid": true,
+      "data":{
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "header"
+      }
+
+    },
+    {
+      "description": "Is not valid when `type` is not httpApiKey",
+      "valid": false,
+      "data": {
+        "type": "https",
+        "name": "api_key",
+        "in": "header"
+      }
+    },
+    {
+      "description": "Is valid when `in` is header",
+      "valid": true,
+      "data": {
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "header"
+      }
+    },
+    {
+      "description": "Is valid when `in` is query",
+      "valid": true,
+      "data": {
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "query"
+      }
+    },
+    {
+      "description": "Is valid when `in` is cookie",
+      "valid": true,
+      "data": {
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "cookie"
+      }
+    },
+    {
+      "description": "Is not valid when `in` is not in header, query or cookie",
+      "valid": false,
+      "data": {
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "path"
+      }
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "description": "http",
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "query"
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "description": "http",
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "query",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "description": "http",
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "query",
+        "ext-number": 1
+      }
+    }
+  ]
+}

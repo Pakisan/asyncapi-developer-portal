@@ -1,0 +1,60 @@
+{
+  "target": "http://localhost:5173/security-schemes/http/nonBearerHTTPSecurityScheme.json",
+  "$comment": "Not Bearer HTTP Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when only required properties are present",
+      "valid": true,
+      "data": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    },
+    {
+      "description": "Is not valid when `scheme` is bearer",
+      "valid": false,
+      "data": {
+        "type": "https",
+        "scheme": "bearer"
+      }
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "basic"
+      }
+    },
+    {
+      "description": "Is valid when correctly extended",
+      "valid": true,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "basic",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when wrongly extended",
+      "valid": false,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "basic",
+        "ext-number" : 1
+      }
+    }
+  ]
+}
