@@ -1,0 +1,49 @@
+{
+  "target": "http://localhost:5173/security-schemes/X509.json",
+  "$comment": "X509 Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is X509",
+      "valid": true,
+      "data": {
+        "type": "X509",
+        "description": "X509"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not X509",
+      "valid": false,
+      "data": {
+        "type": "X 509",
+        "description": "X509"
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "X509",
+        "description": "X509",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "X509",
+        "description": "X509",
+        "ext-number": 1
+      }
+    }
+  ]
+}
