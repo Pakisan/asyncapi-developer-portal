@@ -1,0 +1,40 @@
+{
+  "target": "http://localhost:5173/security-schemes/http/httpSecurityScheme.json",
+  "$comment": "API Key HTTP Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when is Bearer HTTP Security Scheme",
+      "valid": true,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT"
+      }
+    },
+    {
+      "description": "Is valid when is Non Bearer HTTP Security Scheme",
+      "valid": true,
+      "data": {
+        "type" : "http",
+        "description" : "http",
+        "scheme" : "basic"
+      }
+    },
+    {
+      "description": "Is valid when is API Key HTTP Security Scheme",
+      "valid": true,
+      "data": {
+        "description": "http",
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "query"
+      }
+    }
+  ]
+}
