@@ -1,0 +1,49 @@
+{
+  "target": "http://localhost:5173/security-schemes/asymmetricEncryption.json",
+  "$comment": "Asymmetric Encryption Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is asymmetricEncryption",
+      "valid": true,
+      "data": {
+        "type": "asymmetricEncryption",
+        "description": "userPassword"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not asymmetricEncryption",
+      "valid": false,
+      "data": {
+        "type": "asymmetric-encryption",
+        "description": "asymmetricEncryption"
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "asymmetricEncryption",
+        "description": "asymmetricEncryption",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "asymmetricEncryption",
+        "description": "asymmetricEncryption",
+        "ext-number": 1
+      }
+    }
+  ]
+}
