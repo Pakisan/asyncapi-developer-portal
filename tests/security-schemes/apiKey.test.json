@@ -1,0 +1,71 @@
+{
+  "target": "http://localhost:5173/security-schemes/apiKey.json",
+  "$comment": "API Key Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when `type` is apiKey and `in` is user",
+      "valid": true,
+      "data": {
+        "type": "apiKey",
+        "description": "apiKey",
+        "in": "user"
+      }
+    },
+    {
+      "description": "Is valid when `type` is apiKey and `in` is password",
+      "valid": true,
+      "data": {
+        "type": "apiKey",
+        "description": "apiKey",
+        "in": "password"
+      }
+    },
+    {
+      "description": "Is not valid when `type` is not apiKey and `in` is password",
+      "valid": false,
+      "data": {
+        "type": "api-key",
+        "description": "apiKey",
+        "in": "password"
+      }
+    },
+    {
+      "description": "Is valid when `type` is apiKey but `in` is not in password or user",
+      "valid": false,
+      "data": {
+        "type": "apiKey",
+        "description": "apiKey",
+        "in": "path"
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "apiKey",
+        "description": "apiKey",
+        "in": "user",
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "apiKey",
+        "description": "apiKey",
+        "in": "user",
+        "ext-number": 1
+      }
+    }
+  ]
+}
