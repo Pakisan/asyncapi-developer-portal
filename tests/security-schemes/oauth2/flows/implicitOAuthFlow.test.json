@@ -1,0 +1,64 @@
+{
+  "target": "http://localhost:5173/security-schemes/oauth2/flows/implicitOAuthFlow.json",
+  "$comment": "Implicit OAuth Flow test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid with only required properties",
+      "valid": true,
+      "data": {
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
+        "availableScopes": {
+          "write:pets": "modify pets in your account",
+          "read:pets": "read your pets"
+        }
+      }
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
+        "refreshUrl": "https://example.com/api/oauth/refresh",
+        "availableScopes": {
+          "write:pets": "modify pets in your account",
+          "read:pets": "read your pets"
+        }
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
+        "refreshUrl": "https://example.com/api/oauth/refresh",
+        "availableScopes": {
+          "write:pets": "modify pets in your account",
+          "read:pets": "read your pets"
+        },
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
+        "refreshUrl": "https://example.com/api/oauth/refresh",
+        "availableScopes": {
+          "write:pets": "modify pets in your account",
+          "read:pets": "read your pets"
+        },
+        "ext-number": 1
+      }
+    }
+  ]
+}
