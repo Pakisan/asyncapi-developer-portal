@@ -1,0 +1,64 @@
+{
+  "target": "http://localhost:5173/security-schemes/openIdConnect.json",
+  "$comment": "OpenID Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "Is valid when only required fields",
+      "valid": true,
+      "data": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://server.com/.well-known/openid-configuration"
+      }
+    },
+    {
+      "description": "Is valid",
+      "valid": true,
+      "data": {
+        "type": "openIdConnect",
+        "description": "openIdConnect",
+        "openIdConnectUrl": "https://server.com/.well-known/openid-configuration",
+        "scopes": [
+          "write:pets",
+          "read:pets"
+        ]
+      }
+    },
+    {
+      "description": "Is valid when is correctly extended",
+      "valid": true,
+      "data": {
+        "type": "openIdConnect",
+        "description": "openIdConnect",
+        "openIdConnectUrl": "https://server.com/.well-known/openid-configuration",
+        "scopes": [
+          "write:pets",
+          "read:pets"
+        ],
+        "x-number" : 0,
+        "x-string" : "",
+        "x-object" : {
+          "property" : { }
+        }
+      }
+    },
+    {
+      "description": "Is not valid when is wrongly extended",
+      "valid": false,
+      "data": {
+        "type": "openIdConnect",
+        "description": "openIdConnect",
+        "openIdConnectUrl": "https://server.com/.well-known/openid-configuration",
+        "scopes": [
+          "write:pets",
+          "read:pets"
+        ],
+        "ext-number": 1
+      }
+    }
+  ]
+}
