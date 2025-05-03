@@ -485,6 +485,103 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/security-schemes': [
+        {
+          text: 'Security schemes',
+          link: '/',
+          base: '/security-schemes',
+          items: [
+            {
+              text: 'HTTP',
+              collapsed: false,
+              link: '/httpSecurityScheme',
+              base: '/security-schemes/http',
+              items: [
+                {
+                  text: 'API Key',
+                  link: '/apiKeyHTTPSecurityScheme',
+                },
+                {
+                  text: 'Bearer',
+                  link: '/bearerHTTPSecurityScheme',
+                },
+                {
+                  text: 'Non Bearer',
+                  link: '/nonBearerHTTPSecurityScheme',
+                },
+              ]
+            },
+            {
+              text: 'OAuth2',
+              collapsed: false,
+              link: '/oauth2',
+              base: '/security-schemes',
+              items: [
+                {
+                  text: 'Authorization Code',
+                  link: '/authorizationCodeOAuthFlow',
+                },
+                {
+                  text: 'Client Credentials',
+                  link: '/clientCredentialsOAuthFlow',
+                },
+                {
+                  text: 'Implicit',
+                  link: '/implicitOAuthFlow',
+                },
+                {
+                  text: 'Password',
+                  link: '/passwordOAuthFlow',
+                },
+              ]
+            },
+            {
+              text: 'SASL',
+              collapsed: false,
+              link: '/saslSecurityScheme',
+              base: '/sasl',
+              items: [
+                {
+                  text: 'GSS-API',
+                  link: '/saslGssapiSecurityScheme',
+                },
+                {
+                  text: 'Plain',
+                  link: '/saslPlainSecurityScheme',
+                },
+                {
+                  text: 'SCRAM',
+                  link: '/saslScramSecurityScheme',
+                },
+              ]
+            },
+            {
+              text: 'API Key',
+              link: '/apiKey',
+            },
+            {
+              text: 'Asymmetric Encryption',
+              link: '/asymmetricEncryption',
+            },
+            {
+              text: 'OpenID Connect',
+              link: '/openIdConnect',
+            },
+            {
+              text: 'Symmetric Encryption',
+              link: '/symmetricEncryption',
+            },
+            {
+              text: 'User Password',
+              link: '/userPassword',
+            },
+            {
+              text: 'X509',
+              link: '/X509',
+            },
+          ]
+        }
       ]
     },
 
