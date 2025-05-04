@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/security-schemes/oauth2/oauth2Flows.json",
+  "target": "http://localhost:5173/security-schemes/oauth2/oauth2.json",
   "$comment": "Password OAuth Flow test cases",
   "tests": [
     {

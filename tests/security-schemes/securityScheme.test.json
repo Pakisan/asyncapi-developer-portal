@@ -1,0 +1,169 @@
+{
+  "target": "http://localhost:5173/security-schemes/securityScheme.json",
+  "$comment": "Security Scheme test cases",
+  "tests": [
+    {
+      "description": "The empty object is not valid",
+      "valid": false,
+      "data": {}
+    },
+    {
+      "description": "API Key",
+      "valid": true,
+      "data": {
+        "type": "apiKey",
+        "description": "apiKey",
+        "in": "user"
+      }
+    },
+    {
+      "description": "Asymmetric Encryption",
+      "valid": true,
+      "data": {
+        "type": "asymmetricEncryption",
+        "description": "asymmetricEncryption"
+      }
+    },
+    {
+      "description": "OpenId Connect",
+      "valid": true,
+      "data": {
+        "type": "openIdConnect",
+        "description": "openIdConnect",
+        "openIdConnectUrl": "https://server.com/.well-known/openid-configuration",
+        "scopes": [
+          "write:pets",
+          "read:pets"
+        ]
+      }
+    },
+    {
+      "description": "Symmetric Encryption",
+      "valid": true,
+      "data": {
+        "type": "symmetricEncryption",
+        "description": "symmetricEncryption"
+      }
+    },
+    {
+      "description": "User Password",
+      "valid": true,
+      "data": {
+        "type": "userPassword",
+        "description": "userPassword"
+      }
+    },
+    {
+      "description": "X509",
+      "valid": true,
+      "data": {
+        "type": "X509",
+        "description": "X509"
+      }
+    },
+    {
+      "description": "API Key HTTP",
+      "valid": true,
+      "data": {
+        "description": "http",
+        "type": "httpApiKey",
+        "name": "api_key",
+        "in": "query"
+      }
+    },
+    {
+      "description": "Bearer HTTP",
+      "valid": true,
+      "data": {
+        "type": "http",
+        "description": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    {
+      "description": "Non Bearer HTTP",
+      "valid": true,
+      "data": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    },
+    {
+      "description": "OAuth2",
+      "valid": true,
+      "data": {
+        "type": "oauth2",
+        "description": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://example.com/api/oauth/dialog",
+            "tokenUrl": "https://example.com/api/oauth/token",
+            "refreshUrl": "https://example.com/api/oauth/refresh",
+            "availableScopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          },
+          "clientCredentials": {
+            "tokenUrl": "https://example.com/api/oauth/token",
+            "refreshUrl": "https://example.com/api/oauth/refresh",
+            "availableScopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          },
+          "implicit": {
+            "authorizationUrl": "https://example.com/api/oauth/dialog",
+            "refreshUrl": "https://example.com/api/oauth/refresh",
+            "availableScopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          },
+          "password": {
+            "tokenUrl": "https://example.com/api/oauth/token",
+            "refreshUrl": "https://example.com/api/oauth/refresh",
+            "availableScopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          }
+        },
+        "scopes": [ "write:pets", "read:pets" ]
+      }
+    },
+    {
+      "description": "SASL Plain",
+      "valid": true,
+      "data": {
+        "type": "plain",
+        "description": "plain"
+      }
+    },
+    {
+      "description": "SASL GSS-API",
+      "valid": true,
+      "data": {
+        "type": "gssapi",
+        "description": "gssapi"
+      }
+    },
+    {
+      "description": "SASL ScramSha256",
+      "valid": true,
+      "data": {
+        "type": "scramSha256",
+        "description": "scramSha256"
+      }
+    },
+    {
+      "description": "SASL ScramSha512",
+      "valid": true,
+      "data": {
+        "type": "scramSha512",
+        "description": "scramSha512"
+      }
+    }
+  ]
+}
