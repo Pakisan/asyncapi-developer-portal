@@ -610,7 +610,8 @@ export default defineConfig({
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
          gtag('config', 'G-G03BQZSMD1');`
-    ]
+    ],
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
 
   transformHead: ({ pageData }) => {
