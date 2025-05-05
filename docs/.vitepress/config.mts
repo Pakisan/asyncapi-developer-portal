@@ -498,27 +498,31 @@ export default defineConfig({
               base: '/schemes/v3/security',
               items: [
                 {
-                  text: 'HTTP',
+                  text: 'Security Scheme',
+                  link: '/securityScheme'
+                },
+                {
+                  text: 'HTTP Security Scheme',
                   collapsed: false,
                   link: '/httpSecurityScheme',
                   base: '/schemes/v3/security/http',
                   items: [
                     {
-                      text: 'API Key',
+                      text: 'HTTP API Key Security Scheme',
                       link: '/apiKeyHTTPSecurityScheme',
                     },
                     {
-                      text: 'Bearer',
+                      text: 'HTTP Bearer Security Scheme',
                       link: '/bearerHTTPSecurityScheme',
                     },
                     {
-                      text: 'Non Bearer',
+                      text: 'HTTP Non Bearer Security Scheme',
                       link: '/nonBearerHTTPSecurityScheme',
                     },
                   ]
                 },
                 {
-                  text: 'OAuth2',
+                  text: 'OAuth2 Security Scheme',
                   collapsed: false,
                   link: '/oauth2',
                   base: '/schemes/v3/security',
@@ -542,47 +546,47 @@ export default defineConfig({
                   ]
                 },
                 {
-                  text: 'SASL',
+                  text: 'SASL Security Scheme',
                   collapsed: false,
                   link: '/saslSecurityScheme',
                   base: '/schemes/v3/security/sasl',
                   items: [
                     {
-                      text: 'GSS-API',
+                      text: 'SASL GSS-API Security Scheme',
                       link: '/saslGssapiSecurityScheme',
                     },
                     {
-                      text: 'Plain',
+                      text: 'SASL Plain Security Scheme',
                       link: '/saslPlainSecurityScheme',
                     },
                     {
-                      text: 'SCRAM',
+                      text: 'SASL SCRAM Security Scheme',
                       link: '/saslScramSecurityScheme',
                     },
                   ]
                 },
                 {
-                  text: 'API Key',
+                  text: 'API Key Security Scheme',
                   link: '/apiKey',
                 },
                 {
-                  text: 'Asymmetric Encryption',
+                  text: 'Asymmetric Encryption Security Scheme',
                   link: '/asymmetricEncryption',
                 },
                 {
-                  text: 'OpenID Connect',
+                  text: 'OpenID Connect Security Scheme',
                   link: '/openIdConnect',
                 },
                 {
-                  text: 'Symmetric Encryption',
+                  text: 'Symmetric Encryption Security Scheme',
                   link: '/symmetricEncryption',
                 },
                 {
-                  text: 'User Password',
+                  text: 'User Password Security Scheme',
                   link: '/userPassword',
                 },
                 {
-                  text: 'X509',
+                  text: 'X509 Security Scheme',
                   link: '/X509',
                 },
               ]
