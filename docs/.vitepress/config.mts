@@ -624,12 +624,12 @@ export default defineConfig({
     })
 
     if (ogImagePath.length > 0) {
-      headers.push(['meta', { property: 'og:image', content: `https://asyncapi-developer-portal.netlify.app${ogImagePath}` }])
+      headers.push(['meta', { property: 'og:image', content: `https://asyncapi.pavelon.dev${ogImagePath}` }])
     }
     return headers
   },
 
   sitemap: {
-    hostname: 'https://asyncapi-developer-portal.netlify.app'
+    hostname: 'https://asyncapi.pavelon.dev'
   },
 })
