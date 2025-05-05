@@ -110,6 +110,6 @@ This schema indicates that an HTTP security scheme must be one of the following:
 - An API Key HTTP security scheme
 
 For more detailed information about each specific HTTP security scheme, refer to:
-- [Bearer HTTP Security Scheme](./bearerHTTPSecurityScheme.md)
-- [API Key HTTP Security Scheme](./apiKeyHTTPSecurityScheme.md)
-- [Non-Bearer HTTP Security Schemes](./nonBearerHTTPSecurityScheme.md)
+- [Bearer HTTP Security Scheme](bearerHTTPSecurityScheme.md)
+- [API Key HTTP Security Scheme](apiKeyHTTPSecurityScheme.md)
+- [Non-Bearer HTTP Security Schemes](nonBearerHTTPSecurityScheme.md)

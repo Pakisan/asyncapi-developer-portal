@@ -10,7 +10,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Bindings', link: '/bindings', activeMatch: '\/bindings.+' },
       { text: 'Schemes', link: '/schemes', activeMatch: '\/schemes.+' },
-      { text: 'Security schemes', link: '/security-schemes', activeMatch: '\/security-schemes.+' }
+      { text: 'Security schemes', link: '/schemes/v3/security', activeMatch: '\/schemes/v3/security.+' }
     ],
 
     sidebar: {
@@ -486,17 +486,17 @@ export default defineConfig({
           ]
         }
       ],
-      '/security-schemes': [
+      '/schemes/v3/security': [
         {
           text: 'Security schemes',
           link: '/',
-          base: '/security-schemes',
+          base: '/schemes/v3/security',
           items: [
             {
               text: 'HTTP',
               collapsed: false,
               link: '/httpSecurityScheme',
-              base: '/security-schemes/http',
+              base: '/schemes/v3/security/http',
               items: [
                 {
                   text: 'API Key',
@@ -516,7 +516,7 @@ export default defineConfig({
               text: 'OAuth2',
               collapsed: false,
               link: '/oauth2',
-              base: '/security-schemes',
+              base: '/schemes/v3/security',
               items: [
                 {
                   text: 'Authorization Code',
@@ -540,7 +540,7 @@ export default defineConfig({
               text: 'SASL',
               collapsed: false,
               link: '/saslSecurityScheme',
-              base: '/sasl',
+              base: '/schemes/v3/security/sasl',
               items: [
                 {
                   text: 'GSS-API',
