@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/security-schemes/http/httpSecurityScheme.json",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/http/httpSecurityScheme.json",
   "$comment": "API Key HTTP Security Scheme test cases",
   "tests": [
     {

@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/security-schemes/asymmetricEncryption.json",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/sasl/saslPlainSecurityScheme.json",
   "$comment": "Asymmetric Encryption Security Scheme test cases",
   "tests": [
     {
@@ -8,27 +8,27 @@
       "data": {}
     },
     {
-      "description": "Is valid when `type` is asymmetricEncryption",
+      "description": "Is valid when `type` is plain",
       "valid": true,
       "data": {
-        "type": "asymmetricEncryption",
-        "description": "userPassword"
+        "type": "plain",
+        "description": "plain"
       }
     },
     {
-      "description": "Is not valid when `type` is not asymmetricEncryption",
+      "description": "Is not valid when `type` is not plain",
       "valid": false,
       "data": {
-        "type": "asymmetric-encryption",
-        "description": "asymmetricEncryption"
+        "type": "plain-type",
+        "description": "plain"
       }
     },
     {
       "description": "Is valid when is correctly extended",
       "valid": true,
       "data": {
-        "type": "asymmetricEncryption",
-        "description": "asymmetricEncryption",
+        "type": "plain",
+        "description": "plain",
         "x-number" : 0,
         "x-string" : "",
         "x-object" : {
@@ -40,8 +40,8 @@
       "description": "Is not valid when is wrongly extended",
       "valid": false,
       "data": {
-        "type": "asymmetricEncryption",
-        "description": "asymmetricEncryption",
+        "type": "plain",
+        "description": "plain",
         "ext-number": 1
       }
     }

@@ -1,6 +1,6 @@
 {
-  "target": "http://localhost:5173/security-schemes/http/nonBearerHTTPSecurityScheme.json",
-  "$comment": "Not Bearer HTTP Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/http/bearerHTTPSecurityScheme.json",
+  "$comment": "Bearer HTTP Security Scheme test cases",
   "tests": [
     {
       "description": "The empty object is not valid",
@@ -12,11 +12,11 @@
       "valid": true,
       "data": {
         "type": "http",
-        "scheme": "basic"
+        "scheme": "bearer"
       }
     },
     {
-      "description": "Is not valid when `scheme` is bearer",
+      "description": "Is not valid when `type` is not http",
       "valid": false,
       "data": {
         "type": "https",
@@ -24,12 +24,21 @@
       }
     },
     {
+      "description": "Is not valid when `scheme` is not bearer",
+      "valid": false,
+      "data": {
+        "type": "http",
+        "scheme": "token"
+      }
+    },
+    {
       "description": "Is valid",
       "valid": true,
       "data": {
-        "type" : "http",
-        "description" : "http",
-        "scheme" : "basic"
+        "type": "http",
+        "description": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     },
     {
@@ -38,7 +47,8 @@
       "data": {
         "type" : "http",
         "description" : "http",
-        "scheme" : "basic",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT",
         "x-number" : 0,
         "x-string" : "",
         "x-object" : {
@@ -52,8 +62,9 @@
       "data": {
         "type" : "http",
         "description" : "http",
-        "scheme" : "basic",
-        "ext-number" : 1
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT",
+        "ext-number": 1
       }
     }
   ]

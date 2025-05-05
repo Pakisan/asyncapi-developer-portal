@@ -1,6 +1,6 @@
 {
-  "target": "http://localhost:5173/security-schemes/sasl/saslPlainSecurityScheme.json",
-  "$comment": "Asymmetric Encryption Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/X509.json",
+  "$comment": "X509 Security Scheme test cases",
   "tests": [
     {
       "description": "The empty object is not valid",
@@ -8,27 +8,27 @@
       "data": {}
     },
     {
-      "description": "Is valid when `type` is plain",
+      "description": "Is valid when `type` is X509",
       "valid": true,
       "data": {
-        "type": "plain",
-        "description": "plain"
+        "type": "X509",
+        "description": "X509"
       }
     },
     {
-      "description": "Is not valid when `type` is not plain",
+      "description": "Is not valid when `type` is not X509",
       "valid": false,
       "data": {
-        "type": "plain-type",
-        "description": "plain"
+        "type": "X 509",
+        "description": "X509"
       }
     },
     {
       "description": "Is valid when is correctly extended",
       "valid": true,
       "data": {
-        "type": "plain",
-        "description": "plain",
+        "type": "X509",
+        "description": "X509",
         "x-number" : 0,
         "x-string" : "",
         "x-object" : {
@@ -40,8 +40,8 @@
       "description": "Is not valid when is wrongly extended",
       "valid": false,
       "data": {
-        "type": "plain",
-        "description": "plain",
+        "type": "X509",
+        "description": "X509",
         "ext-number": 1
       }
     }

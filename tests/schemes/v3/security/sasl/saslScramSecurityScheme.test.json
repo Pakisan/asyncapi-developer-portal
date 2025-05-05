@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/security-schemes/sasl/saslScramSecurityScheme.json",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/sasl/saslScramSecurityScheme.json",
   "$comment": "Asymmetric Encryption Security Scheme test cases",
   "tests": [
     {

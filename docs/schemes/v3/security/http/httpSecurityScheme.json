@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://localhost:5173/security-schemes/http/httpSecurityScheme.json",
+  "$id": "https://asyncapi.pavelon.dev/schemes/v3/security/http/httpSecurityScheme.json",
   "oneOf": [
     {
-      "$ref": "http://localhost:5173/security-schemes/http/nonBearerHTTPSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/nonBearerHTTPSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/http/bearerHTTPSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/bearerHTTPSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/http/apiKeyHTTPSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/apiKeyHTTPSecurityScheme.json"
     }
   ]
 }

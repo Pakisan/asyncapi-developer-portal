@@ -92,13 +92,13 @@ The AsyncAPI specification for HTTP security follows this JSON Schema:
 {
   "oneOf": [
     {
-      "$ref": "http://localhost:5173/security-schemes/http/nonBearerHTTPSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/nonBearerHTTPSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/http/bearerHTTPSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/bearerHTTPSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/http/apiKeyHTTPSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/apiKeyHTTPSecurityScheme.json"
     }
   ]
 }

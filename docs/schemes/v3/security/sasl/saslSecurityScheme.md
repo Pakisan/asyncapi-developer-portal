@@ -107,13 +107,13 @@ The AsyncAPI specification for SASL security follows this JSON Schema:
 {
   "oneOf": [
     {
-      "$ref": "http://localhost:5173/security-schemes/sasl/saslPlainSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/sasl/saslPlainSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/sasl/saslScramSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/sasl/saslScramSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/sasl/saslGssapiSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/sasl/saslGssapiSecurityScheme.json"
     }
   ]
 }

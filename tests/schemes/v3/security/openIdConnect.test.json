@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/security-schemes/openIdConnect.json",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/openIdConnect.json",
   "$comment": "OpenID Security Scheme test cases",
   "tests": [
     {

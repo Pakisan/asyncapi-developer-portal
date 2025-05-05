@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://localhost:5173/security-schemes/oauth2/oauth2Scopes.json",
+  "$id": "https://asyncapi.pavelon.dev/schemes/v3/security/oauth2/oauth2Scopes.json",
   "type": "object",
   "additionalProperties": {
     "type": "string"

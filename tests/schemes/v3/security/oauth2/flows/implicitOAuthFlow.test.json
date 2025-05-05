@@ -1,6 +1,6 @@
 {
-  "target": "http://localhost:5173/security-schemes/oauth2/flows/passwordOAuthFlow.json",
-  "$comment": "Password OAuth Flow test cases",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/oauth2/flows/implicitOAuthFlow.json",
+  "$comment": "Implicit OAuth Flow test cases",
   "tests": [
     {
       "description": "The empty object is not valid",
@@ -11,7 +11,7 @@
       "description": "Is valid with only required properties",
       "valid": true,
       "data": {
-        "tokenUrl": "https://example.com/api/oauth/token",
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
         "availableScopes": {
           "write:pets": "modify pets in your account",
           "read:pets": "read your pets"
@@ -22,7 +22,7 @@
       "description": "Is valid",
       "valid": true,
       "data": {
-        "tokenUrl": "https://example.com/api/oauth/token",
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
         "refreshUrl": "https://example.com/api/oauth/refresh",
         "availableScopes": {
           "write:pets": "modify pets in your account",
@@ -34,7 +34,7 @@
       "description": "Is valid when is correctly extended",
       "valid": true,
       "data": {
-        "tokenUrl": "https://example.com/api/oauth/token",
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
         "refreshUrl": "https://example.com/api/oauth/refresh",
         "availableScopes": {
           "write:pets": "modify pets in your account",
@@ -51,7 +51,7 @@
       "description": "Is not valid when is wrongly extended",
       "valid": false,
       "data": {
-        "tokenUrl": "https://example.com/api/oauth/token",
+        "authorizationUrl": "https://example.com/api/oauth/dialog",
         "refreshUrl": "https://example.com/api/oauth/refresh",
         "availableScopes": {
           "write:pets": "modify pets in your account",

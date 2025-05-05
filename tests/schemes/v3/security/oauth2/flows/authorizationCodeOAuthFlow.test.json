@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/security-schemes/oauth2/flows/authorizationCodeOAuthFlow.json",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/oauth2/flows/authorizationCodeOAuthFlow.json",
   "$comment": "Password OAuth Flow test cases",
   "tests": [
     {

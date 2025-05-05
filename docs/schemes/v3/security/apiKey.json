@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://localhost:5173/security-schemes/apiKey.json",
+  "$id": "https://asyncapi.pavelon.dev/schemes/v3/security/apiKey.json",
   "type": "object",
   "required": [ "type", "in" ],
   "properties": {

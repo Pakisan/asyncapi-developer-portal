@@ -1,34 +1,34 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://localhost:5173/security-schemes/securityScheme.json",
+  "$id": "https://asyncapi.pavelon.dev/schemes/v3/security/securityScheme.json",
   "description": "Defines a security scheme that can be used by the operations.",
   "oneOf": [
     {
-      "$ref": "http://localhost:5173/security-schemes/userPassword.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/userPassword.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/apiKey.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/apiKey.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/X509.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/X509.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/symmetricEncryption.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/symmetricEncryption.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/asymmetricEncryption.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/asymmetricEncryption.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/http/httpSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/http/httpSecurityScheme.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/oauth2/oauth2.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/oauth2/oauth2.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/openIdConnect.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/openIdConnect.json"
     },
     {
-      "$ref": "http://localhost:5173/security-schemes/sasl/saslSecurityScheme.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemes/v3/security/sasl/saslSecurityScheme.json"
     }
   ]
 }

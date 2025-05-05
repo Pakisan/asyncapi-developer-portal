@@ -1,6 +1,6 @@
 {
-  "target": "http://localhost:5173/security-schemes/userPassword.json",
-  "$comment": "User Password Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/symmetricEncryption.json",
+  "$comment": "Symmetric Encryption Security Scheme test cases",
   "tests": [
     {
       "description": "The empty object is not valid",
@@ -8,27 +8,27 @@
       "data": {}
     },
     {
-      "description": "Is valid when `type` is userPassword",
+      "description": "Is valid when `type` is symmetricEncryption",
       "valid": true,
       "data": {
-        "type": "userPassword",
+        "type": "symmetricEncryption",
         "description": "userPassword"
       }
     },
     {
-      "description": "Is not valid when `type` is not userPassword",
+      "description": "Is not valid when `type` is not symmetricEncryption",
       "valid": false,
       "data": {
-        "type": "user-password",
-        "description": "userPassword"
+        "type": "symmetric-encryption",
+        "description": "symmetricEncryption"
       }
     },
     {
       "description": "Is valid when is correctly extended",
       "valid": true,
       "data": {
-        "type": "userPassword",
-        "description": "userPassword",
+        "type": "symmetricEncryption",
+        "description": "symmetricEncryption",
         "x-number" : 0,
         "x-string" : "",
         "x-object" : {
@@ -40,8 +40,8 @@
       "description": "Is not valid when is wrongly extended",
       "valid": false,
       "data": {
-        "type": "userPassword",
-        "description": "userPassword",
+        "type": "symmetricEncryption",
+        "description": "symmetricEncryption",
         "ext-number": 1
       }
     }
