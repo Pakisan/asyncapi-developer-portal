@@ -10,7 +10,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Bindings', link: '/bindings', activeMatch: '\/bindings.+' },
       { text: 'Schemes', link: '/schemes', activeMatch: '\/schemes.+' },
-      { text: 'Security schemes', link: '/schemes/v3/security', activeMatch: '\/schemes/v3/security.+' }
     ],
 
     sidebar: {
@@ -486,100 +485,108 @@ export default defineConfig({
           ]
         }
       ],
-      '/schemes/v3/security': [
+      '/schemes': [
         {
-          text: 'Security schemes',
-          link: '/',
-          base: '/schemes/v3/security',
+          text: 'Security Schemes',
           items: [
             {
-              text: 'HTTP',
-              collapsed: false,
-              link: '/httpSecurityScheme',
-              base: '/schemes/v3/security/http',
-              items: [
-                {
-                  text: 'API Key',
-                  link: '/apiKeyHTTPSecurityScheme',
-                },
-                {
-                  text: 'Bearer',
-                  link: '/bearerHTTPSecurityScheme',
-                },
-                {
-                  text: 'Non Bearer',
-                  link: '/nonBearerHTTPSecurityScheme',
-                },
-              ]
+              text: 'v2',
+              base: '/schemes/v2/security',
             },
             {
-              text: 'OAuth2',
-              collapsed: false,
-              link: '/oauth2',
+              text: 'v3',
               base: '/schemes/v3/security',
               items: [
                 {
-                  text: 'Authorization Code',
-                  link: '/authorizationCodeOAuthFlow',
+                  text: 'HTTP',
+                  collapsed: false,
+                  link: '/httpSecurityScheme',
+                  base: '/schemes/v3/security/http',
+                  items: [
+                    {
+                      text: 'API Key',
+                      link: '/apiKeyHTTPSecurityScheme',
+                    },
+                    {
+                      text: 'Bearer',
+                      link: '/bearerHTTPSecurityScheme',
+                    },
+                    {
+                      text: 'Non Bearer',
+                      link: '/nonBearerHTTPSecurityScheme',
+                    },
+                  ]
                 },
                 {
-                  text: 'Client Credentials',
-                  link: '/clientCredentialsOAuthFlow',
+                  text: 'OAuth2',
+                  collapsed: false,
+                  link: '/oauth2',
+                  base: '/schemes/v3/security',
+                  items: [
+                    {
+                      text: 'Authorization Code',
+                      link: '/authorizationCodeOAuthFlow',
+                    },
+                    {
+                      text: 'Client Credentials',
+                      link: '/clientCredentialsOAuthFlow',
+                    },
+                    {
+                      text: 'Implicit',
+                      link: '/implicitOAuthFlow',
+                    },
+                    {
+                      text: 'Password',
+                      link: '/passwordOAuthFlow',
+                    },
+                  ]
                 },
                 {
-                  text: 'Implicit',
-                  link: '/implicitOAuthFlow',
+                  text: 'SASL',
+                  collapsed: false,
+                  link: '/saslSecurityScheme',
+                  base: '/schemes/v3/security/sasl',
+                  items: [
+                    {
+                      text: 'GSS-API',
+                      link: '/saslGssapiSecurityScheme',
+                    },
+                    {
+                      text: 'Plain',
+                      link: '/saslPlainSecurityScheme',
+                    },
+                    {
+                      text: 'SCRAM',
+                      link: '/saslScramSecurityScheme',
+                    },
+                  ]
                 },
                 {
-                  text: 'Password',
-                  link: '/passwordOAuthFlow',
+                  text: 'API Key',
+                  link: '/apiKey',
+                },
+                {
+                  text: 'Asymmetric Encryption',
+                  link: '/asymmetricEncryption',
+                },
+                {
+                  text: 'OpenID Connect',
+                  link: '/openIdConnect',
+                },
+                {
+                  text: 'Symmetric Encryption',
+                  link: '/symmetricEncryption',
+                },
+                {
+                  text: 'User Password',
+                  link: '/userPassword',
+                },
+                {
+                  text: 'X509',
+                  link: '/X509',
                 },
               ]
-            },
-            {
-              text: 'SASL',
-              collapsed: false,
-              link: '/saslSecurityScheme',
-              base: '/schemes/v3/security/sasl',
-              items: [
-                {
-                  text: 'GSS-API',
-                  link: '/saslGssapiSecurityScheme',
-                },
-                {
-                  text: 'Plain',
-                  link: '/saslPlainSecurityScheme',
-                },
-                {
-                  text: 'SCRAM',
-                  link: '/saslScramSecurityScheme',
-                },
-              ]
-            },
-            {
-              text: 'API Key',
-              link: '/apiKey',
-            },
-            {
-              text: 'Asymmetric Encryption',
-              link: '/asymmetricEncryption',
-            },
-            {
-              text: 'OpenID Connect',
-              link: '/openIdConnect',
-            },
-            {
-              text: 'Symmetric Encryption',
-              link: '/symmetricEncryption',
-            },
-            {
-              text: 'User Password',
-              link: '/userPassword',
-            },
-            {
-              text: 'X509',
-              link: '/X509',
-            },
+            }
           ]
         }
       ]
