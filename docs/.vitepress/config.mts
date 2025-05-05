@@ -508,15 +508,15 @@ export default defineConfig({
                   base: '/schemes/v3/security/http',
                   items: [
                     {
-                      text: 'HTTP API Key Security Scheme',
+                      text: 'API Key HTTP Security Scheme',
                       link: '/apiKeyHTTPSecurityScheme',
                     },
                     {
-                      text: 'HTTP Bearer Security Scheme',
+                      text: 'Bearer HTTP Security Scheme',
                       link: '/bearerHTTPSecurityScheme',
                     },
                     {
-                      text: 'HTTP Non Bearer Security Scheme',
+                      text: 'Non Bearer HTTP Security Scheme',
                       link: '/nonBearerHTTPSecurityScheme',
                     },
                   ]
