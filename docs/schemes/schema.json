@@ -17,66 +17,66 @@
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+            "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
           }
         },
         "anyOf": {
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+            "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
           }
         },
         "oneOf": {
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+            "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
           }
         },
         "not": {
-          "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+          "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
         },
         "contains": {
-          "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+          "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
         },
         "items": {
           "default": {},
           "anyOf": [
             {
-              "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+              "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
             },
             {
               "type": "array",
               "minItems": 1,
               "items": {
-                "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+                "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
               }
             }
           ]
         },
         "propertyNames": {
-          "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+          "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
         },
         "properties": {
           "default": {},
           "type": "object",
           "additionalProperties": {
-            "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+            "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
           }
         },
         "patternProperties": {
           "default": {},
           "type": "object",
           "additionalProperties": {
-            "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+            "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
           }
         },
         "additionalProperties": {
           "default": {},
           "anyOf": [
             {
-              "$ref": "https://asyncapi.pavelon.dev//schemes/schema.json"
+              "$ref": "https://asyncapi.pavelon.dev/schemes/schema.json"
             },
             {
               "type": "boolean"
