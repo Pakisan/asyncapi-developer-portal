@@ -487,6 +487,20 @@ export default defineConfig({
       ],
       '/schemes': [
         {
+          text: 'Schemes',
+          collapsed: false,
+          items: [
+            {
+              text: 'AsyncAPI Schema',
+              link: '/schemes/schema',
+            },
+            {
+              text: 'AsyncAPI Multi-Format Schema',
+              link: '/schemes/multiFormatSchema',
+            },
+          ]
+        },
+        {
           text: 'Security Schemes',
           collapsed: false,
           items: [
