@@ -152,7 +152,7 @@ For more detailed information about specific security schemes, refer to:
 - [Symmetric Encryption Security Scheme](symmetricEncryption.md)
 - [Asymmetric Encryption Security Scheme](asymmetricEncryption.md)
 - [HTTP Security Scheme](http/httpSecurityScheme.md)
-- [OAuth 2.0 Security Scheme](oauth2.md)
+- [OAuth 2.0 Security Scheme](oauth2/oauth2.md)
 - [OpenID Connect Security Scheme](openIdConnect.md)
 - [SASL Security Scheme](sasl/saslSecurityScheme.md)
 
