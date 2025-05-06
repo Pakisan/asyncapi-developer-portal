@@ -102,5 +102,46 @@
         "^x-[\\w\\d\\.\\x2d_]+$": true
       }
     }
+  ],
+  "examples": [
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/asyncapi/arrays.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/asyncapi/complex-object.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/asyncapi/person.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/arrays.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/complex-object.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/enumerated-values.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/person.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/regex-pattern.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemes/json/draft-07-core-schema-meta-schema.json"
+    }
   ]
 }
