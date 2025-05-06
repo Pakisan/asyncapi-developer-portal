@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "http://localhost:5173/info/infoExtensions.json",
   "description": "The object that lists all the extensions of Info",
   "type": "object",

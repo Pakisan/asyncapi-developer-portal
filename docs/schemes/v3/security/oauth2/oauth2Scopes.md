@@ -200,7 +200,7 @@ The AsyncAPI specification for OAuth2 Scopes follows this JSON Schema:
 
 ```json
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://asyncapi.pavelon.dev/schemes/v3/security/oauth2/oauth2Scopes.json",
   "type": "object",
   "additionalProperties": {

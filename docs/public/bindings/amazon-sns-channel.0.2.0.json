@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://asyncapi.com/bindings/sns/0.2.0/channel.json",
     "title": "Channel Schema",
     "description": "This object contains information about the channel representation in SNS.",
