@@ -488,6 +488,7 @@ export default defineConfig({
       '/schemes': [
         {
           text: 'Security Schemes',
+          collapsed: false,
           items: [
             {
               text: 'v2',
@@ -525,24 +526,34 @@ export default defineConfig({
                   text: 'OAuth2 Security Scheme',
                   collapsed: false,
                   link: '/oauth2',
-                  base: '/schemes/v3/security',
+                  base: '/schemes/v3/security/oauth2',
                   items: [
                     {
-                      text: 'Authorization Code',
-                      link: '/authorizationCodeOAuthFlow',
+                      text: 'Flows',
+                      collapsed: false,
+                      items: [
+                        {
+                          text: "Authorization Code",
+                          link: '/flows/authorizationCodeOAuthFlow',
+                        },
+                        {
+                          text: "Client Credentials",
+                          link: '/flows/clientCredentialsOAuthFlow',
+                        },
+                        {
+                          text: "Implicit Flow",
+                          link: '/flows/implicitOAuthFlow',
+                        },
+                        {
+                          text: "Password Flow",
+                          link: '/flows/passwordOAuthFlow',
+                        }
+                      ]
                     },
                     {
-                      text: 'Client Credentials',
-                      link: '/clientCredentialsOAuthFlow',
-                    },
-                    {
-                      text: 'Implicit',
-                      link: '/implicitOAuthFlow',
-                    },
-                    {
-                      text: 'Password',
-                      link: '/passwordOAuthFlow',
-                    },
+                      text: 'Scopes',
+                      link: '/oauth2Scopes',
+                    }
                   ]
                 },
                 {
