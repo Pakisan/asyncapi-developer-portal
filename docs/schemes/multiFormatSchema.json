@@ -230,6 +230,22 @@
     {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/draft-07-core-schema-meta-schema.yaml"},
     {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/enumerated-values.schema.yaml"},
     {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/person.schema.yaml"},
-    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/regex-pattern.schema.yaml"}
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/regex-pattern.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi+json/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi+yaml/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi+json/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi+yaml/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi+json/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi+yaml/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi+json/schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi+yaml/schema.yaml"}
   ]
 }
