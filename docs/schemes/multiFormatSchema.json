@@ -260,6 +260,20 @@
     {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20empty/draft-07-core-schema-meta-schema.yaml"},
     {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20empty/enumerated-values.schema.yaml"},
     {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20empty/person.schema.yaml"},
-    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20empty/regex-pattern.schema.yaml"}
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20empty/regex-pattern.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/arrays.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/complex-object.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/conditional-validation-if-else.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/draft-07-core-schema-meta-schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/enumerated-values.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/person.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/regex-pattern.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/arrays.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/complex-object.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/conditional-validation-if-else.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/draft-07-core-schema-meta-schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/enumerated-values.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/person.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/schemaFormat%20is%20null/regex-pattern.schema.yaml"}
   ]
 }
