@@ -301,6 +301,76 @@
       "description": "schemaFormat is application/vnd.oai.openapi+yaml;version=3.0.3",
       "valid": true,
       "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/schema+json;version=draft-07 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/schema+yaml;version=draft-07 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/regex-pattern.schema.yaml"
     }
   ]
 }
