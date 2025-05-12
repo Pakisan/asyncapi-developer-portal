@@ -1,0 +1,156 @@
+{
+  "target": "https://asyncapi.pavelon.dev/schemes/schema.json",
+  "$comment": "Multiformat Schema test cases",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    },
+    {
+      "description": "without schemaFormat - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/arrays.schema.json"
+    },
+    {
+      "description": "without schemaFormat - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/arrays.schema.yaml"
+    },
+    {
+      "description": "without schemaFormat - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/complex-object.schema.json"
+    },
+    {
+      "description": "without schemaFormat - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/complex-object.schema.yaml"
+    },
+    {
+      "description": "without schemaFormat - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "without schemaFormat - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "without schemaFormat - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "without schemaFormat - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "without schemaFormat - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/enumerated-values.schema.json"
+    },
+    {
+      "description": "without schemaFormat - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "without schemaFormat - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/person.schema.json"
+    },
+    {
+      "description": "without schemaFormat - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/person.schema.yaml"
+    },
+    {
+      "description": "without schemaFormat - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/regex-pattern.schema.json"
+    },
+    {
+      "description": "without schemaFormat - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/without schemaFormat/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    },
+    {
+      "description": "schemaFormat is null - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is null - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is null - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is null - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is null - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is null - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is null - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is null - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is null - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is null - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is null - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is null - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is null - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is null - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is null/regex-pattern.schema.yaml"
+    }
+  ]
+}
