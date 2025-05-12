@@ -215,5 +215,21 @@
   },
   "patternProperties": {
     "^x-[\\w\\d\\.\\x2d_]+$": true
-  }
+  },
+  "examples": [
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/arrays.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/complex-object.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/conditional-validation-if-else.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/draft-07-core-schema-meta-schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/enumerated-values.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/person.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+json/regex-pattern.schema.json"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/arrays.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/complex-object.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/conditional-validation-if-else.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/draft-07-core-schema-meta-schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/enumerated-values.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/person.schema.yaml"},
+    {"$ref": "http://localhost:5173/examples/schemes/multiformat/json/schema+yaml/regex-pattern.schema.yaml"}
+  ]
 }
