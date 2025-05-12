@@ -221,6 +221,86 @@
       "description": "schemaFormat is empty - regex-pattern.schema.yaml",
       "valid": true,
       "dataPath": "../docs/public/examples/schemes/multiformat/schemaFormat is empty/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.0",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+json;version=3.0.0",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.0",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+yaml;version=3.0.0",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.0/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.1",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+json;version=3.0.1",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.1",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+yaml;version=3.0.1",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.1/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.2",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+json;version=3.0.2",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.2",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+yaml;version=3.0.2",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.2/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.3",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+json;version=3.0.3",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi;version=3.0.3",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.oai.openapi+yaml;version=3.0.3",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.yaml"
     }
   ]
 }
