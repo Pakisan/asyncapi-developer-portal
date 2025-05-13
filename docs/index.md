@@ -20,5 +20,8 @@ head:
   - - meta
     - name: "og:image"
       content: "/asyncapi.png"
+  - - meta
+    - name: "og:description"
+      content: "AsyncAPI Developer Network - place where you can find information about AsyncAPI specification and its components"
 ---
 
