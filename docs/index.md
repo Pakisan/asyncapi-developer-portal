@@ -11,11 +11,6 @@ features:
       link: /bindings
       icon:
         src: /bindings-icon.svg
-    - title: Security schemes
-      link: security-schemes
-      details: Everything you should to now about AsyncAPI security schemes
-      icon:
-        src: /security-icon.svg
     - title: Schemes
       link: /schemes
       details: Everything you should to now about AsyncAPI schemes
