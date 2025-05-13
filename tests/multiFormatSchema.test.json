@@ -3251,6 +3251,1126 @@
       "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - union_and_fixed_fields.yaml",
       "valid": true,
       "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.0.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.0.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.0.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.0.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.1.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.1.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.1.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.1.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.2.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.2.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.2.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.2.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.3.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.3.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.3.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.3.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.4.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.4.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.4.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.4.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.5.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.5.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.5.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.5.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=2.6.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=2.6.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=2.6.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/2.6.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - arrays.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/arrays.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - complex-object.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/complex-object.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - conditional-validation-if-else.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - draft-07-core-schema-meta-schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/draft-07-core-schema-meta-schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - enumerated-values.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/enumerated-values.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - person.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/person.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+json;version=3.0.0 - regex-pattern.schema.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+json/regex-pattern.schema.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi;version=3.0.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - arrays.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/arrays.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - complex-object.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/complex-object.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - conditional-validation-if-else.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/conditional-validation-if-else.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - draft-07-core-schema-meta-schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/draft-07-core-schema-meta-schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - enumerated-values.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/enumerated-values.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - person.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/person.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - regex-pattern.schema.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
     }
   ]
 }
