@@ -371,6 +371,2886 @@
       "description": "schemaFormat is application/schema+yaml;version=draft-07 - regex-pattern.schema.yaml",
       "valid": true,
       "dataPath": "../docs/public/examples/schemes/multiformat/json/schema+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.0 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.0 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.0 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.0/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.1 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.1 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.1 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.1/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.9.2 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.9.2 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.9.2 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.9.2/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.0 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.0 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.0 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.0/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.1 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.1 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.1 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.1/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.10.2 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.10.2 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.10.2 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.10.2/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.0 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.0 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.0 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.0/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - ApplicationEvent.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/ApplicationEvent.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - DocumentInfo.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/DocumentInfo.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - foo.Bar.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/foo.Bar.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - full_record_v1.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/full_record_v1.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - full_record_v2.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/full_record_v2.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - logical-uuid.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/logical-uuid.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - logical_types_with_multiple_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/logical_types_with_multiple_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - MyResponse.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/MyResponse.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - regression_error_field_in_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/regression_error_field_in_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - schema-location.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/schema-location.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - schema-location-read.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/schema-location-read.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - schema-location-write.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/schema-location-write.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - SchemaBuilder.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/SchemaBuilder.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - simple_record.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/simple_record.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - TestRecordWithLogicalTypes.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/TestRecordWithLogicalTypes.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - TestRecordWithMapsAndArrays.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/TestRecordWithMapsAndArrays.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - TestUnionRecord.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/TestUnionRecord.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+json;version=1.11.1 - union_and_fixed_fields.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+json/union_and_fixed_fields.json"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro;version=1.11.1 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro/union_and_fixed_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - ApplicationEvent.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/ApplicationEvent.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - DocumentInfo.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/DocumentInfo.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - foo.Bar.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/foo.Bar.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - full_record_v1.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/full_record_v1.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - full_record_v2.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/full_record_v2.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - logical-uuid.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/logical-uuid.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - logical_types_with_multiple_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/logical_types_with_multiple_fields.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - MyResponse.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/MyResponse.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - regression_error_field_in_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/regression_error_field_in_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - schema-location.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/schema-location.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - schema-location-read.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/schema-location-read.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - schema-location-write.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/schema-location-write.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - SchemaBuilder.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/SchemaBuilder.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - simple_record.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/simple_record.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - TestRecordWithLogicalTypes.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/TestRecordWithLogicalTypes.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - TestRecordWithMapsAndArrays.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/TestRecordWithMapsAndArrays.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - TestUnionRecord.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/TestUnionRecord.yaml"
+    },
+    {
+      "description": "schemaFormat is application/vnd.apache.avro+yaml;version=1.11.1 - union_and_fixed_fields.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/avro/1.11.1/vnd.apache.avro+yaml/union_and_fixed_fields.yaml"
     }
   ]
 }
