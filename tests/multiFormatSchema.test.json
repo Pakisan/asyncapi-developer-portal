@@ -4371,6 +4371,16 @@
       "description": "schemaFormat is application/vnd.aai.asyncapi+yaml;version=3.0.0 - regex-pattern.schema.yaml",
       "valid": true,
       "dataPath": "../docs/public/examples/schemes/multiformat/asyncapi/3.0.0/vnd.aai.asyncapi+yaml/regex-pattern.schema.yaml"
+    },
+    {
+      "description": "schemaFormat is application/xml - user.json",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/xml/user.json"
+    },
+    {
+      "description": "schemaFormat is application/xml - user.yaml",
+      "valid": true,
+      "dataPath": "../docs/public/examples/schemes/multiformat/xml/user.yaml"
     }
   ]
 }

@@ -289,6 +289,58 @@ OpenAPI Schema is based on JSON Schema but includes extensions specific to the O
 
 - **schema** - OpenAPI 3.0.3 schema with latest features ([JSON](/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.json), [YAML](/examples/schemes/multiformat/openapi/3.0.3/vnd.oai.openapi/schema.yaml))
 
+## XML
+
+XML Schema Definition (XSD) is a recommendation of the World Wide Web Consortium that specifies how to formally describe the elements in an XML document. XSD defines the structure, content, and semantics of XML documents, allowing for validation and strong typing of XML data.
+
+In AsyncAPI, XML schemas can be used to define message payloads when working with XML-based protocols or systems that require XML data formats. The XML schema is embedded within the AsyncAPI document using the `schemaFormat` property set to `application/xml`.
+
+XML schemas offer several advantages for API definitions:
+
+- **Strong typing and validation**: XSD provides robust validation capabilities with built-in data types and constraints
+- **Wide industry adoption**: XML is supported across many enterprise systems and legacy applications
+- **Rich expression**: Complex data structures can be precisely defined with namespaces, attributes, and elements
+- **Tooling support**: Many tools exist for working with XML schemas, including validators and code generators
+
+#### When to Use XML Schemas in AsyncAPI
+
+XML schemas are particularly useful in the following scenarios:
+
+- Integrating with enterprise systems that use XML as their primary data format
+- Working with SOAP-based services or XML-RPC
+- Maintaining backward compatibility with existing XML-based APIs
+- Industries with established XML standards (like finance, healthcare, or telecommunications)
+- When strong validation and type checking are required
+
+#### Examples
+
+- **User Schema** - Defines a simple user data structure with display name and email ([JSON](/examples/schemes/multiformat/xml/user.json), [YAML](/examples/schemes/multiformat/xml/user.yaml))
+
+The User schema example demonstrates how to embed an XML schema within an AsyncAPI document. The schema defines a `User` element with two child elements:
+
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="User">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="displayName" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Name of the user</xs:documentation>
+            </xs:annotation>
+        </xs:element>
+        <xs:element name="email" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Email of the user</xs:documentation>
+            </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+
+This schema can be used to validate XML messages that contain user information, ensuring they have the required `displayName` and `email` elements with proper string values.
+
 ## Other Formats
 
 AsyncAPI also supports several other schema formats:
@@ -305,12 +357,6 @@ Protocol Buffers (Protobuf) is Google's language-neutral, platform-neutral, exte
 
 - **application/vnd.google.protobuf;version=2** - Protobuf version 2 schema format
 - **application/vnd.google.protobuf;version=3** - Protobuf version 3 schema format
-
-### XML
-
-XML Schema Definition (XSD) is a recommendation of the World Wide Web Consortium that specifies how to formally describe the elements in an XML document.
-
-- **application/xml** - XML schema format
 
 ## Special Cases
 
