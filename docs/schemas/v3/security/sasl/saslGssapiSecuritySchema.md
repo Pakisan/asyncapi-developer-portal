@@ -1,6 +1,7 @@
 ---
 title: SASL GSS-API Security Schema
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslGssapiSecuritySchema.html'
 ---
 
 # {{ $frontmatter.title }}

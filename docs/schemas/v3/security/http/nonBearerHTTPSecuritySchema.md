@@ -1,6 +1,7 @@
 ---
 title: Non-Bearer HTTP Security Schemas
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html'
 ---
 
 # {{ $frontmatter.title }}

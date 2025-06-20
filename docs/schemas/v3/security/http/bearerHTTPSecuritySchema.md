@@ -1,6 +1,7 @@
 ---
 title: Bearer HTTP Security Schema
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/http/bearerHTTPSecuritySchema.html'
 ---
 
 # {{ $frontmatter.title }}

@@ -1,6 +1,7 @@
 ---
 title: Username and Password Authentication Security Schema
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/userPassword.html'
 ---
 
 # {{ $frontmatter.title }}

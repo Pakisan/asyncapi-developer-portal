@@ -1,6 +1,7 @@
 ---
 title: API Key Security Schema
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/apiKey.html'
 ---
 
 # {{ $frontmatter.title }}

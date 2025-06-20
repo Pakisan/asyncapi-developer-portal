@@ -1,6 +1,7 @@
 ---
 title: SASL Plain Security Schema
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslPlainSecuritySchema.html'
 ---
 
 # {{ $frontmatter.title }}

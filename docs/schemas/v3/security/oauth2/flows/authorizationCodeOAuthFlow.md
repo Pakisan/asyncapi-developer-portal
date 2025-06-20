@@ -1,6 +1,7 @@
 ---
 title: OAuth2 Authorization Code Flow
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html'
 ---
 
 # {{ $frontmatter.title }}

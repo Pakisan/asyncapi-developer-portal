@@ -1,6 +1,7 @@
 ---
 title: OpenID Connect Security Schema
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/openIdConnect.html'
 ---
 
 # {{ $frontmatter.title }}

@@ -1,6 +1,7 @@
 ---
 title: OAuth2 Scopes
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2Scopes.html'
 ---
 
 # {{ $frontmatter.title }}

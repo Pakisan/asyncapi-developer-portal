@@ -1,6 +1,7 @@
 ---
 title: OAuth2 Client Credentials Flow
 layout: doc
+canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html'
 ---
 
 # {{ $frontmatter.title }}
