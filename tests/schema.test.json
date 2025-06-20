@@ -1,5 +1,5 @@
 {
-  "target": "https://asyncapi.pavelon.dev/schemes/schema.json",
+  "target": "https://asyncapi.pavelon.dev/schemas/schema.json",
   "$comment": "AsyncAPI Schema test cases",
   "tests": [
     {
@@ -10,67 +10,67 @@
     {
       "description": "JSON Schema: Arrays",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/arrays.schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/arrays.schema.json"
     },
     {
       "description": "JSON Schema: Complex Object",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/complex-object.schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/complex-object.schema.json"
     },
     {
       "description": "JSON Schema: Conditional Validation If-Else",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/complex-object.schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/complex-object.schema.json"
     },
     {
       "description": "JSON Schema Draft-07 Core Schema Meta-Schema",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/draft-07-core-schema-meta-schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/draft-07-core-schema-meta-schema.json"
     },
     {
       "description": "JSON Schema: Enumerated Values",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/enumerated-values.schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/enumerated-values.schema.json"
     },
     {
       "description": "JSON Schema: Person",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/person.schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/person.schema.json"
     },
     {
       "description": "JSON Schema: RegEx Pattern",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/json/regex-pattern.schema.json"
+      "dataPath": "../docs/public/examples/schemas/json/regex-pattern.schema.json"
     },
     {
       "description": "AsyncAPI Schema: Arrays",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/asyncapi/arrays.schema.json"
+      "dataPath": "../docs/public/examples/schemas/asyncapi/arrays.schema.json"
     },
     {
       "description": "AsyncAPI Schema: Complex Object",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/asyncapi/complex-object.schema.json"
+      "dataPath": "../docs/public/examples/schemas/asyncapi/complex-object.schema.json"
     },
     {
       "description": "AsyncAPI Schema: Conditional Validation If-Else",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/asyncapi/complex-object.schema.json"
+      "dataPath": "../docs/public/examples/schemas/asyncapi/complex-object.schema.json"
     },
     {
       "description": "AsyncAPI Schema: Enumerated Values",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/asyncapi/enumerated-values.schema.json"
+      "dataPath": "../docs/public/examples/schemas/asyncapi/enumerated-values.schema.json"
     },
     {
       "description": "AsyncAPI Schema: Person",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/asyncapi/person.schema.json"
+      "dataPath": "../docs/public/examples/schemas/asyncapi/person.schema.json"
     },
     {
       "description": "AsyncAPI Schema: RegEx Pattern",
       "valid": true,
-      "dataPath": "../docs/public/examples/schemes/asyncapi/regex-pattern.schema.json"
+      "dataPath": "../docs/public/examples/schemas/asyncapi/regex-pattern.schema.json"
     }
   ]
 }

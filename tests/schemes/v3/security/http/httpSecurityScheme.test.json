@@ -1,6 +1,6 @@
 {
-  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/http/httpSecurityScheme.json",
-  "$comment": "API Key HTTP Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/security/http/httpSecuritySchema.json",
+  "$comment": "API Key HTTP Security Schema test cases",
   "tests": [
     {
       "description": "The empty object is not valid",
@@ -8,7 +8,7 @@
       "data": {}
     },
     {
-      "description": "Is valid when is Bearer HTTP Security Scheme",
+      "description": "Is valid when is Bearer HTTP Security Schema",
       "valid": true,
       "data": {
         "type" : "http",
@@ -18,7 +18,7 @@
       }
     },
     {
-      "description": "Is valid when is Non Bearer HTTP Security Scheme",
+      "description": "Is valid when is Non Bearer HTTP Security Schema",
       "valid": true,
       "data": {
         "type" : "http",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "description": "Is valid when is API Key HTTP Security Scheme",
+      "description": "Is valid when is API Key HTTP Security Schema",
       "valid": true,
       "data": {
         "description": "http",

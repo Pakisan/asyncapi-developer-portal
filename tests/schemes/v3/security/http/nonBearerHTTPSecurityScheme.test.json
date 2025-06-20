@@ -1,6 +1,6 @@
 {
-  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/http/nonBearerHTTPSecurityScheme.json",
-  "$comment": "Not Bearer HTTP Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/security/http/nonBearerHTTPSecuritySchema.json",
+  "$comment": "Not Bearer HTTP Security Schema test cases",
   "tests": [
     {
       "description": "The empty object is not valid",

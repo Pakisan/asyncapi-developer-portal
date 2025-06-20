@@ -11,8 +11,8 @@ features:
       link: /bindings
       icon:
         src: /bindings-icon.svg
-    - title: Schemes
-      link: /schemes
+    - title: Schemas
+      link: /schemas
       details: Everything you should to now about AsyncAPI schemes
       icon:
         src: /json-schema-icon.svg

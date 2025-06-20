@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslSecuritySchema.json",
+  "oneOf": [
+    {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslPlainSecuritySchema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslScramSecuritySchema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslGssapiSecuritySchema.json"
+    }
+  ]
+}

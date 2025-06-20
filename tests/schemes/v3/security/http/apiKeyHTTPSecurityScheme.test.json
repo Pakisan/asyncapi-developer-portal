@@ -1,6 +1,6 @@
 {
-  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/http/apiKeyHTTPSecurityScheme.json",
-  "$comment": "API Key HTTP Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/security/http/apiKeyHTTPSecuritySchema.json",
+  "$comment": "API Key HTTP Security Schema test cases",
   "tests": [
     {
       "description": "The empty object is not valid",

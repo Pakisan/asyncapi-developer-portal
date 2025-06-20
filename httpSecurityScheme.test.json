@@ -1,6 +1,6 @@
 {
-  "target": "https://asyncapi.pavelon.dev/schemes/v3/security/http/httpSecurityScheme.json",
-  "$comment": "HTTP Security Scheme test cases",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/security/http/httpSecuritySchema.json",
+  "$comment": "HTTP Security Schema test cases",
   "tests": [
     {
       "description": "The empty object is valid",
