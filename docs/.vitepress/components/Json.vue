@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {JsonViewer} from "vue3-json-viewer";
-import "vue3-json-viewer/dist/index.css";
+// Import CSS from local styles directory instead of node_modules
+import "../styles/json-viewer.css";
 import { ref, onMounted } from "vue"
 
 const props = defineProps({
