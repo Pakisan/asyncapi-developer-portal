@@ -109,7 +109,7 @@
             "schema": {
               "oneOf": [
                 {
-                  "$ref": "https://asyncapi.pavelon.dev/reference.json"
+                  "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
                 },
                 {
                   "$ref": "https://asyncapi.pavelon.dev/schemas/openapiSchema_3_0.json"
@@ -137,7 +137,7 @@
             "schema": {
               "oneOf": [
                 {
-                  "$ref": "https://asyncapi.pavelon.dev/reference.json"
+                  "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
                 },
                 {
                   "$ref": "https://asyncapi.pavelon.dev/schemas/avroSchema_v1.json"
@@ -166,7 +166,7 @@
             "schema": {
               "oneOf": [
                 {
-                  "$ref": "https://asyncapi.pavelon.dev/reference.json"
+                  "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
                 },
                 {
                   "type": [ "string", "object" ]

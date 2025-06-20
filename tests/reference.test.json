@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/reference.json",
+  "target": "https://asyncapi.pavelon.dev/schemas/reference.json",
   "$comment": "Reference test cases",
   "tests": [
     {

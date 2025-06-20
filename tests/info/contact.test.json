@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/contact.json",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/info/contact.json",
   "$comment": "Contact test cases",
   "tests": [
     {

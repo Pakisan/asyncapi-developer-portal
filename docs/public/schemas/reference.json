@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://localhost:5173/reference.json",
+  "$id": "https://asyncapi.pavelon.dev/schemas/reference.json",
   "description": "A simple object to allow referencing other components in the specification, internally and externally.",
   "type": "object",
   "required": [ "$ref" ],

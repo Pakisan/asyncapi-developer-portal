@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://localhost:5173/tag.json",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/tag.json",
   "description": "Allows adding metadata to a single tag.",
   "type": "object",
   "required": [ "name" ],
@@ -12,10 +12,10 @@
     "externalDocs": {
       "oneOf": [
         {
-          "$ref": "http://localhost:5173/reference.json"
+          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
         },
         {
-          "$ref": "http://localhost:5173/externalDocs.json"
+          "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocs.json"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/tag.json",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/tag.json",
   "$comment": "Tag test cases",
   "tests": [
     {

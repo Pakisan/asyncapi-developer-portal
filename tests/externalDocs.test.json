@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/externalDocs.json",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/externalDocs.json",
   "$comment": "External Documentation test cases",
   "tests": [
     {

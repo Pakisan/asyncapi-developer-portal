@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://localhost:5173/license.json",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/info/license.json",
   "type": "object",
   "required": [ "name" ],
   "properties": {

@@ -90,10 +90,10 @@
         "externalDocs": {
           "oneOf": [
             {
-              "$ref": "http://localhost:5173/reference.json"
+              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
             },
             {
-              "$ref": "http://localhost:5173/externalDocs.json"
+              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocs.json"
             }
           ]
         }

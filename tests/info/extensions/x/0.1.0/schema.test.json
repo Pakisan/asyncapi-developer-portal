@@ -1,5 +1,5 @@
 {
-  "target": "http://localhost:5173/info/extensions/x/0.1.0/schema.json",
+  "target": "https://asyncapi.pavelon.dev/schemas/v3/info/extensions/x/0.1.0/schema.json",
   "$comment": "Contact test cases",
   "tests": [
     {

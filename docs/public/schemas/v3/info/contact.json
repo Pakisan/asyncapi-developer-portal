@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://localhost:5173/contact.json",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/info/contact.json",
   "description": "Contact information for the exposed API.",
   "type": "object",
   "properties": {
