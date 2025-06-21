@@ -4,6 +4,7 @@ import {defineConfig, HeadConfig} from 'vitepress'
 export default defineConfig({
   title: "AsyncAPI Developer Network",
   description: "Everything you should to now about AsyncAPI",
+  lang: 'en-US',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
