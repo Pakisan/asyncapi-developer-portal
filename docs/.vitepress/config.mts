@@ -648,7 +648,10 @@ export default defineConfig({
          gtag('js', new Date());
          gtag('config', 'G-G03BQZSMD1');`
     ],
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'author', content: 'Pavel Bodiachevskii' }],
+    ['meta', { name: 'keywords', content: 'AsyncAPI, API, Event-Driven Architecture, EDA, Messaging, Bindings, Channels, Operations, Schemas' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
   ],
 
   transformHead: ({ pageData }) => {
