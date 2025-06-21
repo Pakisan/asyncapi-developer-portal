@@ -23,5 +23,8 @@ head:
   - - meta
     - name: "og:description"
       content: "AsyncAPI Developer Network - place where you can find information about AsyncAPI specification and its components"
+  - - meta
+    - name: "yandex-verification"
+      content: "ed012648c88cacbb"
 ---
 
