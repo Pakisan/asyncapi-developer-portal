@@ -1,7 +1,30 @@
 ---
-title: Security Schema
+title: AsyncAPI Security Schemas - Comprehensive Guide to API Authentication Methods
+description: Learn about the various security schemas in AsyncAPI including OAuth 2.0, OpenID Connect, API Keys, X.509, and more for securing your event-driven APIs
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/securitySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, security schemas, API authentication, API authorization, OAuth 2.0, OpenID Connect, API Keys, X.509, SASL, HTTP authentication, symmetric encryption, asymmetric encryption, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI Security Schemas - Comprehensive Guide to API Authentication Methods
+  - - meta
+    - property: og:description
+      content: Learn about the various security schemas in AsyncAPI including OAuth 2.0, OpenID Connect, API Keys, X.509, and more for securing your event-driven APIs
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/securitySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Security Schemas - Comprehensive Guide to API Authentication Methods
+  - - meta
+    - name: twitter:description
+      content: Learn about the various security schemas in AsyncAPI including OAuth 2.0, OpenID Connect, API Keys, X.509, and more for securing your event-driven APIs
 ---
 
 # {{ $frontmatter.title }}

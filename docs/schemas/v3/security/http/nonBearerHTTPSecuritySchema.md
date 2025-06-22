@@ -1,7 +1,30 @@
 ---
-title: Non-Bearer HTTP Security Schemas
+title: AsyncAPI Non-Bearer HTTP Security Schemas - Basic, Digest, and Advanced Authentication
+description: Explore non-Bearer HTTP authentication methods in AsyncAPI including Basic, Digest, HOBA, Mutual, NTLM, Negotiate/SPNEGO, and SCRAM with implementation examples
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, HTTP authentication, Basic authentication, Digest authentication, HOBA, Mutual authentication, NTLM, Negotiate, SPNEGO, SCRAM, challenge-response, Windows authentication, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI Non-Bearer HTTP Security Schemas - Basic, Digest, and Advanced Authentication
+  - - meta
+    - property: og:description
+      content: Explore non-Bearer HTTP authentication methods in AsyncAPI including Basic, Digest, HOBA, Mutual, NTLM, Negotiate/SPNEGO, and SCRAM with implementation examples
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Non-Bearer HTTP Security Schemas - Basic, Digest, and Advanced Authentication
+  - - meta
+    - name: twitter:description
+      content: Explore non-Bearer HTTP authentication methods in AsyncAPI including Basic, Digest, HOBA, Mutual, NTLM, Negotiate/SPNEGO, and SCRAM with implementation examples
 ---
 
 # {{ $frontmatter.title }}

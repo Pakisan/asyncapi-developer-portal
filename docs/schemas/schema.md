@@ -1,6 +1,29 @@
 ---
-title: Schema Object
+title: AsyncAPI Schema Object - JSON Schema Extensions for API Definitions
+description: Learn how Schema Object in AsyncAPI extends JSON Schema to define, validate, and document message payloads and data structures in event-driven APIs
 layout: doc
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, Schema Object, JSON Schema, API definition, message payloads, data validation, event-driven architecture, API documentation
+  - - meta
+    - property: og:title
+      content: AsyncAPI Schema Object - JSON Schema Extensions for API Definitions
+  - - meta
+    - property: og:description
+      content: Learn how Schema Object in AsyncAPI extends JSON Schema to define, validate, and document message payloads and data structures in event-driven APIs
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/schema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Schema Object - JSON Schema Extensions for API Definitions
+  - - meta
+    - name: twitter:description
+      content: Learn how Schema Object in AsyncAPI extends JSON Schema to define, validate, and document message payloads and data structures in event-driven APIs
 ---
 
 # {{ $frontmatter.title }}

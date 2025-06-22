@@ -1,7 +1,30 @@
 ---
-title: OpenID Connect Security Schema
+title: AsyncAPI OpenID Connect Security Schema - Identity Authentication for APIs
+description: Learn how to implement OpenID Connect (OIDC) in AsyncAPI for secure user authentication, identity verification, and Single Sign-On across distributed applications
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/openIdConnect.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OpenID Connect, OIDC, OAuth 2.0, SSO, Single Sign-On, identity verification, user authentication, JWT tokens, authorization server, identity provider, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI OpenID Connect Security Schema - Identity Authentication for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement OpenID Connect (OIDC) in AsyncAPI for secure user authentication, identity verification, and Single Sign-On across distributed applications
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/openIdConnect.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OpenID Connect Security Schema - Identity Authentication for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OpenID Connect (OIDC) in AsyncAPI for secure user authentication, identity verification, and Single Sign-On across distributed applications
 ---
 
 # {{ $frontmatter.title }}

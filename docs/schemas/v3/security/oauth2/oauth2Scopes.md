@@ -1,7 +1,30 @@
 ---
-title: OAuth2 Scopes
+title: AsyncAPI OAuth2 Scopes - Fine-Grained Access Control for APIs
+description: Learn how to implement OAuth2 scopes in AsyncAPI for granular permission control, following the principle of least privilege in your API authorization
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2Scopes.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OAuth2 scopes, permission control, API authorization, granular access control, least privilege principle, token permissions, API security, resource permissions, access delegation
+  - - meta
+    - property: og:title
+      content: AsyncAPI OAuth2 Scopes - Fine-Grained Access Control for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement OAuth2 scopes in AsyncAPI for granular permission control, following the principle of least privilege in your API authorization
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2Scopes.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OAuth2 Scopes - Fine-Grained Access Control for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OAuth2 scopes in AsyncAPI for granular permission control, following the principle of least privilege in your API authorization
 ---
 
 # {{ $frontmatter.title }}
@@ -149,9 +172,9 @@ const app = express();
 function authenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
-  
+
   if (!token) return res.sendStatus(401);
-  
+
   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
     if (err) return res.sendStatus(403);
     req.user = user;

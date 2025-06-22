@@ -1,7 +1,30 @@
 ---
-title: OAuth2 Password Flow
+title: AsyncAPI OAuth2 Password Flow - Direct Credential Authentication
+description: Learn how to implement OAuth2 Password Flow (Resource Owner Password Credentials) in AsyncAPI for trusted first-party applications that require direct credential handling
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OAuth2 Password Flow, Resource Owner Password Credentials, ROPC, direct authentication, first-party applications, trusted applications, credential-based authentication, legacy application integration, non-redirect authentication
+  - - meta
+    - property: og:title
+      content: AsyncAPI OAuth2 Password Flow - Direct Credential Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement OAuth2 Password Flow (Resource Owner Password Credentials) in AsyncAPI for trusted first-party applications that require direct credential handling
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OAuth2 Password Flow - Direct Credential Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OAuth2 Password Flow (Resource Owner Password Credentials) in AsyncAPI for trusted first-party applications that require direct credential handling
 ---
 
 # {{ $frontmatter.title }}
@@ -185,7 +208,7 @@ async function getAccessToken(username, password) {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       });
-    
+
     // Store token data
     const { access_token, refresh_token, expires_in } = response.data;
     tokenData = {
@@ -193,7 +216,7 @@ async function getAccessToken(username, password) {
       refreshToken: refresh_token,
       expiresAt: Date.now() + (expires_in * 1000) - 60000 // 1 minute buffer
     };
-    
+
     console.log('Authentication successful');
     return tokenData.accessToken;
   } catch (error) {
@@ -207,7 +230,7 @@ async function refreshAccessToken() {
   if (!tokenData || !tokenData.refreshToken) {
     throw new Error('No refresh token available');
   }
-  
+
   try {
     const response = await axios.post(config.tokenUrl, 
       qs.stringify({
@@ -220,7 +243,7 @@ async function refreshAccessToken() {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       });
-    
+
     // Update token data
     const { access_token, refresh_token, expires_in } = response.data;
     tokenData = {
@@ -228,7 +251,7 @@ async function refreshAccessToken() {
       refreshToken: refresh_token || tokenData.refreshToken, // Use new refresh token if provided
       expiresAt: Date.now() + (expires_in * 1000) - 60000 // 1 minute buffer
     };
-    
+
     return tokenData.accessToken;
   } catch (error) {
     console.error('Token refresh error:', error.response?.data || error.message);
@@ -242,7 +265,7 @@ async function getValidAccessToken() {
   if (tokenData && tokenData.expiresAt > Date.now()) {
     return tokenData.accessToken;
   }
-  
+
   // If we have a refresh token, try to refresh
   if (tokenData && tokenData.refreshToken) {
     try {
@@ -252,7 +275,7 @@ async function getValidAccessToken() {
       // Fall through to re-authentication
     }
   }
-  
+
   // Otherwise, get new credentials and authenticate
   const credentials = await getUserCredentials();
   return await getAccessToken(credentials.username, credentials.password);
@@ -262,13 +285,13 @@ async function getValidAccessToken() {
 async function callProtectedApi() {
   try {
     const token = await getValidAccessToken();
-    
+
     const apiResponse = await axios.get('https://api.example.com/resources', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
     });
-    
+
     console.log('API response:', apiResponse.data);
   } catch (error) {
     console.error('API call failed:', error);

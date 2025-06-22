@@ -1,7 +1,30 @@
 ---
-title: Bearer HTTP Security Schema
+title: AsyncAPI Bearer HTTP Security Schema - Token-Based Authentication for APIs
+description: Learn how to implement Bearer token authentication in AsyncAPI for stateless, JWT-based security in HTTP APIs and OAuth 2.0 integrations
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/http/bearerHTTPSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, Bearer authentication, JWT tokens, token-based authentication, OAuth 2.0, stateless authentication, HTTP Authorization header, REST API security, JSON Web Tokens, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI Bearer HTTP Security Schema - Token-Based Authentication for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement Bearer token authentication in AsyncAPI for stateless, JWT-based security in HTTP APIs and OAuth 2.0 integrations
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/http/bearerHTTPSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Bearer HTTP Security Schema - Token-Based Authentication for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement Bearer token authentication in AsyncAPI for stateless, JWT-based security in HTTP APIs and OAuth 2.0 integrations
 ---
 
 # {{ $frontmatter.title }}

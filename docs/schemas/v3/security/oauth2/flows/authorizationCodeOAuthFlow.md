@@ -1,7 +1,30 @@
 ---
-title: OAuth2 Authorization Code Flow
+title: AsyncAPI OAuth2 Authorization Code Flow - Secure Server-Side Authentication
+description: Learn how to implement OAuth2 Authorization Code Flow in AsyncAPI for secure server-side applications with step-by-step guide and best practices
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OAuth2 Authorization Code Flow, server-side authentication, secure authentication flow, access tokens, authorization server, client secret, API security, OAuth2 implementation, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI OAuth2 Authorization Code Flow - Secure Server-Side Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement OAuth2 Authorization Code Flow in AsyncAPI for secure server-side applications with step-by-step guide and best practices
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OAuth2 Authorization Code Flow - Secure Server-Side Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OAuth2 Authorization Code Flow in AsyncAPI for secure server-side applications with step-by-step guide and best practices
 ---
 
 # {{ $frontmatter.title }}
@@ -155,7 +178,7 @@ app.get('/login', (req, res) => {
   const state = crypto.randomBytes(16).toString('hex');
   // Store state in session
   req.session.oauthState = state;
-  
+
   // Redirect to authorization server
   const authUrl = new URL(config.authorizationUrl);
   authUrl.searchParams.append('client_id', config.clientId);
@@ -163,19 +186,19 @@ app.get('/login', (req, res) => {
   authUrl.searchParams.append('response_type', 'code');
   authUrl.searchParams.append('state', state);
   authUrl.searchParams.append('scope', 'read:messages write:messages');
-  
+
   res.redirect(authUrl.toString());
 });
 
 // Handle the callback with authorization code
 app.get('/callback', async (req, res) => {
   const { code, state } = req.query;
-  
+
   // Verify state parameter to prevent CSRF
   if (state !== req.session.oauthState) {
     return res.status(403).send('State validation failed');
   }
-  
+
   try {
     // Exchange authorization code for tokens
     const tokenResponse = await axios.post(config.tokenUrl, {
@@ -189,7 +212,7 @@ app.get('/callback', async (req, res) => {
         'Content-Type': 'application/x-www-form-urlencoded'
       }
     });
-    
+
     // Store tokens securely (in session, database, etc.)
     const { access_token, refresh_token, expires_in } = tokenResponse.data;
     req.session.tokens = {
@@ -197,7 +220,7 @@ app.get('/callback', async (req, res) => {
       refreshToken: refresh_token,
       expiresAt: Date.now() + (expires_in * 1000)
     };
-    
+
     res.redirect('/dashboard');
   } catch (error) {
     console.error('Token exchange error:', error.response?.data || error.message);

@@ -1,7 +1,30 @@
 ---
-title: Symmetric Encryption Security Schema
+title: AsyncAPI Symmetric Encryption Security Schema - Shared Key Cryptography for APIs
+description: Learn how to implement Symmetric Encryption in AsyncAPI for high-performance message security using shared keys with algorithms like AES-256 and ChaCha20
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/symmetricEncryption.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, Symmetric Encryption, shared key cryptography, AES-256, ChaCha20, secret key, message encryption, data security, secure messaging, cryptography, API security
+  - - meta
+    - property: og:title
+      content: AsyncAPI Symmetric Encryption Security Schema - Shared Key Cryptography for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement Symmetric Encryption in AsyncAPI for high-performance message security using shared keys with algorithms like AES-256 and ChaCha20
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/symmetricEncryption.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Symmetric Encryption Security Schema - Shared Key Cryptography for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement Symmetric Encryption in AsyncAPI for high-performance message security using shared keys with algorithms like AES-256 and ChaCha20
 ---
 
 # {{ $frontmatter.title }}

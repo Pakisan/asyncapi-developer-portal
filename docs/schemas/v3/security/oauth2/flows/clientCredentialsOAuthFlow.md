@@ -1,7 +1,30 @@
 ---
-title: OAuth2 Client Credentials Flow
+title: AsyncAPI OAuth2 Client Credentials Flow - Server-to-Server Authentication
+description: Learn how to implement OAuth2 Client Credentials Flow in AsyncAPI for secure server-to-server and machine-to-machine communication without user interaction
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OAuth2 Client Credentials Flow, server-to-server authentication, machine-to-machine communication, microservices security, backend authentication, API integration, service authentication, OAuth2 implementation, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI OAuth2 Client Credentials Flow - Server-to-Server Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement OAuth2 Client Credentials Flow in AsyncAPI for secure server-to-server and machine-to-machine communication without user interaction
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OAuth2 Client Credentials Flow - Server-to-Server Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OAuth2 Client Credentials Flow in AsyncAPI for secure server-to-server and machine-to-machine communication without user interaction
 ---
 
 # {{ $frontmatter.title }}
@@ -151,7 +174,7 @@ async function getAccessToken() {
   if (tokenData && tokenData.expiresAt > Date.now()) {
     return tokenData.accessToken;
   }
-  
+
   // Request new token
   try {
     const response = await axios.post(config.tokenUrl, 
@@ -165,14 +188,14 @@ async function getAccessToken() {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       });
-    
+
     // Cache the token with expiration
     const { access_token, expires_in } = response.data;
     tokenData = {
       accessToken: access_token,
       expiresAt: Date.now() + (expires_in * 1000) - 60000 // 1 minute buffer
     };
-    
+
     return tokenData.accessToken;
   } catch (error) {
     console.error('Token acquisition error:', error.response?.data || error.message);
@@ -184,13 +207,13 @@ async function getAccessToken() {
 async function callProtectedApi() {
   try {
     const token = await getAccessToken();
-    
+
     const apiResponse = await axios.get('https://api.example.com/resources', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
     });
-    
+
     return apiResponse.data;
   } catch (error) {
     console.error('API call failed:', error);

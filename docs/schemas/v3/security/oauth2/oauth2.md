@@ -1,7 +1,30 @@
 ---
-title: OAuth2 Security Schema
+title: AsyncAPI OAuth2 Security Schema - Authorization Framework for APIs
+description: Learn how to implement OAuth2 security in AsyncAPI with various flows including Authorization Code, Client Credentials, Implicit, and Password for secure API access
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OAuth2, authorization framework, Authorization Code flow, Client Credentials flow, Implicit flow, Password flow, token-based authentication, delegated authorization, API security, scopes
+  - - meta
+    - property: og:title
+      content: AsyncAPI OAuth2 Security Schema - Authorization Framework for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement OAuth2 security in AsyncAPI with various flows including Authorization Code, Client Credentials, Implicit, and Password for secure API access
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OAuth2 Security Schema - Authorization Framework for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OAuth2 security in AsyncAPI with various flows including Authorization Code, Client Credentials, Implicit, and Password for secure API access
 ---
 
 # {{ $frontmatter.title }}

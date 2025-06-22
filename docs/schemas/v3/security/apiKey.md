@@ -1,7 +1,30 @@
 ---
-title: API Key Security Schema
+title: AsyncAPI API Key Security Schema - Simple Authentication for APIs
+description: Learn how to implement API Key authentication in AsyncAPI for simple, stateless authentication with examples, best practices, and security considerations
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/apiKey.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, API Key, security schema, authentication, authorization, stateless authentication, API security, token-based authentication, API key implementation, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI API Key Security Schema - Simple Authentication for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement API Key authentication in AsyncAPI for simple, stateless authentication with examples, best practices, and security considerations
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/apiKey.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI API Key Security Schema - Simple Authentication for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement API Key authentication in AsyncAPI for simple, stateless authentication with examples, best practices, and security considerations
 ---
 
 # {{ $frontmatter.title }}

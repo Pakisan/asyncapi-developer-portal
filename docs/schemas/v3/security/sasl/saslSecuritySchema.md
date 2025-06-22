@@ -1,7 +1,30 @@
 ---
-title: SASL Security Schema
+title: AsyncAPI SASL Security Schemas - Authentication for Messaging Protocols
+description: Learn about SASL (Simple Authentication and Security Layer) security schemas in AsyncAPI for authenticating messaging protocols like Kafka, MQTT, and AMQP
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, SASL, Simple Authentication and Security Layer, Kafka authentication, MQTT security, AMQP authentication, SASL PLAIN, SASL SCRAM, SASL GSS-API, Kerberos, messaging security
+  - - meta
+    - property: og:title
+      content: AsyncAPI SASL Security Schemas - Authentication for Messaging Protocols
+  - - meta
+    - property: og:description
+      content: Learn about SASL (Simple Authentication and Security Layer) security schemas in AsyncAPI for authenticating messaging protocols like Kafka, MQTT, and AMQP
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI SASL Security Schemas - Authentication for Messaging Protocols
+  - - meta
+    - name: twitter:description
+      content: Learn about SASL (Simple Authentication and Security Layer) security schemas in AsyncAPI for authenticating messaging protocols like Kafka, MQTT, and AMQP
 ---
 
 # {{ $frontmatter.title }}

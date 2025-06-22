@@ -1,7 +1,30 @@
 ---
-title: API Key HTTP Security Schema
+title: AsyncAPI HTTP API Key Security Schema - Key-Based Authentication for HTTP APIs
+description: Learn how to implement HTTP API Key authentication in AsyncAPI using headers, query parameters, or cookies for simple and effective API access control
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/http/apiKeyHTTPSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, HTTP API Key, API Key authentication, header authentication, query parameter authentication, cookie authentication, REST API security, API access control, API key management, secure HTTP APIs
+  - - meta
+    - property: og:title
+      content: AsyncAPI HTTP API Key Security Schema - Key-Based Authentication for HTTP APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement HTTP API Key authentication in AsyncAPI using headers, query parameters, or cookies for simple and effective API access control
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/http/apiKeyHTTPSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI HTTP API Key Security Schema - Key-Based Authentication for HTTP APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement HTTP API Key authentication in AsyncAPI using headers, query parameters, or cookies for simple and effective API access control
 ---
 
 # {{ $frontmatter.title }}

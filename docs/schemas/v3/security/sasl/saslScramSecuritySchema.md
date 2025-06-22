@@ -1,7 +1,30 @@
 ---
-title: SASL SCRAM Security Schema
+title: AsyncAPI SASL SCRAM Security Schema - Secure Challenge-Response Authentication
+description: Learn how to implement SASL SCRAM authentication in AsyncAPI for secure password-based authentication using SHA-256 or SHA-512 hashing without transmitting passwords
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslScramSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, SASL SCRAM, Salted Challenge Response Authentication Mechanism, SCRAM-SHA-256, SCRAM-SHA-512, challenge-response, Kafka authentication, MQTT security, AMQP authentication, secure password authentication
+  - - meta
+    - property: og:title
+      content: AsyncAPI SASL SCRAM Security Schema - Secure Challenge-Response Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement SASL SCRAM authentication in AsyncAPI for secure password-based authentication using SHA-256 or SHA-512 hashing without transmitting passwords
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslScramSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI SASL SCRAM Security Schema - Secure Challenge-Response Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement SASL SCRAM authentication in AsyncAPI for secure password-based authentication using SHA-256 or SHA-512 hashing without transmitting passwords
 ---
 
 # {{ $frontmatter.title }}

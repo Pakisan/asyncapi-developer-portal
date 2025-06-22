@@ -1,7 +1,30 @@
 ---
-title: Asymmetric Encryption Security Schema
+title: AsyncAPI Asymmetric Encryption Security Schema - Public-Key Cryptography for APIs
+description: Learn how to implement Asymmetric Encryption (Public-Key Cryptography) in AsyncAPI for secure message exchange, digital signatures, and non-repudiation
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/asymmetricEncryption.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, Asymmetric Encryption, Public-Key Cryptography, RSA, ECC, digital signatures, non-repudiation, API security, secure message exchange, encryption, decryption
+  - - meta
+    - property: og:title
+      content: AsyncAPI Asymmetric Encryption Security Schema - Public-Key Cryptography for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement Asymmetric Encryption (Public-Key Cryptography) in AsyncAPI for secure message exchange, digital signatures, and non-repudiation
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/asymmetricEncryption.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Asymmetric Encryption Security Schema - Public-Key Cryptography for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement Asymmetric Encryption (Public-Key Cryptography) in AsyncAPI for secure message exchange, digital signatures, and non-repudiation
 ---
 
 # {{ $frontmatter.title }}

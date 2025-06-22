@@ -1,7 +1,30 @@
 ---
-title: SASL GSS-API Security Schema
+title: AsyncAPI SASL GSS-API Security Schema - Kerberos-Based Enterprise Authentication
+description: Learn how to implement SASL GSS-API authentication in AsyncAPI for enterprise-grade Kerberos-based security with single sign-on and mutual authentication
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslGssapiSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, SASL GSS-API, Kerberos authentication, Generic Security Services, enterprise authentication, single sign-on, SSO, mutual authentication, Active Directory integration, Kafka security, AMQP security
+  - - meta
+    - property: og:title
+      content: AsyncAPI SASL GSS-API Security Schema - Kerberos-Based Enterprise Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement SASL GSS-API authentication in AsyncAPI for enterprise-grade Kerberos-based security with single sign-on and mutual authentication
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslGssapiSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI SASL GSS-API Security Schema - Kerberos-Based Enterprise Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement SASL GSS-API authentication in AsyncAPI for enterprise-grade Kerberos-based security with single sign-on and mutual authentication
 ---
 
 # {{ $frontmatter.title }}

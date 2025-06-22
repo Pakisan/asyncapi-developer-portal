@@ -1,7 +1,30 @@
 ---
-title: Username and Password Authentication Security Schema
+title: AsyncAPI Username and Password Authentication - Basic Credential Security for APIs
+description: Learn how to implement username and password authentication in AsyncAPI with best practices for secure credential management and protection against common attacks
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/userPassword.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, username and password authentication, credential security, password hashing, secure authentication, basic authentication, user credentials, password policies, API security, secure login
+  - - meta
+    - property: og:title
+      content: AsyncAPI Username and Password Authentication - Basic Credential Security for APIs
+  - - meta
+    - property: og:description
+      content: Learn how to implement username and password authentication in AsyncAPI with best practices for secure credential management and protection against common attacks
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/userPassword.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Username and Password Authentication - Basic Credential Security for APIs
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement username and password authentication in AsyncAPI with best practices for secure credential management and protection against common attacks
 ---
 
 # {{ $frontmatter.title }}

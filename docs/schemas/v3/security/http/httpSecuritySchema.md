@@ -1,7 +1,30 @@
 ---
-title: HTTP Security Schema
+title: AsyncAPI HTTP Security Schemas - Authentication Methods for HTTP-based APIs
+description: Learn about HTTP security schemas in AsyncAPI including Bearer tokens, API Keys, Basic, Digest, and other authentication methods for securing HTTP-based communications
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/http/httpSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, HTTP security, Bearer authentication, API Key, Basic authentication, Digest authentication, JWT tokens, HTTP authentication, REST API security, WebSocket security, secure API access
+  - - meta
+    - property: og:title
+      content: AsyncAPI HTTP Security Schemas - Authentication Methods for HTTP-based APIs
+  - - meta
+    - property: og:description
+      content: Learn about HTTP security schemas in AsyncAPI including Bearer tokens, API Keys, Basic, Digest, and other authentication methods for securing HTTP-based communications
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/http/httpSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI HTTP Security Schemas - Authentication Methods for HTTP-based APIs
+  - - meta
+    - name: twitter:description
+      content: Learn about HTTP security schemas in AsyncAPI including Bearer tokens, API Keys, Basic, Digest, and other authentication methods for securing HTTP-based communications
 ---
 
 # {{ $frontmatter.title }}

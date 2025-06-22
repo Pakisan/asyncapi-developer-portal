@@ -1,6 +1,29 @@
 ---
-title: Multi-Format Schema Object
+title: AsyncAPI Multi-Format Schema Object - Supporting Multiple Schema Formats
+description: Learn how Multi-Format Schema Object in AsyncAPI enables defining message payloads using various schema formats including Avro, JSON Schema, XML, Protobuf, and RAML
 layout: doc
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, Multi-Format Schema, Avro, JSON Schema, XML Schema, Protobuf, RAML, message payloads, data validation, event-driven architecture, API documentation
+  - - meta
+    - property: og:title
+      content: AsyncAPI Multi-Format Schema Object - Supporting Multiple Schema Formats
+  - - meta
+    - property: og:description
+      content: Learn how Multi-Format Schema Object in AsyncAPI enables defining message payloads using various schema formats including Avro, JSON Schema, XML, Protobuf, and RAML
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/multiFormatSchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI Multi-Format Schema Object - Supporting Multiple Schema Formats
+  - - meta
+    - name: twitter:description
+      content: Learn how Multi-Format Schema Object in AsyncAPI enables defining message payloads using various schema formats including Avro, JSON Schema, XML, Protobuf, and RAML
 ---
 
 # {{ $frontmatter.title }}

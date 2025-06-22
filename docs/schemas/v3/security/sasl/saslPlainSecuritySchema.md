@@ -1,7 +1,30 @@
 ---
-title: SASL Plain Security Schema
+title: AsyncAPI SASL Plain Security Schema - Simple Username/Password Authentication
+description: Learn how to implement SASL Plain authentication in AsyncAPI for simple username/password authentication in messaging protocols with transport layer security
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslPlainSecuritySchema.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, SASL Plain, Simple Authentication and Security Layer, username/password authentication, Kafka authentication, MQTT security, AMQP authentication, messaging security, plaintext authentication, TLS security
+  - - meta
+    - property: og:title
+      content: AsyncAPI SASL Plain Security Schema - Simple Username/Password Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement SASL Plain authentication in AsyncAPI for simple username/password authentication in messaging protocols with transport layer security
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslPlainSecuritySchema.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI SASL Plain Security Schema - Simple Username/Password Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement SASL Plain authentication in AsyncAPI for simple username/password authentication in messaging protocols with transport layer security
 ---
 
 # {{ $frontmatter.title }}

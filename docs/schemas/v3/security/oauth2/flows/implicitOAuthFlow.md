@@ -1,7 +1,30 @@
 ---
-title: OAuth2 Implicit Flow
+title: AsyncAPI OAuth2 Implicit Flow - Browser-Based Authentication
+description: Learn how to implement OAuth2 Implicit Flow in AsyncAPI for browser-based and mobile applications that cannot securely store client secrets
 layout: doc
 canonicalUrl: 'https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html'
+head:
+  - - meta
+    - name: keywords
+      content: AsyncAPI, OAuth2 Implicit Flow, browser-based authentication, single-page applications, SPA security, JavaScript authentication, mobile app authentication, public client authentication, token-based security, client-side OAuth2
+  - - meta
+    - property: og:title
+      content: AsyncAPI OAuth2 Implicit Flow - Browser-Based Authentication
+  - - meta
+    - property: og:description
+      content: Learn how to implement OAuth2 Implicit Flow in AsyncAPI for browser-based and mobile applications that cannot securely store client secrets
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html
+  - - meta
+    - name: twitter:title
+      content: AsyncAPI OAuth2 Implicit Flow - Browser-Based Authentication
+  - - meta
+    - name: twitter:description
+      content: Learn how to implement OAuth2 Implicit Flow in AsyncAPI for browser-based and mobile applications that cannot securely store client secrets
 ---
 
 # {{ $frontmatter.title }}
@@ -153,12 +176,12 @@ function generateState() {
 function parseHashParams() {
   const hash = window.location.hash.substr(1);
   const params = {};
-  
+
   hash.split('&').forEach(pair => {
     const [key, value] = pair.split('=');
     params[key] = decodeURIComponent(value);
   });
-  
+
   return params;
 }
 
@@ -167,7 +190,7 @@ function login() {
   // Generate and store state parameter
   const state = generateState();
   localStorage.setItem('oauth_state', state);
-  
+
   // Build authorization URL
   const authUrl = new URL(config.authorizationUrl);
   authUrl.searchParams.append('client_id', config.clientId);
@@ -175,7 +198,7 @@ function login() {
   authUrl.searchParams.append('response_type', 'token');
   authUrl.searchParams.append('state', state);
   authUrl.searchParams.append('scope', config.scope);
-  
+
   // Redirect to authorization server
   window.location.href = authUrl.toString();
 }
@@ -184,28 +207,28 @@ function login() {
 function handleCallback() {
   // Parse hash parameters
   const params = parseHashParams();
-  
+
   // Verify state parameter to prevent CSRF
   const storedState = localStorage.getItem('oauth_state');
   if (params.state !== storedState) {
     console.error('State validation failed');
     return;
   }
-  
+
   // Clear stored state
   localStorage.removeItem('oauth_state');
-  
+
   // Extract and store access token
   if (params.access_token) {
     // Store token securely (as securely as possible in a browser)
     sessionStorage.setItem('access_token', params.access_token);
-    
+
     // Store expiration time if provided
     if (params.expires_in) {
       const expiresAt = Date.now() + (parseInt(params.expires_in) * 1000);
       sessionStorage.setItem('token_expires_at', expiresAt);
     }
-    
+
     console.log('Authentication successful');
     // Redirect to application main page or update UI
     window.location.href = '/dashboard';
@@ -223,19 +246,19 @@ if (window.location.hash) {
 function callApi() {
   const token = sessionStorage.getItem('access_token');
   const expiresAt = sessionStorage.getItem('token_expires_at');
-  
+
   // Check if token is expired
   if (expiresAt && Date.now() > parseInt(expiresAt)) {
     console.error('Token expired, please login again');
     login();
     return;
   }
-  
+
   if (!token) {
     console.error('No access token found');
     return;
   }
-  
+
   fetch('https://api.example.com/resources', {
     headers: {
       'Authorization': `Bearer ${token}`
