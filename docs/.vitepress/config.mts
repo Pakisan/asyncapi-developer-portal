@@ -489,6 +489,7 @@ export default defineConfig({
       '/schemas': [
         {
           text: 'Schemas',
+          link: '/schemas',
           collapsed: false,
           items: [
             {
