@@ -652,7 +652,7 @@ export default defineConfig({
     ['meta', { name: 'author', content: 'Pavel Bodiachevskii' }],
     ['meta', { name: 'keywords', content: 'AsyncAPI, API, Event-Driven Architecture, EDA, Messaging, Bindings, Channels, Operations, Schemas' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
-    ['meta', { name: 'yandex-verification', content: '2d1d053a0e483c61' }],
+    ['meta', { name: 'yandex-verification', content: 'ed012648c88cacbb' }],
   ],
 
   transformHead: ({ pageData }) => {

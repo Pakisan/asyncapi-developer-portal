@@ -25,6 +25,6 @@ head:
       content: "AsyncAPI Developer Network - place where you can find information about AsyncAPI specification and its components"
   - - meta
     - name: "yandex-verification"
-      content: "2d1d053a0e483c61"
+      content: "ed012648c88cacbb"
 ---
 
