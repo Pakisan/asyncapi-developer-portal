@@ -31,7 +31,7 @@ Dead Letter Queue Object. (If you define the DLQ externally, the Identifier also
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/sqs/0.2.0/channel.json" />
+<Json url="/bindings/amazon-sqs/0.2.0/channel.json" />
 
 ## Examples
 
