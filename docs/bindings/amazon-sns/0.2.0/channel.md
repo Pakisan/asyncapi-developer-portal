@@ -32,7 +32,7 @@ To mark a channel as SNS, but use default values for the channel properties, jus
 
 ## Structure
 
-<Json url="/bindings/amazon-sns-channel.0.2.0.json" />
+<Json url="/bindings/amazon-sns/0.2.0/channel.json" />
 
 ## Examples
 
