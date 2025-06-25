@@ -21,7 +21,7 @@ Contains information about the message representation in AMQP.
 
 ## Structure
 
-<Json url="/bindings/amqp-message.0.1.0.json"/>
+<Json url="/bindings/amqp/0.1.0/message.json"/>
 
 ## Examples
 

@@ -21,7 +21,7 @@ Contains information about the channel representation in AMQP.
 
 ## Structure
 
-<Json url="/bindings/amqp-channel.0.1.0.json" />
+<Json url="/bindings/amqp/0.1.0/channel.json" />
 
 ## Examples
 

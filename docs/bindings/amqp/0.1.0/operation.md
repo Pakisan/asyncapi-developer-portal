@@ -21,7 +21,7 @@ Contains information about the operation representation in AMQP.
 
 ## Structure
 
-<Json url="/bindings/amqp-operation.0.1.0.json"/>
+<Json url="/bindings/amqp/0.1.0/operation.json"/>
 
 ## Examples
 
