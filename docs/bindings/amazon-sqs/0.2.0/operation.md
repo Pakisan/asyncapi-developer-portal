@@ -21,7 +21,7 @@ Contains information about the operation representation in Amazon SQS.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/sqs/0.2.0/operation.json" />
+<Json url="/bindings/amazon-sqs/0.2.0/operation.json" />
 
 ## Examples
 
