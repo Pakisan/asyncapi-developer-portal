@@ -23,58 +23,6 @@ export default defineConfig({
           link: '/bindings',
           items: [
             {
-              text: 'AMQP',
-              collapsed: true,
-              items: [
-                {
-                  text: '0.1.0',
-                  base: '/bindings/amqp/0.1.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                },
-                {
-                  text: '0.2.0',
-                  base: '/bindings/amqp/0.2.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                },
-                {
-                  text: '0.3.0',
-                  base: '/bindings/amqp/0.3.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                }
-              ]
-            },
-            {
-              text: 'AMQP 1-0',
-              collapsed: true,
-              items: [
-                {
-                  text: '0.1.0',
-                  base: '/bindings/amqp1/0.1.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                }
-              ]
-            },
-            {
               text: 'Amazon SNS',
               collapsed: true,
               items: [
@@ -132,6 +80,58 @@ export default defineConfig({
                     { text: 'message', link: '/message' },
                     { text: 'operation', link: '/operation' },
                     { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
+            },
+            {
+              text: 'AMQP',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/amqp/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel/' },
+                    { text: 'message', link: '/message/' },
+                    { text: 'operation', link: '/operation/' },
+                    { text: 'server', link: '/server/' },
+                  ]
+                },
+                {
+                  text: '0.2.0',
+                  base: '/bindings/amqp/0.2.0',
+                  items: [
+                    { text: 'channel', link: '/channel/' },
+                    { text: 'message', link: '/message/' },
+                    { text: 'operation', link: '/operation/' },
+                    { text: 'server', link: '/server/' },
+                  ]
+                },
+                {
+                  text: '0.3.0',
+                  base: '/bindings/amqp/0.3.0',
+                  items: [
+                    { text: 'channel', link: '/channel/' },
+                    { text: 'message', link: '/message/' },
+                    { text: 'operation', link: '/operation/' },
+                    { text: 'server', link: '/server/' },
+                  ]
+                }
+              ]
+            },
+            {
+              text: 'AMQP 1-0',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/amqp1/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel/' },
+                    { text: 'message', link: '/message/' },
+                    { text: 'operation', link: '/operation/' },
+                    { text: 'server', link: '/server/' },
                   ]
                 }
               ]
