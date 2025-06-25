@@ -5,6 +5,8 @@ export default defineConfig({
   title: "AsyncAPI Developer Network",
   description: "Everything you should to now about AsyncAPI",
   lang: 'en-US',
+  lastUpdated: true,
+  cleanUrls: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
