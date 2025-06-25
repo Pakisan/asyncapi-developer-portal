@@ -38,7 +38,7 @@ You may also use it for multiple consumers with the same protocol, instead of re
 
 ## Structure
 
-<Json url="/bindings/amazon-sns-operation.0.2.0.json" />
+<Json url="/bindings/amazon-sns/0.2.0/operation.json" />
 
 ## Examples
 
