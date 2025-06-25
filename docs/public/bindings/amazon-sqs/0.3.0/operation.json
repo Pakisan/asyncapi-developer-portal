@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://asyncapi.com/bindings/sqs/0.3.0/operation.json",
+  "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.json",
   "title": "Operation Schema",
   "description": "This object contains information about the operation representation in SQS.",
   "type": "object",
@@ -13,7 +13,7 @@
       "type": "array",
       "description": "Queue objects that are either the endpoint for an SNS Operation Binding Object, or the deadLetterQueue of the SQS Operation Binding Object.",
       "items": {
-        "$ref": "http://asyncapi.com/bindings/sqs/0.3.0/operation.json#/definitions/queue"
+        "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.json#/definitions/queue"
       }
     },
     "bindingVersion": {
@@ -96,10 +96,10 @@
           "default": 345600
         },
         "redrivePolicy": {
-          "$ref": "http://asyncapi.com/bindings/sqs/0.3.0/operation.json#/definitions/redrivePolicy"
+          "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.json#/definitions/redrivePolicy"
         },
         "policy": {
-          "$ref": "http://asyncapi.com/bindings/sqs/0.3.0/operation.json#/definitions/policy"
+          "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.json#/definitions/policy"
         },
         "tags": {
           "type": "object",
@@ -118,7 +118,7 @@
       },
       "properties": {
         "deadLetterQueue": {
-          "$ref": "http://asyncapi.com/bindings/sqs/0.3.0/operation.json#/definitions/identifier"
+          "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.json#/definitions/identifier"
         },
         "maxReceiveCount": {
           "type": "integer",
@@ -158,7 +158,7 @@
           "type": "array",
           "description": "An array of statement objects, each of which controls a permission for this queue.",
           "items": {
-            "$ref": "http://asyncapi.com/bindings/sqs/0.3.0/operation.json#/definitions/statement"
+            "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.json#/definitions/statement"
           }
         }
       },
