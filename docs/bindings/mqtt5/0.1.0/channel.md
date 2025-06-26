@@ -12,7 +12,7 @@ head:
       content: "How to use MQTT v5 with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/mqtt.png"
+      content: "/bindings/mqtt5/0.1.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}
