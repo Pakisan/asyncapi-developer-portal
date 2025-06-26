@@ -12,7 +12,7 @@ head:
       content: "How to use Redis with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/redis.jpeg"
+      content: "/bindings/redis/0.1.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}
