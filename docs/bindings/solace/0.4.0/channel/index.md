@@ -12,7 +12,7 @@ head:
       content: "How to use Solace with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/solace.png"
+      content: "/bindings/solace/0.4.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}

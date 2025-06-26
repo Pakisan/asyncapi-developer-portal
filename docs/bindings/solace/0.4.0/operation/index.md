@@ -12,7 +12,7 @@ head:
       content: "How to use Solace with AsyncAPI operation binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/solace.png"
+      content: "/bindings/solace/0.4.0/operation.png"
 ---
 
 # {{ $frontmatter.title }}
