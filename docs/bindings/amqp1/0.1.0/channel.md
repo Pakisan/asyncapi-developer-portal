@@ -12,7 +12,7 @@ head:
       content: "How to use AMQP 1-0 with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/amqp.png"
+      content: "/bindings/amqp1/0.1.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}
