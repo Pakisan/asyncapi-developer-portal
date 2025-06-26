@@ -12,7 +12,7 @@ head:
       content: "How to use STOMP with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/stomp.jpeg"
+      content: "/bindings/stomp/0.1.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}

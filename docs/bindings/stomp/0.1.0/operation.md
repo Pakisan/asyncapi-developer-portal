@@ -12,7 +12,7 @@ head:
       content: "How to use STOMP with AsyncAPI operation binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/stomp.jpeg"
+      content: "/bindings/stomp/0.1.0/operation.png"
 ---
 
 # {{ $frontmatter.title }}
