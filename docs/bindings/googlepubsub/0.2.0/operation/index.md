@@ -12,7 +12,7 @@ head:
       content: "How to use Google Cloud Pub/Sub with AsyncAPI operation binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/googlepubsub.png"
+      content: "/bindings/googlepubsub/0.2.0/operation.png"
 ---
 
 # {{ $frontmatter.title }}
