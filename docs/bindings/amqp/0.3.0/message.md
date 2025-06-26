@@ -21,7 +21,7 @@ Contains information about the message representation in AMQP.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/amqp/0.3.0/message.json" />
+<Json url="/bindings/amqp/0.3.0/message.json" />
 
 ## Examples
 
