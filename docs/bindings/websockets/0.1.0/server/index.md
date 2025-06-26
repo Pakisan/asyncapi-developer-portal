@@ -12,7 +12,7 @@ head:
       content: "How to use WebSockets with AsyncAPI server binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/websockets.png"
+      content: "/bindings/websockets/0.1.0/server.png"
 ---
 
 # {{ $frontmatter.title }}

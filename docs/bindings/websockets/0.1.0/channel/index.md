@@ -12,7 +12,7 @@ head:
       content: "How to use WebSockets with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/websockets.png"
+      content: "/bindings/websockets/0.1.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}
