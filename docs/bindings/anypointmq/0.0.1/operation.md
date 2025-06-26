@@ -12,7 +12,7 @@ head:
       content: "How to use Anypoint MQ with AsyncAPI operation binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/anypointmq/0.1.0/operation.png"
+      content: "/bindings/anypointmq/0.0.1/operation.png"
 ---
 
 # {{ $frontmatter.title }}

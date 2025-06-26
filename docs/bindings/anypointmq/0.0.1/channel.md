@@ -12,7 +12,7 @@ head:
       content: "How to use Anypoint MQ with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/anypointmq/0.1.0/channel.png"
+      content: "/bindings/anypointmq/0.0.1/channel.png"
 ---
 
 # {{ $frontmatter.title }}
@@ -21,7 +21,7 @@ Contains information about the channel representation in Anypoint MQ.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/anypointmq/0.0.1/channel.json"/>
+<Json url="/bindings/anypointmq/0.0.1/channel.json"/>
 
 ## Examples
 

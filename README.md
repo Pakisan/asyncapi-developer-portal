@@ -22,6 +22,7 @@ bun run docs:build
 
 ```shell
 jsonschema test ./tests -r ./docs/public/schemas
+jsonschema test ./tests/bindings -r ./docs/public/bindings ./docs/public/schemas
 ```
 
 ## Format JSON Schemas
