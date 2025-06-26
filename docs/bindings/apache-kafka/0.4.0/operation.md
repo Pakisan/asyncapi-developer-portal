@@ -21,7 +21,7 @@ Contains information about the operation representation in Apache Kafka.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/kafka/0.4.0/operation.json"/>
+<Json url="/bindings/kafka/0.4.0/operation.json"/>
 
 ## Examples
 

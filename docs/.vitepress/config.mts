@@ -180,10 +180,10 @@ export default defineConfig({
                   text: '0.4.0',
                   base: '/bindings/apache-kafka/0.4.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 },
                 {
