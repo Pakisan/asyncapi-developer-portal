@@ -21,7 +21,7 @@ Contains information about the channel representation in NATS.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/nats/0.1.0/operation.json"/>
+<Json url="/bindings/nats/0.1.0/operation.json"/>
 
 ## Examples
 
