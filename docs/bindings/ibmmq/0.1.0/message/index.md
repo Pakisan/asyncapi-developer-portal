@@ -12,7 +12,7 @@ head:
       content: "How to use IBM MQ with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/ibmmq.jpeg"
+      content: "/bindings/ibmmq/0.1.0/message.png"
 ---
 
 # {{ $frontmatter.title }}
