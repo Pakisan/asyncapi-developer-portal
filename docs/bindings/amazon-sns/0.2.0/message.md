@@ -12,7 +12,7 @@ head:
       content: "How to use Amazon SNS with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/amazon.png"
+      content: "/bindings/amazon-sns/0.2.0/message.png"
 ---
 
 # {{ $frontmatter.title }}
