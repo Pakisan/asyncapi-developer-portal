@@ -12,7 +12,7 @@ head:
       content: "How to use Mercure with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/mercure.png"
+      content: "/bindings/mercure/0.1.0/message.png"
 ---
 
 # {{ $frontmatter.title }}
