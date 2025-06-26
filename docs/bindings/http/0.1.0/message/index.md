@@ -12,7 +12,7 @@ head:
       content: "How to use HTTP with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/http.png"
+      content: "/bindings/http/0.1.0/message.png"
 ---
 
 # {{ $frontmatter.title }}
