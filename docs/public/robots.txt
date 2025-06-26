@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /assets/
 
 Sitemap: https://asyncapi.pavelon.dev/sitemap.xml

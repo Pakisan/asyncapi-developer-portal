@@ -5,7 +5,10 @@ export default defineConfig({
   title: "AsyncAPI Developer Network",
   description: "Everything you should to now about AsyncAPI",
   lang: 'en-US',
+  lastUpdated: true,
+  cleanUrls: false,
   themeConfig: {
+    outline: 'deep',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -20,58 +23,6 @@ export default defineConfig({
           link: '/bindings',
           items: [
             {
-              text: 'AMQP',
-              collapsed: true,
-              items: [
-                {
-                  text: '0.1.0',
-                  base: '/bindings/amqp/0.1.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                },
-                {
-                  text: '0.2.0',
-                  base: '/bindings/amqp/0.2.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                },
-                {
-                  text: '0.3.0',
-                  base: '/bindings/amqp/0.3.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                }
-              ]
-            },
-            {
-              text: 'AMQP 1-0',
-              collapsed: true,
-              items: [
-                {
-                  text: '0.1.0',
-                  base: '/bindings/amqp1/0.1.0',
-                  items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
-                  ]
-                }
-              ]
-            },
-            {
               text: 'Amazon SNS',
               collapsed: true,
               items: [
@@ -79,20 +30,20 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/amazon-sns/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 },
                 {
                   text: '0.2.0',
                   base: '/bindings/amazon-sns/0.2.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 }
               ]
@@ -105,30 +56,82 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/amazon-sqs/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 },
                 {
                   text: '0.2.0',
                   base: '/bindings/amazon-sqs/0.2.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 },
                 {
                   text: '0.3.0',
                   base: '/bindings/amazon-sqs/0.3.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
+            },
+            {
+              text: 'AMQP',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/amqp/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                },
+                {
+                  text: '0.2.0',
+                  base: '/bindings/amqp/0.2.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                },
+                {
+                  text: '0.3.0',
+                  base: '/bindings/amqp/0.3.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
+            },
+            {
+              text: 'AMQP 1-0',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/amqp1/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 }
               ]
@@ -313,10 +316,10 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/mercure/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 }
               ]
@@ -355,10 +358,10 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/mqtt5/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 },
                 {
@@ -381,10 +384,10 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/nats/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 }
               ]
@@ -397,10 +400,10 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/redis/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 }
               ]
@@ -459,10 +462,10 @@ export default defineConfig({
                   text: '0.1.0',
                   base: '/bindings/stomp/0.1.0',
                   items: [
-                    { text: 'channel', link: '/channel/' },
-                    { text: 'message', link: '/message/' },
-                    { text: 'operation', link: '/operation/' },
-                    { text: 'server', link: '/server/' },
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
                   ]
                 }
               ]
