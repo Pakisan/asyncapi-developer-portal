@@ -12,7 +12,7 @@ head:
       content: "How to use NATS with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/nats.png"
+      content: "/bindings/nats/0.1.0/message.png"
 ---
 
 # {{ $frontmatter.title }}

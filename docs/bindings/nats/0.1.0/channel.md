@@ -12,7 +12,7 @@ head:
       content: "How to use NATS with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/nats.png"
+      content: "/bindings/nats/0.1.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}
