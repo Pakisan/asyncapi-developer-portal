@@ -12,7 +12,7 @@ head:
       content: "How to use Jakarta Messaging API with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/jms.jpeg"
+      content: "/bindings/jms/0.1.0/message.png"
 ---
 
 # {{ $frontmatter.title }}
