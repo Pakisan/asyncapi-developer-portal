@@ -12,7 +12,7 @@ head:
       content: "How to use Apache Kafka with AsyncAPI channel binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/apache-kafka.png"
+      content: "/bindings/apache-kafka/0.4.0/channel.png"
 ---
 
 # {{ $frontmatter.title }}

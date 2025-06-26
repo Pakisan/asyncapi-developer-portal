@@ -12,7 +12,7 @@ head:
       content: "How to use Apache Kafka with AsyncAPI server binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/apache-kafka.png"
+      content: "/bindings/apache-kafka/0.5.0/server.png"
 ---
 
 # {{ $frontmatter.title }}
