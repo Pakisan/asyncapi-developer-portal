@@ -21,7 +21,7 @@ Contains information about the operation representation in AMQP.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/amqp/0.3.0/operation.json" />
+<Json url="/bindings/amqp/0.3.0/operation.json" />
 
 ## Examples
 
