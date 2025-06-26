@@ -12,7 +12,7 @@ head:
       content: "How to use MQTT with AsyncAPI operation binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/mqtt.png"
+      content: "/bindings/mqtt/0.1.0/operation.png"
 ---
 
 # {{ $frontmatter.title }}
