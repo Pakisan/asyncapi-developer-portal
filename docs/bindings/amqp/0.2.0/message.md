@@ -12,7 +12,7 @@ head:
       content: "How to use AMQP 0-9-1 with AsyncAPI message binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/amqp.png"
+      content: "/bindings/amqp/0.2.0/message.png"
 ---
 
 # {{ $frontmatter.title }}
