@@ -12,7 +12,7 @@ head:
       content: "How to use Apache Pulsar with AsyncAPI server binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/apache-pulsar.png"
+      content: "/bindings/apache-pulsar/0.1.0/server.png"
 ---
 
 # {{ $frontmatter.title }}
