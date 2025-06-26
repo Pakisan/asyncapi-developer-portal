@@ -12,7 +12,7 @@ head:
       content: "How to use Amazon SQS with AsyncAPI server binding"
   - - meta
     - name: "og:image"
-      content: "/bindings/amazon.png"
+      content: "/bindings/amazon-sqs/0.2.0/server.png"
 ---
 
 # {{ $frontmatter.title }}
