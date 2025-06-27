@@ -21,7 +21,7 @@ Contains information about the message representation in Google Cloud Pub/Sub.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/googlepubsub/0.2.0/message.json"/>
+<Json url="/bindings/googlepubsub/0.2.0/message.json"/>
 
 ## Examples
 
