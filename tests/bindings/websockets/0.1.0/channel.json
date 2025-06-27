@@ -1,0 +1,46 @@
+{
+  "target": "https://asyncapi.pavelon.dev/bindings/bindings/websockets/0.1.0/channel.json",
+  "$comment": "WebSockets 0.1.0 channel binding tests",
+  "tests": [
+    {
+      "description": "Realistic valid WebSockets 0.1.0 channel binding (all properties)",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/realistic-channel.json"
+    },
+    {
+      "description": "Minimal valid WebSockets 0.1.0 channel binding (only bindingVersion)",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/minimal-valid.json"
+    },
+    {
+      "description": "Valid WebSockets 0.1.0 channel binding with extension property",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/extension-property.json"
+    },
+    {
+      "description": "Invalid WebSockets 0.1.0 channel binding with additional property",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/invalid-additional-property.json"
+    },
+    {
+      "description": "Invalid WebSockets 0.1.0 channel binding with invalid method enum",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/invalid-method-enum.json"
+    },
+    {
+      "description": "Invalid WebSockets 0.1.0 channel binding with query as string",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/invalid-query-type.json"
+    },
+    {
+      "description": "Invalid WebSockets 0.1.0 channel binding with headers as string",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/invalid-headers-type.json"
+    },
+    {
+      "description": "Invalid WebSockets 0.1.0 channel binding with wrong bindingVersion",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/websockets/0.1.0/channel/invalid-binding-version.json"
+    }
+  ]
+} 
