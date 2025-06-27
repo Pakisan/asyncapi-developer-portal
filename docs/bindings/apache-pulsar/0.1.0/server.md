@@ -21,7 +21,7 @@ Contains information about the server representation in Apache Kafka.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/pulsar/0.1.0/server.json"/>
+<Json url="/bindings/apache-pulsar/0.1.0/server.json"/>
 
 ## Examples
 
