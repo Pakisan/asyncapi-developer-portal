@@ -1,0 +1,51 @@
+{
+  "target": "https://asyncapi.pavelon.dev/bindings/http/0.1.0/operation.json",
+  "$comment": "HTTP 0.1.0 operation binding tests",
+  "tests": [
+    {
+      "description": "Valid HTTP 0.1.0 operation binding for request (all properties)",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/valid-request.json"
+    },
+    {
+      "description": "Valid HTTP 0.1.0 operation binding for response (all properties)",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/valid-response.json"
+    },
+    {
+      "description": "Minimal valid HTTP 0.1.0 operation binding for request",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/minimal-request.json"
+    },
+    {
+      "description": "Minimal valid HTTP 0.1.0 operation binding for response",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/minimal-response.json"
+    },
+    {
+      "description": "Valid HTTP 0.1.0 operation binding with extension property",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/extension-property.json"
+    },
+    {
+      "description": "Invalid HTTP 0.1.0 operation binding with additional property",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/invalid-additional-property.json"
+    },
+    {
+      "description": "Invalid HTTP 0.1.0 operation binding with invalid type enum",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/invalid-type-enum.json"
+    },
+    {
+      "description": "Invalid HTTP 0.1.0 operation binding with invalid method enum",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/invalid-method-enum.json"
+    },
+    {
+      "description": "Invalid HTTP 0.1.0 operation binding with wrong bindingVersion",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/http/0.1.0/operation/invalid-binding-version.json"
+    }
+  ]
+} 
