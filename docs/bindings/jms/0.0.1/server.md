@@ -21,7 +21,7 @@ Contains information about the server representation in Jakarta Messaging API.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/jms/0.0.1/server.json"/>
+<Json url="/bindings/jms/0.0.1/server.json"/>
 
 ## Examples
 
