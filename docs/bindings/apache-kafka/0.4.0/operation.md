@@ -21,7 +21,7 @@ Contains information about the operation representation in Apache Kafka.
 
 ## Structure
 
-<Json url="/bindings/kafka/0.4.0/operation.json"/>
+<Json url="/bindings/apache-kafka/0.4.0/operation.json"/>
 
 ## Examples
 

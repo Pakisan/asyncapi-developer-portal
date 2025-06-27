@@ -21,7 +21,7 @@ Contains information about the server representation in Apache Kafka.
 
 ## Structure
 
-<Json url="/bindings/kafka/0.4.0/server.json"/>
+<Json url="/bindings/apache-kafka/0.4.0/server.json"/>
 
 ## Examples
 

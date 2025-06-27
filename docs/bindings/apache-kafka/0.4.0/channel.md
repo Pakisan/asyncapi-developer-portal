@@ -21,7 +21,7 @@ Contains information about the message representation in Apache Kafka.
 
 ## Structure
 
-<Json url="/bindings/kafka/0.4.0/channel.json"/>
+<Json url="/bindings/apache-kafka/0.4.0/channel.json"/>
 
 ## Examples
 
