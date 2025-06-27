@@ -21,7 +21,7 @@ Contains information about the channel representation in IBM MQ.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/ibmmq/0.1.0/channel.json"/>
+<Json url="/bindings/ibmmq/0.1.0/channel.json"/>
 
 ## Examples
 
