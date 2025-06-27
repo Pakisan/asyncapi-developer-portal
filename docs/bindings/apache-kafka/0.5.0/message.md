@@ -21,7 +21,7 @@ Contains information about the message representation in Apache Kafka.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/kafka/0.5.0/message.json"/>
+<Json url="/bindings/apache-kafka/0.5.0/message.json"/>
 
 ## Examples
 
