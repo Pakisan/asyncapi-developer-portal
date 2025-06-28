@@ -24,7 +24,7 @@ Contains information about the server representation in MQTT.
 
 ## Structure
 
-<Json url="/bindings/mqtt5-server.0.2.0.json" />
+<Json url="/bindings/mqtt5/0.2.0/server.json" />
 
 ## Examples
 
