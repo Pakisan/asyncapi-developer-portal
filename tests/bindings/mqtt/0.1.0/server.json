@@ -1,0 +1,71 @@
+{
+  "target": "https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/server.json",
+  "$comment": "MQTT 0.1.0 server binding test",
+  "tests": [
+    {
+      "description": "The empty object is valid",
+      "valid": true,
+      "data": {}
+    },
+    {
+      "description": "Valid server with all properties",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/realistic-valid.json"
+    },
+    {
+      "description": "Minimal valid server with only binding version",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/minimal-valid.json"
+    },
+    {
+      "description": "Valid server with extension properties",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/extension-property.json"
+    },
+    {
+      "description": "Valid server with only lastWill and binding version",
+      "valid": true,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/with-lastwill-only.json"
+    },
+    {
+      "description": "Invalid server with incorrect lastWill QoS value",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-lastwill-qos.json"
+    },
+    {
+      "description": "Invalid server with incorrect lastWill QoS type",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-lastwill-qos-type.json"
+    },
+    {
+      "description": "Invalid server with incorrect lastWill retain type",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-lastwill-retain-type.json"
+    },
+    {
+      "description": "Invalid server with incorrect cleanSession type",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-cleansession-type.json"
+    },
+    {
+      "description": "Invalid server with incorrect keepAlive type",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-keepalive-type.json"
+    },
+    {
+      "description": "Invalid server with incorrect binding version",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-binding-version.json"
+    },
+    {
+      "description": "Invalid server with additional property",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-additional-property.json"
+    },
+    {
+      "description": "Invalid server with lastWill missing required topic",
+      "valid": false,
+      "dataPath": "../../../../test-data/tests/bindings/mqtt/0.1.0/server/invalid-lastwill-missing-topic.json"
+    }
+  ]
+} 

@@ -21,7 +21,7 @@ Contains information about the server representation in MQTT.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/mqtt/0.1.0/server.json"/>
+<Json url="/bindings/mqtt/0.1.0/server.json"/>
 
 ## Examples
 
