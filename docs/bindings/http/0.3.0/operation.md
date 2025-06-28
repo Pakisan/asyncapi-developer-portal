@@ -21,7 +21,7 @@ Contains information about the operation representation in HTTP.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/http/0.2.0/operation.json"/>
+<Json url="/bindings/http/0.2.0/operation.json"/>
 
 ## Examples
 
