@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/message.json",
+  "title": "MQTT message bindings object",
+  "description": "This object contains information about the message representation in MQTT.",
+  "type": "object",
+  "additionalProperties": false,
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "properties": {
+    "payloadFormatIndicator": {
+      "type": "integer",
+      "enum": [0, 1],
+      "description": "1 indicates that the payload is UTF-8 encoded character data.  0 indicates that the payload format is unspecified.",
+      "default": 0
+    },
+    "correlationData": {
+      "oneOf": [
+        {
+          "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
+        },
+        {
+          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+        }
+      ],
+      "description": "Correlation Data is used by the sender of the request message to identify which request the response message is for when it is received."
+    },
+    "contentType": {
+      "type": "string",
+      "description": "String describing the content type of the message payload. This should not conflict with the contentType field of the associated AsyncAPI Message object."
+    },
+    "responseTopic": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri-template",
+          "minLength": 1
+        },
+        {
+          "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
+        },
+        {
+          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+        }
+      ],
+      "description": "The topic (channel URI) to be used for a response message."
+    },
+
+    "bindingVersion": {
+      "type": "string",
+      "enum": [
+        "0.2.0"
+      ],
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
+    }
+  },
+  "examples": [
+    {
+      "bindingVersion": "0.2.0"
+    },
+    {
+      "contentType": "application/json",
+      "correlationData": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "responseTopic": "application/responses",
+      "bindingVersion": "0.2.0"
+    }
+  ]
+}

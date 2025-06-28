@@ -21,7 +21,7 @@ Contains information about the message representation in MQTT.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/mqtt/0.2.0/message.json"/>
+<Json url="/bindings/mqtt/0.2.0/message.json"/>
 
 ## Examples
 
