@@ -221,13 +221,13 @@ messages:
 ## Binding Documentation
 
 ### Channel Bindings
-- [WebSockets Channel Binding v0.1.0](bindings/websockets/0.1.0/channel.md) - Connection establishment and handshake configuration
+- [WebSockets Channel Binding v0.1.0](./0.1.0/channel.md) - Connection establishment and handshake configuration
 
 ### Operation Bindings
-- [WebSockets Operation Binding v0.1.0](bindings/websockets/0.1.0/operation.md) - Message operation configuration
+- [WebSockets Operation Binding v0.1.0](./0.1.0/operation.md) - Message operation configuration
 
 ### Message Bindings
-- [WebSockets Message Binding v0.1.0](bindings/websockets/0.1.0/message.md) - Message representation in WebSocket protocol
+- [WebSockets Message Binding v0.1.0](./0.1.0/message.md) - Message representation in WebSocket protocol
 
 ### Server Bindings
-- [WebSockets Server Binding v0.1.0](bindings/websockets/0.1.0/server.md) - Server-level WebSocket configurations
+- [WebSockets Server Binding v0.1.0](./0.1.0/server.md) - Server-level WebSocket configurations
