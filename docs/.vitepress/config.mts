@@ -50,6 +50,8 @@ export default defineConfig({
             },
             {
               text: 'Amazon SQS',
+              base: '/bindings/amazon-sqs',
+              link: '/',
               collapsed: true,
               items: [
                 {
@@ -86,6 +88,8 @@ export default defineConfig({
             },
             {
               text: 'AMQP',
+              base: '/bindings/amqp',
+              link: '/',
               collapsed: true,
               items: [
                 {
@@ -472,6 +476,8 @@ export default defineConfig({
             },
             {
               text: 'WebSockets',
+              base: '/bindings/websockets',
+              link: '/',
               collapsed: true,
               items: [
                 {
