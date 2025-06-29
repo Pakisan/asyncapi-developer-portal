@@ -460,6 +460,8 @@ export default defineConfig({
             },
             {
               text: 'STOMP',
+              base: '/bindings/stomp',
+              link: '/',
               collapsed: true,
               items: [
                 {
