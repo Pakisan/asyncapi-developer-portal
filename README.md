@@ -28,5 +28,5 @@ jsonschema test ./tests/bindings -r ./docs/public/bindings ./docs/public/schemas
 ## Format JSON Schemas
 
 ```shell
-jsonschema fmt ./docs/public/schemas
+jsonschema fmt ./docs/public/bindings
 ```

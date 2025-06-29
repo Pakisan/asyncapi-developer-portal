@@ -3,18 +3,29 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/channel.json",
   "title": "Cloud Pub/Sub Channel Schema",
   "description": "This object contains information about the channel representation for Google Cloud Pub/Sub.",
+  "examples": [
+    {
+      "labels": {
+        "label1": "value1",
+        "label2": "value2"
+      },
+      "messageRetentionDuration": "86400s",
+      "messageStoragePolicy": {
+        "allowedPersistenceRegions": [ "us-central1", "us-east1" ]
+      },
+      "schemaSettings": {
+        "encoding": "json",
+        "name": "projects/your-project-id/schemas/your-schema"
+      }
+    }
+  ],
   "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
+  "required": [ "schemaSettings" ],
   "properties": {
     "bindingVersion": {
+      "description": "The version of this binding.",
       "type": "string",
-      "enum": [
-        "0.2.0"
-      ],
-      "description": "The version of this binding."
+      "enum": [ "0.2.0" ]
     },
     "labels": {
       "type": "object"
@@ -24,7 +35,6 @@
     },
     "messageStoragePolicy": {
       "type": "object",
-      "additionalProperties": false,
       "properties": {
         "allowedPersistenceRegions": {
           "type": "array",
@@ -32,11 +42,13 @@
             "type": "string"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "schemaSettings": {
       "type": "object",
       "additionalItems": false,
+      "required": [ "encoding", "name" ],
       "properties": {
         "encoding": {
           "type": "string"
@@ -50,33 +62,11 @@
         "name": {
           "type": "string"
         }
-      },
-      "required": [
-        "encoding",
-        "name"
-      ]
-    }
-  },
-  "required": [
-    "schemaSettings"
-  ],
-  "examples": [
-    {
-      "labels": {
-        "label1": "value1",
-        "label2": "value2"
-      },
-      "messageRetentionDuration": "86400s",
-      "messageStoragePolicy": {
-        "allowedPersistenceRegions": [
-          "us-central1",
-          "us-east1"
-        ]
-      },
-      "schemaSettings": {
-        "encoding": "json",
-        "name": "projects/your-project-id/schemas/your-schema"
       }
     }
-  ]
+  },
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
 }

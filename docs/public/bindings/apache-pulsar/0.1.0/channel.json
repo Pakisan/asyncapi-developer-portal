@@ -3,88 +3,77 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/channel.json",
   "title": "Channel Schema",
   "description": "This object contains information about the channel representation in Pulsar, which covers namespace and topic level admin configuration. This object contains additional information not possible to represent within the core AsyncAPI specification.",
-  "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
-  "required": [
-    "namespace",
-    "persistence"
+  "examples": [
+    {
+      "bindingVersion": "0.1.0",
+      "compaction": 1000,
+      "deduplication": true,
+      "geo-replication": [ "us-west", "us-east" ],
+      "namespace": "ns1",
+      "persistence": "persistent",
+      "retention": {
+        "size": 1000,
+        "time": 15
+      },
+      "ttl": 360
+    }
   ],
+  "type": "object",
+  "required": [ "namespace", "persistence" ],
   "properties": {
-    "namespace": {
+    "bindingVersion": {
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
       "type": "string",
-      "description": "The namespace, the channel is associated with."
-    },
-    "persistence": {
-      "type": "string",
-      "enum": [
-        "persistent",
-        "non-persistent"
-      ],
-      "description": "persistence of the topic in Pulsar."
+      "enum": [ "0.1.0" ]
     },
     "compaction": {
+      "description": "Topic compaction threshold given in MB",
       "type": "integer",
-      "minimum": 0,
-      "description": "Topic compaction threshold given in MB"
+      "minimum": 0
+    },
+    "deduplication": {
+      "description": "Whether deduplication of events is enabled or not.",
+      "type": "boolean"
     },
     "geo-replication": {
-      "type": "array",
       "description": "A list of clusters the topic is replicated to.",
+      "type": "array",
       "items": {
         "type": "string"
       }
     },
+    "namespace": {
+      "description": "The namespace, the channel is associated with.",
+      "type": "string"
+    },
+    "persistence": {
+      "description": "persistence of the topic in Pulsar.",
+      "type": "string",
+      "enum": [ "persistent", "non-persistent" ]
+    },
     "retention": {
       "type": "object",
-      "additionalProperties": false,
       "properties": {
-        "time": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Time given in Minutes. `0` = Disable message retention."
-        },
         "size": {
+          "description": "Size given in MegaBytes. `0` = Disable message retention.",
           "type": "integer",
-          "minimum": 0,
-          "description": "Size given in MegaBytes. `0` = Disable message retention."
+          "minimum": 0
+        },
+        "time": {
+          "description": "Time given in Minutes. `0` = Disable message retention.",
+          "type": "integer",
+          "minimum": 0
         }
-      }
+      },
+      "additionalProperties": false
     },
     "ttl": {
-      "type": "integer",
-      "description": "TTL in seconds for the specified topic"
-    },
-    "deduplication": {
-      "type": "boolean",
-      "description": "Whether deduplication of events is enabled or not."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.1.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
+      "description": "TTL in seconds for the specified topic",
+      "type": "integer"
     }
   },
-  "examples": [
-    {
-      "namespace": "ns1",
-      "persistence": "persistent",
-      "compaction": 1000,
-      "retention": {
-        "time": 15,
-        "size": 1000
-      },
-      "ttl": 360,
-      "geo-replication": [
-        "us-west",
-        "us-east"
-      ],
-      "deduplication": true,
-      "bindingVersion": "0.1.0"
-    }
-  ]
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
 }

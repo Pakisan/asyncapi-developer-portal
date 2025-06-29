@@ -2,13 +2,35 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/message.json",
   "title": "Message Schema",
+  "examples": [
+    {
+      "bindingVersion": "0.4.0",
+      "key": {
+        "type": "string",
+        "enum": [ "myKey" ]
+      },
+      "schemaIdLocation": "payload",
+      "schemaIdPayloadEncoding": "apicurio-new",
+      "schemaLookupStrategy": "TopicIdStrategy"
+    },
+    {
+      "bindingVersion": "0.4.0",
+      "key": {
+        "$ref": "path/to/user-create.avsc#/UserCreate"
+      },
+      "schemaIdLocation": "payload",
+      "schemaIdPayloadEncoding": "4"
+    }
+  ],
   "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
   "properties": {
+    "bindingVersion": {
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
+      "type": "string",
+      "enum": [ "0.4.0" ]
+    },
     "key": {
+      "description": "The message key.",
       "anyOf": [
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
@@ -19,51 +41,24 @@
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/avroSchema_v1.json"
         }
-      ],
-      "description": "The message key."
+      ]
     },
     "schemaIdLocation": {
-      "type": "string",
       "description": "If a Schema Registry is used when performing this operation, tells where the id of schema is stored.",
-      "enum": ["header", "payload"]
+      "type": "string",
+      "enum": [ "header", "payload" ]
     },
     "schemaIdPayloadEncoding": {
-      "type": "string",
-      "description": "Number of bytes or vendor specific values when schema id is encoded in payload."
+      "description": "Number of bytes or vendor specific values when schema id is encoded in payload.",
+      "type": "string"
     },
     "schemaLookupStrategy": {
-      "type": "string",
-      "description": "Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.4.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
+      "description": "Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied.",
+      "type": "string"
     }
-
   },
-  "examples": [
-    {
-      "key": {
-        "type": "string",
-        "enum": [
-          "myKey"
-        ]
-      },
-      "schemaIdLocation": "payload",
-      "schemaIdPayloadEncoding": "apicurio-new",
-      "schemaLookupStrategy": "TopicIdStrategy",
-      "bindingVersion": "0.4.0"
-    },
-    {
-      "key": {
-        "$ref": "path/to/user-create.avsc#/UserCreate"
-      },
-      "schemaIdLocation": "payload",
-      "schemaIdPayloadEncoding": "4",
-      "bindingVersion": "0.4.0"
-    }
-  ]
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
 }

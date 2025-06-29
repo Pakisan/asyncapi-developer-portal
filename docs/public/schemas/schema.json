@@ -2,6 +2,47 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://asyncapi.pavelon.dev/schemas/schema.json",
   "description": "The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is a superset of the JSON Schema Specification Draft 07. The empty schema (which allows any instance to validate) MAY be represented by the boolean value true and a schema which allows no instance to validate MAY be represented by the boolean value false.",
+  "examples": [
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/arrays.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/complex-object.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/conditional-validation-if-else.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/enumerated-values.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/person.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/regex-pattern.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/arrays.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/complex-object.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/conditional-validation-if-else.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/enumerated-values.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/person.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/regex-pattern.schema.json"
+    },
+    {
+      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/draft-07-core-schema-meta-schema.json"
+    }
+  ],
   "allOf": [
     {
       "$ref": "http://json-schema.org/draft-07/schema#"
@@ -101,47 +142,6 @@
       "patternProperties": {
         "^x-[\\w\\d\\.\\x2d_]+$": true
       }
-    }
-  ],
-  "examples": [
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/arrays.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/complex-object.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/conditional-validation-if-else.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/enumerated-values.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/person.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/regex-pattern.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/arrays.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/complex-object.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/conditional-validation-if-else.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/enumerated-values.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/person.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/regex-pattern.schema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/examples/schemas/json/draft-07-core-schema-meta-schema.json"
     }
   ]
 }

@@ -3,43 +3,37 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/operation.json",
   "title": "Operation Schema",
   "description": "This object contains information about the operation representation in Kafka.",
+  "examples": [
+    {
+      "bindingVersion": "0.4.0",
+      "clientId": {
+        "type": "string",
+        "enum": [ "myClientId" ]
+      },
+      "groupId": {
+        "type": "string",
+        "enum": [ "myGroupId" ]
+      }
+    }
+  ],
   "type": "object",
-  "additionalProperties": false,
+  "properties": {
+    "bindingVersion": {
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
+      "type": "string",
+      "enum": [ "0.4.0" ]
+    },
+    "clientId": {
+      "description": "Id of the consumer inside a consumer group.",
+      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
+    },
+    "groupId": {
+      "description": "Id of the consumer group.",
+      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
+    }
+  },
   "patternProperties": {
     "^x-[\\w\\d\\.\\x2d_]+$": true
   },
-  "properties": {
-    "groupId": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json",
-      "description": "Id of the consumer group."
-    },
-    "clientId": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json",
-      "description": "Id of the consumer inside a consumer group."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.4.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
-  },
-  "examples": [
-    {
-      "groupId": {
-        "type": "string",
-        "enum": [
-          "myGroupId"
-        ]
-      },
-      "clientId": {
-        "type": "string",
-        "enum": [
-          "myClientId"
-        ]
-      },
-      "bindingVersion": "0.4.0"
-    }
-  ]
+  "additionalProperties": false
 }

@@ -4,11 +4,11 @@
   "title": "Operation Schema",
   "description": "This object contains information about the operation representation in SQS.",
   "type": "object",
-  "additionalProperties": false,
   "properties": {
     "bindingVersion": {
-      "type": "string",
-      "default": "0.1.0"
+      "default": "0.1.0",
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

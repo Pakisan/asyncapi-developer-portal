@@ -3,29 +3,27 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/server.json",
   "title": "Server Schema",
   "description": "This object contains server information of Pulsar broker, which covers cluster and tenant admin configuration. This object contains additional information not possible to represent within the core AsyncAPI specification.",
+  "examples": [
+    {
+      "bindingVersion": "0.1.0",
+      "tenant": "contoso"
+    }
+  ],
   "type": "object",
-  "additionalProperties": false,
+  "properties": {
+    "bindingVersion": {
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
+      "type": "string",
+      "enum": [ "0.1.0" ]
+    },
+    "tenant": {
+      "description": "The pulsar tenant. If omitted, 'public' MUST be assumed.",
+      "default": "public",
+      "type": "string"
+    }
+  },
   "patternProperties": {
     "^x-[\\w\\d\\.\\x2d_]+$": true
   },
-  "properties": {
-    "tenant": {
-      "type": "string",
-      "default": "public",
-      "description": "The pulsar tenant. If omitted, 'public' MUST be assumed."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.1.0"
-      ],
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
-    }
-  },
-  "examples": [
-    {
-      "tenant": "contoso",
-      "bindingVersion": "0.1.0"
-    }
-  ]
+  "additionalProperties": false
 }

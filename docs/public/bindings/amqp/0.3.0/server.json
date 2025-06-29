@@ -4,11 +4,11 @@
   "title": "Server Schema",
   "description": "This object contains information about the server representation in AMQP.",
   "type": "object",
-  "additionalProperties": false,
   "properties": {
     "bindingVersion": {
-      "type": "string",
-      "default": "0.3.0"
+      "default": "0.3.0",
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

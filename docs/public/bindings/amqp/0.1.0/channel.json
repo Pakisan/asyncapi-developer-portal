@@ -1,124 +1,118 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/channel.json",
-    "title": "AMQP channel bindings object",
-    "description": "This object contains information about the channel representation in AMQP.",
-    "type": "object",
-    "additionalProperties": false,
-    "patternProperties": {
-        "^x-[\\w\\d\\.\\x2d_]+$": true
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/channel.json",
+  "title": "AMQP channel bindings object",
+  "description": "This object contains information about the channel representation in AMQP.",
+  "examples": [
+    {
+      "bindingVersion": "0.1.0",
+      "exchange": {
+        "type": "topic",
+        "autoDelete": false,
+        "durable": true,
+        "name": "myExchange",
+        "vhost": "/"
+      },
+      "is": "routingKey"
     },
-    "properties": {
+    {
+      "bindingVersion": "0.1.0",
+      "is": "queue",
+      "queue": {
+        "autoDelete": false,
+        "durable": true,
+        "exclusive": true,
+        "name": "my-queue-name",
+        "vhost": "/"
+      }
+    }
+  ],
+  "type": "object",
+  "oneOf": [
+    {
+      "not": {
+        "required": [ "queue" ]
+      },
+      "required": [ "exchange" ],
+      "properties": {
         "is": {
-            "type": "string",
-            "enum": ["queue", "routingKey"],
-            "description": "Defines what type of channel is it. Can be either 'queue' or 'routingKey' (default)."
-        },
-        "exchange": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "maxLength": 255,
-                    "description": "The name of the exchange. It MUST NOT exceed 255 characters long."
-                },
-                "type": {
-                    "type": "string",
-                    "enum": ["topic", "direct", "fanout", "default", "headers"],
-                    "description": "The type of the exchange. Can be either 'topic', 'direct', 'fanout', 'default' or 'headers'."
-                },
-                "durable": {
-                    "type": "boolean",
-                    "description": "Whether the exchange should survive broker restarts or not."
-                },
-                "autoDelete": {
-                    "type": "boolean",
-                    "description": "Whether the exchange should be deleted when the last queue is unbound from it."
-                }
-            },
-            "description": "When is=routingKey, this object defines the exchange properties."
-        },
-        "queue": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "maxLength": 255,
-                    "description": "The name of the queue. It MUST NOT exceed 255 characters long."
-                },
-                "durable": {
-                    "type": "boolean",
-                    "description": "Whether the queue should survive broker restarts or not."
-                },
-                "exclusive": {
-                    "type": "boolean",
-                    "description": "Whether the queue should be used only by one connection or not."
-                },
-                "autoDelete": {
-                    "type": "boolean",
-                    "description": "Whether the queue should be deleted when the last consumer unsubscribes."
-                }
-            },
-            "description": "When is=queue, this object defines the queue properties."
-        },
-        "bindingVersion": {
-            "type": "string",
-            "enum": [
-                "0.1.0"
-            ],
-            "description": "The version of this binding. If omitted, 'latest' MUST be assumed."
+          "const": "routingKey"
         }
+      }
     },
-    "oneOf": [
-        {
-            "properties": {
-                "is": { "const": "routingKey" }
-            },
-            "required": [
-                "exchange"
-            ],
-            "not": {
-                "required": [
-                    "queue"
-                ]
-            }
-        },
-        {
-            "properties": {
-                "is": { "const": "queue" }
-            },
-            "required": [
-                "queue"
-            ],
-            "not": {
-                "required": [
-                    "exchange"
-                ]
-            }
+    {
+      "not": {
+        "required": [ "exchange" ]
+      },
+      "required": [ "queue" ],
+      "properties": {
+        "is": {
+          "const": "queue"
         }
-    ],
-    "examples": [
-        {
-            "is": "routingKey",
-            "exchange": {
-                "name": "myExchange",
-                "type": "topic",
-                "durable": true,
-                "autoDelete": false,
-                "vhost": "/"
-            },
-            "bindingVersion": "0.1.0"
+      }
+    }
+  ],
+  "properties": {
+    "bindingVersion": {
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
+      "type": "string",
+      "enum": [ "0.1.0" ]
+    },
+    "exchange": {
+      "description": "When is=routingKey, this object defines the exchange properties.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "The type of the exchange. Can be either 'topic', 'direct', 'fanout', 'default' or 'headers'.",
+          "type": "string",
+          "enum": [ "topic", "direct", "fanout", "default", "headers" ]
         },
-        {
-            "is": "queue",
-            "queue": {
-                "name": "my-queue-name",
-                "durable": true,
-                "exclusive": true,
-                "autoDelete": false,
-                "vhost": "/"
-            },
-            "bindingVersion": "0.1.0"
+        "autoDelete": {
+          "description": "Whether the exchange should be deleted when the last queue is unbound from it.",
+          "type": "boolean"
+        },
+        "durable": {
+          "description": "Whether the exchange should survive broker restarts or not.",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "The name of the exchange. It MUST NOT exceed 255 characters long.",
+          "type": "string",
+          "maxLength": 255
         }
-    ]
+      }
+    },
+    "is": {
+      "description": "Defines what type of channel is it. Can be either 'queue' or 'routingKey' (default).",
+      "type": "string",
+      "enum": [ "queue", "routingKey" ]
+    },
+    "queue": {
+      "description": "When is=queue, this object defines the queue properties.",
+      "type": "object",
+      "properties": {
+        "autoDelete": {
+          "description": "Whether the queue should be deleted when the last consumer unsubscribes.",
+          "type": "boolean"
+        },
+        "durable": {
+          "description": "Whether the queue should survive broker restarts or not.",
+          "type": "boolean"
+        },
+        "exclusive": {
+          "description": "Whether the queue should be used only by one connection or not.",
+          "type": "boolean"
+        },
+        "name": {
+          "description": "The name of the queue. It MUST NOT exceed 255 characters long.",
+          "type": "string",
+          "maxLength": 255
+        }
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
 }

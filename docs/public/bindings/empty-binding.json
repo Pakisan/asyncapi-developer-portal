@@ -4,6 +4,6 @@
   "title": "Empty binding object",
   "description": "This object MUST NOT contain any properties. Its name is reserved for future use.",
   "type": "object",
-  "additionalProperties": false,
-  "properties": {}
+  "properties": {},
+  "additionalProperties": false
 }

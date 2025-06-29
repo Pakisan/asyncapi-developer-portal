@@ -4,11 +4,11 @@
   "title": "Message Schema",
   "description": "This object contains information about the message representation in SQS.",
   "type": "object",
-  "additionalProperties": false,
   "properties": {
     "bindingVersion": {
-      "type": "string",
-      "default": "0.3.0"
+      "default": "0.3.0",
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

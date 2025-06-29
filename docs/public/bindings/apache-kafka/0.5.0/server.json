@@ -3,33 +3,31 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/server.json",
   "title": "Server Schema",
   "description": "This object contains server connection information to a Kafka broker. This object contains additional information not possible to represent within the core AsyncAPI specification.",
+  "examples": [
+    {
+      "bindingVersion": "0.5.0",
+      "schemaRegistryUrl": "https://my-schema-registry.com",
+      "schemaRegistryVendor": "confluent"
+    }
+  ],
   "type": "object",
-  "additionalProperties": false,
+  "properties": {
+    "bindingVersion": {
+      "description": "The version of this binding.",
+      "type": "string",
+      "enum": [ "0.5.0" ]
+    },
+    "schemaRegistryUrl": {
+      "description": "API URL for the Schema Registry used when producing Kafka messages (if a Schema Registry was used).",
+      "type": "string"
+    },
+    "schemaRegistryVendor": {
+      "description": "The vendor of the Schema Registry and Kafka serdes library that should be used.",
+      "type": "string"
+    }
+  },
   "patternProperties": {
     "^x-[\\w\\d\\.\\x2d_]+$": true
   },
-  "properties": {
-    "schemaRegistryUrl": {
-      "type": "string",
-      "description": "API URL for the Schema Registry used when producing Kafka messages (if a Schema Registry was used)."
-    },
-    "schemaRegistryVendor": {
-      "type": "string",
-      "description": "The vendor of the Schema Registry and Kafka serdes library that should be used."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.5.0"
-      ],
-      "description": "The version of this binding."
-    }
-  },
-  "examples": [
-    {
-      "schemaRegistryUrl": "https://my-schema-registry.com",
-      "schemaRegistryVendor": "confluent",
-      "bindingVersion": "0.5.0"
-    }
-  ]
+  "additionalProperties": false
 }

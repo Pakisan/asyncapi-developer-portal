@@ -4,11 +4,11 @@
   "title": "Operation Schema",
   "description": "This object contains information about the operation representation in Anypoint MQ.",
   "type": "object",
-  "additionalProperties": false,
   "properties": {
     "bindingVersion": {
-      "type": "string",
-      "default": "0.0.1"
+      "default": "0.0.1",
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

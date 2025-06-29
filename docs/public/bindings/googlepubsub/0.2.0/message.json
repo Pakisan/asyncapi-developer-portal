@@ -3,36 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/message.json",
   "title": "Cloud Pub/Sub Channel Schema",
   "description": "This object contains information about the message representation for Google Cloud Pub/Sub.",
-  "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
-  "properties": {
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.2.0"
-      ],
-      "description": "The version of this binding."
-    },
-    "attributes": {
-      "type": "object"
-    },
-    "orderingKey": {
-      "type": "string"
-    },
-    "schema": {
-      "type": "object",
-      "additionalItems": false,
-      "properties": {
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": ["name"]
-    }
-  },
   "examples": [
     {
       "schema": {
@@ -44,5 +14,33 @@
         "name": "projects/your-project-id/schemas/your-protobuf-schema-id"
       }
     }
-  ]
+  ],
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "object"
+    },
+    "bindingVersion": {
+      "description": "The version of this binding.",
+      "type": "string",
+      "enum": [ "0.2.0" ]
+    },
+    "orderingKey": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "object",
+      "additionalItems": false,
+      "required": [ "name" ],
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
 }

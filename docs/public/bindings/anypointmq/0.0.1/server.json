@@ -4,11 +4,11 @@
   "title": "Server Schema",
   "description": "This object contains information about the server representation in Anypoint MQ.",
   "type": "object",
-  "additionalProperties": false,
   "properties": {
     "bindingVersion": {
-      "type": "string",
-      "default": "0.0.1"
+      "default": "0.0.1",
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

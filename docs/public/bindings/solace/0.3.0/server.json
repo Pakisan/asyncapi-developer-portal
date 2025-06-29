@@ -3,28 +3,26 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/solace/0.3.0/server.json",
   "title": "Solace server bindings object",
   "description": "This object contains server connection information about the Solace broker. This object contains additional connectivity information not possible to represent within the core AsyncAPI specification.",
+  "examples": [
+    {
+      "bindingVersion": "0.3.0",
+      "msgVpn": "ProdVPN"
+    }
+  ],
   "type": "object",
-  "additionalProperties": false,
+  "properties": {
+    "bindingVersion": {
+      "description": "The version of this binding.",
+      "type": "string",
+      "enum": [ "0.3.0" ]
+    },
+    "msgVpn": {
+      "description": "The name of the Virtual Private Network to connect to on the Solace broker.",
+      "type": "string"
+    }
+  },
   "patternProperties": {
     "^x-[\\w\\d\\.\\x2d_]+$": true
   },
-  "properties": {
-    "msgVpn": {
-      "type": "string",
-      "description": "The name of the Virtual Private Network to connect to on the Solace broker."
-    },
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.3.0"
-      ],
-      "description": "The version of this binding."
-    }
-  },
-  "examples": [
-    {
-      "msgVpn": "ProdVPN",
-      "bindingVersion": "0.3.0"
-    }
-  ]
+  "additionalProperties": false
 }

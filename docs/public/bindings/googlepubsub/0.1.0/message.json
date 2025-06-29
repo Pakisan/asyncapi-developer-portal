@@ -3,21 +3,29 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/message.json",
   "title": "Cloud Pub/Sub Channel Schema",
   "description": "This object contains information about the message representation for Google Cloud Pub/Sub.",
-  "type": "object",
-  "additionalProperties": false,
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
-  "properties": {
-    "bindingVersion": {
-      "type": "string",
-      "enum": [
-        "0.1.0"
-      ],
-      "description": "The version of this binding."
+  "examples": [
+    {
+      "schema": {
+        "type": "avro",
+        "name": "projects/your-project-id/schemas/your-avro-schema-id"
+      }
     },
+    {
+      "schema": {
+        "type": "protobuf",
+        "name": "projects/your-project-id/schemas/your-protobuf-schema-id"
+      }
+    }
+  ],
+  "type": "object",
+  "properties": {
     "attributes": {
       "type": "object"
+    },
+    "bindingVersion": {
+      "description": "The version of this binding.",
+      "type": "string",
+      "enum": [ "0.1.0" ]
     },
     "orderingKey": {
       "type": "string"
@@ -25,29 +33,19 @@
     "schema": {
       "type": "object",
       "additionalItems": false,
+      "required": [ "name", "type" ],
       "properties": {
-        "name": {
-          "type": "string"
-        },
         "type": {
           "type": "string"
+        },
+        "name": {
+          "type": "string"
         }
-      },
-      "required": ["name", "type"]
+      }
     }
   },
-  "examples": [
-    {
-      "schema": {
-        "name": "projects/your-project-id/schemas/your-avro-schema-id",
-        "type": "avro"
-      }
-    },
-    {
-      "schema": {
-        "name": "projects/your-project-id/schemas/your-protobuf-schema-id",
-        "type": "protobuf"
-      }
-    }
-  ]
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
 }
