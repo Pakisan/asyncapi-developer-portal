@@ -38,7 +38,7 @@ You may also use it for multiple consumers with the same protocol, instead of re
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/sns/0.1.0/operation.json" />
+<Json url="/bindings/sns/0.1.0/operation.json" />
 
 ## Examples
 

@@ -21,7 +21,7 @@ Contains information about the message representation in Anypoint MQ.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/anypointmq/0.0.1/message.json"/>
+<Json url="/bindings/anypointmq/0.0.1/message.json"/>
 
 ## Examples
 

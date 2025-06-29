@@ -21,7 +21,7 @@ Contains information about the channel representation in Solace.
 
 ## Structure
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/solace/0.2.0/operation.json"/>
+<Json url="/bindings/solace/0.2.0/operation.json"/>
 
 ## Examples
 
