@@ -13,8 +13,8 @@
       "dataPath": "../../../../test-data/tests/bindings/solace/0.4.0/operation/minimal-valid.json"
     },
     {
-      "description": "Invalid operation with extension property (should fail additionalProperties)",
-      "valid": false,
+      "description": "Valid operation with extension property",
+      "valid": true,
       "dataPath": "../../../../test-data/tests/bindings/solace/0.4.0/operation/extension-property.json"
     },
     {

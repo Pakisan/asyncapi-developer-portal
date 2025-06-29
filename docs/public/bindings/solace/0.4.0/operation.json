@@ -112,5 +112,8 @@
       "type": "integer"
     }
   },
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
   "additionalProperties": false
 }

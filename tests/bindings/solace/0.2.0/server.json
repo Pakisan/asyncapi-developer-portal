@@ -19,7 +19,7 @@
     },
     {
       "description": "Valid server with extension properties",
-      "valid": false,
+      "valid": true,
       "dataPath": "../../../../test-data/tests/bindings/solace/0.2.0/server/extension-property.json"
     },
     {
