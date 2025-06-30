@@ -1,47 +1,64 @@
 ---
-title: HTTP message binding
+title: HTTP Message Binding v0.1.0 - Headers Configuration
+description: This document details the legacy v0.1.0 of the HTTP message binding. Learn to configure the schema for HTTP headers.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "HTTP message binding"
+    - name: keywords
+      content: HTTP message binding, legacy, AsyncAPI, HTTP headers, API, webhooks
   - - meta
-    - name: "og:description"
-      content: "How to use HTTP with AsyncAPI message binding"
+    - property: og:title
+      content: HTTP Message Binding v0.1.0 - Headers Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/http/0.1.0/message.png"
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the HTTP message binding. Learn to configure the schema for HTTP headers.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/http/0.1.0/message.html
+  - - meta
+    - name: og:image
+      content: /bindings/http/0.1.0/message.png
+  - - meta
+    - name: twitter:title
+      content: HTTP Message Binding v0.1.0 - Headers Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the HTTP message binding. Learn to configure the schema for HTTP headers.
 ---
 
-# {{ $frontmatter.title }}
+# HTTP Message Binding v0.1.0
 
-Contains information about the message representation in HTTP.
+The HTTP message binding `v0.1.0` is used to define the schema for the headers of an HTTP message.
 
-## Structure
+## Message Properties
 
-<Json url="/bindings/http/0.1.0/message.json"/>
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
+| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema object defining the HTTP headers. |
 
-## Examples
+## Example
 
-```json
-{
-    "headers": {
-        "type": "object",
-        "properties": {
-            "Content-Type": {
-                "type": "string",
-                "enum": [
-                    "application/json"
-                ]
-            }
-        }
-    },
-    "bindingVersion": "0.1.0"
-}
+```yaml
+messages:
+  userSignupEvent:
+    bindings:
+      http:
+        bindingVersion: '0.1.0'
+        headers:
+          type: object
+          properties:
+            Content-Type:
+              type: string
+              enum: ['application/json']
 ```
 
 ## Changelog
 
-Good news, nothing was changed
+### Version 0.1.0
+- Initial release with only the `headers` property.

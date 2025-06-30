@@ -1,65 +1,68 @@
 ---
-title: HTTP message binding
+title: HTTP Message Binding v0.2.0 - Headers Configuration
+description: This document details the legacy v0.2.0 of the HTTP message binding. Learn to configure the schema for HTTP headers. For status codes, please upgrade to the latest version.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "HTTP message binding"
+    - name: keywords
+      content: HTTP message binding, legacy, AsyncAPI, HTTP headers, API, webhooks
   - - meta
-    - name: "og:description"
-      content: "How to use HTTP with AsyncAPI message binding"
+    - property: og:title
+      content: HTTP Message Binding v0.2.0 - Headers Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/http/0.2.0/message.png"
+    - property: og:description
+      content: This document details the legacy v0.2.0 of the HTTP message binding. Learn to configure the schema for HTTP headers. For status codes, please upgrade to the latest version.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/http/0.2.0/message.html
+  - - meta
+    - name: og:image
+      content: /bindings/http/0.2.0/message.png
+  - - meta
+    - name: twitter:title
+      content: HTTP Message Binding v0.2.0 - Headers Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.2.0 of the HTTP message binding. Learn to configure the schema for HTTP headers. For status codes, please upgrade to the latest version.
 ---
 
-# {{ $frontmatter.title }}
+# HTTP Message Binding v0.2.0
 
-Contains information about the message representation in HTTP.
+The HTTP message binding `v0.2.0` is used to define the schema for the headers of an HTTP message.
 
-## Structure
+## Message Properties
 
-<Json url="/bindings/http/0.2.0/message.json"/>
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema object defining the HTTP headers. |
 
-## Examples
+## Example
 
-```json
-{
-    "headers": {
-        "type": "object",
-        "properties": {
-            "Content-Type": {
-                "type": "string",
-                "enum": [
-                    "application/json"
-                ]
-            }
-        }
-    },
-    "bindingVersion": "0.2.0"
-}
+This describes the message for a webhook, specifying that the `Content-Type` header is required.
+
+```yaml
+messages:
+  userSignupEvent:
+    bindings:
+      http:
+        bindingVersion: '0.2.0'
+        headers:
+          type: object
+          required:
+            - 'Content-Type'
+          properties:
+            Content-Type:
+              type: string
+              enum: ['application/json']
 ```
 
-### Changed
+## Changelog
 
-#### headers
-
-`headers` can't be `Reference` anymore. Only `Schema`
-
-```json
-{
-    "headers": {
-        "oneOf": [ // [!code --]
-            { // [!code --]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json"
-            }, // [!code --]
-            { // [!code --]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json" // [!code --]
-            } // [!code --]
-        ], // [!code --]
-        "description": "\tA Schema object containing the definitions for HTTP-specific headers. This schema MUST be of type 'object' and have a 'properties' key."
-    }
-}
-```
+### Version 0.2.0
+- This version only includes the `headers` property. The `statusCode` property was added in `v0.3.0`.

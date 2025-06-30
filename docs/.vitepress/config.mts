@@ -246,6 +246,8 @@ export default defineConfig({
             },
             {
               text: 'HTTP',
+              base: '/bindings/http',
+              link: '/',
               collapsed: true,
               items: [
                 {

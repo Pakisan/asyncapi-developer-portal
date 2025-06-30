@@ -1,113 +1,70 @@
 ---
-title: HTTP operation binding
+title: HTTP Operation Binding v0.2.0 - Method & Query Configuration
+description: This document details the legacy v0.2.0 of the HTTP operation binding. Learn to configure the HTTP method and the schema for URL query parameters.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "HTTP operation binding"
+    - name: keywords
+      content: HTTP operation binding, legacy, AsyncAPI, HTTP method, query parameters, GET, POST, request, API
   - - meta
-    - name: "og:description"
-      content: "How to use HTTP with AsyncAPI operation binding"
+    - property: og:title
+      content: HTTP Operation Binding v0.2.0 - Method & Query Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/http/0.2.0/operation.png"
+    - property: og:description
+      content: This document details the legacy v0.2.0 of the HTTP operation binding. Learn to configure the HTTP method and the schema for URL query parameters.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/http/0.2.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/http/0.2.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: HTTP Operation Binding v0.2.0 - Method & Query Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.2.0 of the HTTP operation binding. Learn to configure the HTTP method and the schema for URL query parameters.
 ---
 
-# {{ $frontmatter.title }}
+# HTTP Operation Binding v0.2.0
 
-Contains information about the operation representation in HTTP.
+The HTTP operation binding `v0.2.0` is used to define the details of an HTTP request, specifically its method and query parameters.
 
-## Structure
+## Operation Properties
 
-<Json url="/bindings/http/0.2.0/operation.json"/>
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+| `method` | string | **Yes** | The HTTP request method (e.g., `GET`, `POST`). |
+| `query` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema defining the URL query parameters. |
 
-## Examples
+## Example
 
-### Get
+This operation describes an API call to fetch a list of users with a `GET` method and a `query` schema for filtering.
 
-```json
-{
-      "method": "GET", // [!code focus]
-      "query": {
-        "type": "object",
-        "required": [
-          "companyId"
-        ],
-        "properties": {
-          "companyId": {
-            "type": "number",
-            "minimum": 1,
-            "description": "The Id of the company."
-          }
-        },
-        "additionalProperties": false
-      },
-      "bindingVersion": "0.2.0"
-}
-```
-
-### Post
-
-```json
-{
-    "method": "POST", // [!code focus]
-    "query": {
-        "type": "object",
-        "required": [
-            "companyId"
-        ],
-        "properties": {
-            "companyId": {
-                "type": "number",
-                "minimum": 1,
-                "description": "The Id of the company."
-            }
-        },
-        "additionalProperties": false
-    },
-    "bindingVersion": "0.2.0"
-}
+```yaml
+operations:
+  listUsers:
+    action: receive
+    channel:
+      $ref: '#/channels/users'
+    bindings:
+      http:
+        bindingVersion: '0.2.0'
+        method: 'GET'
+        query:
+          type: object
+          properties:
+            companyId:
+              type: string
 ```
 
 ## Changelog
 
-### Removed
-
-#### type
-
-```json
-{
-    "type": { // [!code --]
-      "type": "string", // [!code --]
-      "enum": [ // [!code --]
-        "request", // [!code --]
-        "response" // [!code --]
-      ], // [!code --]
-      "description": "Required. Type of operation. Its value MUST be either 'request' or 'response'." // [!code --]
-    } // [!code --]
-}
-```
-
-### Changed
-
-#### query
-
-`query` can't be `Reference` anymore. Only `Schema`
-
-```json
-{
-    "query": {
-      "oneOf": [ // [!code --]
-        { // [!code --]
-          "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json"
-        }, // [!code --]
-        { // [!code --]
-          "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json" // [!code --]
-        } // [!code --]
-      ], // [!code --]
-      "description": "A Schema object containing the definitions for each query parameter. This schema MUST be of type 'object' and have a properties key."
-    }
-}
-```
+### Version 0.2.0
+- Renamed the original `type` property to `method` for better clarity compared to `v0.1.0`.
