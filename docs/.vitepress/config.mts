@@ -125,7 +125,9 @@ export default defineConfig({
               ]
             },
             {
-              text: 'AMQP 1-0',
+              text: 'AMQP 1.0',
+              base: '/bindings/amqp1',
+              link: '/',
               collapsed: true,
               items: [
                 {

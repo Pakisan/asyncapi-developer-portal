@@ -1,23 +1,62 @@
 ---
-title: AMQP 1-0 operation binding
+title: AMQP 1.0 Operation Binding v0.1.0 - Reserved for Future Use
+description: Documentation for the AMQP 1.0 operation binding v0.1.0 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "AMQP 1-0 operation binding"
+    - name: keywords
+      content: AMQP 1.0, AsyncAPI, operation binding, future use, messaging, protocol binding
   - - meta
-    - name: "og:description"
-      content: "How to use AMQP 1-0 with AsyncAPI operation binding"
+    - property: og:title
+      content: AMQP 1.0 Operation Binding v0.1.0 - Reserved for Future Use
   - - meta
-    - name: "og:image"
-      content: "/bindings/amqp1/0.1.0/operation.png"
+    - property: og:description
+      content: Documentation for the AMQP 1.0 operation binding v0.1.0 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amqp1/0.1.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/amqp1/0.1.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: AMQP 1.0 Operation Binding v0.1.0 - Reserved for Future Use
+  - - meta
+    - name: twitter:description
+      content: Documentation for the AMQP 1.0 operation binding v0.1.0 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
 ---
 
-# {{ $frontmatter.title }}
+# AMQP 1.0 Operation Binding v0.1.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The AMQP 1.0 operation binding is currently reserved for future use.
 
-Contains information about the operation representation in AMQP.
+## Overview
+
+This binding is intended to provide AMQP 1.0-specific information for an operation. As of version `0.1.0`, there are no properties to configure because the object is empty. It serves as a placeholder for future capabilities.
+
+### Operation Properties
+
+This object is empty.
+
+## Example
+
+While there are no operation properties to set, you can include the empty binding object to indicate that you are using version `0.1.0`.
+
+```yaml
+operations:
+  user-signup-op:
+    bindings:
+      amqp1:
+        bindingVersion: '0.1.0'
+```
+
+## Future Enhancements
+
+Future versions of this binding could be extended to include properties related to AMQP 1.0-specific operation details, such as:
+- **Settlement Policy**: Defining how messages are settled (e.g., `pre-settled`, `post-settled`).
+- **Link-level Credit Control**: Managing the flow of messages between peers.
