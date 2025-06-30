@@ -1,77 +1,98 @@
 ---
-title: Jakarta Messaging API message binding
+title: JMS Message Binding v0.0.1 - Header Configuration
+description: This document details the v0.0.1 of the JMS message binding. Learn to configure standard JMS headers like JMSCorrelationID and JMSReplyTo for enterprise messaging.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Jakarta Messaging API message binding"
+    - name: keywords
+      content: JMS message binding, AsyncAPI, JMS headers, JMSCorrelationID, JMSReplyTo, JMSMessageID, enterprise messaging, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Jakarta Messaging API with AsyncAPI message binding"
+    - property: og:title
+      content: JMS Message Binding v0.0.1 - Header Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/jms/0.0.1/message.png"
+    - property: og:description
+      content: This document details the v0.0.1 of the JMS message binding. Learn to configure standard JMS headers like JMSCorrelationID and JMSReplyTo for enterprise messaging.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/jms/0.0.1/message.html
+  - - meta
+    - name: og:image
+      content: /bindings/jms/0.0.1/message.png
+  - - meta
+    - name: twitter:title
+      content: JMS Message Binding v0.0.1 - Header Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the v0.0.1 of the JMS message binding. Learn to configure standard JMS headers like JMSCorrelationID and JMSReplyTo for enterprise messaging.
 ---
 
-# {{ $frontmatter.title }}
+# JMS Message Binding v0.0.1
 
-Contains information about the message representation in Jakarta Messaging API.
+The JMS message binding allows for defining JMS-specific protocol headers for a message.
 
-## Structure
+## Overview
 
-<Json url="/bindings/jms/0.0.1/message.json"/>
+This binding is essential for describing the metadata that accompanies a JMS message. It provides a schema to define standard JMS headers, which are crucial for implementing common messaging patterns like request/reply, and for controlling message behavior such as persistence and priority.
 
-## Examples
+## Message Properties
 
-```json
-{
-    "headers": {
-        "type": "object",
-        "required": ["JMSMessageID"],
-        "properties": {
-            "JMSMessageID": {
-                "type": ["string", "null"],
-                "description": "A unique message identifier. This may be set by your JMS Provider on your behalf."
-            },
-            "JMSTimestamp": {
-                "type": "integer",
-                "description": "The time the message was sent. This may be set by your JMS Provider on your behalf. The time the message was sent. The value of the timestamp is the amount of time, measured in milliseconds, that has elapsed since midnight, January 1, 1970, UTC."
-            },
-            "JMSDeliveryMode": {
-                "type": "string",
-                "enum": ["PERSISTENT", "NON_PERSISTENT"],
-                "default": "PERSISTENT",
-                "description": "Denotes the delivery mode for the message. This may be set by your JMS Provider on your behalf."
-            },
-            "JMSPriority": {
-                "type": "integer",
-                "default": 4,
-                "description": "The priority of the message. This may be set by your JMS Provider on your behalf."
-            },
-            "JMSExpires": {
-                "type": "integer",
-                "description": "The time at which the message expires. This may be set by your JMS Provider on your behalf. A value of zero means that the message does not expire. Any non-zero value is the amount of time, measured in milliseconds, that has elapsed since midnight, January 1, 1970, UTC, at which the message will expire."
-            },
-            "JMSType": {
-                "type": ["string", "null"],
-                "description": "The type of message. Some JMS providers use a message repository that contains the definitions of messages sent by applications. The 'JMSType' header field may reference a message's definition in the provider's repository. The JMS API does not define a standard message definition repository, nor does it define a naming policy for the definitions it contains. Some messaging systems require that a message type definition for each application message be created and that each message specify its type. In order to work with such JMS providers, JMS clients should assign a value to 'JMSType', whether the application makes use of it or not. This ensures that the field is properly set for those providers that require it."
-            },
-            "JMSCorrelationID": {
-                "type": ["string", "null"],
-                "description": "The correlation identifier of the message. A client can use the 'JMSCorrelationID' header field to link one message with another. A typical use is to link a response message with its request message. Since each message sent by a JMS provider is assigned a message ID value, it is convenient to link messages via message ID, such message ID values must start with the 'ID:' prefix. Conversely, application-specified values must not start with the 'ID:' prefix; this is reserved for provider-generated message ID values."
-            },
-            "JMSReplyTo": {
-                "type": "string",
-                "description": "The queue or topic that the message sender expects replies to."
-            }
-        }
-    },
-    "bindingVersion": "0.0.1"
-}
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.0.1`). |
+| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema object defining the JMS protocol headers. |
+
+## JMS Headers
+
+The `headers` property is a Schema Object that lets you define values for standard JMS headers. Here are some of the most common ones:
+
+| Header | Description |
+|---|---|
+| `JMSMessageID` | A unique identifier for the message, often set by the JMS provider. |
+| `JMSCorrelationID` | Used to link messages together, typically for request/reply patterns. A response message's correlation ID is often set to the request message's message ID. |
+| `JMSReplyTo` | A `Destination` (queue or topic) where a reply to the message should be sent. |
+| `JMSDeliveryMode` | Specifies the delivery mode: `PERSISTENT` or `NON_PERSISTENT`. |
+| `JMSPriority` | The priority level of the message, from `0` (lowest) to `9` (highest). |
+| `JMSExpires` | The time when the message will expire, in milliseconds since the Unix epoch. A value of `0` means it never expires. |
+| `JMSTimestamp` | The time the message was sent, in milliseconds since the Unix epoch. |
+| `JMSType` | An application-specific message type identifier. |
+
+## Example
+
+### Request/Reply Message with Headers
+
+This example defines a `creditScoreRequest` message. It specifies that replies should be sent to the `credit-score-replies` queue and includes a schema for the required JMS headers.
+
+```yaml
+messages:
+  creditScoreRequest:
+    summary: A request for a user's credit score.
+    correlationId:
+      location: '$message.header#/JMSCorrelationID'
+    bindings:
+      jms:
+        bindingVersion: '0.0.1'
+        headers:
+          type: object
+          properties:
+            JMSCorrelationID:
+              type: string
+              description: The ID of the original request.
+            JMSReplyTo:
+              type: string
+              description: The queue where the reply should be sent.
+              example: 'credit-score-replies'
+            JMSPriority:
+              type: integer
+              default: 5
 ```
 
 ## Changelog
 
-Good news, nothing was changed
+### Version 0.0.1
+- Initial release of the JMS message binding.
+- Added the `headers` property to allow schema definitions for standard JMS protocol headers.

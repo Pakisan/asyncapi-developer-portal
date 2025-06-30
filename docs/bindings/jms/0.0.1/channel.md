@@ -1,38 +1,96 @@
 ---
-title: Jakarta Messaging API channel binding
+title: JMS Channel Binding v0.0.1 - Destination Configuration
+description: This document details the v0.0.1 of the JMS channel binding. Learn how to configure a JMS destination as a `queue` or `fifo-queue` for enterprise messaging applications.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Jakarta Messaging API channel binding"
+    - name: keywords
+      content: JMS channel binding, AsyncAPI, JMS destination, queue, fifo-queue, point-to-point, enterprise messaging, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Jakarta Messaging API with AsyncAPI channel binding"
+    - property: og:title
+      content: JMS Channel Binding v0.0.1 - Destination Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/jms/0.0.1/channel.png"
+    - property: og:description
+      content: This document details the v0.0.1 of the JMS channel binding. Learn how to configure a JMS destination as a `queue` or `fifo-queue` for enterprise messaging applications.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/jms/0.0.1/channel.html
+  - - meta
+    - name: og:image
+      content: /bindings/jms/0.0.1/channel.png
+  - - meta
+    - name: twitter:title
+      content: JMS Channel Binding v0.0.1 - Destination Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the v0.0.1 of the JMS channel binding. Learn how to configure a JMS destination as a `queue` or `fifo-queue` for enterprise messaging applications.
 ---
 
-# {{ $frontmatter.title }}
+# JMS Channel Binding v0.0.1
 
-Contains information about the channel representation in Jakarta Messaging API.
+The JMS channel binding defines how an AsyncAPI channel maps to a JMS `Destination`, which is typically a queue.
 
-## Structure
+## Overview
 
-<Json url="/bindings/jms/0.0.1/channel.json"/>
+This binding object allows you to specify the name and type of a JMS destination. It's used for point-to-point messaging where a message is sent to a specific queue and consumed by a single receiver.
+
+## Channel Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.0.1`). |
+| `destination` | string | No | The name of the JMS destination (queue). Defaults to the channel name. |
+| `destinationType` | string | No | The type of destination. Can be `queue` or `fifo-queue`. Defaults to `queue`. |
+
+## Property Details
+
+### `destination`
+
+This field specifies the actual name of the queue in the JMS provider. You should use this property if the AsyncAPI channel name is not a valid queue name for your provider or if you want to use a different naming convention. If omitted, the channel name is used as the queue name.
+
+### `destinationType`
+
+This property defines the messaging model for the channel.
+- **`queue` (default)**: Standard point-to-point messaging. Message order is not guaranteed across multiple consumers.
+- **`fifo-queue`**: "First-In, First-Out". Guarantees strict message ordering. This should only be used if the target JMS provider supports it (e.g., AWS SQS with FIFO queues).
 
 ## Examples
 
-```json
-{
-    "destination":     "user-signed-up",
-    "destinationType": "fifo-queue",
-    "bindingVersion":  "0.0.1"
-}
+### Basic Queue Definition
+
+Defines a channel that maps to a JMS queue named `user-signup-events`.
+
+```yaml
+channels:
+  userSignupEvents:
+    bindings:
+      jms:
+        bindingVersion: '0.0.1'
+        destinationType: 'queue'
+```
+
+### FIFO Queue with a Custom Name
+
+Defines a channel that maps to a FIFO queue with a specific name that differs from the channel key.
+
+```yaml
+channels:
+  financialTransactions:
+    address: 'transactions.fifo' # The address here is illustrative
+    bindings:
+      jms:
+        bindingVersion: '0.0.1'
+        destination: 'critical-transactions.fifo'
+        destinationType: 'fifo-queue'
 ```
 
 ## Changelog
 
-Good news, nothing was changed
+### Version 0.0.1
+- Initial release of the JMS channel binding.
+- Added `destination` and `destinationType` properties to configure JMS queues.

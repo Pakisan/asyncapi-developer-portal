@@ -298,6 +298,8 @@ export default defineConfig({
             },
             {
               text: 'Jakarta Messaging API (JMS)',
+              base: '/bindings/jms',
+              link: '/',
               collapsed: true,
               items: [
                 {
