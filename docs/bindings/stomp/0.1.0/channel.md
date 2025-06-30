@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/channel.html
   - - meta
+    - name: og:image
+      content: /bindings/stomp/0.1.0/channel.png
+  - - meta
     - name: twitter:title
       content: STOMP Channel Binding v0.1.0 - Destination and Routing Configuration
   - - meta

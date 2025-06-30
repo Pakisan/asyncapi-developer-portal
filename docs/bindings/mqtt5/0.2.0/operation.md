@@ -21,14 +21,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/operation.html
   - - meta
+    - name: og:image
+      content: /bindings/mqtt5/0.2.0/operation.png
+  - - meta
     - name: twitter:title
       content: MQTT 5.0 Operation Binding v0.2.0 - Publish/Subscribe Options
   - - meta
     - name: twitter:description
       content: Learn how to configure MQTT 5.0 operation bindings using AsyncAPI v0.2.0. Define publish and subscribe behaviors like Quality of Service (QoS) for IoT and real-time messaging applications.
-  - - meta
-    - name: "og:image"
-      content: "/bindings/mqtt5/0.2.0/operation.png"
 ---
 
 # MQTT 5.0 Operation Binding v0.2.0

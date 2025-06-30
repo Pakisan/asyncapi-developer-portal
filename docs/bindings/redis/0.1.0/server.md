@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/server.html
   - - meta
+    - name: og:image
+      content: /bindings/redis/0.1.0/server.png
+  - - meta
     - name: twitter:title
       content: Redis Server Binding v0.1.0 - Server-Level Redis Configurations
   - - meta

@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/channel.html
   - - meta
+    - name: og:image
+      content: /bindings/websockets/0.1.0/channel.png
+  - - meta
     - name: twitter:title
       content: WebSockets Channel Binding v0.1.0 - Connection Establishment and Handshake Configuration
   - - meta

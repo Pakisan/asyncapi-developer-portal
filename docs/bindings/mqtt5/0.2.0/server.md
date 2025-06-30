@@ -21,14 +21,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/server.html
   - - meta
+    - name: og:image
+      content: /bindings/mqtt5/0.2.0/server.png
+  - - meta
     - name: twitter:title
       content: MQTT 5.0 Server Binding v0.2.0 - Session Configuration
   - - meta
     - name: twitter:description
       content: Learn how to configure MQTT 5.0 server bindings using AsyncAPI v0.2.0. Define server-level behaviors like session expiry for persistent sessions in IoT and real-time messaging.
-  - - meta
-    - name: "og:image"
-      content: "/bindings/mqtt5/0.2.0/server.png"
 ---
 
 # MQTT 5.0 Server Binding v0.2.0

@@ -21,14 +21,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/message.html
   - - meta
+    - name: og:image
+      content: /bindings/mqtt5/0.2.0/message.png
+  - - meta
     - name: twitter:title
       content: MQTT 5.0 Message Binding v0.2.0 - Message Property Configuration
   - - meta
     - name: twitter:description
       content: Learn how to configure MQTT 5.0 message bindings using AsyncAPI v0.2.0. Define message properties like expiry, content type, and correlation data for IoT and real-time messaging.
-  - - meta
-    - name: "og:image"
-      content: "/bindings/mqtt5/0.2.0/message.png"
 ---
 
 # MQTT 5.0 Message Binding v0.2.0

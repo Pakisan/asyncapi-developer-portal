@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/message.html
   - - meta
+    - name: og:image
+      content: /bindings/nats/0.1.0/message.png
+  - - meta
     - name: twitter:title
       content: NATS Message Binding v0.1.0 - Message Representation in NATS Protocol
   - - meta

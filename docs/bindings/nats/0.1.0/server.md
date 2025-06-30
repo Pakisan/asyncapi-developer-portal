@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/server.html
   - - meta
+    - name: og:image
+      content: /bindings/nats/0.1.0/server.png
+  - - meta
     - name: twitter:title
       content: NATS Server Binding v0.1.0 - Server-Level NATS Configurations
   - - meta

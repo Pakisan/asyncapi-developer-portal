@@ -21,14 +21,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/channel.html
   - - meta
+    - name: og:image
+      content: /bindings/mqtt5/0.2.0/channel.png
+  - - meta
     - name: twitter:title
       content: MQTT 5.0 Channel Binding v0.2.0 - Topic Configuration
   - - meta
     - name: twitter:description
       content: Learn how to configure MQTT 5.0 channel bindings using AsyncAPI v0.2.0. Define how AsyncAPI channels map to MQTT topics for IoT, mobile, and real-time messaging applications.
-  - - meta
-    - name: "og:image"
-      content: "/bindings/mqtt5/0.2.0/channel.png"
 ---
 
 # MQTT 5.0 Channel Binding v0.2.0

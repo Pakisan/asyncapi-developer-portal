@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/operation.html
   - - meta
+    - name: og:image
+      content: /bindings/websockets/0.1.0/operation.png
+  - - meta
     - name: twitter:title
       content: WebSockets Operation Binding v0.1.0 - Message Operation Configuration
   - - meta

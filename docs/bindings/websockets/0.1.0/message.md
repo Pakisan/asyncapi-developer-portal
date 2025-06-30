@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/message.html
   - - meta
+    - name: og:image
+      content: /bindings/websockets/0.1.0/message.png
+  - - meta
     - name: twitter:title
       content: WebSockets Message Binding v0.1.0 - Message Representation in WebSocket Protocol
   - - meta

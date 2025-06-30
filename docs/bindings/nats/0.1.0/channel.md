@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/channel.html
   - - meta
+    - name: og:image
+      content: /bindings/nats/0.1.0/channel.png
+  - - meta
     - name: twitter:title
       content: NATS Channel Binding v0.1.0 - Subject and Channel Configuration
   - - meta

@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/server.html
   - - meta
+    - name: og:image
+      content: /bindings/stomp/0.1.0/server.png
+  - - meta
     - name: twitter:title
       content: STOMP Server Binding v0.1.0 - Server-Level STOMP Configurations
   - - meta

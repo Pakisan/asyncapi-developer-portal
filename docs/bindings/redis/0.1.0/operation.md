@@ -21,6 +21,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/operation.html
   - - meta
+    - name: og:image
+      content: /bindings/redis/0.1.0/operation.png
+  - - meta
     - name: twitter:title
       content: Redis Operation Binding v0.1.0 - Message Operation Configuration
   - - meta
