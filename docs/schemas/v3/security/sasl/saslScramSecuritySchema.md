@@ -27,7 +27,7 @@ head:
       content: Learn how to implement SASL SCRAM authentication in AsyncAPI for secure password-based authentication using SHA-256 or SHA-512 hashing without transmitting passwords
 ---
 
-# {{ $frontmatter.title }}
+# SASL SCRAM Authentication
 
 ## What is SASL SCRAM Authentication in API?
 

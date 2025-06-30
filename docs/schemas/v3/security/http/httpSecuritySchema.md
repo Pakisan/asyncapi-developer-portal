@@ -27,7 +27,7 @@ head:
       content: Learn about HTTP security schemas in AsyncAPI including Bearer tokens, API Keys, Basic, Digest, and other authentication methods for securing HTTP-based communications
 ---
 
-# {{ $frontmatter.title }}
+# HTTP Security
 
 ## What is HTTP Security Schema in AsyncAPI?
 

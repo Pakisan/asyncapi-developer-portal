@@ -675,6 +675,18 @@ export default defineConfig({
     footer: {
       message: 'Released under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License</a> with ❤️ for <a href="https://asyncapi.com">AsyncAPI community</a>.',
       copyright: 'Copyright © 2024-present <a href="https://github.com/Pakisan">Pavel Bodiachevskii</a> & <a href="https://asyncapi.com">AsyncAPI community</a>'
+    },
+
+    search: {
+      provider: 'local',
+      options: {
+        _render(src, env, md) {
+          const html = md.render(src, env)
+          if (env.frontmatter?.title)
+            return md.render(`# ${env.frontmatter.title}`) + html
+          return html
+        }
+      }
     }
   },
 

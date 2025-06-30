@@ -27,7 +27,7 @@ head:
       content: Learn how to implement Asymmetric Encryption (Public-Key Cryptography) in AsyncAPI for secure message exchange, digital signatures, and non-repudiation
 ---
 
-# {{ $frontmatter.title }}
+# Asymmetric Encryption Security Schema
 
 ## What is Asymmetric Encryption?
 

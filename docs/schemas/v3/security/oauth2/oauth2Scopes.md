@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OAuth2 scopes in AsyncAPI for granular permission control, following the principle of least privilege in your API authorization
 ---
 
-# {{ $frontmatter.title }}
+# OAuth2 Scopes
 
 ## What is OAuth2 Scopes in API?
 

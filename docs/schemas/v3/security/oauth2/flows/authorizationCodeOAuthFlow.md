@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OAuth2 Authorization Code Flow in AsyncAPI for secure server-side applications with step-by-step guide and best practices
 ---
 
-# {{ $frontmatter.title }}
+# OAuth2 Authorization Code Flow
 
 ## What is OAuth2 Authorization Code Flow in API?
 

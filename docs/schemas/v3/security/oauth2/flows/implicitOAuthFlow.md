@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OAuth2 Implicit Flow in AsyncAPI for browser-based and mobile applications that cannot securely store client secrets
 ---
 
-# {{ $frontmatter.title }}
+# OAuth2 Implicit Flow
 
 ## What is OAuth2 Implicit Flow in API?
 

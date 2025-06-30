@@ -27,7 +27,7 @@ head:
       content: Learn how to implement Bearer token authentication in AsyncAPI for stateless, JWT-based security in HTTP APIs and OAuth 2.0 integrations
 ---
 
-# {{ $frontmatter.title }}
+# Bearer Authentication
 
 ## What is Bearer Authentication in HTTP?
 

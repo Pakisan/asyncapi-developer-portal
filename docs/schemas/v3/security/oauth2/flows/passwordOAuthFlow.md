@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OAuth2 Password Flow (Resource Owner Password Credentials) in AsyncAPI for trusted first-party applications that require direct credential handling
 ---
 
-# {{ $frontmatter.title }}
+# OAuth2 Password Flow
 
 ## What is OAuth2 Password Flow in API?
 

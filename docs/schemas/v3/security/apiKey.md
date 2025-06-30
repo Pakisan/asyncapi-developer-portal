@@ -27,7 +27,7 @@ head:
       content: Learn how to implement API Key authentication in AsyncAPI for simple, stateless authentication with examples, best practices, and security considerations
 ---
 
-# {{ $frontmatter.title }}
+# API Key
 
 ## What is an API Key?
 

@@ -27,7 +27,7 @@ head:
       content: Learn how to implement SASL GSS-API authentication in AsyncAPI for enterprise-grade Kerberos-based security with single sign-on and mutual authentication
 ---
 
-# {{ $frontmatter.title }}
+# SASL GSS-API
 
 ## What is SASL GSS-API Authentication?
 

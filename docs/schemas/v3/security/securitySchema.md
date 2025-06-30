@@ -27,7 +27,7 @@ head:
       content: Learn about the various security schemas in AsyncAPI including OAuth 2.0, OpenID Connect, API Keys, X.509, and more for securing your event-driven APIs
 ---
 
-# {{ $frontmatter.title }}
+# Security Schema
 
 ## What is Security Schema in AsyncAPI?
 

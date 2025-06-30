@@ -27,7 +27,7 @@ head:
       content: Learn how to implement username and password authentication in AsyncAPI with best practices for secure credential management and protection against common attacks
 ---
 
-# {{ $frontmatter.title }}
+# Username and Password Authentication
 
 ## What is Username and Password Authentication?
 

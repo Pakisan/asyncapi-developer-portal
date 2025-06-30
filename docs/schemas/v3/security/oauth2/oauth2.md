@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OAuth2 security in AsyncAPI with various flows including Authorization Code, Client Credentials, Implicit, and Password for secure API access
 ---
 
-# {{ $frontmatter.title }}
+# OAuth2 Security
 
 ## What is OAuth2 Security Schema in AsyncAPI?
 

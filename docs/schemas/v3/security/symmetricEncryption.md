@@ -27,7 +27,7 @@ head:
       content: Learn how to implement Symmetric Encryption in AsyncAPI for high-performance message security using shared keys with algorithms like AES-256 and ChaCha20
 ---
 
-# {{ $frontmatter.title }}
+# Symmetric Encryption
 
 ## What is Symmetric Encryption?
 

@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OAuth2 Client Credentials Flow in AsyncAPI for secure server-to-server and machine-to-machine communication without user interaction
 ---
 
-# {{ $frontmatter.title }}
+# OAuth2 Client Credentials Flow
 
 ## What is OAuth2 Client Credentials Flow in API?
 

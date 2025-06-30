@@ -27,7 +27,7 @@ head:
       content: Learn how to implement HTTP API Key authentication in AsyncAPI using headers, query parameters, or cookies for simple and effective API access control
 ---
 
-# {{ $frontmatter.title }}
+# API Key Authentication
 
 ## What is API Key Authentication in HTTP?
 

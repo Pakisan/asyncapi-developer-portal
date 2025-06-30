@@ -27,7 +27,7 @@ head:
       content: Learn how to implement SASL Plain authentication in AsyncAPI for simple username/password authentication in messaging protocols with transport layer security
 ---
 
-# {{ $frontmatter.title }}
+# {SASL Plain Authentication
 
 ## What is SASL Plain Authentication in API?
 

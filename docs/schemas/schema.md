@@ -26,7 +26,7 @@ head:
       content: Learn how Schema Object in AsyncAPI extends JSON Schema to define, validate, and document message payloads and data structures in event-driven APIs
 ---
 
-# {{ $frontmatter.title }}
+# Schema
 
 ## What is Schema Object in AsyncAPI?
 

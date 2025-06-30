@@ -29,7 +29,7 @@ head:
       content: Learn about AsyncAPI Schemas, how they define and validate message payloads in event-driven APIs using JSON Schema and other formats like Avro, XML, and Protobuf
 ---
 
-# {{ $frontmatter.title }}
+# AsyncAPI Schemas
 
 ## What is AsyncAPI Schemas?
 

@@ -27,7 +27,7 @@ head:
       content: Explore non-Bearer HTTP authentication methods in AsyncAPI including Basic, Digest, HOBA, Mutual, NTLM, Negotiate/SPNEGO, and SCRAM with implementation examples
 ---
 
-# {{ $frontmatter.title }}
+# Non-Bearer HTTP Security
 
 This document describes HTTP Authentication schemes other than Bearer and API Key. These schemes provide various methods for authenticating clients in HTTP-based communications.
 

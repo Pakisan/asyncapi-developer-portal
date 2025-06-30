@@ -27,7 +27,7 @@ head:
       content: Learn about SASL (Simple Authentication and Security Layer) security schemas in AsyncAPI for authenticating messaging protocols like Kafka, MQTT, and AMQP
 ---
 
-# {{ $frontmatter.title }}
+# SASL Security
 
 ## What is SASL Security Schema?
 

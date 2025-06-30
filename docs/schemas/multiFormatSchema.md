@@ -26,7 +26,7 @@ head:
       content: Learn how Multi-Format Schema Object in AsyncAPI enables defining message payloads using various schema formats including Avro, JSON Schema, XML, Protobuf, and RAML
 ---
 
-# {{ $frontmatter.title }}
+# Multi-Format Schema
 
 ## What is Multi-Format Schema Object in AsyncAPI?
 

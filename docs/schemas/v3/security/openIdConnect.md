@@ -27,7 +27,7 @@ head:
       content: Learn how to implement OpenID Connect (OIDC) in AsyncAPI for secure user authentication, identity verification, and Single Sign-On across distributed applications
 ---
 
-# {{ $frontmatter.title }}
+# OpenID Connect
 
 ## What is OpenID Connect?
 
