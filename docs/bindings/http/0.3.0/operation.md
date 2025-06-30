@@ -45,7 +45,7 @@ This binding applies to an AsyncAPI operation to specify how it maps to an HTTP 
 |----------|------|----------|-------------|
 | `bindingVersion` | string | No | Binding version (defaults to `0.3.0`). |
 | `method` | string | **Yes** | The HTTP request method (e.g., `GET`, `POST`). |
-| `query` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema defining the URL query parameters. |
+| `query` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | A schema defining the URL query parameters. |
 
 ## Property Details
 

@@ -44,7 +44,7 @@ This binding applies to an AsyncAPI message object. It can be used to describe t
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `bindingVersion` | string | No | Binding version (defaults to `0.3.0`). |
-| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema defining the HTTP headers. |
+| `headers` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | A schema defining the HTTP headers. |
 | `statusCode` | number | No | The HTTP status code. Only relevant for response messages. |
 
 ## Property Details

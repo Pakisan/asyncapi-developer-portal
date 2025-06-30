@@ -42,7 +42,7 @@ The HTTP operation binding `v0.1.0` is used to define the details of an HTTP req
 | `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
 | `type` | string | **Yes** | Type of operation. Must be `request` or `response`. |
 | `method` | string | **Yes** (if `type` is `request`) | The HTTP request method (e.g., `GET`, `POST`). |
-| `query` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema defining the URL query parameters. |
+| `query` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | A schema defining the URL query parameters. |
 
 ## Example
 

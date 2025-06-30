@@ -277,7 +277,7 @@ servers:
 - [NATS Documentation](https://docs.nats.io/)
 - [NATS by Example](https://natsbyexample.com/)
 - [NATS JetStream Documentation](https://docs.nats.io/jetstream/jetstream)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

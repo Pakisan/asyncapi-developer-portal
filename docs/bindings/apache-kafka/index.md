@@ -199,7 +199,7 @@ servers:
 
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
 - [Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/index.html)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

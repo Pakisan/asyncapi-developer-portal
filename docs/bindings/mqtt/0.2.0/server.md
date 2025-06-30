@@ -48,8 +48,8 @@ This binding object is essential for defining the characteristics of an MQTT con
 | `cleanSession` | boolean | No | Whether the broker should establish a persistent session. Defaults to `true`. |
 | `lastWill` | object | No | Last Will and Testament configuration. |
 | `keepAlive` | integer | No | Keep alive interval in seconds. Defaults to `60`. |
-| `sessionExpiryInterval` | integer or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Lifetime of the session in seconds after a disconnect. |
-| `maximumPacketSize` | integer or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Maximum packet size the client is willing to accept. |
+| `sessionExpiryInterval` | integer or [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | Lifetime of the session in seconds after a disconnect. |
+| `maximumPacketSize` | integer or [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | Maximum packet size the client is willing to accept. |
 
 ## Property Details
 

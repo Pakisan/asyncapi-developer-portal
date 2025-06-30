@@ -283,7 +283,7 @@ servers:
 - [Redis Documentation](https://redis.io/documentation)
 - [Redis Pub/Sub Guide](https://redis.io/topics/pubsub)
 - [Redis Data Types](https://redis.io/topics/data-types)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

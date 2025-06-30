@@ -44,9 +44,9 @@ While MQTT is fundamentally a publish-subscribe protocol, it is powerful enough 
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `bindingVersion` | string | No | Binding version (defaults to `0.2.0`) |
-| `correlationData` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Schema definition for the correlation data. |
+| `correlationData` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | Schema definition for the correlation data. |
 | `contentType` | string | No | Describes the content type of the message payload. |
-| `responseTopic` | string or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | The topic where a response message should be sent. |
+| `responseTopic` | string or [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | The topic where a response message should be sent. |
 | `payloadFormatIndicator` | integer | No | Must be `0` (unspecified bytes) or `1` (UTF-8). |
 
 ## Property Details

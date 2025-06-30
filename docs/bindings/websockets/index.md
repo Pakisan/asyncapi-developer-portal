@@ -219,7 +219,7 @@ messages:
 
 - [WebSocket Protocol Specification (RFC 6455)](https://tools.ietf.org/html/rfc6455)
 - [MDN WebSocket Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

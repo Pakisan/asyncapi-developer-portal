@@ -132,7 +132,7 @@ messages:
 ## Related Resources
 
 - [Anypoint MQ Documentation](https://docs.mulesoft.com/anypoint-mq/)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

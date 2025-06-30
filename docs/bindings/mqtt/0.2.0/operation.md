@@ -46,7 +46,7 @@ This binding provides crucial, operation-level control over how messages are han
 | `bindingVersion` | string | No | Binding version (defaults to `0.2.0`) |
 | `qos` | integer | No | Defines the Quality of Service level for the message. Must be `0`, `1`, or `2`. Defaults to `0`. |
 | `retain` | boolean | No | Whether the message should be retained by the broker. Defaults to `false`. |
-| `messageExpiryInterval` | integer or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Lifetime of the message in seconds. |
+| `messageExpiryInterval` | integer or [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | Lifetime of the message in seconds. |
 
 ## Property Details
 

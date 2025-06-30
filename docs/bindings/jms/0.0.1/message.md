@@ -44,7 +44,7 @@ This binding is essential for describing the metadata that accompanies a JMS mes
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `bindingVersion` | string | No | Binding version (defaults to `0.0.1`). |
-| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema object defining the JMS protocol headers. |
+| `headers` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | A schema object defining the JMS protocol headers. |
 
 ## JMS Headers
 

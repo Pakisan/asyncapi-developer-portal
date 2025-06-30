@@ -126,7 +126,7 @@ components:
 ## Related Resources
 
 - [OASIS AMQP 1.0 Standard](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=amqp)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

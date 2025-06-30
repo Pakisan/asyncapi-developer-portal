@@ -240,7 +240,7 @@ servers:
 - [STOMP Protocol Specification](https://stomp.github.io/stomp-specification-1.2.html)
 - [Apache ActiveMQ Documentation](https://activemq.apache.org/stomp.html)
 - [RabbitMQ STOMP Plugin](https://www.rabbitmq.com/stomp.html)
-- [AsyncAPI Specification](https://www.asyncapi.com/docs/specifications/latest)
+- [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
 
 ## Binding Documentation
 

@@ -47,7 +47,7 @@ MQTT 5.0 introduced significant enhancements to session management, allowing cli
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `bindingVersion` | string | No | Binding version (defaults to `0.2.0`) |
-| `sessionExpiryInterval` | integer or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Session Expiry Interval in seconds. |
+| `sessionExpiryInterval` | integer or [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | Session Expiry Interval in seconds. |
 
 ## Property Details
 

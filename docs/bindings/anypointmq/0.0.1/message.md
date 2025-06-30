@@ -43,7 +43,7 @@ This binding is used to describe message-level configurations that are specific 
 
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
-| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) \| [Reference Object](https://www.asyncapi.com/docs/specifications/v2.6.0#referenceObject) | No | A schema defining the Anypoint MQ-specific headers. This must be a schema of type `object` with a `properties` key. |
+| `headers` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) \| [Reference Object](https://asyncapi.pavelon.dev/schemas/reference.json) | No | A schema defining the Anypoint MQ-specific headers. This must be a schema of type `object` with a `properties` key. |
 | `bindingVersion` | string | No | The version of the Anypoint MQ message binding. For this version, the value is `0.0.1`. |
 
 ## Example

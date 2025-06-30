@@ -40,7 +40,7 @@ The HTTP message binding `v0.1.0` is used to define the schema for the headers o
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
-| `headers` | [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | A schema object defining the HTTP headers. |
+| `headers` | [Schema Object](https://asyncapi.pavelon.dev/schemas/schema.json) | No | A schema object defining the HTTP headers. |
 
 ## Example
 
