@@ -330,6 +330,8 @@ export default defineConfig({
             },
             {
               text: 'MQTT',
+              base: '/bindings/mqtt',
+              link: '/',
               collapsed: true,
               items: [
                 {

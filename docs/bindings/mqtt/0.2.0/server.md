@@ -1,98 +1,125 @@
 ---
-title: MQTT server binding
+title: MQTT Server Binding v0.2.0 - Connection and Session Configuration
+description: Learn to configure MQTT server bindings with AsyncAPI v0.2.0. Define client ID, session types, keep-alives, and the Last Will and Testament for robust IoT and real-time applications.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "MQTT server binding"
+    - name: keywords
+      content: MQTT server binding, AsyncAPI, Last Will and Testament, LWT, clean session, session expiry, keep-alive, client ID, MQTT, IoT
   - - meta
-    - name: "og:description"
-      content: "How to use MQTT with AsyncAPI server binding"
+    - property: og:title
+      content: MQTT Server Binding v0.2.0 - Connection and Session Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/mqtt/0.2.0/server.png"
+    - property: og:description
+      content: Learn to configure MQTT server bindings with AsyncAPI v0.2.0. Define client ID, session types, keep-alives, and the Last Will and Testament for robust IoT and real-time applications.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/server.html
+  - - meta
+    - name: og:image
+      content: /bindings/mqtt/0.2.0/server.png
+  - - meta
+    - name: twitter:title
+      content: MQTT Server Binding v0.2.0 - Connection and Session Configuration
+  - - meta
+    - name: twitter:description
+      content: Learn to configure MQTT server bindings with AsyncAPI v0.2.0. Define client ID, session types, keep-alives, and the Last Will and Testament for robust IoT and real-time applications.
 ---
 
-# {{ $frontmatter.title }}
+# MQTT Server Binding v0.2.0
 
-Contains information about the server representation in MQTT.
+The MQTT server binding provides detailed configuration for the connection between a client and an MQTT broker, including session parameters and the critical Last Will and Testament (LWT) feature.
 
-## Structure
+## Overview
 
-<Json url="/bindings/mqtt/0.2.0/server.json"/>
+This binding object is essential for defining the characteristics of an MQTT connection. It allows you to specify a client's identity, how its session should be handled by the broker upon disconnection, and a fail-safe message (the LWT) to be sent if the client disconnects ungracefully.
+
+## Server Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+| `clientId` | string | No | The client identifier. |
+| `cleanSession` | boolean | No | Whether the broker should establish a persistent session. Defaults to `true`. |
+| `lastWill` | object | No | Last Will and Testament configuration. |
+| `keepAlive` | integer | No | Keep alive interval in seconds. Defaults to `60`. |
+| `sessionExpiryInterval` | integer or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Lifetime of the session in seconds after a disconnect. |
+| `maximumPacketSize` | integer or [Schema Object](https://www.asyncapi.com/docs/specifications/v2.6.0#schemaObject) | No | Maximum packet size the client is willing to accept. |
+
+## Property Details
+
+### `clientId`
+A unique identifier for the client. If not provided, the broker will typically assign a random one. For persistent sessions, a stable `clientId` is required.
+
+### `cleanSession`
+This is the MQTT v3.1.1 term for managing sessions.
+- **`true` (default)**: The broker creates a new, temporary session for the client. When the client disconnects, the session and any subscriptions are deleted.
+- **`false`**: The broker creates or resumes a persistent session. If the client disconnects, the broker stores its subscriptions and any QoS 1 or 2 messages that arrive until the client reconnects. Requires a stable `clientId`. In MQTT v5, this is equivalent to `cleanStart: true` and `sessionExpiryInterval: 0`.
+
+### `sessionExpiryInterval`
+This is the MQTT v5 equivalent of `cleanSession: false`. It specifies the number of seconds the broker should maintain a session after a client disconnects. A value greater than `0` creates a persistent session. If both `cleanSession` and `sessionExpiryInterval` are present, `sessionExpiryInterval` takes precedence.
+
+### `lastWill`
+An object defining the Last Will and Testament message. This is a critical feature for monitoring device connectivity. If the client disconnects ungracefully (without sending a `DISCONNECT` packet), the broker will publish this message on its behalf. The `lastWill` object has the following properties:
+- `topic` (string, required): The topic for the LWT message.
+- `qos` (integer): The QoS for the LWT message.
+- `message` (string): The payload of the LWT message.
+- `retain` (boolean): Whether the LWT message should be retained.
+
+### `keepAlive`
+The maximum interval in seconds that the client and broker can go without sending a message to each other. It prevents the connection from being closed by network equipment for inactivity.
+
+### `maximumPacketSize`
+A feature from MQTT 5, this defines the maximum packet size in bytes that the client can handle.
 
 ## Examples
 
-```json
-{
-    "clientId": "guest",
-    "cleanSession": true,
-    "lastWill": {
-        "topic": "/last-wills",
-        "qos": 2,
-        "message": "Guest gone offline.",
-        "retain": false
-    },
-    "keepAlive": 60,
-    "sessionExpiryInterval": 120,
-    "maximumPacketSize": 1024,
-    "bindingVersion": "0.2.0"
-}
+### Server with a Last Will and Testament
+
+This server configuration defines a client that, upon an unexpected disconnection, will cause the broker to publish a JSON message to the `/devices/status` topic.
+
+```yaml
+servers:
+  device-farm:
+    url: mqtt://api.example.com
+    protocol: mqtt
+    bindings:
+      mqtt:
+        bindingVersion: '0.2.0'
+        clientId: 'temp-sensor-123'
+        cleanSession: false
+        keepAlive: 60
+        lastWill:
+          topic: /devices/status
+          qos: 1
+          message: '{"deviceId": "temp-sensor-123", "status": "offline"}'
+          retain: true
+```
+
+### Server using MQTT 5 Session Expiry
+
+This configuration uses the MQTT 5 `sessionExpiryInterval` to create a persistent session that lasts for 10 minutes after disconnection.
+
+```yaml
+servers:
+  mobile-app-broker:
+    url: mqtts://api.example.com
+    protocol: mqtt
+    bindings:
+      mqtt:
+        bindingVersion: '0.2.0'
+        clientId: 'user-app-xyz'
+        sessionExpiryInterval: 600
 ```
 
 ## Changelog
 
-### Added
-
-#### sessionExpiryInterval
-
-Interval time in seconds or a Schema Object containing the definition of the interval. 
-
-The broker maintains a session for a disconnected client until this interval expires.
-
-```json
-{
-    "sessionExpiryInterval": { //   [!code ++]
-        "oneOf": [ //   [!code ++]
-            { //   [!code ++]
-                "type": "integer", //   [!code ++]
-                "minimum": 0 //   [!code ++]
-            }, //   [!code ++]
-            { //   [!code ++]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json" //   [!code ++]
-            }, //   [!code ++]
-            { //   [!code ++]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json" //   [!code ++]
-            } //   [!code ++]
-        ], //   [!code ++]
-        "description": "Interval time in seconds or a Schema Object containing the definition of the interval.  The broker maintains a session for a disconnected client until this interval expires." //   [!code ++]
-    }//   [!code ++]
-}
-```
-
-#### maximumPacketSize
-
-Number of bytes or a Schema Object representing the Maximum Packet Size the Client is willing to accept.
-
-```json
-{
-    "maximumPacketSize": { //   [!code ++]
-        "oneOf": [ //   [!code ++]
-            { //   [!code ++]
-                "type": "integer", //   [!code ++]
-                "minimum": 1, //   [!code ++]
-                "maximum": 4294967295 //   [!code ++]
-            }, //   [!code ++]
-            { //   [!code ++]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/schema.json" //   [!code ++]
-            }, //   [!code ++]
-            { //   [!code ++]
-                "$ref": "http://asyncapi.com/definitions/3.0.0/Reference.json" //   [!code ++]
-            } //   [!code ++]
-        ], //   [!code ++]
-        "description": "Number of bytes or a Schema Object representing the Maximum Packet Size the Client is willing to accept." //   [!code ++]
-    } //   [!code ++]
-}
-```
+### Version 0.2.0
+- Initial release of the generic MQTT server binding.
+- Added `clientId`, `cleanSession`, `lastWill`, `keepAlive`, `sessionExpiryInterval`, and `maximumPacketSize`.
+- Schema validation for all properties.
