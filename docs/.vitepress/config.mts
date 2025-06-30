@@ -382,6 +382,8 @@ export default defineConfig({
             },
             {
               text: 'NATS',
+              base: '/bindings/nats',
+              link: '/',
               collapsed: true,
               items: [
                 {
