@@ -398,6 +398,8 @@ export default defineConfig({
             },
             {
               text: 'Redis',
+              base: '/bindings/redis',
+              link: '/',
               collapsed: true,
               items: [
                 {
