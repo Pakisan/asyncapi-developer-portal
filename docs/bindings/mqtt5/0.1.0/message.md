@@ -1,26 +1,73 @@
 ---
-title: MQTT v5 message binding
+title: MQTT 5.0 Message Binding v0.1.0 - Message Property Configuration
+description: This document details the legacy v0.1.0 of the MQTT 5.0 message binding. It is recommended to use the latest version for more comprehensive features.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "MQTT v5 message binding"
+    - name: keywords
+      content: MQTT 5.0 message binding, legacy, AsyncAPI, MQTT message properties, IoT messaging, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use MQTT v5 with AsyncAPI message binding"
+    - property: og:title
+      content: MQTT 5.0 Message Binding v0.1.0 - Message Property Configuration
+  - - meta
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the MQTT 5.0 message binding. It is recommended to use the latest version for more comprehensive features.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/message.html
+  - - meta
+    - name: twitter:title
+      content: MQTT 5.0 Message Binding v0.1.0 - Message Property Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the MQTT 5.0 message binding. It is recommended to use the latest version for more comprehensive features.
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/message.png"
 ---
 
-# {{ $frontmatter.title }}
+# MQTT 5.0 Message Binding v0.1.0
 
 > [!WARNING]
-> MQTT version 5 specific bindings are deprecated in favor of [MQTT message binding](../../mqtt/0.2.0/message) that are not version specific.
+> This is a legacy version of the MQTT 5.0 message binding. It is recommended to use the [latest version (v0.2.0)](../0.2.0/message.md) for up-to-date features and compatibility.
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The MQTT 5.0 message binding v0.1.0 describes properties of a message specific to the MQTT protocol. This version of the binding is a placeholder and does not define any specific properties.
 
-Contains information about the message representation in MQTT.
+## Overview
+
+This binding is used to signify message-level configurations for an MQTT message. In this legacy version, its presence is purely informational, but it lays the groundwork for future properties like Message Expiry.
+
+## Message Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`) |
+
+## Example
+
+This example shows a message defined with the legacy binding.
+
+```yaml
+messages:
+  userSignedUp:
+    payload:
+      type: object
+      properties:
+        displayName:
+          type: string
+          description: Name of the user
+    bindings:
+      mqtt5:
+        bindingVersion: '0.1.0'
+```
+
+## Changelog
+
+### Version 0.1.0
+- Initial legacy release of the MQTT 5.0 message binding.
+- The binding is a placeholder with no specific properties.

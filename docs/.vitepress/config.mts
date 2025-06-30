@@ -356,6 +356,8 @@ export default defineConfig({
             },
             {
               text: 'MQTT v5',
+              base: '/bindings/mqtt5',
+              link: '/',
               collapsed: true,
               items: [
                 {

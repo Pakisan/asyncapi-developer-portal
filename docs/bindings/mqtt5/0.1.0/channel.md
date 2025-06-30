@@ -1,26 +1,68 @@
 ---
-title: MQTT v5 channel binding
+title: MQTT 5.0 Channel Binding v0.1.0 - Topic Configuration
+description: This document details the legacy v0.1.0 of the MQTT 5.0 channel binding, which maps AsyncAPI channels to MQTT topics. It is recommended to use the latest version.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "MQTT v5 channel binding"
+    - name: keywords
+      content: MQTT 5.0 channel binding, legacy, AsyncAPI, MQTT topics, topic configuration, IoT messaging, M2M, publish-subscribe, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use MQTT v5 with AsyncAPI channel binding"
+    - property: og:title
+      content: MQTT 5.0 Channel Binding v0.1.0 - Topic Configuration
+  - - meta
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the MQTT 5.0 channel binding, which maps AsyncAPI channels to MQTT topics. It is recommended to use the latest version.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/channel.html
+  - - meta
+    - name: twitter:title
+      content: MQTT 5.0 Channel Binding v0.1.0 - Topic Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the MQTT 5.0 channel binding, which maps AsyncAPI channels to MQTT topics. It is recommended to use the latest version.
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/channel.png"
 ---
 
-# {{ $frontmatter.title }}
+# MQTT 5.0 Channel Binding v0.1.0
 
 > [!WARNING]
-> MQTT version 5 specific bindings are deprecated in favor of [MQTT channel binding](../../mqtt/0.2.0/channel) that are not version specific.
+> This is a legacy version of the MQTT 5.0 channel binding. It is recommended to use the [latest version (v0.2.0)](../0.2.0/channel.md) for up-to-date features and compatibility.
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The MQTT 5.0 channel binding v0.1.0 defines how an AsyncAPI channel maps to an MQTT topic. This version of the binding is a placeholder and does not define any specific properties.
 
-Contains information about the channel representation in MQTT.
+## Overview
+
+This binding's presence indicates that the channel's address corresponds to an MQTT topic, which is the fundamental endpoint for publishing and subscribing to messages in an MQTT environment.
+
+## Channel Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`) |
+
+## Example
+
+This example defines a channel that maps to the MQTT topic `user/signedup`.
+
+```yaml
+channels:
+  userSignup:
+    address: 'user/signedup'
+    bindings:
+      mqtt5:
+        bindingVersion: '0.1.0'
+```
+
+## Changelog
+
+### Version 0.1.0
+- Initial legacy release of the MQTT 5.0 channel binding.
+- The binding is a placeholder with no specific properties.
