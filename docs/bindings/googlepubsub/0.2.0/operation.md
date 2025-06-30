@@ -1,23 +1,66 @@
 ---
-title: Google Cloud Pub/Sub operation binding
+title: Google Pub/Sub Operation Binding v0.2.0 - Placeholder
+description: This document details v0.2.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future Google Pub/Sub-specific operation configurations.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Google Cloud Pub/Sub operation binding"
+    - name: keywords
+      content: Google Pub/Sub operation binding, AsyncAPI, placeholder, GCP, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Google Cloud Pub/Sub with AsyncAPI operation binding"
+    - property: og:title
+      content: Google Pub/Sub Operation Binding v0.2.0 - Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/googlepubsub/0.2.0/operation.png"
+    - property: og:description
+      content: This document details v0.2.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future Google Pub/Sub-specific operation configurations.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/googlepubsub/0.2.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: Google Pub/Sub Operation Binding v0.2.0 - Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details v0.2.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future Google Pub/Sub-specific operation configurations.
 ---
 
-# {{ $frontmatter.title }}
+# Google Pub/Sub Operation Binding v0.2.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Google Cloud Pub/Sub operation binding is reserved for defining properties that are specific to a Google Cloud Pub/Sub operation.
 
-Contains information about the operation representation in Google Cloud Pub/Sub.
+## Overview
+
+As of `v0.2.0`, this binding is a placeholder and does not contain any properties. Its presence on an operation is for informational purposes, indicating that the operation is part of a Google Cloud Pub/Sub-based API.
+
+## Operation Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+
+## Example
+
+This example shows a `publish` operation with the placeholder Google Cloud Pub/Sub operation binding.
+
+```yaml
+operations:
+  sendUserEvent:
+    action: send
+    channel:
+      $ref: '#/channels/userEvents'
+    bindings:
+      googlepubsub:
+        bindingVersion: '0.2.0'
+```
+
+## Changelog
+
+### Version 0.2.0
+- The binding remains a placeholder.

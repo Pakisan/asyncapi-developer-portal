@@ -1,23 +1,51 @@
 ---
-title: Google Cloud Pub/Sub server binding
+title: Google Pub/Sub Server Binding v0.1.0 - Placeholder
+description: This document details the legacy v0.1.0 of the Google Pub/Sub server binding. This version is a placeholder that identifies an AsyncAPI server as a Google Pub/Sub endpoint.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Google Cloud Pub/Sub server binding"
+    - name: keywords
+      content: Google Pub/Sub server binding, legacy, AsyncAPI, placeholder, GCP
   - - meta
-    - name: "og:description"
-      content: "How to use Google Cloud Pub/Sub with AsyncAPI server binding"
+    - property: og:title
+      content: Google Pub/Sub Server Binding v0.1.0 - Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/googlepubsub/0.1.0/server.png"
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the Google Pub/Sub server binding. This version is a placeholder that identifies an AsyncAPI server as a Google Pub/Sub endpoint.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/server.html
+  - - meta
+    - name: og:image
+      content: /bindings/googlepubsub/0.1.0/server.png
+  - - meta
+    - name: twitter:title
+      content: Google Pub/Sub Server Binding v0.1.0 - Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the Google Pub/Sub server binding. This version is a placeholder that identifies an AsyncAPI server as a Google Pub/Sub endpoint.
 ---
 
-# {{ $frontmatter.title }}
+# Google Pub/Sub Server Binding v0.1.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Google Cloud Pub/Sub server binding `v0.1.0` specifies that an AsyncAPI server corresponds to the Google Cloud Pub/Sub service.
 
-Contains information about the server representation in Google Cloud Pub/Sub.
+## Overview
+
+As of this version, the binding is a placeholder and has no configurable properties.
+
+## Server Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
+
+## Changelog
+
+### Version 0.1.0
+- Initial placeholder release.

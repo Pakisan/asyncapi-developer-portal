@@ -1,23 +1,51 @@
 ---
-title: Google Cloud Pub/Sub operation binding
+title: Google Pub/Sub Operation Binding v0.1.0 - Placeholder
+description: This document details the legacy v0.1.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future configurations.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Google Cloud Pub/Sub operation binding"
+    - name: keywords
+      content: Google Pub/Sub operation binding, legacy, AsyncAPI, placeholder, GCP
   - - meta
-    - name: "og:description"
-      content: "How to use Google Cloud Pub/Sub with AsyncAPI operation binding"
+    - property: og:title
+      content: Google Pub/Sub Operation Binding v0.1.0 - Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/googlepubsub/0.1.0/operation.png"
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future configurations.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/googlepubsub/0.1.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: Google Pub/Sub Operation Binding v0.1.0 - Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future configurations.
 ---
 
-# {{ $frontmatter.title }}
+# Google Pub/Sub Operation Binding v0.1.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Google Cloud Pub/Sub operation binding `v0.1.0` is a placeholder.
 
-Contains information about the operation representation in Google Cloud Pub/Sub.
+## Overview
+
+As of this version, the binding does not contain any properties. Its presence on an operation is for informational purposes only.
+
+## Operation Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
+
+## Changelog
+
+### Version 0.1.0
+- Initial placeholder release.

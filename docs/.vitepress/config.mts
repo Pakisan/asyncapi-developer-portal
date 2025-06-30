@@ -220,6 +220,8 @@ export default defineConfig({
             },
             {
               text: 'Google Cloud Pub/Sub',
+              base: '/bindings/googlepubsub',
+              link: '/',
               collapsed: true,
               items: [
                 {

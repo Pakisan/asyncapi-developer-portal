@@ -1,50 +1,78 @@
 ---
-title: Google Cloud Pub/Sub channel binding
+title: Google Pub/Sub Channel Binding v0.1.0 - Topic Configuration
+description: This document details the legacy v0.1.0 of the Google Pub/Sub channel binding. It is recommended to use the latest version for a clearer and more accurate schema.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Google Cloud Pub/Sub channel binding"
+    - name: keywords
+      content: Google Pub/Sub channel binding, legacy, AsyncAPI, Pub/Sub Topic, schema validation, GCP
   - - meta
-    - name: "og:description"
-      content: "How to use Google Cloud Pub/Sub with AsyncAPI channel binding"
+    - property: og:title
+      content: Google Pub/Sub Channel Binding v0.1.0 - Topic Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/googlepubsub/0.1.0/channel.png"
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the Google Pub/Sub channel binding. It is recommended to use the latest version for a clearer and more accurate schema.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/channel.html
+  - - meta
+    - name: og:image
+      content: /bindings/googlepubsub/0.1.0/channel.png
+  - - meta
+    - name: twitter:title
+      content: Google Pub/Sub Channel Binding v0.1.0 - Topic Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the Google Pub/Sub channel binding. It is recommended to use the latest version for a clearer and more accurate schema.
 ---
 
-# {{ $frontmatter.title }}
+# Google Pub/Sub Channel Binding v0.1.0
 
-Contains information about the channel representation in Google Cloud Pub/Sub.
+The Google Cloud Pub/Sub channel binding `v0.1.0` defines how an AsyncAPI channel maps to a Google Cloud Pub/Sub `Topic`.
 
-## Structure
+## Overview
 
-<Json url="/bindings/googlepubsub/0.1.0/channel.json"/>
+This binding object allows you to specify configuration for a Pub/Sub topic. Note that this version of the binding has a somewhat confusing structure that was improved in later versions.
 
-## Examples
+## Channel Properties
 
-```json
-{
-    "labels": {
-        "label1": "value1",
-        "label2": "value2"
-    },
-    "messageRetentionDuration": "86400s",
-    "messageStoragePolicy": {
-        "allowedPersistenceRegions": [
-            "us-central1",
-            "us-east1"
-        ]
-    },
-    "schemaSettings": {
-        "encoding": "json",
-        "name": "projects/your-project-id/schemas/your-schema"
-    }
-}
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
+| `topic` | string | **Yes** | The name of the topic. |
+| `labels` | object | No | A map of key-value pairs for organizing resources. |
+| `messageRetentionDuration` | string | No | The minimum duration a message is retained. |
+| `messageStoragePolicy` | object | No | Policy for controlling where messages are stored. |
+| `schemaSettings` | object | **Yes** | Settings for a schema associated with the topic. |
+
+### `schemaSettings` Object
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `encoding` | string | **Yes** | The encoding of messages. Can be `json` or `binary`. |
+| `name` | string | **Yes** | The full resource name of the schema. |
+
+## Example
+
+```yaml
+channels:
+  user-creation-events:
+    bindings:
+      googlepubsub:
+        bindingVersion: '0.1.0'
+        topic: 'user-created-topic'
+        schemaSettings:
+          encoding: 'json'
+          name: 'projects/my-gcp-project/schemas/UserCreatedEvent'
 ```
 
 ## Changelog
 
-Good news, nothing was changed
+### Version 0.1.0
+- Initial release.
+- Note: This version included both `topic` and `schemaSettings` at the same level, which was clarified in `v0.2.0`. The `topic` string should be the channel `address` in modern usage.
