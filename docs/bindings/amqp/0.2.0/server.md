@@ -1,23 +1,66 @@
 ---
-title: AMQP 0-9-1 server binding
+title: AMQP Server Binding v0.2.0 - Reserved for Future Use
+description: An overview of the AsyncAPI AMQP server binding object for version 0.2.0. Learn why this binding is reserved for future server-level configurations in AMQP 0-9-1.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "AMQP 0-9-1 server binding"
+    - name: keywords
+      content: AMQP server binding, AsyncAPI, RabbitMQ, server configuration, event-driven architecture, placeholder binding
   - - meta
-    - name: "og:description"
-      content: "How to use AMQP 0-9-1 with AsyncAPI server binding"
+    - property: og:title
+      content: AMQP Server Binding v0.2.0 - Reserved for Future Use
   - - meta
-    - name: "og:image"
-      content: "/bindings/amqp/0.2.0/server.png"
+    - property: og:description
+      content: An overview of the AsyncAPI AMQP server binding object for version 0.2.0. Learn why this binding is reserved for future server-level configurations in AMQP 0-9-1.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amqp/0.2.0/server.html
+  - - meta
+    - property: og:image
+      content: /bindings/amqp/0.2.0/server.png
+  - - meta
+    - name: twitter:title
+      content: AMQP Server Binding v0.2.0 - Reserved for Future Use
+  - - meta
+    - name: twitter:description
+      content: An overview of the AsyncAPI AMQP server binding object for version 0.2.0. Learn why this binding is reserved for future server-level configurations in AMQP 0-9-1.
 ---
 
-# {{ $frontmatter.title }}
+# AMQP 0-9-1 Server Binding v0.2.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The AMQP server binding object is reserved for future use. It is intended to hold server-level configuration settings for AMQP 0-9-1, but currently, it does not define any properties.
 
-Contains information about the server representation in AMQP.
+## Overview
+
+While you can include an AMQP server binding in your AsyncAPI document, it serves only as a placeholder. There are no AMQP-specific server properties to configure in this version of the binding.
+
+## Server Properties
+
+This binding object is currently empty and has no properties other than `bindingVersion`.
+
+| Property | Type | Description |
+|---|---|---|
+| `bindingVersion`| string | The version of this binding. For `v0.2.0`, this MUST be `0.2.0`. |
+
+## Example
+
+Although the binding has no effect, you can still include it in your server definition.
+
+```yaml
+servers:
+  production:
+    url: amqp://rabbitmq.example.com
+    protocol: amqp
+    bindings:
+      amqp:
+        bindingVersion: '0.2.0'
+```
+
+## Migration Guide to v0.3.0
+
+No breaking changes were introduced in this version of the binding. It is fully compatible with v0.3.0.

@@ -1,60 +1,109 @@
 ---
-title: AMQP 0-9-1 channel binding
+title: AMQP Channel Binding v0.1.0 - Exchange and Queue Configuration
+description: Learn how to configure AMQP 0-9-1 channels using AsyncAPI channel bindings v0.1.0. Define basic exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "AMQP 0-9-1 channel binding"
+    - name: keywords
+      content: AMQP channel binding, AsyncAPI, RabbitMQ, exchange configuration, queue configuration, routing key, legacy binding
   - - meta
-    - name: "og:description"
-      content: "How to use AMQP 0-9-1 with AsyncAPI channel binding"
+    - property: og:title
+      content: AMQP Channel Binding v0.1.0 - Exchange and Queue Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/amqp/0.1.0/channel.png"
+    - property: og:description
+      content: Learn how to configure AMQP 0-9-1 channels using AsyncAPI channel bindings v0.1.0. Define basic exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/channel.html
+  - - meta
+    - property: og:image
+      content: /bindings/amqp/0.1.0/channel.png
+  - - meta
+    - name: twitter:title
+      content: AMQP Channel Binding v0.1.0 - Exchange and Queue Configuration
+  - - meta
+    - name: twitter:description
+      content: Learn how to configure AMQP 0-9-1 channels using AsyncAPI channel bindings v0.1.0. Define basic exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
 ---
 
-# {{ $frontmatter.title }}
+# AMQP 0-9-1 Channel Binding v0.1.0
 
-Contains information about the channel representation in AMQP.
+The AMQP channel binding v0.1.0 defines how AsyncAPI channels map to AMQP 0-9-1 exchanges and queues. This is a legacy version of the binding that supports basic exchange and queue configuration.
 
-## Structure
+## Overview
 
-<Json url="/bindings/amqp/0.1.0/channel.json" />
+AMQP channel bindings support two main channel types:
+
+- **Routing Key Channels** (`is: routingKey`): Define exchange configurations for message routing.
+- **Queue Channels** (`is: queue`): Define queue configurations for message storage.
+
+## Channel Types
+
+### Routing Key Channels
+
+Defines an exchange for message routing.
+
+#### Exchange Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `type` | string | Yes | Exchange type: `topic`, `direct`, `fanout`, `default`, or `headers`. |
+| `name` | string | Yes | The name of the exchange (max 255 characters). |
+| `durable` | boolean | No | Whether the exchange survives broker restarts. |
+| `autoDelete` | boolean | No | Whether the exchange is deleted when the last queue is unbound from it. |
+
+### Queue Channels
+
+Defines a queue for message storage.
+
+#### Queue Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `name` | string | Yes | The name of the queue (max 255 characters). |
+| `durable` | boolean | No | Whether the queue survives broker restarts. |
+| `exclusive` | boolean | No | Whether the queue is used by only one connection. |
+| `autoDelete` | boolean | No | Whether the queue is deleted when the last consumer unsubscribes. |
 
 ## Examples
 
-### Routing Key
+### Topic Exchange with Routing Key
 
-```json
-{
-  "is": "routingKey", // [!code focus]
-  "exchange": {
-    "name": "myExchange",
-    "type": "topic",
-    "durable": true,
-    "autoDelete": false
-  },
-  "bindingVersion": "0.1.0"
-}
+```yaml
+channels:
+  userEvents:
+    bindings:
+      amqp:
+        is: routingKey
+        exchange:
+          name: user-events
+          type: topic
+          durable: true
+          autoDelete: false
+        bindingVersion: '0.1.0'
 ```
 
-### Queue
+### Durable Queue
 
-```json
-{
-  "is": "queue", // [!code focus]
-  "queue": {
-    "name": "my-queue-name",
-    "durable": true,
-    "exclusive": true,
-    "autoDelete": false
-  },
-  "bindingVersion": "0.1.0"
-}
+```yaml
+channels:
+  orderQueue:
+    bindings:
+      amqp:
+        is: queue
+        queue:
+          name: order-processing-queue
+          durable: true
+          exclusive: false
+          autoDelete: false
+        bindingVersion: '0.1.0'
 ```
 
-## Changelog
+## Migration Guide to v0.2.0
 
-Good news, nothing was changed
+Version `0.2.0` introduced the `vhost` property for both `exchange` and `queue` objects. This allows for specifying the virtual host, which provides a way to segregate applications using the same AMQP broker.

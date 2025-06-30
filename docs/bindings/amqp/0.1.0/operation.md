@@ -1,50 +1,91 @@
 ---
-title: AMQP 0-9-1 operation binding
+title: AMQP Operation Binding v0.1.0 - Message Routing and Delivery
+description: Master AMQP 0-9-1 operation bindings with AsyncAPI. Configure message expiration, delivery modes, routing keys (cc/bcc), priority, reply-to, and acknowledgments for robust event-driven applications.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "AMQP 0-9-1 operation binding"
+    - name: keywords
+      content: AMQP operation binding, AsyncAPI, RabbitMQ, message routing, delivery mode, message priority, replyTo, message expiration, CC, BCC, message acknowledgment, legacy binding
   - - meta
-    - name: "og:description"
-      content: "How to use AMQP 0-9-1 with AsyncAPI operation binding"
+    - property: og:title
+      content: AMQP Operation Binding v0.1.0 - Message Routing and Delivery
   - - meta
-    - name: "og:image"
-      content: "/bindings/amqp/0.1.0/operation.png"
+    - property: og:description
+      content: Master AMQP 0-9-1 operation bindings with AsyncAPI. Configure message expiration, delivery modes, routing keys (cc/bcc), priority, reply-to, and acknowledgments for robust event-driven applications.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/operation.html
+  - - meta
+    - property: og:image
+      content: /bindings/amqp/0.1.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: AMQP Operation Binding v0.1.0 - Message Routing and Delivery
+  - - meta
+    - name: twitter:description
+      content: Master AMQP 0-9-1 operation bindings with AsyncAPI. Configure message expiration, delivery modes, routing keys (cc/bcc), priority, reply-to, and acknowledgments for robust event-driven applications.
 ---
 
-# {{ $frontmatter.title }}
+# AMQP 0-9-1 Operation Binding v0.1.0
 
-Contains information about the operation representation in AMQP.
+The AMQP operation binding v0.1.0 provides detailed control over message routing and delivery behavior in AMQP 0-9-1. It allows you to configure properties such as message expiration, priority, delivery mode, and routing destinations.
 
-## Structure
+## Overview
 
-<Json url="/bindings/amqp/0.1.0/operation.json"/>
+This binding allows you to define AMQP-specific properties for publish and subscribe operations. These properties give you fine-grained control over how messages are handled by the broker.
+
+## Operation Properties
+
+| Property | Type | Description |
+|---|---|---|
+| `expiration` | integer | TTL (Time-To-Live) for the message in milliseconds. It MUST be greater than or equal to zero. |
+| `userId` | string | Identifies the user who has sent the message. |
+| `cc` | [string] | The routing keys the message should be routed to at the time of publishing. |
+| `priority` | integer | A priority for the message. Higher numbers indicate higher priority. |
+| `deliveryMode` | integer | Delivery mode of the message. `1` for transient, `2` for persistent. |
+| `mandatory` | boolean | If `true`, the message is returned to the publisher if it cannot be routed to any queue. |
+| `bcc` | [string] | Like `cc` but the routing keys are not passed to the consumer. |
+| `replyTo` | string | Name of the queue where the consumer should send the response. |
+| `timestamp` | boolean | If `true`, the message MUST include a timestamp property. |
+| `ack` | boolean | If `true`, the consumer should acknowledge the message. |
+| `bindingVersion` | string | The version of this binding. For `v0.1.0`, this MUST be `0.1.0`. |
 
 ## Examples
 
-```json
-{
-  "expiration": 100000,
-  "userId": "guest",
-  "cc": [
-    "user.logs"
-  ],
-  "priority": 10,
-  "deliveryMode": 2,
-  "mandatory": false,
-  "bcc": [
-    "external.audit"
-  ],
-  "replyTo": "user.signedup",
-  "timestamp": true,
-  "ack": false,
-  "bindingVersion": "0.1.0"
-}
+### Persistent, High-Priority Message
+
+```yaml
+operations:
+  highPriorityTask:
+    bindings:
+      amqp:
+        deliveryMode: 2 # Persistent
+        priority: 10
+        mandatory: true
+        timestamp: true
+        ack: true
+        bindingVersion: '0.1.0'
 ```
 
-## Changelog
+### Request-Reply Pattern with `replyTo`
 
-Good news, nothing was changed
+```yaml
+operations:
+  getUserProfile:
+    bindings:
+      amqp:
+        replyTo: 'user.profile.response.queue'
+        deliveryMode: 1 # Transient is fine for RPC
+        userId: 'api-gateway'
+        ack: true
+        bindingVersion: '0.1.0'
+```
+
+## Migration Guide to v0.2.0
+
+No breaking changes were introduced between `v0.1.0` and `v0.2.0` of this binding. It is fully compatible with v0.2.0.
