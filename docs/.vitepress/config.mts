@@ -20,7 +20,8 @@ export default defineConfig({
       '/bindings': [
         {
           text: 'Bindings',
-          link: '/bindings',
+          base: '/bindings',
+          link: '/',
           items: [
             {
               text: 'Amazon SNS',
