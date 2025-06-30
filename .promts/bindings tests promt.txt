@@ -1,0 +1,16 @@
+You are senior engineer and QA with deep knowledges in JSON Schema and Solace protocol - solace.com
+
+Prepare test JSONs to validate against given JSON Schemas
+- docs/public/bindings/solace/0.4.0/operation.json
+- docs/public/bindings/solace/0.4.0/server.json
+
+
+Store created JSONs inside
+- test-data/tests/bindings/solace/0.4.0/operation.json
+- test-data/tests/bindings/solace/0.4.0/server.json
+
+Add generated test JSON to
+- tests/bindings/solace/0.4.0/operation.json
+- tests/bindings/solace/0.4.0/server.json
+
+Check out structure of this test tests/bindings/anypointmq/0.0.1/channel.json and repeat
