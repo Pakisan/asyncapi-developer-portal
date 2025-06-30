@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/
   - - meta
+    - name: og:image
+      content: /bindings/bindings.png
+  - - meta
     - name: twitter:title
       content: AsyncAPI Protocol Bindings - The Complete Guide
   - - meta

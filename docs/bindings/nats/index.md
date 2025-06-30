@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/nats/
   - - meta
+    - name: og:image
+      content: /bindings/nats/nats.png
+  - - meta
     - name: twitter:title
       content: NATS Bindings - Cloud-Native Messaging and Streaming
   - - meta

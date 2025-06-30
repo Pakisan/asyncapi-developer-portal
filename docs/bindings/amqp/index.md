@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/amqp/
   - - meta
+    - name: og:image
+      content: /bindings/amqp/amqp.png
+  - - meta
     - name: twitter:title
       content: AMQP (Advanced Message Queuing Protocol) 0-9-1 Bindings - Complete Guide
   - - meta

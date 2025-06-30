@@ -19,14 +19,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/jms/
   - - meta
+    - name: og:image
+      content: /bindings/jms/jms.png
+  - - meta
     - name: twitter:title
       content: JMS Bindings - Enterprise Messaging with Java
   - - meta
     - name: twitter:description
       content: The complete guide to AsyncAPI JMS bindings. Learn to configure JMS destinations, messages, and connection factories for robust, enterprise-grade Java applications.
-  - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
 ---
 
 # JMS (Java Message Service) Bindings

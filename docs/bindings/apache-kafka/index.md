@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/apache-kafka/
   - - meta
+    - name: og:image
+      content: /bindings/apache-kafka/apache-kafka.png
+  - - meta
     - name: twitter:title
       content: Apache Kafka Protocol Bindings for AsyncAPI - A Comprehensive Guide
   - - meta

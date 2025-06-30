@@ -19,14 +19,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/solace/
   - - meta
+    - name: og:image
+      content: /bindings/solace/solace.png
+  - - meta
     - name: twitter:title
       content: Solace Bindings - Powering the Enterprise Event Mesh
   - - meta
     - name: twitter:description
       content: The complete guide to AsyncAPI Solace bindings. Learn to configure destinations, queues, and connections for Solace PubSub+, the foundation of a modern event mesh.
-  - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
 ---
 
 # Solace Bindings

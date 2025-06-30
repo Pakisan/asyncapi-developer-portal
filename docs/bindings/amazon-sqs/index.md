@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/amazon-sqs/
   - - meta
+    - name: og:image
+      content: /bindings/amazon-sqs/amazon-sqs.png
+  - - meta
     - name: twitter:title
       content: Amazon SQS Bindings - Complete Guide
   - - meta

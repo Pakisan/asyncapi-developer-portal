@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/redis/
   - - meta
+    - name: og:image
+      content: /bindings/redis/redis.png
+  - - meta
     - name: twitter:title
       content: Redis Bindings - In-Memory Data Store and Pub/Sub Messaging
   - - meta

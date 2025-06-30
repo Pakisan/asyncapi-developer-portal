@@ -19,14 +19,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mercure/
   - - meta
+    - name: og:image
+      content: /bindings/mercure/mercure.png
+  - - meta
     - name: twitter:title
       content: Mercure Bindings - Real-Time Updates with Server-Sent Events
   - - meta
     - name: twitter:description
       content: The complete guide to AsyncAPI Mercure bindings. Learn how Mercure leverages Server-Sent Events (SSE) for simple, efficient, and real-time updates in web applications.
-  - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
 ---
 
 # Mercure Bindings

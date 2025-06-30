@@ -19,14 +19,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/ibmmq/
   - - meta
+    - name: og:image
+      content: /bindings/ibmmq/ibmmq.png
+  - - meta
     - name: twitter:title
       content: IBM MQ Bindings - Enterprise-Grade Messaging & Integration
   - - meta
     - name: twitter:description
       content: The complete guide to AsyncAPI IBM MQ bindings. Learn to configure queues, topics, messages, and queue manager connections for robust, secure, and scalable enterprise applications.
-  - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
 ---
 
 # IBM MQ Bindings

@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/stomp/
   - - meta
+    - name: og:image
+      content: /bindings/stomp/stomp.png
+  - - meta
     - name: twitter:title
       content: STOMP (Simple Text Oriented Messaging Protocol) Bindings - Complete Guide
   - - meta

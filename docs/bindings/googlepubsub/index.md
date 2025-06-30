@@ -19,8 +19,8 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/googlepubsub/
   - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
+    - name: og:image
+      content: /bindings/googlepubsub/googlepubsub.png
 ---
 
 # Google Cloud Pub/Sub Bindings

@@ -19,14 +19,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/http/
   - - meta
+    - name: og:image
+      content: /bindings/http/http.png
+  - - meta
     - name: twitter:title
       content: HTTP Bindings - Webhooks and Simple APIs
   - - meta
     - name: twitter:description
       content: The complete guide to AsyncAPI HTTP bindings. Learn to define webhooks, request/response operations, and simple HTTP-based APIs with clear, standardized documentation.
-  - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
 ---
 
 # HTTP Bindings

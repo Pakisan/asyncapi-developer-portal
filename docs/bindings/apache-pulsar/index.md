@@ -19,14 +19,14 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/apache-pulsar/
   - - meta
+    - name: og:image
+      content: /bindings/apache-pulsar/apache-pulsar.png
+  - - meta
     - name: twitter:title
       content: Apache Pulsar Bindings - Cloud-Native Event Streaming
   - - meta
     - name: twitter:description
       content: The complete guide to AsyncAPI Apache Pulsar bindings. Learn to configure tenants, namespaces, topics, and policies for a true cloud-native, multi-tenant event streaming platform.
-  - - meta
-    - name: "og:image"
-      content: "/public/asyncapi.png"
 ---
 
 # Apache Pulsar Bindings

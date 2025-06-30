@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mqtt5/
   - - meta
+    - name: og:image
+      content: /bindings/mqtt5/mqtt5.png
+  - - meta
     - name: twitter:title
       content: MQTT 5.0 Bindings - Lightweight IoT and Mobile Messaging
   - - meta

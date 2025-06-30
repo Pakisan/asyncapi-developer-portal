@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/websockets/
   - - meta
+    - name: og:image
+      content: /bindings/websockets/websockets.png
+  - - meta
     - name: twitter:title
       content: WebSockets Bindings - Real-Time Communication with AsyncAPI
   - - meta

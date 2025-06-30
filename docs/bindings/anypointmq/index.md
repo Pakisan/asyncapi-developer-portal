@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/anypointmq/
   - - meta
+    - name: og:image
+      content: /bindings/anypointmq/anypointmq.png
+  - - meta
     - name: twitter:title
       content: Anypoint MQ Protocol Bindings for AsyncAPI - A Complete Guide
   - - meta

@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/mqtt/
   - - meta
+    - name: og:image
+      content: /bindings/mqtt/mqtt.png
+  - - meta
     - name: twitter:title
       content: MQTT Bindings - Universal IoT & Real-Time Messaging
   - - meta

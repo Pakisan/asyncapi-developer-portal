@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/amqp1/
   - - meta
+    - name: og:image
+      content: /bindings/amqp1/amqp1.png
+  - - meta
     - name: twitter:title
       content: AMQP 1.0 Protocol Bindings - A Complete Guide
   - - meta

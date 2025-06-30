@@ -19,6 +19,9 @@ head:
     - property: og:url
       content: https://asyncapi.pavelon.dev/bindings/amazon-sns/
   - - meta
+    - name: og:image
+      content: /bindings/amazon-sns/amazon-sns.png
+  - - meta
     - name: twitter:title
       content: Amazon SNS Bindings - Complete Guide
   - - meta
