@@ -1,23 +1,62 @@
 ---
-title: Solace channel binding
+title: Solace Channel Binding v0.2.0 - Topic Placeholder
+description: This document details the legacy v0.2.0 of the Solace channel binding. It is recommended to use the latest version. This version is a placeholder that identifies an AsyncAPI channel as a Solace topic.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Solace channel binding"
+    - name: keywords
+      content: Solace channel binding, legacy, AsyncAPI, Solace topic, placeholder, event mesh, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Solace with AsyncAPI channel binding"
+    - property: og:title
+      content: Solace Channel Binding v0.2.0 - Topic Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/solace/0.2.0/channel.png"
+    - property: og:description
+      content: This document details the legacy v0.2.0 of the Solace channel binding. It is recommended to use the latest version. This version is a placeholder that identifies an AsyncAPI channel as a Solace topic.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/solace/0.2.0/channel.html
+  - - meta
+    - name: og:image
+      content: /bindings/solace/0.2.0/channel.png
+  - - meta
+    - name: twitter:title
+      content: Solace Channel Binding v0.2.0 - Topic Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.2.0 of the Solace channel binding. It is recommended to use the latest version. This version is a placeholder that identifies an AsyncAPI channel as a Solace topic.
 ---
 
-# {{ $frontmatter.title }}
+# Solace Channel Binding v0.2.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Solace channel binding `v0.2.0` specifies that an AsyncAPI channel corresponds to a Solace topic.
 
-Contains information about the channel representation in Solace.
+## Overview
+
+As of this version, the binding is a placeholder and has no configurable properties. Its presence indicates that the channel represents a Solace topic. All detailed destination configuration is defined in the [Operation Binding](./operation.md).
+
+## Channel Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+
+## Example
+
+```yaml
+channels:
+  userSignedup:
+    address: 'user/signedup'
+    bindings:
+      solace:
+        bindingVersion: '0.2.0'
+```
+
+## Changelog
+
+### Version 0.2.0
+- The binding remains a placeholder.

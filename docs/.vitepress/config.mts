@@ -428,6 +428,8 @@ export default defineConfig({
             },
             {
               text: 'Solace',
+              base: '/bindings/solace',
+              link: '/',
               collapsed: true,
               items: [
                 {

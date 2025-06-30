@@ -1,54 +1,93 @@
 ---
-title: Solace operation binding
+title: Solace Operation Binding v0.2.0 - Destination Configuration
+description: This document details the legacy v0.2.0 of the Solace operation binding. Learn to configure destinations (queues and topics) and delivery modes for an operation.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Solace operation binding"
+    - name: keywords
+      content: Solace operation binding, legacy, AsyncAPI, Solace destination, queue, topic subscription, delivery mode, event mesh
   - - meta
-    - name: "og:description"
-      content: "How to use Solace with AsyncAPI operation binding"
+    - property: og:title
+      content: Solace Operation Binding v0.2.0 - Destination Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/solace/0.2.0/operation.png"
+    - property: og:description
+      content: This document details the legacy v0.2.0 of the Solace operation binding. Learn to configure destinations (queues and topics) and delivery modes for an operation.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/solace/0.2.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/solace/0.2.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: Solace Operation Binding v0.2.0 - Destination Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.2.0 of the Solace operation binding. Learn to configure destinations (queues and topics) and delivery modes for an operation.
 ---
 
-# {{ $frontmatter.title }}
+# Solace Operation Binding v0.2.0
 
-Contains information about the channel representation in Solace.
+The Solace operation binding `v0.2.0` specifies the array of destinations that a message will be sent to or received from.
 
-## Structure
+## Overview
 
-<Json url="/bindings/solace/0.2.0/operation.json"/>
+This binding allows you to define a list of destinations for an operation, where each destination can be a `queue` or a direct `topic` subscription.
 
-## Examples
+## Operation Properties
 
-```json
-{
-    "bindingVersion": "0.2.0",
-    "destinations": [
-        {
-            "destinationType": "queue",
-            "queue": {
-                "name": "sampleQueue",
-                "topicSubscriptions": [
-                    "samples/*"
-                ],
-                "accessType": "nonexclusive"
-            }
-        },
-        {
-            "destinationType": "topic",
-            "topicSubscriptions": [
-                "samples/*"
-            ]
-        }
-    ]
-}
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+| `destinations` | array | No | An array of destination objects. |
+
+---
+
+## Destination Object
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `destinationType` | string | **Yes** | `queue` or `topic`. |
+| `deliveryMode` | string | No | `direct` or `persistent`. Defaults to `direct`. |
+| `queue` | object | No | A queue object, required if `destinationType` is `queue`. |
+| `topicSubscriptions` | array | No | A list of topic subscriptions for a `topic` destination. |
+
+---
+
+## Queue Object
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `name` | string | No | The name of the queue. |
+| `topicSubscriptions` | array | No | A list of topic subscriptions that the queue listens to. |
+| `accessType` | string | No | `exclusive` or `nonexclusive`. |
+
+---
+
+## Example
+
+```yaml
+operations:
+  receiveOrderEvent:
+    action: receive
+    bindings:
+      solace:
+        bindingVersion: '0.2.0'
+        destinations:
+          - destinationType: 'queue'
+            deliveryMode: 'persistent'
+            queue:
+              name: 'q_orders'
+              topicSubscriptions:
+                - 'orders/v1/us/new'
 ```
 
 ## Changelog
 
-Good news, nothing was changed
+### Version 0.2.0
+- Added `accessType` to the queue object.

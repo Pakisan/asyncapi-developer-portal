@@ -1,23 +1,51 @@
 ---
-title: Solace server binding
+title: Solace Server Binding v0.1.0 - Placeholder
+description: This document details the legacy v0.1.0 of the Solace server binding. It is recommended to use the latest version. This version is a placeholder.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Solace server binding"
+    - name: keywords
+      content: Solace server binding, legacy, AsyncAPI, placeholder, event mesh
   - - meta
-    - name: "og:description"
-      content: "How to use Solace with AsyncAPI server binding"
+    - property: og:title
+      content: Solace Server Binding v0.1.0 - Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/solace/0.1.0/server.png"
+    - property: og:description
+      content: This document details the legacy v0.1.0 of the Solace server binding. It is recommended to use the latest version. This version is a placeholder.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/solace/0.1.0/server.html
+  - - meta
+    - name: og:image
+      content: /bindings/solace/0.1.0/server.png
+  - - meta
+    - name: twitter:title
+      content: Solace Server Binding v0.1.0 - Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.1.0 of the Solace server binding. It is recommended to use the latest version. This version is a placeholder.
 ---
 
-# {{ $frontmatter.title }}
+# Solace Server Binding v0.1.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Solace server binding `v0.1.0` is a placeholder for defining the connection to a Solace PubSub+ event broker.
 
-Contains information about the server representation in Solace.
+## Overview
+
+As of this version, the binding does not contain any properties. Its presence on a server object is for informational purposes only.
+
+## Server Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
+
+## Changelog
+
+### Version 0.1.0
+- Initial placeholder release.

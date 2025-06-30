@@ -1,51 +1,67 @@
 ---
-title: Solace server binding
+title: Solace Server Binding v0.3.0 - Message VPN Connection
+description: This document details the legacy v0.3.0 of the Solace server binding. Learn to configure the connection to a Solace broker by specifying the Message VPN.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Solace server binding"
+    - name: keywords
+      content: Solace server binding, legacy, AsyncAPI, Solace Message VPN, msgVpn, event mesh, event broker, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Solace with AsyncAPI server binding"
+    - property: og:title
+      content: Solace Server Binding v0.3.0 - Message VPN Connection
   - - meta
-    - name: "og:image"
-      content: "/bindings/solace/0.3.0/server.png"
+    - property: og:description
+      content: This document details the legacy v0.3.0 of the Solace server binding. Learn to configure the connection to a Solace broker by specifying the Message VPN.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/solace/0.3.0/server.html
+  - - meta
+    - name: og:image
+      content: /bindings/solace/0.3.0/server.png
+  - - meta
+    - name: twitter:title
+      content: Solace Server Binding v0.3.0 - Message VPN Connection
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.3.0 of the Solace server binding. Learn to configure the connection to a Solace broker by specifying the Message VPN.
 ---
 
-# {{ $frontmatter.title }}
+# Solace Server Binding v0.3.0
 
-Contains information about the channel representation in Solace.
+The Solace server binding v0.3.0 defines the connection to a Solace PubSub+ event broker by specifying the Message VPN to use.
 
-## Structure
+## Overview
 
-<Json url="https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/bindings/solace/0.3.0/server.json"/>
+A Message VPN provides a logically separate namespace on the broker. This binding is used to ensure a client application connects to the correct Message VPN to access its intended topics and queues.
 
-## Examples
+## Server Properties
 
-```json
-{
-    "msgVpn": "ProdVPN",
-    "bindingVersion": "0.3.0"
-}
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.3.0`). |
+| `msgVpn` | string | **Yes** | The name of the Message VPN on the Solace broker. |
+
+## Example
+
+This example defines a server connection that targets the `prod-payments-vpn` Message VPN.
+
+```yaml
+servers:
+  production-broker:
+    url: solace.example.com:55555
+    protocol: solace
+    bindings:
+      solace:
+        bindingVersion: '0.3.0'
+        msgVpn: 'prod-payments-vpn'
 ```
 
 ## Changelog
 
-### Changed
-
-#### msvVpn
-
-`msvVpn` was renamed to `msgVpn` due typo error
-
-```json
-{
-    "msvVpn": { // [!code --]
-    "msgVpn": { // [!code ++]
-      "type": "string",
-      "description": "The name of the Virtual Private Network to connect to on the Solace broker."
-    }
-}
-```
+### Version 0.3.0
+- `msgVpn` is the only property, establishing the connection target.

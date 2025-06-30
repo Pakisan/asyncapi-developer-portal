@@ -1,90 +1,101 @@
 ---
-title: Solace operation binding
+title: Solace Operation Binding v0.3.0 - Destination Configuration
+description: This document details the legacy v0.3.0 of the Solace operation binding. Learn to configure destinations (queues and topics), delivery modes, and topic subscriptions for an operation.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Solace operation binding"
+    - name: keywords
+      content: Solace operation binding, legacy, AsyncAPI, Solace destination, queue, topic subscription, delivery mode, event mesh
   - - meta
-    - name: "og:description"
-      content: "How to use Solace with AsyncAPI operation binding"
+    - property: og:title
+      content: Solace Operation Binding v0.3.0 - Destination Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/solace/0.3.0/operation.png"
+    - property: og:description
+      content: This document details the legacy v0.3.0 of the Solace operation binding. Learn to configure destinations (queues and topics), delivery modes, and topic subscriptions for an operation.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/solace/0.3.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/solace/0.3.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: Solace Operation Binding v0.3.0 - Destination Configuration
+  - - meta
+    - name: twitter:description
+      content: This document details the legacy v0.3.0 of the Solace operation binding. Learn to configure destinations (queues and topics), delivery modes, and topic subscriptions for an operation.
 ---
 
-# {{ $frontmatter.title }}
+# Solace Operation Binding v0.3.0
 
-Contains information about the channel representation in Solace.
+The Solace operation binding v0.3.0 specifies the array of destinations that a message will be sent to or received from.
 
-## Structure
+## Overview
 
-<Json url="/bindings/solace/0.3.0/operation.json"/>
+This binding allows you to define a list of destinations for a single operation, where each destination can be a `queue` or a direct `topic` subscription.
 
-## Examples
+## Operation Properties
 
-```json
-{
-    "bindingVersion": "0.3.0",
-    "destinations": [
-        {
-            "destinationType": "queue",
-            "queue": {
-                "name": "sampleQueue",
-                "topicSubscriptions": [
-                    "samples/*"
-                ],
-                "accessType": "nonexclusive"
-            }
-        },
-        {
-            "destinationType": "topic",
-            "topicSubscriptions": [
-                "samples/*"
-            ]
-        }
-    ]
-}
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.3.0`). |
+| `destinations` | array | No | An array of destination objects. |
+
+---
+
+## Destination Object
+
+Each object in the `destinations` array defines a single destination.
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `destinationType` | string | **Yes** | `queue` or `topic`. |
+| `deliveryMode` | string | No | `direct` or `persistent`. Defaults to `direct`. |
+| `queue` | object | No | A queue object, required if `destinationType` is `queue`. |
+| `topicSubscriptions` | array | No | A list of topic subscriptions for a `topic` destination. |
+
+---
+
+## Queue Object
+
+The `queue` object is used when `destinationType` is `queue`.
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `name` | string | No | The name of the queue. |
+| `topicSubscriptions` | array | No | A list of topic subscriptions that the queue listens to. |
+| `accessType` | string | No | `exclusive` or `nonexclusive`. |
+| `maxMsgSpoolUsage` | string | No | Maximum spool usage for the queue (e.g., "100MB"). |
+| `maxTtl` | string | No | Maximum time-to-live for messages spooled to the queue (e.g., "3600s"). |
+
+---
+
+## Example
+
+This operation describes a consumer that binds to a durable queue for guaranteed delivery.
+
+```yaml
+operations:
+  receiveOrderEvent:
+    action: receive
+    bindings:
+      solace:
+        bindingVersion: '0.3.0'
+        destinations:
+          - destinationType: 'queue'
+            deliveryMode: 'persistent'
+            queue:
+              name: 'q_orders'
+              topicSubscriptions:
+                - 'orders/v1/us/new'
 ```
 
 ## Changelog
 
-### Added
-
-#### queue.`maxTtl`
-
-The maximum TTL to apply to messages to be spooled
-
-```json
-{
-    "queue": {
-        "type": "object",
-        "properties": {
-            "maxTtl": { // [!code ++]
-                "type": "string", // [!code ++]
-                "description": "The maximum TTL to apply to messages to be spooled." // [!code ++]
-            } // [!code ++]
-        }
-    }
-}
-```
-
-#### queue.`maxMsgSpoolUsage`
-
-The maximum amount of message spool that the given queue may use
-
-```json
-{
-    "queue": {
-        "type": "object",
-        "properties": {
-            "maxMsgSpoolUsage": { // [!code ++]
-                "type": "string", // [!code ++]
-                "description": "The maximum amount of message spool that the given queue may use" // [!code ++]
-            } // [!code ++]
-        }
-    }
-}
-```
+### Version 0.3.0
+- Introduced the `destinations` array to formally define multiple endpoints for an operation.

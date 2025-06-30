@@ -1,23 +1,73 @@
 ---
-title: Solace message binding
+title: Solace Message Binding v0.4.0 - Placeholder
+description: This document details the v0.4.0 of the Solace message binding. This version is a placeholder reserved for future Solace-specific message properties.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Solace message binding"
+    - name: keywords
+      content: Solace message binding, AsyncAPI, placeholder, event mesh, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Solace with AsyncAPI message binding"
+    - property: og:title
+      content: Solace Message Binding v0.4.0 - Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/solace/0.4.0/message.png"
+    - property: og:description
+      content: This document details the v0.4.0 of the Solace message binding. This version is a placeholder reserved for future Solace-specific message properties.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/solace/0.4.0/message.html
+  - - meta
+    - name: og:image
+      content: /bindings/solace/0.4.0/message.png
+  - - meta
+    - name: twitter:title
+      content: Solace Message Binding v0.4.0 - Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details the v0.4.0 of the Solace message binding. This version is a placeholder reserved for future Solace-specific message properties.
 ---
 
-# {{ $frontmatter.title }}
+# Solace Message Binding v0.4.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Solace message binding is reserved for defining properties that are specific to a Solace message.
 
-Contains information about the message representation in Solace.
+## Overview
+
+As of `v0.4.0`, this binding is a placeholder and does not contain any properties. Its presence on a message is for informational purposes, indicating that the message is part of a Solace-based API.
+
+Future versions of this binding may include properties to define Solace-specific message attributes, such as user properties or other metadata that can be attached to a message.
+
+## Message Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.4.0`). |
+
+## Example
+
+This example shows a message defined with the placeholder Solace message binding.
+
+```yaml
+messages:
+  userSignedUp:
+    payload:
+      type: object
+      properties:
+        userId:
+          type: string
+        signupDate:
+          type: string
+          format: date-time
+    bindings:
+      solace:
+        bindingVersion: '0.4.0'
+```
+
+## Changelog
+
+### Version 0.4.0
+- The binding remains a placeholder, consistent with previous versions.
