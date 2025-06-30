@@ -24,6 +24,8 @@ export default defineConfig({
           items: [
             {
               text: 'Amazon SNS',
+              base: '/bindings/amazon-sns',
+              link: '/',
               collapsed: true,
               items: [
                 {

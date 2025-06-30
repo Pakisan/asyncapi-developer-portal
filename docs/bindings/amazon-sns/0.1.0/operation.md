@@ -1,96 +1,131 @@
 ---
-title: Amazon SNS operation binding
+title: Amazon SNS Operation Binding v0.1.0 - Subscription Configuration
+description: Learn how to configure AWS SNS subscriptions with AsyncAPI. Define consumers, filter policies, redrive policies (DLQ), and delivery policies for your SNS operations.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Amazon SNS operation binding"
+    - name: keywords
+      content: Amazon SNS, AWS, AsyncAPI, operation binding, SNS subscription, filter policy, redrive policy, delivery policy, DLQ
   - - meta
-    - name: "og:description"
-      content: "How to use Amazon SNS with AsyncAPI operation binding"
+    - property: og:title
+      content: Amazon SNS Operation Binding v0.1.0 - Subscription Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/amazon-sns/0.1.0/operation.png"
+    - property: og:description
+      content: Learn how to configure AWS SNS subscriptions with AsyncAPI. Define consumers, filter policies, redrive policies (DLQ), and delivery policies for your SNS operations.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/operation.html
+  - - meta
+    - property: og:image
+      content: /bindings/amazon-sns/0.1.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: Amazon SNS Operation Binding v0.1.0 - Subscription Configuration
+  - - meta
+    - name: twitter:description
+      content: Learn how to configure AWS SNS subscriptions with AsyncAPI. Define consumers, filter policies, redrive policies (DLQ), and delivery policies for your SNS operations.
 ---
 
-# {{ $frontmatter.title }}
+# Amazon SNS Operation Binding v0.1.0
 
-Contains information about the operation representation in Amazon SNS.
+The Amazon SNS operation binding defines how consumers (subscribers) interact with an SNS topic. It allows you to specify multiple consumers, each with its own protocol, endpoint, and policies.
 
-We represent SNS producers via a **subscribe** Operation Object. 
+## Overview
 
-In simple cases this may not require configuration, and can be shown as an empty SNS Binding Object i.e. `{}` if 
-you need to explicitly indicate how a producer publishes to the channel.
+The core of this binding is the `consumers` array, where each element represents a subscription to the topic. You can define how messages are filtered, retried, and handled after failures.
 
-We represent SNS consumers via a **publish** Operation Object. These consumers need an SNS Subscription that defines 
-how they consume from SNS i.e. the protocol that they use, and any filters applied.
+## Operation Properties
 
-The SNS binding does not describe the receiver. If you wish to define the receiver, add a **publish** Operation Binding Object for that receiver. 
-For example, if you send message to an SQS queue from an SNS Topic, you would add a protocol of 'sqs' and an Identifier object for the queue. 
-That identifier could be an ARN of a queue defined outside the scope of AsyncAPI, but if you wanted to define the receiver you would use 
-the name of a queue defined in an SQS Binding on the **publish** Operation Binding Object.
+| Property | Type | Description |
+|---|---|---|
+| `topic` | object | Identifies the SNS topic by `arn` or `name`. |
+| `consumers` | [object] | **Required**. An array of `consumer` objects defining the subscriptions. See [Consumer Object](#consumer-object). |
+| `deliveryPolicy` | object | Default retry policy for HTTP/S consumers, can be overridden by individual consumers. See [Delivery Policy](#delivery-policy). |
+| `bindingVersion`| string | The version of this binding. For `v0.1.0`, this MUST be `0.1.0`. |
 
-We support an array of consumers via the **consumers** field. 
-This allows you to represent multiple protocols consuming an SNS Topic in one file. 
-You may also use it for multiple consumers with the same protocol, instead of representing each consumer in a separate file.
+### Consumer Object
 
-## Structure
+Defines a single subscription to the SNS topic.
 
-<Json url="/bindings/sns/0.1.0/operation.json" />
+| Property | Type | Description |
+|---|---|---|
+| `protocol` | string | **Required**. The protocol of the endpoint (e.g., `sqs`, `http`, `lambda`). |
+| `endpoint` | object | **Required**. The endpoint where messages are delivered. See [Identifier Object](#identifier-object). |
+| `rawMessageDelivery`| boolean | **Required**. If `true`, SNS attributes are removed from the message body. |
+| `filterPolicy` | object | A map of message attributes or body fields used to filter messages. |
+| `filterPolicyScope`| string | Whether the `filterPolicy` applies to `MessageAttributes` or `MessageBody`. Default is `MessageAttributes`.|
+| `redrivePolicy` | object | Moves un-processable messages to a DLQ. See [Redrive Policy](#redrive-policy). |
+| `deliveryPolicy`| object | Overrides the topic's default retry policy for this HTTP/S consumer. See [Delivery Policy](#delivery-policy). |
+| `displayName`| string | The display name for the subscription. |
 
-## Examples
+### Identifier Object
 
-```json
-{
-    "topic": {
-        "name": "someTopic"
-    },
-    "consumers": [
-        {
-            "protocol": "sqs",
-            "endpoint": {
-                "name": "someQueue"
-            },
-            "filterPolicy": {
-                "store": [
-                    "asyncapi_corp"
-                ],
-                "event": [
-                    {
-                        "anything-but": "order_cancelled"
-                    }
-                ],
-                "customer_interests": [
-                    "rugby",
-                    "football",
-                    "baseball"
-                ]
-            },
-            "filterPolicyScope": "MessageAttributes",
-            "rawMessageDelivery": false,
-            "redrivePolicy": {
-                "deadLetterQueue": {
-                    "arn": "arn:aws:SQS:eu-west-1:0000000:123456789"
-                },
-                "maxReceiveCount": 25
-            },
-            "deliveryPolicy": {
-                "minDelayTarget": 10,
-                "maxDelayTarget": 100,
-                "numRetries": 5,
-                "numNoDelayRetries": 2,
-                "numMinDelayRetries": 3,
-                "numMaxDelayRetries": 5,
-                "backoffFunction": "linear",
-                "maxReceivesPerSecond": 2
-            }
-        }
-    ]
-}
+Identifies an endpoint for a consumer.
+
+| Property | Type | Description |
+|---|---|---|
+| `name` | string | Identifies an endpoint by name (e.g., an SQS queue name). |
+| `arn` | string | Identifies an endpoint by its full AWS ARN. |
+| `url` | string | The URL of an HTTP/S endpoint. |
+| `email` | string | An email address for an `email` or `email-json` subscription. |
+| `phone` | string | A phone number for an `sms` subscription. |
+
+### Redrive Policy
+
+Specifies a dead-letter queue (DLQ) for messages that fail delivery.
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `deadLetterQueue` | object | - | **Required**. The SQS queue to use as a DLQ, identified by `arn` or `name`. |
+| `maxReceiveCount` | integer | `10` | Number of retries before moving the message to the DLQ. |
+
+### Delivery Policy
+
+Defines the retry strategy for HTTP/S endpoints.
+
+| Property | Type | Description |
+|---|---|---|
+| `backoffFunction`| string | The backoff algorithm (`linear`, `exponential`, etc.). |
+| `minDelayTarget`| integer | Minimum delay for a retry in seconds. |
+| `maxDelayTarget`| integer | Maximum delay for a retry in seconds. |
+| `numRetries` | integer | Total number of retries. |
+
+## Example
+
+This example defines a subscription for an SQS queue named `user-events-queue` to the `user-events` topic. It includes a filter policy, a redrive policy to a DLQ, and a custom delivery policy.
+
+```yaml
+operations:
+  onUserEvent:
+    bindings:
+      sns:
+        topic:
+          name: user-events
+        consumers:
+          - protocol: sqs
+            endpoint:
+              name: user-events-queue
+            rawMessageDelivery: true
+            filterPolicy:
+              eventType:
+                - user.created
+                - user.updated
+            redrivePolicy:
+              deadLetterQueue:
+                arn: arn:aws:sqs:us-east-1:123456789012:user-events-dlq
+              maxReceiveCount: 3
+            deliveryPolicy:
+              minDelayTarget: 20
+              maxDelayTarget: 600
+              numRetries: 5
+        bindingVersion: '0.1.0'
 ```
 
-## Changelog
+## Migration Guide to v0.2.0
 
-Good news, nothing was changed
+There are no breaking changes when migrating from `v0.1.0` to `v0.2.0`, as the operation binding schemas are identical.
