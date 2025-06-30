@@ -138,7 +138,7 @@ operations:
 ## When to Use Generic vs. MQTT 5.0 Bindings
 
 - **Use these generic MQTT bindings** when you need to support a range of MQTT versions or when your requirements are covered by the common features of v3 and v5. They provide the most flexibility.
-- **Use the [MQTT 5.0 specific bindings](./mqtt5/)** only if you need to enforce that an application *must* use MQTT 5.0 and there are v5-specific properties that are not yet available in the generic binding.
+- **Use the [MQTT 5.0 specific bindings](../mqtt5/)** only if you need to enforce that an application *must* use MQTT 5.0 and there are v5-specific properties that are not yet available in the generic binding.
 
 ## Binding Documentation
 

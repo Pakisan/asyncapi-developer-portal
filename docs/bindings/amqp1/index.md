@@ -131,13 +131,13 @@ components:
 ## Binding Documentation
 
 ### Channel Bindings
-- [AMQP 1.0 Channel Binding v0.1.0](bindings/amqp1/0.1.0/channel.md) - Reserved for future use.
+- [AMQP 1.0 Channel Binding v0.1.0](./0.1.0/channel.md) - Reserved for future use.
 
 ### Operation Bindings
-- [AMQP 1.0 Operation Binding v0.1.0](bindings/amqp1/0.1.0/operation.md) - Reserved for future use.
+- [AMQP 1.0 Operation Binding v0.1.0](./0.1.0/operation.md) - Reserved for future use.
 
 ### Message Bindings
-- [AMQP 1.0 Message Binding v0.1.0](bindings/amqp1/0.1.0/message.md) - Reserved for future use.
+- [AMQP 1.0 Message Binding v0.1.0](./0.1.0/message.md) - Reserved for future use.
 
 ### Server Bindings
-- [AMQP 1.0 Server Binding v0.1.0](bindings/amqp1/0.1.0/server.md) - Reserved for future use.
+- [AMQP 1.0 Server Binding v0.1.0](./0.1.0/server.md) - Reserved for future use.

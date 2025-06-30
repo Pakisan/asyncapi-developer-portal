@@ -137,13 +137,13 @@ messages:
 ## Binding Documentation
 
 ### Channel Bindings
-- [v0.0.1](bindings/anypointmq/0.0.1/channel.md)
+- [v0.0.1](./0.0.1/channel.md)
 
 ### Operation Bindings
-- [v0.0.1](bindings/anypointmq/0.0.1/operation.md)
+- [v0.0.1](./0.0.1/operation.md)
 
 ### Message Bindings
-- [v0.0.1](bindings/anypointmq/0.0.1/message.md)
+- [v0.0.1](./0.0.1/message.md)
 
 ### Server Bindings
-- [v0.0.1](bindings/anypointmq/0.0.1/server.md)
+- [v0.0.1](./0.0.1/server.md)

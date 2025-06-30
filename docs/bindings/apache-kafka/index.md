@@ -204,25 +204,25 @@ servers:
 ## Binding Documentation
 
 ### Channel Bindings
-- [v0.5.0](bindings/apache-kafka/0.5.0/channel.md)
-- [v0.4.0](bindings/apache-kafka/0.4.0/channel.md)
-- [v0.3.0](bindings/apache-kafka/0.3.0/channel.md)
-- [v0.1.0](bindings/apache-kafka/0.1.0/channel.md)
+- [v0.5.0](./0.5.0/channel.md)
+- [v0.4.0](./0.4.0/channel.md)
+- [v0.3.0](./0.3.0/channel.md)
+- [v0.1.0](./0.1.0/channel.md)
 
 ### Operation Bindings
-- [v0.5.0](bindings/apache-kafka/0.5.0/operation.md)
-- [v0.4.0](bindings/apache-kafka/0.4.0/operation.md)
-- [v0.3.0](bindings/apache-kafka/0.3.0/operation.md)
-- [v0.1.0](bindings/apache-kafka/0.1.0/operation.md)
+- [v0.5.0](./0.5.0/operation.md)
+- [v0.4.0](./0.4.0/operation.md)
+- [v0.3.0](./0.3.0/operation.md)
+- [v0.1.0](./0.1.0/operation.md)
 
 ### Message Bindings
-- [v0.5.0](bindings/apache-kafka/0.5.0/message.md)
-- [v0.4.0](bindings/apache-kafka/0.4.0/message.md)
-- [v0.3.0](bindings/apache-kafka/0.3.0/message.md)
-- [v0.1.0](bindings/apache-kafka/0.1.0/message.md)
+- [v0.5.0](./0.5.0/message.md)
+- [v0.4.0](./0.4.0/message.md)
+- [v0.3.0](./0.3.0/message.md)
+- [v0.1.0](./0.1.0/message.md)
 
 ### Server Bindings
-- [v0.5.0](bindings/apache-kafka/0.5.0/server.md)
-- [v0.4.0](bindings/apache-kafka/0.4.0/server.md)
-- [v0.3.0](bindings/apache-kafka/0.3.0/server.md)
-- [v0.1.0](bindings/apache-kafka/0.1.0/server.md)
+- [v0.5.0](./0.5.0/server.md)
+- [v0.4.0](./0.4.0/server.md)
+- [v0.3.0](./0.3.0/server.md)
+- [v0.1.0](./0.1.0/server.md)
