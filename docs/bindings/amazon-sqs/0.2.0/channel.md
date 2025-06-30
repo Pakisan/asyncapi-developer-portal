@@ -1,84 +1,131 @@
 ---
-title: Amazon SQS channel binding
+title: Amazon SQS Channel Binding v0.2.0 - Queue Configuration
+description: Learn how to configure AWS SQS channels with AsyncAPI. Define standard and FIFO queues, set up dead-letter queues (DLQ), configure redrive and access policies, and manage tags for your SQS bindings.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Amazon SQS channel binding"
+    - name: keywords
+      content: Amazon SQS, AWS, AsyncAPI, channel binding, SQS queue, FIFO, DLQ, redrive policy, queue policy, message queue
   - - meta
-    - name: "og:description"
-      content: "How to use Amazon SQS with AsyncAPI channel binding"
+    - property: og:title
+      content: Amazon SQS Channel Binding v0.2.0 - Queue Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/amazon-sqs/0.2.0/channel.png"
+    - property: og:description
+      content: Learn how to configure AWS SQS channels with AsyncAPI. Define standard and FIFO queues, set up dead-letter queues (DLQ), configure redrive and access policies, and manage tags for your SQS bindings.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.2.0/channel.html
+  - - meta
+    - property: og:image
+      content: /bindings/amazon-sqs/0.2.0/channel.png
+  - - meta
+    - name: twitter:title
+      content: Amazon SQS Channel Binding v0.2.0 - Queue Configuration
+  - - meta
+    - name: twitter:description
+      content: Learn how to configure AWS SQS channels with AsyncAPI. Define standard and FIFO queues, set up dead-letter queues (DLQ), configure redrive and access policies, and manage tags for your SQS bindings.
 ---
 
-# {{ $frontmatter.title }}
+# Amazon SQS Channel Binding v0.2.0
 
-There are three likely scenarios for use of the Channel Binding Object:
+The Amazon SQS channel binding object defines the configuration for an SQS queue. This binding allows you to specify detailed properties for both the main queue and an associated dead-letter queue (DLQ).
 
-- One file defines both publish and subscribe operations, for example if we were implementing the work queue pattern to offload work from an HTTP API endpoint to a worker process. In this case the channel would be defined on the Channel Object in that single file.
-- The producer and consumer both have an AsyncAPI specification file, and the producer is raising an event, for example interop between microservices, and the producer 'owns' the channel definition and thus has the SQS Binding on its Channel Object.
-- The producer and consumer both have an AsyncAPI specification file, and the consumer receives commands, for example interop between microservices, and the consumer 'owns' the channel  definition and thus has the SQS Binding on its Channel Object.
+## Overview
 
-An SQS queue can set up a Dead Letter Queue as part of a Redelivery Policy. 
-To support this requirement, the Channel Binding Object allows you to define both a Queue Object to use as the Channel 
-or target in a *publish* Operation and a Dead Letter Queue. You can then refer to the Dead letter Queue in the 
-Redrive Policy using the Identifier Object and setting the *name* field to match the *name* field of your 
-Dead Letter Queue Object. (If you define the DLQ externally, the Identifier also supports an ARN).
+This binding consists of two main parts: the `queue` and the optional `deadLetterQueue`. Both are defined using a common `queue` object structure, allowing you to configure properties like queue type (FIFO or standard), message retention, and access policies.
 
-## Structure
+## Queue Object Properties
 
-<Json url="/bindings/amazon-sqs/0.2.0/channel.json" />
+This object defines the properties of an SQS queue, used for both `queue` and `deadLetterQueue`.
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `name` | string | - | The name of the queue. MUST be unique within an AWS account. |
+| `fifoQueue` | boolean | `false` | Specifies whether this is a FIFO (First-In-First-Out) queue. |
+| `deduplicationScope` | string | `queue` | For FIFO queues, specifies whether deduplication occurs at the `queue` or `messageGroup` level. |
+| `fifoThroughputLimit` | string | `perQueue`| For FIFO queues, specifies if the throughput limit applies `perQueue` or `perMessageGroupId`. |
+| `deliveryDelay` | integer | `0` | Seconds to delay a message before it can be received (0-900). |
+| `visibilityTimeout` | integer | `30` | Seconds a consumer locks a message before it's visible again (0-43200). |
+| `receiveMessageWaitTime` | integer | `0` | Enables long polling. The duration (0-20 seconds) that a receive call waits for a message to arrive. |
+| `messageRetentionPeriod` | integer | `345600` | Seconds to retain a message (60-1,209,600). |
+| `redrivePolicy` | object | - | An object defining the dead-letter queue (DLQ) settings. See [Redrive Policy](#redrive-policy). |
+| `policy` | object | - | The queue's access policy. See [Queue Policy](#queue-policy). |
+| `tags` | object | - | Key-value pairs representing AWS tags for the queue. |
+| `bindingVersion`| string | The version of this binding. For `v0.2.0`, this MUST be `0.2.0`. |
+
+### Redrive Policy
+
+Defines the dead-letter queue (DLQ) where messages are sent after failing processing a certain number of times.
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `deadLetterQueue` | object | - | **Required**. An object that identifies the DLQ by its `arn` or `name`. |
+| `maxReceiveCount` | integer | `10` | The number of times a message is received before being sent to the DLQ. |
+
+### Queue Policy
+
+Defines the permissions for the SQS queue using a list of policy statements.
+
+| Property | Type | Description |
+|---|---|---|
+| `statements` | [object] | **Required**. An array of statement objects, each controlling a permission for the queue. |
+
+Each **statement** object contains:
+- `effect`: `Allow` or `Deny`.
+- `principal`: The AWS account or resource ARN that this statement applies to.
+- `action`: The SQS permission being controlled (e.g., `sqs:SendMessage`).
 
 ## Examples
 
-```json
-{
-    "queue": {
-        "name": "myQueue",
-        "fifoQueue": true,
-        "deduplicationScope": "messageGroup",
-        "fifoThroughputLimit": "perMessageGroupId",
-        "deliveryDelay": 15,
-        "visibilityTimeout": 60,
-        "receiveMessageWaitTime": 0,
-        "messageRetentionPeriod": 86400,
-        "redrivePolicy": {
-            "deadLetterQueue": {
-                "arn": "arn:aws:SQS:eu-west-1:0000000:123456789"
-            },
-            "maxReceiveCount": 15
-        },
-        "policy": {
-            "statements": [
-                {
-                    "effect": "Deny",
-                    "principal": "arn:aws:iam::123456789012:user/dec.kolakowski",
-                    "action": [
-                        "sqs:SendMessage",
-                        "sqs:ReceiveMessage"
-                    ]
-                }
-            ]
-        },
-        "tags": {
-            "owner": "AsyncAPI.NET",
-            "platform": "AsyncAPIOrg"
-        }
-    },
-    "deadLetterQueue": {
-        "name": "myQueue_error",
-        "deliveryDelay": 0,
-        "visibilityTimeout": 0,
-        "receiveMessageWaitTime": 0,
-        "messageRetentionPeriod": 604800
-    }
-}
+### FIFO Queue with a Dead-Letter Queue
+
+This example defines a FIFO queue named `user-events.fifo` with a corresponding DLQ named `user-events-dlq.fifo`. If a message fails to be processed after 5 attempts, it is moved to the DLQ.
+
+```yaml
+channels:
+  userEvents:
+    bindings:
+      sqs:
+        queue:
+          name: user-events.fifo
+          fifoQueue: true
+          redrivePolicy:
+            deadLetterQueue:
+              name: user-events-dlq # References the DLQ defined below
+            maxReceiveCount: 5
+        deadLetterQueue:
+          name: user-events-dlq.fifo
+          fifoQueue: true
+        bindingVersion: '0.2.0'
 ```
 
-## Changelog
+### Queue with an Access Policy
 
-Good news, nothing was changed
+This example defines a standard queue and attaches a policy that allows a specific IAM user to send messages to it.
+
+```yaml
+channels:
+  orderProcessing:
+    bindings:
+      sqs:
+        queue:
+          name: order-processing-queue
+          policy:
+            statements:
+              - effect: Allow
+                principal: 'arn:aws:iam::123456789012:user/order-service-user'
+                action: 'sqs:SendMessage'
+        bindingVersion: '0.2.0'
+```
+
+## Migration Guide to v0.3.0
+
+Version `0.3.0` introduced several enhancements to the `policy.statements` object:
+- The `principal` property was updated to support complex object types for `AWS` and `Service` principals, in addition to string ARNs.
+- The `resource` property was added to specify which resources the policy statement applies to.
+- The `condition` property was added to allow for more granular control over when the policy is in effect.

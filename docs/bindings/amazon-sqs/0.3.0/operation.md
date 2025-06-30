@@ -1,64 +1,104 @@
 ---
-title: Amazon SQS operation binding
+title: Amazon SQS Operation Binding v0.3.0 - Queue Policies
+description: Learn how to use the Amazon SQS operation binding to define policies for multiple queues that an operation can interact with, including primary and dead-letter queues (DLQs).
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Amazon SQS operation binding"
+    - name: keywords
+      content: Amazon SQS, AWS, AsyncAPI, operation binding, SQS queue, SQS policy, DLQ, IAM, message queue
   - - meta
-    - name: "og:description"
-      content: "How to use Amazon SQS with AsyncAPI operation binding"
+    - property: og:title
+      content: Amazon SQS Operation Binding v0.3.0 - Queue Policies
   - - meta
-    - name: "og:image"
-      content: "/bindings/amazon-sqs/0.3.0/operation.png"
+    - property: og:description
+      content: Learn how to use the Amazon SQS operation binding to define policies for multiple queues that an operation can interact with, including primary and dead-letter queues (DLQs).
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.html
+  - - meta
+    - property: og:image
+      content: /bindings/amazon-sqs/0.3.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: Amazon SQS Operation Binding v0.3.0 - Queue Policies
+  - - meta
+    - name: twitter:description
+      content: Learn how to use the Amazon SQS operation binding to define policies for multiple queues that an operation can interact with, including primary and dead-letter queues (DLQs).
 ---
 
-# {{ $frontmatter.title }}
+# Amazon SQS Operation Binding v0.3.0
 
-Contains information about the operation representation in Amazon SQS.
+The Amazon SQS operation binding is used to define a list of SQS queues that an operation can interact with. This is particularly useful in scenarios where an operation may target multiple queues, such as when using an SNS topic to fan out messages to several SQS queues.
 
-## Structure
+## Overview
 
-<Json url="/bindings/amazon-sqs/0.3.0/operation.json" />
+The core of this binding is the `queues` property, which is an array of `queue` objects. Each object in the array defines a queue by its `name` and can include a `redrivePolicy` and an access `policy`.
 
-## Examples
+## Operation Properties
 
-```json
-{
-    "queues": [
-        {
-            "name": "myQueue",
-            "fifoQueue": true,
-            "deduplicationScope": "messageGroup",
-            "fifoThroughputLimit": "perMessageGroupId",
-            "deliveryDelay": 10,
-            "redrivePolicy": {
-                "deadLetterQueue": {
-                    "name": "myQueue_error"
-                },
-                "maxReceiveCount": 15
-            },
-            "policy": {
-                "statements": [
-                    {
-                        "effect": "Deny",
-                        "principal": "arn:aws:iam::123456789012:user/dec.kolakowski",
-                        "action": [
-                            "sqs:SendMessage",
-                            "sqs:ReceiveMessage"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "name": "myQueue_error",
-            "deliveryDelay": 10
-        }
-    ]
-}
+| Property | Type | Description |
+|---|---|---|
+| `queues` | [object] | **Required**. An array of Queue Objects. These queues are either the endpoint for an SNS operation or the dead-letter queue of an SQS operation. |
+| `bindingVersion`| string | The version of this binding. For `v0.3.0`, this MUST be `0.3.0`. |
+
+### Queue Object
+
+Defines a queue that the operation can interact with.
+
+| Property | Type | Description |
+|---|---|---|
+| `name` | string | **Required**. The name of the queue. |
+| `fifoQueue` | boolean | Specifies if the queue is a FIFO queue. |
+| `redrivePolicy` | object | Defines the dead-letter queue (DLQ) settings. See [Redrive Policy](#redrive-policy). |
+| `policy` | object | Defines the access policy for the queue. See [Queue Policy](#queue-policy). |
+| `tags` | object | Key-value AWS tags for the queue. |
+
+### Redrive Policy
+
+Specifies the DLQ for un-processable messages.
+
+| Property | Type | Description |
+|---|---|---|
+| `deadLetterQueue`| object | **Required**. An object that identifies the DLQ by its `arn` or `name`. |
+| `maxReceiveCount`| integer | Number of receives before a message is moved to the DLQ. |
+
+### Queue Policy
+
+Defines access permissions for the queue.
+
+| Property | Type | Description |
+|---|---|---|
+| `statements` | [object] | **Required**. An array of policy statements. |
+
+## Example
+
+This example defines an operation that interacts with two queues: a primary FIFO queue (`my-queue.fifo`) and its corresponding dead-letter queue (`my-dlq.fifo`). It includes a policy to deny a specific user from sending or receiving messages.
+
+```yaml
+operations:
+  processUserEvents:
+    bindings:
+      sqs:
+        queues:
+          - name: my-queue.fifo
+            fifoQueue: true
+            redrivePolicy:
+              deadLetterQueue:
+                name: my-dlq.fifo # Identifies the DLQ
+              maxReceiveCount: 5
+            policy:
+              statements:
+                - effect: Deny
+                  principal: 'arn:aws:iam::123456789012:user/some-user'
+                  action: ['sqs:SendMessage', 'sqs:ReceiveMessage']
+          - name: my-dlq.fifo
+            fifoQueue: true
+        bindingVersion: '0.3.0'
 ```
 
 ## Changelog
@@ -70,22 +110,22 @@ Contains information about the operation representation in Amazon SQS.
 The resource(s) that this policy applies to.
 
 ```json
-{ // [!code ++]
-  "resource": { // [!code ++]
-      "description": "The resource(s) that this policy applies to.", // [!code ++]
-      "oneOf": [ // [!code ++]
-        { // [!code ++]
-          "type": "string" // [!code ++]
-        }, // [!code ++]
-        { // [!code ++]
-          "type": "array", // [!code ++]
-          "items": { // [!code ++]
-              "type": "string" // [!code ++]
-          } // [!code ++]
-        } // [!code ++]
-      ] // [!code ++]
-    } // [!code ++]
-} // [!code ++]
+{ 
+  "resource": { 
+      "description": "The resource(s) that this policy applies to.", 
+      "oneOf": [ 
+        { 
+          "type": "string" 
+        }, 
+        { 
+          "type": "array", 
+          "items": { 
+              "type": "string" 
+          } 
+        } 
+      ] 
+    } 
+} 
 ```
 
 #### queue.`policy`.`statements`.condition
@@ -94,30 +134,30 @@ Specific circumstances under which the policy grants permission
 
 ```json
 {
-  "condition": { // [!code ++]
-    "description": "Specific circumstances under which the policy grants permission", // [!code ++]
-    "type": "object", // [!code ++]
-    "patternProperties": { // [!code ++]
-      ".*": { // [!code ++]
-        "type": "object", // [!code ++]
-        "patternProperties": { // [!code ++]
-          ".*": { // [!code ++]
-            "oneOf": [ // [!code ++]
-              { // [!code ++]
-                "type": "string" // [!code ++]
-              }, // [!code ++]
-              { // [!code ++]
-                "type": "array", // [!code ++]
-                "items": { // [!code ++]
-                  "type": "string" // [!code ++]
-                } // [!code ++]
-              } // [!code ++]
-            ] // [!code ++]
-          } // [!code ++]
-        } // [!code ++]
-      } // [!code ++]
-    } // [!code ++]
-  } // [!code ++]
+  "condition": { 
+    "description": "Specific circumstances under which the policy grants permission", 
+    "type": "object", 
+    "patternProperties": { 
+      ".*": { 
+        "type": "object", 
+        "patternProperties": { 
+          ".*": { 
+            "oneOf": [ 
+              { 
+                "type": "string" 
+              }, 
+              { 
+                "type": "array", 
+                "items": { 
+                  "type": "string" 
+                } 
+              } 
+            ] 
+          } 
+        } 
+      } 
+    } 
+  } 
 }
 ```
 
@@ -135,49 +175,49 @@ The AWS account(s) or resource ARN(s) that this statement applies to.
       {
         "type": "string"
       },
-      { // [!code ++]
-        "type": "object", // [!code ++]
-        "properties": { // [!code ++]
-          "AWS": { // [!code ++]
-            "oneOf": [ // [!code ++]
-              { // [!code ++]
-                "type": "string" // [!code ++]
-              }, // [!code ++]
+      { 
+        "type": "object", 
+        "properties": { 
+          "AWS": { 
+            "oneOf": [ 
+              { 
+                "type": "string" 
+              }, 
               {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               }
-            ] // [!code ++]
-          } // [!code ++]
-        }, // [!code ++]
-        "required": [ // [!code ++]
-          "AWS" // [!code ++]
-        ], // [!code ++]
-        "additionalProperties": false // [!code ++]
-      }, // [!code ++]
-      { // [!code ++]
-        "type": "object", // [!code ++]
-        "properties": { // [!code ++]
-          "Service": { // [!code ++]
-            "oneOf": [ // [!code ++]
-              { // [!code ++]
-                "type": "string" // [!code ++]
-              }, // [!code ++]
-              { // [!code ++]
-                "type": "array", // [!code ++]
-                "items": { // [!code ++]
-                  "type": "string" // [!code ++]
-                } // [!code ++]
-              } // [!code ++]
-            ] // [!code ++]
-          } // [!code ++]
-        }, // [!code ++]
-        "required": [ // [!code ++]
-          "Service" // [!code ++]
-        ], // [!code ++]
-        "additionalProperties": false // [!code ++]
+            ] 
+          } 
+        }, 
+        "required": [ 
+          "AWS" 
+        ], 
+        "additionalProperties": false 
+      }, 
+      { 
+        "type": "object", 
+        "properties": { 
+          "Service": { 
+            "oneOf": [ 
+              { 
+                "type": "string" 
+              }, 
+              { 
+                "type": "array", 
+                "items": { 
+                  "type": "string" 
+                } 
+              } 
+            ] 
+          } 
+        }, 
+        "required": [ 
+          "Service" 
+        ], 
+        "additionalProperties": false 
       }
     ]
   }
