@@ -204,6 +204,8 @@ export default defineConfig({
             },
             {
               text: 'Apache Pulsar',
+              base: '/bindings/apache-pulsar',
+              link: '/',
               collapsed: true,
               items: [
                 {
