@@ -158,6 +158,8 @@ export default defineConfig({
             },
             {
               text: 'Apache Kafka',
+              base: '/bindings/apache-kafka',
+              link: '/',
               collapsed: true,
               items: [
                 {

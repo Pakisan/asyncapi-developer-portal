@@ -1,130 +1,170 @@
 ---
-title: Apache Kafka channel binding
+title: Apache Kafka Channel Binding v0.5.0 - Topic Configuration Guide
+description: A comprehensive guide to the Apache Kafka Channel Binding v0.5.0 for AsyncAPI. Learn to configure Kafka topics, including partitions, replicas, and advanced topic properties, to optimize your event-driven architecture.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Apache Kafka channel binding"
+    - name: keywords
+      content: Apache Kafka, AsyncAPI, channel binding, Kafka topic, partitions, replicas, topic configuration, event-driven architecture, data streaming
   - - meta
-    - name: "og:description"
-      content: "How to use Apache Kafka with AsyncAPI channel binding"
+    - property: og:title
+      content: Apache Kafka Channel Binding v0.5.0 - Topic Configuration Guide
   - - meta
-    - name: "og:image"
-      content: "/bindings/apache-kafka/0.5.0/channel.png"
+    - property: og:description
+      content: A comprehensive guide to the Apache Kafka Channel Binding v0.5.0 for AsyncAPI. Learn to configure Kafka topics, including partitions, replicas, and advanced topic properties, to optimize your event-driven architecture.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/channel.html
+  - - meta
+    - name: og:image
+      content: /bindings/apache-kafka/0.5.0/channel.png
+  - - meta
+    - name: twitter:title
+      content: Apache Kafka Channel Binding v0.5.0 - Topic Configuration Guide
+  - - meta
+    - name: twitter:description
+      content: A comprehensive guide to the Apache Kafka Channel Binding v0.5.0 for AsyncAPI. Learn to configure Kafka topics, including partitions, replicas, and advanced topic properties, to optimize your event-driven architecture.
 ---
 
-# {{ $frontmatter.title }}
+# Apache Kafka Channel Binding v0.5.0
 
-Contains information about the message representation in Apache Kafka.
+The Apache Kafka channel binding object allows you to define Kafka-specific information for an AsyncAPI channel. This binding is essential for configuring Kafka topics, including the number of partitions, replicas, and other topic-level settings.
 
-## Structure
+## Overview
 
-<Json url="/bindings/apache-kafka/0.5.0/channel.json"/>
+The Kafka channel binding provides a detailed description of a Kafka topic, enabling you to manage its configuration directly within your AsyncAPI specification. This ensures that your applications and other stakeholders have a clear and consistent understanding of the topic's setup.
+
+## Channel Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `topic` | string | No | The name of the Kafka topic. If not specified, the channel name will be used. |
+| `partitions` | integer | No | The number of partitions for the topic. Must be a positive integer. |
+| `replicas` | integer | No | The number of replicas for the topic. Must be a positive integer. |
+| `topicConfiguration` | object | No | An object containing advanced topic configuration properties. |
+| `bindingVersion` | string | No | The version of the Kafka channel binding. Defaults to `latest`. |
+
+### `topicConfiguration` Object
+
+The `topicConfiguration` object allows you to specify advanced settings for the Kafka topic.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `cleanup.policy` | array[string] | The topic's cleanup policy. Can be `compact` or `delete`. See [Kafka documentation](https://kafka.apache.org/documentation/#topicconfigs_cleanup.policy). |
+| `retention.ms` | integer | The retention period for messages in milliseconds. See [Kafka documentation](https://kafka.apache.org/documentation/#topicconfigs_retention.ms). |
+| `retention.bytes` | integer | The maximum size of the log segment. See [Kafka documentation](https://kafka.apache.org/documentation/#topicconfigs_retention.bytes). |
+| `delete.retention.ms` | integer | The retention period for deleted records. See [Kafka documentation](https://kafka.apache.org/documentation/#topicconfigs_delete.retention.ms). |
+| `max.message.bytes` | integer | The maximum size of a message. See [Kafka documentation](https://kafka.apache.org/documentation/#topicconfigs_max.message.bytes). |
+| `confluent.key.schema.validation` | boolean | Whether to enable schema validation for the message key (Confluent-specific). |
+| `confluent.key.subject.name.strategy` | string | The schema lookup strategy for the message key (Confluent-specific). |
+| `confluent.value.schema.validation` | boolean | Whether to enable schema validation for the message value (Confluent-specific). |
+| `confluent.value.subject.name.strategy`| string | The schema lookup strategy for the message value (Confluent-specific). |
 
 ## Examples
 
-```json
-{
-    "topic": "my-specific-topic",
-    "partitions": 20,
-    "replicas": 3,
-    "bindingVersion": "0.5.0"
-}
+### Basic Topic Configuration
+
+This example defines a Kafka topic with a specific number of partitions and replicas.
+
+```yaml
+channels:
+  user-signup:
+    bindings:
+      kafka:
+        topic: user-signup-topic
+        partitions: 10
+        replicas: 3
+        bindingVersion: '0.5.0'
 ```
 
-## Changelog
+### Advanced Topic Configuration
 
-### Changed
+This example demonstrates how to set advanced topic properties, such as cleanup policy and retention settings.
 
-#### topicConfiguration.`additionalProperties`
-
-Topic configuration can be extended
-
-```json
-{
-    "description": "Topic configuration properties that are relevant for the API.",
-    "type": "object",
-    "additionalProperties": false, // [!code --]
-    "additionalProperties": true // [!code ++]
-}
+```yaml
+channels:
+  order-events:
+    bindings:
+      kafka:
+        topic: order-events-topic
+        partitions: 20
+        replicas: 3
+        topicConfiguration:
+          cleanup.policy: ["compact", "delete"]
+          retention.ms: 86400000
+          max.message.bytes: 1048576
+        bindingVersion: '0.5.0'
 ```
 
-### Added
+### Confluent Schema Registry Integration
 
-#### topicConfiguration.`confluent.key.schema.validation`
+This example shows how to configure Confluent-specific schema validation settings.
 
-It shows whether the schema validation for the message key is enabled. Vendor specific config. 
-
-For more details: https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-key-schema-validation
-
-```json
-{
-    "description": "Topic configuration properties that are relevant for the API.",
-    "type": "object",
-    "properties": {
-        "confluent.key.schema.validation": { // [!code ++]
-            "description": "It shows whether the schema validation for the message key is enabled. Vendor specific config. For more details: (https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-key-schema-validation)", // [!code ++]
-            "type": "boolean" // [!code ++]
-        } // [!code ++]
-    }
-}
+```yaml
+channels:
+  product-updates:
+    bindings:
+      kafka:
+        topic: product-updates-topic
+        topicConfiguration:
+          confluent.key.schema.validation: true
+          confluent.value.schema.validation: true
+          confluent.value.subject.name.strategy: "io.confluent.kafka.serializers.subject.TopicRecordNameStrategy"
+        bindingVersion: '0.5.0'
 ```
 
-#### topicConfiguration.`confluent.key.subject.name.strategy`
+## Use Cases
 
-The name of the schema lookup strategy for the message key. Vendor specific config. 
+### High-Throughput Data Streaming
 
-For more details: https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-key-subject-name-strategy
+Configure a topic with a high number of partitions to handle a large volume of incoming data from multiple producers.
 
-```json
-{
-    "description": "Topic configuration properties that are relevant for the API.",
-    "type": "object",
-    "properties": {
-        "confluent.key.subject.name.strategy": { // [!code ++]
-            "description": "The name of the schema lookup strategy for the message key. Vendor specific config. For more details: (https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-key-subject-name-strategy)", // [!code ++]
-            "type": "string" // [!code ++]
-        } // [!code ++]
-    }
-}
+```yaml
+channels:
+  iot-sensor-data:
+    bindings:
+      kafka:
+        topic: iot-data
+        partitions: 50
+        replicas: 3
+        bindingVersion: '0.5.0'
 ```
 
-#### topicConfiguration.`confluent.value.schema.validation`
+### Event Sourcing
 
-It shows whether the schema validation for the message value is enabled. Vendor specific config. 
+Use a compacted topic to store the full history of events for a specific entity, ensuring that only the latest state is retained.
 
-For more details: https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-value-schema-validation
-
-```json
-{
-    "description": "Topic configuration properties that are relevant for the API.",
-    "type": "object",
-    "properties": {
-        "confluent.value.schema.validation": { // [!code ++]
-            "description": "It shows whether the schema validation for the message value is enabled. Vendor specific config. For more details: (https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-value-schema-validation)", // [!code ++]
-            "type": "boolean" // [!code ++]
-        } // [!code ++]
-    }
-}
+```yaml
+channels:
+  customer-profile-events:
+    bindings:
+      kafka:
+        topic: customer-profiles
+        partitions: 5
+        replicas: 3
+        topicConfiguration:
+          cleanup.policy: ["compact"]
+        bindingVersion: '0.5.0'
 ```
 
-#### topicConfiguration.`confluent.value.subject.name.strategy`
+### Log Aggregation
 
-The name of the schema lookup strategy for the message value. Vendor specific config. 
+Configure a topic with a specific retention period to store logs for a defined amount of time.
 
-For more details: https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-value-subject-name-strategy
-
-```json
-{
-    "description": "Topic configuration properties that are relevant for the API.",
-    "type": "object",
-    "properties": {
-        "confluent.value.subject.name.strategy": { // [!code ++]
-            "description": "The name of the schema lookup strategy for the message value. Vendor specific config. For more details: (https://docs.confluent.io/platform/current/installation/configuration/topic-configs.html#confluent-value-subject-name-strategy)", // [!code ++]
-            "type": "string" // [!code ++]
-        } // [!code ++]
-    }
-}
+```yaml
+channels:
+  application-logs:
+    bindings:
+      kafka:
+        topic: app-logs
+        partitions: 10
+        replicas: 2
+        topicConfiguration:
+          retention.ms: 604800000 # 7 days
+        bindingVersion: '0.5.0'
 ```

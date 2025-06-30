@@ -1,23 +1,56 @@
 ---
-title: Apache Kafka channel binding
+title: Apache Kafka Channel Binding v0.1.0 - Basic Configuration
+description: A guide to the Apache Kafka Channel Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific channel information.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Apache Kafka channel binding"
+    - name: keywords
+      content: Apache Kafka, AsyncAPI, channel binding, Kafka topic, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Apache Kafka with AsyncAPI channel binding"
+    - property: og:title
+      content: Apache Kafka Channel Binding v0.1.0 - Basic Configuration
   - - meta
-    - name: "og:image"
-      content: "/bindings/apache-kafka/0.1.0/channel.png"
+    - property: og:description
+      content: A guide to the Apache Kafka Channel Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific channel information.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/channel.html
+  - - meta
+    - name: og:image
+      content: /bindings/apache-kafka/0.1.0/channel.png
+  - - meta
+    - name: twitter:title
+      content: Apache Kafka Channel Binding v0.1.0 - Basic Configuration
+  - - meta
+    - name: twitter:description
+      content: A guide to the Apache Kafka Channel Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific channel information.
 ---
 
-# {{ $frontmatter.title }}
+# Apache Kafka Channel Binding v0.1.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The Apache Kafka channel binding object, version `0.1.0`, is the initial version of the binding. It serves as a placeholder for defining Kafka-specific channel information within an AsyncAPI document.
 
-Contains information about the channel representation in Apache Kafka.
+## Overview
+
+This version of the channel binding is minimal and does not contain any specific properties for topic configuration. It primarily indicates that the channel is intended to be used with Apache Kafka.
+
+## Channel Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | The version of the Kafka channel binding. For this version, the value is `0.1.0`. |
+
+## Example
+
+```yaml
+channels:
+  user-events:
+    bindings:
+      kafka:
+        bindingVersion: '0.1.0'
+```

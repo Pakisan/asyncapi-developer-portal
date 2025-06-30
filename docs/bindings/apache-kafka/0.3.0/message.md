@@ -1,85 +1,133 @@
 ---
-title: Apache Kafka message binding
+title: Apache Kafka Message Binding v0.3.0 - Schema Registry Integration
+description: Explore the Apache Kafka Message Binding v0.3.0 for AsyncAPI. Learn how to define message keys, integrate with Schema Registry, and manage schema evolution for robust and reliable event-driven applications.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "Apache Kafka message binding"
+    - name: keywords
+      content: Apache Kafka, AsyncAPI, message binding, Kafka message key, Schema Registry, schema evolution, Confluent, Apicurio, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use Apache Kafka with AsyncAPI message binding"
+    - property: og:title
+      content: Apache Kafka Message Binding v0.3.0 - Schema Registry Integration
   - - meta
-    - name: "og:image"
-      content: "/bindings/apache-kafka/0.3.0/message.png"
+    - property: og:description
+      content: Explore the Apache Kafka Message Binding v0.3.0 for AsyncAPI. Learn how to define message keys, integrate with Schema Registry, and manage schema evolution for robust and reliable event-driven applications.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.3.0/message.html
+  - - meta
+    - name: og:image
+      content: /bindings/apache-kafka/0.3.0/message.png
+  - - meta
+    - name: twitter:title
+      content: Apache Kafka Message Binding v0.3.0 - Schema Registry Integration
+  - - meta
+    - name: twitter:description
+      content: Explore the Apache Kafka Message Binding v0.3.0 for AsyncAPI. Learn how to define message keys, integrate with Schema Registry, and manage schema evolution for robust and reliable event-driven applications.
 ---
 
-# {{ $frontmatter.title }}
+# Apache Kafka Message Binding v0.3.0
 
-Contains information about the message representation in Apache Kafka.
+The Apache Kafka message binding object specifies Kafka-specific information for an AsyncAPI message. This binding allows you to define the message key and configure integration with a Schema Registry for schema validation and evolution.
 
-## Structure
+## Overview
 
-<Json url="/bindings/apache-kafka/0.3.0/message.json"/>
+The Kafka message binding is crucial for ensuring that messages are correctly partitioned and that their schemas are managed effectively. By defining a message key, you can control how messages are distributed across partitions. Integration with a Schema Registry helps maintain data consistency and compatibility between producers and consumers.
+
+## Message Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `key` | Schema Object | No | The message key, which is used for partitioning. It should be defined as a schema object. |
+| `schemaIdLocation` | string | No | The location of the schema ID in the message when using a Schema Registry. Can be `header` or `payload`. |
+| `schemaIdPayloadEncoding` | string | No | The encoding of the schema ID when it is located in the payload. This can be a vendor-specific value (e.g., `apicurio-legacy`, `apicurio-new`) or the number of bytes used for encoding. |
+| `schemaLookupStrategy` | string | No | The naming strategy for looking up schemas in the Schema Registry. |
+| `bindingVersion` | string | No | The version of the Kafka message binding. Defaults to `latest`. |
 
 ## Examples
 
-```json
-{
-    "key": {
-        "type": "string",
-        "enum": [
-            "myKey"
-        ]
-    },
-    "schemaIdLocation": "payload",
-    "schemaIdPayloadEncoding": "apicurio-new",
-    "schemaLookupStrategy": "TopicIdStrategy",
-    "bindingVersion": "0.3.0"
-}
+### Simple Message Key
+
+This example defines a simple message key using a schema object.
+
+```yaml
+messages:
+  user-created:
+    bindings:
+      kafka:
+        key:
+          type: string
+          format: uuid
+        bindingVersion: '0.3.0'
 ```
 
-## Migration guide
+### Schema Registry Integration (Confluent)
 
-### Added
+This example demonstrates how to configure the message binding for use with Confluent Schema Registry.
 
-#### schemaIdLocation
-
-If a Schema Registry is used when performing this operation, tells where the id of schema is stored.
-
-```json
-{
-    "schemaIdLocation": { // [!code ++]
-      "type": "string", // [!code ++]
-      "description": "If a Schema Registry is used when performing this operation, tells where the id of schema is stored.", // [!code ++]
-      "enum": ["header", "payload"] // [!code ++]
-    } // [!code ++]
-}
+```yaml
+messages:
+  product-update:
+    bindings:
+      kafka:
+        key:
+          type: string
+        schemaIdLocation: 'payload'
+        schemaIdPayloadEncoding: '4' # Confluent uses 4 bytes for the schema ID
+        schemaLookupStrategy: 'io.confluent.kafka.serializers.subject.TopicRecordNameStrategy'
+        bindingVersion: '0.3.0'
 ```
 
-#### schemaIdPayloadEncoding
+### Schema Registry Integration (Apicurio)
 
-Number of bytes or vendor specific values when schema id is encoded in payload.
+This example shows how to configure the message binding for use with Apicurio Registry.
 
-```json
-{
-    "schemaIdPayloadEncoding": { // [!code ++]
-      "type": "string", // [!code ++]
-      "description": "Number of bytes or vendor specific values when schema id is encoded in payload." // [!code ++]
-    } // [!code ++]
-}
+```yaml
+messages:
+  inventory-update:
+    bindings:
+      kafka:
+        key:
+          type: string
+        schemaIdLocation: 'header'
+        schemaLookupStrategy: 'io.apicurio.registry.serde.strategy.TopicIdStrategy'
+        bindingVersion: '0.3.0'
 ```
 
-#### schemaLookupStrategy
+## Use Cases
 
-Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied.
+### Guaranteed Message Ordering for an Entity
 
-```json
-{
-    "schemaLookupStrategy": { // [!code ++]
-      "type": "string", // [!code ++]
-      "description": "Freeform string for any naming strategy class to use. Clients should default to the vendor default if not supplied." // [!code ++]
-    } // [!code ++]
-}
+By using a consistent key for all messages related to a specific entity (e.g., a user ID or order ID), you can ensure that they are always sent to the same partition, preserving their order.
+
+```yaml
+messages:
+  user-activity:
+    bindings:
+      kafka:
+        key:
+          type: string
+          description: The user's unique identifier.
+        bindingVersion: '0.3.0'
+```
+
+### Enforcing Data Contracts with Schema Registry
+
+Integrate with a Schema Registry to validate that all messages produced to a topic adhere to a predefined schema, preventing data quality issues.
+
+```yaml
+messages:
+  payment-transaction:
+    bindings:
+      kafka:
+        key:
+          type: string
+          format: uuid
+        schemaIdLocation: 'payload'
+        bindingVersion: '0.3.0'
 ```
