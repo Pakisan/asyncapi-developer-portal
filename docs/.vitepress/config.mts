@@ -142,6 +142,8 @@ export default defineConfig({
             },
             {
               text: 'Anypoint MQ',
+              base: '/bindings/anypointmq',
+              link: '/',
               collapsed: true,
               items: [
                 {
