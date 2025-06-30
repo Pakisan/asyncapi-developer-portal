@@ -1,23 +1,67 @@
 ---
-title: IBM MQ operation binding
+title: IBM MQ Operation Binding v0.1.0 - Placeholder
+description: This document details the v0.1.0 of the IBM MQ operation binding. This version is a placeholder reserved for future IBM MQ-specific operation configurations.
 layout: doc
-prev: false
-next: false
+prev: true
+next: true
 head:
   - - meta
-    - name: "og:title"
-      content: "IBM MQ operation binding"
+    - name: keywords
+      content: IBM MQ operation binding, AsyncAPI, placeholder, enterprise messaging, event-driven architecture
   - - meta
-    - name: "og:description"
-      content: "How to use IBM MQ with AsyncAPI operation binding"
+    - property: og:title
+      content: IBM MQ Operation Binding v0.1.0 - Placeholder
   - - meta
-    - name: "og:image"
-      content: "/bindings/ibmmq/0.1.0/operation.png"
+    - property: og:description
+      content: This document details the v0.1.0 of the IBM MQ operation binding. This version is a placeholder reserved for future IBM MQ-specific operation configurations.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://asyncapi.pavelon.dev/bindings/ibmmq/0.1.0/operation.html
+  - - meta
+    - name: og:image
+      content: /bindings/ibmmq/0.1.0/operation.png
+  - - meta
+    - name: twitter:title
+      content: IBM MQ Operation Binding v0.1.0 - Placeholder
+  - - meta
+    - name: twitter:description
+      content: This document details the v0.1.0 of the IBM MQ operation binding. This version is a placeholder reserved for future IBM MQ-specific operation configurations.
 ---
 
-# {{ $frontmatter.title }}
+# IBM MQ Operation Binding v0.1.0
 
-> [!NOTE]
-> This object MUST NOT contain any properties. Its name is reserved for future use.
+The IBM MQ operation binding is reserved for defining properties that are specific to an IBM MQ publish or subscribe operation.
 
-Contains information about the operation representation in IBM MQ.
+## Overview
+
+As of `v0.1.0`, this binding is a placeholder and does not contain any properties. Its presence on an operation is for informational purposes, indicating that the operation is part of an IBM MQ-based API. Future versions may include properties to control specific behaviors of message producers or consumers.
+
+## Operation Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.1.0`). |
+
+## Example
+
+This example shows a `publish` operation with the placeholder IBM MQ operation binding.
+
+```yaml
+operations:
+  sendTelemetry:
+    action: send
+    channel:
+      $ref: '#/channels/deviceTelemetryTopic'
+    bindings:
+      ibmmq:
+        bindingVersion: '0.1.0'
+```
+
+## Changelog
+
+### Version 0.1.0
+- Initial release of the IBM MQ operation binding.
+- The binding is a placeholder with no specific properties.

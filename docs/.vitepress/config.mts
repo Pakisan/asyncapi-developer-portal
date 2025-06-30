@@ -282,6 +282,8 @@ export default defineConfig({
             },
             {
               text: 'IBM MQ',
+              base: '/bindings/ibmmq',
+              link: '/',
               collapsed: true,
               items: [
                 {
