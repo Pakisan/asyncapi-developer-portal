@@ -314,6 +314,8 @@ export default defineConfig({
             },
             {
               text: 'Mercure',
+              base: '/bindings/mercure',
+              link: '/',
               collapsed: true,
               items: [
                 {
