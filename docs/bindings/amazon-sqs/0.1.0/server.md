@@ -1,19 +1,19 @@
 ---
-title: Amazon SQS Server Binding v0.1.0 - Reserved for Future Use
-description: An overview of the AsyncAPI SQS server binding object for version 0.1.0. Learn why this binding is reserved for future server-level configurations.
+title: Amazon SQS Server Binding v0.1.0 – Reserved for Future Use
+description: Overview of AsyncAPI SQS server binding v0.1.0. This placeholder is reserved for future server-level configurations in AWS SQS integrations.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Amazon SQS, AWS, AsyncAPI, server binding, SQS server, placeholder binding
+      content: Amazon SQS server binding, AsyncAPI SQS v0.1.0, AWS SQS, server placeholder, event-driven architecture
   - - meta
     - property: og:title
-      content: Amazon SQS Server Binding v0.1.0 - Reserved for Future Use
+      content: Amazon SQS Server Binding v0.1.0 – Reserved for Future Use
   - - meta
     - property: og:description
-      content: An overview of the AsyncAPI SQS server binding object for version 0.1.0. Learn why this binding is reserved for future server-level configurations.
+      content: Overview of AsyncAPI SQS server binding v0.1.0. This placeholder is reserved for future server-level configurations in AWS SQS integrations.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amazon-sqs/0.1.0/server.png
   - - meta
     - name: twitter:title
-      content: Amazon SQS Server Binding v0.1.0 - Reserved for Future Use
+      content: Amazon SQS Server Binding v0.1.0 – Reserved for Future Use
   - - meta
     - name: twitter:description
-      content: An overview of the AsyncAPI SQS server binding object for version 0.1.0. Learn why this binding is reserved for future server-level configurations.
+      content: Overview of AsyncAPI SQS server binding v0.1.0. This placeholder is reserved for future server-level configurations in AWS SQS integrations.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.1.0/server.html
 ---
 
 # Amazon SQS Server Binding v0.1.0

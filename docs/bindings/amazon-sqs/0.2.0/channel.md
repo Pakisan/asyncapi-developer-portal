@@ -1,19 +1,19 @@
 ---
-title: Amazon SQS Channel Binding v0.2.0 - Queue Configuration
-description: Learn how to configure AWS SQS channels with AsyncAPI. Define standard and FIFO queues, set up dead-letter queues (DLQ), configure redrive and access policies, and manage tags for your SQS bindings.
+title: Amazon SQS Channel Binding v0.2.0 – Queue Configuration
+description: Configure AWS SQS queues v0.2.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Amazon SQS, AWS, AsyncAPI, channel binding, SQS queue, FIFO, DLQ, redrive policy, queue policy, message queue
+      content: Amazon SQS channel binding, SQS queue configuration, AsyncAPI SQS v0.2.0, AWS SQS, event-driven architecture, FIFO, DLQ, redrive policy, queue policy
   - - meta
     - property: og:title
-      content: Amazon SQS Channel Binding v0.2.0 - Queue Configuration
+      content: Amazon SQS Channel Binding v0.2.0 – Queue Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure AWS SQS channels with AsyncAPI. Define standard and FIFO queues, set up dead-letter queues (DLQ), configure redrive and access policies, and manage tags for your SQS bindings.
+      content: Configure AWS SQS queues v0.2.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amazon-sqs/0.2.0/channel.png
   - - meta
     - name: twitter:title
-      content: Amazon SQS Channel Binding v0.2.0 - Queue Configuration
+      content: Amazon SQS Channel Binding v0.2.0 – Queue Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure AWS SQS channels with AsyncAPI. Define standard and FIFO queues, set up dead-letter queues (DLQ), configure redrive and access policies, and manage tags for your SQS bindings.
+      content: Configure AWS SQS queues v0.2.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.2.0/channel.html
 ---
 
 # Amazon SQS Channel Binding v0.2.0

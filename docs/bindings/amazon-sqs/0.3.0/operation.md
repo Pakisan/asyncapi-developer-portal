@@ -1,19 +1,19 @@
 ---
-title: Amazon SQS Operation Binding v0.3.0 - Queue Policies
-description: Learn how to use the Amazon SQS operation binding to define policies for multiple queues that an operation can interact with, including primary and dead-letter queues (DLQs).
+title: Amazon SQS Operation Binding v0.3.0 – Queue Policies
+description: Define AWS SQS operation v0.3.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Amazon SQS, AWS, AsyncAPI, operation binding, SQS queue, SQS policy, DLQ, IAM, message queue
+      content: Amazon SQS operation binding, SQS queue policy, AsyncAPI SQS v0.3.0, AWS SQS, DLQ, IAM, event-driven architecture
   - - meta
     - property: og:title
-      content: Amazon SQS Operation Binding v0.3.0 - Queue Policies
+      content: Amazon SQS Operation Binding v0.3.0 – Queue Policies
   - - meta
     - property: og:description
-      content: Learn how to use the Amazon SQS operation binding to define policies for multiple queues that an operation can interact with, including primary and dead-letter queues (DLQs).
+      content: Define AWS SQS operation v0.3.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amazon-sqs/0.3.0/operation.png
   - - meta
     - name: twitter:title
-      content: Amazon SQS Operation Binding v0.3.0 - Queue Policies
+      content: Amazon SQS Operation Binding v0.3.0 – Queue Policies
   - - meta
     - name: twitter:description
-      content: Learn how to use the Amazon SQS operation binding to define policies for multiple queues that an operation can interact with, including primary and dead-letter queues (DLQs).
+      content: Define AWS SQS operation v0.3.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/operation.html
 ---
 
 # Amazon SQS Operation Binding v0.3.0
