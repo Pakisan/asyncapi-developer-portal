@@ -1,17 +1,17 @@
 ---
-title: AMQP 0-9-1 Bindings - Complete Guide
-description: Comprehensive guide to AsyncAPI AMQP 0-9-1 bindings. Learn how to configure channels, operations, messages, and servers for RabbitMQ and other AMQP brokers with detailed examples and best practices.
+title: AMQP AsyncAPI Binding – Guide, Examples & Best Practices
+description: Learn how to use AsyncAPI AMQP bindings for RabbitMQ and other brokers. Define channels, operations, and messages for reliable event-driven architectures.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: AMQP, AsyncAPI, RabbitMQ, message queuing, event-driven architecture, message broker, channel binding, operation binding, message binding, server binding, pub/sub, message routing
+      content: AMQP AsyncAPI binding, RabbitMQ, AMQP channel binding, AMQP operation binding, AMQP message binding, event-driven architecture, message broker, AsyncAPI examples
   - - meta
     - property: og:title
-      content: AMQP 0-9-1 Bindings - Complete Guide
+      content: AMQP AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - property: og:description
-      content: Comprehensive guide to AsyncAPI AMQP 0-9-1 bindings. Learn how to configure channels, operations, messages, and servers for RabbitMQ and other AMQP brokers with detailed examples and best practices.
+      content: Learn how to use AsyncAPI AMQP bindings for RabbitMQ and other brokers. Define channels, operations, and messages for reliable event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/amqp/amqp.png
   - - meta
     - name: twitter:title
-      content: AMQP (Advanced Message Queuing Protocol) 0-9-1 Bindings - Complete Guide
+      content: AMQP AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - name: twitter:description
-      content: Comprehensive guide to AsyncAPI AMQP 0-9-1 bindings. Learn how to configure channels, operations, messages, and servers for RabbitMQ and other AMQP brokers with detailed examples and best practices.
+      content: Learn how to use AsyncAPI AMQP bindings for RabbitMQ and other brokers. Define channels, operations, and messages for reliable event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp/
 ---
 
 # AMQP 0-9-1 Bindings

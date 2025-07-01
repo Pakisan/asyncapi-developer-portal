@@ -1,17 +1,17 @@
 ---
-title: HTTP Bindings - Webhooks and Simple APIs
-description: The complete guide to AsyncAPI HTTP bindings. Learn to define webhooks, request/response operations, and simple HTTP-based APIs with clear, standardized documentation.
+title: HTTP AsyncAPI Binding – Guide, Webhooks & API Examples
+description: Discover how to use AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: HTTP, webhooks, AsyncAPI, REST, API, request, response, query parameters, headers, status code, channel binding, operation binding, message binding, server binding
+      content: HTTP AsyncAPI binding, HTTP channel binding, HTTP operation binding, HTTP message binding, webhooks, REST API, event-driven architecture, AsyncAPI examples
   - - meta
     - property: og:title
-      content: HTTP Bindings - Webhooks and Simple APIs
+      content: HTTP AsyncAPI Binding – Guide, Webhooks & API Examples
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI HTTP bindings. Learn to define webhooks, request/response operations, and simple HTTP-based APIs with clear, standardized documentation.
+      content: Discover how to use AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/http/http.png
   - - meta
     - name: twitter:title
-      content: HTTP Bindings - Webhooks and Simple APIs
+      content: HTTP AsyncAPI Binding – Guide, Webhooks & API Examples
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI HTTP bindings. Learn to define webhooks, request/response operations, and simple HTTP-based APIs with clear, standardized documentation.
+      content: Discover how to use AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/http/
 ---
 
 # HTTP Bindings

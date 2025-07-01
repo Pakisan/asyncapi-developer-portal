@@ -1,17 +1,17 @@
 ---
-title: AMQP 1.0 Protocol Bindings - A Complete Guide
-description: Your complete guide to using AMQP 1.0 protocol bindings in AsyncAPI. Learn how to configure channels, operations, messages, and servers for AMQP 1.0, with detailed examples and best practices for version 0.1.0.
+title: AMQP 1.0 AsyncAPI Binding – Guide & Best Practices
+description: Discover how to use AsyncAPI AMQP 1.0 bindings for interoperable, secure, and reliable messaging. Includes examples and version support.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: AsyncAPI, AMQP, AMQP 1.0, protocol bindings, event-driven architecture, message queue, OASIS, advanced message queuing protocol
+      content: AMQP 1.0 AsyncAPI binding, AMQP1, advanced message queuing protocol, event-driven architecture, message broker, AsyncAPI examples, interoperability
   - - meta
     - property: og:title
-      content: AMQP 1.0 Protocol Bindings - A Complete Guide
+      content: AMQP 1.0 AsyncAPI Binding – Guide & Best Practices
   - - meta
     - property: og:description
-      content: Your complete guide to using AMQP 1.0 protocol bindings in AsyncAPI. Learn how to configure channels, operations, messages, and servers for AMQP 1.0, with detailed examples and best practices for version 0.1.0.
+      content: Discover how to use AsyncAPI AMQP 1.0 bindings for interoperable, secure, and reliable messaging. Includes examples and version support.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/amqp1/amqp1.png
   - - meta
     - name: twitter:title
-      content: AMQP 1.0 Protocol Bindings - A Complete Guide
+      content: AMQP 1.0 AsyncAPI Binding – Guide & Best Practices
   - - meta
     - name: twitter:description
-      content: Your complete guide to using AMQP 1.0 protocol bindings in AsyncAPI. Learn how to configure channels, operations, messages, and servers for AMQP 1.0, with detailed examples and best practices for version 0.1.0.
+      content: Discover how to use AsyncAPI AMQP 1.0 bindings for interoperable, secure, and reliable messaging. Includes examples and version support.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp1/
 ---
 
 # AMQP 1.0 Protocol Bindings

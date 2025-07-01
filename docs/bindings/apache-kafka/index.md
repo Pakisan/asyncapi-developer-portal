@@ -1,17 +1,17 @@
 ---
-title: Apache Kafka Protocol Bindings for AsyncAPI - A Comprehensive Guide
-description: Discover how to use Apache Kafka protocol bindings in AsyncAPI to define and manage event-driven architectures. Learn about channel, operation, message, and server bindings for Kafka, with practical examples and best practices for versions 0.5.0, 0.4.0, 0.3.0 and 0.1.0.
+title: Apache Kafka AsyncAPI Binding – Guide, Examples & Best Practices
+description: Explore AsyncAPI Apache Kafka bindings to define topics, operations, and messages for real-time event streaming. Includes examples and version support.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: AsyncAPI, Apache Kafka, Kafka bindings, event-driven architecture, message broker, protocol bindings, Kafka cluster, consumer group, schema registry, data streaming
+      content: Apache Kafka AsyncAPI binding, Kafka channel binding, Kafka operation binding, Kafka message binding, event streaming, data pipeline, AsyncAPI examples
   - - meta
     - property: og:title
-      content: Apache Kafka Protocol Bindings for AsyncAPI - A Comprehensive Guide
+      content: Apache Kafka AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - property: og:description
-      content: Discover how to use Apache Kafka protocol bindings in AsyncAPI to define and manage event-driven architectures. Learn about channel, operation, message, and server bindings for Kafka, with practical examples and best practices for versions 0.5.0, 0.4.0, 0.3.0 and 0.1.0.
+      content: Explore AsyncAPI Apache Kafka bindings to define topics, operations, and messages for real-time event streaming. Includes examples and version support.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/apache-kafka/apache-kafka.png
   - - meta
     - name: twitter:title
-      content: Apache Kafka Protocol Bindings for AsyncAPI - A Comprehensive Guide
+      content: Apache Kafka AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - name: twitter:description
-      content: Discover how to use Apache Kafka protocol bindings in AsyncAPI to define and manage event-driven architectures. Learn about channel, operation, message, and server bindings for Kafka, with practical examples and best practices for versions 0.5.0, 0.4.0, 0.3.0 and 0.1.0.
+      content: Explore AsyncAPI Apache Kafka bindings to define topics, operations, and messages for real-time event streaming. Includes examples and version support.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/
 ---
 
 # Apache Kafka Protocol Bindings

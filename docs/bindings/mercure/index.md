@@ -1,17 +1,17 @@
 ---
-title: Mercure Bindings - Real-Time Updates with Server-Sent Events
-description: The complete guide to AsyncAPI Mercure bindings. Learn how Mercure leverages Server-Sent Events (SSE) for simple, efficient, and real-time updates in web applications.
+title: Mercure AsyncAPI Binding – Guide, SSE & Real-Time Updates
+description: Learn how to use AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Define channels, operations, and messages for modern web applications.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Mercure, AsyncAPI, Server-Sent Events, SSE, real-time updates, webhooks, publish-subscribe, channel binding, operation binding, message binding, server binding
+      content: Mercure AsyncAPI binding, Server-Sent Events, SSE, Mercure channel binding, Mercure operation binding, Mercure message binding, real-time updates, event-driven architecture, AsyncAPI examples
   - - meta
     - property: og:title
-      content: Mercure Bindings - Real-Time Updates with Server-Sent Events
+      content: Mercure AsyncAPI Binding – Guide, SSE & Real-Time Updates
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI Mercure bindings. Learn how Mercure leverages Server-Sent Events (SSE) for simple, efficient, and real-time updates in web applications.
+      content: Learn how to use AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Define channels, operations, and messages for modern web applications.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/mercure/mercure.png
   - - meta
     - name: twitter:title
-      content: Mercure Bindings - Real-Time Updates with Server-Sent Events
+      content: Mercure AsyncAPI Binding – Guide, SSE & Real-Time Updates
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI Mercure bindings. Learn how Mercure leverages Server-Sent Events (SSE) for simple, efficient, and real-time updates in web applications.
+      content: Learn how to use AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Define channels, operations, and messages for modern web applications.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mercure/
 ---
 
 # Mercure Bindings

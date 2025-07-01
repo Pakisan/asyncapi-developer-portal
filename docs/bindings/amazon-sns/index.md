@@ -1,17 +1,17 @@
 ---
-title: Amazon SNS Bindings - Complete Guide
-description: Your complete guide to AsyncAPI Amazon SNS bindings. Learn to configure topics, operations, and messages for AWS SNS with detailed examples and best practices.
+title: Amazon SNS AsyncAPI Binding – Guide, Examples & Best Practices
+description: Learn how to use AsyncAPI Amazon SNS bindings to define channels, operations, and messages for scalable event-driven architectures. Includes examples and version support.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Amazon SNS, AWS, AsyncAPI, pub-sub, message topic, event-driven architecture, message broker, channel binding, operation binding, message binding, server binding
+      content: Amazon SNS AsyncAPI binding, SNS channel binding, SNS operation binding, SNS message binding, event-driven architecture, AWS SNS, AsyncAPI examples, SNS integration
   - - meta
     - property: og:title
-      content: Amazon SNS Bindings - Complete Guide
+      content: Amazon SNS AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - property: og:description
-      content: Your complete guide to AsyncAPI Amazon SNS bindings. Learn to configure topics, operations, and messages for AWS SNS with detailed examples and best practices.
+      content: Learn how to use AsyncAPI Amazon SNS bindings to define channels, operations, and messages for scalable event-driven architectures. Includes examples and version support.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/amazon-sns/amazon-sns.png
   - - meta
     - name: twitter:title
-      content: Amazon SNS Bindings - Complete Guide
+      content: Amazon SNS AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - name: twitter:description
-      content: Your complete guide to AsyncAPI Amazon SNS bindings. Learn to configure topics, operations, and messages for AWS SNS with detailed examples and best practices.
+      content: Learn how to use AsyncAPI Amazon SNS bindings to define channels, operations, and messages for scalable event-driven architectures. Includes examples and version support.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/
 ---
 
 # Amazon SNS Bindings

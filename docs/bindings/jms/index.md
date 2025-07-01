@@ -1,17 +1,17 @@
 ---
-title: JMS Bindings - Enterprise Messaging with Java
-description: The complete guide to AsyncAPI JMS bindings. Learn to configure JMS destinations, messages, and connection factories for robust, enterprise-grade Java applications.
+title: JMS AsyncAPI Binding – Guide, Java Messaging & Examples
+description: Learn how to use AsyncAPI JMS bindings for enterprise Java messaging. Define destinations, messages, and connection factories for robust event-driven architectures.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: JMS, Java Message Service, AsyncAPI, enterprise messaging, message broker, point-to-point, publish-subscribe, queue, topic, connection factory, channel binding, operation binding, message binding, server binding
+      content: JMS AsyncAPI binding, Java Message Service, JMS channel binding, JMS message binding, JMS server binding, enterprise messaging, event-driven architecture, AsyncAPI examples
   - - meta
     - property: og:title
-      content: JMS Bindings - Enterprise Messaging with Java
+      content: JMS AsyncAPI Binding – Guide, Java Messaging & Examples
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI JMS bindings. Learn to configure JMS destinations, messages, and connection factories for robust, enterprise-grade Java applications.
+      content: Learn how to use AsyncAPI JMS bindings for enterprise Java messaging. Define destinations, messages, and connection factories for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/jms/jms.png
   - - meta
     - name: twitter:title
-      content: JMS Bindings - Enterprise Messaging with Java
+      content: JMS AsyncAPI Binding – Guide, Java Messaging & Examples
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI JMS bindings. Learn to configure JMS destinations, messages, and connection factories for robust, enterprise-grade Java applications.
+      content: Learn how to use AsyncAPI JMS bindings for enterprise Java messaging. Define destinations, messages, and connection factories for robust event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/jms/
 ---
 
 # JMS (Java Message Service) Bindings

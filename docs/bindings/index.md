@@ -1,17 +1,17 @@
 ---
-title: AsyncAPI Protocol Bindings - The Complete Guide
-description: Your complete guide to AsyncAPI protocol bindings. Learn how to use channel, operation, message, and server bindings to define protocol-specific information for Kafka, AMQP, MQTT, SQS, and more.
+title: AsyncAPI Protocol Bindings – Supported Message Broker Integrations
+description: Explore AsyncAPI protocol bindings for Kafka, AMQP, MQTT, SQS, SNS, and more. Learn to define channel, operation, message, and server bindings for event-driven APIs.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: AsyncAPI, bindings, protocol bindings, Kafka, AMQP, MQTT, SQS, SNS, WebSocket, HTTP, Solace, NATS
+      content: AsyncAPI protocol bindings, message broker integrations, Kafka binding, AMQP binding, MQTT binding, SQS binding, SNS binding, event-driven API, channel binding, operation binding, message binding, server binding
   - - meta
     - property: og:title
-      content: AsyncAPI Protocol Bindings - The Complete Guide
+      content: AsyncAPI Protocol Bindings – Supported Message Broker Integrations
   - - meta
     - property: og:description
-      content: Your complete guide to AsyncAPI protocol bindings. Learn how to use channel, operation,message, and server bindings to define protocol-specific information for Kafka, AMQP, MQTT, SQS, and more.
+      content: Explore AsyncAPI protocol bindings for Kafka, AMQP, MQTT, SQS, SNS, and more. Learn to define channel, operation, message, and server bindings for event-driven APIs.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/bindings.png
   - - meta
     - name: twitter:title
-      content: AsyncAPI Protocol Bindings - The Complete Guide
+      content: AsyncAPI Protocol Bindings – Supported Message Broker Integrations
   - - meta
     - name: twitter:description
-      content: Your complete guide to AsyncAPI protocol bindings. Learn how to use channel, operation, message, and server bindings to define protocol-specific information for Kafka, AMQP, MQTT, SQS, and more.
+      content: Explore AsyncAPI protocol bindings for Kafka, AMQP, MQTT, SQS, SNS, and more. Learn to define channel, operation, message, and server bindings for event-driven APIs.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/
 ---
 
 # AsyncAPI Protocol Bindings

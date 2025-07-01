@@ -1,17 +1,17 @@
 ---
-title: Anypoint MQ Protocol Bindings for AsyncAPI - A Complete Guide
-description: Your complete guide to using Anypoint MQ protocol bindings in AsyncAPI. Learn how to configure channels, operations, messages, and servers for Anypoint MQ, with detailed examples and best practices for version 0.0.1.
+title: Anypoint MQ AsyncAPI Binding – Guide & Examples
+description: Learn how to use AsyncAPI Anypoint MQ bindings for MuleSoft. Define channels, messages, and exchanges for scalable event-driven architectures.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: AsyncAPI, Anypoint MQ, MQ bindings, event-driven architecture, message queue, protocol bindings, MuleSoft, message exchange, FIFO queues
+      content: Anypoint MQ AsyncAPI binding, MuleSoft, MQ channel binding, MQ message binding, event-driven architecture, message queue, AsyncAPI examples
   - - meta
     - property: og:title
-      content: Anypoint MQ Protocol Bindings for AsyncAPI - A Complete Guide
+      content: Anypoint MQ AsyncAPI Binding – Guide & Examples
   - - meta
     - property: og:description
-      content: Your complete guide to using Anypoint MQ protocol bindings in AsyncAPI. Learn how to configure channels, operations, messages, and servers for Anypoint MQ, with detailed examples and best practices for version 0.0.1.
+      content: Learn how to use AsyncAPI Anypoint MQ bindings for MuleSoft. Define channels, messages, and exchanges for scalable event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/anypointmq/anypointmq.png
   - - meta
     - name: twitter:title
-      content: Anypoint MQ Protocol Bindings for AsyncAPI - A Complete Guide
+      content: Anypoint MQ AsyncAPI Binding – Guide & Examples
   - - meta
     - name: twitter:description
-      content: Your complete guide to using Anypoint MQ protocol bindings in AsyncAPI. Learn how to configure channels, operations, messages, and servers for Anypoint MQ, with detailed examples and best practices for version 0.0.1.
+      content: Learn how to use AsyncAPI Anypoint MQ bindings for MuleSoft. Define channels, messages, and exchanges for scalable event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/anypointmq/
 ---
 
 # Anypoint MQ Protocol Bindings

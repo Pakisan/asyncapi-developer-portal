@@ -1,17 +1,17 @@
 ---
-title: Amazon SQS Bindings - Complete Guide
-description: Your complete guide to AsyncAPI Amazon SQS bindings. Learn to configure channels, operations, messages, and servers for AWS SQS with detailed examples and best practices for standard and FIFO queues.
+title: Amazon SQS AsyncAPI Binding – Guide, Examples & Best Practices
+description: Learn how to use AsyncAPI Amazon SQS bindings for standard and FIFO queues. Define channels, operations, and messages for scalable event-driven architectures.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Amazon SQS, AWS, AsyncAPI, message queuing, event-driven architecture, message broker, channel binding, operation binding, message binding, server binding, FIFO queues, standard queues
+      content: Amazon SQS AsyncAPI binding, SQS channel binding, SQS operation binding, SQS message binding, AWS SQS, event-driven architecture, message queue, AsyncAPI examples
   - - meta
     - property: og:title
-      content: Amazon SQS Bindings - Complete Guide
+      content: Amazon SQS AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - property: og:description
-      content: Your complete guide to AsyncAPI Amazon SQS bindings. Learn to configure channels, operations, messages, and servers for AWS SQS with detailed examples and best practices for standard and FIFO queues.
+      content: Learn how to use AsyncAPI Amazon SQS bindings for standard and FIFO queues. Define channels, operations, and messages for scalable event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/amazon-sqs/amazon-sqs.png
   - - meta
     - name: twitter:title
-      content: Amazon SQS Bindings - Complete Guide
+      content: Amazon SQS AsyncAPI Binding – Guide, Examples & Best Practices
   - - meta
     - name: twitter:description
-      content: Your complete guide to AsyncAPI Amazon SQS bindings. Learn to configure channels, operations, messages, and servers for AWS SQS with detailed examples and best practices for standard and FIFO queues.
+      content: Learn how to use AsyncAPI Amazon SQS bindings for standard and FIFO queues. Define channels, operations, and messages for scalable event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/
 ---
 
 # Amazon SQS Bindings
