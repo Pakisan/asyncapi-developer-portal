@@ -1,19 +1,19 @@
 ---
-title: AMQP Operation Binding v0.3.0 - Message Routing and Delivery
-description: Master AMQP 0-9-1 operation bindings with AsyncAPI. Configure message expiration, delivery modes, routing keys (cc/bcc), priority, and acknowledgments for robust event-driven applications.
+title: AMQP Operation Binding v0.3.0 – Message Routing & Delivery
+description: Configure AMQP 0-9-1 operation bindings v0.3.0 in AsyncAPI. Set message expiration, delivery modes, routing keys, priority, reply-to, and acknowledgments.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: AMQP operation binding, AsyncAPI, RabbitMQ, message routing, delivery mode, message priority, message expiration, CC, BCC, message acknowledgment
+      content: AMQP operation binding v0.3.0, AsyncAPI, RabbitMQ, message routing, delivery mode, message priority, message expiration, CC, BCC, message acknowledgment
   - - meta
     - property: og:title
-      content: AMQP Operation Binding v0.3.0 - Message Routing and Delivery
+      content: AMQP Operation Binding v0.3.0 – Message Routing & Delivery
   - - meta
     - property: og:description
-      content: Master AMQP 0-9-1 operation bindings with AsyncAPI. Configure message expiration, delivery modes, routing keys (cc/bcc), priority, and acknowledgments for robust event-driven applications.
+      content: Configure AMQP 0-9-1 operation bindings v0.3.0 in AsyncAPI. Set message expiration, delivery modes, routing keys, priority, reply-to, and acknowledgments.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amqp/0.3.0/operation.png
   - - meta
     - name: twitter:title
-      content: AMQP Operation Binding v0.3.0 - Message Routing and Delivery
+      content: AMQP Operation Binding v0.3.0 – Message Routing & Delivery
   - - meta
     - name: twitter:description
-      content: Master AMQP 0-9-1 operation bindings with AsyncAPI. Configure message expiration, delivery modes, routing keys (cc/bcc), priority, and acknowledgments for robust event-driven applications.
+      content: Configure AMQP 0-9-1 operation bindings v0.3.0 in AsyncAPI. Set message expiration, delivery modes, routing keys, priority, reply-to, and acknowledgments.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp/0.3.0/operation.html
 ---
 
 # AMQP 0-9-1 Operation Binding v0.3.0

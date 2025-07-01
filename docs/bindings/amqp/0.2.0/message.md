@@ -1,19 +1,19 @@
 ---
-title: AMQP Message Binding v0.2.0 - Content Encoding and Message Type
-description: Learn to use AsyncAPI's AMQP message binding to specify `contentEncoding` (e.g., gzip) and a `messageType` for better message organization and processing in AMQP 0-9-1 applications.
+title: AMQP Message Binding v0.2.0 – Content Encoding & Type
+description: Use AsyncAPI's AMQP message binding v0.2.0 to specify content encoding and message type for better message organization and processing in AMQP 0-9-1 applications.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: AMQP message binding, AsyncAPI, RabbitMQ, contentEncoding, messageType, message properties, data serialization, event-driven architecture
+      content: AMQP message binding v0.2.0, AsyncAPI, RabbitMQ, contentEncoding, messageType, message properties, data serialization, event-driven architecture
   - - meta
     - property: og:title
-      content: AMQP Message Binding v0.2.0 - Content Encoding and Message Type
+      content: AMQP Message Binding v0.2.0 – Content Encoding & Type
   - - meta
     - property: og:description
-      content: Learn to use AsyncAPI's AMQP message binding to specify `contentEncoding` (e.g., gzip) and a `messageType` for better message organization and processing in AMQP 0-9-1 applications.
+      content: Use AsyncAPI's AMQP message binding v0.2.0 to specify content encoding and message type for better message organization and processing in AMQP 0-9-1 applications.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amqp/0.2.0/message.png
   - - meta
     - name: twitter:title
-      content: AMQP Message Binding v0.2.0 - Content Encoding and Message Type
+      content: AMQP Message Binding v0.2.0 – Content Encoding & Type
   - - meta
     - name: twitter:description
-      content: Learn to use AsyncAPI's AMQP message binding to specify `contentEncoding` (e.g., gzip) and a `messageType` for better message organization and processing in AMQP 0-9-1 applications.
+      content: Use AsyncAPI's AMQP message binding v0.2.0 to specify content encoding and message type for better message organization and processing in AMQP 0-9-1 applications.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp/0.2.0/message.html
 ---
 
 # AMQP 0-9-1 Message Binding v0.2.0

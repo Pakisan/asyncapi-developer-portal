@@ -1,19 +1,19 @@
 ---
-title: AMQP 0-9-1 Server Binding v0.1.0 - Reserved for Future Use
-description: An overview of the AsyncAPI AMQP server binding object for version 0.1.0. Learn why this binding is reserved for future server-level configurations in AMQP 0-9-1.
+title: AMQP Server Binding v0.1.0 – Reserved for Future Use
+description: Overview of AsyncAPI AMQP server binding v0.1.0. This placeholder is reserved for future server-level configurations in AMQP 0-9-1 integrations.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: AMQP server binding, AsyncAPI, RabbitMQ, server configuration, event-driven architecture, placeholder binding, legacy binding
+      content: AMQP server binding v0.1.0, AsyncAPI, RabbitMQ, server configuration, event-driven architecture, placeholder binding, legacy binding
   - - meta
     - property: og:title
-      content: AMQP 0-9-1 Server Binding v0.1.0 - Reserved for Future Use
+      content: AMQP Server Binding v0.1.0 – Reserved for Future Use
   - - meta
     - property: og:description
-      content: An overview of the AsyncAPI AMQP server binding object for version 0.1.0. Learn why this binding is reserved for future server-level configurations in AMQP 0-9-1.
+      content: Overview of AsyncAPI AMQP server binding v0.1.0. This placeholder is reserved for future server-level configurations in AMQP 0-9-1 integrations.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amqp/0.1.0/server.png
   - - meta
     - name: twitter:title
-      content: AMQP 0-9-1 Server Binding v0.1.0 - Reserved for Future Use
+      content: AMQP Server Binding v0.1.0 – Reserved for Future Use
   - - meta
     - name: twitter:description
-      content: An overview of the AsyncAPI AMQP server binding object for version 0.1.0. Learn why this binding is reserved for future server-level configurations in AMQP 0-9-1.
+      content: Overview of AsyncAPI AMQP server binding v0.1.0. This placeholder is reserved for future server-level configurations in AMQP 0-9-1 integrations.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/server.html
 ---
 
 # AMQP 0-9-1 Server Binding v0.1.0

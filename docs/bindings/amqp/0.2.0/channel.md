@@ -1,19 +1,19 @@
 ---
-title: AMQP Channel Binding v0.2.0 - Exchange and Queue Configuration
-description: Learn how to configure AMQP 0-9-1 channels using AsyncAPI channel bindings v0.2.0. Define exchanges, queues, routing keys, and virtual hosts for RabbitMQ and other AMQP brokers with comprehensive examples and best practices.
+title: AMQP Channel Binding v0.2.0 – Exchange & Queue Configuration
+description: Configure AMQP 0-9-1 channels v0.2.0 in AsyncAPI. Define exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: AMQP channel binding, AsyncAPI, RabbitMQ, exchange configuration, queue configuration, routing key, virtual host, topic exchange, direct exchange, fanout exchange, message routing
+      content: AMQP channel binding v0.2.0, AsyncAPI, RabbitMQ, exchange configuration, queue configuration, routing key, virtual host, topic exchange, direct exchange, fanout exchange, message routing
   - - meta
     - property: og:title
-      content: AMQP Channel Binding v0.2.0 - Exchange and Queue Configuration
+      content: AMQP Channel Binding v0.2.0 – Exchange & Queue Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure AMQP 0-9-1 channels using AsyncAPI channel bindings v0.2.0. Define exchanges, queues, routing keys, and virtual hosts for RabbitMQ and other AMQP brokers with comprehensive examples and best practices.
+      content: Configure AMQP 0-9-1 channels v0.2.0 in AsyncAPI. Define exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amqp/0.2.0/channel.png
   - - meta
     - name: twitter:title
-      content: AMQP Channel Binding v0.2.0 - Exchange and Queue Configuration
+      content: AMQP Channel Binding v0.2.0 – Exchange & Queue Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure AMQP 0-9-1 channels using AsyncAPI channel bindings v0.2.0. Define exchanges, queues, routing keys, and virtual hosts for RabbitMQ and other AMQP brokers with comprehensive examples and best practices.
+      content: Configure AMQP 0-9-1 channels v0.2.0 in AsyncAPI. Define exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp/0.2.0/channel.html
 ---
 
 # AMQP 0-9-1 Channel Binding v0.2.0
