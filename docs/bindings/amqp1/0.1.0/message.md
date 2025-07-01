@@ -1,19 +1,19 @@
 ---
-title: AMQP 1.0 Message Binding v0.1.0 - Reserved for Future Use
-description: Documentation for the AMQP 1.0 message binding v0.1.0 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+title: AMQP 1.0 Message Binding v0.1.0 – Reserved for Future Use
+description: Overview of AsyncAPI AMQP 1.0 message binding v0.1.0. This placeholder is reserved for future message-level configurations in AMQP 1.0 integrations.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: AMQP 1.0, AsyncAPI, message binding, future use, messaging, protocol binding
+      content: AMQP 1.0 message binding, AsyncAPI AMQP1 v0.1.0, AMQP 1.0, message placeholder, event-driven architecture
   - - meta
     - property: og:title
-      content: AMQP 1.0 Message Binding v0.1.0 - Reserved for Future Use
+      content: AMQP 1.0 Message Binding v0.1.0 – Reserved for Future Use
   - - meta
     - property: og:description
-      content: Documentation for the AMQP 1.0 message binding v0.1.0 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+      content: Overview of AsyncAPI AMQP 1.0 message binding v0.1.0. This placeholder is reserved for future message-level configurations in AMQP 1.0 integrations.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amqp1/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: AMQP 1.0 Message Binding v0.1.0 - Reserved for Future Use
+      content: AMQP 1.0 Message Binding v0.1.0 – Reserved for Future Use
   - - meta
     - name: twitter:description
-      content: Documentation for the AMQP 1.0 message binding v0.1.0 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+      content: Overview of AsyncAPI AMQP 1.0 message binding v0.1.0. This placeholder is reserved for future message-level configurations in AMQP 1.0 integrations.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amqp1/0.1.0/message.html
 ---
 
 # AMQP 1.0 Message Binding v0.1.0
