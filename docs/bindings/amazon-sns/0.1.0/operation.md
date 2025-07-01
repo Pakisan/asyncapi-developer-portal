@@ -1,19 +1,19 @@
 ---
-title: Amazon SNS Operation Binding v0.1.0 - Subscription Configuration
-description: Learn how to configure AWS SNS subscriptions with AsyncAPI. Define consumers, filter policies, redrive policies (DLQ), and delivery policies for your SNS operations.
+title: Amazon SNS Operation Binding v0.1.0 – Subscription Configuration
+description: Configure AWS SNS subscriptions in AsyncAPI v0.1.0. Define consumers, filter policies, DLQ, and delivery policies for robust event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Amazon SNS, AWS, AsyncAPI, operation binding, SNS subscription, filter policy, redrive policy, delivery policy, DLQ
+      content: Amazon SNS operation binding, SNS subscription, AsyncAPI SNS v0.1.0, AWS SNS, filter policy, redrive policy, DLQ, delivery policy
   - - meta
     - property: og:title
-      content: Amazon SNS Operation Binding v0.1.0 - Subscription Configuration
+      content: Amazon SNS Operation Binding v0.1.0 – Subscription Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure AWS SNS subscriptions with AsyncAPI. Define consumers, filter policies, redrive policies (DLQ), and delivery policies for your SNS operations.
+      content: Configure AWS SNS subscriptions in AsyncAPI v0.1.0. Define consumers, filter policies, DLQ, and delivery policies for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amazon-sns/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: Amazon SNS Operation Binding v0.1.0 - Subscription Configuration
+      content: Amazon SNS Operation Binding v0.1.0 – Subscription Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure AWS SNS subscriptions with AsyncAPI. Define consumers, filter policies, redrive policies (DLQ), and delivery policies for your SNS operations.
+      content: Configure AWS SNS subscriptions in AsyncAPI v0.1.0. Define consumers, filter policies, DLQ, and delivery policies for robust event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/operation.html
 ---
 
 # Amazon SNS Operation Binding v0.1.0

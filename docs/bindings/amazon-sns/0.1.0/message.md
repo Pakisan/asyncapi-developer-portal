@@ -1,19 +1,19 @@
 ---
-title: Amazon SNS Message Binding v0.1.0 - Reserved for Future Use
-description: An overview of the AsyncAPI SNS message binding object for version 0.1.0. Learn why this binding is reserved for future message-level configurations.
+title: Amazon SNS Message Binding v0.1.0 – Reserved for Future Use
+description: Overview of AsyncAPI SNS message binding v0.1.0. This placeholder is reserved for future message-level configurations in AWS SNS integrations.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Amazon SNS, AWS, AsyncAPI, message binding, SNS message, placeholder binding
+      content: Amazon SNS message binding, AsyncAPI SNS v0.1.0, AWS SNS, message placeholder, event-driven architecture
   - - meta
     - property: og:title
-      content: Amazon SNS Message Binding v0.1.0 - Reserved for Future Use
+      content: Amazon SNS Message Binding v0.1.0 – Reserved for Future Use
   - - meta
     - property: og:description
-      content: An overview of the AsyncAPI SNS message binding object for version 0.1.0. Learn why this binding is reserved for future message-level configurations.
+      content: Overview of AsyncAPI SNS message binding v0.1.0. This placeholder is reserved for future message-level configurations in AWS SNS integrations.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amazon-sns/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: Amazon SNS Message Binding v0.1.0 - Reserved for Future Use
+      content: Amazon SNS Message Binding v0.1.0 – Reserved for Future Use
   - - meta
     - name: twitter:description
-      content: An overview of the AsyncAPI SNS message binding object for version 0.1.0. Learn why this binding is reserved for future message-level configurations.
+      content: Overview of AsyncAPI SNS message binding v0.1.0. This placeholder is reserved for future message-level configurations in AWS SNS integrations.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/message.html
 ---
 
 # Amazon SNS Message Binding v0.1.0

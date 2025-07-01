@@ -1,19 +1,19 @@
 ---
-title: Amazon SNS Channel Binding v0.1.0 - Topic Configuration
-description: Learn how to configure AWS SNS topics with AsyncAPI. Define topic names, ordering (standard and FIFO), access policies, and tags for your SNS channel bindings.
+title: Amazon SNS Channel Binding v0.1.0 – Topic Configuration
+description: Configure AWS SNS topics in AsyncAPI v0.1.0. Define topic names, ordering, access policies, and tags for robust event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Amazon SNS, AWS, AsyncAPI, channel binding, SNS topic, FIFO, topic policy, message topic
+      content: Amazon SNS channel binding, SNS topic configuration, AsyncAPI SNS v0.1.0, AWS SNS, event-driven architecture, topic policy, FIFO, standard topic
   - - meta
     - property: og:title
-      content: Amazon SNS Channel Binding v0.1.0 - Topic Configuration
+      content: Amazon SNS Channel Binding v0.1.0 – Topic Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure AWS SNS topics with AsyncAPI. Define topic names, ordering (standard and FIFO), access policies, and tags for your SNS channel bindings.
+      content: Configure AWS SNS topics in AsyncAPI v0.1.0. Define topic names, ordering, access policies, and tags for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/amazon-sns/0.1.0/channel.png
   - - meta
     - name: twitter:title
-      content: Amazon SNS Channel Binding v0.1.0 - Topic Configuration
+      content: Amazon SNS Channel Binding v0.1.0 – Topic Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure AWS SNS topics with AsyncAPI. Define topic names, ordering (standard and FIFO), access policies, and tags for your SNS channel bindings.
+      content: Configure AWS SNS topics in AsyncAPI v0.1.0. Define topic names, ordering, access policies, and tags for robust event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/channel.html
 ---
 
 # Amazon SNS Channel Binding v0.1.0
