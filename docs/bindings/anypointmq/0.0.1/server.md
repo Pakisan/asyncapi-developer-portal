@@ -1,19 +1,19 @@
 ---
-title: Anypoint MQ Server Binding v0.0.1 - Reserved for Future Use
-description: Documentation for the Anypoint MQ server binding v0.0.1 in AsyncAPI. This binding is currently reserved for future enhancements and does not contain any configuration properties.
+title: Anypoint MQ Server Binding v0.0.1 – Reserved for Future Use
+description: The Anypoint MQ server binding v0.0.1 is reserved for future enhancements and does not contain configuration properties. Learn about its placeholder role for MuleSoft integrations using AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Anypoint MQ, AsyncAPI, server binding, MuleSoft, future use, broker configuration
+      content: Anypoint MQ server binding, AsyncAPI, MuleSoft, v0.0.1, future use, broker configuration
   - - meta
     - property: og:title
-      content: Anypoint MQ Server Binding v0.0.1 - Reserved for Future Use
+      content: Anypoint MQ Server Binding v0.0.1 – Reserved for Future Use
   - - meta
     - property: og:description
-      content: Documentation for the Anypoint MQ server binding v0.0.1 in AsyncAPI. This binding is currently reserved for future enhancements and does not contain any configuration properties.
+      content: The Anypoint MQ server binding v0.0.1 is reserved for future enhancements and does not contain configuration properties. Learn about its placeholder role for MuleSoft integrations using AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/anypointmq/0.0.1/server.png
   - - meta
     - name: twitter:title
-      content: Anypoint MQ Server Binding v0.0.1 - Reserved for Future Use
+      content: Anypoint MQ Server Binding v0.0.1 – Reserved for Future Use
   - - meta
     - name: twitter:description
-      content: Documentation for the Anypoint MQ server binding v0.0.1 in AsyncAPI. This binding is currently reserved for future enhancements and does not contain any configuration properties.
+      content: The Anypoint MQ server binding v0.0.1 is reserved for future enhancements and does not contain configuration properties. Learn about its placeholder role for MuleSoft integrations using AsyncAPI.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/server.html
 ---
 
 # Anypoint MQ Server Binding v0.0.1

@@ -1,19 +1,19 @@
 ---
-title: Anypoint MQ Operation Binding v0.0.1 - Reserved for Future Use
-description: Documentation for the Anypoint MQ operation binding v0.0.1 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+title: Anypoint MQ Operation Binding v0.0.1 – Reserved for Future Use
+description: The Anypoint MQ operation binding v0.0.1 is reserved for future enhancements and does not require configuration. Learn about its placeholder role for MuleSoft integrations using AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Anypoint MQ, AsyncAPI, operation binding, MuleSoft, future use, message publishing, message consuming
+      content: Anypoint MQ operation binding, AsyncAPI, MuleSoft, v0.0.1, future use, message publishing, message consuming
   - - meta
     - property: og:title
-      content: Anypoint MQ Operation Binding v0.0.1 - Reserved for Future Use
+      content: Anypoint MQ Operation Binding v0.0.1 – Reserved for Future Use
   - - meta
     - property: og:description
-      content: Documentation for the Anypoint MQ operation binding v0.0.1 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+      content: The Anypoint MQ operation binding v0.0.1 is reserved for future enhancements and does not require configuration. Learn about its placeholder role for MuleSoft integrations using AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/anypointmq/0.0.1/operation.png
   - - meta
     - name: twitter:title
-      content: Anypoint MQ Operation Binding v0.0.1 - Reserved for Future Use
+      content: Anypoint MQ Operation Binding v0.0.1 – Reserved for Future Use
   - - meta
     - name: twitter:description
-      content: Documentation for the Anypoint MQ operation binding v0.0.1 in AsyncAPI. This binding is currently reserved for future enhancements and does not require any configuration.
+      content: The Anypoint MQ operation binding v0.0.1 is reserved for future enhancements and does not require configuration. Learn about its placeholder role for MuleSoft integrations using AsyncAPI.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/operation.html
 ---
 
 # Anypoint MQ Operation Binding v0.0.1

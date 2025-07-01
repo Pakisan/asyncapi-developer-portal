@@ -1,19 +1,19 @@
 ---
-title: Anypoint MQ Channel Binding v0.0.1 - Destination Configuration
-description: Learn how to configure Anypoint MQ channels using the AsyncAPI channel binding v0.0.1. This guide covers how to define destinations like exchanges, queues, and FIFO queues for your MuleSoft applications.
+title: Anypoint MQ Channel Binding v0.0.1 – Destination Configuration
+description: Configure Anypoint MQ channel binding v0.0.1 for MuleSoft using AsyncAPI. Define destinations like exchanges, queues, and FIFO queues for robust event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Anypoint MQ, AsyncAPI, channel binding, MuleSoft, message queue, exchange, FIFO queue, event-driven architecture
+      content: Anypoint MQ channel binding, AsyncAPI, MuleSoft, v0.0.1, message queue, exchange, FIFO queue, event-driven architecture
   - - meta
     - property: og:title
-      content: Anypoint MQ Channel Binding v0.0.1 - Destination Configuration
+      content: Anypoint MQ Channel Binding v0.0.1 – Destination Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure Anypoint MQ channels using the AsyncAPI channel binding v0.0.1. This guide covers how to define destinations like exchanges, queues, and FIFO queues for your MuleSoft applications.
+      content: Configure Anypoint MQ channel binding v0.0.1 for MuleSoft using AsyncAPI. Define destinations like exchanges, queues, and FIFO queues for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/anypointmq/0.0.1/channel.png
   - - meta
     - name: twitter:title
-      content: Anypoint MQ Channel Binding v0.0.1 - Destination Configuration
+      content: Anypoint MQ Channel Binding v0.0.1 – Destination Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure Anypoint MQ channels using the AsyncAPI channel binding v0.0.1. This guide covers how to define destinations like exchanges, queues, and FIFO queues for your MuleSoft applications.
+      content: Configure Anypoint MQ channel binding v0.0.1 for MuleSoft using AsyncAPI. Define destinations like exchanges, queues, and FIFO queues for robust event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/channel.html
 ---
 
 # Anypoint MQ Channel Binding v0.0.1

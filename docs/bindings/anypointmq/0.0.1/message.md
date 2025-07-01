@@ -1,19 +1,19 @@
 ---
-title: Anypoint MQ Message Binding v0.0.1 - Header Configuration
-description: A comprehensive guide to the Anypoint MQ message binding v0.0.1 in AsyncAPI. Learn to define and use message headers for advanced routing and message processing in your MuleSoft applications.
+title: Anypoint MQ Message Binding v0.0.1 – Header Configuration
+description: Use Anypoint MQ message binding v0.0.1 to define and use message headers for advanced routing and processing in MuleSoft event-driven applications with AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Anypoint MQ, AsyncAPI, message binding, headers, MuleSoft, message-driven, protocol headers, message properties
+      content: Anypoint MQ message binding, AsyncAPI, MuleSoft, v0.0.1, message headers, protocol headers, message properties, event-driven
   - - meta
     - property: og:title
-      content: Anypoint MQ Message Binding v0.0.1 - Header Configuration
+      content: Anypoint MQ Message Binding v0.0.1 – Header Configuration
   - - meta
     - property: og:description
-      content: A comprehensive guide to the Anypoint MQ message binding v0.0.1 in AsyncAPI. Learn to define and use message headers for advanced routing and message processing in your MuleSoft applications.
+      content: Use Anypoint MQ message binding v0.0.1 to define and use message headers for advanced routing and processing in MuleSoft event-driven applications with AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/anypointmq/0.0.1/message.png
   - - meta
     - name: twitter:title
-      content: Anypoint MQ Message Binding v0.0.1 - Header Configuration
+      content: Anypoint MQ Message Binding v0.0.1 – Header Configuration
   - - meta
     - name: twitter:description
-      content: A comprehensive guide to the Anypoint MQ message binding v0.0.1 in AsyncAPI. Learn to define and use message headers for advanced routing and message processing in your MuleSoft applications.
+      content: Use Anypoint MQ message binding v0.0.1 to define and use message headers for advanced routing and processing in MuleSoft event-driven applications with AsyncAPI.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/message.html
 ---
 
 # Anypoint MQ Message Binding v0.0.1
