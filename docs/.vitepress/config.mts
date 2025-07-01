@@ -705,7 +705,6 @@ export default defineConfig({
     ],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: 'Pavel Bodiachevskii' }],
-    ['meta', { name: 'keywords', content: 'AsyncAPI, API, Event-Driven Architecture, EDA, Messaging, Bindings, Channels, Operations, Schemas' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'yandex-verification', content: 'ed012648c88cacbb' }],
   ],
