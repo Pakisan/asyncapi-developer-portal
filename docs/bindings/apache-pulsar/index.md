@@ -1,17 +1,17 @@
 ---
-title: Apache Pulsar Bindings - Cloud-Native Event Streaming
-description: The complete guide to AsyncAPI Apache Pulsar bindings. Learn to configure tenants, namespaces, topics, and policies for a true cloud-native, multi-tenant event streaming platform.
+title: Apache Pulsar Bindings - AsyncAPI Event Streaming
+description: Master AsyncAPI Apache Pulsar bindings for cloud-native event streaming. Configure tenants, namespaces, topics, and policies for multi-tenant messaging.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Apache Pulsar, Pulsar, AsyncAPI, event streaming, message broker, multi-tenancy, tenant, namespace, topic, persistence, compaction, retention, channel binding, operation binding, message binding, server binding
+      content: Apache Pulsar bindings, AsyncAPI, event streaming, message broker, multi-tenancy, tenant, namespace, topic, persistence, compaction, retention
   - - meta
     - property: og:title
-      content: Apache Pulsar Bindings - Cloud-Native Event Streaming
+      content: Apache Pulsar Bindings - AsyncAPI Event Streaming
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI Apache Pulsar bindings. Learn to configure tenants, namespaces, topics, and policies for a true cloud-native, multi-tenant event streaming platform.
+      content: Master AsyncAPI Apache Pulsar bindings for cloud-native event streaming. Configure tenants, namespaces, topics, and policies for multi-tenant messaging.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/apache-pulsar/apache-pulsar.png
   - - meta
     - name: twitter:title
-      content: Apache Pulsar Bindings - Cloud-Native Event Streaming
+      content: Apache Pulsar Bindings - AsyncAPI Event Streaming
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI Apache Pulsar bindings. Learn to configure tenants, namespaces, topics, and policies for a true cloud-native, multi-tenant event streaming platform.
+      content: Master AsyncAPI Apache Pulsar bindings for cloud-native event streaming. Configure tenants, namespaces, topics, and policies for multi-tenant messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-pulsar/
 ---
 
 # Apache Pulsar Bindings

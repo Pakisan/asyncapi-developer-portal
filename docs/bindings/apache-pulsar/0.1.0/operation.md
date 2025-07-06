@@ -1,19 +1,19 @@
 ---
 title: Apache Pulsar Operation Binding v0.1.0 - Placeholder
-description: This document details v0.1.0 of the Apache Pulsar operation binding. This version is a placeholder reserved for future Pulsar-specific operation configurations.
+description: Apache Pulsar operation binding v0.1.0 placeholder for future operation configurations. Reserved for Pulsar-specific operation properties in event streaming.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Pulsar operation binding, AsyncAPI, placeholder, Pulsar operation
+      content: Apache Pulsar operation binding v0.1.0, AsyncAPI, placeholder, Pulsar operation, event streaming, future configurations
   - - meta
     - property: og:title
       content: Apache Pulsar Operation Binding v0.1.0 - Placeholder
   - - meta
     - property: og:description
-      content: This document details v0.1.0 of the Apache Pulsar operation binding. This version is a placeholder reserved for future Pulsar-specific operation configurations.
+      content: Apache Pulsar operation binding v0.1.0 placeholder for future operation configurations. Reserved for Pulsar-specific operation properties in event streaming.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Apache Pulsar Operation Binding v0.1.0 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details v0.1.0 of the Apache Pulsar operation binding. This version is a placeholder reserved for future Pulsar-specific operation configurations.
+      content: Apache Pulsar operation binding v0.1.0 placeholder for future operation configurations. Reserved for Pulsar-specific operation properties in event streaming.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/operation.html
 ---
 
 # Apache Pulsar Operation Binding v0.1.0

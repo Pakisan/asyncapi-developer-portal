@@ -1,19 +1,19 @@
 ---
 title: Apache Pulsar Server Binding v0.1.0 - Tenant Configuration
-description: This document details v0.1.0 of the Apache Pulsar server binding. Learn to configure the Pulsar tenant for a server connection.
+description: Configure Apache Pulsar server bindings for tenant configuration. Define multi-tenancy and tenant isolation for cloud-native event streaming.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Pulsar server binding, AsyncAPI, Pulsar tenant, multi-tenancy
+      content: Apache Pulsar server binding v0.1.0, AsyncAPI, Pulsar tenant, multi-tenancy, event streaming
   - - meta
     - property: og:title
       content: Apache Pulsar Server Binding v0.1.0 - Tenant Configuration
   - - meta
     - property: og:description
-      content: This document details v0.1.0 of the Apache Pulsar server binding. Learn to configure the Pulsar tenant for a server connection.
+      content: Configure Apache Pulsar server bindings for tenant configuration. Define multi-tenancy and tenant isolation for cloud-native event streaming.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Apache Pulsar Server Binding v0.1.0 - Tenant Configuration
   - - meta
     - name: twitter:description
-      content: This document details v0.1.0 of the Apache Pulsar server binding. Learn to configure the Pulsar tenant for a server connection.
+      content: Configure Apache Pulsar server bindings for tenant configuration. Define multi-tenancy and tenant isolation for cloud-native event streaming.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/server.html
 ---
 
 # Apache Pulsar Server Binding v0.1.0

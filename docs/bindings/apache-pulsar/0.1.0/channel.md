@@ -1,19 +1,19 @@
 ---
 title: Apache Pulsar Channel Binding v0.1.0 - Namespace & Topic Policies
-description: This document details v0.1.0 of the Apache Pulsar channel binding. Learn to configure namespace, persistence, retention, compaction, and other critical topic policies.
+description: Configure Apache Pulsar channel bindings for namespace and topic policies. Define persistence, retention, compaction, and geo-replication for event streaming.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Pulsar channel binding, AsyncAPI, Pulsar topic, Pulsar namespace, persistence, retention, compaction, geo-replication
+      content: Apache Pulsar channel binding v0.1.0, AsyncAPI, Pulsar topic, Pulsar namespace, persistence, retention, compaction, geo-replication
   - - meta
     - property: og:title
       content: Apache Pulsar Channel Binding v0.1.0 - Namespace & Topic Policies
   - - meta
     - property: og:description
-      content: This document details v0.1.0 of the Apache Pulsar channel binding. Learn to configure namespace, persistence, retention, compaction, and other critical topic policies.
+      content: Configure Apache Pulsar channel bindings for namespace and topic policies. Define persistence, retention, compaction, and geo-replication for event streaming.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Apache Pulsar Channel Binding v0.1.0 - Namespace & Topic Policies
   - - meta
     - name: twitter:description
-      content: This document details v0.1.0 of the Apache Pulsar channel binding. Learn to configure namespace, persistence, retention, compaction, and other critical topic policies.
+      content: Configure Apache Pulsar channel bindings for namespace and topic policies. Define persistence, retention, compaction, and geo-replication for event streaming.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/channel.html
 ---
 
 # Apache Pulsar Channel Binding v0.1.0
