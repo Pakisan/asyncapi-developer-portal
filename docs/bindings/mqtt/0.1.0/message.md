@@ -1,19 +1,19 @@
 ---
-title: MQTT Message Binding v0.1.0 - Message Property Configuration
-description: This document details the legacy v0.1.0 of the MQTT message binding. It is recommended to use the latest version for more comprehensive features like request/reply support.
+title: MQTT Message Binding v0.1.0 - Message Properties
+description: Configure MQTT message bindings for message properties and formatting. Define message structure and content type with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT message binding, legacy, AsyncAPI, MQTT message properties, IoT messaging, event-driven architecture
+      content: MQTT message binding v0.1.0, AsyncAPI, MQTT message properties, IoT messaging
   - - meta
     - property: og:title
-      content: MQTT Message Binding v0.1.0 - Message Property Configuration
+      content: MQTT Message Binding v0.1.0 - Message Properties
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT message binding. It is recommended to use the latest version for more comprehensive features like request/reply support.
+      content: Configure MQTT message bindings for message properties and formatting. Define message structure and content type with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/mqtt/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: MQTT Message Binding v0.1.0 - Message Property Configuration
+      content: MQTT Message Binding v0.1.0 - Message Properties
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT message binding. It is recommended to use the latest version for more comprehensive features like request/reply support.
+      content: Configure MQTT message bindings for message properties and formatting. Define message structure and content type with examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/message.html
 ---
 
 # MQTT Message Binding v0.1.0

@@ -1,19 +1,19 @@
 ---
 title: MQTT Channel Binding v0.2.0 - Topic Configuration
-description: Learn how to configure MQTT channel bindings using AsyncAPI v0.2.0. This binding maps an AsyncAPI channel to an MQTT topic for universal IoT and real-time messaging applications.
+description: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT channel binding, AsyncAPI, MQTT topics, topic configuration, IoT messaging, publish-subscribe, event-driven architecture
+      content: MQTT channel binding v0.2.0, AsyncAPI, MQTT topics, topic configuration, IoT messaging, publish-subscribe
   - - meta
     - property: og:title
       content: MQTT Channel Binding v0.2.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure MQTT channel bindings using AsyncAPI v0.2.0. This binding maps an AsyncAPI channel to an MQTT topic for universal IoT and real-time messaging applications.
+      content: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT Channel Binding v0.2.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure MQTT channel bindings using AsyncAPI v0.2.0. This binding maps an AsyncAPI channel to an MQTT topic for universal IoT and real-time messaging applications.
+      content: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/channel.html
 ---
 
 # MQTT Channel Binding v0.2.0

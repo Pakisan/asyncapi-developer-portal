@@ -1,19 +1,19 @@
 ---
 title: MQTT Server Binding v0.2.0 - Connection and Session Configuration
-description: Learn to configure MQTT server bindings with AsyncAPI v0.2.0. Define client ID, session types, keep-alives, and the Last Will and Testament for robust IoT and real-time applications.
+description: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT server binding, AsyncAPI, Last Will and Testament, LWT, clean session, session expiry, keep-alive, client ID, MQTT, IoT
+      content: MQTT server binding v0.2.0, AsyncAPI, Last Will and Testament, LWT, clean session, session expiry, keep-alive, client ID, MQTT, IoT
   - - meta
     - property: og:title
       content: MQTT Server Binding v0.2.0 - Connection and Session Configuration
   - - meta
     - property: og:description
-      content: Learn to configure MQTT server bindings with AsyncAPI v0.2.0. Define client ID, session types, keep-alives, and the Last Will and Testament for robust IoT and real-time applications.
+      content: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT Server Binding v0.2.0 - Connection and Session Configuration
   - - meta
     - name: twitter:description
-      content: Learn to configure MQTT server bindings with AsyncAPI v0.2.0. Define client ID, session types, keep-alives, and the Last Will and Testament for robust IoT and real-time applications.
+      content: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/server.html
 ---
 
 # MQTT Server Binding v0.2.0

@@ -1,19 +1,19 @@
 ---
 title: MQTT Server Binding v0.1.0 - Connection and Session Configuration
-description: This document details the legacy v0.1.0 of the MQTT server binding. Learn to configure client ID, session type, keep-alives, and the Last Will and Testament.
+description: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT server binding, legacy, AsyncAPI, Last Will and Testament, LWT, clean session, keep-alive, client ID, MQTT, IoT
+      content: MQTT server binding v0.1.0, AsyncAPI, Last Will and Testament, LWT, clean session, keep-alive, client ID, MQTT, IoT
   - - meta
     - property: og:title
       content: MQTT Server Binding v0.1.0 - Connection and Session Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT server binding. Learn to configure client ID, session type, keep-alives, and the Last Will and Testament.
+      content: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT Server Binding v0.1.0 - Connection and Session Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT server binding. Learn to configure client ID, session type, keep-alives, and the Last Will and Testament.
+      content: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/server.html
 ---
 
 # MQTT Server Binding v0.1.0

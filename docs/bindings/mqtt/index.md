@@ -1,17 +1,17 @@
 ---
-title: MQTT Bindings - Universal IoT & Real-Time Messaging
-description: The complete guide to AsyncAPI MQTT bindings. Learn to configure channels, operations, messages, and servers for any MQTT version, supporting robust IoT, mobile, and real-time applications.
+title: MQTT Bindings - AsyncAPI Universal IoT Messaging
+description: Master AsyncAPI MQTT bindings for universal IoT and real-time messaging. Configure channels, operations, messages, and servers with comprehensive examples.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: MQTT, AsyncAPI, IoT, M2M, publish-subscribe, message broker, QoS, retained messages, last will, clean session, session expiry, channel binding, operation binding, message binding, server binding
+      content: MQTT bindings, AsyncAPI, IoT, M2M, publish-subscribe, message broker, QoS, retained messages, last will, clean session, session expiry
   - - meta
     - property: og:title
-      content: MQTT Bindings - Universal IoT & Real-Time Messaging
+      content: MQTT Bindings - AsyncAPI Universal IoT Messaging
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI MQTT bindings. Learn to configure channels, operations, messages, and servers for any MQTT version, supporting robust IoT, mobile, and real-time applications.
+      content: Master AsyncAPI MQTT bindings for universal IoT and real-time messaging. Configure channels, operations, messages, and servers with comprehensive examples.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/mqtt/mqtt.png
   - - meta
     - name: twitter:title
-      content: MQTT Bindings - Universal IoT & Real-Time Messaging
+      content: MQTT Bindings - AsyncAPI Universal IoT Messaging
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI MQTT bindings. Learn to configure channels, operations, messages, and servers for any MQTT version, supporting robust IoT, mobile, and real-time applications.
+      content: Master AsyncAPI MQTT bindings for universal IoT and real-time messaging. Configure channels, operations, messages, and servers with comprehensive examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/
 ---
 
 # MQTT Bindings

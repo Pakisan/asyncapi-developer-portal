@@ -1,19 +1,19 @@
 ---
 title: MQTT Channel Binding v0.1.0 - Topic Configuration
-description: This document details the legacy v0.1.0 of the MQTT channel binding, which maps an AsyncAPI channel to an MQTT topic. It is recommended to use the latest version.
+description: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT channel binding, legacy, AsyncAPI, MQTT topics, topic configuration, IoT messaging, M2M, event-driven architecture
+      content: MQTT channel binding v0.1.0, AsyncAPI, MQTT topics, topic configuration, IoT messaging, M2M, publish-subscribe
   - - meta
     - property: og:title
       content: MQTT Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT channel binding, which maps an AsyncAPI channel to an MQTT topic. It is recommended to use the latest version.
+      content: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT channel binding, which maps an AsyncAPI channel to an MQTT topic. It is recommended to use the latest version.
+      content: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/channel.html
 ---
 
 # MQTT Channel Binding v0.1.0

@@ -1,19 +1,19 @@
 ---
 title: MQTT Operation Binding v0.1.0 - QoS and Retain Configuration
-description: This document details the legacy v0.1.0 of the MQTT operation binding. Learn to configure Quality of Service (QoS) and the retain flag. It is recommended to use the latest version.
+description: Configure MQTT operation bindings for QoS levels and retain flags. Define publish and subscribe behaviors with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT operation binding, legacy, AsyncAPI, MQTT QoS, retain flag, publish-subscribe, IoT messaging, event-driven architecture
+      content: MQTT operation binding v0.1.0, AsyncAPI, MQTT QoS, retain flag, publish-subscribe, IoT messaging
   - - meta
     - property: og:title
       content: MQTT Operation Binding v0.1.0 - QoS and Retain Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT operation binding. Learn to configure Quality of Service (QoS) and the retain flag. It is recommended to use the latest version.
+      content: Configure MQTT operation bindings for QoS levels and retain flags. Define publish and subscribe behaviors with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT Operation Binding v0.1.0 - QoS and Retain Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT operation binding. Learn to configure Quality of Service (QoS) and the retain flag. It is recommended to use the latest version.
+      content: Configure MQTT operation bindings for QoS levels and retain flags. Define publish and subscribe behaviors with examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/operation.html
 ---
 
 # MQTT Operation Binding v0.1.0

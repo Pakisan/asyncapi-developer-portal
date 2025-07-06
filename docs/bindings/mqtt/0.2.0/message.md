@@ -1,19 +1,19 @@
 ---
 title: MQTT Message Binding v0.2.0 - Request/Reply Configuration
-description: Learn to configure MQTT message bindings with AsyncAPI v0.2.0. Define correlation data and response topics to enable request/reply patterns in your universal MQTT applications.
+description: Configure MQTT message bindings for request/reply patterns. Define correlation data and response topics for IoT and real-time messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT message binding, AsyncAPI, request-reply, correlation data, response topic, MQTT, IoT messaging, event-driven architecture
+      content: MQTT message binding v0.2.0, AsyncAPI, request-reply, correlation data, response topic, MQTT, IoT messaging
   - - meta
     - property: og:title
       content: MQTT Message Binding v0.2.0 - Request/Reply Configuration
   - - meta
     - property: og:description
-      content: Learn to configure MQTT message bindings with AsyncAPI v0.2.0. Define correlation data and response topics to enable request/reply patterns in your universal MQTT applications.
+      content: Configure MQTT message bindings for request/reply patterns. Define correlation data and response topics for IoT and real-time messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT Message Binding v0.2.0 - Request/Reply Configuration
   - - meta
     - name: twitter:description
-      content: Learn to configure MQTT message bindings with AsyncAPI v0.2.0. Define correlation data and response topics to enable request/reply patterns in your universal MQTT applications.
+      content: Configure MQTT message bindings for request/reply patterns. Define correlation data and response topics for IoT and real-time messaging.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/message.html
 ---
 
 # MQTT Message Binding v0.2.0
