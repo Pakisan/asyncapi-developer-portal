@@ -1,17 +1,17 @@
 ---
-title: WebSockets Bindings - Real-Time Communication with AsyncAPI
-description: Comprehensive guide to AsyncAPI WebSockets bindings. Learn how to configure real-time bidirectional communication channels, operations, messages, and servers for WebSocket-based event-driven APIs with detailed examples and best practices.
+title: WebSocket Bindings - AsyncAPI Real-Time Communication
+description: Master AsyncAPI WebSocket bindings for real-time bidirectional communication. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: WebSockets, AsyncAPI, real-time communication, bidirectional messaging, event-driven architecture, WebSocket protocol, HTTP handshake, pub/sub, live updates, instant messaging
+      content: WebSocket bindings, AsyncAPI, real-time communication, bidirectional messaging, WebSocket protocol, event-driven API, live updates, instant messaging, WebSocket handshake
   - - meta
     - property: og:title
-      content: WebSockets Bindings - Real-Time Communication with AsyncAPI
+      content: WebSocket Bindings - AsyncAPI Real-Time Communication
   - - meta
     - property: og:description
-      content: Comprehensive guide to AsyncAPI WebSockets bindings. Learn how to configure real-time bidirectional communication channels, operations, messages, and servers for WebSocket-based event-driven APIs with detailed examples and best practices.
+      content: Master AsyncAPI WebSocket bindings for real-time bidirectional communication. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/websockets/websockets.png
   - - meta
     - name: twitter:title
-      content: WebSockets Bindings - Real-Time Communication with AsyncAPI
+      content: WebSocket Bindings - AsyncAPI Real-Time Communication
   - - meta
     - name: twitter:description
-      content: Comprehensive guide to AsyncAPI WebSockets bindings. Learn how to configure real-time bidirectional communication channels, operations, messages, and servers for WebSocket-based event-driven APIs with detailed examples and best practices.
+      content: Master AsyncAPI WebSocket bindings for real-time bidirectional communication. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/websockets/
 ---
 
 # WebSockets Bindings

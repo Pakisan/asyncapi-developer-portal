@@ -1,19 +1,19 @@
 ---
-title: WebSockets Message Binding v0.1.0 - Message Representation in WebSocket Protocol
-description: Learn how to configure WebSocket message bindings using AsyncAPI v0.1.0. Define message representation and formatting for real-time bidirectional communication with comprehensive examples and best practices.
+title: WebSocket Message Binding v0.1.0 - Message Formatting
+description: Configure WebSocket message bindings for message representation and formatting. Define message structure for real-time bidirectional communication with AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: WebSockets message binding, AsyncAPI, WebSocket messages, message representation, real-time messaging, bidirectional communication, WebSocket protocol, message formatting, event-driven architecture
+      content: WebSocket message binding, AsyncAPI, WebSocket messages, message representation, real-time messaging, bidirectional communication, WebSocket protocol, message formatting
   - - meta
     - property: og:title
-      content: WebSockets Message Binding v0.1.0 - Message Representation in WebSocket Protocol
+      content: WebSocket Message Binding v0.1.0 - Message Formatting
   - - meta
     - property: og:description
-      content: Learn how to configure WebSocket message bindings using AsyncAPI v0.1.0. Define message representation and formatting for real-time bidirectional communication with comprehensive examples and best practices.
+      content: Configure WebSocket message bindings for message representation and formatting. Define message structure for real-time bidirectional communication with AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/websockets/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: WebSockets Message Binding v0.1.0 - Message Representation in WebSocket Protocol
+      content: WebSocket Message Binding v0.1.0 - Message Formatting
   - - meta
     - name: twitter:description
-      content: Learn how to configure WebSocket message bindings using AsyncAPI v0.1.0. Define message representation and formatting for real-time bidirectional communication with comprehensive examples and best practices.
+      content: Configure WebSocket message bindings for message representation and formatting. Define message structure for real-time bidirectional communication with AsyncAPI.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/message.html
 ---
 
 # WebSockets Message Binding v0.1.0

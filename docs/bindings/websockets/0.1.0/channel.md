@@ -1,19 +1,19 @@
 ---
-title: WebSockets Channel Binding v0.1.0 - Connection Establishment and Handshake Configuration
-description: Learn how to configure WebSocket channel bindings using AsyncAPI v0.1.0. Define HTTP methods, headers, and query parameters for WebSocket handshake with comprehensive examples and best practices for real-time communication.
+title: WebSocket Channel Binding v0.1.0 - Connection Configuration
+description: Configure WebSocket channel bindings for connection establishment. Define HTTP methods, headers, and query parameters for WebSocket handshake with AsyncAPI examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: WebSockets channel binding, AsyncAPI, WebSocket handshake, HTTP upgrade, connection establishment, real-time communication, bidirectional messaging, WebSocket protocol, HTTP headers, query parameters
+      content: WebSocket channel binding v0.1.0, AsyncAPI, WebSocket handshake, HTTP upgrade, connection establishment, WebSocket protocol, HTTP headers, query parameters, real-time communication
   - - meta
     - property: og:title
-      content: WebSockets Channel Binding v0.1.0 - Connection Establishment and Handshake Configuration
+      content: WebSocket Channel Binding v0.1.0 - Connection Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure WebSocket channel bindings using AsyncAPI v0.1.0. Define HTTP methods, headers, and query parameters for WebSocket handshake with comprehensive examples and best practices for real-time communication.
+      content: Configure WebSocket channel bindings for connection establishment. Define HTTP methods, headers, and query parameters for WebSocket handshake with AsyncAPI examples.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/websockets/0.1.0/channel.png
   - - meta
     - name: twitter:title
-      content: WebSockets Channel Binding v0.1.0 - Connection Establishment and Handshake Configuration
+      content: WebSocket Channel Binding v0.1.0 - Connection Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure WebSocket channel bindings using AsyncAPI v0.1.0. Define HTTP methods, headers, and query parameters for WebSocket handshake with comprehensive examples and best practices for real-time communication.
+      content: Configure WebSocket channel bindings for connection establishment. Define HTTP methods, headers, and query parameters for WebSocket handshake with AsyncAPI examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/channel.html
 ---
 
 # WebSockets Channel Binding v0.1.0

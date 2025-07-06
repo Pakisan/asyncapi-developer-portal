@@ -1,19 +1,19 @@
 ---
-title: WebSockets Server Binding v0.1.0 - Server-Level WebSocket Configurations
-description: Learn how to configure WebSocket server bindings using AsyncAPI v0.1.0. Define server-level configurations for WebSocket connections with comprehensive examples and best practices for real-time communication infrastructure.
+title: WebSocket Server Binding v0.1.0 - Server Configuration
+description: Configure WebSocket server bindings for server-level settings. Define connection management and infrastructure configurations for real-time communication with AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: WebSockets server binding, AsyncAPI, WebSocket server, server configuration, real-time communication, WebSocket protocol, server infrastructure, connection management, event-driven architecture
+      content: WebSocket server binding v0.1.0, AsyncAPI, WebSocket server, server configuration, real-time communication, WebSocket protocol, server infrastructure, connection management
   - - meta
     - property: og:title
-      content: WebSockets Server Binding v0.1.0 - Server-Level WebSocket Configurations
+      content: WebSocket Server Binding v0.1.0 - Server Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure WebSocket server bindings using AsyncAPI v0.1.0. Define server-level configurations for WebSocket connections with comprehensive examples and best practices for real-time communication infrastructure.
+      content: Configure WebSocket server bindings for server-level settings. Define connection management and infrastructure configurations for real-time communication with AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/websockets/0.1.0/server.png
   - - meta
     - name: twitter:title
-      content: WebSockets Server Binding v0.1.0 - Server-Level WebSocket Configurations
+      content: WebSocket Server Binding v0.1.0 - Server Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure WebSocket server bindings using AsyncAPI v0.1.0. Define server-level configurations for WebSocket connections with comprehensive examples and best practices for real-time communication infrastructure.
+      content: Configure WebSocket server bindings for server-level settings. Define connection management and infrastructure configurations for real-time communication with AsyncAPI.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/server.html
 ---
 
 # WebSockets Server Binding v0.1.0

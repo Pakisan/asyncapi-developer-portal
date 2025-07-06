@@ -1,19 +1,19 @@
 ---
-title: WebSockets Operation Binding v0.1.0 - Message Operation Configuration
-description: Learn how to configure WebSocket operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for real-time bidirectional communication with comprehensive examples and best practices.
+title: WebSocket Operation Binding v0.1.0 - Message Operations
+description: Configure WebSocket operation bindings for publish and subscribe operations. Define real-time bidirectional communication with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: WebSockets operation binding, AsyncAPI, WebSocket operations, publish subscribe, real-time messaging, bidirectional communication, WebSocket protocol, message operations, event-driven architecture
+      content: WebSocket operation binding v0.1.0, AsyncAPI, WebSocket operations, publish subscribe, real-time messaging, bidirectional communication, WebSocket protocol, message operations
   - - meta
     - property: og:title
-      content: WebSockets Operation Binding v0.1.0 - Message Operation Configuration
+      content: WebSocket Operation Binding v0.1.0 - Message Operations
   - - meta
     - property: og:description
-      content: Learn how to configure WebSocket operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for real-time bidirectional communication with comprehensive examples and best practices.
+      content: Configure WebSocket operation bindings for publish and subscribe operations. Define real-time bidirectional communication with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/websockets/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: WebSockets Operation Binding v0.1.0 - Message Operation Configuration
+      content: WebSocket Operation Binding v0.1.0 - Message Operations
   - - meta
     - name: twitter:description
-      content: Learn how to configure WebSocket operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for real-time bidirectional communication with comprehensive examples and best practices.
+      content: Configure WebSocket operation bindings for publish and subscribe operations. Define real-time bidirectional communication with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/operation.html
 ---
 
 # WebSockets Operation Binding v0.1.0
