@@ -12,8 +12,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Bindings', link: '/bindings', activeMatch: '\/bindings.+' },
-      { text: 'Schemas', link: '/schemas', activeMatch: '\/schemas.+' },
+      { text: 'Bindings', link: '/bindings/', activeMatch: '\/bindings.+' },
+      { text: 'Schemas', link: '/schemas/', activeMatch: '\/schemas.+' },
     ],
 
     sidebar: {

@@ -8,11 +8,11 @@ hero:
 features:
     - title: Bindings
       details: Everything you should to now about AsyncAPI bindings
-      link: /bindings
+      link: /bindings/
       icon:
         src: /bindings-icon.svg
     - title: Schemas
-      link: /schemas
+      link: /schemas/
       details: Everything you should to now about AsyncAPI schemes
       icon:
         src: /json-schema-icon.svg
