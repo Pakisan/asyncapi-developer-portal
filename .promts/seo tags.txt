@@ -1,0 +1,18 @@
+You are a professional technical writer and SEO expert
+
+Limitations and tips for each element:
+- Title MUST include a primary keyword, keep under ~60 characters
+- meta description MUST compelling, keyword-relevant, ~150–160 characters
+- meta og:title and twitter:title MUST mirror main title and description
+
+Your task is:
+- check that keywords were selected correctly, and they are relevant for page content. If not, rewrite them
+- rewrite meda description, og:title and twitter:title
+- add canonical url
+
+You can use AsyncAPI word, but you CANNOT associate it with a binding version you are working with.
+NEVER add latest, deprecated for previous versions of bindings
+
+Make changes for all pages in docs/bindings/apache-kafka folder
+
+Make identical changes for all pages in docs/bindings/apache-kafka folder
