@@ -27,7 +27,7 @@ head:
   - - meta
     - name: twitter:description
       content: Master AsyncAPI NATS bindings for cloud-native messaging and streaming. Configure channels, operations, messages, and servers with comprehensive examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/nats/
 ---

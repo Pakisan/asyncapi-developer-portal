@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure WebSocket channel bindings for connection establishment. Define HTTP methods, headers, and query parameters for WebSocket handshake with AsyncAPI examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/channel.html
 ---

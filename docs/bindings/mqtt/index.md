@@ -27,7 +27,7 @@ head:
   - - meta
     - name: twitter:description
       content: Master AsyncAPI MQTT bindings for universal IoT and real-time messaging. Configure channels, operations, messages, and servers with comprehensive examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt/
 ---

@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure NATS server bindings for connection management. Define server-level settings for cloud-native messaging with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/server.html
 ---

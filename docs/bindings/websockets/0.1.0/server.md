@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure WebSocket server bindings for server-level settings. Define connection management and infrastructure configurations for real-time communication with AsyncAPI.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/server.html
 ---

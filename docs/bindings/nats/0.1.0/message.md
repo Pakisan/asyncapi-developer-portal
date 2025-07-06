@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure NATS message bindings for protocol representation. Define message formatting and structure with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/message.html
 ---

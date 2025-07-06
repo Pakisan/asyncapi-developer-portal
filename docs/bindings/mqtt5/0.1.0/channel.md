@@ -29,7 +29,7 @@ head:
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/channel.png"
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/channel.html
 ---

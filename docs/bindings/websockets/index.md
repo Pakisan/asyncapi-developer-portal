@@ -27,7 +27,7 @@ head:
   - - meta
     - name: twitter:description
       content: Master AsyncAPI WebSocket bindings for real-time bidirectional communication. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/websockets/
 ---

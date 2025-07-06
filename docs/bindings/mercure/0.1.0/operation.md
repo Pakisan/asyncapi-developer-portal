@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Mercure operation bindings for publish operations. Define publish behaviors for Server-Sent Events with examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/operation.html
 ---

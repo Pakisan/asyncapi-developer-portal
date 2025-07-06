@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT 5.0 message bindings for expiry, content type, and correlation data. Define message properties for IoT and real-time messaging.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/message.html
 ---

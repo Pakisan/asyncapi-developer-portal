@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Redis operation bindings for publish and subscribe operations. Define in-memory messaging operations with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/operation.html
 ---

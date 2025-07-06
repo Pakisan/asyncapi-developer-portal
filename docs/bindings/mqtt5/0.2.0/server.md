@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT 5.0 server bindings for session expiry and persistent sessions. Define server-level behaviors for IoT and real-time messaging.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/server.html
 ---

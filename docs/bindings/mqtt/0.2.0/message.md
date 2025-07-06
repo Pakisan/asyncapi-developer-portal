@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT message bindings for request/reply patterns. Define correlation data and response topics for IoT and real-time messaging.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/message.html
 ---

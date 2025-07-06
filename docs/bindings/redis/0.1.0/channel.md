@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Redis channel bindings for pub/sub messaging. Define channel configurations for in-memory data store with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/channel.html
 ---

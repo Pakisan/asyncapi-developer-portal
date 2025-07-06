@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure STOMP operation bindings for publish and subscribe operations. Define text-based messaging operations with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/operation.html
 ---

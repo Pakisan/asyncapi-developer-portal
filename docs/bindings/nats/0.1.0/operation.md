@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure NATS operation bindings for queue groups and load balancing. Define publish and subscribe operations with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/operation.html
 ---

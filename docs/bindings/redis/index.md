@@ -27,7 +27,7 @@ head:
   - - meta
     - name: twitter:description
       content: Master AsyncAPI Redis bindings for in-memory data store and pub/sub messaging. Configure channels, operations, messages, and servers with comprehensive examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/redis/
 ---

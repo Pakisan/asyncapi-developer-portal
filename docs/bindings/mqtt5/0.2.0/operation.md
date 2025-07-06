@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT 5.0 operation bindings for publish and subscribe behaviors. Define QoS levels and operation settings with examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/operation.html
 ---

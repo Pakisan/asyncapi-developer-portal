@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure STOMP channel bindings for destination and routing. Define topic and queue destinations for text-based messaging with AsyncAPI examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/channel.html
 ---

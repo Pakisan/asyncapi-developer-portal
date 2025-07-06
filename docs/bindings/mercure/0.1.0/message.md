@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Mercure message bindings for Server-Sent Events data payload. Define message structure and content for real-time updates with examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/message.html
 ---

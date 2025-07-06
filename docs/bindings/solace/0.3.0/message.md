@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Solace message bindings for message properties. Define Solace-specific message attributes with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/solace/0.3.0/message.html
 ---

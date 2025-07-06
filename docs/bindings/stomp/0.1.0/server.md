@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure STOMP server bindings for server-level settings. Define connection management and infrastructure for text-based messaging with AsyncAPI.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/server.html
 ---

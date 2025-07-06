@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Mercure server bindings for Hub connections. Define connection settings for Server-Sent Events with examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/server.html
 ---

@@ -27,7 +27,7 @@ head:
   - - meta
     - name: twitter:description
       content: Master AsyncAPI Solace bindings for enterprise event mesh. Configure destinations, queues, and connections for Solace PubSub+ with comprehensive examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/solace/
 ---

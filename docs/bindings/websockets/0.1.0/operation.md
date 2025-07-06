@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure WebSocket operation bindings for publish and subscribe operations. Define real-time bidirectional communication with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/operation.html
 ---

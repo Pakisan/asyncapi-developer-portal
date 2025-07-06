@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure STOMP message bindings for message representation and formatting. Define text-based message structure with AsyncAPI examples and best practices.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/message.html
 ---

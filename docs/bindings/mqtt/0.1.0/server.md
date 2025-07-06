@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT server bindings for connection and session management. Define client ID, session types, and Last Will and Testament with examples.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/server.html
 ---

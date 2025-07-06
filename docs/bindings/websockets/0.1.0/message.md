@@ -29,7 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure WebSocket message bindings for message representation and formatting. Define message structure for real-time bidirectional communication with AsyncAPI.
-  - - meta
+  - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/websockets/0.1.0/message.html
 ---
