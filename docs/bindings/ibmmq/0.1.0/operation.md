@@ -1,19 +1,19 @@
 ---
 title: IBM MQ Operation Binding v0.1.0 - Placeholder
-description: This document details the v0.1.0 of the IBM MQ operation binding. This version is a placeholder reserved for future IBM MQ-specific operation configurations.
+description: IBM MQ operation binding v0.1.0 placeholder for future operation configurations. Reserved for IBM MQ-specific operation properties in enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: IBM MQ operation binding, AsyncAPI, placeholder, enterprise messaging, event-driven architecture
+      content: IBM MQ operation binding v0.1.0, AsyncAPI, placeholder, enterprise messaging, future configurations
   - - meta
     - property: og:title
       content: IBM MQ Operation Binding v0.1.0 - Placeholder
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the IBM MQ operation binding. This version is a placeholder reserved for future IBM MQ-specific operation configurations.
+      content: IBM MQ operation binding v0.1.0 placeholder for future operation configurations. Reserved for IBM MQ-specific operation properties in enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: IBM MQ Operation Binding v0.1.0 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the IBM MQ operation binding. This version is a placeholder reserved for future IBM MQ-specific operation configurations.
+      content: IBM MQ operation binding v0.1.0 placeholder for future operation configurations. Reserved for IBM MQ-specific operation properties in enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/ibmmq/0.1.0/operation.html
 ---
 
 # IBM MQ Operation Binding v0.1.0

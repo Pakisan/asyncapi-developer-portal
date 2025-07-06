@@ -1,19 +1,19 @@
 ---
 title: IBM MQ Message Binding v0.1.0 - Type & Expiry Configuration
-description: This document details the v0.1.0 of the IBM MQ message binding. Learn to configure the message type (`string`, `jms`, `binary`), headers, and expiry for enterprise messaging.
+description: Configure IBM MQ message bindings for type and expiry settings. Define string, JMS, or binary message types with TTL for enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: IBM MQ message binding, AsyncAPI, IBM MQ message type, message expiry, TTL, JMS, enterprise messaging, event-driven architecture
+      content: IBM MQ message binding v0.1.0, AsyncAPI, IBM MQ message type, message expiry, TTL, JMS, enterprise messaging
   - - meta
     - property: og:title
       content: IBM MQ Message Binding v0.1.0 - Type & Expiry Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the IBM MQ message binding. Learn to configure the message type (`string`, `jms`, `binary`), headers, and expiry for enterprise messaging.
+      content: Configure IBM MQ message bindings for type and expiry settings. Define string, JMS, or binary message types with TTL for enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: IBM MQ Message Binding v0.1.0 - Type & Expiry Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the IBM MQ message binding. Learn to configure the message type (`string`, `jms`, `binary`), headers, and expiry for enterprise messaging.
+      content: Configure IBM MQ message bindings for type and expiry settings. Define string, JMS, or binary message types with TTL for enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/ibmmq/0.1.0/message.html
 ---
 
 # IBM MQ Message Binding v0.1.0

@@ -1,17 +1,17 @@
 ---
-title: IBM MQ Bindings - Enterprise-Grade Messaging & Integration
-description: The complete guide to AsyncAPI IBM MQ bindings. Learn to configure queues, topics, messages, and queue manager connections for robust, secure, and scalable enterprise applications.
+title: IBM MQ Bindings - AsyncAPI Enterprise Messaging
+description: Master AsyncAPI IBM MQ bindings for enterprise messaging. Configure queues, topics, messages, and queue manager connections for robust, secure applications.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: IBM MQ, MQ, AsyncAPI, enterprise messaging, message broker, queue manager, queue, topic, channel binding, operation binding, message binding, server binding
+      content: IBM MQ bindings, AsyncAPI, enterprise messaging, queue manager, queue, topic, channel binding, message binding, server binding
   - - meta
     - property: og:title
-      content: IBM MQ Bindings - Enterprise-Grade Messaging & Integration
+      content: IBM MQ Bindings - AsyncAPI Enterprise Messaging
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI IBM MQ bindings. Learn to configure queues, topics, messages, and queue manager connections for robust, secure, and scalable enterprise applications.
+      content: Master AsyncAPI IBM MQ bindings for enterprise messaging. Configure queues, topics, messages, and queue manager connections for robust, secure applications.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/ibmmq/ibmmq.png
   - - meta
     - name: twitter:title
-      content: IBM MQ Bindings - Enterprise-Grade Messaging & Integration
+      content: IBM MQ Bindings - AsyncAPI Enterprise Messaging
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI IBM MQ bindings. Learn to configure queues, topics, messages, and queue manager connections for robust, secure, and scalable enterprise applications.
+      content: Master AsyncAPI IBM MQ bindings for enterprise messaging. Configure queues, topics, messages, and queue manager connections for robust, secure applications.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/ibmmq/
 ---
 
 # IBM MQ Bindings

@@ -1,19 +1,19 @@
 ---
 title: IBM MQ Server Binding v0.1.0 - Queue Manager Connection
-description: This document details the v0.1.0 of the IBM MQ server binding. Learn to configure queue manager connections, including high-availability (HA), security, and heartbeat settings.
+description: Configure IBM MQ server bindings for queue manager connections. Define high-availability groups, security settings, and heartbeat configurations for enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: IBM MQ server binding, AsyncAPI, IBM MQ queue manager, CCDT, high availability, HA, cipherSpec, heartbeat, enterprise messaging
+      content: IBM MQ server binding v0.1.0, AsyncAPI, IBM MQ queue manager, CCDT, high availability, HA, cipherSpec, heartbeat, enterprise messaging
   - - meta
     - property: og:title
       content: IBM MQ Server Binding v0.1.0 - Queue Manager Connection
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the IBM MQ server binding. Learn to configure queue manager connections, including high-availability (HA), security, and heartbeat settings.
+      content: Configure IBM MQ server bindings for queue manager connections. Define high-availability groups, security settings, and heartbeat configurations for enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: IBM MQ Server Binding v0.1.0 - Queue Manager Connection
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the IBM MQ server binding. Learn to configure queue manager connections, including high-availability (HA), security, and heartbeat settings.
+      content: Configure IBM MQ server bindings for queue manager connections. Define high-availability groups, security settings, and heartbeat configurations for enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/ibmmq/0.1.0/server.html
 ---
 
 # IBM MQ Server Binding v0.1.0

@@ -1,19 +1,19 @@
 ---
 title: IBM MQ Channel Binding v0.1.0 - Queue & Topic Configuration
-description: This document details the v0.1.0 of the IBM MQ channel binding. Learn to configure an AsyncAPI channel as an IBM MQ Queue or Topic, with properties for exclusivity, partitioning, and durability.
+description: Configure IBM MQ channel bindings for queue and topic destinations. Define exclusivity, partitioning, and durability properties for enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: IBM MQ channel binding, AsyncAPI, IBM MQ queue, IBM MQ topic, queue manager, destination, durable subscription, enterprise messaging
+      content: IBM MQ channel binding v0.1.0, AsyncAPI, IBM MQ queue, IBM MQ topic, queue manager, destination, durable subscription, enterprise messaging
   - - meta
     - property: og:title
       content: IBM MQ Channel Binding v0.1.0 - Queue & Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the IBM MQ channel binding. Learn to configure an AsyncAPI channel as an IBM MQ Queue or Topic, with properties for exclusivity, partitioning, and durability.
+      content: Configure IBM MQ channel bindings for queue and topic destinations. Define exclusivity, partitioning, and durability properties for enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: IBM MQ Channel Binding v0.1.0 - Queue & Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the IBM MQ channel binding. Learn to configure an AsyncAPI channel as an IBM MQ Queue or Topic, with properties for exclusivity, partitioning, and durability.
+      content: Configure IBM MQ channel bindings for queue and topic destinations. Define exclusivity, partitioning, and durability properties for enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/ibmmq/0.1.0/channel.html
 ---
 
 # IBM MQ Channel Binding v0.1.0
