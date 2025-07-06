@@ -1,19 +1,19 @@
 ---
 title: Google Pub/Sub Operation Binding v0.1.0 - Placeholder
-description: This document details the legacy v0.1.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future configurations.
+description: Google Pub/Sub operation binding v0.1.0 placeholder for future configurations. Reserved for Google Pub/Sub-specific operation properties in GCP messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Google Pub/Sub operation binding, legacy, AsyncAPI, placeholder, GCP
+      content: Google Pub/Sub operation binding v0.1.0, AsyncAPI, placeholder, GCP, legacy version, future configurations
   - - meta
     - property: og:title
       content: Google Pub/Sub Operation Binding v0.1.0 - Placeholder
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future configurations.
+      content: Google Pub/Sub operation binding v0.1.0 placeholder for future configurations. Reserved for Google Pub/Sub-specific operation properties in GCP messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Google Pub/Sub Operation Binding v0.1.0 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the Google Pub/Sub operation binding. This version is a placeholder reserved for future configurations.
+      content: Google Pub/Sub operation binding v0.1.0 placeholder for future configurations. Reserved for Google Pub/Sub-specific operation properties in GCP messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/operation.html
 ---
 
 # Google Pub/Sub Operation Binding v0.1.0

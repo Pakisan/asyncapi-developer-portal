@@ -1,19 +1,19 @@
 ---
 title: Google Pub/Sub Channel Binding v0.1.0 - Topic Configuration
-description: This document details the legacy v0.1.0 of the Google Pub/Sub channel binding. It is recommended to use the latest version for a clearer and more accurate schema.
+description: Configure Google Pub/Sub channel bindings v0.1.0 for topic settings. Define schema validation and message retention for GCP messaging with examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Google Pub/Sub channel binding, legacy, AsyncAPI, Pub/Sub Topic, schema validation, GCP
+      content: Google Pub/Sub channel binding v0.1.0, AsyncAPI, Pub/Sub Topic, schema validation, GCP, legacy version
   - - meta
     - property: og:title
       content: Google Pub/Sub Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the Google Pub/Sub channel binding. It is recommended to use the latest version for a clearer and more accurate schema.
+      content: Configure Google Pub/Sub channel bindings v0.1.0 for topic settings. Define schema validation and message retention for GCP messaging with examples.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Google Pub/Sub Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the Google Pub/Sub channel binding. It is recommended to use the latest version for a clearer and more accurate schema.
+      content: Configure Google Pub/Sub channel bindings v0.1.0 for topic settings. Define schema validation and message retention for GCP messaging with examples.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/channel.html
 ---
 
 # Google Pub/Sub Channel Binding v0.1.0

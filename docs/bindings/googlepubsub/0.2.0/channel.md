@@ -1,19 +1,19 @@
 ---
 title: Google Pub/Sub Channel Binding v0.2.0 - Topic Configuration
-description: This document details v0.2.0 of the Google Pub/Sub channel binding. Learn to configure a Pub/Sub Topic with schema validation, message retention, and storage policies.
+description: Configure Google Pub/Sub channel bindings for topic settings. Define schema validation, message retention, and storage policies for GCP messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Google Pub/Sub channel binding, AsyncAPI, Pub/Sub Topic, schema validation, message retention, message storage policy, GCP
+      content: Google Pub/Sub channel binding v0.2.0, AsyncAPI, Pub/Sub Topic, schema validation, message retention, message storage policy, GCP
   - - meta
     - property: og:title
       content: Google Pub/Sub Channel Binding v0.2.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details v0.2.0 of the Google Pub/Sub channel binding. Learn to configure a Pub/Sub Topic with schema validation, message retention, and storage policies.
+      content: Configure Google Pub/Sub channel bindings for topic settings. Define schema validation, message retention, and storage policies for GCP messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Google Pub/Sub Channel Binding v0.2.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details v0.2.0 of the Google Pub/Sub channel binding. Learn to configure a Pub/Sub Topic with schema validation, message retention, and storage policies.
+      content: Configure Google Pub/Sub channel bindings for topic settings. Define schema validation, message retention, and storage policies for GCP messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/channel.html
 ---
 
 # Google Pub/Sub Channel Binding v0.2.0

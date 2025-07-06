@@ -1,17 +1,17 @@
 ---
-title: Google Cloud Pub/Sub Bindings - Scalable & Reliable Eventing
-description: The complete guide to AsyncAPI Google Cloud Pub/Sub bindings. Learn to configure topics, subscriptions, schemas, and message attributes for Google's global messaging service.
+title: Google Pub/Sub Bindings - AsyncAPI Cloud Messaging
+description: Master AsyncAPI Google Pub/Sub bindings for cloud messaging. Configure topics, subscriptions, schemas, and message attributes for Google's global messaging service.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Google Cloud Pub/Sub, Google PubSub, AsyncAPI, event-driven, messaging, topic, subscription, schema, push, pull, channel binding, operation binding, message binding, server binding
+      content: Google Pub/Sub bindings, AsyncAPI, event-driven, messaging, topic, subscription, schema, push, pull, GCP
   - - meta
     - property: og:title
-      content: Google Cloud Pub/Sub Bindings - Scalable & Reliable Eventing
+      content: Google Pub/Sub Bindings - AsyncAPI Cloud Messaging
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI Google Cloud Pub/Sub bindings. Learn to configure topics, subscriptions, schemas, and message attributes for Google's global messaging service.
+      content: Master AsyncAPI Google Pub/Sub bindings for cloud messaging. Configure topics, subscriptions, schemas, and message attributes for Google's global messaging service.
   - - meta
     - property: og:type
       content: article
@@ -21,6 +21,15 @@ head:
   - - meta
     - name: og:image
       content: /bindings/googlepubsub/googlepubsub.png
+  - - meta
+    - name: twitter:title
+      content: Google Pub/Sub Bindings - AsyncAPI Cloud Messaging
+  - - meta
+    - name: twitter:description
+      content: Master AsyncAPI Google Pub/Sub bindings for cloud messaging. Configure topics, subscriptions, schemas, and message attributes for Google's global messaging service.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/
 ---
 
 # Google Cloud Pub/Sub Bindings

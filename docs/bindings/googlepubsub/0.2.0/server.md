@@ -1,19 +1,19 @@
 ---
 title: Google Pub/Sub Server Binding v0.2.0 - Placeholder
-description: This document details v0.2.0 of the Google Pub/Sub server binding. This version is a placeholder that identifies an AsyncAPI server as a Google Pub/Sub endpoint.
+description: Google Pub/Sub server binding v0.2.0 placeholder for GCP endpoints. Identifies AsyncAPI servers as Google Pub/Sub service endpoints.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Google Pub/Sub server binding, AsyncAPI, placeholder, GCP, event-driven architecture
+      content: Google Pub/Sub server binding v0.2.0, AsyncAPI, placeholder, GCP, event-driven architecture, Pub/Sub endpoint
   - - meta
     - property: og:title
       content: Google Pub/Sub Server Binding v0.2.0 - Placeholder
   - - meta
     - property: og:description
-      content: This document details v0.2.0 of the Google Pub/Sub server binding. This version is a placeholder that identifies an AsyncAPI server as a Google Pub/Sub endpoint.
+      content: Google Pub/Sub server binding v0.2.0 placeholder for GCP endpoints. Identifies AsyncAPI servers as Google Pub/Sub service endpoints.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Google Pub/Sub Server Binding v0.2.0 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details v0.2.0 of the Google Pub/Sub server binding. This version is a placeholder that identifies an AsyncAPI server as a Google Pub/Sub endpoint.
+      content: Google Pub/Sub server binding v0.2.0 placeholder for GCP endpoints. Identifies AsyncAPI servers as Google Pub/Sub service endpoints.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/server.html
 ---
 
 # Google Pub/Sub Server Binding v0.2.0

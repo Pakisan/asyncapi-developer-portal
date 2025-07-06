@@ -1,19 +1,19 @@
 ---
 title: Google Pub/Sub Message Binding v0.2.0 - Schema & Ordering Key
-description: This document details v0.2.0 of the Google Pub/Sub message binding. Learn to configure message attributes, an ordering key, and an associated schema.
+description: Configure Google Pub/Sub message bindings for schema and ordering. Define message attributes, ordering keys, and schema validation for GCP messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Google Pub/Sub message binding, AsyncAPI, Pub/Sub message, orderingKey, attributes, schema, GCP
+      content: Google Pub/Sub message binding v0.2.0, AsyncAPI, Pub/Sub message, orderingKey, attributes, schema, GCP
   - - meta
     - property: og:title
       content: Google Pub/Sub Message Binding v0.2.0 - Schema & Ordering Key
   - - meta
     - property: og:description
-      content: This document details v0.2.0 of the Google Pub/Sub message binding. Learn to configure message attributes, an ordering key, and an associated schema.
+      content: Configure Google Pub/Sub message bindings for schema and ordering. Define message attributes, ordering keys, and schema validation for GCP messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Google Pub/Sub Message Binding v0.2.0 - Schema & Ordering Key
   - - meta
     - name: twitter:description
-      content: This document details v0.2.0 of the Google Pub/Sub message binding. Learn to configure message attributes, an ordering key, and an associated schema.
+      content: Configure Google Pub/Sub message bindings for schema and ordering. Define message attributes, ordering keys, and schema validation for GCP messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/message.html
 ---
 
 # Google Pub/Sub Message Binding v0.2.0
