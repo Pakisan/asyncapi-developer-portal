@@ -1,19 +1,19 @@
 ---
-title: Solace Channel Binding v0.4.0 - Topic Placeholder
-description: This document details the v0.4.0 of the Solace channel binding. This version is a placeholder that identifies an AsyncAPI channel as a Solace topic.
+title: Solace Channel Binding v0.4.0 - Topic Configuration
+description: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Solace channel binding, AsyncAPI, Solace topic, placeholder, event mesh, event-driven architecture
+      content: Solace channel binding v0.4.0, AsyncAPI, Solace topic, placeholder, event mesh, event-driven architecture, topic routing
   - - meta
     - property: og:title
-      content: Solace Channel Binding v0.4.0 - Topic Placeholder
+      content: Solace Channel Binding v0.4.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.4.0 of the Solace channel binding. This version is a placeholder that identifies an AsyncAPI channel as a Solace topic.
+      content: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/solace/0.4.0/channel.png
   - - meta
     - name: twitter:title
-      content: Solace Channel Binding v0.4.0 - Topic Placeholder
+      content: Solace Channel Binding v0.4.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.4.0 of the Solace channel binding. This version is a placeholder that identifies an AsyncAPI channel as a Solace topic.
+      content: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/solace/0.4.0/channel.html
 ---
 
 # Solace Channel Binding v0.4.0

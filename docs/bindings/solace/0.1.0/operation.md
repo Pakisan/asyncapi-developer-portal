@@ -1,19 +1,19 @@
 ---
-title: Solace Operation Binding v0.1.0 - Placeholder
-description: This document details the legacy v0.1.0 of the Solace operation binding. It is recommended to use the latest version. This version is a placeholder.
+title: Solace Operation Binding v0.1.0 - Destination Configuration
+description: Configure Solace operation bindings for multiple destinations. Define queues, topics, delivery modes, and topic subscriptions with AsyncAPI examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Solace operation binding, legacy, AsyncAPI, placeholder, event mesh
+      content: Solace operation binding v0.1.0, AsyncAPI, Solace destination, queue, topic subscription, delivery mode, persistent, direct, event mesh
   - - meta
     - property: og:title
-      content: Solace Operation Binding v0.1.0 - Placeholder
+      content: Solace Operation Binding v0.1.0 - Destination Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the Solace operation binding. It is recommended to use the latest version. This version is a placeholder.
+      content: Configure Solace operation bindings for multiple destinations. Define queues, topics, delivery modes, and topic subscriptions with AsyncAPI examples.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/solace/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: Solace Operation Binding v0.1.0 - Placeholder
+      content: Solace Operation Binding v0.1.0 - Destination Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the Solace operation binding. It is recommended to use the latest version. This version is a placeholder.
+      content: Configure Solace operation bindings for multiple destinations. Define queues, topics, delivery modes, and topic subscriptions with AsyncAPI examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/solace/0.1.0/operation.html
 ---
 
 # Solace Operation Binding v0.1.0

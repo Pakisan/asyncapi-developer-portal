@@ -1,19 +1,19 @@
 ---
-title: Solace Server Binding v0.3.0 - Message VPN Connection
-description: This document details the legacy v0.3.0 of the Solace server binding. Learn to configure the connection to a Solace broker by specifying the Message VPN.
+title: Solace Server Binding v0.3.0 - Connection Configuration
+description: Configure Solace server bindings for Message VPN connections. Define broker connections with Message VPN using AsyncAPI examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Solace server binding, legacy, AsyncAPI, Solace Message VPN, msgVpn, event mesh, event broker, event-driven architecture
+      content: Solace server binding v0.3.0, AsyncAPI, Solace Message VPN, msgVpn, event mesh, event broker, connection management
   - - meta
     - property: og:title
-      content: Solace Server Binding v0.3.0 - Message VPN Connection
+      content: Solace Server Binding v0.3.0 - Connection Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.3.0 of the Solace server binding. Learn to configure the connection to a Solace broker by specifying the Message VPN.
+      content: Configure Solace server bindings for Message VPN connections. Define broker connections with Message VPN using AsyncAPI examples.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/solace/0.3.0/server.png
   - - meta
     - name: twitter:title
-      content: Solace Server Binding v0.3.0 - Message VPN Connection
+      content: Solace Server Binding v0.3.0 - Connection Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.3.0 of the Solace server binding. Learn to configure the connection to a Solace broker by specifying the Message VPN.
+      content: Configure Solace server bindings for Message VPN connections. Define broker connections with Message VPN using AsyncAPI examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/solace/0.3.0/server.html
 ---
 
 # Solace Server Binding v0.3.0

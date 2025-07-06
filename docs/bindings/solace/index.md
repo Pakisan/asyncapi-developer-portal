@@ -1,17 +1,17 @@
 ---
-title: Solace Bindings - Powering the Enterprise Event Mesh
-description: The complete guide to AsyncAPI Solace bindings. Learn to configure destinations, queues, and connections for Solace PubSub+, the foundation of a modern event mesh.
+title: Solace Bindings - AsyncAPI Enterprise Event Mesh
+description: Master AsyncAPI Solace bindings for enterprise event mesh. Configure destinations, queues, and connections for Solace PubSub+ with comprehensive examples.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Solace, PubSub+, AsyncAPI, event mesh, enterprise messaging, message broker, queue, topic, Message VPN, channel binding, operation binding, message binding, server binding
+      content: Solace bindings, AsyncAPI, PubSub+, event mesh, enterprise messaging, message broker, queue, topic, Message VPN
   - - meta
     - property: og:title
-      content: Solace Bindings - Powering the Enterprise Event Mesh
+      content: Solace Bindings - AsyncAPI Enterprise Event Mesh
   - - meta
     - property: og:description
-      content: The complete guide to AsyncAPI Solace bindings. Learn to configure destinations, queues, and connections for Solace PubSub+, the foundation of a modern event mesh.
+      content: Master AsyncAPI Solace bindings for enterprise event mesh. Configure destinations, queues, and connections for Solace PubSub+ with comprehensive examples.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/solace/solace.png
   - - meta
     - name: twitter:title
-      content: Solace Bindings - Powering the Enterprise Event Mesh
+      content: Solace Bindings - AsyncAPI Enterprise Event Mesh
   - - meta
     - name: twitter:description
-      content: The complete guide to AsyncAPI Solace bindings. Learn to configure destinations, queues, and connections for Solace PubSub+, the foundation of a modern event mesh.
+      content: Master AsyncAPI Solace bindings for enterprise event mesh. Configure destinations, queues, and connections for Solace PubSub+ with comprehensive examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/solace/
 ---
 
 # Solace Bindings

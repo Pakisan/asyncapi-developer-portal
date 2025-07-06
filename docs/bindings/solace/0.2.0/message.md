@@ -1,19 +1,19 @@
 ---
-title: Solace Message Binding v0.2.0 - Placeholder
-description: This document details the legacy v0.2.0 of the Solace message binding. It is recommended to use the latest version. This version is a placeholder reserved for future Solace-specific message properties.
+title: Solace Message Binding v0.2.0 - Message Configuration
+description: Configure Solace message bindings for message properties. Define Solace-specific message attributes with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Solace message binding, legacy, AsyncAPI, placeholder, event mesh, event-driven architecture
+      content: Solace message binding v0.2.0, AsyncAPI, placeholder, event mesh, event-driven architecture, message properties
   - - meta
     - property: og:title
-      content: Solace Message Binding v0.2.0 - Placeholder
+      content: Solace Message Binding v0.2.0 - Message Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.2.0 of the Solace message binding. It is recommended to use the latest version. This version is a placeholder reserved for future Solace-specific message properties.
+      content: Configure Solace message bindings for message properties. Define Solace-specific message attributes with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/solace/0.2.0/message.png
   - - meta
     - name: twitter:title
-      content: Solace Message Binding v0.2.0 - Placeholder
+      content: Solace Message Binding v0.2.0 - Message Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.2.0 of the Solace message binding. It is recommended to use the latest version. This version is a placeholder reserved for future Solace-specific message properties.
+      content: Configure Solace message bindings for message properties. Define Solace-specific message attributes with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/solace/0.2.0/message.html
 ---
 
 # Solace Message Binding v0.2.0

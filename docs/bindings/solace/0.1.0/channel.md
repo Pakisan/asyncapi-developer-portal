@@ -1,19 +1,19 @@
 ---
-title: Solace Channel Binding v0.1.0 - Placeholder
-description: This document details the legacy v0.1.0 of the Solace channel binding. It is recommended to use the latest version. This version is a placeholder.
+title: Solace Channel Binding v0.1.0 - Topic Configuration
+description: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Solace channel binding, legacy, AsyncAPI, placeholder, event mesh
+      content: Solace channel binding v0.1.0, AsyncAPI, Solace topic, placeholder, event mesh, event-driven architecture, topic routing
   - - meta
     - property: og:title
-      content: Solace Channel Binding v0.1.0 - Placeholder
+      content: Solace Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the Solace channel binding. It is recommended to use the latest version. This version is a placeholder.
+      content: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/solace/0.1.0/channel.png
   - - meta
     - name: twitter:title
-      content: Solace Channel Binding v0.1.0 - Placeholder
+      content: Solace Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the Solace channel binding. It is recommended to use the latest version. This version is a placeholder.
+      content: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/solace/0.1.0/channel.html
 ---
 
 # Solace Channel Binding v0.1.0
