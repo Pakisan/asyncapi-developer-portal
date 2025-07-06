@@ -1,19 +1,19 @@
 ---
-title: Apache Kafka Operation Binding v0.1.0 - Consumer Group Configuration
-description: Master the Apache Kafka Operation Binding v0.1.0 in AsyncAPI. This guide explains how to configure consumer groups and client IDs for Kafka consumers, ensuring scalable and well-organized message processing in your event-driven applications.
+title: Apache Kafka Operation Binding v0.1.0 - Consumer Group Setup
+description: Learn how to configure Apache Kafka operation bindings v0.1.0 for AsyncAPI. Set up consumer groups and client IDs for scalable, reliable message processing.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, operation binding, consumer group, client ID, Kafka consumer, event-driven architecture, message processing
+      content: Apache Kafka operation binding, AsyncAPI, consumer group, client ID, Kafka consumer, event streaming, message processing
   - - meta
     - property: og:title
-      content: Apache Kafka Operation Binding v0.1.0 - Consumer Group Configuration
+      content: Apache Kafka Operation Binding v0.1.0 - Consumer Group Setup
   - - meta
     - property: og:description
-      content: Master the Apache Kafka Operation Binding v0.1.0 in AsyncAPI. This guide explains how to configure consumer groups and client IDs for Kafka consumers, ensuring scalable and well-organized message processing in your event-driven applications.
+      content: Learn how to configure Apache Kafka operation bindings for AsyncAPI. Set up consumer groups and client IDs for scalable, reliable message processing.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/apache-kafka/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: Apache Kafka Operation Binding v0.1.0 - Consumer Group Configuration
+      content: Apache Kafka Operation Binding v0.1.0 - Consumer Group Setup
   - - meta
     - name: twitter:description
-      content: Master the Apache Kafka Operation Binding v0.1.0 in AsyncAPI. This guide explains how to configure consumer groups and client IDs for Kafka consumers, ensuring scalable and well-organized message processing in your event-driven applications.
+      content: Learn how to configure Apache Kafka operation bindings v0.1.0 for AsyncAPI. Set up consumer groups and client IDs for scalable, reliable message processing.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/operation.html
 ---
 
 # Apache Kafka Operation Binding v0.1.0

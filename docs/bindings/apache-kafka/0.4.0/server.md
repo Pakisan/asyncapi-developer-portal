@@ -1,19 +1,19 @@
 ---
-title: Apache Kafka Server Binding v0.4.0 - Schema Registry Configuration
-description: Learn how to use the Apache Kafka Server Binding v0.4.0 in AsyncAPI to connect to a Schema Registry. This guide covers configuring the Schema Registry URL and vendor, essential for schema management in your Kafka-based event-driven architecture.
+title: Apache Kafka Server Binding v0.4.0 - Schema Registry Connection
+description: Configure Apache Kafka server bindings v0.4.0 for AsyncAPI. Set up schema registry URL and vendor for centralized schema management in event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, server binding, Schema Registry, Confluent, Apicurio, Karapace, schema management, event-driven architecture
+      content: Apache Kafka server binding, AsyncAPI, schema registry, schema management, event-driven architecture, Kafka cluster
   - - meta
     - property: og:title
-      content: Apache Kafka Server Binding v0.4.0 - Schema Registry Configuration
+      content: Apache Kafka Server Binding - Schema Registry Connection
   - - meta
     - property: og:description
-      content: Learn how to use the Apache Kafka Server Binding v0.4.0 in AsyncAPI to connect to a Schema Registry. This guide covers configuring the Schema Registry URL and vendor, essential for schema management in your Kafka-based event-driven architecture.
+      content: Configure Apache Kafka server bindings v0.4.0 for AsyncAPI. Set up schema registry URL and vendor for centralized schema management in event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/apache-kafka/0.4.0/server.png
   - - meta
     - name: twitter:title
-      content: Apache Kafka Server Binding v0.4.0 - Schema Registry Configuration
+      content: Apache Kafka Server Binding v0.4.0 - Schema Registry Connection
   - - meta
     - name: twitter:description
-      content: Learn how to use the Apache Kafka Server Binding v0.4.0 in AsyncAPI to connect to a Schema Registry. This guide covers configuring the Schema Registry URL and vendor, essential for schema management in your Kafka-based event-driven architecture.
+      content: Configure Apache Kafka server bindings v0.4.0 for AsyncAPI. Set up schema registry URL and vendor for centralized schema management in event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/server.html
 ---
 
 # Apache Kafka Server Binding v0.4.0

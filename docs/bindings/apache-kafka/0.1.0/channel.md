@@ -1,19 +1,19 @@
 ---
 title: Apache Kafka Channel Binding v0.1.0 - Basic Configuration
-description: A guide to the Apache Kafka Channel Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific channel information.
+description: Learn how to use Apache Kafka channel bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka channel configuration for event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, channel binding, Kafka topic, event-driven architecture
+      content: Apache Kafka channel binding, AsyncAPI, Kafka topic, event-driven architecture
   - - meta
     - property: og:title
       content: Apache Kafka Channel Binding v0.1.0 - Basic Configuration
   - - meta
     - property: og:description
-      content: A guide to the Apache Kafka Channel Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific channel information.
+      content: Learn how to use Apache Kafka channel bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka channel configuration for event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Apache Kafka Channel Binding v0.1.0 - Basic Configuration
   - - meta
     - name: twitter:description
-      content: A guide to the Apache Kafka Channel Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific channel information.
+      content: Learn how to use Apache Kafka channel bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka channel configuration for event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/channel.html
 ---
 
 # Apache Kafka Channel Binding v0.1.0

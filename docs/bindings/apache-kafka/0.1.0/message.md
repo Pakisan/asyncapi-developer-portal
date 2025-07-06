@@ -1,19 +1,19 @@
 ---
 title: Apache Kafka Message Binding v0.1.0 - Message Key Configuration
-description: A guide to the Apache Kafka Message Binding v0.1.0 for AsyncAPI. Learn how to define a message key to control partitioning in your Kafka-based event-driven applications.
+description: Define Apache Kafka message bindings v0.1.0 for AsyncAPI. Learn how to configure message keys for partitioning and ordering in event-driven applications.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, message binding, Kafka message key, partitioning, event-driven architecture
+      content: Apache Kafka message binding, AsyncAPI, message key, partitioning, event-driven architecture
   - - meta
     - property: og:title
       content: Apache Kafka Message Binding v0.1.0 - Message Key Configuration
   - - meta
     - property: og:description
-      content: A guide to the Apache Kafka Message Binding v0.1.0 for AsyncAPI. Learn how to define a message key to control partitioning in your Kafka-based event-driven applications.
+      content: Define Apache Kafka message bindings v0.1.0 for AsyncAPI. Learn how to configure message keys for partitioning and ordering in event-driven applications.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Apache Kafka Message Binding v0.1.0 - Message Key Configuration
   - - meta
     - name: twitter:description
-      content: A guide to the Apache Kafka Message Binding v0.1.0 for AsyncAPI. Learn how to define a message key to control partitioning in your Kafka-based event-driven applications.
+      content: Define Apache Kafka message bindings v0.1.0 for AsyncAPI. Learn how to configure message keys for partitioning and ordering in event-driven applications.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/message.html
 ---
 
 # Apache Kafka Message Binding v0.1.0

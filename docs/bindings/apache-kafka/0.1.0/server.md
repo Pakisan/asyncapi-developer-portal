@@ -1,19 +1,19 @@
 ---
 title: Apache Kafka Server Binding v0.1.0 - Basic Configuration
-description: A guide to the Apache Kafka Server Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific server information.
+description: Learn how to use Apache Kafka server bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka server configuration for event-driven architectures.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, server binding, Kafka broker, event-driven architecture
+      content: Apache Kafka server binding, AsyncAPI, Kafka broker, event-driven architecture
   - - meta
     - property: og:title
       content: Apache Kafka Server Binding v0.1.0 - Basic Configuration
   - - meta
     - property: og:description
-      content: A guide to the Apache Kafka Server Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific server information.
+      content: Learn how to use Apache Kafka server bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka server configuration for event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Apache Kafka Server Binding v0.1.0 - Basic Configuration
   - - meta
     - name: twitter:description
-      content: A guide to the Apache Kafka Server Binding v0.1.0 for AsyncAPI. This version serves as a foundational placeholder for Kafka-specific server information.
+      content: Learn how to use Apache Kafka server bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka server configuration for event-driven architectures.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/server.html
 ---
 
 # Apache Kafka Server Binding v0.1.0
@@ -53,6 +56,4 @@ servers:
     bindings:
       kafka:
         bindingVersion: '0.1.0'
-```
-
 ```

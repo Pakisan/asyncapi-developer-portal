@@ -1,19 +1,19 @@
 ---
-title: Apache Kafka Message Binding v0.5.0 - Schema Registry Integration
-description: Explore the Apache Kafka Message Binding v0.5.0 for AsyncAPI. Learn how to define message keys, integrate with Schema Registry, and manage schema evolution for robust and reliable event-driven applications.
+title: Apache Kafka Message Binding v0.5.0 - Schema Registry & Keys
+description: Define Apache Kafka message bindings v0.5.0 for AsyncAPI. Configure message keys, schema registry integration, and schema evolution for robust event streaming.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, message binding, Kafka message key, Schema Registry, schema evolution, Confluent, Apicurio, event-driven architecture
+      content: Apache Kafka message binding, AsyncAPI, message key, schema registry, schema evolution, event streaming, data validation
   - - meta
     - property: og:title
-      content: Apache Kafka Message Binding v0.5.0 - Schema Registry Integration
+      content: Apache Kafka Message Binding v0.5.0 - Schema Registry & Keys
   - - meta
     - property: og:description
-      content: Explore the Apache Kafka Message Binding v0.5.0 for AsyncAPI. Learn how to define message keys, integrate with Schema Registry, and manage schema evolution for robust and reliable event-driven applications.
+      content: Define Apache Kafka message bindings v0.5.0 for AsyncAPI. Configure message keys, schema registry integration, and schema evolution for robust event streaming.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/apache-kafka/0.5.0/message.png
   - - meta
     - name: twitter:title
-      content: Apache Kafka Message Binding v0.5.0 - Schema Registry Integration
+      content: Apache Kafka Message Binding v0.5.0 - Schema Registry & Keys
   - - meta
     - name: twitter:description
-      content: Explore the Apache Kafka Message Binding v0.5.0 for AsyncAPI. Learn how to define message keys, integrate with Schema Registry, and manage schema evolution for robust and reliable event-driven applications.
+      content: Define Apache Kafka message bindings v0.5.0 for AsyncAPI. Configure message keys, schema registry integration, and schema evolution for robust event streaming.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/message.html
 ---
 
 # Apache Kafka Message Binding v0.5.0

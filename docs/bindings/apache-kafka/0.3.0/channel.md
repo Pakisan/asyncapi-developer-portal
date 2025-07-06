@@ -1,19 +1,19 @@
 ---
-title: Apache Kafka Channel Binding v0.3.0 - Topic Configuration Guide
-description: A guide to the Apache Kafka Channel Binding v0.3.0 for AsyncAPI. Learn to configure Kafka topics, including partitions, and replicas to optimize your event-driven architecture.
+title: Apache Kafka Channel Binding v0.3.0 - Topic Configuration
+description: Configure Apache Kafka channel bindings v0.3.0 for AsyncAPI. Define topics, partitions, replicas, and topic settings for scalable event streaming.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka, AsyncAPI, channel binding, Kafka topic, partitions, replicas, event-driven architecture, data streaming
+      content: Apache Kafka channel binding, AsyncAPI, Kafka topic, partitions, replicas, topic configuration, event streaming, data streaming
   - - meta
     - property: og:title
-      content: Apache Kafka Channel Binding v0.3.0 - Topic Configuration Guide
+      content: Apache Kafka Channel Binding v0.3.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: A guide to the Apache Kafka Channel Binding v0.3.0 for AsyncAPI. Learn to configure Kafka topics, including partitions, and replicas to optimize your event-driven architecture.
+      content: Configure Apache Kafka channel bindings v0.3.0 for AsyncAPI. Define topics, partitions, replicas, and topic settings for scalable event streaming.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/apache-kafka/0.3.0/channel.png
   - - meta
     - name: twitter:title
-      content: Apache Kafka Channel Binding v0.3.0 - Topic Configuration Guide
+      content: Apache Kafka Channel Binding v0.3.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: A guide to the Apache Kafka Channel Binding v0.3.0 for AsyncAPI. Learn to configure Kafka topics, including partitions, and replicas to optimize your event-driven architecture.
+      content: Configure Apache Kafka channel bindings v0.3.0 for AsyncAPI. Define topics, partitions, replicas, and topic settings for scalable event streaming.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.3.0/channel.html
 ---
 
 # Apache Kafka Channel Binding v0.3.0
