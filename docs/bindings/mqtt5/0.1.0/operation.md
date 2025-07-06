@@ -1,19 +1,19 @@
 ---
 title: MQTT 5.0 Operation Binding v0.1.0 - Publish/Subscribe Options
-description: This document details the legacy v0.1.0 of the MQTT 5.0 operation binding. It is recommended to use the latest version for more comprehensive features.
+description: Configure MQTT 5.0 operation bindings for publish and subscribe behaviors. Define QoS levels and operation settings with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT 5.0 operation binding, legacy, AsyncAPI, MQTT QoS, publish-subscribe, IoT messaging, event-driven architecture
+      content: MQTT 5.0 operation binding v0.1.0, AsyncAPI, MQTT QoS, publish-subscribe, IoT messaging, M2M
   - - meta
     - property: og:title
       content: MQTT 5.0 Operation Binding v0.1.0 - Publish/Subscribe Options
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 operation binding. It is recommended to use the latest version for more comprehensive features.
+      content: Configure MQTT 5.0 operation bindings for publish and subscribe behaviors. Define QoS levels and operation settings with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: MQTT 5.0 Operation Binding v0.1.0 - Publish/Subscribe Options
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 operation binding. It is recommended to use the latest version for more comprehensive features.
+      content: Configure MQTT 5.0 operation bindings for publish and subscribe behaviors. Define QoS levels and operation settings with examples and best practices.
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/operation.png"
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/operation.html
 ---
 
 # MQTT 5.0 Operation Binding v0.1.0

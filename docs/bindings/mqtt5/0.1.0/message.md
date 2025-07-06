@@ -1,19 +1,19 @@
 ---
-title: MQTT 5.0 Message Binding v0.1.0 - Message Property Configuration
-description: This document details the legacy v0.1.0 of the MQTT 5.0 message binding. It is recommended to use the latest version for more comprehensive features.
+title: MQTT 5.0 Message Binding v0.1.0 - Message Properties
+description: Configure MQTT 5.0 message bindings for message properties and formatting. Define message structure and content type with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT 5.0 message binding, legacy, AsyncAPI, MQTT message properties, IoT messaging, event-driven architecture
+      content: MQTT 5.0 message binding v0.1.0, AsyncAPI, MQTT message properties, IoT messaging, M2M
   - - meta
     - property: og:title
-      content: MQTT 5.0 Message Binding v0.1.0 - Message Property Configuration
+      content: MQTT 5.0 Message Binding v0.1.0 - Message Properties
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 message binding. It is recommended to use the latest version for more comprehensive features.
+      content: Configure MQTT 5.0 message bindings for message properties and formatting. Define message structure and content type with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -22,13 +22,16 @@ head:
       content: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/message.html
   - - meta
     - name: twitter:title
-      content: MQTT 5.0 Message Binding v0.1.0 - Message Property Configuration
+      content: MQTT 5.0 Message Binding v0.1.0 - Message Properties
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 message binding. It is recommended to use the latest version for more comprehensive features.
+      content: Configure MQTT 5.0 message bindings for message properties and formatting. Define message structure and content type with examples and best practices.
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/message.png"
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/message.html
 ---
 
 # MQTT 5.0 Message Binding v0.1.0

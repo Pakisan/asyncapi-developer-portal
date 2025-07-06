@@ -1,19 +1,19 @@
 ---
-title: MQTT 5.0 Message Binding v0.2.0 - Message Property Configuration
-description: Learn how to configure MQTT 5.0 message bindings using AsyncAPI v0.2.0. Define message properties like expiry, content type, and correlation data for IoT and real-time messaging.
+title: MQTT 5.0 Message Binding v0.2.0 - Message Properties
+description: Configure MQTT 5.0 message bindings for expiry, content type, and correlation data. Define message properties for IoT and real-time messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT 5.0 message binding, AsyncAPI, MQTT message properties, message expiry, correlation data, IoT messaging, M2M, event-driven architecture
+      content: MQTT 5.0 message binding v0.2.0, AsyncAPI, MQTT message properties, message expiry, correlation data, IoT messaging, M2M
   - - meta
     - property: og:title
-      content: MQTT 5.0 Message Binding v0.2.0 - Message Property Configuration
+      content: MQTT 5.0 Message Binding v0.2.0 - Message Properties
   - - meta
     - property: og:description
-      content: Learn how to configure MQTT 5.0 message bindings using AsyncAPI v0.2.0. Define message properties like expiry, content type, and correlation data for IoT and real-time messaging.
+      content: Configure MQTT 5.0 message bindings for expiry, content type, and correlation data. Define message properties for IoT and real-time messaging.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/mqtt5/0.2.0/message.png
   - - meta
     - name: twitter:title
-      content: MQTT 5.0 Message Binding v0.2.0 - Message Property Configuration
+      content: MQTT 5.0 Message Binding v0.2.0 - Message Properties
   - - meta
     - name: twitter:description
-      content: Learn how to configure MQTT 5.0 message bindings using AsyncAPI v0.2.0. Define message properties like expiry, content type, and correlation data for IoT and real-time messaging.
+      content: Configure MQTT 5.0 message bindings for expiry, content type, and correlation data. Define message properties for IoT and real-time messaging.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/message.html
 ---
 
 # MQTT 5.0 Message Binding v0.2.0

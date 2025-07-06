@@ -1,17 +1,17 @@
 ---
-title: MQTT 5.0 Bindings - Lightweight IoT and Mobile Messaging
-description: Comprehensive guide to AsyncAPI MQTT 5.0 bindings. Learn to configure channels, operations, messages, and servers for MQTT-based IoT, mobile, and real-time applications with detailed examples and best practices.
+title: MQTT 5.0 Bindings - AsyncAPI IoT Messaging Protocol
+description: Master AsyncAPI MQTT 5.0 bindings for IoT and mobile messaging. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: MQTT, MQTT 5.0, AsyncAPI, IoT messaging, M2M, publish-subscribe, message broker, QoS, retained messages, last will, channel binding, operation binding, message binding, server binding, event-driven architecture
+      content: MQTT 5.0 bindings, AsyncAPI, IoT messaging, M2M, publish-subscribe, message broker, QoS, retained messages, last will
   - - meta
     - property: og:title
-      content: MQTT 5.0 Bindings - Lightweight IoT and Mobile Messaging
+      content: MQTT 5.0 Bindings - AsyncAPI IoT Messaging Protocol
   - - meta
     - property: og:description
-      content: Comprehensive guide to AsyncAPI MQTT 5.0 bindings. Learn to configure channels, operations, messages, and servers for MQTT-based IoT, mobile, and real-time applications with detailed examples and best practices.
+      content: Master AsyncAPI MQTT 5.0 bindings for IoT and mobile messaging. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/mqtt5/mqtt5.png
   - - meta
     - name: twitter:title
-      content: MQTT 5.0 Bindings - Lightweight IoT and Mobile Messaging
+      content: MQTT 5.0 Bindings - AsyncAPI IoT Messaging Protocol
   - - meta
     - name: twitter:description
-      content: Comprehensive guide to AsyncAPI MQTT 5.0 bindings. Learn to configure channels, operations, messages, and servers for MQTT-based IoT, mobile, and real-time applications with detailed examples and best practices.
+      content: Master AsyncAPI MQTT 5.0 bindings for IoT and mobile messaging. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/
 ---
 
 # MQTT 5.0 Bindings

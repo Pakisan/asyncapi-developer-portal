@@ -1,19 +1,19 @@
 ---
 title: MQTT 5.0 Channel Binding v0.1.0 - Topic Configuration
-description: This document details the legacy v0.1.0 of the MQTT 5.0 channel binding, which maps AsyncAPI channels to MQTT topics. It is recommended to use the latest version.
+description: Configure MQTT 5.0 channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT 5.0 channel binding, legacy, AsyncAPI, MQTT topics, topic configuration, IoT messaging, M2M, publish-subscribe, event-driven architecture
+      content: MQTT 5.0 channel binding v0.1.0, AsyncAPI, MQTT topics, topic configuration, IoT messaging, M2M, publish-subscribe
   - - meta
     - property: og:title
       content: MQTT 5.0 Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 channel binding, which maps AsyncAPI channels to MQTT topics. It is recommended to use the latest version.
+      content: Configure MQTT 5.0 channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: MQTT 5.0 Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 channel binding, which maps AsyncAPI channels to MQTT topics. It is recommended to use the latest version.
+      content: Configure MQTT 5.0 channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/channel.png"
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/channel.html
 ---
 
 # MQTT 5.0 Channel Binding v0.1.0

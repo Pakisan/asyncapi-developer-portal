@@ -1,19 +1,19 @@
 ---
 title: MQTT 5.0 Server Binding v0.1.0 - Session Configuration
-description: This document details the legacy v0.1.0 of the MQTT 5.0 server binding. It is recommended to use the latest version for more comprehensive features like session expiry.
+description: Configure MQTT 5.0 server bindings for session management. Define server-level settings for IoT and real-time messaging with examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT 5.0 server binding, legacy, AsyncAPI, session configuration, persistent sessions, IoT messaging, event-driven architecture
+      content: MQTT 5.0 server binding v0.1.0, AsyncAPI, session configuration, persistent sessions, IoT messaging, M2M
   - - meta
     - property: og:title
       content: MQTT 5.0 Server Binding v0.1.0 - Session Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 server binding. It is recommended to use the latest version for more comprehensive features like session expiry.
+      content: Configure MQTT 5.0 server bindings for session management. Define server-level settings for IoT and real-time messaging with examples.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: MQTT 5.0 Server Binding v0.1.0 - Session Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.1.0 of the MQTT 5.0 server binding. It is recommended to use the latest version for more comprehensive features like session expiry.
+      content: Configure MQTT 5.0 server bindings for session management. Define server-level settings for IoT and real-time messaging with examples.
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/server.png"
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/server.html
 ---
 
 # MQTT 5.0 Server Binding v0.1.0

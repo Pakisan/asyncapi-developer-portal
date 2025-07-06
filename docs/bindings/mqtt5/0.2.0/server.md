@@ -1,19 +1,19 @@
 ---
 title: MQTT 5.0 Server Binding v0.2.0 - Session Configuration
-description: Learn how to configure MQTT 5.0 server bindings using AsyncAPI v0.2.0. Define server-level behaviors like session expiry for persistent sessions in IoT and real-time messaging.
+description: Configure MQTT 5.0 server bindings for session expiry and persistent sessions. Define server-level behaviors for IoT and real-time messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: MQTT 5.0 server binding, AsyncAPI, session expiry, persistent sessions, clean start, IoT messaging, M2M, event-driven architecture
+      content: MQTT 5.0 server binding v0.2.0, AsyncAPI, session expiry, persistent sessions, clean start, IoT messaging, M2M
   - - meta
     - property: og:title
       content: MQTT 5.0 Server Binding v0.2.0 - Session Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure MQTT 5.0 server bindings using AsyncAPI v0.2.0. Define server-level behaviors like session expiry for persistent sessions in IoT and real-time messaging.
+      content: Configure MQTT 5.0 server bindings for session expiry and persistent sessions. Define server-level behaviors for IoT and real-time messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: MQTT 5.0 Server Binding v0.2.0 - Session Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure MQTT 5.0 server bindings using AsyncAPI v0.2.0. Define server-level behaviors like session expiry for persistent sessions in IoT and real-time messaging.
+      content: Configure MQTT 5.0 server bindings for session expiry and persistent sessions. Define server-level behaviors for IoT and real-time messaging.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/server.html
 ---
 
 # MQTT 5.0 Server Binding v0.2.0
