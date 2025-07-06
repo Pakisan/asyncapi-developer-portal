@@ -1,19 +1,19 @@
 ---
-title: NATS Server Binding v0.1.0 - Server-Level NATS Configurations
-description: Learn how to configure NATS server bindings using AsyncAPI v0.1.0. Define server-level configurations for NATS connections with comprehensive examples and best practices for cloud-native messaging and streaming.
+title: NATS Server Binding v0.1.0 - Server Configuration
+description: Configure NATS server bindings for connection management. Define server-level settings for cloud-native messaging with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: NATS server binding, AsyncAPI, NATS server, server configuration, cloud-native messaging, streaming, message broker, microservices, JetStream, event-driven architecture
+      content: NATS server binding v0.1.0, AsyncAPI, NATS server, server configuration, cloud-native messaging, streaming, message broker, microservices, JetStream
   - - meta
     - property: og:title
-      content: NATS Server Binding v0.1.0 - Server-Level NATS Configurations
+      content: NATS Server Binding v0.1.0 - Server Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure NATS server bindings using AsyncAPI v0.1.0. Define server-level configurations for NATS connections with comprehensive examples and best practices for cloud-native messaging and streaming.
+      content: Configure NATS server bindings for connection management. Define server-level settings for cloud-native messaging with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/nats/0.1.0/server.png
   - - meta
     - name: twitter:title
-      content: NATS Server Binding v0.1.0 - Server-Level NATS Configurations
+      content: NATS Server Binding v0.1.0 - Server Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure NATS server bindings using AsyncAPI v0.1.0. Define server-level configurations for NATS connections with comprehensive examples and best practices for cloud-native messaging and streaming.
+      content: Configure NATS server bindings for connection management. Define server-level settings for cloud-native messaging with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/server.html
 ---
 
 # NATS Server Binding v0.1.0

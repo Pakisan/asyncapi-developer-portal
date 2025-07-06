@@ -1,17 +1,17 @@
 ---
-title: NATS Bindings - Cloud-Native Messaging and Streaming
-description: Comprehensive guide to AsyncAPI NATS bindings. Learn how to configure channels, operations, messages, and servers for NATS-based messaging, streaming, and microservices communication with detailed examples and best practices.
+title: NATS Bindings - AsyncAPI Cloud-Native Messaging
+description: Master AsyncAPI NATS bindings for cloud-native messaging and streaming. Configure channels, operations, messages, and servers with comprehensive examples.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: NATS, AsyncAPI, cloud-native messaging, streaming, message broker, pub/sub, request-reply, microservices, JetStream, channel binding, operation binding, message binding, server binding, event-driven architecture
+      content: NATS bindings, AsyncAPI, cloud-native messaging, streaming, message broker, pub/sub, request-reply, microservices, JetStream
   - - meta
     - property: og:title
-      content: NATS Bindings - Cloud-Native Messaging and Streaming
+      content: NATS Bindings - AsyncAPI Cloud-Native Messaging
   - - meta
     - property: og:description
-      content: Comprehensive guide to AsyncAPI NATS bindings. Learn how to configure channels, operations, messages, and servers for NATS-based messaging, streaming, and microservices communication with detailed examples and best practices.
+      content: Master AsyncAPI NATS bindings for cloud-native messaging and streaming. Configure channels, operations, messages, and servers with comprehensive examples.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/nats/nats.png
   - - meta
     - name: twitter:title
-      content: NATS Bindings - Cloud-Native Messaging and Streaming
+      content: NATS Bindings - AsyncAPI Cloud-Native Messaging
   - - meta
     - name: twitter:description
-      content: Comprehensive guide to AsyncAPI NATS bindings. Learn how to configure channels, operations, messages, and servers for NATS-based messaging, streaming, and microservices communication with detailed examples and best practices.
+      content: Master AsyncAPI NATS bindings for cloud-native messaging and streaming. Configure channels, operations, messages, and servers with comprehensive examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/nats/
 ---
 
 # NATS Bindings

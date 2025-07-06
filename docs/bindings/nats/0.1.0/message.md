@@ -1,19 +1,19 @@
 ---
-title: NATS Message Binding v0.1.0 - Message Representation in NATS Protocol
-description: Learn how to configure NATS message bindings using AsyncAPI v0.1.0. Define message representation and formatting for NATS-based messaging with comprehensive examples and best practices.
+title: NATS Message Binding v0.1.0 - Message Format
+description: Configure NATS message bindings for protocol representation. Define message formatting and structure with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: NATS message binding, AsyncAPI, NATS messages, message representation, cloud-native messaging, streaming, message broker, microservices, event-driven architecture
+      content: NATS message binding v0.1.0, AsyncAPI, NATS messages, message representation, cloud-native messaging, streaming, message broker, microservices
   - - meta
     - property: og:title
-      content: NATS Message Binding v0.1.0 - Message Representation in NATS Protocol
+      content: NATS Message Binding v0.1.0 - Message Format
   - - meta
     - property: og:description
-      content: Learn how to configure NATS message bindings using AsyncAPI v0.1.0. Define message representation and formatting for NATS-based messaging with comprehensive examples and best practices.
+      content: Configure NATS message bindings for protocol representation. Define message formatting and structure with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/nats/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: NATS Message Binding v0.1.0 - Message Representation in NATS Protocol
+      content: NATS Message Binding v0.1.0 - Message Format
   - - meta
     - name: twitter:description
-      content: Learn how to configure NATS message bindings using AsyncAPI v0.1.0. Define message representation and formatting for NATS-based messaging with comprehensive examples and best practices.
+      content: Configure NATS message bindings for protocol representation. Define message formatting and structure with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/message.html
 ---
 
 # NATS Message Binding v0.1.0

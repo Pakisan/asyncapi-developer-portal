@@ -1,19 +1,19 @@
 ---
-title: NATS Operation Binding v0.1.0 - Queue and Operation Configuration
-description: Learn how to configure NATS operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations with NATS queue groups for load balancing and scalable messaging in cloud-native applications.
+title: NATS Operation Binding v0.1.0 - Queue Configuration
+description: Configure NATS operation bindings for queue groups and load balancing. Define publish and subscribe operations with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: NATS operation binding, AsyncAPI, NATS queue groups, load balancing, publish subscribe, cloud-native messaging, streaming, message broker, microservices, event-driven architecture
+      content: NATS operation binding v0.1.0, AsyncAPI, NATS queue groups, load balancing, publish subscribe, cloud-native messaging, streaming, message broker, microservices
   - - meta
     - property: og:title
-      content: NATS Operation Binding v0.1.0 - Queue and Operation Configuration
+      content: NATS Operation Binding v0.1.0 - Queue Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure NATS operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations with NATS queue groups for load balancing and scalable messaging in cloud-native applications.
+      content: Configure NATS operation bindings for queue groups and load balancing. Define publish and subscribe operations with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/nats/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: NATS Operation Binding v0.1.0 - Queue and Operation Configuration
+      content: NATS Operation Binding v0.1.0 - Queue Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure NATS operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations with NATS queue groups for load balancing and scalable messaging in cloud-native applications.
+      content: Configure NATS operation bindings for queue groups and load balancing. Define publish and subscribe operations with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/operation.html
 ---
 
 # NATS Operation Binding v0.1.0

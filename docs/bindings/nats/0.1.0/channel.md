@@ -1,19 +1,19 @@
 ---
-title: NATS Channel Binding v0.1.0 - Subject and Channel Configuration
-description: Learn how to configure NATS channel bindings using AsyncAPI v0.1.0. Define how AsyncAPI channels map to NATS subjects for cloud-native messaging and streaming with comprehensive examples and best practices.
+title: NATS Channel Binding v0.1.0 - Subject Configuration
+description: Configure NATS channel bindings for subject-based messaging. Define channel configurations for cloud-native messaging with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: NATS channel binding, AsyncAPI, NATS subjects, cloud-native messaging, streaming, message broker, pub/sub, microservices, event-driven architecture
+      content: NATS channel binding v0.1.0, AsyncAPI, NATS subjects, cloud-native messaging, streaming, message broker, pub/sub, microservices
   - - meta
     - property: og:title
-      content: NATS Channel Binding v0.1.0 - Subject and Channel Configuration
+      content: NATS Channel Binding v0.1.0 - Subject Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure NATS channel bindings using AsyncAPI v0.1.0. Define how AsyncAPI channels map to NATS subjects for cloud-native messaging and streaming with comprehensive examples and best practices.
+      content: Configure NATS channel bindings for subject-based messaging. Define channel configurations for cloud-native messaging with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/nats/0.1.0/channel.png
   - - meta
     - name: twitter:title
-      content: NATS Channel Binding v0.1.0 - Subject and Channel Configuration
+      content: NATS Channel Binding v0.1.0 - Subject Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure NATS channel bindings using AsyncAPI v0.1.0. Define how AsyncAPI channels map to NATS subjects for cloud-native messaging and streaming with comprehensive examples and best practices.
+      content: Configure NATS channel bindings for subject-based messaging. Define channel configurations for cloud-native messaging with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/nats/0.1.0/channel.html
 ---
 
 # NATS Channel Binding v0.1.0
