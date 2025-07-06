@@ -1,19 +1,19 @@
 ---
 title: Mercure Operation Binding v0.1.0 - Publish Operation
-description: This document details the v0.1.0 of the Mercure operation binding, which describes a publish action to a Mercure topic using Server-Sent Events (SSE).
+description: Configure Mercure operation bindings for publish operations. Define publish behaviors for Server-Sent Events with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Mercure operation binding, AsyncAPI, publish, Server-Sent Events, SSE, real-time updates, event-driven architecture
+      content: Mercure operation binding v0.1.0, AsyncAPI, publish, Server-Sent Events, SSE, real-time updates
   - - meta
     - property: og:title
       content: Mercure Operation Binding v0.1.0 - Publish Operation
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the Mercure operation binding, which describes a publish action to a Mercure topic using Server-Sent Events (SSE).
+      content: Configure Mercure operation bindings for publish operations. Define publish behaviors for Server-Sent Events with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Mercure Operation Binding v0.1.0 - Publish Operation
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the Mercure operation binding, which describes a publish action to a Mercure topic using Server-Sent Events (SSE).
+      content: Configure Mercure operation bindings for publish operations. Define publish behaviors for Server-Sent Events with examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/operation.html
 ---
 
 # Mercure Operation Binding v0.1.0

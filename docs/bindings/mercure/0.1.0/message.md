@@ -1,19 +1,19 @@
 ---
 title: Mercure Message Binding v0.1.0 - SSE Data Payload
-description: This document details the v0.1.0 of the Mercure message binding, which represents the data payload of a Server-Sent Event (SSE) in a Mercure-based system.
+description: Configure Mercure message bindings for Server-Sent Events data payload. Define message structure and content for real-time updates with examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Mercure message binding, AsyncAPI, Server-Sent Events, SSE, data payload, real-time updates, event-driven architecture
+      content: Mercure message binding v0.1.0, AsyncAPI, Server-Sent Events, SSE, data payload, real-time updates
   - - meta
     - property: og:title
       content: Mercure Message Binding v0.1.0 - SSE Data Payload
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the Mercure message binding, which represents the data payload of a Server-Sent Event (SSE) in a Mercure-based system.
+      content: Configure Mercure message bindings for Server-Sent Events data payload. Define message structure and content for real-time updates with examples.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Mercure Message Binding v0.1.0 - SSE Data Payload
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the Mercure message binding, which represents the data payload of a Server-Sent Event (SSE) in a Mercure-based system.
+      content: Configure Mercure message bindings for Server-Sent Events data payload. Define message structure and content for real-time updates with examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/message.html
 ---
 
 # Mercure Message Binding v0.1.0

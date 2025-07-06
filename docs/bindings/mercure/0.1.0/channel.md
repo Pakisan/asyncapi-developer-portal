@@ -1,19 +1,19 @@
 ---
 title: Mercure Channel Binding v0.1.0 - Topic Configuration
-description: This document details the v0.1.0 of the Mercure channel binding, which maps an AsyncAPI channel to a Mercure topic URL for real-time updates via Server-Sent Events (SSE).
+description: Configure Mercure channel bindings for topic-based messaging. Define how AsyncAPI channels map to Mercure topic URLs with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Mercure channel binding, AsyncAPI, Mercure topics, topic URL, Server-Sent Events, SSE, real-time updates, event-driven architecture
+      content: Mercure channel binding v0.1.0, AsyncAPI, Mercure topics, topic URL, Server-Sent Events, SSE, real-time updates
   - - meta
     - property: og:title
       content: Mercure Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the Mercure channel binding, which maps an AsyncAPI channel to a Mercure topic URL for real-time updates via Server-Sent Events (SSE).
+      content: Configure Mercure channel bindings for topic-based messaging. Define how AsyncAPI channels map to Mercure topic URLs with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Mercure Channel Binding v0.1.0 - Topic Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the Mercure channel binding, which maps an AsyncAPI channel to a Mercure topic URL for real-time updates via Server-Sent Events (SSE).
+      content: Configure Mercure channel bindings for topic-based messaging. Define how AsyncAPI channels map to Mercure topic URLs with examples and best practices.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/channel.html
 ---
 
 # Mercure Channel Binding v0.1.0

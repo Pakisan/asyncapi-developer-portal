@@ -1,19 +1,19 @@
 ---
 title: Mercure Server Binding v0.1.0 - Hub Connection
-description: This document details the v0.1.0 of the Mercure server binding, which describes the connection to a Mercure Hub for real-time, SSE-based communication.
+description: Configure Mercure server bindings for Hub connections. Define connection settings for Server-Sent Events with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Mercure server binding, AsyncAPI, Mercure Hub, Server-Sent Events, SSE, real-time updates, event-driven architecture
+      content: Mercure server binding v0.1.0, AsyncAPI, Mercure Hub, Server-Sent Events, SSE, real-time updates
   - - meta
     - property: og:title
       content: Mercure Server Binding v0.1.0 - Hub Connection
   - - meta
     - property: og:description
-      content: This document details the v0.1.0 of the Mercure server binding, which describes the connection to a Mercure Hub for real-time, SSE-based communication.
+      content: Configure Mercure server bindings for Hub connections. Define connection settings for Server-Sent Events with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: Mercure Server Binding v0.1.0 - Hub Connection
   - - meta
     - name: twitter:description
-      content: This document details the v0.1.0 of the Mercure server binding, which describes the connection to a Mercure Hub for real-time, SSE-based communication.
+      content: Configure Mercure server bindings for Hub connections. Define connection settings for Server-Sent Events with examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/mercure/0.1.0/server.html
 ---
 
 # Mercure Server Binding v0.1.0

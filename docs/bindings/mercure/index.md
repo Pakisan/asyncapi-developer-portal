@@ -1,17 +1,17 @@
 ---
-title: Mercure AsyncAPI Binding – Guide, SSE & Real-Time Updates
-description: Learn how to use AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Define channels, operations, and messages for modern web applications.
+title: Mercure Bindings - AsyncAPI Real-Time Updates
+description: Master AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Configure channels, operations, and messages for modern web applications.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Mercure AsyncAPI binding, Server-Sent Events, SSE, Mercure channel binding, Mercure operation binding, Mercure message binding, real-time updates, event-driven architecture, AsyncAPI examples
+      content: Mercure bindings, AsyncAPI, Server-Sent Events, SSE, real-time updates, event-driven architecture
   - - meta
     - property: og:title
-      content: Mercure AsyncAPI Binding – Guide, SSE & Real-Time Updates
+      content: Mercure Bindings - AsyncAPI Real-Time Updates
   - - meta
     - property: og:description
-      content: Learn how to use AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Define channels, operations, and messages for modern web applications.
+      content: Master AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Configure channels, operations, and messages for modern web applications.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,10 @@ head:
       content: /bindings/mercure/mercure.png
   - - meta
     - name: twitter:title
-      content: Mercure AsyncAPI Binding – Guide, SSE & Real-Time Updates
+      content: Mercure Bindings - AsyncAPI Real-Time Updates
   - - meta
     - name: twitter:description
-      content: Learn how to use AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Define channels, operations, and messages for modern web applications.
+      content: Master AsyncAPI Mercure bindings for real-time updates with Server-Sent Events. Configure channels, operations, and messages for modern web applications.
   - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/mercure/
