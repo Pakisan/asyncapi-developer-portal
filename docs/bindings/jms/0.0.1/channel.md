@@ -1,19 +1,19 @@
 ---
 title: JMS Channel Binding v0.0.1 - Destination Configuration
-description: This document details the v0.0.1 of the JMS channel binding. Learn how to configure a JMS destination as a `queue` or `fifo-queue` for enterprise messaging applications.
+description: Configure JMS channel bindings for destination configuration. Define queue and fifo-queue types for enterprise messaging with examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: JMS channel binding, AsyncAPI, JMS destination, queue, fifo-queue, point-to-point, enterprise messaging, event-driven architecture
+      content: JMS channel binding v0.0.1, AsyncAPI, JMS destination, queue, fifo-queue, point-to-point, enterprise messaging
   - - meta
     - property: og:title
       content: JMS Channel Binding v0.0.1 - Destination Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.0.1 of the JMS channel binding. Learn how to configure a JMS destination as a `queue` or `fifo-queue` for enterprise messaging applications.
+      content: Configure JMS channel bindings for destination configuration. Define queue and fifo-queue types for enterprise messaging with examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: JMS Channel Binding v0.0.1 - Destination Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.0.1 of the JMS channel binding. Learn how to configure a JMS destination as a `queue` or `fifo-queue` for enterprise messaging applications.
+      content: Configure JMS channel bindings for destination configuration. Define queue and fifo-queue types for enterprise messaging with examples and best practices.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/jms/0.0.1/channel.html
 ---
 
 # JMS Channel Binding v0.0.1

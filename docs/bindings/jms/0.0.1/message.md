@@ -1,19 +1,19 @@
 ---
 title: JMS Message Binding v0.0.1 - Header Configuration
-description: This document details the v0.0.1 of the JMS message binding. Learn to configure standard JMS headers like JMSCorrelationID and JMSReplyTo for enterprise messaging.
+description: Configure JMS message bindings for header configuration. Define JMSCorrelationID, JMSReplyTo, and other standard headers for enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: JMS message binding, AsyncAPI, JMS headers, JMSCorrelationID, JMSReplyTo, JMSMessageID, enterprise messaging, event-driven architecture
+      content: JMS message binding v0.0.1, AsyncAPI, JMS headers, JMSCorrelationID, JMSReplyTo, JMSMessageID, enterprise messaging
   - - meta
     - property: og:title
       content: JMS Message Binding v0.0.1 - Header Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.0.1 of the JMS message binding. Learn to configure standard JMS headers like JMSCorrelationID and JMSReplyTo for enterprise messaging.
+      content: Configure JMS message bindings for header configuration. Define JMSCorrelationID, JMSReplyTo, and other standard headers for enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: JMS Message Binding v0.0.1 - Header Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.0.1 of the JMS message binding. Learn to configure standard JMS headers like JMSCorrelationID and JMSReplyTo for enterprise messaging.
+      content: Configure JMS message bindings for header configuration. Define JMSCorrelationID, JMSReplyTo, and other standard headers for enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/jms/0.0.1/message.html
 ---
 
 # JMS Message Binding v0.0.1

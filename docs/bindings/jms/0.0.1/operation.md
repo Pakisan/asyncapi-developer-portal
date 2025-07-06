@@ -1,19 +1,19 @@
 ---
 title: JMS Operation Binding v0.0.1 - Placeholder
-description: This document details the v0.0.1 of the JMS operation binding. This version is a placeholder reserved for future JMS-specific operation configurations.
+description: JMS operation binding v0.0.1 placeholder for future operation configurations. Reserved for JMS-specific operation properties in enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: JMS operation binding, AsyncAPI, placeholder, enterprise messaging, event-driven architecture
+      content: JMS operation binding v0.0.1, AsyncAPI, placeholder, enterprise messaging, future configurations
   - - meta
     - property: og:title
       content: JMS Operation Binding v0.0.1 - Placeholder
   - - meta
     - property: og:description
-      content: This document details the v0.0.1 of the JMS operation binding. This version is a placeholder reserved for future JMS-specific operation configurations.
+      content: JMS operation binding v0.0.1 placeholder for future operation configurations. Reserved for JMS-specific operation properties in enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: JMS Operation Binding v0.0.1 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details the v0.0.1 of the JMS operation binding. This version is a placeholder reserved for future JMS-specific operation configurations.
+      content: JMS operation binding v0.0.1 placeholder for future operation configurations. Reserved for JMS-specific operation properties in enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/jms/0.0.1/operation.html
 ---
 
 # JMS Operation Binding v0.0.1

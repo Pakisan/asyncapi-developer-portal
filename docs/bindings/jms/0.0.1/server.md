@@ -1,19 +1,19 @@
 ---
 title: JMS Server Binding v0.0.1 - ConnectionFactory Configuration
-description: This document details the v0.0.1 of the JMS server binding. Learn to configure the JMS ConnectionFactory, clientID, and other properties for connecting to a JMS provider.
+description: Configure JMS server bindings for ConnectionFactory setup. Define clientID, connection properties, and provider-specific configurations for enterprise messaging.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: JMS server binding, AsyncAPI, JMS ConnectionFactory, clientID, enterprise messaging, Java, event-driven architecture
+      content: JMS server binding v0.0.1, AsyncAPI, JMS ConnectionFactory, clientID, enterprise messaging, Java
   - - meta
     - property: og:title
       content: JMS Server Binding v0.0.1 - ConnectionFactory Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.0.1 of the JMS server binding. Learn to configure the JMS ConnectionFactory, clientID, and other properties for connecting to a JMS provider.
+      content: Configure JMS server bindings for ConnectionFactory setup. Define clientID, connection properties, and provider-specific configurations for enterprise messaging.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: JMS Server Binding v0.0.1 - ConnectionFactory Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.0.1 of the JMS server binding. Learn to configure the JMS ConnectionFactory, clientID, and other properties for connecting to a JMS provider.
+      content: Configure JMS server bindings for ConnectionFactory setup. Define clientID, connection properties, and provider-specific configurations for enterprise messaging.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/jms/0.0.1/server.html
 ---
 
 # JMS Server Binding v0.0.1

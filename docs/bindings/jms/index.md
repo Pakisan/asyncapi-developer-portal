@@ -1,17 +1,17 @@
 ---
-title: JMS AsyncAPI Binding – Guide, Java Messaging & Examples
-description: Learn how to use AsyncAPI JMS bindings for enterprise Java messaging. Define destinations, messages, and connection factories for robust event-driven architectures.
+title: JMS Bindings - AsyncAPI Enterprise Java Messaging
+description: Master AsyncAPI JMS bindings for enterprise Java messaging. Configure destinations, messages, and connection factories for robust event-driven architectures.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: JMS AsyncAPI binding, Java Message Service, JMS channel binding, JMS message binding, JMS server binding, enterprise messaging, event-driven architecture, AsyncAPI examples
+      content: JMS bindings, AsyncAPI, Java Message Service, enterprise messaging, event-driven architecture
   - - meta
     - property: og:title
-      content: JMS AsyncAPI Binding – Guide, Java Messaging & Examples
+      content: JMS Bindings - AsyncAPI Enterprise Java Messaging
   - - meta
     - property: og:description
-      content: Learn how to use AsyncAPI JMS bindings for enterprise Java messaging. Define destinations, messages, and connection factories for robust event-driven architectures.
+      content: Master AsyncAPI JMS bindings for enterprise Java messaging. Configure destinations, messages, and connection factories for robust event-driven architectures.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,10 @@ head:
       content: /bindings/jms/jms.png
   - - meta
     - name: twitter:title
-      content: JMS AsyncAPI Binding – Guide, Java Messaging & Examples
+      content: JMS Bindings - AsyncAPI Enterprise Java Messaging
   - - meta
     - name: twitter:description
-      content: Learn how to use AsyncAPI JMS bindings for enterprise Java messaging. Define destinations, messages, and connection factories for robust event-driven architectures.
+      content: Master AsyncAPI JMS bindings for enterprise Java messaging. Configure destinations, messages, and connection factories for robust event-driven architectures.
   - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/jms/
