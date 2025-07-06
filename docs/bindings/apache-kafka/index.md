@@ -1,17 +1,17 @@
 ---
-title: Apache Kafka AsyncAPI Binding – Guide, Examples & Best Practices
-description: Explore AsyncAPI Apache Kafka bindings to define topics, operations, and messages for real-time event streaming. Includes examples and version support.
+title: Apache Kafka Bindings - AsyncAPI Event Streaming
+description: Discover Apache Kafka bindings for AsyncAPI. Define topics, operations, and messages for scalable, real-time event streaming and data pipelines.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Apache Kafka AsyncAPI binding, Kafka channel binding, Kafka operation binding, Kafka message binding, event streaming, data pipeline, AsyncAPI examples
+      content: Apache Kafka bindings, AsyncAPI, event streaming, Kafka topics, data pipeline, schema registry, real-time messaging
   - - meta
     - property: og:title
-      content: Apache Kafka AsyncAPI Binding – Guide, Examples & Best Practices
+      content: Apache Kafka Bindings - AsyncAPI Event Streaming
   - - meta
     - property: og:description
-      content: Explore AsyncAPI Apache Kafka bindings to define topics, operations, and messages for real-time event streaming. Includes examples and version support.
+      content: Discover Apache Kafka bindings for AsyncAPI. Define topics, operations, and messages for scalable, real-time event streaming and data pipelines.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,10 @@ head:
       content: /bindings/apache-kafka/apache-kafka.png
   - - meta
     - name: twitter:title
-      content: Apache Kafka AsyncAPI Binding – Guide, Examples & Best Practices
+      content: Apache Kafka Bindings - AsyncAPI Event Streaming
   - - meta
     - name: twitter:description
-      content: Explore AsyncAPI Apache Kafka bindings to define topics, operations, and messages for real-time event streaming. Includes examples and version support.
+      content: Discover Apache Kafka bindings for AsyncAPI. Define topics, operations, and messages for scalable, real-time event streaming and data pipelines.
   - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/apache-kafka/
