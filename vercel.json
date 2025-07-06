@@ -5,6 +5,16 @@
       "source": "/schemes/:path*",
       "destination": "/schemas/:path*",
       "permanent": true
+    },
+    {
+      "source": "/schemas.html",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings.html",
+      "destination": "/bindings/",
+      "permanent": true
     }
   ]
 }
