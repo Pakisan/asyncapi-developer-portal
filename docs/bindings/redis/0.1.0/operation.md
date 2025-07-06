@@ -1,19 +1,19 @@
 ---
-title: Redis Operation Binding v0.1.0 - Message Operation Configuration
-description: Learn how to configure Redis operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for Redis-based messaging with comprehensive examples and best practices for in-memory data stores.
+title: Redis Operation Binding v0.1.0 - Message Operations
+description: Configure Redis operation bindings for publish and subscribe operations. Define in-memory messaging operations with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Redis operation binding, AsyncAPI, Redis operations, publish subscribe, in-memory database, message broker, key-value store, event-driven architecture, Redis pub/sub
+      content: Redis operation binding v0.1.0, AsyncAPI, Redis operations, publish subscribe, in-memory database, message broker, key-value store, Redis pub/sub
   - - meta
     - property: og:title
-      content: Redis Operation Binding v0.1.0 - Message Operation Configuration
+      content: Redis Operation Binding v0.1.0 - Message Operations
   - - meta
     - property: og:description
-      content: Learn how to configure Redis operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for Redis-based messaging with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis operation bindings for publish and subscribe operations. Define in-memory messaging operations with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/redis/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: Redis Operation Binding v0.1.0 - Message Operation Configuration
+      content: Redis Operation Binding v0.1.0 - Message Operations
   - - meta
     - name: twitter:description
-      content: Learn how to configure Redis operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for Redis-based messaging with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis operation bindings for publish and subscribe operations. Define in-memory messaging operations with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/operation.html
 ---
 
 # Redis Operation Binding v0.1.0

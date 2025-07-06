@@ -1,17 +1,17 @@
 ---
-title: Redis Bindings - In-Memory Data Store and Pub/Sub Messaging
-description: Comprehensive guide to AsyncAPI Redis bindings. Learn how to configure channels, operations, messages, and servers for Redis-based messaging and data storage with detailed examples and best practices for in-memory databases.
+title: Redis Bindings - AsyncAPI In-Memory Data Store
+description: Master AsyncAPI Redis bindings for in-memory data store and pub/sub messaging. Configure channels, operations, messages, and servers with comprehensive examples.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: Redis, AsyncAPI, in-memory database, pub/sub messaging, data store, caching, key-value store, message broker, channel binding, operation binding, message binding, server binding, event-driven architecture
+      content: Redis bindings, AsyncAPI, in-memory database, pub/sub messaging, data store, caching, key-value store, message broker
   - - meta
     - property: og:title
-      content: Redis Bindings - In-Memory Data Store and Pub/Sub Messaging
+      content: Redis Bindings - AsyncAPI In-Memory Data Store
   - - meta
     - property: og:description
-      content: Comprehensive guide to AsyncAPI Redis bindings. Learn how to configure channels, operations, messages, and servers for Redis-based messaging and data storage with detailed examples and best practices for in-memory databases.
+      content: Master AsyncAPI Redis bindings for in-memory data store and pub/sub messaging. Configure channels, operations, messages, and servers with comprehensive examples.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/redis/redis.png
   - - meta
     - name: twitter:title
-      content: Redis Bindings - In-Memory Data Store and Pub/Sub Messaging
+      content: Redis Bindings - AsyncAPI In-Memory Data Store
   - - meta
     - name: twitter:description
-      content: Comprehensive guide to AsyncAPI Redis bindings. Learn how to configure channels, operations, messages, and servers for Redis-based messaging and data storage with detailed examples and best practices for in-memory databases.
+      content: Master AsyncAPI Redis bindings for in-memory data store and pub/sub messaging. Configure channels, operations, messages, and servers with comprehensive examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/redis/
 ---
 
 # Redis Bindings

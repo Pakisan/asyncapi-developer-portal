@@ -1,19 +1,19 @@
 ---
-title: Redis Server Binding v0.1.0 - Server-Level Redis Configurations
-description: Learn how to configure Redis server bindings using AsyncAPI v0.1.0. Define server-level configurations for Redis connections with comprehensive examples and best practices for in-memory data stores.
+title: Redis Server Binding v0.1.0 - Server Configuration
+description: Configure Redis server bindings for server-level settings. Define connection management and infrastructure for in-memory data store with AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Redis server binding, AsyncAPI, Redis server, server configuration, in-memory database, message broker, key-value store, server infrastructure, connection management, event-driven architecture
+      content: Redis server binding v0.1.0, AsyncAPI, Redis server, server configuration, in-memory database, message broker, key-value store, connection management
   - - meta
     - property: og:title
-      content: Redis Server Binding v0.1.0 - Server-Level Redis Configurations
+      content: Redis Server Binding v0.1.0 - Server Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure Redis server bindings using AsyncAPI v0.1.0. Define server-level configurations for Redis connections with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis server bindings for server-level settings. Define connection management and infrastructure for in-memory data store with AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/redis/0.1.0/server.png
   - - meta
     - name: twitter:title
-      content: Redis Server Binding v0.1.0 - Server-Level Redis Configurations
+      content: Redis Server Binding v0.1.0 - Server Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure Redis server bindings using AsyncAPI v0.1.0. Define server-level configurations for Redis connections with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis server bindings for server-level settings. Define connection management and infrastructure for in-memory data store with AsyncAPI.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/server.html
 ---
 
 # Redis Server Binding v0.1.0

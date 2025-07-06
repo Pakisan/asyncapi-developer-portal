@@ -1,19 +1,19 @@
 ---
-title: Redis Channel Binding v0.1.0 - Channel and Pub/Sub Configuration
-description: Learn how to configure Redis channel bindings using AsyncAPI v0.1.0. Define channel configurations and pub/sub messaging for Redis-based applications with comprehensive examples and best practices for in-memory data stores.
+title: Redis Channel Binding v0.1.0 - Pub/Sub Configuration
+description: Configure Redis channel bindings for pub/sub messaging. Define channel configurations for in-memory data store with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Redis channel binding, AsyncAPI, Redis channels, pub/sub messaging, in-memory database, message broker, key-value store, event-driven architecture, Redis pub/sub
+      content: Redis channel binding v0.1.0, AsyncAPI, Redis channels, pub/sub messaging, in-memory database, message broker, key-value store, Redis pub/sub
   - - meta
     - property: og:title
-      content: Redis Channel Binding v0.1.0 - Channel and Pub/Sub Configuration
+      content: Redis Channel Binding v0.1.0 - Pub/Sub Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure Redis channel bindings using AsyncAPI v0.1.0. Define channel configurations and pub/sub messaging for Redis-based applications with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis channel bindings for pub/sub messaging. Define channel configurations for in-memory data store with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/redis/0.1.0/channel.png
   - - meta
     - name: twitter:title
-      content: Redis Channel Binding v0.1.0 - Channel and Pub/Sub Configuration
+      content: Redis Channel Binding v0.1.0 - Pub/Sub Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure Redis channel bindings using AsyncAPI v0.1.0. Define channel configurations and pub/sub messaging for Redis-based applications with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis channel bindings for pub/sub messaging. Define channel configurations for in-memory data store with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/channel.html
 ---
 
 # Redis Channel Binding v0.1.0

@@ -1,19 +1,19 @@
 ---
-title: Redis Message Binding v0.1.0 - Message Representation in Redis Protocol
-description: Learn how to configure Redis message bindings using AsyncAPI v0.1.0. Define message representation and formatting for Redis-based messaging with comprehensive examples and best practices for in-memory data stores.
+title: Redis Message Binding v0.1.0 - Message Formatting
+description: Configure Redis message bindings for message representation and formatting. Define in-memory message structure with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: Redis message binding, AsyncAPI, Redis messages, message representation, in-memory database, message broker, key-value store, event-driven architecture, Redis pub/sub
+      content: Redis message binding v0.1.0, AsyncAPI, Redis messages, message representation, in-memory database, message broker, key-value store, Redis pub/sub
   - - meta
     - property: og:title
-      content: Redis Message Binding v0.1.0 - Message Representation in Redis Protocol
+      content: Redis Message Binding v0.1.0 - Message Formatting
   - - meta
     - property: og:description
-      content: Learn how to configure Redis message bindings using AsyncAPI v0.1.0. Define message representation and formatting for Redis-based messaging with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis message bindings for message representation and formatting. Define in-memory message structure with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/redis/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: Redis Message Binding v0.1.0 - Message Representation in Redis Protocol
+      content: Redis Message Binding v0.1.0 - Message Formatting
   - - meta
     - name: twitter:description
-      content: Learn how to configure Redis message bindings using AsyncAPI v0.1.0. Define message representation and formatting for Redis-based messaging with comprehensive examples and best practices for in-memory data stores.
+      content: Configure Redis message bindings for message representation and formatting. Define in-memory message structure with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/redis/0.1.0/message.html
 ---
 
 # Redis Message Binding v0.1.0
