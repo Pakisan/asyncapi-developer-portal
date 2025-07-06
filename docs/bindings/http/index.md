@@ -1,17 +1,17 @@
 ---
-title: HTTP AsyncAPI Binding – Guide, Webhooks & API Examples
-description: Discover how to use AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
+title: HTTP Bindings - AsyncAPI Webhooks & APIs
+description: Master AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: HTTP AsyncAPI binding, HTTP channel binding, HTTP operation binding, HTTP message binding, webhooks, REST API, event-driven architecture, AsyncAPI examples
+      content: HTTP bindings, AsyncAPI, webhooks, REST API, event-driven architecture, synchronous interactions
   - - meta
     - property: og:title
-      content: HTTP AsyncAPI Binding – Guide, Webhooks & API Examples
+      content: HTTP Bindings - AsyncAPI Webhooks & APIs
   - - meta
     - property: og:description
-      content: Discover how to use AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
+      content: Master AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,10 @@ head:
       content: /bindings/http/http.png
   - - meta
     - name: twitter:title
-      content: HTTP AsyncAPI Binding – Guide, Webhooks & API Examples
+      content: HTTP Bindings - AsyncAPI Webhooks & APIs
   - - meta
     - name: twitter:description
-      content: Discover how to use AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
+      content: Master AsyncAPI HTTP bindings for webhooks and APIs. Define channels, operations, and messages for standardized event-driven and synchronous interactions.
   - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev/bindings/http/

@@ -1,19 +1,19 @@
 ---
 title: HTTP Message Binding v0.2.0 - Headers Configuration
-description: This document details the legacy v0.2.0 of the HTTP message binding. Learn to configure the schema for HTTP headers. For status codes, please upgrade to the latest version.
+description: Configure HTTP message bindings v0.2.0 for headers. Define HTTP header schemas for webhooks and API responses with examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: HTTP message binding, legacy, AsyncAPI, HTTP headers, API, webhooks
+      content: HTTP message binding v0.2.0, AsyncAPI, HTTP headers, API, webhooks, response headers
   - - meta
     - property: og:title
       content: HTTP Message Binding v0.2.0 - Headers Configuration
   - - meta
     - property: og:description
-      content: This document details the legacy v0.2.0 of the HTTP message binding. Learn to configure the schema for HTTP headers. For status codes, please upgrade to the latest version.
+      content: Configure HTTP message bindings v0.2.0 for headers. Define HTTP header schemas for webhooks and API responses with examples.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: HTTP Message Binding v0.2.0 - Headers Configuration
   - - meta
     - name: twitter:description
-      content: This document details the legacy v0.2.0 of the HTTP message binding. Learn to configure the schema for HTTP headers. For status codes, please upgrade to the latest version.
+      content: Configure HTTP message bindings v0.2.0 for headers. Define HTTP header schemas for webhooks and API responses with examples.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/http/0.2.0/message.html
 ---
 
 # HTTP Message Binding v0.2.0

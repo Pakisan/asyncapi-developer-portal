@@ -1,19 +1,19 @@
 ---
 title: HTTP Operation Binding v0.3.0 - Method & Query Configuration
-description: This document details the v0.3.0 of the HTTP operation binding. Learn to configure the HTTP method (GET, POST, etc.) and the schema for URL query parameters.
+description: Configure HTTP operation bindings for method and query parameters. Define GET, POST, and other HTTP methods with query schemas for webhooks and APIs.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: HTTP operation binding, AsyncAPI, HTTP method, query parameters, GET, POST, request, API
+      content: HTTP operation binding v0.3.0, AsyncAPI, HTTP method, query parameters, GET, POST, request, API, webhooks
   - - meta
     - property: og:title
       content: HTTP Operation Binding v0.3.0 - Method & Query Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.3.0 of the HTTP operation binding. Learn to configure the HTTP method (GET, POST, etc.) and the schema for URL query parameters.
+      content: Configure HTTP operation bindings for method and query parameters. Define GET, POST, and other HTTP methods with query schemas for webhooks and APIs.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: HTTP Operation Binding v0.3.0 - Method & Query Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.3.0 of the HTTP operation binding. Learn to configure the HTTP method (GET, POST, etc.) and the schema for URL query parameters.
+      content: Configure HTTP operation bindings for method and query parameters. Define GET, POST, and other HTTP methods with query schemas for webhooks and APIs.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/http/0.3.0/operation.html
 ---
 
 # HTTP Operation Binding v0.3.0

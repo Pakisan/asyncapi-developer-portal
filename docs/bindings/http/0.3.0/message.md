@@ -1,19 +1,19 @@
 ---
 title: HTTP Message Binding v0.3.0 - Headers & Status Code Configuration
-description: This document details the v0.3.0 of the HTTP message binding. Learn to configure the schema for HTTP headers and define the expected HTTP status code for a response.
+description: Configure HTTP message bindings for headers and status codes. Define response headers and expected status codes for webhooks and API responses.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: HTTP message binding, AsyncAPI, HTTP headers, status code, response, API, webhooks
+      content: HTTP message binding v0.3.0, AsyncAPI, HTTP headers, status code, response, API, webhooks
   - - meta
     - property: og:title
       content: HTTP Message Binding v0.3.0 - Headers & Status Code Configuration
   - - meta
     - property: og:description
-      content: This document details the v0.3.0 of the HTTP message binding. Learn to configure the schema for HTTP headers and define the expected HTTP status code for a response.
+      content: Configure HTTP message bindings for headers and status codes. Define response headers and expected status codes for webhooks and API responses.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: HTTP Message Binding v0.3.0 - Headers & Status Code Configuration
   - - meta
     - name: twitter:description
-      content: This document details the v0.3.0 of the HTTP message binding. Learn to configure the schema for HTTP headers and define the expected HTTP status code for a response.
+      content: Configure HTTP message bindings for headers and status codes. Define response headers and expected status codes for webhooks and API responses.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/http/0.3.0/message.html
 ---
 
 # HTTP Message Binding v0.3.0

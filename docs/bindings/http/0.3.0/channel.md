@@ -1,19 +1,19 @@
 ---
 title: HTTP Channel Binding v0.3.0 - Placeholder
-description: This document details the v0.3.0 of the HTTP channel binding. This version is a placeholder that identifies an AsyncAPI channel as an HTTP endpoint.
+description: HTTP channel binding v0.3.0 placeholder for HTTP endpoints. Identifies AsyncAPI channels as HTTP endpoints for webhooks and APIs.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: HTTP channel binding, AsyncAPI, placeholder, webhooks, API endpoint
+      content: HTTP channel binding v0.3.0, AsyncAPI, placeholder, webhooks, API endpoint, HTTP
   - - meta
     - property: og:title
       content: HTTP Channel Binding v0.3.0 - Placeholder
   - - meta
     - property: og:description
-      content: This document details the v0.3.0 of the HTTP channel binding. This version is a placeholder that identifies an AsyncAPI channel as an HTTP endpoint.
+      content: HTTP channel binding v0.3.0 placeholder for HTTP endpoints. Identifies AsyncAPI channels as HTTP endpoints for webhooks and APIs.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: HTTP Channel Binding v0.3.0 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details the v0.3.0 of the HTTP channel binding. This version is a placeholder that identifies an AsyncAPI channel as an HTTP endpoint.
+      content: HTTP channel binding v0.3.0 placeholder for HTTP endpoints. Identifies AsyncAPI channels as HTTP endpoints for webhooks and APIs.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/http/0.3.0/channel.html
 ---
 
 # HTTP Channel Binding v0.3.0

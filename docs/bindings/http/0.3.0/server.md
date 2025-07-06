@@ -1,19 +1,19 @@
 ---
 title: HTTP Server Binding v0.3.0 - Placeholder
-description: This document details the v0.3.0 of the HTTP server binding. This version is a placeholder that identifies an AsyncAPI server as an HTTP server.
+description: HTTP server binding v0.3.0 placeholder for HTTP servers. Identifies AsyncAPI servers as HTTP endpoints for webhooks and APIs.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: HTTP server binding, AsyncAPI, placeholder, webhooks, API
+      content: HTTP server binding v0.3.0, AsyncAPI, placeholder, webhooks, API, HTTP server
   - - meta
     - property: og:title
       content: HTTP Server Binding v0.3.0 - Placeholder
   - - meta
     - property: og:description
-      content: This document details the v0.3.0 of the HTTP server binding. This version is a placeholder that identifies an AsyncAPI server as an HTTP server.
+      content: HTTP server binding v0.3.0 placeholder for HTTP servers. Identifies AsyncAPI servers as HTTP endpoints for webhooks and APIs.
   - - meta
     - property: og:type
       content: article
@@ -28,7 +28,10 @@ head:
       content: HTTP Server Binding v0.3.0 - Placeholder
   - - meta
     - name: twitter:description
-      content: This document details the v0.3.0 of the HTTP server binding. This version is a placeholder that identifies an AsyncAPI server as an HTTP server.
+      content: HTTP server binding v0.3.0 placeholder for HTTP servers. Identifies AsyncAPI servers as HTTP endpoints for webhooks and APIs.
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/http/0.3.0/server.html
 ---
 
 # HTTP Server Binding v0.3.0
