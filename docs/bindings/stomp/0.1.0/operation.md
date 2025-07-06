@@ -1,19 +1,19 @@
 ---
-title: STOMP Operation Binding v0.1.0 - Message Operation Configuration
-description: Learn how to configure STOMP operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+title: STOMP Operation Binding v0.1.0 - Message Operations
+description: Configure STOMP operation bindings for publish and subscribe operations. Define text-based messaging operations with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: STOMP operation binding, AsyncAPI, STOMP operations, publish subscribe, text-based messaging, Simple Text Oriented Messaging Protocol, message operations, event-driven architecture, STOMP frames
+      content: STOMP operation binding v0.1.0, AsyncAPI, STOMP operations, publish subscribe, text-based messaging, Simple Text Oriented Messaging Protocol, message operations, STOMP frames
   - - meta
     - property: og:title
-      content: STOMP Operation Binding v0.1.0 - Message Operation Configuration
+      content: STOMP Operation Binding v0.1.0 - Message Operations
   - - meta
     - property: og:description
-      content: Learn how to configure STOMP operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP operation bindings for publish and subscribe operations. Define text-based messaging operations with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/stomp/0.1.0/operation.png
   - - meta
     - name: twitter:title
-      content: STOMP Operation Binding v0.1.0 - Message Operation Configuration
+      content: STOMP Operation Binding v0.1.0 - Message Operations
   - - meta
     - name: twitter:description
-      content: Learn how to configure STOMP operation bindings using AsyncAPI v0.1.0. Define publish and subscribe operations for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP operation bindings for publish and subscribe operations. Define text-based messaging operations with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/operation.html
 ---
 
 # STOMP Operation Binding v0.1.0

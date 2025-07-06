@@ -1,19 +1,19 @@
 ---
-title: STOMP Channel Binding v0.1.0 - Destination and Routing Configuration
-description: Learn how to configure STOMP channel bindings using AsyncAPI v0.1.0. Define destination configurations and routing for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+title: STOMP Channel Binding v0.1.0 - Destination Configuration
+description: Configure STOMP channel bindings for destination and routing. Define topic and queue destinations for text-based messaging with AsyncAPI examples.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: STOMP channel binding, AsyncAPI, STOMP destinations, message routing, text-based messaging, Simple Text Oriented Messaging Protocol, message broker, pub/sub, topic routing, queue routing
+      content: STOMP channel binding v0.1.0, AsyncAPI, STOMP destinations, message routing, text-based messaging, Simple Text Oriented Messaging Protocol, message broker, pub/sub, topic routing, queue routing
   - - meta
     - property: og:title
-      content: STOMP Channel Binding v0.1.0 - Destination and Routing Configuration
+      content: STOMP Channel Binding v0.1.0 - Destination Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure STOMP channel bindings using AsyncAPI v0.1.0. Define destination configurations and routing for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP channel bindings for destination and routing. Define topic and queue destinations for text-based messaging with AsyncAPI examples.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/stomp/0.1.0/channel.png
   - - meta
     - name: twitter:title
-      content: STOMP Channel Binding v0.1.0 - Destination and Routing Configuration
+      content: STOMP Channel Binding v0.1.0 - Destination Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure STOMP channel bindings using AsyncAPI v0.1.0. Define destination configurations and routing for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP channel bindings for destination and routing. Define topic and queue destinations for text-based messaging with AsyncAPI examples.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/channel.html
 ---
 
 # STOMP Channel Binding v0.1.0

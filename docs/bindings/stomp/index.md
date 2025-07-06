@@ -1,17 +1,17 @@
 ---
-title: STOMP (Simple Text Oriented Messaging Protocol) Bindings - Complete Guide
-description: Comprehensive guide to AsyncAPI STOMP bindings. Learn how to configure channels, operations, messages, and servers for STOMP-based messaging with detailed examples and best practices for text-oriented messaging protocols.
+title: STOMP Bindings - AsyncAPI Text Messaging Protocol
+description: Master AsyncAPI STOMP bindings for text-oriented messaging. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
 layout: doc
 head:
   - - meta
     - name: keywords
-      content: STOMP, AsyncAPI, Simple Text Oriented Messaging Protocol, messaging protocol, text-based messaging, message broker, channel binding, operation binding, message binding, server binding, pub/sub, message routing
+      content: STOMP bindings, AsyncAPI, Simple Text Oriented Messaging Protocol, text-based messaging, message broker, pub/sub, message routing, STOMP protocol
   - - meta
     - property: og:title
-      content: STOMP (Simple Text Oriented Messaging Protocol) Bindings - Complete Guide
+      content: STOMP Bindings - AsyncAPI Text Messaging Protocol
   - - meta
     - property: og:description
-      content: Comprehensive guide to AsyncAPI STOMP bindings. Learn how to configure channels, operations, messages, and servers for STOMP-based messaging with detailed examples and best practices for text-oriented messaging protocols.
+      content: Master AsyncAPI STOMP bindings for text-oriented messaging. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -23,10 +23,13 @@ head:
       content: /bindings/stomp/stomp.png
   - - meta
     - name: twitter:title
-      content: STOMP (Simple Text Oriented Messaging Protocol) Bindings - Complete Guide
+      content: STOMP Bindings - AsyncAPI Text Messaging Protocol
   - - meta
     - name: twitter:description
-      content: Comprehensive guide to AsyncAPI STOMP bindings. Learn how to configure channels, operations, messages, and servers for STOMP-based messaging with detailed examples and best practices for text-oriented messaging protocols.
+      content: Master AsyncAPI STOMP bindings for text-oriented messaging. Configure channels, operations, messages, and servers with comprehensive examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/stomp/
 ---
 
 # STOMP (Simple Text Oriented Messaging Protocol) Bindings

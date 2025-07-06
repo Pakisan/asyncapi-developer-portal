@@ -1,19 +1,19 @@
 ---
-title: STOMP Server Binding v0.1.0 - Server-Level STOMP Configurations
-description: Learn how to configure STOMP server bindings using AsyncAPI v0.1.0. Define server-level configurations for STOMP connections with comprehensive examples and best practices for text-oriented messaging protocols.
+title: STOMP Server Binding v0.1.0 - Server Configuration
+description: Configure STOMP server bindings for server-level settings. Define connection management and infrastructure for text-based messaging with AsyncAPI.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: STOMP server binding, AsyncAPI, STOMP server, server configuration, text-based messaging, Simple Text Oriented Messaging Protocol, server infrastructure, connection management, event-driven architecture
+      content: STOMP server binding v0.1.0, AsyncAPI, STOMP server, server configuration, text-based messaging, Simple Text Oriented Messaging Protocol, server infrastructure, connection management
   - - meta
     - property: og:title
-      content: STOMP Server Binding v0.1.0 - Server-Level STOMP Configurations
+      content: STOMP Server Binding v0.1.0 - Server Configuration
   - - meta
     - property: og:description
-      content: Learn how to configure STOMP server bindings using AsyncAPI v0.1.0. Define server-level configurations for STOMP connections with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP server bindings for server-level settings. Define connection management and infrastructure for text-based messaging with AsyncAPI.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/stomp/0.1.0/server.png
   - - meta
     - name: twitter:title
-      content: STOMP Server Binding v0.1.0 - Server-Level STOMP Configurations
+      content: STOMP Server Binding v0.1.0 - Server Configuration
   - - meta
     - name: twitter:description
-      content: Learn how to configure STOMP server bindings using AsyncAPI v0.1.0. Define server-level configurations for STOMP connections with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP server bindings for server-level settings. Define connection management and infrastructure for text-based messaging with AsyncAPI.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/server.html
 ---
 
 # STOMP Server Binding v0.1.0

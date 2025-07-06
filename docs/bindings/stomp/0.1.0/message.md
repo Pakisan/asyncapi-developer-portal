@@ -1,19 +1,19 @@
 ---
-title: STOMP Message Binding v0.1.0 - Message Representation in STOMP Protocol
-description: Learn how to configure STOMP message bindings using AsyncAPI v0.1.0. Define message representation and formatting for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+title: STOMP Message Binding v0.1.0 - Message Formatting
+description: Configure STOMP message bindings for message representation and formatting. Define text-based message structure with AsyncAPI examples and best practices.
 layout: doc
 prev: true
 next: true
 head:
   - - meta
     - name: keywords
-      content: STOMP message binding, AsyncAPI, STOMP messages, message representation, text-based messaging, Simple Text Oriented Messaging Protocol, message formatting, STOMP frames, event-driven architecture
+      content: STOMP message binding v0.1.0, AsyncAPI, STOMP messages, message representation, text-based messaging, Simple Text Oriented Messaging Protocol, message formatting, STOMP frames
   - - meta
     - property: og:title
-      content: STOMP Message Binding v0.1.0 - Message Representation in STOMP Protocol
+      content: STOMP Message Binding v0.1.0 - Message Formatting
   - - meta
     - property: og:description
-      content: Learn how to configure STOMP message bindings using AsyncAPI v0.1.0. Define message representation and formatting for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP message bindings for message representation and formatting. Define text-based message structure with AsyncAPI examples and best practices.
   - - meta
     - property: og:type
       content: article
@@ -25,10 +25,13 @@ head:
       content: /bindings/stomp/0.1.0/message.png
   - - meta
     - name: twitter:title
-      content: STOMP Message Binding v0.1.0 - Message Representation in STOMP Protocol
+      content: STOMP Message Binding v0.1.0 - Message Formatting
   - - meta
     - name: twitter:description
-      content: Learn how to configure STOMP message bindings using AsyncAPI v0.1.0. Define message representation and formatting for STOMP-based messaging with comprehensive examples and best practices for text-oriented messaging protocols.
+      content: Configure STOMP message bindings for message representation and formatting. Define text-based message structure with AsyncAPI examples and best practices.
+  - - meta
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev/bindings/stomp/0.1.0/message.html
 ---
 
 # STOMP Message Binding v0.1.0
