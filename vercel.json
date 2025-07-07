@@ -12,13 +12,18 @@
       "permanent": true
     },
     {
-      "source": "/schemes/v3/security/userpassword",
-      "destination": "/schemas/v3/security/userPassword.html",
+      "source": "/schemes/v3/security/sasl/saslgssapisecurityscheme",
+      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema.html",
       "permanent": true
     },
     {
-      "source": "/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow",
-      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "source": "/schemes/v3/security/sasl/saslplainsecurityscheme",
+      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/userpassword",
+      "destination": "/schemas/v3/security/userPassword.html",
       "permanent": true
     },
     {
@@ -29,6 +34,76 @@
     {
       "source": "/schemes/v3/security/http/httpsecurityscheme",
       "destination": "/schemas/v3/security/http/httpSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/nonbearerhttpsecurityscheme",
+      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/openidconnect",
+      "destination": "/schemas/v3/security/openIdConnect.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/schema",
+      "destination": "/schemas/schema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/oauth2",
+      "destination": "/schemas/v3/security/oauth2/oauth2.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2.html",
+      "destination": "/schemas/v3/security/oauth2/oauth2.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/oauth2scopes",
+      "destination": "/schemas/v3/security/oauth2/oauth2Scopes.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/implicitoauthflow",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/clientcredentialsoauthflow",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/clientCredentialsOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/passwordOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/passwordoauthflow",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/authorizationCodeOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/apikey",
+      "destination": "/schemas/v3/security/apiKey.html",
       "permanent": true
     },
     {
