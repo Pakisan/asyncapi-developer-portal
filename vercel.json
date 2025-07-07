@@ -2,8 +2,43 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/schemes/v3/security/symmetricencryption",
+      "destination": "/schemas/v3/security/symmetricEncryption.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslscramsecurityscheme",
+      "destination": "/schemas/v3/security/sasl/saslSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/userpassword",
+      "destination": "/schemas/v3/security/userPassword.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/securityscheme",
+      "destination": "/schemas/v3/security/securitySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/httpsecurityscheme",
+      "destination": "/schemas/v3/security/http/httpSecuritySchema.html",
+      "permanent": true
+    },
+    {
       "source": "/bindings/:protocol/:version/:file/",
       "destination": "/bindings/:protocol/:version/:file.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/",
+      "destination": "/schemas/",
       "permanent": true
     },
     {
