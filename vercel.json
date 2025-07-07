@@ -177,6 +177,11 @@
       "permanent": true
     },
     {
+      "source": "/schemes.html",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
       "source": "/schemas.html",
       "destination": "/schemas/",
       "permanent": true
