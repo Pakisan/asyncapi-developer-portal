@@ -152,7 +152,7 @@
       "permanent": true
     },
     {
-      "source": "security-schemes.html",
+      "source": "/security-schemes.html",
       "destination": "/schemas/",
       "permanent": false
     },
