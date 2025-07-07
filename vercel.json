@@ -7,8 +7,8 @@
       "permanent": true
     },
     {
-      "source": "/schemes/:path:params",
-      "destination": "/schemas/:path.html:params",
+      "source": "/schemes/:path*",
+      "destination": "/schemas/:path*",
       "permanent": true
     },
     {
