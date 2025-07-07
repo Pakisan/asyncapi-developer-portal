@@ -7,8 +7,18 @@
       "permanent": true
     },
     {
-      "source": "/schemes/v3/security/sasl/saslscramsecurityscheme",
+      "source": "/schemes/v3/security/sasl/saslsecurityscheme",
       "destination": "/schemas/v3/security/sasl/saslSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslSecurityScheme.json",
+      "destination": "/schemas/v3/security/sasl/saslSecuritySchema.json",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslscramsecurityscheme",
+      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema.html",
       "permanent": true
     },
     {
@@ -34,6 +44,21 @@
     {
       "source": "/schemes/v3/security/http/httpsecurityscheme",
       "destination": "/schemas/v3/security/http/httpSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/httpSecurityScheme.json",
+      "destination": "/schemas/v3/security/http/httpSecuritySchema.json",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/bearerhttpsecurityscheme",
+      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/apikeyhttpsecurityscheme",
+      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema.html",
       "permanent": true
     },
     {
@@ -64,6 +89,11 @@
     {
       "source": "/schemes/v3/security/oauth2/oauth2scopes",
       "destination": "/schemas/v3/security/oauth2/oauth2Scopes.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/implicitOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html",
       "permanent": true
     },
     {
@@ -107,9 +137,34 @@
       "permanent": true
     },
     {
+      "source": "/schemes/v3/security/x509",
+      "destination": "/schemas/v3/security/X509.html",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/asymmetricencryption",
+      "destination": "/schemas/v3/security/asymmetricEncryption.html",
+      "permanent": true
+    },
+    {
       "source": "/bindings/:protocol/:version/:file/",
       "destination": "/bindings/:protocol/:version/:file.html",
       "permanent": true
+    },
+    {
+      "source": "security-schemes.html",
+      "destination": "/schemas/",
+      "permanent": false
+    },
+    {
+      "source": "/schemes/v3/security.html",
+      "destination": "/schemas/",
+      "permanent": false
+    },
+    {
+      "source": "/schemes/v3/security/",
+      "destination": "/schemas/",
+      "permanent": false
     },
     {
       "source": "/schemes/",
