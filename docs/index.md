@@ -2,8 +2,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+title: "AsyncAPI Documentation – Protocol Bindings, Schemas & Security"
+description: "Discover comprehensive AsyncAPI documentation on protocol bindings, schemas, and security. Learn to design, document, and secure event-driven APIs with AsyncAPI."
+
 hero:
-  text: "Insights about bindings, security and other"
+  text: "Protocol Bindings, Schemas & Security"
 
 features:
     - title: Bindings
@@ -18,11 +21,26 @@ features:
         src: /json-schema-icon.svg
 head:
   - - meta
-    - name: "og:image"
-      content: "/asyncapi.png"
+    - name: keywords
+      content: "AsyncAPI, protocol bindings, event-driven API, API documentation, API security, message schemas, AsyncAPI specification, API design, event-driven architecture"
+  - - link
+    - rel: canonical
+      href: https://asyncapi.pavelon.dev
   - - meta
-    - name: "og:description"
-      content: "AsyncAPI Developer Network - place where you can find information about AsyncAPI specification and its components"
+    - property: "og:title"
+      content: "AsyncAPI Documentation – Protocol Bindings, Schemas & Security"
+  - - meta
+    - property: "og:description"
+      content: "Discover comprehensive AsyncAPI documentation on protocol bindings, schemas, and security. Learn to design, document, and secure event-driven APIs with AsyncAPI."
+  - - meta
+    - property: "og:image"
+      content: "/index.png"
+  - - meta
+    - name: "twitter:title"
+      content: "AsyncAPI Documentation – Protocol Bindings, Schemas & Security"
+  - - meta
+    - name: "twitter:description"
+      content: "Discover comprehensive AsyncAPI documentation on protocol bindings, schemas, and security. Learn to design, document, and secure event-driven APIs with AsyncAPI."
   - - meta
     - name: "yandex-verification"
       content: "ed012648c88cacbb"
