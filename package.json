@@ -1,6 +1,7 @@
 {
   "name": "asyncapi-developer-network",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "vitepress": "^1.6.3",
     "vue3-json-viewer": "^2.2.2"
   },
@@ -10,6 +11,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@types/vue3-json-viewer": "^2.2.0"
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/vue3-json-viewer": "^2.2.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   }
 }

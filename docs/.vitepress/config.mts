@@ -14,6 +14,8 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Bindings', link: '/bindings/', activeMatch: '\/bindings.+' },
       { text: 'Schemas', link: '/schemas/', activeMatch: '\/schemas.+' },
+      { text: 'JetBrains Plugin', link: '/jetbrains-plugin/', activeMatch: '\/jetbrains-plugin.+' },
+      { text: 'Blog', link: 'https://pavelon.dev/' },
     ],
 
     sidebar: {
