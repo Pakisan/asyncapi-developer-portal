@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "AsyncAPI Developer Network",
+  title: "Pavel on AsyncAPI",
   description: "Everything you should to now about AsyncAPI",
   lang: 'en-US',
   lastUpdated: true,
