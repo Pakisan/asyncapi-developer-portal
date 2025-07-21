@@ -42,6 +42,15 @@
           </div>
         </div>
       </a>
+      <a class="block bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-left" href="https://www.otto.de/unternehmen/">
+        <div class="flex items-start space-x-4">
+          <img alt="Solace logo" class="h-10 w-10 flex-shrink-0" src="/jetbrains-plugin/users/otto.svg"/>
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">OTTO GmbH & Co. KGaA</h4>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">OTTO is the largest online fashion and lifestyle retailer for end consumers in Germany</p>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 </template>
