@@ -1,4 +1,5 @@
 import {defineConfig, HeadConfig} from 'vitepress'
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -729,5 +730,8 @@ export default defineConfig({
 
   sitemap: {
     hostname: 'https://asyncapi.pavelon.dev'
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 })
