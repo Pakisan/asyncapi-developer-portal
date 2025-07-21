@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import {onMounted} from "vue";
-import jetBrainsRenderer from './jetbrains-mp-widget'
+import {onActivated} from "vue";
 
-onMounted(() => {
-  jetBrainsRenderer.then(() => {
-    if (window.MarketplaceWidget) {
-      window.MarketplaceWidget.setupMarketplaceWidget('card', 15673, "#asyncapi-jetbrains-widget");
-    }
-  })
+onActivated(() => {
+  if (window.MarketplaceWidget) {
+    window.MarketplaceWidget.setupMarketplaceWidget('card', 15673, "#asyncapi-jetbrains-widget");
+  }
 })
 </script>
 
@@ -23,6 +20,7 @@ onMounted(() => {
       </div>
       <div class="w-full md:w-1/2">
         <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg flex items-start space-x-4" id="asyncapi-jetbrains-widget">
+          <iframe width="384px" height="285px" src="https://plugins.jetbrains.com/embeddable/card/15673"></iframe>
           <!--                    <img alt="Jetbrains IDEs logo" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQqT0jKq0rE-YgKzB8a_e9d5aB7c4N5fG3e9fH8jK7l6pZ1c7R8e9S0T-y_V-u_X_W-Z_A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P_Q_R_S_T_U_V_W_X_Y_Z-0123456789-_"/>-->
           <!--                    <div>-->
           <!--                        <h3 class="font-semibold text-lg">JetBrains IDEs</h3>-->
