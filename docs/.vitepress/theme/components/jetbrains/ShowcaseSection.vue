@@ -35,8 +35,8 @@ onMounted(() => {
            id="showcase-image" src="/jetbrains-plugin/features/preview.gif"/>
       <div class="showcase__selector p-4 flex justify-center">
         <div class="bg-gray-100 dark:bg-gray-900 p-1 rounded-lg flex space-x-1 border border-gray-200 dark:border-gray-700">
-          <button class="showcase__selector-item flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium showcase__selector-item--active">
-            <span class="material-icons text-base">preview</span>
+          <button class="showcase__selector-item flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium">
+            <span class="material-icons text-base">autorenew</span>
             <span>Autocomplete</span>
           </button>
           <button class="showcase__selector-item flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium showcase__selector-item--active">
@@ -58,5 +58,15 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.showcase__selector-item--active {
+  color: #000;
+  background-color: #fff;
+  border-color: #e5e7eb;
+}
 
+.dark .showcase__selector-item--active {
+  color: #fff;
+  background-color: #1f2937;
+  border-color: #374151;
+}
 </style>

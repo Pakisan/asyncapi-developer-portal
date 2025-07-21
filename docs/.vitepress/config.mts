@@ -15,7 +15,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Bindings', link: '/bindings/', activeMatch: '\/bindings.+' },
       { text: 'Schemas', link: '/schemas/', activeMatch: '\/schemas.+' },
-      { text: 'JetBrains Plugin', link: '/jetbrains-plugin/', activeMatch: '\/jetbrains-plugin.+' },
+      { text: 'JetBrains Plugin', link: '/jetbrains-plugin/', activeMatch: '\/jetbrains-plugin.*' },
       { text: 'Blog', link: 'https://pavelon.dev/' },
     ],
 
@@ -707,6 +707,9 @@ export default defineConfig({
          gtag('config', 'G-G03BQZSMD1');`
     ],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }],
+    ['script', { src: 'https://cdn.tailwindcss.com?plugins=forms,container-queries' }],
     ['meta', { name: 'author', content: 'Pavel Bodiachevskii' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'yandex-verification', content: 'ed012648c88cacbb' }],

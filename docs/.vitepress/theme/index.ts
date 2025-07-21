@@ -10,6 +10,6 @@ export default {
     enhanceApp({ app }) {
         // register your custom global components
         app.component('Json', Json)
-        app.component('jetbrains-plugin', JetBrainsPluginPage)
+        app.component('JetBrainsPluginPage', JetBrainsPluginPage)
     }
 } satisfies Theme
