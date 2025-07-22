@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TrustedBySection from "./components/TrustedBySection.vue";
-import CallForReviewSection from "./components/CallForReviewSection.vue";
+import CallForFeedbackSection from "./components/CallForFeedbackSection.vue";
 import RoadmapSection from "./components/jetbrains/RoadmapSection.vue";
 import PluginSection from "./components/jetbrains/PluginSection.vue";
 import ShowcaseSection from "./components/jetbrains/ShowcaseSection.vue";
@@ -19,7 +19,7 @@ import ShowcaseSection from "./components/jetbrains/ShowcaseSection.vue";
     <ShowcaseSection />
     <PluginSection />
     <RoadmapSection />
-    <CallForReviewSection />
+    <CallForFeedbackSection />
     <TrustedBySection />
   </main>
 </template>
