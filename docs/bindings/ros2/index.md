@@ -17,7 +17,7 @@ head:
       content: article
   - - meta
     - property: og:url
-      content: https://asyncapi.pavelon.dev/bindings/ros2.html
+      content: https://asyncapi.pavelon.dev/bindings/ros2/
   - - meta
     - property: og:image
       content: /bindings/ros2/ros2.png
