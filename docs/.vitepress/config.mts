@@ -445,6 +445,24 @@ export default defineConfig({
               ]
             },
             {
+              text: 'ROS 2',
+              base: '/bindings/ros2',
+              link: '/',
+              collapsed: true,
+              items: [
+                {
+                  text: '0.1.0',
+                  base: '/bindings/ros2/0.1.0',
+                  items: [
+                    { text: 'channel', link: '/channel' },
+                    { text: 'message', link: '/message' },
+                    { text: 'operation', link: '/operation' },
+                    { text: 'server', link: '/server' },
+                  ]
+                }
+              ]
+            },
+            {
               text: 'Solace',
               base: '/bindings/solace',
               link: '/',
