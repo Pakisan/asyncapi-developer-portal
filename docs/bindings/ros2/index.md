@@ -68,7 +68,7 @@ ROS 2 is a set of software libraries and tools for building robot applications. 
 
 ## Available Versions
 
-### [v0.1.0](/bindings/ros2/0.1.0/)
+### v0.1.0
 The initial release of ROS 2 bindings with support for:
 - Basic node configuration
 - QoS policy definitions
