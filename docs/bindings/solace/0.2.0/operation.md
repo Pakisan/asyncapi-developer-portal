@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Solace operation bindings for multiple destinations. Define queues, topics, delivery modes, and topic subscriptions with AsyncAPI examples.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/solace/0.2.0/operation.html
 ---
 
 # Solace Operation Binding v0.2.0

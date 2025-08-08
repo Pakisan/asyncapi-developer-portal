@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure HTTP message bindings v0.1.0 for headers. Define HTTP header schemas for webhooks and API responses with examples.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/http/0.1.0/message.html
 ---
 
 # HTTP Message Binding v0.1.0

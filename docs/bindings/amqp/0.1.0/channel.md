@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure AMQP 0-9-1 channels v0.1.0 in AsyncAPI. Define exchanges, queues, and routing keys for RabbitMQ and other AMQP brokers.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/channel.html
+
 ---
 
 # AMQP 0-9-1 Channel Binding v0.1.0

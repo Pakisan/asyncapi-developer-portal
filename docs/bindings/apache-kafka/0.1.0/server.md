@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Learn how to use Apache Kafka server bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka server configuration for event-driven architectures.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/server.html
+
 ---
 
 # Apache Kafka Server Binding v0.1.0

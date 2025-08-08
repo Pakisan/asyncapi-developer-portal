@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure AMQP 0-9-1 operation bindings v0.1.0 in AsyncAPI. Set message expiration, delivery modes, routing keys, priority, reply-to, and acknowledgments.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/operation.html
+
 ---
 
 # AMQP 0-9-1 Operation Binding v0.1.0

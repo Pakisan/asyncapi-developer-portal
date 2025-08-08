@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Solace channel bindings for topic identification. Define AsyncAPI channels as Solace topics with comprehensive examples and best practices.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/solace/0.3.0/channel.html
 ---
 
 # Solace Channel Binding v0.3.0

@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure HTTP operation bindings v0.1.0 for method and query parameters. Define request types, HTTP methods, and query schemas for webhooks and APIs.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/http/0.1.0/operation.html
 ---
 
 # HTTP Operation Binding v0.1.0

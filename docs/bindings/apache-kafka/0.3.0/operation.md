@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Learn how to configure Apache Kafka operation bindings v0.3.0 for AsyncAPI. Set up consumer groups and client IDs for scalable, reliable message processing.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.3.0/operation.html
+
 ---
 
 # Apache Kafka Operation Binding v0.3.0

@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Solace server bindings for Message VPN connections. Define broker connections with Message VPN using AsyncAPI examples.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/solace/0.3.0/server.html
 ---
 
 # Solace Server Binding v0.3.0

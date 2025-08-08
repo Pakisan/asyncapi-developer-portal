@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Use AsyncAPI's AMQP message binding v0.2.0 to specify content encoding and message type for better message organization and processing in AMQP 0-9-1 applications.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amqp/0.2.0/message.html
+
 ---
 
 # AMQP 0-9-1 Message Binding v0.2.0

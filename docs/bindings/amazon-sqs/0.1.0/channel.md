@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Overview of AsyncAPI SQS channel binding v0.1.0. This placeholder is reserved for future channel-level configurations in AWS SQS integrations.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.1.0/channel.html
+
 ---
 
 # Amazon SQS Channel Binding v0.1.0

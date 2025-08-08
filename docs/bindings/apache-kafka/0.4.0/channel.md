@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Apache Kafka channel bindings v0.4.0 for AsyncAPI. Define topics, partitions, replicas, and advanced topic settings for scalable event streaming.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/channel.html
+
 ---
 
 # Apache Kafka Channel Binding v0.4.0

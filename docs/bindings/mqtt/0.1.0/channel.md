@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT channel bindings for topic-based messaging. Define how AsyncAPI channels map to MQTT topics with examples and best practices.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/channel.html
 ---
 
 # MQTT Channel Binding v0.1.0

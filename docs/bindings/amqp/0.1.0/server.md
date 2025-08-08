@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Overview of AsyncAPI AMQP server binding v0.1.0. This placeholder is reserved for future server-level configurations in AMQP 0-9-1 integrations.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amqp/0.1.0/server.html
+
 ---
 
 # AMQP 0-9-1 Server Binding v0.1.0

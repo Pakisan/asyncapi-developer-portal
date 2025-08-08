@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Google Pub/Sub operation binding v0.1.0 placeholder for future configurations. Reserved for Google Pub/Sub-specific operation properties in GCP messaging.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/operation.html
 ---
 
 # Google Pub/Sub Operation Binding v0.1.0

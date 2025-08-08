@@ -29,9 +29,6 @@ head:
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/operation.png"
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/operation.html
 ---
 
 # MQTT 5.0 Operation Binding v0.1.0

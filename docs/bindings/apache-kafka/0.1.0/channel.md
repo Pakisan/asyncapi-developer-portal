@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Learn how to use Apache Kafka channel bindings v0.1.0 for AsyncAPI. This page covers foundational Kafka channel configuration for event-driven architectures.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/channel.html
+
 ---
 
 # Apache Kafka Channel Binding v0.1.0

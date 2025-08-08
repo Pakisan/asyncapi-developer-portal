@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure MQTT operation bindings for QoS levels and retain flags. Define publish and subscribe behaviors with examples and best practices.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/operation.html
 ---
 
 # MQTT Operation Binding v0.1.0

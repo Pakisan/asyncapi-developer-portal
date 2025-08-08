@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure AWS SNS subscriptions in AsyncAPI v0.1.0. Define consumers, filter policies, DLQ, and delivery policies for robust event-driven architectures.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/operation.html
 ---
 
 # Amazon SNS Operation Binding v0.1.0

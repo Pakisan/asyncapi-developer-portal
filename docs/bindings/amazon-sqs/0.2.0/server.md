@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Overview of AsyncAPI SQS server binding v0.2.0. This placeholder is reserved for future server-level configurations in AWS SQS integrations.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.2.0/server.html
+
 ---
 
 # Amazon SQS Server Binding v0.2.0

@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Overview of AsyncAPI SNS server binding v0.1.0. This placeholder is reserved for future server-level configurations in AWS SNS integrations.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/server.html
 ---
 
 # Amazon SNS Server Binding v0.1.0

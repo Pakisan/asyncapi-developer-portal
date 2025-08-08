@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: HTTP channel binding v0.2.0 placeholder for HTTP endpoints. Identifies AsyncAPI channels as HTTP endpoints for webhooks and APIs.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/http/0.2.0/channel.html
 ---
 
 # HTTP Channel Binding v0.2.0

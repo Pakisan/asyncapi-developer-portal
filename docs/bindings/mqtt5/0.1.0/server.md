@@ -29,9 +29,6 @@ head:
   - - meta
     - name: "og:image"
       content: "/bindings/mqtt5/0.1.0/server.png"
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/mqtt5/0.1.0/server.html
 ---
 
 # MQTT 5.0 Server Binding v0.1.0

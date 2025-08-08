@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Define Apache Kafka message bindings v0.1.0 for AsyncAPI. Learn how to configure message keys for partitioning and ordering in event-driven applications.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/message.html
+
 ---
 
 # Apache Kafka Message Binding v0.1.0

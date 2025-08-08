@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Google Pub/Sub server binding v0.1.0 placeholder for GCP endpoints. Identifies AsyncAPI servers as Google Pub/Sub service endpoints.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/server.html
 ---
 
 # Google Pub/Sub Server Binding v0.1.0

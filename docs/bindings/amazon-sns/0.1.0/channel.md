@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure AWS SNS topics in AsyncAPI v0.1.0. Define topic names, ordering, access policies, and tags for robust event-driven architectures.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/channel.html
 ---
 
 # Amazon SNS Channel Binding v0.1.0

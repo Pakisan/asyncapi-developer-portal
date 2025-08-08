@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Google Pub/Sub message bindings v0.1.0 for schema and ordering. Define message attributes, ordering keys, and schema validation for GCP messaging.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/message.html
 ---
 
 # Google Pub/Sub Message Binding v0.1.0

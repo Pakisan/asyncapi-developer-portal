@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Define Apache Kafka message bindings v0.4.0 for AsyncAPI. Configure message keys, schema registry integration, and schema evolution for robust event streaming.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/message.html
+
 ---
 
 # Apache Kafka Message Binding v0.4.0

@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Google Pub/Sub channel bindings v0.1.0 for topic settings. Define schema validation and message retention for GCP messaging with examples.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/googlepubsub/0.1.0/channel.html
 ---
 
 # Google Pub/Sub Channel Binding v0.1.0

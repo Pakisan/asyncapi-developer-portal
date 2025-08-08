@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Define AWS SQS operation v0.2.0 in AsyncAPI. Define standard and FIFO queues, DLQ, redrive and access policies, and tags for robust event-driven architectures.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.2.0/operation.html
+
 ---
 
 # Amazon SQS Operation Binding v0.2.0

@@ -29,9 +29,6 @@ head:
   - - meta
     - name: twitter:description
       content: HTTP server binding v0.2.0 placeholder for HTTP servers. Identifies AsyncAPI servers as HTTP endpoints for webhooks and APIs.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/http/0.2.0/server.html
 ---
 
 # HTTP Server Binding v0.2.0

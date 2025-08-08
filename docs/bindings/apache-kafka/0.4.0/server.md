@@ -29,9 +29,7 @@ head:
   - - meta
     - name: twitter:description
       content: Configure Apache Kafka server bindings v0.4.0 for AsyncAPI. Set up schema registry URL and vendor for centralized schema management in event-driven architectures.
-  - - link
-    - rel: canonical
-      href: https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/server.html
+
 ---
 
 # Apache Kafka Server Binding v0.4.0
