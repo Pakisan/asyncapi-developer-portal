@@ -1,5 +1,7 @@
 <script setup lang="ts">
 let implementedFeatures = [
+  {name: "Spectral linter integration", date: "Aug 17, 2025", description: "", isFree: false},
+  {name: "Redocly linter integration", date: "Jul 26, 2025", description: "", isFree: false},
   {name: "Own implementation of FileEditor", date: "May 20, 2025", description: "", isFree: true},
   {name: "Support more local references file types", date: "Dec 03, 2024", description: "", isFree: true},
   {name: "Support .yml and single quotes", date: "Sep 02, 2024", description: "", isFree: true},
@@ -13,8 +15,6 @@ let implementedFeatures = [
 ]
 
 let upcomingFeatures = [
-  {name: "Spectral linter integration", date: "ETA: Q2 2025", description: "", isFree: false},
-  {name: "Redocly linter integration", date: "ETA: Q2 2025", description: "", isFree: false},
   {name: "AsyncAPI linter integration", date: "ETA: Q2 2025", description: "", isFree: false},
   {name: "Edit AsyncAPI trough UI", date: "ETA: Q3 2025", description: "", isFree: false},
 ]
