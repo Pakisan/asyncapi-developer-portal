@@ -735,18 +735,22 @@ export default defineConfig({
 
   transformHead: ({ pageData }) => {
     const headers: HeadConfig[] = pageData.frontmatter.head ?? [];
+    const filteredHeaders = headers.filter(header => {
+        const name = header[1].rel;
+        return !['canonical'].includes(name);
+    });
 
     let ogImagePath: string = "";
-    headers.forEach(header => {
+    filteredHeaders.forEach(header => {
       if (header[1].name === "og:image") {
         ogImagePath = header[1].content;
       }
     })
 
     if (ogImagePath.length > 0) {
-      headers.push(['meta', { property: 'og:image', content: `https://asyncapi.pavelon.dev${ogImagePath}` }])
+      filteredHeaders.push(['meta', { property: 'og:image', content: `https://asyncapi.pavelon.dev${ogImagePath}` }])
     }
-    return headers
+    return filteredHeaders
   },
 
   sitemap: {
