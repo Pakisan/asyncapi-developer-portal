@@ -190,6 +190,11 @@
       "source": "/bindings.html",
       "destination": "/bindings/",
       "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin.html",
+      "destination": "/jetbrains-plugin/",
+      "permanent": true
     }
   ]
 }

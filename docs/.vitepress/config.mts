@@ -683,6 +683,100 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/jetbrains-plugin': [
+        {
+          text: 'AsyncAPI Plugin',
+          link: '/jetbrains-plugin/',
+          items: [
+            {
+              text: 'Freemium model',
+              link: '/jetbrains-plugin/freemium-model',
+            }
+          ]
+        },
+        {
+          text: 'UI 💳',
+          items: [
+            {
+              text: 'Read',
+              link: '/jetbrains-plugin/ui/read',
+            },
+            {
+              text: 'Read & Edit 🏗️'
+            }
+          ]
+        },
+        {
+          text: 'Linters 💳',
+          link: '/jetbrains-plugin/linters',
+          items: [
+            {
+              text: 'Spectral CLI',
+              link: '/jetbrains-plugin/linters/spectral',
+            },
+            {
+              text: 'Redocly CLI',
+              link: '/jetbrains-plugin/linters/redocly',
+            }
+          ]
+        },
+        {
+          text: 'Typed components 💳',
+          link: '/jetbrains-plugin/typed-components/',
+          items: [
+            {
+              text: 'Server',
+              link: '/jetbrains-plugin/typed-components/server',
+            },
+            {
+              text: 'Channel',
+              link: '/jetbrains-plugin/typed-components/channel',
+            },
+            {
+              text: 'Operation',
+              link: '/jetbrains-plugin/typed-components/operation',
+            }
+          ]
+        },
+        {
+          text: 'Frameworks 💳',
+          link: '/jetbrains-plugin/frameworks',
+          items: [
+            {
+              text: 'Spring',
+              collapsed: false,
+              items: [
+                {
+                  text: 'Apache Kafka 🏗️',
+                  link: '/jetbrains-plugin/frameworks/spring/apache-kafka/',
+                  collapsed: false,
+                  items: [
+                    {text: 'Inspections', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/inspections.md'},
+                    {
+                      text: 'Receive Operations',
+                      items: [
+                        {text: 'Class Level @KafkaListeners', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.md'},
+                        {text: 'Class Level @KafkaListener', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.md'},
+                        {text: 'Method Level @KafkaListeners'},
+                        {text: 'Method Level @KafkaListener'},
+                      ]
+                    },
+                    {
+                      text: 'Receive & Reply Operations',
+                      items: [
+                        {text: 'Class Level @SendTo', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.md'},
+                      ]
+                    },
+                    {
+                      text: 'Send Operations'
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
 
