@@ -761,8 +761,8 @@ export default defineConfig({
                         {text: 'KafkaAdmin 🛠️', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels.md'},
                         {text: 'Class Level @KafkaListeners', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels.md'},
                         {text: 'Class Level @KafkaListener', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.md'},
-                        {text: 'Method Level @KafkaListeners'},
-                        {text: 'Method Level @KafkaListener'},
+                        {text: 'Method Level @KafkaListeners 🆕', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-channels.md'},
+                        {text: 'Method Level @KafkaListener 🆕', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels.md'},
                       ]
                     },
                     {
@@ -771,18 +771,19 @@ export default defineConfig({
                       items: [
                         {text: 'Class Level @KafkaListeners', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.md'},
                         {text: 'Class Level @KafkaListener', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.md'},
-                        {text: 'Method Level @KafkaListeners'},
-                        {text: 'Method Level @KafkaListener'},
+                        {text: 'Method Level @KafkaListeners 🆕', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-operations.md'},
+                        {text: 'Method Level @KafkaListener 🆕', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations.md'},
                       ]
                     },
                     {
                       text: 'Receive & Reply Operations',
                       items: [
                         {text: 'Class Level @SendTo', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.md'},
+                        {text: 'Method Level @SendTo 🆕', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-SendTo-operations.md'},
                       ]
                     },
                     {
-                      text: 'Send Operations',
+                      text: 'Send Operations 🆕',
                       collapsed: false,
                       items: [
                         {text: 'KafkaTemplate', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations.md'},
