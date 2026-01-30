@@ -782,7 +782,11 @@ export default defineConfig({
                       ]
                     },
                     {
-                      text: 'Send Operations'
+                      text: 'Send Operations',
+                      collapsed: false,
+                      items: [
+                        {text: 'KafkaTemplate', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations.md'},
+                      ]
                     }
                   ]
                 }
