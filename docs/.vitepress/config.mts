@@ -748,16 +748,29 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
-                  text: 'Apache Kafka 🏗️',
+                  text: 'Apache Kafka',
                   link: '/jetbrains-plugin/frameworks/spring/apache-kafka/',
                   collapsed: false,
                   items: [
-                    {text: 'Inspections', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/inspections.md'},
+                    {text: 'Inspections 🛠️', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/inspections.md'},
+                    {text: 'Servers', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/servers.md'},
+                    {
+                      text: 'Channels',
+                      collapsed: true,
+                      items: [
+                        {text: 'KafkaAdmin 🛠️', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels.md'},
+                        {text: 'Class Level @KafkaListeners', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels.md'},
+                        {text: 'Class Level @KafkaListener', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.md'},
+                        {text: 'Method Level @KafkaListeners'},
+                        {text: 'Method Level @KafkaListener'},
+                      ]
+                    },
                     {
                       text: 'Receive Operations',
+                      collapsed: true,
                       items: [
-                        {text: 'Class Level @KafkaListeners', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.md'},
-                        {text: 'Class Level @KafkaListener', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.md'},
+                        {text: 'Class Level @KafkaListeners', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.md'},
+                        {text: 'Class Level @KafkaListener', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.md'},
                         {text: 'Method Level @KafkaListeners'},
                         {text: 'Method Level @KafkaListener'},
                       ]
@@ -765,7 +778,7 @@ export default defineConfig({
                     {
                       text: 'Receive & Reply Operations',
                       items: [
-                        {text: 'Class Level @SendTo', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.md'},
+                        {text: 'Class Level @SendTo', link: '/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.md'},
                       ]
                     },
                     {
@@ -846,6 +859,101 @@ export default defineConfig({
     }
     return filteredHeaders
   },
+  //
+  // transformHead: ({ pageData, siteData, siteConfig, pageContext, page }) => {
+  //   const headers: HeadConfig[] = pageData.frontmatter.head ?? [];
+  //   const title = pageData.frontmatter.title || pageData.title || siteData.title;
+  //   const description = pageData.frontmatter.description || pageData.description || siteData.description;
+  //   const siteUrl = 'https://asyncapi.pavelon.dev';
+  //   const url = `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}`;
+  //   const imageUrl = pageData.frontmatter.image || '/asyncapi.png';
+  //   const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `${siteUrl}${imageUrl}`;
+  //
+  //   // Remove any existing tags that we'll be setting to avoid duplicates
+  //   const filteredHeaders = headers.filter(header => {
+  //     const name = header[1].name || header[1].property;
+  //     return !['og:title', 'og:description', 'og:url', 'og:image', 'og:type',
+  //              'twitter:card', 'twitter:title', 'twitter:description', 'twitter:image',
+  //              'canonical'].includes(name);
+  //   });
+  //
+  //   // Canonical URL
+  //   filteredHeaders.push(['link', { rel: 'canonical', href: url }]);
+  //
+  //   // Open Graph tags
+  //   filteredHeaders.push(['meta', { property: 'og:title', content: title }]);
+  //   filteredHeaders.push(['meta', { property: 'og:description', content: description }]);
+  //   filteredHeaders.push(['meta', { property: 'og:url', content: url }]);
+  //   filteredHeaders.push(['meta', { property: 'og:image', content: absoluteImageUrl }]);
+  //   filteredHeaders.push(['meta', { property: 'og:type', content: 'website' }]);
+  //   filteredHeaders.push(['meta', { property: 'og:site_name', content: siteData.title }]);
+  //
+  //   // Twitter Card tags
+  //   filteredHeaders.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }]);
+  //   filteredHeaders.push(['meta', { name: 'twitter:title', content: title }]);
+  //   filteredHeaders.push(['meta', { name: 'twitter:description', content: description }]);
+  //   filteredHeaders.push(['meta', { name: 'twitter:image', content: absoluteImageUrl }]);
+  //
+  //   // JSON-LD structured data
+  //   let jsonLd;
+  //
+  //   // Check if this is a blog post/article (has date and author in frontmatter)
+  //   if (pageData.frontmatter.date && pageData.frontmatter.author) {
+  //     // Use BlogPosting schema for blog posts
+  //     jsonLd = {
+  //       '@context': 'https://schema.org',
+  //       '@type': 'BlogPosting',
+  //       headline: title,
+  //       description: description,
+  //       image: absoluteImageUrl,
+  //       url: url,
+  //       datePublished: pageData.frontmatter.date,
+  //       dateModified: pageData.frontmatter.lastUpdated || pageData.frontmatter.date,
+  //       author: {
+  //         '@type': 'Person',
+  //         name: pageData.frontmatter.author
+  //       },
+  //       publisher: {
+  //         '@type': 'Organization',
+  //         name: 'AsyncAPI Community',
+  //         logo: {
+  //           '@type': 'ImageObject',
+  //           url: `${siteUrl}/asyncapi.png`
+  //         }
+  //       },
+  //       mainEntityOfPage: {
+  //         '@type': 'WebPage',
+  //         '@id': url
+  //       }
+  //     };
+  //   } else {
+  //     // Use WebPage schema for regular pages
+  //     jsonLd = {
+  //       '@context': 'https://schema.org',
+  //       '@type': 'WebPage',
+  //       name: title,
+  //       description: description,
+  //       url: url,
+  //       image: absoluteImageUrl,
+  //       publisher: {
+  //         '@type': 'Organization',
+  //         name: 'AsyncAPI Community',
+  //         logo: {
+  //           '@type': 'ImageObject',
+  //           url: `${siteUrl}/asyncapi.png`
+  //         }
+  //       }
+  //     };
+  //   }
+  //
+  //   filteredHeaders.push([
+  //     'script',
+  //     { type: 'application/ld+json' },
+  //     JSON.stringify(jsonLd)
+  //   ]);
+  //
+  //   return filteredHeaders;
+  // },
 
   sitemap: {
     hostname: 'https://asyncapi.pavelon.dev'

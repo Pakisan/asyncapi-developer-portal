@@ -195,6 +195,21 @@
       "source": "/jetbrains-plugin.html",
       "destination": "/jetbrains-plugin/",
       "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html",
+      "permanent": true
     }
   ]
 }
