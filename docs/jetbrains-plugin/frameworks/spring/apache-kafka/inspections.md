@@ -310,3 +310,13 @@ public class MultiMessagesListener {
 ```
 
 *Error Level*: <span style="color:yellow">Warning</span>
+
+## Topics
+
+Topic name inspection checks if the topic name is valid
+
+### Invalid topic name
+
+Topic name is invalid when it violates this pattern: `[a-zA-Z0-9\\._\\-]`
+
+*Error Level*: <span style="color:red">Error</span>
