@@ -1,5 +1,5 @@
 {
-  "target": "https://asyncapi.pavelon.dev/bindings/amazon-0.2.0/channel.json",
+  "target": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.2.0/channel.json",
   "$comment": "Amazon SQS channel test",
   "tests": [
     {
