@@ -1,5 +1,5 @@
 {
-  "target": "https://asyncapi.pavelon.dev/bindings/bindings/jms/0.0.1/operation.json",
+  "target": "https://asyncapi.pavelon.dev/bindings/jms/0.0.1/operation.json",
   "$comment": "Jakarta Messaging operation test",
   "tests": [
     {
