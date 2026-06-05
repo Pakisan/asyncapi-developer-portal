@@ -1,5 +1,5 @@
 {
-  "target": "https://asyncapi.pavelon.dev/bindings/bindings/jms/0.0.1/channel.json",
+  "target": "https://asyncapi.pavelon.dev/bindings/jms/0.0.1/channel.json",
   "$comment": "JMS 0.0.1 channel binding tests",
   "tests": [
     {

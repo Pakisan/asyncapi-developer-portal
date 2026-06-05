@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://asyncapi.pavelon.dev/bindings/bindings/jms/0.0.1/channel.json",
+  "$id": "https://asyncapi.pavelon.dev/bindings/jms/0.0.1/channel.json",
   "title": "Channel Schema",
   "description": "This object contains configuration for describing a JMS queue, or FIFO queue as an AsyncAPI channel. This objects only contains configuration that can not be provided in the AsyncAPI standard channel object.",
   "examples": [
