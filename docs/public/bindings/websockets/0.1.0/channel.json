@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://asyncapi.pavelon.dev/bindings/bindings/websockets/0.1.0/channel.json",
+  "$id": "https://asyncapi.pavelon.dev/bindings//websockets/0.1.0/channel.json",
   "title": "WebSockets channel bindings object",
   "description": "When using WebSockets, the channel represents the connection. Unlike other protocols that support multiple virtual channels (topics, routing keys, etc.) per connection, WebSockets doesn't support virtual channels or, put it another way, there's only one channel and its characteristics are strongly related to the protocol used for the handshake, i.e., HTTP.",
   "examples": [

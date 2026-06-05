@@ -1,5 +1,5 @@
 {
-  "target": "https://asyncapi.pavelon.dev/bindings/bindings/websockets/0.1.0/message.json",
+  "target": "https://asyncapi.pavelon.dev/bindings//websockets/0.1.0/message.json",
   "$comment": "WebSockets message test",
   "tests": [
     {

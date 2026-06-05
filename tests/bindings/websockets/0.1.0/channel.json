@@ -1,5 +1,5 @@
 {
-  "target": "https://asyncapi.pavelon.dev/bindings/bindings/websockets/0.1.0/channel.json",
+  "target": "https://asyncapi.pavelon.dev/bindings//websockets/0.1.0/channel.json",
   "$comment": "WebSockets 0.1.0 channel binding tests",
   "tests": [
     {
