@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/operation.json",
-  "title": "Operation Schema",
-  "description": "This object contains information about the server representation in Apache Pulsar.",
+  "title": "Apache Pulsar - Operation Binding v0.1.0",
+  "description": "Contains information about the operation representation in Apache Pulsar",
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,5 +10,10 @@
       "type": "string"
     }
   },
+  "examples": [
+    {
+      "bindingVersion": "0.1.0"
+    }
+  ],
   "additionalProperties": false
 }
