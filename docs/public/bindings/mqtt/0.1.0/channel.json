@@ -3,6 +3,11 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/channel.json",
   "title": "MQTT - Channel Binding v0.1.0",
   "description": "Contains information about the channel representation in MQTT",
+  "examples": [
+    {
+      "bindingVersion": "0.1.0"
+    }
+  ],
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,10 +15,5 @@
       "type": "string"
     }
   },
-  "examples": [
-    {
-      "bindingVersion": "0.1.0"
-    }
-  ],
   "additionalProperties": false
 }
