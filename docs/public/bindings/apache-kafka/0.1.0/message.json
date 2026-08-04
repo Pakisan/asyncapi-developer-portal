@@ -1,7 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/message.json",
-  "title": "Kafka message bindings object",
+  "title": "Apache Kafka - Message Binding v0.1.0",
+  "description": "Contains information about the message representation in Apache Kafka",
   "examples": [
     {
       "bindingVersion": "0.1.0",
@@ -11,7 +12,7 @@
       }
     },
     {
-      "bindingVersion": "0.2.0",
+      "bindingVersion": "0.1.0",
       "key": {
         "$ref": "path/to/user-create.avsc#/UserCreate"
       }
@@ -20,12 +21,11 @@
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.1.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.1.0", "latest" ]
     },
     "key": {
-      "description": "The message key.",
+      "description": "The message key",
       "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
     }
   },
