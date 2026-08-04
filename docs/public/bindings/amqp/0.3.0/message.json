@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/amqp/0.3.0/message.json",
-  "title": "AMQP message bindings object",
-  "description": "This object contains information about the message representation in AMQP.",
+  "title": "AMQP 0-9-1 - Message Binding v0.3.0",
+  "description": "Contains information about the message representation in AMQP 0-9-1",
   "examples": [
     {
       "contentEncoding": "gzip",
@@ -13,16 +13,15 @@
   "type": "object",
   "properties": {
     "contentEncoding": {
-      "description": "A MIME encoding for the message content.",
+      "description": "A MIME encoding for the message content",
       "type": "string"
     },
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.3.0" ]
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "enum": [ "0.3.0", "latest" ]
     },
     "messageType": {
-      "description": "Application-specific message type.",
+      "description": "Application-specific message type",
       "type": "string"
     }
   },
