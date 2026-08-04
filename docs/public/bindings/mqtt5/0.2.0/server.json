@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/mqtt5/0.2.0/server.json",
-  "title": "Server Schema",
-  "description": "This object contains information about the server representation in MQTT5.",
+  "title": "MQTT v5.0 - Server Binding",
+  "description": "This object contains information about the server representation in MQTT5 v5.0",
   "examples": [
     {
       "bindingVersion": "0.2.0",
@@ -19,12 +19,11 @@
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.2.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.2.0", "latest" ]
     },
     "sessionExpiryInterval": {
-      "description": "Session Expiry Interval in seconds or a Schema Object containing the definition of the interval.",
+      "description": "Session Expiry Interval in seconds or a Schema Object containing the definition of the interval",
       "oneOf": [
         {
           "type": "integer",
