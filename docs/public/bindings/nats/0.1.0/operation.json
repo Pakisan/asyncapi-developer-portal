@@ -1,23 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/nats/0.1.0/operation.json",
-  "title": "NATS operation bindings object",
-  "description": "This object contains information about the operation representation in NATS.",
+  "title": "NATS - Operation Binding v0.1.0",
+  "description": "Contains information about the operation representation in NATS",
   "examples": [
     {
       "bindingVersion": "0.1.0",
+      "queue": "MyCustomQueue"
+    },
+    {
+      "bindingVersion": "0.1.0",
+      "x-nats-ext": "extension name",
       "queue": "MyCustomQueue"
     }
   ],
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.1.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.1.0", "latest" ]
     },
     "queue": {
-      "description": "Defines the name of the queue to use. It MUST NOT exceed 255 characters.",
+      "description": "Defines the name of the queue to use. It MUST NOT exceed 255 characters",
       "type": "string",
       "maxLength": 255
     }

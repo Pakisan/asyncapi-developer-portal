@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/nats/0.1.0/channel.json",
-  "title": "Channel Schema",
-  "description": "This object contains information about the channel representation in NATS.",
+  "title": "NATS - Channel Binding v0.1.0",
+  "description": "Contains information about the channel representation in NATS",
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,5 +10,10 @@
       "type": "string"
     }
   },
+  "examples": [
+    {
+      "bindingVersion": "0.1.0"
+    }
+  ],
   "additionalProperties": false
 }
