@@ -1,23 +1,23 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/solace/0.2.0/server.json",
-  "title": "Solace server bindings object",
-  "description": "This object contains server connection information about the Solace broker. This object contains additional connectivity information not possible to represent within the core AsyncAPI specification.",
+  "title": "Solace - Server Binding v0.2.0",
+  "description": "Contains server connection information about the Solace broker",
   "examples": [
     {
       "bindingVersion": "0.2.0",
-      "msgVpn": "ProdVPN"
+      "msvVpn": "ProdVPN"
     }
   ],
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding.",
-      "type": "string",
-      "enum": [ "0.2.0" ]
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "default": "latest",
+      "enum": [ "0.2.0", "latest" ]
     },
     "msvVpn": {
-      "description": "The name of the Virtual Private Network to connect to on the Solace broker.",
+      "description": "The name of the Virtual Private Network to connect to on the Solace broker",
       "type": "string"
     }
   },
