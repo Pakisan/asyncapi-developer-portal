@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/solace/0.3.0/operation.json",
-  "title": "Solace operation bindings object",
-  "description": "This object contains information about the operation representation in Solace.",
+  "title": "Solace - Operation Binding v0.3.0",
+  "description": "Contains information about the operation representation in Solace",
   "examples": [
     {
       "bindingVersion": "0.3.0",
@@ -16,6 +16,16 @@
           }
         },
         {
+          "destinationType": "queue",
+          "queue": {
+            "accessType": "exclusive",
+            "name": "sampleQueue",
+            "topicSubscriptions": [ "samples/*" ],
+            "maxMsgSpoolUsage": "4",
+            "maxTtl": "1"
+          }
+        },
+        {
           "destinationType": "topic",
           "topicSubscriptions": [ "samples/*" ]
         }
@@ -25,12 +35,11 @@
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.3.0" ]
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "enum": [ "0.3.0", "latest" ]
     },
     "destinations": {
-      "description": "The list of Solace destinations referenced in the operation.",
+      "description": "The list of Solace destinations referenced in the operation",
       "type": "array",
       "items": {
         "type": "object",
@@ -38,15 +47,13 @@
           {
             "properties": {
               "destinationType": {
-                "description": "If the type is queue, then the subscriber can bind to the queue. The queue subscribes to the given topicSubscriptions. If no topicSubscriptions are provied, the queue will subscribe to the topic as represented by the channel name.",
-                "type": "string",
+                "description": "If the type is queue, then the subscriber can bind to the queue. The queue subscribes to the given topicSubscriptions. If no topicSubscriptions are provied, the queue will subscribe to the topic as represented by the channel name",
                 "const": "queue"
               },
               "queue": {
                 "type": "object",
                 "properties": {
                   "accessType": {
-                    "type": "string",
                     "enum": [ "exclusive", "nonexclusive" ]
                   },
                   "maxMsgSpoolUsage": {
@@ -54,7 +61,7 @@
                     "type": "string"
                   },
                   "maxTtl": {
-                    "description": "The maximum TTL to apply to messages to be spooled.",
+                    "description": "The maximum TTL to apply to messages to be spooled",
                     "type": "string"
                   },
                   "name": {
@@ -62,7 +69,7 @@
                     "type": "string"
                   },
                   "topicSubscriptions": {
-                    "description": "The list of topics that the queue subscribes to.",
+                    "description": "The list of topics that the queue subscribes to",
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -75,12 +82,11 @@
           {
             "properties": {
               "destinationType": {
-                "description": "If the type is topic, then the subscriber subscribes to the given topicSubscriptions. If no topicSubscriptions are provided, the client will subscribe to the topic as represented by the channel name.",
-                "type": "string",
+                "description": "If the type is topic, then the subscriber subscribes to the given topicSubscriptions. If no topicSubscriptions are provided, the client will subscribe to the topic as represented by the channel name",
                 "const": "topic"
               },
               "topicSubscriptions": {
-                "description": "The list of topics that the client subscribes to.",
+                "description": "The list of topics that the client subscribes to",
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -91,7 +97,6 @@
         ],
         "properties": {
           "deliveryMode": {
-            "type": "string",
             "enum": [ "direct", "persistent" ]
           }
         }
