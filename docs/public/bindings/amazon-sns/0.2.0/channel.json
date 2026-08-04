@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.2.0/channel.json",
-  "title": "Channel Schema",
-  "description": "This object contains information about the channel representation in SNS.",
+  "title": "Amazon SNS - Channel Binding v0.2.0",
+  "description": "Contains information about the channel representation in Amazon SNS",
   "examples": [
     {
       "name": "my-sns-topic",
@@ -21,12 +21,12 @@
   "required": [ "name" ],
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding.",
+      "description": "The version of this binding",
       "default": "latest",
       "type": "string"
     },
     "name": {
-      "description": "The name of the topic. Can be different from the channel name to allow flexibility around AWS resource naming limitations.",
+      "description": "The name of the topic. Can be different from the channel name to allow flexibility around AWS resource naming limitations",
       "type": "string"
     },
     "ordering": {
@@ -36,7 +36,7 @@
       "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.2.0/channel.json#/definitions/policy"
     },
     "tags": {
-      "description": "Key-value pairs that represent AWS tags on the topic.",
+      "description": "Key-value pairs that represent AWS tags on the topic",
       "type": "object"
     }
   },
@@ -46,17 +46,16 @@
   "additionalProperties": false,
   "definitions": {
     "ordering": {
-      "description": "By default, we assume an unordered SNS topic. This field allows configuration of a FIFO SNS Topic.",
+      "description": "By default, we assume an unordered SNS topic. This field allows configuration of a FIFO SNS Topic",
       "type": "object",
       "required": [ "type" ],
       "properties": {
         "type": {
-          "description": "Defines the type of SNS Topic.",
-          "type": "string",
+          "description": "Defines the type of SNS Topic",
           "enum": [ "standard", "FIFO" ]
         },
         "contentBasedDeduplication": {
-          "description": "True to turn on de-duplication of messages for a channel.",
+          "description": "True to turn on de-duplication of messages for a channel",
           "type": "boolean"
         }
       },
@@ -65,7 +64,7 @@
       }
     },
     "policy": {
-      "description": "The security policy for the SNS Topic.",
+      "description": "The security policy for the SNS Topic",
       "type": "object",
       "required": [ "statements" ],
       "properties": {
@@ -87,7 +86,7 @@
       "properties": {
         "action": {
           "description": "The SNS permission(s) being allowed or denied e.g. sns:Publish",
-          "oneOf": [
+          "anyOf": [
             {
               "type": "string"
             },
@@ -107,7 +106,7 @@
               "type": "object",
               "patternProperties": {
                 ".*": {
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "type": "string"
                     },
@@ -124,11 +123,10 @@
           }
         },
         "effect": {
-          "type": "string",
           "enum": [ "Allow", "Deny" ]
         },
         "principal": {
-          "description": "The AWS account(s) or resource ARN(s) that this statement applies to.",
+          "description": "The AWS account(s) or resource ARN(s) that this statement applies to",
           "oneOf": [
             {
               "type": "string"
@@ -138,7 +136,7 @@
               "required": [ "AWS" ],
               "properties": {
                 "AWS": {
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "type": "string"
                     },
@@ -158,7 +156,7 @@
               "required": [ "Service" ],
               "properties": {
                 "Service": {
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "type": "string"
                     },
@@ -176,8 +174,8 @@
           ]
         },
         "resource": {
-          "description": "The resource(s) that this policy applies to.",
-          "oneOf": [
+          "description": "The resource(s) that this policy applies to",
+          "anyOf": [
             {
               "type": "string"
             },
