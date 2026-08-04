@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.3.0/channel.json",
-  "title": "Channel Schema",
-  "description": "This object contains information about the channel representation in Kafka.",
+  "title": "Apache Kafka - Channel Binding v0.3.0",
+  "description": "Contains information about the channel representation in Apache Kafka",
   "examples": [
     {
       "bindingVersion": "0.3.0",
@@ -14,22 +14,21 @@
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.3.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.3.0", "latest" ]
     },
     "partitions": {
-      "description": "Number of partitions configured on this topic.",
+      "description": "Number of partitions configured on this topic",
       "type": "integer",
       "minimum": 1
     },
     "replicas": {
-      "description": "Number of replicas configured on this topic.",
+      "description": "Number of replicas configured on this topic",
       "type": "integer",
       "minimum": 1
     },
     "topic": {
-      "description": "Kafka topic name if different from channel name.",
+      "description": "Kafka topic name if different from channel name",
       "type": "string"
     }
   },
