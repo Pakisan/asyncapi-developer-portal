@@ -3,6 +3,11 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/operation.json",
   "title": "Anypoint MQ - Operation Binding v0.0.1",
   "description": "Contains information about the operation representation in Anypoint MQ",
+  "examples": [
+    {
+      "bindingVersion": "0.0.1"
+    }
+  ],
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,10 +15,5 @@
       "type": "string"
     }
   },
-  "examples": [
-    {
-      "bindingVersion": "0.0.1"
-    }
-  ],
   "additionalProperties": false
 }
