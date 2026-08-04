@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/http/0.1.0/message.json",
-  "title": "HTTP message bindings object",
-  "description": "This object contains information about the message representation in HTTP.",
+  "title": "HTTP - Message Binding v0.1.0",
+  "description": "Contains information about the message representation in HTTP",
   "examples": [
     {
       "bindingVersion": "0.1.0",
@@ -15,17 +15,22 @@
           }
         }
       }
+    },
+    {
+      "bindingVersion": "0.1.0",
+      "headers": {
+        "$ref": "#/http/headers/json-content-type"
+      }
     }
   ],
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.1.0" ]
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "enum": [ "0.1.0", "latest" ]
     },
     "headers": {
-      "description": "\tA Schema object containing the definitions for HTTP-specific headers. This schema MUST be of type 'object' and have a 'properties' key.",
+      "description": "A Schema object containing the definitions for HTTP-specific headers. This schema MUST be of type 'object' and have a 'properties' key",
       "oneOf": [
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"

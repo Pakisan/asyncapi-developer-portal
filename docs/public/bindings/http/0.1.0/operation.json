@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/http/0.1.0/operation.json",
-  "title": "HTTP operation bindings object",
-  "description": "This object contains information about the operation representation in HTTP.",
+  "title": "HTTP - Operation Binding v0.1.0",
+  "description": "Contains information about the operation representation in HTTP",
   "examples": [
     {
       "type": "response",
@@ -62,18 +62,15 @@
   "required": [ "type" ],
   "properties": {
     "type": {
-      "description": "Required. Type of operation. Its value MUST be either 'request' or 'response'.",
-      "type": "string",
+      "description": "Required. Type of operation. Its value MUST be either 'request' or 'response'",
       "enum": [ "request", "response" ]
     },
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.1.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.1.0", "latest" ]
     },
     "method": {
-      "description": "When 'type' is 'request', this is the HTTP method, otherwise it MUST be ignored. Its value MUST be one of 'GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS', 'CONNECT', and 'TRACE'.",
-      "type": "string",
+      "description": "When 'type' is 'request', this is the HTTP method, otherwise it MUST be ignored. Its value MUST be one of 'GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS', 'CONNECT', and 'TRACE'",
       "enum": [
         "GET",
         "PUT",
@@ -87,7 +84,7 @@
       ]
     },
     "query": {
-      "description": "A Schema object containing the definitions for each query parameter. This schema MUST be of type 'object' and have a properties key.",
+      "description": "A Schema object containing the definitions for each query parameter. This schema MUST be of type 'object' and have a properties key",
       "oneOf": [
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
