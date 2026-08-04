@@ -3,16 +3,16 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/http/0.1.0/channel.json",
   "title": "HTTP - Channel Binding v0.1.0",
   "description": "Contains information about the channel representation in HTTP",
+  "examples": [
+    {
+      "bindingVersion": "0.1.0"
+    }
+  ],
   "type": "object",
   "properties": {
     "bindingVersion": {
       "default": "0.1.0"
     }
   },
-  "examples": [
-    {
-      "bindingVersion": "0.1.0"
-    }
-  ],
   "additionalProperties": false
 }
