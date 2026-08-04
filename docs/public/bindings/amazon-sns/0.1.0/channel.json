@@ -21,13 +21,9 @@
       "policy": {
         "statements": [
           {
-            "action": [
-              "SNS:Publish"
-            ],
+            "action": [ "SNS:Publish" ],
             "effect": "Deny",
-            "principal": [
-              "*"
-            ]
+            "principal": [ "*" ]
           }
         ]
       },
