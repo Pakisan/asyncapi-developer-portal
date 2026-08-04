@@ -3,6 +3,11 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.3.0/message.json",
   "title": "Amazon SQS - Message Binding v0.3.0",
   "description": "Contains information about the message representation in Amazon SQS",
+  "examples": [
+    {
+      "bindingVersion": "0.3.0"
+    }
+  ],
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,10 +15,5 @@
       "type": "string"
     }
   },
-  "examples": [
-    {
-      "bindingVersion": "0.3.0"
-    }
-  ],
   "additionalProperties": false
 }
