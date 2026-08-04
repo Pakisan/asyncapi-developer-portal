@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/server.json",
   "title": "Apache Kafka - Server Binding v0.4.0",
-  "description": "This object contains server connection information to an Apache Kafka broker",
+  "description": "Contains server connection information to an Apache Kafka broker",
   "examples": [
     {
       "bindingVersion": "0.4.0",
