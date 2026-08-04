@@ -32,7 +32,6 @@
     },
     "schema": {
       "type": "object",
-      "additionalProperties": false,
       "required": [ "name", "type" ],
       "properties": {
         "type": {
@@ -41,7 +40,8 @@
         "name": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "patternProperties": {

@@ -3,6 +3,11 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/googlepubsub/0.2.0/server.json",
   "title": "Google Cloud Pub/Sub - Server Binding v0.2.0",
   "description": "Contains information about the server representation in Google Cloud Pub/Sub",
+  "examples": [
+    {
+      "bindingVersion": "0.2.0"
+    }
+  ],
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,10 +15,5 @@
       "type": "string"
     }
   },
-  "examples": [
-    {
-      "bindingVersion": "0.2.0"
-    }
-  ],
   "additionalProperties": false
 }
