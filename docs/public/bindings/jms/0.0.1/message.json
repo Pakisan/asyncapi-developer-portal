@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/jms/0.0.1/message.json",
-  "title": "Message Schema",
-  "description": "This object contains configuration for describing a JMS message as an AsyncAPI message. This objects only contains configuration that can not be provided in the AsyncAPI standard message object.",
+  "title": "JMS - Message Binding v0.0.1",
+  "description": "Contains configuration for describing a JMS message",
   "examples": [
     {
       "bindingVersion": "0.0.1",
@@ -52,12 +52,11 @@
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.0.1" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.0.1", "latest" ]
     },
     "headers": {
-      "description": "A Schema object containing the definitions for JMS headers (protocol headers). This schema MUST be of type 'object' and have a 'properties' key. Examples of JMS protocol headers are 'JMSMessageID', 'JMSTimestamp', and 'JMSCorrelationID'.",
+      "description": "A Schema object containing the definitions for JMS headers (protocol headers). This schema MUST be of type 'object' and have a 'properties' key. Examples of JMS protocol headers are 'JMSMessageID', 'JMSTimestamp', and 'JMSCorrelationID'",
       "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
     }
   },

@@ -1,14 +1,19 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/jms/0.0.1/operation.json",
-  "title": "Operation Schema",
-  "description": "This object contains information about the operation representation in Jakarta Messaging.",
+  "title": "JMS - Operation Binding v0.0.1",
+  "description": "Contains information about the operation representation in JMS",
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "default": "0.1.0",
+      "default": "0.0.1",
       "type": "string"
     }
   },
+  "examples": [
+    {
+      "bindingVersion": "0.0.1"
+    }
+  ],
   "additionalProperties": false
 }
