@@ -1,6 +1,17 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/security/X509.json",
+  "title": "AsyncAPI v3 - X.509 Authentication",
+  "description": "Contains information about X.509 Authentication",
+  "examples": [
+    {
+      "type": "X509"
+    },
+    {
+      "type": "X509",
+      "description": "Structured digital document format defined by RFC 5280 that securely binds a public key to an entity's identity using a trusted digital signature"
+    }
+  ],
   "type": "object",
   "required": [ "type" ],
   "properties": {
@@ -8,8 +19,7 @@
       "type": "string"
     },
     "type": {
-      "type": "string",
-      "enum": [ "X509" ]
+      "const": "X509"
     }
   },
   "patternProperties": {
