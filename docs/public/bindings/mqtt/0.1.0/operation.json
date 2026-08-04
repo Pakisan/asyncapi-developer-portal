@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/mqtt/0.1.0/operation.json",
-  "title": "MQTT operation bindings object",
-  "description": "This object contains information about the operation representation in MQTT.",
+  "title": "MQTT - Operation Binding v0.1.0",
+  "description": "Contains information about the operation representation in MQTT",
   "examples": [
     {
       "bindingVersion": "0.1.0",
@@ -13,16 +13,15 @@
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.1.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.1.0", "latest" ]
     },
     "qos": {
-      "description": "Defines the Quality of Service (QoS) levels for the message flow between client and server. Its value MUST be either 0 (At most once delivery), 1 (At least once delivery), or 2 (Exactly once delivery).",
+      "description": "Defines the Quality of Service (QoS) levels for the message flow between client and server. Its value MUST be either 0 (At most once delivery), 1 (At least once delivery), or 2 (Exactly once delivery)",
       "type": "integer"
     },
     "retain": {
-      "description": "Whether the broker should retain the message or not.",
+      "description": "Whether the broker should retain the message or not",
       "type": "boolean"
     }
   },
