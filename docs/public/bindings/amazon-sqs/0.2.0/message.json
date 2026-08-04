@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/0.2.0/message.json",
-  "title": "Message Schema",
-  "description": "This object contains information about the message representation in SQS.",
+  "title": "Amazon SQS - Message Binding v0.2.0",
+  "description": "Contains information about the message representation in Amazon SQS",
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,5 +10,10 @@
       "type": "string"
     }
   },
+  "examples": [
+    {
+      "bindingVersion": "0.2.0"
+    }
+  ],
   "additionalProperties": false
 }
