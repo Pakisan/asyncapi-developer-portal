@@ -1,8 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/operation.json",
-  "title": "Operation Schema",
-  "description": "This object contains information about the operation representation in Anypoint MQ.",
+  "title": "Anypoint MQ - Operation Binding v0.0.1",
+  "description": "Contains information about the operation representation in Anypoint MQ",
   "type": "object",
   "properties": {
     "bindingVersion": {
@@ -10,5 +10,10 @@
       "type": "string"
     }
   },
+  "examples": [
+    {
+      "bindingVersion": "0.0.1"
+    }
+  ],
   "additionalProperties": false
 }

@@ -1,30 +1,38 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/anypointmq/0.0.1/channel.json",
-  "title": "Anypoint MQ channel bindings object",
-  "description": "This object contains configuration for describing an Anypoint MQ exchange, queue, or FIFO queue as an AsyncAPI channel. This objects only contains configuration that can not be provided in the AsyncAPI standard channel object.",
+  "title": "Anypoint MQ - Channel Binding v0.0.1",
+  "description": "Contains configuration for describing an Anypoint MQ exchange, queue, or FIFO queue as an AsyncAPI channel",
   "examples": [
     {
       "bindingVersion": "0.0.1",
       "destination": "user-signup-exchg",
       "destinationType": "exchange"
+    },
+    {
+      "bindingVersion": "0.0.1",
+      "destination": "user-signup-queue",
+      "destinationType": "queue"
+    },
+    {
+      "bindingVersion": "0.0.1",
+      "destination": "user-signup-fifo-queue",
+      "destinationType": "fifo-queue"
     }
   ],
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.0.1" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.0.1", "latest" ]
     },
     "destination": {
-      "description": "The destination (queue or exchange) name for this channel. SHOULD only be specified if the channel name differs from the actual destination name, such as when the channel name is not a valid destination name in Anypoint MQ. Defaults to the channel name.",
+      "description": "The destination (queue or exchange) name for this channel. SHOULD only be specified if the channel name differs from the actual destination name, such as when the channel name is not a valid destination name in Anypoint MQ. Defaults to the channel name",
       "type": "string"
     },
     "destinationType": {
-      "description": "The type of destination. SHOULD be specified to document the messaging model (publish/subscribe, point-to-point, strict message ordering) supported by this channel.",
+      "description": "The type of destination. SHOULD be specified to document the messaging model (publish/subscribe, point-to-point, strict message ordering) supported by this channel",
       "default": "queue",
-      "type": "string",
       "enum": [ "exchange", "queue", "fifo-queue" ]
     }
   },
