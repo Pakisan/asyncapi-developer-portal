@@ -1,17 +1,27 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/security/asymmetricEncryption.json",
+  "title": "AsyncAPI v3 - Asymmetric Encryption Authentication",
+  "description": "Contains information about Asymmetric Encryption Authentication",
+  "examples": [
+    {
+      "type": "asymmetricEncryption"
+    },
+    {
+      "type": "asymmetricEncryption",
+      "description": "Provides authentication by using a public and private key pair to create digital signatures and verify user or device identity"
+    }
+  ],
   "type": "object",
   "required": [ "type" ],
   "properties": {
     "description": {
-      "description": "A short description for security scheme.",
+      "description": "A short description for security scheme",
       "type": "string"
     },
     "type": {
-      "description": "The type of the security scheme.",
-      "type": "string",
-      "enum": [ "asymmetricEncryption" ]
+      "description": "The type of the security scheme",
+      "const": "asymmetricEncryption"
     }
   },
   "patternProperties": {
