@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/mqtt/0.2.0/message.json",
-  "title": "MQTT message bindings object",
-  "description": "This object contains information about the message representation in MQTT.",
+  "title": "MQTT - Message Binding v0.2.0",
+  "description": "Contains information about the message representation in MQTT",
   "examples": [
     {
       "bindingVersion": "0.2.0"
@@ -15,21 +15,42 @@
         "format": "uuid"
       },
       "responseTopic": "application/responses"
+    },
+    {
+      "bindingVersion": "0.2.0",
+      "contentType": "application/json",
+      "correlationData": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "responseTopic": {
+        "type": "object",
+        "name": "application/responses"
+      }
+    },
+    {
+      "bindingVersion": "0.2.0",
+      "contentType": "application/json",
+      "correlationData": {
+        "$ref": "#/correlationData"
+      },
+      "responseTopic": {
+        "$ref": "#/responseTopic"
+      }
     }
   ],
   "type": "object",
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed.",
-      "type": "string",
-      "enum": [ "0.2.0" ]
+      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
+      "enum": [ "0.2.0", "latest" ]
     },
     "contentType": {
-      "description": "String describing the content type of the message payload. This should not conflict with the contentType field of the associated AsyncAPI Message object.",
+      "description": "String describing the content type of the message payload. This should not conflict with the contentType field of the associated AsyncAPI Message object",
       "type": "string"
     },
     "correlationData": {
-      "description": "Correlation Data is used by the sender of the request message to identify which request the response message is for when it is received.",
+      "description": "Correlation Data is used by the sender of the request message to identify which request the response message is for when it is received",
       "oneOf": [
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
@@ -40,13 +61,12 @@
       ]
     },
     "payloadFormatIndicator": {
-      "description": "1 indicates that the payload is UTF-8 encoded character data.  0 indicates that the payload format is unspecified.",
+      "description": "1 indicates that the payload is UTF-8 encoded character data.  0 indicates that the payload format is unspecified",
       "default": 0,
-      "type": "integer",
       "enum": [ 0, 1 ]
     },
     "responseTopic": {
-      "description": "The topic (channel URI) to be used for a response message.",
+      "description": "The topic (channel URI) to be used for a response message",
       "oneOf": [
         {
           "type": "string",
