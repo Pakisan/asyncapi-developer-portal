@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/channels/chanel.json",
+  "title": "AsyncAPI v3.0.0 - Channel",
+  "description": "Describes a shared communication channel",
+  "type": "object",
+  "properties": {
+    "address": {
+      "description": "An optional string representation of this channel's address. The address is typically the \"topic name\", \"routing key\", \"event type\", or \"path\". When `null` or absent, it MUST be interpreted as unknown. This is useful when the address is generated dynamically at runtime or can't be known upfront. It MAY contain Channel Address Expressions",
+      "type": [ "string", "null" ]
+    },
+    "messages": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/messages/channelMessages.json"
+    },
+    "parameters": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channelAddressParameter.json"
+    },
+    "title": {
+      "description": "A human-friendly title for the channel",
+      "type": "string"
+    },
+    "summary": {
+      "description": "A brief summary of the channel",
+      "type": "string"
+    },
+    "description": {
+      "description": "A longer description of the channel. CommonMark is allowed.",
+      "type": "string"
+    },
+    "servers": {
+      "description": "The references of the servers on which this channel is available. If absent or empty then this channel must be available on all servers",
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+      }
+    },
+    "tags": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/tags.json"
+    },
+    "externalDocs": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocsOrReference.json"
+    },
+    "bindings": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channelBindingsOrReference.json"
+    }
+  },
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "additionalProperties": false
+}
