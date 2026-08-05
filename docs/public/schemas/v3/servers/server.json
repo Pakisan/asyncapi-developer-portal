@@ -1,7 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/servers/server.json",
-  "description": "An object representing a message broker, a server or any other kind of computer program capable of sending and/or receiving data.",
+  "title": "AsyncAPI v3.0.0 - Server",
+  "description": "Represents a message broker, a server or any other kind of computer program capable of sending and/or receiving data",
   "examples": [
     {
       "x-microcks-enabled": true,
@@ -27,7 +28,7 @@
       },
       "security": [
         {
-          "type": "usernamePassword",
+          "type": "userPassword",
           "description": "Sent inside the initial CONNECT message"
         },
         {
@@ -81,55 +82,19 @@
       "type": "string"
     },
     "variables": {
-      "if": {
-        "required": [ "$ref" ]
-      },
-      "then": {
-        "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-      },
-      "else": {
-        "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/serverVariable.json"
-      }
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/serverVariables.json"
     },
     "security": {
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/securityRequirements.json"
     },
     "tags": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "if": {
-          "required": [ "$ref" ]
-        },
-        "then": {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-        },
-        "else": {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/v3/tag.json"
-        }
-      }
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/tags.json"
     },
     "externalDocs": {
-      "if": {
-        "required": [ "$ref" ]
-      },
-      "then": {
-        "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-      },
-      "else": {
-        "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocs.json"
-      }
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocsOrReference.json"
     },
     "bindings": {
-      "if": {
-        "required": [ "$ref" ]
-      },
-      "then": {
-        "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-      },
-      "else": {
-        "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/serverBindings.json"
-      }
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/serverBindingsOrReference.json"
     }
   },
   "patternProperties": {
