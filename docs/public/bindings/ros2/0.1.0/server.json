@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/ros2/0.1.0/server.json",
-  "description": "This object contains information about the server representation in ROS 2.",
+  "description": "Contains information about the server representation in ROS 2.",
   "examples": [
     {
       "domainId": "0",
