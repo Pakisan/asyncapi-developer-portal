@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageExample.json",
   "title": "AsyncAPI v3 - Channel Message Example",
   "description": "Describes a message example which may be received on a given channel and operation",
-  "type": "object",
   "examples": [
     {
       "name": "Application metric example",
@@ -30,6 +29,7 @@
       }
     }
   ],
+  "type": "object",
   "anyOf": [
     {
       "required": [ "payload" ]
