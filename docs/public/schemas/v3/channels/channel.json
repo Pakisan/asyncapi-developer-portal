@@ -39,11 +39,17 @@
       "summary": "Messages about user events",
       "description": "This channel is used to exchange messages about users signing up",
       "servers": [
-        {"$ref": "#/servers/apache-pulsar"},
-        {"$ref": "#/servers/wss"}
+        {
+          "$ref": "#/servers/apache-pulsar"
+        },
+        {
+          "$ref": "#/servers/wss"
+        }
       ],
       "tags": [
-        {"$ref": "#/tags/user.events"},
+        {
+          "$ref": "#/tags/user.events"
+        },
         {
           "name": "secured-api",
           "description": "Groups secured APIs"
@@ -77,9 +83,7 @@
                 "correlation-id": {
                   "description": "Incoming message correlation-id",
                   "type": "string",
-                  "examples": [
-                    "01ed08a1-8a7b-4882-85c5-c6e3815353d5"
-                  ]
+                  "examples": [ "01ed08a1-8a7b-4882-85c5-c6e3815353d5" ]
                 }
               }
             }
