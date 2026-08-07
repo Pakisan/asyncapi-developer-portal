@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageTrait.json",
   "title": "AsyncAPI v3 - Channel Message Trait",
   "description": "Describes a trait that MAY be applied to a Message Object. This object MAY contain any property from the Message Object, except payload and traits",
-  "type": "object",
   "examples": [
     {
       "contentType": "application/json",
@@ -136,6 +135,7 @@
       ]
     }
   ],
+  "type": "object",
   "properties": {
     "contentType": {
       "description": "The content type to use when encoding/decoding a message's payload. The value MUST be a specific media type (e.g. application/json). When omitted, the value MUST be the one specified on the defaultContentType field",
