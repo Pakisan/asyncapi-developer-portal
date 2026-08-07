@@ -29,8 +29,7 @@
         "description": "Incoming message correlation-id",
         "location": "$message.header#/correlation-id"
       },
-      "externalDocs":
-      {
+      "externalDocs": {
         "url": "https://observability.lo/application-metric",
         "description": "Application Metric format and validation rules"
       },
