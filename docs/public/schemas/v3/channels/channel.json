@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://asyncapi.pavelon.dev/schemas/v3/channels/chanel.json",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/channels/channel.json",
   "title": "AsyncAPI v3.0.0 - Channel",
   "description": "Describes a shared communication channel",
   "type": "object",
@@ -10,7 +10,7 @@
       "type": [ "string", "null" ]
     },
     "messages": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/messages/channelMessages.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessages.json"
     },
     "parameters": {
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channelAddressParameter.json"
@@ -24,7 +24,7 @@
       "type": "string"
     },
     "description": {
-      "description": "A longer description of the channel. CommonMark is allowed.",
+      "description": "A longer description of the channel. CommonMark is allowed",
       "type": "string"
     },
     "servers": {
