@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessages.json",
   "title": "AsyncAPI v3 - Channel Messages Map",
   "description": "A key-value map where key is message ID and value is message representation",
-  "type": "object",
   "examples": [
     {
       "message": {
@@ -61,6 +60,7 @@
       }
     }
   ],
+  "type": "object",
   "additionalProperties": {
     "if": {
       "required": [ "$ref" ],
