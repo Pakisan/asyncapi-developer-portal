@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationReplyAddress.json",
+  "description": "An object that specifies where an operation has to send the reply",
+  "additionalProperties": false,
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "examples": [
+    {
+      "location": "$message.header#/X-REPLY-TO"
+    },
+    {
+      "location": "$message.payload#/X-REPLY-TO"
+    },
+    {
+      "location": "$message.payload#/X-REPLY-TO",
+      "description": "Send operation result to this channel"
+    }
+  ],
+  "required": [
+    "location"
+  ],
+  "properties": {
+    "location": {
+      "type": "string",
+      "description": "A runtime expression that specifies the location of the reply address.",
+      "pattern": "^\\$message\\.(header|payload)#(\\/(([^\\/~])|(~[01]))*)*"
+    },
+    "description": {
+      "type": "string",
+      "description": "An optional description of the address. CommonMark is allowed."
+    }
+  }
+}
