@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationReplyOrReference.json",
   "title": "AsyncAPI v3 - Operation Reply or Reference",
   "description": "Generic type which MUST BE Operation Reply or Reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/replies/send-notification-reply"
@@ -17,6 +16,7 @@
       }
     }
   ],
+  "type": "object",
   "oneOf": [
     {
       "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
