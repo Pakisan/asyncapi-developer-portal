@@ -6,6 +6,10 @@
   "examples": [
     {
       "name": "my-sns-topic",
+      "bindingVersion": "latest"
+    },
+    {
+      "name": "my-sns-topic",
       "policy": {
         "statements": [
           {
@@ -14,7 +18,8 @@
             "principal": "*"
           }
         ]
-      }
+      },
+      "bindingVersion": "0.1.0"
     },
     {
       "name": "my-sns-topic",
@@ -59,9 +64,9 @@
   "required": [ "name" ],
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding",
-      "default": "latest",
-      "type": "string"
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "enum": ["0.1.0", "latest"],
+      "default": "latest"
     },
     "name": {
       "description": "The name of the topic. Can be different from the channel name to allow flexibility around AWS resource naming limitations",
