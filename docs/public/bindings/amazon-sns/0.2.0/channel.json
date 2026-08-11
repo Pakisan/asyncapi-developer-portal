@@ -6,12 +6,21 @@
   "examples": [
     {
       "name": "my-sns-topic",
+      "bindingVersion": "latest"
+    },
+    {
+      "name": "my-sns-topic",
       "policy": {
         "statements": [
           {
             "action": "SNS:Publish",
             "effect": "Allow",
-            "principal": "*"
+            "principal": "*",
+            "condition": {
+              "StringEquals": {
+                "aws:SourceAccount": "123456789012"
+              }
+            }
           }
         ]
       }
@@ -21,9 +30,9 @@
   "required": [ "name" ],
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding",
-      "default": "latest",
-      "type": "string"
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "enum": ["0.2.0", "latest"],
+      "default": "latest"
     },
     "name": {
       "description": "The name of the topic. Can be different from the channel name to allow flexibility around AWS resource naming limitations",
