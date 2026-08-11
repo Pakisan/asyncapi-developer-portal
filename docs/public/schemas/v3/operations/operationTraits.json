@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationTraits.json",
   "title": "AsyncAPI v3 - Channel Message Traits",
   "description": "Collection of Channel Message Traits or it's references. Traits MUST be merged using traits merge mechanism. The resulting object MUST be a valid Message Object",
-  "type": "array",
   "examples": [
     [],
     [
@@ -38,6 +37,7 @@
       }
     ]
   ],
+  "type": "array",
   "items": {
     "if": {
       "required": [ "$ref" ],
