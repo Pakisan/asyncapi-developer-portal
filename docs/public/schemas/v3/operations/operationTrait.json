@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationTrait.json",
+  "type": "object",
+  "description": "Describes a trait that MAY be applied to an Operation Object. This object MAY contain any property from the Operation Object, except the action, channel and traits ones",
+  "additionalProperties": false,
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
+  "properties": {
+    "title": {
+      "description": "A human-friendly title for the operation.",
+      "type": "string"
+    },
+    "summary": {
+      "description": "A short summary of what the operation is about.",
+      "type": "string"
+    },
+    "description": {
+      "description": "A verbose explanation of the operation. CommonMark syntax can be used for rich text representation.",
+      "type": "string"
+    },
+    "security": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/securityRequirements.json"
+    },
+    "tags": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/tags.json"
+    },
+    "externalDocs": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocsOrReference.json"
+    },
+    "bindings": {
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationOrReference.json"
+    }
+  }
+}
