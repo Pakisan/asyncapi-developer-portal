@@ -3,8 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operation.json",
   "title": "AsyncAPI v3 - Operation",
   "description": "Describes a specific operation",
-  "type": "object",
-  "required": [ "action", "channel" ],
   "examples": [
     {
       "action": "send",
@@ -68,6 +66,8 @@
       ]
     }
   ],
+  "type": "object",
+  "required": [ "action", "channel" ],
   "properties": {
     "action": {
       "description": "Allowed values are send and receive. Use send when it's expected that the application will send a message to the given channel, and receive when the application should expect receiving messages from the given channel",
