@@ -3,20 +3,20 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationOrReference.json",
   "title": "AsyncAPI v3.0.0 - Operation Bindings or Reference",
   "description": "A key-value map where key is server binding ID and value is binding representation or it's reference",
-  "type": "object",
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
   "examples": [
     {
       "kafka": {}
     },
     {
       "mqtt": {
-        "$ref":  "#/bindings/mqtt-5.0"
+        "$ref": "#/bindings/mqtt-5.0"
       }
     }
   ],
+  "type": "object",
+  "patternProperties": {
+    "^x-[\\w\\d\\.\\x2d_]+$": true
+  },
   "additionalProperties": {
     "if": {
       "required": [ "$ref" ],
