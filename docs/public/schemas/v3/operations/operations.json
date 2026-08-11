@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operations.json",
   "title": "AsyncAPI v3 - Operations Map",
   "description": "A key-value map where key is operation ID and value is operation representation or it's reference",
-  "type": "object",
   "examples": [
     {
       "user-signed-up": {
@@ -23,6 +22,7 @@
       }
     }
   ],
+  "type": "object",
   "additionalProperties": {
     "if": {
       "required": [ "$ref" ],
