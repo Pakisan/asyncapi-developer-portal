@@ -6,6 +6,7 @@
   "examples": [
     {
       "deadLetterQueue": {
+        "fifoQueue": true,
         "deliveryDelay": 0,
         "messageRetentionPeriod": 604800,
         "name": "myQueue_error",
@@ -47,9 +48,9 @@
   "required": [ "queue" ],
   "properties": {
     "bindingVersion": {
-      "description": "The version of this binding. If omitted, 'latest' MUST be assumed",
-      "default": "latest",
-      "enum": [ "0.1.0", "0.2.0", "0.3.0", "latest" ]
+      "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "enum": ["0.3.0", "latest"],
+      "default": "latest"
     },
     "deadLetterQueue": {
       "description": "A definition of the queue that will be used for un-processable messages",
