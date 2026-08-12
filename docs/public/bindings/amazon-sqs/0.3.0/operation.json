@@ -17,7 +17,12 @@
               {
                 "action": [ "sqs:SendMessage", "sqs:ReceiveMessage" ],
                 "effect": "Deny",
-                "principal": "arn:aws:iam::123456789012:user/dec.kolakowski"
+                "principal": "arn:aws:iam::123456789012:user/dec.kolakowski",
+                "condition": {
+                  "ArnEquals": {
+                    "aws:SourceArn": "arn:aws:sns:us-east-1:123456789012:myQueue"
+                  }
+                }
               }
             ]
           },
