@@ -46,6 +46,7 @@
     },
     "bindingVersion": {
       "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
+      "default": "latest",
       "enum": [ "0.2.0", "latest" ]
     },
     "cc": {
