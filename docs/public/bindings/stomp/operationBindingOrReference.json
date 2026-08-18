@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/stomp/operationBindingOrReference.json",
-  "title": "WebSockets - Operation Binding or Reference",
+  "title": "STOMP - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
   "type": "object",
   "examples": [

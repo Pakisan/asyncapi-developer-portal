@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/bindings/stomp/channelBinding.json",
-  "title": "WebSockets - Channel Binding",
+  "title": "STOMP - Channel Binding",
   "description": "Describes protocol-specific definitions for a channel",
   "examples": [
     {},
