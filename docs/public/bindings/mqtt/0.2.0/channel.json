@@ -5,7 +5,7 @@
   "description": "Contains information about the channel representation in MQTT",
   "examples": [
     {
-      "bindingVersion": "0.1.0"
+      "bindingVersion": "0.2.0"
     }
   ],
   "type": "object",
