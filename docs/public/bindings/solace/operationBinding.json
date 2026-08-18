@@ -149,7 +149,7 @@
         }
       },
       "then": {
-        "$ref": "https://asyncapi.pavelon.dev/bindings/solace/0.1.0/operation.json"
+        "$ref": "https://asyncapi.pavelon.dev/bindings/solace/0.4.0/operation.json"
       }
     }
   ]
