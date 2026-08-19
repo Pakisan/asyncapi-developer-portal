@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/anypointmq/serverBindingOrReference.json",
   "title": "Anypoint MQ - Server Binding or Reference",
   "description": "Describes protocol-specific definitions for a server or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/anypointmq/my-anypointmq-server"
@@ -12,6 +11,7 @@
       "bindingVersion": "0.0.1"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
