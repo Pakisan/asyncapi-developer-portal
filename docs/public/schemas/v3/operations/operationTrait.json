@@ -56,7 +56,7 @@
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocsOrReference.json"
     },
     "bindings": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationOrReference.json"
+      "$ref": "https://asyncapi.pavelon.dev/bindings/operationBindings.json"
     }
   },
   "patternProperties": {
