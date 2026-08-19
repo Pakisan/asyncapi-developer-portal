@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/mqtt5/operationBindingOrReference.json",
   "title": "MQTT v5.0 - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/mqtt5/my-mqtt5-operation"
@@ -12,6 +11,7 @@
       "bindingVersion": "0.2.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
