@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/nats/operationBindingOrReference.json",
   "title": "NATS - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/nats/my-nats-operation"
@@ -13,6 +12,7 @@
       "queue": "MyCustomQueue"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
