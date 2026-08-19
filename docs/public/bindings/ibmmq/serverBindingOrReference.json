@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/ibmmq/serverBindingOrReference.json",
   "title": "IBM MQ - Server Binding or Reference",
   "description": "Describes protocol-specific definitions for a server or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/ibmmq/my-ibmmq-server"
@@ -16,6 +15,7 @@
       "multiEndpointServer": false
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {

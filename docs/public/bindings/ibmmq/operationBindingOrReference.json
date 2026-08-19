@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/ibmmq/operationBindingOrReference.json",
   "title": "IBM MQ - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/ibmmq/my-ibmmq-operation"
@@ -12,6 +11,7 @@
       "bindingVersion": "0.1.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
