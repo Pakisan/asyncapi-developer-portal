@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/operationBindingOrReference.json",
   "title": "Amazon SQS - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/amazon-sqs/my-sqs-operation"
@@ -31,6 +30,7 @@
       "bindingVersion": "0.3.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {

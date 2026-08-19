@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sqs/channelBindingOrReference.json",
   "title": "Amazon SQS - Channel Binding or Reference",
   "description": "Describes protocol-specific definitions for a channel or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/amazon-sqs/my-sqs-queue"
@@ -24,6 +23,7 @@
       "bindingVersion": "0.3.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
