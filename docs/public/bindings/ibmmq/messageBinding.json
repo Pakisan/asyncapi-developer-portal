@@ -4,10 +4,6 @@
   "title": "IBM MQ - Message Binding",
   "description": "Describes protocol-specific definitions for a message",
   "examples": [
-    {},
-    {
-      "bindingVersion": "latest"
-    },
     {
       "type": "binary",
       "description": "Binary message",
