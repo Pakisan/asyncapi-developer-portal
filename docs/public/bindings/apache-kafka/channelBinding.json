@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/channelBinding.json",
   "title": "Apache Kafka - Channel Binding",
   "description": "Describes protocol-specific definitions for a channel",
-  "type": "object",
   "examples": [
     {
       "bindingVersion": "0.1.0"
@@ -33,10 +32,7 @@
       "replicas": 3,
       "topic": "my-specific-topic",
       "topicConfiguration": {
-        "cleanup.policy": [
-          "compact",
-          "delete"
-        ],
+        "cleanup.policy": [ "compact", "delete" ],
         "delete.retention.ms": 1000,
         "max.message.bytes": 2000,
         "retention.bytes": 10,
@@ -48,46 +44,75 @@
       }
     }
   ],
+  "type": "object",
   "allOf": [
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.1.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.1.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.1.0/channel.json"
+      }
     },
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.3.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.3.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.3.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.3.0/channel.json"
+      }
     },
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.4.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.4.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.4.0/channel.json"
+      }
     },
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.5.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.5.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/channel.json"
+      }
     },
     {
       "description": "If bindingVersion is omitted, than use latest JSON Schema",
       "if": {
         "not": {
-          "required": ["bindingVersion"],
+          "required": [ "bindingVersion" ],
           "properties": {
-            "bindingVersion": { "enum": ["0.1.0", "0.3.0", "0.4.0", "0.5.0"] }
+            "bindingVersion": {
+              "enum": [ "0.1.0", "0.3.0", "0.4.0", "0.5.0" ]
+            }
           }
         }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-kafka/0.5.0/channel.json"
+      }
     }
   ]
 }

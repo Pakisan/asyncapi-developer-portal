@@ -13,10 +13,7 @@
       "replicas": 3,
       "topic": "my-specific-topic",
       "topicConfiguration": {
-        "cleanup.policy": [
-          "compact",
-          "delete"
-        ],
+        "cleanup.policy": [ "compact", "delete" ],
         "delete.retention.ms": 1000,
         "max.message.bytes": 2000,
         "retention.bytes": 10,

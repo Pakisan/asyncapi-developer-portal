@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/serverBindingOrReference.json",
   "title": "Apache Kafka - Server Binding or Reference",
   "description": "Describes protocol-specific definitions for a server or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/apache-kafka/my-apache-kafka-server"
@@ -14,6 +13,7 @@
       "schemaRegistryVendor": "confluent"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {

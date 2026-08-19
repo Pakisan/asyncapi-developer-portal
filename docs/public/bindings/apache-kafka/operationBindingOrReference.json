@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-kafka/operationBindingOrReference.json",
   "title": "Apache Kafka - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/apache-kafka/my-apache-kafka-operation"
@@ -20,6 +19,7 @@
       }
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
