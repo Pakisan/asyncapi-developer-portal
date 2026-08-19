@@ -131,7 +131,7 @@
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocsOrReference.json"
     },
     "bindings": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channelBindingsOrReference.json"
+      "$ref": "https://asyncapi.pavelon.dev/bindings/channelBindings.json"
     }
   },
   "patternProperties": {
