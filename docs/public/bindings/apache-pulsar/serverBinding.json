@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/serverBinding.json",
   "title": "Apache Pulsar - Server Binding",
   "description": "Describes protocol-specific definitions for a server",
-  "type": "object",
   "examples": [
     {},
     {
@@ -14,25 +13,36 @@
       "tenant": "contoso"
     }
   ],
+  "type": "object",
   "allOf": [
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.1.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.1.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/server.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/server.json"
+      }
     },
     {
       "description": "If bindingVersion is omitted, than use latest JSON Schema",
       "if": {
         "not": {
-          "required": ["bindingVersion"],
+          "required": [ "bindingVersion" ],
           "properties": {
-            "bindingVersion": { "const": "0.1.0" }
+            "bindingVersion": {
+              "const": "0.1.0"
+            }
           }
         }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/server.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/0.1.0/server.json"
+      }
     }
   ]
 }

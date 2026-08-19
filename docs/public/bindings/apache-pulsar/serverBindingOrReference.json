@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/apache-pulsar/serverBindingOrReference.json",
   "title": "Apache Pulsar - Server Binding or Reference",
   "description": "Describes protocol-specific definitions for a server or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/apache-pulsar/my-apache-pulsar-server"
@@ -13,6 +12,7 @@
       "tenant": "contoso"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
