@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/http/operationBindingOrReference.json",
   "title": "HTTP - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/http/my-http-operation"
@@ -25,6 +24,7 @@
       }
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
