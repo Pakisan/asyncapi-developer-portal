@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/websockets/serverBindingOrReference.json",
   "title": "WebSockets - Server Binding or Reference",
   "description": "Describes protocol-specific definitions for a server or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/amqp/my-amqp-server"
@@ -12,6 +11,7 @@
       "bindingVersion": "0.1.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
