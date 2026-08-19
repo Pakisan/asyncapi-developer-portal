@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/solace/operationBindingOrReference.json",
   "title": "Solace - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/solace/my-solace-operation"
@@ -39,6 +38,7 @@
       "timeToLive": 10
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
