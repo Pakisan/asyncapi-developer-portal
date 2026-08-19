@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/amqp/operationBindingOrReference.json",
   "title": "AMQP 0-9-1 - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/amqp/my-amqp-operation"
@@ -24,6 +23,7 @@
       "bindingVersion": "0.3.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
