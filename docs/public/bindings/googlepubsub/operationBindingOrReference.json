@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/googlepubsub/operationBindingOrReference.json",
   "title": "Mercure - Operation Binding or Reference",
   "description": "Describes protocol-specific definitions for a operation or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/googlepubsub/my-googlepubsub-operation"
@@ -12,6 +11,7 @@
       "bindingVersion": "0.2.0"
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
