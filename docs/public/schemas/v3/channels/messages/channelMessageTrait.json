@@ -177,7 +177,7 @@
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageExamples.json"
     },
     "bindings": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageBindingsOrReference.json"
+      "$ref": "https://asyncapi.pavelon.dev/bindings/messageBindings.json"
     },
     "patternProperties": {
       "^x-[\\w\\d\\.\\x2d_]+$": true

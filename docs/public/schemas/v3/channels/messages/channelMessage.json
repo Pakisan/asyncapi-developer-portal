@@ -279,7 +279,7 @@
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageExamples.json"
     },
     "bindings": {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageBindingsOrReference.json"
+      "$ref": "https://asyncapi.pavelon.dev/bindings/messageBindings.json"
     },
     "traits": {
       "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageTraits.json"
