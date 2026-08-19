@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/mqtt/serverBindingOrReference.json",
   "title": "MQTT - Server Binding or Reference",
   "description": "Describes protocol-specific definitions for a server or it's reference",
-  "type": "object",
   "examples": [
     {
       "$ref": "#/bindings/mqtt/my-mqtt-server"
@@ -29,6 +28,7 @@
       }
     }
   ],
+  "type": "object",
   "if": {
     "required": [ "$ref" ],
     "properties": {
