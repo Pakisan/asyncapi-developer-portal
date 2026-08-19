@@ -3,7 +3,6 @@
   "$id": "https://asyncapi.pavelon.dev/bindings/amazon-sns/channelBinding.json",
   "title": "Amazon SNS - Channel Binding",
   "description": "Describes protocol-specific definitions for a channel",
-  "type": "object",
   "examples": [
     {
       "name": "my-sns-topic",
@@ -54,32 +53,49 @@
       }
     }
   ],
+  "type": "object",
   "allOf": [
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.1.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.1.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.1.0/channel.json"
+      }
     },
     {
       "if": {
-        "required": ["bindingVersion"],
-        "properties": { "bindingVersion": { "const": "0.2.0" } }
+        "required": [ "bindingVersion" ],
+        "properties": {
+          "bindingVersion": {
+            "const": "0.2.0"
+          }
+        }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.2.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.2.0/channel.json"
+      }
     },
     {
       "description": "If bindingVersion is omitted, than use latest JSON Schema",
       "if": {
         "not": {
-          "required": ["bindingVersion"],
+          "required": [ "bindingVersion" ],
           "properties": {
-            "bindingVersion": { "enum": ["0.1.0", "0.2.0"] }
+            "bindingVersion": {
+              "enum": [ "0.1.0", "0.2.0" ]
+            }
           }
         }
       },
-      "then": { "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.2.0/channel.json" }
+      "then": {
+        "$ref": "https://asyncapi.pavelon.dev/bindings/amazon-sns/0.2.0/channel.json"
+      }
     }
   ]
 }

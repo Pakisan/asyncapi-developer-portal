@@ -64,8 +64,8 @@
   "properties": {
     "bindingVersion": {
       "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
-      "enum": ["0.2.0", "latest"],
-      "default": "latest"
+      "default": "latest",
+      "enum": [ "0.2.0", "latest" ]
     },
     "consumers": {
       "description": "The protocols that listen to this topic and their endpoints",

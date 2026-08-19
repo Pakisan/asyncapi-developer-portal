@@ -65,8 +65,8 @@
   "properties": {
     "bindingVersion": {
       "description": "The version of this binding. If omitted, \"latest\" MUST be assumed",
-      "enum": ["0.1.0", "latest"],
-      "default": "latest"
+      "default": "latest",
+      "enum": [ "0.1.0", "latest" ]
     },
     "name": {
       "description": "The name of the topic. Can be different from the channel name to allow flexibility around AWS resource naming limitations",
