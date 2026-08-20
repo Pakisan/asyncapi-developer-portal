@@ -571,14 +571,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/server.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/server.json"
+          }
         }
       }
     },
@@ -587,14 +591,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channel.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channel.json"
+          }
         }
       }
     },
@@ -603,14 +611,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/serverVariable.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/servers/serverVariable.json"
+          }
         }
       }
     },
@@ -618,14 +630,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operation.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operation.json"
+          }
         }
       }
     },
@@ -634,14 +650,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessage.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessage.json"
+          }
         }
       }
     },
@@ -650,14 +670,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/securitySchema.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/securitySchema.json"
+          }
         }
       }
     },
@@ -666,14 +690,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channelAddressParameter.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/channelAddressParameter.json"
+          }
         }
       }
     },
@@ -682,14 +710,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageCorrelationId.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/channels/messages/channelMessageCorrelationId.json"
+          }
         }
       }
     },
@@ -698,14 +730,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationTrait.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationTrait.json"
+          }
         }
       }
     },
@@ -734,14 +770,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationReply.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationReply.json"
+          }
         }
       }
     },
@@ -750,14 +790,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationReplyAddress.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationReplyAddress.json"
+          }
         }
       }
     },
@@ -802,14 +846,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/tag.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/tag.json"
+          }
         }
       }
     },
@@ -818,14 +866,18 @@
       "type": "object",
       "patternProperties": {
         "^[\\w\\d\\.\\-_]+$": {
-          "oneOf": [
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-            },
-            {
-              "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocs.json"
+          "if": {
+            "required": [ "$ref" ],
+            "properties": {
+              "$ref": true
             }
-          ]
+          },
+          "then": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
+          },
+          "else": {
+            "$ref": "https://asyncapi.pavelon.dev/schemas/v3/externalDocs.json"
+          }
         }
       }
     }
