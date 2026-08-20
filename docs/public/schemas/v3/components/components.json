@@ -5,6 +5,77 @@
   "description": "An object to hold a set of reusable objects for different aspects of the AsyncAPI specification. All objects defined within the components object will have no effect on the API unless they are explicitly referenced from properties outside the components object",
   "examples": [
     {
+      "schemas": {
+        "multiformat-schema": {
+          "schemaFormat": "application/schema+json;version=draft-07",
+          "schema": {
+            "$id": "https://example.com/user-profile.schema.json",
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "description": "A representation of a user profile",
+            "type": "object",
+            "required": ["username", "email"],
+            "properties": {
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string",
+                "format": "email"
+              },
+              "fullName": {
+                "type": "string"
+              },
+              "age": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "location": {
+                "type": "string"
+              },
+              "interests": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "schema": {
+          "$id": "https://example.com/user-profile.schema.json",
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "description": "A representation of a user profile",
+          "type": "object",
+          "required": ["username", "email"],
+          "properties": {
+            "username": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "fullName": {
+              "type": "string"
+            },
+            "age": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "location": {
+              "type": "string"
+            },
+            "interests": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
       "servers": {
         "apache-kafka-v1": {
           "host": "https://kaas.lo/apache-kafka-v1",
