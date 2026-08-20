@@ -163,28 +163,31 @@
     },
     {
       "serverBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "schemaRegistryUrl": "https://my-schema-registry.com",
             "schemaRegistryVendor": "confluent"
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/server"
-          }
-        },
-        "pulsar": {
-          "stage": {
+          "pulsar": {
             "bindingVersion": "0.1.0",
             "tenant": "contoso"
+          }
+        },
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/server"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/server"
           }
         }
       }
     },
     {
       "channelBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "partitions": 20,
             "replicas": 3,
@@ -201,12 +204,7 @@
               "confluent.value.subject.name.strategy": "schema"
             }
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/chanel"
-          }
-        },
-        "pulsar": {
-          "stage": {
+          "pulsar": {
             "bindingVersion": "0.1.0",
             "compaction": 1000,
             "deduplication": true,
@@ -219,13 +217,21 @@
             },
             "ttl": 360
           }
+        },
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/channel"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/channel"
+          }
         }
       }
     },
     {
       "operationBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "clientId": {
               "type": "string",
@@ -236,21 +242,24 @@
               "enum": [ "myGroupId" ]
             }
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/operation"
+          "pulsar": {
+            "bindingVersion": "0.1.0"
           }
         },
-        "pulsar": {
-          "stage": {
-            "bindingVersion": "0.1.0"
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/operation"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/operation"
           }
         }
       }
     },
     {
       "messageBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "key": {
               "type": "string",
@@ -260,13 +269,16 @@
             "schemaIdPayloadEncoding": "apicurio-new",
             "schemaLookupStrategy": "TopicIdStrategy"
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/message"
+          "pulsar": {
+            "bindingVersion": "0.1.0"
           }
         },
-        "pulsar": {
-          "stage": {
-            "bindingVersion": "0.1.0"
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/message"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/message"
           }
         }
       }
@@ -431,26 +443,29 @@
         }
       },
       "serverBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "schemaRegistryUrl": "https://my-schema-registry.com",
             "schemaRegistryVendor": "confluent"
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/server"
-          }
-        },
-        "pulsar": {
-          "stage": {
+          "pulsar": {
             "bindingVersion": "0.1.0",
             "tenant": "contoso"
+          }
+        },
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/server"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/server"
           }
         }
       },
       "channelBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "partitions": 20,
             "replicas": 3,
@@ -467,12 +482,7 @@
               "confluent.value.subject.name.strategy": "schema"
             }
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/chanel"
-          }
-        },
-        "pulsar": {
-          "stage": {
+          "pulsar": {
             "bindingVersion": "0.1.0",
             "compaction": 1000,
             "deduplication": true,
@@ -485,11 +495,19 @@
             },
             "ttl": 360
           }
+        },
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/channel"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/channel"
+          }
         }
       },
       "operationBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "clientId": {
               "type": "string",
@@ -500,19 +518,22 @@
               "enum": [ "myGroupId" ]
             }
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/operation"
+          "pulsar": {
+            "bindingVersion": "0.1.0"
           }
         },
-        "pulsar": {
-          "stage": {
-            "bindingVersion": "0.1.0"
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/operation"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/operation"
           }
         }
       },
       "messageBindings": {
-        "kafka": {
-          "v1": {
+        "v1": {
+          "kafka": {
             "bindingVersion": "0.5.0",
             "key": {
               "type": "string",
@@ -522,13 +543,16 @@
             "schemaIdPayloadEncoding": "apicurio-new",
             "schemaLookupStrategy": "TopicIdStrategy"
           },
-          "v2": {
-            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/message"
+          "pulsar": {
+            "bindingVersion": "0.1.0"
           }
         },
-        "pulsar": {
-          "stage": {
-            "bindingVersion": "0.1.0"
+        "v2": {
+          "kafka": {
+            "$ref": "https://catalog.lo/bindings/apache-kafka-v2/message"
+          },
+          "pulsar": {
+            "$ref": "https://catalog.lo/bindings/apache-pulsar-v2/message"
           }
         }
       },
