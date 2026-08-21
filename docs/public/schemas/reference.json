@@ -1,7 +1,16 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/schemas/reference.json",
-  "description": "A simple object to allow referencing other components in the specification, internally and externally.",
+  "title": "AsyncAPI - Reference",
+  "description": "Allows referencing other components in the specification, internally and externally",
+  "examples": [
+    {
+      "$ref": "#/components/messages/user-signedup"
+    },
+    {
+      "$ref": "https://catalog.lo/servers/apache-kafka-v2/events/user-signed-up"
+    }
+  ],
   "type": "object",
   "required": [ "$ref" ],
   "properties": {
