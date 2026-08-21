@@ -49,7 +49,7 @@
       "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
     },
     "else": {
-      "$id": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationTrait.json"
+      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/operations/operationTrait.json"
     }
   }
 }
