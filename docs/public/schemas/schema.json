@@ -1,7 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://asyncapi.pavelon.dev/schemas/schema.json",
-  "description": "The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is a superset of the JSON Schema Specification Draft 07. The empty schema (which allows any instance to validate) MAY be represented by the boolean value true and a schema which allows no instance to validate MAY be represented by the boolean value false.",
+  "title": "AsyncAPI - Data Types JSON Schema",
+  "description": "The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is a superset of the JSON Schema Specification Draft 07. The empty schema (which allows any instance to validate) MAY be represented by the boolean value true and a schema which allows no instance to validate MAY be represented by the boolean value false",
   "examples": [
     {
       "$ref": "https://asyncapi.pavelon.dev/examples/schemas/asyncapi/arrays.schema.json"
@@ -50,7 +51,7 @@
     {
       "properties": {
         "deprecated": {
-          "description": "Specifies that a schema is deprecated and SHOULD be transitioned out of usage. Default value is false.",
+          "description": "Specifies that a schema is deprecated and SHOULD be transitioned out of usage. Default value is false",
           "default": false,
           "type": "boolean"
         },
@@ -125,7 +126,7 @@
           ]
         },
         "discriminator": {
-          "description": "Adds support for polymorphism. The discriminator is the schema property name that is used to differentiate between other schema that inherit this schema. The property name used MUST be defined at this schema and it MUST be in the required property list. When used, the value MUST be the name of this schema or any schema that inherits it. See Composition and Inheritance for more details.",
+          "description": "Adds support for polymorphism. The discriminator is the schema property name that is used to differentiate between other schema that inherit this schema. The property name used MUST be defined at this schema and it MUST be in the required property list. When used, the value MUST be the name of this schema or any schema that inherits it. See Composition and Inheritance for more details",
           "type": "string"
         },
         "externalDocs": {
