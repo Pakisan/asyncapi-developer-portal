@@ -2788,7 +2788,7 @@
         "then": {
           "properties": {
             "schema": {
-              "oneOf": [
+              "anyOf": [
                 {
                   "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
                 },

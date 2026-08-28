@@ -12009,7 +12009,7 @@
             "then": {
               "properties": {
                 "schema": {
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "$ref": "#/definitions/https:~1~1asyncapi.pavelon.dev~1schemas~1reference.json"
                     },
