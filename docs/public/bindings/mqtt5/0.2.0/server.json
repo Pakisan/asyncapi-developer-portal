@@ -14,6 +14,12 @@
         "type": "integer",
         "minimum": 100
       }
+    },
+    {
+      "bindingVersion": "0.2.0",
+      "sessionExpiryInterval": {
+        "$ref": "#/sessionExpiryInterval"
+      }
     }
   ],
   "type": "object",
@@ -32,9 +38,6 @@
         },
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
         }
       ]
     }

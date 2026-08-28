@@ -36,6 +36,14 @@
         },
         "additionalProperties": false
       }
+    },
+    {
+      "type": "request",
+      "bindingVersion": "0.1.0",
+      "method": "GET",
+      "query": {
+        "$ref": "#/response"
+      }
     }
   ],
   "type": "object",
@@ -86,14 +94,7 @@
     },
     "query": {
       "description": "A Schema object containing the definitions for each query parameter. This schema MUST be of type 'object' and have a properties key",
-      "oneOf": [
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-        }
-      ]
+      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
     }
   },
   "patternProperties": {

@@ -45,9 +45,6 @@
         },
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
         }
       ]
     },

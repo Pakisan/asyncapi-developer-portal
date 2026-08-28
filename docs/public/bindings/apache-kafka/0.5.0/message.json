@@ -32,14 +32,7 @@
     },
     "key": {
       "description": "The message key",
-      "oneOf": [
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        }
-      ]
+      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
     },
     "schemaIdLocation": {
       "description": "If a Schema Registry is used when performing this operation, tells where the id of schema is stored",

@@ -31,14 +31,7 @@
     },
     "headers": {
       "description": "A Schema object containing the definitions for Anypoint MQ-specific headers (protocol headers). This schema MUST be of type 'object' and have a 'properties' key. Examples of Anypoint MQ protocol headers are 'messageId' and 'messageGroupId'",
-      "oneOf": [
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-        }
-      ]
+      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
     }
   },
   "patternProperties": {

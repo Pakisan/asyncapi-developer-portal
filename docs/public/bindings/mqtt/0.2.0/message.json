@@ -52,14 +52,7 @@
     },
     "correlationData": {
       "description": "Correlation Data is used by the sender of the request message to identify which request the response message is for when it is received",
-      "oneOf": [
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
-        }
-      ]
+      "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
     },
     "payloadFormatIndicator": {
       "description": "1 indicates that the payload is UTF-8 encoded character data.  0 indicates that the payload format is unspecified",
@@ -76,9 +69,6 @@
         },
         {
           "$ref": "https://asyncapi.pavelon.dev/schemas/schema.json"
-        },
-        {
-          "$ref": "https://asyncapi.pavelon.dev/schemas/reference.json"
         }
       ]
     }
