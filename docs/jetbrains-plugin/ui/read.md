@@ -1,6 +1,6 @@
-# New UI
+# New way to inspect
 
-![](https://plugins.jetbrains.com/files/15673/62208-page/9aff9c76-3e5e-4666-94f3-2a8643225af2)
+![](/jetbrains-plugin/features/preview.png)
 
 Working with a large AsyncAPI file in plain text can be painful.
 
@@ -23,6 +23,18 @@ Just like exploring a project structure, all AsyncAPI elements are now organized
 - Bindings
 
 Everything is visible, structured, and easy to open with a click.
+
+## 🔗 Better reference resolving
+
+A single engine resolves every `$ref` — local pointers, file references, and remote `http` / `https` references — the same way in the editor and in the preview
+
+*   **Reference completion, local and remote — Free.** Completion is offered for every kind of `$ref` as you type it
+*   **Current-folder listing — Free.** While you write a file reference, completion lists the contents of the current folder, so you can find and pick the right `.json` or `.yaml` document without remembering its path. Rename a referenced file and every `$ref` to it updates automatically
+*   **JSON Pointer navigation into local or remote content — Free.** After the `#`, completion offers the elements _inside_ the target document — a local file or a remote URL — so you can point straight at the exact node you need, for example one `server` or one `message`. _Go to Declaration_ (`Ctrl/Cmd+B`) follows the pointer into that document's own content and puts the caret on the element
+*   **One approved remote host — Free.** A remote reference is never fetched until you allow its host. You may keep **one** allowed host on the free tier; **denying** hosts is unlimited and always free. Allowing **more than one** host is a Pro feature. Answers are stored per project and can be reviewed, changed, or removed in _Settings → Tools → AsyncAPI → Remote References
+*   **HTTP proxy — Pro.** Route remote reference resolution through a configurable proxy.
+
+Also handled: reference chains (a `$ref` that points at another `$ref`), references met part-way along a pointer path, Avro `.avsc` schemas, cross-language JSON↔YAML references, cycle detection, and a dedicated inspection that names each problem — unreachable document, pointer that finds nothing, unsupported fragment, reference cycle, host awaiting a decision — with its own quick fix
 
 ## 👁 Clear, instant overview
 

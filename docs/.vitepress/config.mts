@@ -696,14 +696,15 @@ export default defineConfig({
           ]
         },
         {
-          text: 'UI 💳',
+          text: 'UI',
           items: [
             {
               text: 'Read',
               link: '/jetbrains-plugin/ui/read',
             },
             {
-              text: 'Read & Edit 🏗️'
+              text: 'Edit 💳',
+              link: '/jetbrains-plugin/ui/edit',
             }
           ]
         },
