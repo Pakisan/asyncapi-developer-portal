@@ -27,4 +27,4 @@ Platform and data engineers, architects and governance teams who need accurate A
 
 ## Want it sooner?
 
-Tell me what your estate looks like: [open a discussion](https://pavelon.dev) or [sponsor the work](https://github.com/sponsors/Pakisan). In the meantime, the [AsyncAPI plugin for JetBrains IDEs](/jetbrains-plugin/) generates AsyncAPI from Spring Messaging code.
+Tell me what your estate looks like: [open a discussion](https://github.com/Pakisan/asyncapi-developer-portal/discussions) or [sponsor the work](https://github.com/sponsors/Pakisan). In the meantime, the [AsyncAPI plugin for JetBrains IDEs](/jetbrains-plugin/) generates AsyncAPI from Spring Messaging code.
