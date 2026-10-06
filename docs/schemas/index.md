@@ -31,6 +31,10 @@ head:
 
 # AsyncAPI Schemas
 
+::: tip Need the JSON Schema itself?
+This page explains the schema. To validate documents or get autocompletion, use it from the [JSON Schema registry](https://schemas.asyncapi.pavelon.dev/draft-07/schemas/). See [how to use the registry](/schemas/registry).
+:::
+
 ## What is AsyncAPI Schemas?
 
 AsyncAPI Schemas are the foundation for defining, validating, and documenting the structure of message payloads in event-driven APIs. They provide a standardized way to describe the data formats exchanged between applications, ensuring consistency and interoperability across systems.

@@ -2,7 +2,8 @@
 const cases = [
   { title: 'Document brokers and queues', text: 'Describe Apache Kafka, AMQP, MQTT, Amazon SNS and SQS, NATS and 15 more brokers correctly the first time with examples for every binding.', link: '/bindings/', cta: 'Browse bindings' },
   { title: 'Get docs from Spring Messaging code', text: 'Generate AsyncAPI from your Spring listeners and templates, so the documentation follows the source instead of drifting from it.', link: '/jetbrains-plugin/frameworks/', cta: 'Spring support' },
-  { title: 'Write and validate AsyncAPI', text: 'Edit with completion, live validation, Spectral or Redocly linting and JSON Schemas, in or outside a JetBrains IDE.', link: '/schemas/', cta: 'Use the schemas' },
+  { title: 'Write and validate AsyncAPI', text: 'Edit with completion, live validation, Spectral or Redocly linting and JSON Schemas, in or outside a JetBrains IDE.', link: '/schemas/registry.html', cta: 'Use the schema registry' },
+  { title: 'Validate and generate with AI agents', text: 'Give agents and LLMs the exact JSON Schema for your AsyncAPI version and bindings, so what they generate is valid.', link: '/schemas/registry.html#use-it-with-ai-agents-and-llms', cta: 'How agents use it' },
   { title: 'Split large documents', text: 'Decompose a big document into files with references, and preview one server, channel, message or operation at a time.', link: '/jetbrains-plugin/typed-components/', cta: 'Typed components' },
 ]
 </script>

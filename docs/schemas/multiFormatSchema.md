@@ -28,6 +28,10 @@ head:
 
 # Multi-Format Schema
 
+::: tip Need the JSON Schema itself?
+This page explains the schema. To validate documents or get autocompletion, use it from the [JSON Schema registry](https://schemas.asyncapi.pavelon.dev/draft-07/schemas/multiformatschema). See [how to use the registry](/schemas/registry).
+:::
+
 ## What is Multi-Format Schema Object in AsyncAPI?
 
 The Multi-Format Schema Object in AsyncAPI represents a schema definition that supports multiple schema formats or languages. Unlike the standard Schema Object which is based solely on JSON Schema, the Multi-Format Schema Object allows you to use various schema formats such as Avro, JSON Schema, AsyncAPI Schema, OpenAPI Schema, RAML, Google Protobuf, and XML.

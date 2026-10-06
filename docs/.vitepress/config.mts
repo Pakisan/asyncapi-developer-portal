@@ -5,7 +5,7 @@ import { buildHead, normalizePageData } from './seo'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Pavel on AsyncAPI",
-  description: "AsyncAPI tools, protocol bindings and JSON Schemas by Pavel Bodiachevskii: JetBrains plugin, Spring Messaging docs, Kurkik, JAsyncAPI.",
+  description: "Self-maintaining AsyncAPI: tools that catch drift between AsyncAPI documents, source code and brokers. JetBrains plugin, Kurkik, schemas and bindings.",
   lang: 'en-US',
   lastUpdated: true,
   cleanUrls: false,
@@ -567,6 +567,10 @@ export default defineConfig({
             {
               text: 'AsyncAPI Multi-Format Schema',
               link: '/schemas/multiFormatSchema',
+            },
+            {
+              text: 'JSON Schema Registry',
+              link: '/schemas/registry',
             },
           ]
         },

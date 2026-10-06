@@ -2,12 +2,12 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: LandingPage
 
-title: "AsyncAPI Tools: JetBrains Plugin, Bindings, Schemas"
-description: "AsyncAPI tools by an AsyncAPI TSC member: JetBrains plugin with Spring Messaging docs, Kurkik, JAsyncAPI, plus free bindings and JSON Schemas for Kafka, AMQP, MQTT, SNS and SQS"
+title: "Self-Maintaining AsyncAPI: Detect and Fix API Drift"
+description: "Catch drift between AsyncAPI documents, Spring code and Kafka, Pulsar, SNS and SQS brokers. JetBrains plugin, Kurkik, JSON Schema registry and bindings by an AsyncAPI TSC member."
 head:
   - - meta
     - name: keywords
-      content: "AsyncAPI tools, AsyncAPI JetBrains plugin, Spring Messaging AsyncAPI, AsyncAPI Kafka, AsyncAPI validation, AsyncAPI JSON Schema, protocol bindings, event-driven API, API documentation, API security, message schemas, AsyncAPI specification, API design, event-driven architecture"
+      content: "self-maintaining API, API drift, AsyncAPI drift detection, keep AsyncAPI in sync with code, AsyncAPI tools, AsyncAPI JetBrains plugin, Spring Messaging AsyncAPI, AsyncAPI Kafka, AsyncAPI validation, AsyncAPI JSON Schema, protocol bindings, event-driven API, API documentation, API security, message schemas, AsyncAPI specification, API design, event-driven architecture"
   - - link
     - rel: canonical
       href: https://asyncapi.pavelon.dev

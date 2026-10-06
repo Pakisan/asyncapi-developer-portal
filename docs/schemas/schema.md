@@ -28,6 +28,10 @@ head:
 
 # Schema
 
+::: tip Need the JSON Schema itself?
+This page explains the schema. To validate documents or get autocompletion, use it from the [JSON Schema registry](https://schemas.asyncapi.pavelon.dev/draft-07/schemas/schema). See [how to use the registry](/schemas/registry).
+:::
+
 ## What is Schema Object in AsyncAPI?
 
 The Schema Object in AsyncAPI allows the definition of input and output data types for your asynchronous APIs. These types can be objects, primitives, and arrays. The Schema Object is a superset of the JSON Schema Specification Draft-07, which means it includes all standard JSON Schema capabilities plus some AsyncAPI-specific extensions.

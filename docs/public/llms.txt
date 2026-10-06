@@ -1,6 +1,6 @@
 # Pavel on AsyncAPI
 
-> AsyncAPI tools and documentation by Pavel Bodiachevskii, AsyncAPI Technical Steering Committee member and maintainer: a JetBrains IDE plugin (with Spring Messaging documentation generation), the announced Kurkik and AsyncAPI Language Server, the open-source JAsyncAPI library, and free reference docs for AsyncAPI bindings and JSON Schemas.
+> Self-maintaining AsyncAPI: tools that catch and fix drift between an AsyncAPI document and the systems it describes, from both sides. By Pavel Bodiachevskii, AsyncAPI Technical Steering Committee member and maintainer. From source code: a JetBrains IDE plugin that generates AsyncAPI from Spring Messaging code. From brokers and queues: Kurkik (announced) compares a live Kafka, Pulsar, SNS or SQS system with the document. The contract: a JSON Schema registry for validation. Foundation: the open-source JAsyncAPI library and free reference docs for bindings and schemas.
 
 ## Tools
 - [AsyncAPI plugin for JetBrains IDEs](https://asyncapi.pavelon.dev/jetbrains-plugin/): write, validate and preview AsyncAPI; generate AsyncAPI from Spring Messaging code (Kafka, JMS, SNS, SQS, Pulsar, STOMP, SSE). Free core, paid extras.
@@ -11,4 +11,12 @@
 ## Reference
 - [AsyncAPI bindings](https://asyncapi.pavelon.dev/bindings/): 20 brokers with examples.
 - [AsyncAPI JSON Schemas](https://asyncapi.pavelon.dev/schemas/): documents, bindings, security and multi-format schemas.
-- [JSON Schema registry](https://schemas.asyncapi.pavelon.dev)
+- [AsyncAPI JSON Schema Registry: how to use it](https://asyncapi.pavelon.dev/schemas/registry.html)
+
+## JSON Schema registry (for validation and generation)
+Machine-readable AsyncAPI JSON Schemas (draft-07), served as application/schema+json with open CORS. Use these URLs to learn the structure of the specification, to generate documents and to validate them.
+- AsyncAPI 3.0.0 document: https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3.0.0/asyncapi
+- AsyncAPI 3.1.0 document: https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3.1.0/asyncapi
+- Binding for one broker and version, e.g. Kafka 0.5.0 channel: https://schemas.asyncapi.pavelon.dev/draft-07/bindings/apache-kafka/0.5.0/channel
+- Browse everything: https://schemas.asyncapi.pavelon.dev
+Documentation explaining these schemas lives at https://asyncapi.pavelon.dev/schemas/ and https://asyncapi.pavelon.dev/bindings/.

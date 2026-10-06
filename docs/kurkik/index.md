@@ -1,6 +1,6 @@
 ---
 title: Kurkik – Generate AsyncAPI from Kafka, Pulsar, SNS and SQS
-description: Kurkik documents a live Kafka, Pulsar, Amazon SNS or SQS system as AsyncAPI 3.0, detects drift and applies changes only after review. Coming soon.
+description: Kurkik compares your AsyncAPI document with live Kafka, Pulsar, SNS and SQS systems, detects drift and applies fixes only after review. Coming soon.
 head:
   - - meta
     - name: keywords
@@ -11,7 +11,7 @@ head:
 
 **Status: announced, coming soon.** Kurkik is not released yet and has no public download.
 
-From a running messaging system to an AsyncAPI document, and back. It is named after Kurkik Jalali, the fiery horse of the Armenian epic *Daredevils of Sasun*, who bridges worlds, shows what is really there, and is fast.
+Kurkik is the broker side of keeping an API self-maintaining: it catches drift between your AsyncAPI document and the messaging system that actually runs, and proposes the fix. Together with the [JetBrains plugin](/jetbrains-plugin/), which covers the source-code side, the declaration and the implementation stay in step. It is named after Kurkik Jalali, the fiery horse of the Armenian epic *Daredevils of Sasun*, who bridges worlds, shows what is really there, and is fast.
 
 ## What it will do
 

@@ -88,6 +88,27 @@ function softwareApplication(p: Product) {
   return node
 }
 
+function registryDataset() {
+  const registry = 'https://schemas.asyncapi.pavelon.dev'
+  return {
+    '@type': 'Dataset',
+    '@id': `${registry}/#dataset`,
+    name: 'AsyncAPI JSON Schema Registry',
+    description:
+      'JSON Schemas (draft-07) for AsyncAPI 3.x documents, protocol bindings for 20 brokers and security schemes, for validation, autocompletion and AI agents.',
+    url: registry,
+    sameAs: `${SITE_URL}/schemas/registry.html`,
+    keywords: ['AsyncAPI', 'JSON Schema', 'validation', 'bindings', 'event-driven architecture'],
+    isAccessibleForFree: true,
+    creator: { '@id': PERSON_ID },
+    distribution: {
+      '@type': 'DataDownload',
+      encodingFormat: 'application/schema+json',
+      contentUrl: `${registry}/draft-07/schemas/v3.0.0/asyncapi`,
+    },
+  }
+}
+
 const SEGMENT_LABELS: Record<string, string> = {
   bindings: 'Bindings',
   schemas: 'Schemas',
@@ -139,6 +160,7 @@ function pageGraph(ctx: TransformContext, title: string, description: string, ur
       name: 'AsyncAPI tools by Pavel Bodiachevskii',
       itemListElement: software.map((p, i) => ({ '@type': 'ListItem', position: i + 1, item: softwareApplication(p) })),
     })
+    graph.push(registryDataset())
     graph.push({
       '@type': 'FAQPage',
       mainEntity: faq.map((f) => ({
@@ -169,6 +191,8 @@ function pageGraph(ctx: TransformContext, title: string, description: string, ur
       ...(modified && { dateModified: modified }),
     })
   }
+
+  if (rel === 'schemas/registry.md') graph.push(registryDataset())
 
   const crumbs = breadcrumbs(rel, title)
   if (crumbs) graph.push(crumbs)

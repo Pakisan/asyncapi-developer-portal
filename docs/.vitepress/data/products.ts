@@ -30,9 +30,9 @@ export const products: Product[] = [
   {
     id: 'jetbrains-plugin',
     name: 'AsyncAPI plugin for JetBrains IDEs',
-    tagline: 'Write, validate and preview AsyncAPI in IntelliJ IDEA, WebStorm, PyCharm and Android Studio',
+    tagline: 'Keep AsyncAPI in step with your Spring code, inside IntelliJ IDEA, WebStorm, PyCharm and Android Studio',
     summary:
-      'Turn your JetBrains IDE into a complete AsyncAPI editor. Catch mistakes while you type, preview the result, and generate AsyncAPI documentation straight from your Spring Messaging code.',
+      'Generate AsyncAPI documentation straight from your Spring Messaging code and catch drift between the document and the implementation as you work. Also a complete AsyncAPI editor: validate while you type and preview the result.',
     status: 'freemium',
     statusLabel: 'Free + Pro',
     audience: 'Teams documenting event-driven systems, Spring developers, API designers',
@@ -73,9 +73,9 @@ export const products: Product[] = [
   {
     id: 'kurkik',
     name: 'Kurkik',
-    tagline: 'From a running broker to an AsyncAPI document, and back',
+    tagline: 'Catch drift between your AsyncAPI document and the brokers and queues that actually run',
     summary:
-      'Point it at an existing messaging system and get an up-to-date AsyncAPI 3.0 document. Compare the document with reality to spot drift, and apply changes only after you review them.',
+      'Point it at an existing messaging system and get an up-to-date AsyncAPI 3.0 document. Compare the document with reality to spot drift, and apply fixes only after you review them.',
     status: 'announced',
     statusLabel: 'Coming soon',
     audience: 'Platform and data engineers, architects, governance teams',
@@ -129,15 +129,35 @@ export const products: Product[] = [
   },
   {
     id: 'schemas',
-    name: 'AsyncAPI JSON Schemas',
-    tagline: 'Validate AsyncAPI documents, bindings, security and multi-format schemas',
+    name: 'AsyncAPI Schemas documentation',
+    tagline: 'Understand AsyncAPI data, security and multi-format schemas, with examples',
     summary:
-      'Published JSON Schemas for AsyncAPI documents, bindings and security schemes, with documentation, examples and hints for multi-format schemas (Avro, JSON Schema, XML and more).',
+      'Documentation for the AsyncAPI Schema Object, security schemes and multi-format schemas (Avro, JSON Schema, XML and more): how to use them in AsyncAPI documents and while generating them.',
     status: 'available',
     statusLabel: 'Free',
-    audience: 'Authors and tool builders validating AsyncAPI',
-    features: ['Bindings, security and multi-format schemas', 'Bundled AsyncAPI v3 components', 'Hosted at schemas.asyncapi.pavelon.dev'],
+    audience: 'Authors and generators of AsyncAPI documents',
+    features: ['Schema and multi-format schema objects', 'HTTP, OAuth 2.0 and SASL security schemes', 'Examples and hints for real documents'],
     page: '/schemas/',
+    group: 'Reference',
+    applicationCategory: 'ReferenceApplication',
+    operatingSystem: 'Web',
+  },
+  {
+    id: 'schema-registry',
+    name: 'AsyncAPI JSON Schema Registry',
+    tagline: 'Machine-readable schemas to validate and autocomplete AsyncAPI, for tools and AI agents',
+    summary:
+      'Point your editor, CI pipeline or AI agent at a schema URL to validate AsyncAPI documents, bindings and security schemes, get autocompletion, and understand the structure of the specification.',
+    status: 'available',
+    statusLabel: 'Free',
+    audience: 'Engineers, CI pipelines, AI agents and LLMs',
+    features: [
+      'AsyncAPI 3.0 and 3.1 documents, 603 draft-07 schemas',
+      'Bindings for 20 brokers, per version',
+      'Works in JetBrains IDEs, VS Code, check-jsonschema and agents',
+      'Nightly channel with refactored, improved schemas',
+    ],
+    page: '/schemas/registry.html',
     installUrl: 'https://schemas.asyncapi.pavelon.dev',
     group: 'Reference',
     applicationCategory: 'ReferenceApplication',
@@ -170,6 +190,14 @@ export const articles = [
 
 export const faq = [
   {
+    q: 'What is a self-maintaining API, and what is AsyncAPI drift?',
+    a: 'Drift is when an AsyncAPI document no longer matches the system it describes: the code sends different messages, or topics and queues were changed on the broker. A self-maintaining API detects that mismatch and brings the declaration and the implementation back in step. These tools do it from both sides: the JetBrains plugin from your source code, and Kurkik (coming soon) from live brokers and queues.',
+  },
+  {
+    q: 'How do I detect drift between AsyncAPI and my code or my broker?',
+    a: 'From code, the JetBrains plugin regenerates the AsyncAPI document from Spring Messaging code so you can review what changed. From the broker side, Kurkik, announced and coming soon, compares the document with a live Kafka, Pulsar, SNS or SQS system and reports what matches, changed, is missing or is extra. Validate the result against the schema registry in CI.',
+  },
+  {
     q: 'How do I document Spring Kafka, JMS, SNS or SQS listeners as AsyncAPI?',
     a: 'The AsyncAPI plugin for JetBrains IDEs can generate an AsyncAPI document from your Spring Messaging code, so the documentation comes from the source instead of being written twice. Kafka, JMS, Amazon SNS and SQS, Pulsar, STOMP and SSE are covered.',
   },
@@ -179,7 +207,15 @@ export const faq = [
   },
   {
     q: 'How do I validate an AsyncAPI document?',
-    a: 'Validate in the editor with the JetBrains plugin, lint with Spectral or Redocly, or validate against the published AsyncAPI JSON Schemas at schemas.asyncapi.pavelon.dev.',
+    a: 'Validate in the editor with the JetBrains plugin, lint with Spectral or Redocly, or validate against the AsyncAPI JSON Schemas from the schema registry at schemas.asyncapi.pavelon.dev, for example with check-jsonschema in CI.',
+  },
+  {
+    q: 'Where can I get JSON Schemas for AsyncAPI documents and bindings?',
+    a: 'The AsyncAPI JSON Schema Registry at schemas.asyncapi.pavelon.dev serves schemas for AsyncAPI 3.0 and 3.1 documents, 20 broker bindings and security schemes. Use the URL in your editor, in CI, or give it to an AI agent.',
+  },
+  {
+    q: 'How can an AI agent or LLM validate or generate AsyncAPI correctly?',
+    a: 'Give the agent the schema URL for your AsyncAPI version and binding. It can read the structure from the schema, generate a document or a single binding, then validate the result against the same schema and fix the reported errors.',
   },
   {
     q: 'How do I split a large AsyncAPI document into smaller files?',
@@ -187,7 +223,7 @@ export const faq = [
   },
   {
     q: 'Can I write AsyncAPI without a JetBrains IDE?',
-    a: 'Yes. The published JSON Schemas work in any editor or CI pipeline, and the AsyncAPI Language Server for VS Code, Zed and Sublime Text is in development.',
+    a: 'Yes. The schema registry works in any editor or CI pipeline, and the AsyncAPI Language Server for VS Code, Zed and Sublime Text is in development.',
   },
   {
     q: 'Is there a free way to use these tools?',

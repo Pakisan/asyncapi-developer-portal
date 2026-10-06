@@ -34,6 +34,10 @@ head:
 
 # AsyncAPI Protocol Bindings
 
+::: tip Need the JSON Schemas?
+Every binding is also published as a JSON Schema in the [registry](https://schemas.asyncapi.pavelon.dev/draft-07/bindings/), for validation and autocompletion. See [how to use it](/schemas/registry).
+:::
+
 An AsyncAPI **binding** is a mechanism that defines protocol-specific information for different components of your event-driven architecture. Bindings allow you to describe details that are not part of the core AsyncAPI specification but are essential for interacting with a specific message broker or protocol.
 
 ## Binding Types
