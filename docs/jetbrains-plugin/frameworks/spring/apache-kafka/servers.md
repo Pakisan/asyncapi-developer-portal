@@ -1,3 +1,8 @@
+---
+title: "Kafka Servers from Spring Config"
+description: "How AsyncAPI servers are extracted from Spring Kafka application properties, including per-profile bootstrap servers."
+---
+
 # Servers
 
 Servers are extracted from the found application configuration file

@@ -1,10 +1,11 @@
 import {defineConfig, HeadConfig} from 'vitepress'
 import tailwindcss from "@tailwindcss/vite";
+import { buildHead, normalizePageData } from './seo'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Pavel on AsyncAPI",
-  description: "Everything you should to now about AsyncAPI",
+  description: "AsyncAPI tools, protocol bindings and JSON Schemas by Pavel Bodiachevskii: JetBrains plugin, Spring Messaging docs, Kurkik, JAsyncAPI.",
   lang: 'en-US',
   lastUpdated: true,
   cleanUrls: false,
@@ -16,6 +17,10 @@ export default defineConfig({
       { text: 'Bindings', link: '/bindings/', activeMatch: '\/bindings.+' },
       { text: 'Schemas', link: '/schemas/', activeMatch: '\/schemas.+' },
       { text: 'JetBrains Plugin', link: '/jetbrains-plugin/', activeMatch: '\/jetbrains-plugin.*' },
+      { text: 'Kurkik', link: '/kurkik/' },
+      { text: 'JAsyncAPI', link: '/jasyncapi/' },
+      { text: 'LSP', link: '/language-server.html' },
+      { text: 'Tools', link: '/#tools' },
       { text: 'Blog', link: 'https://pavelon.dev/' },
     ],
 
@@ -840,126 +845,16 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }],
-    ['script', { src: 'https://cdn.tailwindcss.com?plugins=forms,container-queries' }],
     ['meta', { name: 'author', content: 'Pavel Bodiachevskii' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
     ['meta', { name: 'yandex-verification', content: 'ed012648c88cacbb' }],
   ],
 
-  transformHead: ({ pageData }) => {
-    const headers: HeadConfig[] = pageData.frontmatter.head ?? [];
-    const filteredHeaders = headers.filter(header => {
-        const name = header[1].rel;
-        return !['canonical'].includes(name);
-    });
-
-    let ogImagePath: string = "";
-    filteredHeaders.forEach(header => {
-      if (header[1].name === "og:image") {
-        ogImagePath = header[1].content;
-      }
-    })
-
-    if (ogImagePath.length > 0) {
-      filteredHeaders.push(['meta', { property: 'og:image', content: `https://asyncapi.pavelon.dev${ogImagePath}` }])
-    }
-    return filteredHeaders
+  transformPageData: (pageData) => {
+    normalizePageData(pageData)
   },
-  //
-  // transformHead: ({ pageData, siteData, siteConfig, pageContext, page }) => {
-  //   const headers: HeadConfig[] = pageData.frontmatter.head ?? [];
-  //   const title = pageData.frontmatter.title || pageData.title || siteData.title;
-  //   const description = pageData.frontmatter.description || pageData.description || siteData.description;
-  //   const siteUrl = 'https://asyncapi.pavelon.dev';
-  //   const url = `${siteUrl}${pageData.relativePath.replace(/\.md$/, '.html')}`;
-  //   const imageUrl = pageData.frontmatter.image || '/asyncapi.png';
-  //   const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `${siteUrl}${imageUrl}`;
-  //
-  //   // Remove any existing tags that we'll be setting to avoid duplicates
-  //   const filteredHeaders = headers.filter(header => {
-  //     const name = header[1].name || header[1].property;
-  //     return !['og:title', 'og:description', 'og:url', 'og:image', 'og:type',
-  //              'twitter:card', 'twitter:title', 'twitter:description', 'twitter:image',
-  //              'canonical'].includes(name);
-  //   });
-  //
-  //   // Canonical URL
-  //   filteredHeaders.push(['link', { rel: 'canonical', href: url }]);
-  //
-  //   // Open Graph tags
-  //   filteredHeaders.push(['meta', { property: 'og:title', content: title }]);
-  //   filteredHeaders.push(['meta', { property: 'og:description', content: description }]);
-  //   filteredHeaders.push(['meta', { property: 'og:url', content: url }]);
-  //   filteredHeaders.push(['meta', { property: 'og:image', content: absoluteImageUrl }]);
-  //   filteredHeaders.push(['meta', { property: 'og:type', content: 'website' }]);
-  //   filteredHeaders.push(['meta', { property: 'og:site_name', content: siteData.title }]);
-  //
-  //   // Twitter Card tags
-  //   filteredHeaders.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }]);
-  //   filteredHeaders.push(['meta', { name: 'twitter:title', content: title }]);
-  //   filteredHeaders.push(['meta', { name: 'twitter:description', content: description }]);
-  //   filteredHeaders.push(['meta', { name: 'twitter:image', content: absoluteImageUrl }]);
-  //
-  //   // JSON-LD structured data
-  //   let jsonLd;
-  //
-  //   // Check if this is a blog post/article (has date and author in frontmatter)
-  //   if (pageData.frontmatter.date && pageData.frontmatter.author) {
-  //     // Use BlogPosting schema for blog posts
-  //     jsonLd = {
-  //       '@context': 'https://schema.org',
-  //       '@type': 'BlogPosting',
-  //       headline: title,
-  //       description: description,
-  //       image: absoluteImageUrl,
-  //       url: url,
-  //       datePublished: pageData.frontmatter.date,
-  //       dateModified: pageData.frontmatter.lastUpdated || pageData.frontmatter.date,
-  //       author: {
-  //         '@type': 'Person',
-  //         name: pageData.frontmatter.author
-  //       },
-  //       publisher: {
-  //         '@type': 'Organization',
-  //         name: 'AsyncAPI Community',
-  //         logo: {
-  //           '@type': 'ImageObject',
-  //           url: `${siteUrl}/asyncapi.png`
-  //         }
-  //       },
-  //       mainEntityOfPage: {
-  //         '@type': 'WebPage',
-  //         '@id': url
-  //       }
-  //     };
-  //   } else {
-  //     // Use WebPage schema for regular pages
-  //     jsonLd = {
-  //       '@context': 'https://schema.org',
-  //       '@type': 'WebPage',
-  //       name: title,
-  //       description: description,
-  //       url: url,
-  //       image: absoluteImageUrl,
-  //       publisher: {
-  //         '@type': 'Organization',
-  //         name: 'AsyncAPI Community',
-  //         logo: {
-  //           '@type': 'ImageObject',
-  //           url: `${siteUrl}/asyncapi.png`
-  //         }
-  //       }
-  //     };
-  //   }
-  //
-  //   filteredHeaders.push([
-  //     'script',
-  //     { type: 'application/ld+json' },
-  //     JSON.stringify(jsonLd)
-  //   ]);
-  //
-  //   return filteredHeaders;
-  // },
+
+  transformHead: (ctx) => buildHead(ctx),
 
   sitemap: {
     hostname: 'https://asyncapi.pavelon.dev'

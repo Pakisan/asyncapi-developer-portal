@@ -1,3 +1,7 @@
+---
+title: "Extract AsyncAPI Operations to Files"
+description: "Move operations and operation traits into separate files and keep IDE completion, validation and preview working."
+---
 
 # Operation extraction
 

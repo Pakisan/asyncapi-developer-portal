@@ -1,3 +1,8 @@
+---
+title: "Inspect AsyncAPI in a Native Tree UI"
+description: "Understand a large AsyncAPI specification at a glance with tree navigation, reference resolving and a native preview in your IDE."
+---
+
 # New way to inspect
 
 ![](/jetbrains-plugin/features/preview.png)

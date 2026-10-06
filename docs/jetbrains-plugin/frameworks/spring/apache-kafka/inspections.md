@@ -1,3 +1,8 @@
+---
+title: "Spring Kafka Listener Inspections"
+description: "IDE inspections that catch Spring Kafka listener mistakes, such as empty @KafkaListeners, before they leak into your AsyncAPI documentation."
+---
+
 # Inspections
 
 This section contains inspection rules for Apache Kafka to implement

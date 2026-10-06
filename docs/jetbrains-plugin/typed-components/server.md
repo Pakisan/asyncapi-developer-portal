@@ -1,3 +1,8 @@
+---
+title: "Extract AsyncAPI Servers to Files"
+description: "Move servers and server variables into separate files and keep IDE completion, validation and preview working."
+---
+
 # Server extraction
 
 Here are examples of how to extract servers and server variables from AsyncAPI documents to enable:

@@ -1,3 +1,8 @@
+---
+title: "Method-level @KafkaListeners Channels"
+description: "How multiple @KafkaListener annotations grouped by @KafkaListeners on a method are registered as AsyncAPI channels."
+---
+
 # Method Level @KafkaListeners
 
 ## Selection Criteria

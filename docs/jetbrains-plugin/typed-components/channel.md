@@ -1,3 +1,8 @@
+---
+title: "Extract AsyncAPI Channels to Files"
+description: "Move channels, channel parameters and their components into separate files and keep IDE completion, validation and preview working."
+---
+
 # Channel extraction
 
 Here are examples of how to extract channels and channel components from AsyncAPI documents to enable:

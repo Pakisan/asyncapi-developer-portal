@@ -1,3 +1,8 @@
+---
+title: "KafkaTemplate to AsyncAPI Operations"
+description: "How KafkaTemplate send invocations in Spring code are registered as AsyncAPI operations, and which invocations are recognized."
+---
+
 # KafkaTemplate
 
 KafkaTemplate is used to send and receive messages from Kafka topics. It provides methods to send messages synchronously and asynchronously, as well as to receive messages from topics.

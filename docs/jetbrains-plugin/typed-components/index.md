@@ -1,3 +1,8 @@
+---
+title: "Typed Components for AsyncAPI"
+description: "Split AsyncAPI documents into reusable servers, channels, messages and operations across files, with completion, validation and preview."
+---
+
 # Typed Components
 
 When you are working with AsyncAPI, you will find that you are working with repeatable components, like servers, channels, messages, etc.

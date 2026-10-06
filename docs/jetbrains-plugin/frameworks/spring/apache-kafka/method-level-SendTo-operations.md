@@ -1,3 +1,8 @@
+---
+title: "Method-level @SendTo Operations"
+description: "How @SendTo on a Spring Kafka listener method produces AsyncAPI operations that forward messages to reply topics."
+---
+
 # Method Level @SendTo
 
 ## Selection Criteria

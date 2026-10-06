@@ -1,3 +1,8 @@
+---
+title: "Why the Plugin Went Freemium"
+description: "Why the AsyncAPI plugin for JetBrains IDEs moved from free to freemium: the story behind the change and what it means for long-time users."
+---
+
 # Freemium model
 
 ## Why the switch to freemium?

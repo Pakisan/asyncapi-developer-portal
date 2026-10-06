@@ -1,3 +1,8 @@
+---
+title: "Spectral Linting for AsyncAPI"
+description: "Apply custom Spectral rulesets to AsyncAPI files inside your IDE with real-time linting, inline messages and .spectralignore support."
+---
+
 # 🟣 Spectral Validation
 
 ![](https://plugins.jetbrains.com/files/15673/62207-page/138e84b8-0786-44c8-b89a-a83e8d64e792)

@@ -1,3 +1,8 @@
+---
+title: "Class-level @KafkaListeners Channels"
+description: "How repeated class-level @KafkaListener annotations grouped by @KafkaListeners are registered as AsyncAPI channels."
+---
+
 # Class Level @KafkaListeners
 
 ## Selection Criteria

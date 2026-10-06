@@ -1,1 +1,5 @@
-@import "tailwindcss";
+/* Utilities are intentionally unlayered so they win over VitePress' unlayered element styles (h1, h2, ...).
+   This replaces the render-blocking Tailwind Play CDN script that used to paper over the problem. */
+@layer theme, base, components;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css";

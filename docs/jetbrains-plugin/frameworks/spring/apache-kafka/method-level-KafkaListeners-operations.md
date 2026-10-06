@@ -1,3 +1,8 @@
+---
+title: "Method-level @KafkaListeners Operations"
+description: "How multiple @KafkaListener annotations grouped by @KafkaListeners on a method are registered as AsyncAPI operations."
+---
+
 # Method Level @KafkaListeners
 
 ## Selection Criteria

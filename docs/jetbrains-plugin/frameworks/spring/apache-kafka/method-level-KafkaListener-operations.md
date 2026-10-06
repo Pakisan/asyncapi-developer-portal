@@ -1,3 +1,8 @@
+---
+title: "Method-level @KafkaListener Operations"
+description: "How @KafkaListener on a Spring Kafka method becomes an AsyncAPI operation, including the effect of @SendTo."
+---
+
 # Method Level @KafkaListener
 
 ## Selection Criteria

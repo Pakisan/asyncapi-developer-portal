@@ -1,3 +1,8 @@
+---
+title: "Edit AsyncAPI in a Native Tree UI"
+description: "Edit a whole AsyncAPI specification as a tree in your JetBrains IDE, with no scrolling through YAML or JSON to find a channel."
+---
+
 # New way to edit
 
 ![](/jetbrains-plugin/features/preview.png)

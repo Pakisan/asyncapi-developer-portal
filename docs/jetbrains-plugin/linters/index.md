@@ -1,3 +1,8 @@
+---
+title: "AsyncAPI Linting in JetBrains IDEs"
+description: "Lint AsyncAPI documents with Spectral or Redocly directly in your JetBrains IDE, automatically while editing or on demand."
+---
+
 # Linters 📝
 
 Writing AsyncAPI specifications isn’t just about describing messages and channels - it’s about following the rules your company or team has agreed on.

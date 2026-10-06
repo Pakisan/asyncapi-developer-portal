@@ -1,3 +1,8 @@
+---
+title: "Spring Messaging AsyncAPI Generation"
+description: "How the AsyncAPI plugin generates AsyncAPI documents from Spring Messaging source code, which frameworks are covered and the known limitations."
+---
+
 # Frameworks
 
 ## Limitations

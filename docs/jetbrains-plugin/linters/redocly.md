@@ -1,3 +1,8 @@
+---
+title: "Redocly Validation for AsyncAPI"
+description: "Run Redocly rules on AsyncAPI files inside your IDE: instant validation, config and ignore file support, and inline error highlighting."
+---
+
 # 🔵 Redocly Validation
 
 ![](https://plugins.jetbrains.com/files/15673/62207-page/dc57268d-0324-478a-ba5f-dd5f04b336b1)

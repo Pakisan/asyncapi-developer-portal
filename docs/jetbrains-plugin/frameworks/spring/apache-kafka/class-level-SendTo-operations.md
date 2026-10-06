@@ -1,3 +1,8 @@
+---
+title: "Class-level @SendTo Operations"
+description: "How @SendTo on a Spring Kafka class-level listener produces one-to-many AsyncAPI operations for each @KafkaHandler method."
+---
+
 # Class Level @SendTo
 
 ## Selection Criteria

@@ -1,3 +1,8 @@
+---
+title: "Class-level @KafkaListeners Operations"
+description: "How repeated class-level @KafkaListener annotations grouped by @KafkaListeners are registered as AsyncAPI operations."
+---
+
 # Class Level @KafkaListeners
 
 ## Selection Criteria

@@ -1,3 +1,12 @@
+---
+title: "KafkaAdmin Channels (planned)"
+description: "Planned support for extracting AsyncAPI channels from KafkaAdmin topic definitions in Spring Kafka configuration."
+head:
+  - - meta
+    - name: robots
+      content: noindex
+---
+
 # KafkaAdmin - TODO
 
 KafkaAdmin is used to manage Kafka topics, brokers, and other resources. It provides methods to create, delete, and modify topics, as well as to retrieve information about existing topics and brokers.

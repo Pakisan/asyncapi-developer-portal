@@ -1,3 +1,8 @@
+---
+title: "Class-level @KafkaListener Channels"
+description: "How class-level @KafkaListener with @KafkaHandler methods in Spring Kafka become AsyncAPI channels."
+---
+
 # Class Level @KafkaListener
 
 ## Selection Criteria
