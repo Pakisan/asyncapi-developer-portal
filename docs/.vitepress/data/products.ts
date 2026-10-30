@@ -76,8 +76,8 @@ export const products: Product[] = [
     tagline: 'Catch drift between your AsyncAPI document and the brokers and queues that actually run',
     summary:
       'Point it at an existing messaging system and get an up-to-date AsyncAPI 3.0 document. Compare the document with reality to spot drift, and apply fixes only after you review them.',
-    status: 'announced',
-    statusLabel: 'Coming soon',
+    status: 'available',
+    statusLabel: 'Early Access Program',
     audience: 'Platform and data engineers, architects, governance teams',
     features: [
       'Document an existing Apache Kafka, Apache Pulsar, Amazon SNS or Amazon SQS estate',
@@ -85,7 +85,7 @@ export const products: Product[] = [
       'Apply changes as a reviewed plan, with the risky ones kept out of the default approval',
       'Says plainly what it could not read, instead of guessing',
     ],
-    page: '/kurkik/',
+    page: 'https://kurkik.pavelon.dev',
     group: 'Code & automation',
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Windows, macOS, Linux',
@@ -191,11 +191,11 @@ export const articles = [
 export const faq = [
   {
     q: 'What is a self-maintaining API, and what is AsyncAPI drift?',
-    a: 'Drift is when an AsyncAPI document no longer matches the system it describes: the code sends different messages, or topics and queues were changed on the broker. A self-maintaining API detects that mismatch and brings the declaration and the implementation back in step. These tools do it from both sides: the JetBrains plugin from your source code, and Kurkik (coming soon) from live brokers and queues.',
+    a: 'Drift is when an AsyncAPI document no longer matches the system it describes: the code sends different messages, or topics and queues were changed on the broker. A self-maintaining API detects that mismatch and brings the declaration and the implementation back in step. These tools do it from both sides: the JetBrains plugin from your source code, and Kurkik from live brokers and queues.',
   },
   {
     q: 'How do I detect drift between AsyncAPI and my code or my broker?',
-    a: 'From code, the JetBrains plugin regenerates the AsyncAPI document from Spring Messaging code so you can review what changed. From the broker side, Kurkik, announced and coming soon, compares the document with a live Kafka, Pulsar, SNS or SQS system and reports what matches, changed, is missing or is extra. Validate the result against the schema registry in CI.',
+    a: 'From code, the JetBrains plugin regenerates the AsyncAPI document from Spring Messaging code so you can review what changed. From the broker side, Kurkik, compares the document with a live Kafka, Pulsar, SNS or SQS system and reports what matches, changed, is missing or is extra. Validate the result against the schema registry in CI.',
   },
   {
     q: 'How do I document Spring Kafka, JMS, SNS or SQS listeners as AsyncAPI?',
@@ -231,6 +231,6 @@ export const faq = [
   },
   {
     q: 'How do I keep AsyncAPI documentation in sync with a running Kafka, Pulsar, SNS or SQS system?',
-    a: 'Kurkik, announced and coming soon, documents an existing system as AsyncAPI 3.0, reports drift and applies changes only after review.',
+    a: 'Kurkik, documents an existing system as AsyncAPI 3.0, reports drift and applies changes only after review.',
   },
 ]

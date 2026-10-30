@@ -17,7 +17,7 @@ export default defineConfig({
       { text: 'Bindings', link: '/bindings/', activeMatch: '\/bindings.+' },
       { text: 'Schemas', link: '/schemas/', activeMatch: '\/schemas.+' },
       { text: 'JetBrains Plugin', link: '/jetbrains-plugin/', activeMatch: '\/jetbrains-plugin.*' },
-      { text: 'Kurkik', link: '/kurkik/' },
+      { text: 'Kurkik', link: 'https://kurkik.pavelon.dev' },
       { text: 'JAsyncAPI', link: '/jasyncapi/' },
       { text: 'LSP', link: '/language-server.html' },
       { text: 'Tools', link: '/#tools' },

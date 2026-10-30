@@ -30,11 +30,11 @@
         </div>
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col">
           <span class="text-xs font-semibold uppercase tracking-wider text-sky-600 dark:text-sky-400 mb-2">From brokers and queues</span>
-          <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Kurkik <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 align-middle">Coming soon</span></h3>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Kurkik <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 align-middle">Early Access Program</span></h3>
           <p class="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
             Reads the live Kafka, Pulsar, SNS or SQS system, shows where it differs from the document, and applies fixes only as a plan you approve.
           </p>
-          <a class="text-sky-500 dark:text-sky-400 font-semibold" href="/kurkik/">Read about Kurkik →</a>
+          <a class="text-sky-500 dark:text-sky-400 font-semibold" href="https://kurkik.pavelon.dev">Read about Kurkik →</a>
         </div>
       </div>
       <p class="mt-10 text-gray-600 dark:text-gray-400 max-w-3xl">

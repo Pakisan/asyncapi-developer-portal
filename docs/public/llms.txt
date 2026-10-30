@@ -4,7 +4,7 @@
 
 ## Tools
 - [AsyncAPI plugin for JetBrains IDEs](https://asyncapi.pavelon.dev/jetbrains-plugin/): write, validate and preview AsyncAPI; generate AsyncAPI from Spring Messaging code (Kafka, JMS, SNS, SQS, Pulsar, STOMP, SSE). Free core, paid extras.
-- [Kurkik](https://asyncapi.pavelon.dev/kurkik/): announced. Document live Kafka, Pulsar, SNS and SQS systems as AsyncAPI 3.0 and detect drift.
+- [Kurkik](https://kurkik.pavelon.dev): announced. Document live Kafka, Pulsar, SNS and SQS systems as AsyncAPI 3.0 and detect drift.
 - [JAsyncAPI](https://asyncapi.pavelon.dev/jasyncapi/): free Apache-2.0 JVM library for AsyncAPI documents.
 - [AsyncAPI Language Server](https://asyncapi.pavelon.dev/language-server.html): in development, for VS Code, Zed and Sublime Text.
 
