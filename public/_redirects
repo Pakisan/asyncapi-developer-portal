@@ -132,8 +132,13 @@
 /bindings. /bindings/ 301
 /jetbrains-plugin.* /jetbrains-plugin/ 301
 
-# Old binding URLs with a trailing slash
-/bindings/:protocol/:version/:file/ /bindings/:protocol/:version/:file.html 301
+# Binding pages without .html, or with a trailing slash (Vercel serves pages only at .html)
+/bindings/:protocol/:version/:file /bindings/:protocol/:version/:file.html 301
+# Other pages Google asked for without .html
+/schemas/schema /schemas/schema.html 301
+/schemas/multiFormatSchema /schemas/multiFormatSchema.html 301
+/jetbrains-plugin/freemium-model /jetbrains-plugin/freemium-model.html 301
+/jetbrains-plugin/typed-components/operation /jetbrains-plugin/typed-components/operation.html 301
 
 # Search consoles know the sitemap as /sitemap.xml; serve the index there too
 /sitemap.xml /sitemap-index.xml 200

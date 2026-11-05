@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/vercel-config.mjs --check && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "check:urls": "node scripts/check-urls.mjs",
-    "astro": "astro"
+    "astro": "astro",
+    "vercel:config": "node scripts/vercel-config.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
+    "path-to-regexp": "6.3.0",
     "typescript": "6.0.3"
   }
 }
