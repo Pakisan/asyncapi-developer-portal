@@ -1,20 +1,30 @@
 {
   "name": "asyncapi-developer-network",
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
-    "vitepress": "^1.6.3",
-    "vue3-json-viewer": "^2.2.2"
-  },
+  "type": "module",
+  "private": true,
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "check:urls": "node scripts/check-urls.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "@astrojs/starlight": "0.42.7",
+    "@astrojs/vue": "7.1.2",
+    "@tailwindcss/vite": "4.3.4",
+    "astro": "7.3.8",
+    "sharp": "0.35.5",
+    "starlight-links-validator": "0.27.0",
+    "starlight-llms-txt": "0.12.0",
+    "starlight-sidebar-topics": "0.9.0",
+    "tailwindcss": "4.3.4",
+    "vue": "3.5.24"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "@types/vue3-json-viewer": "^2.2.0",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
+    "@astrojs/check": "0.9.12",
+    "typescript": "6.0.3"
   }
 }

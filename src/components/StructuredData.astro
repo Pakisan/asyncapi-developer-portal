@@ -1,0 +1,11 @@
+---
+// schema.org JSON-LD, which search engines read to know what a page is about. Only describe what the page shows.
+interface Props {
+	data: Record<string, unknown>;
+}
+
+// `<` escaped, so text with HTML in it (FAQ answers) can never close the script element.
+const json = JSON.stringify(Astro.props.data).replace(/</g, '\\u003c');
+---
+
+<script type="application/ld+json" set:html={json} />

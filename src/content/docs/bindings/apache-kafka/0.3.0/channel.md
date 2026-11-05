@@ -1,0 +1,60 @@
+---
+title: Apache Kafka Channel Binding v0.3.0 - Topic Configuration
+description: Configure Apache Kafka channel bindings v0.3.0 for AsyncAPI. Define topics, partitions, replicas, and topic settings for scalable event streaming.
+ogImage: /bindings/apache-kafka/0.3.0/channel.png
+head:
+  - tag: meta
+    attrs:
+      name: keywords
+      content: Apache Kafka channel binding, AsyncAPI, Kafka topic, partitions, replicas, topic configuration, event streaming, data streaming
+heading: "Apache Kafka Channel Binding v0.3.0"
+---
+
+The Apache Kafka channel binding object allows you to define Kafka-specific information for an AsyncAPI channel. This binding is essential for configuring Kafka topics, including the number of partitions and replicas.
+
+## Overview
+
+The Kafka channel binding provides a detailed description of a Kafka topic, enabling you to manage its configuration directly within your AsyncAPI specification. This ensures that your applications and other stakeholders have a clear and consistent understanding of the topic's setup.
+
+## Channel Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `topic` | string | No | The name of the Kafka topic. If not specified, the channel name will be used. |
+| `partitions` | integer | No | The number of partitions for the topic. Must be a positive integer. |
+| `replicas` | integer | No | The number of replicas for the topic. Must be a positive integer. |
+| `bindingVersion` | string | No | The version of the Kafka channel binding. Defaults to `latest`. |
+
+## Examples
+
+### Basic Topic Configuration
+
+This example defines a Kafka topic with a specific number of partitions and replicas.
+
+```yaml
+channels:
+  user-signup:
+    bindings:
+      kafka:
+        topic: user-signup-topic
+        partitions: 10
+        replicas: 3
+        bindingVersion: '0.3.0'
+```
+
+## Use Cases
+
+### High-Throughput Data Streaming
+
+Configure a topic with a high number of partitions to handle a large volume of incoming data from multiple producers.
+
+```yaml
+channels:
+  iot-sensor-data:
+    bindings:
+      kafka:
+        topic: iot-data
+        partitions: 50
+        replicas: 3
+        bindingVersion: '0.3.0'
+```

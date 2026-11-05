@@ -1,0 +1,65 @@
+---
+// Pages outside the docs (home, product landings): their own design, the same head tags and JSON-LD rules as the docs.
+import '../styles/tailwind.css'
+import Consent from '../components/Consent.astro'
+import StructuredData from '../components/StructuredData.astro'
+import { metaTags, type PageMeta } from '../data/seo'
+
+interface Props {
+  meta: PageMeta
+  graph: Record<string, unknown>
+}
+
+const { meta, graph } = Astro.props
+const year = new Date().getFullYear()
+const nav = [
+  { label: 'Bindings', href: '/bindings/' },
+  { label: 'Schemas', href: '/schemas/' },
+  { label: 'JetBrains Plugin', href: '/jetbrains-plugin/' },
+  { label: 'Kurkik', href: 'https://kurkik.pavelon.dev' },
+  { label: 'JAsyncAPI', href: '/jasyncapi/' },
+  { label: 'LSP', href: '/language-server.html' },
+  { label: 'Blog', href: 'https://pavelon.dev/' },
+]
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{meta.title}</title>
+    {metaTags(meta).map(([Tag, attrs]) => <Tag {...attrs} />)}
+    <meta name="yandex-verification" content="ed012648c88cacbb" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <StructuredData data={graph} />
+  </head>
+  <body class="font-sans bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 antialiased">
+    <header class="border-b border-gray-200 dark:border-gray-800">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-2" aria-label="Main">
+        <a href="/" class="font-semibold flex items-center gap-2 mr-auto">
+          <img src="/icon.svg" alt="" width="24" height="24" />
+          Pavel on AsyncAPI
+        </a>
+        {nav.map((item) => <a class="text-sm hover:text-indigo-600 dark:hover:text-indigo-400" href={item.href}>{item.label}</a>)}
+      </nav>
+    </header>
+    <slot />
+    <footer class="border-t border-gray-200 dark:border-gray-800 mt-16">
+      <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 dark:text-gray-400 flex flex-wrap justify-between gap-4">
+        <p>
+          Copyright &copy; 2024–{year} <a class="underline" href="https://pavelon.dev">Pavel Bodiachevskii</a> &amp;
+          <a class="underline" href="https://www.asyncapi.com">AsyncAPI community</a>. Released under the
+          <a class="underline" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
+        </p>
+        <p class="flex gap-4">
+          <a class="underline" href="/privacy.html">Privacy</a>
+          <a class="underline" href="#" data-consent-open>Cookie settings</a>
+        </p>
+      </div>
+    </footer>
+    <Consent />
+  </body>
+</html>

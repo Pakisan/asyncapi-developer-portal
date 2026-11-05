@@ -1,0 +1,139 @@
+# Netlify redirects. Files win over these rules, so only missing URLs are redirected.
+# Generated rules for index pages (/bindings/amqp.html -> /bindings/amqp/) are appended at build time.
+
+# Old /schemes/* paths from the first version of the site
+/schemes/v3/security/symmetricencryption /schemas/v3/security/symmetricEncryption.html 301
+/schemes/v3/security/sasl/saslsecurityscheme /schemas/v3/security/sasl/saslSecuritySchema.html 301
+/schemes/v3/security/sasl/saslSecurityScheme.json /schemas/v3/security/sasl/saslSecuritySchema.json 301
+/schemes/v3/security/sasl/saslscramsecurityscheme /schemas/v3/security/sasl/saslScramSecuritySchema.html 301
+/schemes/v3/security/sasl/saslgssapisecurityscheme /schemas/v3/security/sasl/saslGssapiSecuritySchema.html 301
+/schemes/v3/security/sasl/saslplainsecurityscheme /schemas/v3/security/sasl/saslPlainSecuritySchema.html 301
+/schemes/v3/security/userpassword /schemas/v3/security/userPassword.html 301
+/schemes/v3/security/securityscheme /schemas/v3/security/securitySchema.html 301
+/schemes/v3/security/http/httpsecurityscheme /schemas/v3/security/http/httpSecuritySchema.html 301
+/schemes/v3/security/http/httpSecurityScheme.json /schemas/v3/security/http/httpSecuritySchema.json 301
+/schemes/v3/security/http/bearerhttpsecurityscheme /schemas/v3/security/http/bearerHTTPSecuritySchema.html 301
+/schemes/v3/security/http/apikeyhttpsecurityscheme /schemas/v3/security/http/apiKeyHTTPSecuritySchema.html 301
+/schemes/v3/security/http/nonbearerhttpsecurityscheme /schemas/v3/security/http/nonBearerHTTPSecuritySchema.html 301
+/schemes/v3/security/openidconnect /schemas/v3/security/openIdConnect.html 301
+/schemes/schema /schemas/schema.html 301
+/schemes/v3/security/oauth2/oauth2 /schemas/v3/security/oauth2/oauth2.html 301
+/schemes/v3/security/oauth2.html /schemas/v3/security/oauth2/oauth2.html 301
+/schemes/v3/security/oauth2/oauth2scopes /schemas/v3/security/oauth2/oauth2Scopes.html 301
+/schemes/v3/security/implicitOAuthFlow.html /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/implicitoauthflow /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/clientcredentialsoauthflow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/schemes/v3/security/clientCredentialsOAuthFlow.html /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/schemes/v3/security/passwordOAuthFlow.html /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/passwordoauthflow /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/schemes/v3/security/authorizationCodeOAuthFlow.html /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/schemes/v3/security/apikey /schemas/v3/security/apiKey.html 301
+/schemes/v3/security/x509 /schemas/v3/security/X509.html 301
+/schemes/v3/security/asymmetricencryption /schemas/v3/security/asymmetricEncryption.html 301
+/schemes/v3/security.html /schemas/ 301
+/schemes/v3/security/ /schemas/ 301
+/schemes/ /schemas/ 301
+/schemes.html /schemas/ 301
+/schemes/* /schemas/:splat 301
+
+# Section pages served as .html before they became directories
+/security-schemes.html /schemas/ 301
+/schemas.html /schemas/ 301
+/bindings.html /bindings/ 301
+/jetbrains-plugin.html /jetbrains-plugin/ 301
+/kurkik/ https://kurkik.pavelon.dev 301
+
+# Renamed plugin pages
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.html /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html 301
+
+# 404s reported by Google Search Console: relative links resolved against the wrong directory
+# A security scheme name at the root, e.g. /saslPlainSecuritySchema
+/X509 /schemas/v3/security/X509.html 301
+/apiKey /schemas/v3/security/apiKey.html 301
+/apiKeyHTTPSecuritySchema /schemas/v3/security/http/apiKeyHTTPSecuritySchema.html 301
+/asymmetricEncryption /schemas/v3/security/asymmetricEncryption.html 301
+/authorizationCodeOAuthFlow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/bearerHTTPSecuritySchema /schemas/v3/security/http/bearerHTTPSecuritySchema.html 301
+/clientCredentialsOAuthFlow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/httpSecuritySchema /schemas/v3/security/http/httpSecuritySchema.html 301
+/implicitOAuthFlow /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/nonBearerHTTPSecuritySchema /schemas/v3/security/http/nonBearerHTTPSecuritySchema.html 301
+/oauth2 /schemas/v3/security/oauth2/oauth2.html 301
+/oauth2Scopes /schemas/v3/security/oauth2/oauth2Scopes.html 301
+/openIdConnect /schemas/v3/security/openIdConnect.html 301
+/passwordOAuthFlow /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/saslGssapiSecuritySchema /schemas/v3/security/sasl/saslGssapiSecuritySchema.html 301
+/saslPlainSecuritySchema /schemas/v3/security/sasl/saslPlainSecuritySchema.html 301
+/saslScramSecuritySchema /schemas/v3/security/sasl/saslScramSecuritySchema.html 301
+/saslSecuritySchema /schemas/v3/security/sasl/saslSecuritySchema.html 301
+/securitySchema /schemas/v3/security/securitySchema.html 301
+/symmetricEncryption /schemas/v3/security/symmetricEncryption.html 301
+/userPassword /schemas/v3/security/userPassword.html 301
+/oauth2 /schemas/v3/security/oauth2/oauth2.html 301
+/flows/clientCredentialsOAuthFlow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/flows/authorizationCodeOAuthFlow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/flows/implicitOAuthFlow /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/flows/passwordOAuthFlow /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/schema.html /schemas/schema.html 301
+/multiFormatSchema.html /schemas/multiFormatSchema.html 301
+# A broker name at the root, e.g. /amqp/
+/amazon-sns /bindings/amazon-sns/ 301
+/amazon-sqs /bindings/amazon-sqs/ 301
+/amqp /bindings/amqp/ 301
+/amqp1 /bindings/amqp1/ 301
+/anypointmq /bindings/anypointmq/ 301
+/apache-kafka /bindings/apache-kafka/ 301
+/apache-pulsar /bindings/apache-pulsar/ 301
+/googlepubsub /bindings/googlepubsub/ 301
+/http /bindings/http/ 301
+/ibmmq /bindings/ibmmq/ 301
+/jms /bindings/jms/ 301
+/mercure /bindings/mercure/ 301
+/mqtt /bindings/mqtt/ 301
+/mqtt5 /bindings/mqtt5/ 301
+/nats /bindings/nats/ 301
+/redis /bindings/redis/ 301
+/ros2 /bindings/ros2/ 301
+/solace /bindings/solace/ 301
+/stomp /bindings/stomp/ 301
+/websockets /bindings/websockets/ 301
+# A binding version directory, which has no page of its own, e.g. /bindings/amqp/0.2.0
+/bindings/amazon-sns/:version /bindings/amazon-sns/ 301
+/bindings/amazon-sqs/:version /bindings/amazon-sqs/ 301
+/bindings/amqp/:version /bindings/amqp/ 301
+/bindings/amqp1/:version /bindings/amqp1/ 301
+/bindings/anypointmq/:version /bindings/anypointmq/ 301
+/bindings/apache-kafka/:version /bindings/apache-kafka/ 301
+/bindings/apache-pulsar/:version /bindings/apache-pulsar/ 301
+/bindings/googlepubsub/:version /bindings/googlepubsub/ 301
+/bindings/http/:version /bindings/http/ 301
+/bindings/ibmmq/:version /bindings/ibmmq/ 301
+/bindings/jms/:version /bindings/jms/ 301
+/bindings/mercure/:version /bindings/mercure/ 301
+/bindings/mqtt/:version /bindings/mqtt/ 301
+/bindings/mqtt5/:version /bindings/mqtt5/ 301
+/bindings/nats/:version /bindings/nats/ 301
+/bindings/redis/:version /bindings/redis/ 301
+/bindings/ros2/:version /bindings/ros2/ 301
+/bindings/solace/:version /bindings/solace/ 301
+/bindings/stomp/:version /bindings/stomp/ 301
+/bindings/websockets/:version /bindings/websockets/ 301
+# A version without its broker, e.g. /bindings/0.1.0/server.html, or a bare object name
+/bindings/:version/:file /bindings/ 301
+/message /bindings/ 301
+/server /bindings/ 301
+/operation /bindings/ 301
+/channel /bindings/ 301
+# Text that was autolinked with the sentence's full stop or a glob
+/schemas. /schemas/ 301
+/bindings. /bindings/ 301
+/jetbrains-plugin.* /jetbrains-plugin/ 301
+
+# Old binding URLs with a trailing slash
+/bindings/:protocol/:version/:file/ /bindings/:protocol/:version/:file.html 301
+
+# Search consoles know the sitemap as /sitemap.xml; serve the index there too
+/sitemap.xml /sitemap-index.xml 200

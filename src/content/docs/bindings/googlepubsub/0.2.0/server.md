@@ -1,0 +1,42 @@
+---
+title: Google Pub/Sub Server Binding v0.2.0 - Placeholder
+description: Google Pub/Sub server binding v0.2.0 placeholder for GCP endpoints. Identifies AsyncAPI servers as Google Pub/Sub service endpoints.
+ogImage: /bindings/googlepubsub/0.2.0/server.png
+head:
+  - tag: meta
+    attrs:
+      name: keywords
+      content: Google Pub/Sub server binding v0.2.0, AsyncAPI, placeholder, GCP, event-driven architecture, Pub/Sub endpoint
+heading: "Google Pub/Sub Server Binding v0.2.0"
+---
+
+The Google Cloud Pub/Sub server binding specifies that an AsyncAPI server corresponds to the Google Cloud Pub/Sub service.
+
+## Overview
+
+As of `v0.2.0`, this binding is a placeholder and has no configurable properties. Its presence on a server object is for informational purposes, indicating that the server's `url` should be `pubsub.googleapis.com`.
+
+## Server Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `bindingVersion` | string | No | Binding version (defaults to `0.2.0`). |
+
+## Example
+
+This example identifies a server as the Google Cloud Pub/Sub service endpoint.
+
+```yaml
+servers:
+  gcp_pubsub:
+    url: 'pubsub.googleapis.com'
+    protocol: googlepubsub
+    bindings:
+      googlepubsub:
+        bindingVersion: '0.2.0'
+```
+
+## Changelog
+
+### Version 0.2.0
+- The binding remains a placeholder.

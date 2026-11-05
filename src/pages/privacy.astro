@@ -1,0 +1,23 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
+import { GA_ID } from '../data/site'
+---
+
+<StarlightPage frontmatter={{ title: 'Privacy', description: 'What asyncapi.pavelon.dev collects about visitors, and how to change your choice.', tableOfContents: false }}>
+  <p>
+    This site is run by Pavel Bodiachevskii. It has no accounts, no forms and no advertising. It is served by Netlify, which
+    keeps standard web server logs (IP address, requested page, browser) to operate and protect the service.
+  </p>
+  <h2 id="cookies">Cookies and analytics</h2>
+  <p>
+    The site uses Google Analytics ({GA_ID}) to count visits and see which pages and tools people use. It is loaded only
+    after you click <strong>Accept</strong> in the cookie banner; until then nothing is requested from Google. Google
+    signals and ad personalisation are turned off.
+  </p>
+  <p>
+    Your answer is stored in your browser for 180 days. To change it, use <a href="#" data-consent-open>Cookie settings</a>;
+    choosing Reject removes the Google Analytics cookies this site set.
+  </p>
+  <h2 id="contact">Contact</h2>
+  <p>Questions about this page: open an issue or a discussion at <a href="https://github.com/Pakisan">github.com/Pakisan</a>.</p>
+</StarlightPage>

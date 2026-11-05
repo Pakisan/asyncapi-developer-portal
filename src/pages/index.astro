@@ -1,0 +1,20 @@
+---
+// Home. Until the redesign lands it renders the existing Vue landing as static HTML (no client JS).
+import Landing from '../layouts/Landing.astro'
+import LandingPage from '../components/vue/LandingPage.vue'
+import { homeGraph } from '../data/seo'
+import { SITE_URL } from '../data/site'
+
+const meta = {
+  title: 'Self-Maintaining AsyncAPI: Detect and Fix API Drift',
+  description:
+    'Catch drift between AsyncAPI documents, Spring code and Kafka, Pulsar, SNS and SQS brokers. JetBrains plugin, Kurkik, JSON Schema registry and bindings by an AsyncAPI TSC member.',
+  url: `${SITE_URL}/`,
+  image: `${SITE_URL}/index.png`,
+  type: 'website' as const,
+}
+---
+
+<Landing meta={meta} graph={homeGraph(meta)}>
+  <LandingPage />
+</Landing>

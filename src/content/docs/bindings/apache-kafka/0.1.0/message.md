@@ -1,0 +1,58 @@
+---
+title: Apache Kafka Message Binding v0.1.0 - Message Key Configuration
+description: Define Apache Kafka message bindings v0.1.0 for AsyncAPI. Learn how to configure message keys for partitioning and ordering in event-driven applications.
+ogImage: /bindings/apache-kafka/0.1.0/message.png
+head:
+  - tag: meta
+    attrs:
+      name: keywords
+      content: Apache Kafka message binding, AsyncAPI, message key, partitioning, event-driven architecture
+heading: "Apache Kafka Message Binding v0.1.0"
+---
+
+The Apache Kafka message binding object, version `0.1.0`, specifies Kafka-specific information for an AsyncAPI message, focusing on the message key.
+
+## Overview
+
+This version of the Kafka message binding allows you to define a key for a message. In Kafka, the message key is used to determine the partition to which the message will be sent. Messages with the same key are guaranteed to be sent to the same partition, which is essential for maintaining order for a specific entity.
+
+## Message Properties
+
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `key` | Schema Object | No | The message key, which is used for partitioning. It should be defined as a schema object. |
+| `bindingVersion` | string | No | The version of the Kafka message binding. For this version, the value is `0.1.0`. |
+
+## Example
+
+### Defining a Message Key
+
+This example defines a message with a `key` that is a UUID.
+
+```yaml
+messages:
+  user-update:
+    bindings:
+      kafka:
+        key:
+          type: string
+          format: uuid
+        bindingVersion: '0.1.0'
+```
+
+## Use Cases
+
+### Guaranteed Message Ordering
+
+To ensure that all updates for a specific user are processed in order, you can use the user's ID as the message key. This guarantees that all messages for that user will land in the same partition and be consumed in the order they were produced.
+
+```yaml
+messages:
+  user-profile-update:
+    bindings:
+      kafka:
+        key:
+          type: string
+          description: "The user's unique ID."
+        bindingVersion: '0.1.0'
+```

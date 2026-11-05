@@ -1,0 +1,5 @@
+name: indexnow
+inputs:
+  - name: key
+    description: IndexNow key; the file public/<key>.txt must contain it.
+    required: true

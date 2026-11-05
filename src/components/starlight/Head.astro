@@ -1,0 +1,31 @@
+---
+// Starlight's own head, minus the URL-bearing tags it would get wrong for index pages under `build.format: 'file'`
+// (it would say /bindings/amqp.html instead of /bindings/amqp/). seo.ts writes those, plus the JSON-LD.
+import StructuredData from '../StructuredData.astro'
+import { absolute, breadcrumbs, defaultImage, docGraph, docUrl, metaTags } from '../../data/seo'
+
+const { head, entry, lastUpdated } = Astro.locals.starlightRoute
+
+const replaced = (tag: string, attrs: Record<string, unknown> = {}) =>
+  (tag === 'link' && attrs.rel === 'canonical') ||
+  (tag === 'meta' && (attrs.name === 'description' || /^(og:|twitter:)/.test(String(attrs.property ?? attrs.name ?? ''))))
+
+const indexFiles = import.meta.glob('/src/content/docs/**/index.md')
+const indexIds = new Set(Object.keys(indexFiles).map((f) => f.replace(/^\/src\/content\/docs\//, '').replace(/\/index\.md$/, '')))
+
+const id = entry.id
+const isIndex = indexIds.has(id)
+const meta = {
+  title: entry.data.title,
+  description: entry.data.description ?? '',
+  url: docUrl(id, isIndex),
+  image: entry.data.ogImage ? absolute(entry.data.ogImage) : defaultImage,
+  modified: lastUpdated,
+  type: 'article' as const,
+}
+const graph = docGraph(meta, id, breadcrumbs(id, isIndex, meta.title, indexIds))
+---
+
+{head.filter(({ tag, attrs }) => !replaced(tag, attrs)).map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+{metaTags(meta).map(([Tag, attrs]) => <Tag {...attrs} />)}
+<StructuredData data={graph} />

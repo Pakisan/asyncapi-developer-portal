@@ -1,0 +1,22 @@
+---
+// The visible heading. `title` stays the search-result title (<title>, og:title); `heading`, when set, is the shorter
+// name readers see on the page, as the pages showed before the move to Starlight.
+// Same id Starlight gives its title: the "Overview" link in the table of contents points to it.
+const PAGE_TITLE_ID = '_top'
+
+const { title, heading } = Astro.locals.starlightRoute.entry.data
+---
+
+<h1 id={PAGE_TITLE_ID}>{heading ?? title}</h1>
+
+<style>
+  @layer starlight.core {
+    h1 {
+      margin-top: 1rem;
+      font-size: var(--sl-text-h1);
+      line-height: var(--sl-line-height-headings);
+      font-weight: 600;
+      color: var(--sl-color-white);
+    }
+  }
+</style>
