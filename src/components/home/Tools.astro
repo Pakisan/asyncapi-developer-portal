@@ -1,0 +1,98 @@
+---
+import { products, type ProductStatus } from '../../data/products'
+
+const tools = products.filter((p) => p.group !== 'Reference')
+const badge: Record<ProductStatus, string> = { available: 'badge-ok', freemium: 'badge-accent', announced: 'badge-soon' }
+---
+
+<section class="section tools" id="tools">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Tools</span>
+      <h2>AsyncAPI tools for the IDE, the JVM and live brokers</h2>
+      <p>
+        From writing the first document to keeping it true years later: the declaration and the systems it describes should not
+        drift apart.
+      </p>
+    </div>
+    <ul class="grid">
+      {
+        tools.map((p) => (
+          <li class="card">
+            <div class="head">
+              <h3>
+                <a href={p.page}>{p.name}</a>
+              </h3>
+              <span class:list={['badge', badge[p.status]]}>{p.statusLabel}</span>
+            </div>
+            <p class="tagline">{p.tagline}</p>
+            <ul class="features">
+              {p.features.slice(0, 3).map((f) => <li>{f}</li>)}
+            </ul>
+            <div class="links">
+              <a class="more" href={p.page}>
+                Learn more <span aria-hidden="true">&rarr;</span>
+              </a>
+              {p.installUrl && <a href={p.installUrl}>Install</a>}
+              {p.repoUrl && <a href={p.repoUrl}>Source</a>}
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .tools {
+    background: var(--surface-2);
+  }
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  h3 a:hover {
+    color: var(--accent);
+  }
+  .tagline {
+    margin: 0;
+    color: var(--muted);
+  }
+  .features {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.95rem;
+    flex: 1;
+  }
+  .features li + li {
+    margin-top: 4px;
+  }
+  .links {
+    display: flex;
+    gap: 18px;
+    font-size: 0.95rem;
+  }
+</style>

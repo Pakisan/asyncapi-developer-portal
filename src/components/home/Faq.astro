@@ -1,0 +1,78 @@
+---
+// Short, direct answers to what people search for. The same text is in the page's FAQPage JSON-LD.
+import { faq } from '../../data/home'
+---
+
+<section class="section faq" id="faq">
+  <div class="wrap narrow">
+    <div class="section-head">
+      <span class="eyebrow">AsyncAPI questions</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="list">
+      {
+        faq.map((item, i) => (
+          <details open={i < 3}>
+            <summary>
+              <h3>{item.q}</h3>
+            </summary>
+            <p set:html={item.a} />
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq {
+    background: var(--surface-2);
+  }
+  .narrow {
+    max-width: 860px;
+  }
+  .list {
+    display: grid;
+    gap: 10px;
+  }
+  details {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 0 20px;
+  }
+  details[open] {
+    padding-bottom: 16px;
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 16px 28px 16px 0;
+    position: relative;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: var(--muted);
+  }
+  details[open] summary::after {
+    content: '−';
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-family: var(--font-sans);
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+  }
+</style>

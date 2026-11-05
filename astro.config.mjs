@@ -4,8 +4,6 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import sitemap from '@astrojs/sitemap'
-import vue from '@astrojs/vue'
-import tailwindcss from '@tailwindcss/vite'
 import starlightLinksValidator from 'starlight-links-validator'
 import starlightLlmsTxt from 'starlight-llms-txt'
 import starlightSidebarTopics from 'starlight-sidebar-topics'
@@ -54,7 +52,6 @@ export default defineConfig({
   build: { format: 'file' },
   trailingSlash: 'ignore',
   integrations: [
-    vue(),
     starlight({
       title: SITE_NAME,
       description: SITE_DESCRIPTION,
@@ -102,5 +99,4 @@ export default defineConfig({
     // Must stay last: rewrites links in what the integrations above generated (sitemap, llms.txt).
     indexUrls({ docsDir, site: SITE_URL }),
   ],
-  vite: { plugins: [tailwindcss()] },
 })

@@ -1,0 +1,234 @@
+---
+import { facts, hero } from '../../data/home'
+
+// A real AsyncAPI 3.0 document; marked lines are the parts this site documents, each linked below the sample.
+const sample: { text: string; mark?: 'binding' | 'schema' }[] = [
+  { text: 'asyncapi: 3.0.0' },
+  { text: 'info:' },
+  { text: '  title: Orders' },
+  { text: '  version: 1.0.0' },
+  { text: 'channels:' },
+  { text: '  orderCreated:' },
+  { text: '    address: orders.created' },
+  { text: '    bindings:', mark: 'binding' },
+  { text: '      kafka:', mark: 'binding' },
+  { text: '        partitions: 12', mark: 'binding' },
+  { text: '    messages:' },
+  { text: '      orderCreated:' },
+  { text: '        payload:' },
+  { text: '          schemaFormat: application/vnd.apache.avro;version=1.9.0', mark: 'schema' },
+  { text: '          schema:', mark: 'schema' },
+  { text: "            $ref: './order.avsc'", mark: 'schema' },
+  { text: '        bindings:', mark: 'binding' },
+  { text: '          kafka:', mark: 'binding' },
+  { text: '            key:', mark: 'binding' },
+  { text: '              type: string', mark: 'binding' },
+  { text: 'operations:' },
+  { text: '  sendOrderCreated:' },
+  { text: '    action: send' },
+  { text: '    channel:' },
+  { text: "      $ref: '#/channels/orderCreated'" },
+]
+
+// One HTML string: inside <pre>, any whitespace a template adds between elements would show up in the sample.
+const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;')
+const code = sample
+  .map(({ text, mark }) => {
+    const [, indent = '', key = '', value = text] = text.match(/^(\s*)([^:'"]+:)(.*)$/) ?? []
+    const valueClass = /\$ref|'/.test(value) ? 's' : 'v'
+    return `<span class="line${mark ? ` ${mark}` : ''}">${indent}<span class="k">${escape(key)}</span><span class="${valueClass}">${escape(value)}</span>\n</span>`
+  })
+  .join('')
+---
+
+<section class="hero">
+  <div class="wrap grid">
+    <div class="copy">
+      <span class="eyebrow">{hero.eyebrow}</span>
+      <h1>{hero.title}</h1>
+      <p class="lead">{hero.lead}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/jetbrains-plugin/">Get the JetBrains plugin</a>
+        <a class="btn btn-ghost" href="/bindings/">Browse bindings</a>
+      </div>
+      <dl class="facts">
+        {
+          facts.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd>{f.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+
+    <figure class="sample">
+      <div class="window">
+        <div class="titlebar" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <em>asyncapi.yaml</em>
+        </div>
+        <pre><code set:html={code} /></pre>
+      </div>
+      <figcaption>
+        <a href="/bindings/apache-kafka/"><span class="dot binding"></span>Kafka channel and message bindings</a>
+        <a href="/schemas/multiFormatSchema.html#avro"><span class="dot schema"></span>Avro payload in a Multi-Format Schema</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 64px 0 56px;
+    background:
+      radial-gradient(60% 50% at 85% 10%, var(--accent-soft), transparent 70%),
+      linear-gradient(to bottom, transparent, var(--bg));
+  }
+  .grid {
+    display: grid;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 980px) {
+    .grid {
+      grid-template-columns: 1.05fr 1fr;
+    }
+  }
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+  }
+  .lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin: 20px 0 28px;
+    max-width: 600px;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 16px clamp(16px, 4vw, 36px);
+    margin: 36px 0 0;
+  }
+  /* Value above its label (dt must come first in the markup); values line up at the top when a label wraps */
+  .facts div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .facts dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    font-weight: 600;
+  }
+  .facts dt {
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  .sample {
+    margin: 0;
+    min-width: 0;
+  }
+  .window {
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .titlebar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgb(255 255 255 / 0.06);
+  }
+  .titlebar span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.15);
+  }
+  .titlebar em {
+    margin-left: 10px;
+    font-style: normal;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--code-muted);
+  }
+  pre {
+    margin: 0;
+    padding: 14px 0;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--code-fg);
+  }
+  /* As wide as the longest line, so the highlighted lines span the whole scrollable width */
+  pre code {
+    display: inline-block;
+    min-width: 100%;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+  }
+  /* The spans come from set:html, outside Astro's scoped styles. */
+  pre :global(.line) {
+    display: block;
+    padding: 0 16px;
+    border-left: 3px solid transparent;
+  }
+  pre :global(.line.binding) {
+    background: rgb(165 180 252 / 0.09);
+    border-left-color: var(--code-key);
+  }
+  pre :global(.line.schema) {
+    background: rgb(251 191 98 / 0.09);
+    border-left-color: var(--code-mark);
+  }
+  pre :global(.k) {
+    color: var(--code-key);
+  }
+  pre :global(.s) {
+    color: var(--code-str);
+  }
+  pre :global(.v) {
+    color: var(--code-fg);
+  }
+  figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 14px;
+    font-size: 0.9rem;
+  }
+  figcaption a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  figcaption a:hover {
+    color: var(--accent);
+  }
+  .dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+  .dot.binding {
+    background: var(--code-key);
+  }
+  .dot.schema {
+    background: var(--code-mark);
+  }
+</style>

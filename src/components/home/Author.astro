@@ -1,0 +1,150 @@
+---
+// Who is behind the site (E-E-A-T for search engines, trust for people), who uses the tools, and how to help.
+import { articles, users } from '../../data/home'
+---
+
+<section class="section" id="users">
+  <div class="wrap">
+    <h2 class="users-title">Used by teams at</h2>
+    <ul class="users">
+      {
+        users.map((u) => (
+          <li>
+            <a href={u.href} rel="noopener">
+              <img src={u.logo} alt={u.name} loading="lazy" decoding="async" height="40" />
+              <span>{u.name}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<section class="section author" id="about">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2>Built by an AsyncAPI maintainer</h2>
+      <p>
+        I'm Pavel Bodiachevskii, a member of the AsyncAPI Technical Steering Committee and a maintainer in the AsyncAPI ecosystem,
+        including the JAsyncAPI library used by Springwolf, the Quarkus AsyncAPI extension and Specmatic. The tools and docs here come
+        from daily work with the specification, brokers and real event-driven systems.
+      </p>
+      <p class="links">
+        <a href="https://github.com/Pakisan" rel="me noopener">GitHub</a>
+        <a href="https://pavelon.dev" rel="me noopener">Blog</a>
+        <a href="https://plugins.jetbrains.com/plugin/15673-asyncapi" rel="noopener">JetBrains Marketplace</a>
+      </p>
+      <div class="support card">
+        <p>
+          Like the free docs, JAsyncAPI and the plugin's free core? <a href="https://github.com/sponsors/Pakisan">Sponsor them on GitHub</a>, or{' '}
+          <a href="https://github.com/Pakisan/asyncapi-developer-portal/discussions/2">tell me how you use them</a>.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>From the blog</h3>
+      <ul class="articles">
+        {
+          articles.map((a) => (
+            <li>
+              <a href={a.url}>{a.title}</a>
+              <p>{a.summary}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <a class="more" href="https://pavelon.dev/">All posts <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  #users {
+    padding: 40px 0;
+  }
+  .users-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .users {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 32px;
+  }
+  .users a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  /* Logos are squares and wordmarks: same height, natural width, on white so dark logos stay visible in dark mode */
+  .users img {
+    height: 40px;
+    width: auto;
+    max-width: 112px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fff;
+    padding: 5px;
+  }
+
+  .grid {
+    display: grid;
+    gap: 48px;
+  }
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+  h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    margin-bottom: 16px;
+  }
+  .author p {
+    color: var(--muted);
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .support {
+    margin-top: 24px;
+  }
+  .support p {
+    margin: 0;
+  }
+  h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+  .articles {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .articles a {
+    font-weight: 600;
+  }
+  .articles p {
+    margin: 4px 0 0;
+    font-size: 0.93rem;
+  }
+</style>

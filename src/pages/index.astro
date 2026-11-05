@@ -1,14 +1,21 @@
 ---
-// Home. Until the redesign lands it renders the existing Vue landing as static HTML (no client JS).
+// Home: the way in to the tools and to the free reference. Targets "asyncapi", "asyncapi tools", "asyncapi schema",
+// "asyncapi bindings" and the questions people ask about them (see src/data/home.ts).
 import Landing from '../layouts/Landing.astro'
-import LandingPage from '../components/vue/LandingPage.vue'
+import Author from '../components/home/Author.astro'
+import Drift from '../components/home/Drift.astro'
+import Faq from '../components/home/Faq.astro'
+import Hero from '../components/home/Hero.astro'
+import Intents from '../components/home/Intents.astro'
+import Reference from '../components/home/Reference.astro'
+import Tools from '../components/home/Tools.astro'
 import { homeGraph } from '../data/seo'
 import { SITE_URL } from '../data/site'
 
 const meta = {
-  title: 'Self-Maintaining AsyncAPI: Detect and Fix API Drift',
+  title: 'AsyncAPI Tools, Bindings and JSON Schemas | Pavel on AsyncAPI',
   description:
-    'Catch drift between AsyncAPI documents, Spring code and Kafka, Pulsar, SNS and SQS brokers. JetBrains plugin, Kurkik, JSON Schema registry and bindings by an AsyncAPI TSC member.',
+    'AsyncAPI editor for JetBrains IDEs, drift detection for Kafka, Pulsar, SNS and SQS, and free docs for bindings, schemas and security schemes by an AsyncAPI maintainer.',
   url: `${SITE_URL}/`,
   image: `${SITE_URL}/index.png`,
   type: 'website' as const,
@@ -16,5 +23,11 @@ const meta = {
 ---
 
 <Landing meta={meta} graph={homeGraph(meta)}>
-  <LandingPage />
+  <Hero />
+  <Intents />
+  <Tools />
+  <Reference />
+  <Drift />
+  <Faq />
+  <Author />
 </Landing>

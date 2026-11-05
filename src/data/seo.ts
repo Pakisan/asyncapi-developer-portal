@@ -1,6 +1,7 @@
 // Head tags and schema.org JSON-LD for every page. One place builds them, so canonical, Open Graph and structured data
 // always agree. Only describe what the page shows: Google penalises markup that does not match visible content.
-import { faq, type Product, products } from './products'
+import { faq } from './home'
+import { type Product, products } from './products'
 import { DEFAULT_IMAGE, SITE_NAME, SITE_URL } from './site'
 
 export const PERSON_ID = `${SITE_URL}/#person`
@@ -216,7 +217,12 @@ export function homeGraph(m: PageMeta) {
       registryDataset(),
       {
         '@type': 'FAQPage',
-        mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+        // Answers are shown wherever search engines and AI answers quote them, so their links must be absolute.
+        mainEntity: faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/href="\//g, `href="${SITE_URL}/`) },
+        })),
       },
     ],
   }

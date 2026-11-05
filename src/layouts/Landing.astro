@@ -1,6 +1,6 @@
 ---
 // Pages outside the docs (home, product landings): their own design, the same head tags and JSON-LD rules as the docs.
-import '../styles/tailwind.css'
+import '../styles/site.css'
 import Consent from '../components/Consent.astro'
 import StructuredData from '../components/StructuredData.astro'
 import { metaTags, type PageMeta } from '../data/seo'
@@ -12,14 +12,45 @@ interface Props {
 
 const { meta, graph } = Astro.props
 const year = new Date().getFullYear()
+
 const nav = [
   { label: 'Bindings', href: '/bindings/' },
   { label: 'Schemas', href: '/schemas/' },
-  { label: 'JetBrains Plugin', href: '/jetbrains-plugin/' },
+  { label: 'JetBrains plugin', href: '/jetbrains-plugin/' },
   { label: 'Kurkik', href: 'https://kurkik.pavelon.dev' },
   { label: 'JAsyncAPI', href: '/jasyncapi/' },
-  { label: 'LSP', href: '/language-server.html' },
   { label: 'Blog', href: 'https://pavelon.dev/' },
+]
+
+const footer = [
+  {
+    title: 'Tools',
+    links: [
+      { label: 'JetBrains plugin', href: '/jetbrains-plugin/' },
+      { label: 'Kurkik', href: 'https://kurkik.pavelon.dev' },
+      { label: 'JAsyncAPI', href: '/jasyncapi/' },
+      { label: 'Language Server', href: '/language-server.html' },
+    ],
+  },
+  {
+    title: 'Reference',
+    links: [
+      { label: 'Bindings', href: '/bindings/' },
+      { label: 'Schemas', href: '/schemas/' },
+      { label: 'Security schemes', href: '/schemas/v3/security/securitySchema.html' },
+      { label: 'JSON Schema registry', href: '/schemas/registry.html' },
+      { label: 'llms.txt', href: '/llms.txt' },
+    ],
+  },
+  {
+    title: 'Pavel',
+    links: [
+      { label: 'Blog', href: 'https://pavelon.dev/' },
+      { label: 'GitHub', href: 'https://github.com/Pakisan' },
+      { label: 'Sponsor', href: 'https://github.com/sponsors/Pakisan' },
+      { label: 'Feedback', href: 'https://github.com/Pakisan/asyncapi-developer-portal/discussions/2' },
+    ],
+  },
 ]
 ---
 
@@ -31,35 +62,247 @@ const nav = [
     <title>{meta.title}</title>
     {metaTags(meta).map(([Tag, attrs]) => <Tag {...attrs} />)}
     <meta name="yandex-verification" content="ed012648c88cacbb" />
+    <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0c12" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <StructuredData data={graph} />
+    <!-- Follow the theme chosen in the docs (Starlight keeps it in localStorage); otherwise the OS decides. -->
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem('starlight-theme')
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme
+      } catch {}
+    </script>
   </head>
-  <body class="font-sans bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 antialiased">
-    <header class="border-b border-gray-200 dark:border-gray-800">
-      <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-2" aria-label="Main">
-        <a href="/" class="font-semibold flex items-center gap-2 mr-auto">
-          <img src="/icon.svg" alt="" width="24" height="24" />
-          Pavel on AsyncAPI
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="top">
+      <div class="wrap bar">
+        <a href="/" class="brand">
+          <img src="/icon.svg" alt="" width="26" height="26" />
+          <span>Pavel on AsyncAPI</span>
         </a>
-        {nav.map((item) => <a class="text-sm hover:text-indigo-600 dark:hover:text-indigo-400" href={item.href}>{item.label}</a>)}
-      </nav>
+        <nav aria-label="Main">
+          <ul class="links">
+            {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+          </ul>
+          <details class="menu">
+            <summary aria-label="Menu">Menu</summary>
+            <ul>
+              {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+            </ul>
+          </details>
+        </nav>
+      </div>
     </header>
-    <slot />
-    <footer class="border-t border-gray-200 dark:border-gray-800 mt-16">
-      <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 dark:text-gray-400 flex flex-wrap justify-between gap-4">
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="foot">
+      <div class="wrap cols">
+        <div class="about">
+          <a href="/" class="brand">
+            <img src="/icon.svg" alt="" width="22" height="22" />
+            <span>Pavel on AsyncAPI</span>
+          </a>
+          <p>AsyncAPI tools and reference by Pavel Bodiachevskii, AsyncAPI Technical Steering Committee member.</p>
+        </div>
+        {
+          footer.map((col) => (
+            <nav aria-label={col.title}>
+              <h2>{col.title}</h2>
+              <ul>
+                {col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+              </ul>
+            </nav>
+          ))
+        }
+      </div>
+      <div class="wrap legal">
         <p>
-          Copyright &copy; 2024–{year} <a class="underline" href="https://pavelon.dev">Pavel Bodiachevskii</a> &amp;
-          <a class="underline" href="https://www.asyncapi.com">AsyncAPI community</a>. Released under the
-          <a class="underline" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
+          &copy; 2024–{year} Pavel Bodiachevskii &amp; <a href="https://www.asyncapi.com">AsyncAPI community</a>. Docs under the{' '}
+          <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>. AsyncAPI is a project of the Linux Foundation.
         </p>
-        <p class="flex gap-4">
-          <a class="underline" href="/privacy.html">Privacy</a>
-          <a class="underline" href="#" data-consent-open>Cookie settings</a>
-        </p>
+        <p><a href="/privacy.html">Privacy</a> · <a href="#" data-consent-open>Cookie settings</a></p>
       </div>
     </footer>
     <Consent />
   </body>
 </html>
+
+<!-- Global: scoped styles would also stamp a class on every head tag; the selectors are namespaced by hand. -->
+<style is:global>
+  .skip {
+    position: absolute;
+    left: -9999px;
+  }
+  .skip:focus {
+    left: 16px;
+    top: 12px;
+    z-index: 50;
+    background: var(--surface);
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  /* Wide screens: the links in a row. Small screens: the same links behind a disclosure menu. */
+  .links {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+  }
+  .links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .links a:hover {
+    color: var(--accent);
+  }
+  .menu summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.92rem;
+  }
+  .menu summary::-webkit-details-marker {
+    display: none;
+  }
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .menu a:hover {
+    color: var(--accent);
+  }
+  .menu[open] ul {
+    position: absolute;
+    right: 16px;
+    top: 56px;
+    display: grid;
+    gap: 4px;
+    min-width: 200px;
+    padding: 10px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .menu[open] a {
+    display: block;
+    padding: 6px 10px;
+  }
+  @media (min-width: 860px) {
+    .links {
+      display: flex;
+    }
+    .menu {
+      display: none;
+    }
+  }
+
+  .foot {
+    border-top: 1px solid var(--line);
+    margin-top: 40px;
+    padding: 48px 0 24px;
+    font-size: 0.93rem;
+  }
+  .cols {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about {
+    grid-column: 1 / -1;
+  }
+  @media (min-width: 860px) {
+    .cols {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    .about {
+      grid-column: auto;
+    }
+  }
+  .about p {
+    color: var(--muted);
+    max-width: 340px;
+  }
+  .foot h2 {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .foot ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+  .foot nav a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .foot nav a:hover {
+    color: var(--accent);
+  }
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 24px;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .legal p {
+    margin: 0;
+  }
+  .legal a {
+    color: var(--muted);
+  }
+</style>

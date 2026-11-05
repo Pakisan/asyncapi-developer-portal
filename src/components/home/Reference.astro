@@ -1,0 +1,144 @@
+---
+// The free reference: every broker with its latest binding version, then schema formats and security schemes.
+import { getBrokers } from '../../data/bindings'
+import { schemaFormats, security } from '../../data/home'
+
+const brokers = await getBrokers()
+---
+
+<section class="section" id="reference">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Free reference</span>
+      <h2>AsyncAPI bindings, schemas and security schemes</h2>
+      <p>
+        Plain-language docs for the parts of the specification people search for most, with examples you can copy. Every page is also
+        available as Markdown for AI tools.
+      </p>
+    </div>
+
+    <h3 id="bindings">Protocol bindings for {brokers.length} brokers</h3>
+    <ul class="brokers">
+      {
+        brokers.map((b) => (
+          <li>
+            <a href={b.href}>
+              <span class="name">{b.name}</span>
+              <span class="ver">
+                {b.versions.length > 1 ? `${b.versions.length} versions, latest ${b.latest}` : b.latest}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="all"><a class="more" href="/bindings/">What bindings are and how to use them <span aria-hidden="true">&rarr;</span></a></p>
+
+    <div class="two">
+      <div>
+        <h3>Message payload formats</h3>
+        <ul class="chips">
+          {schemaFormats.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+        </ul>
+        <p class="all"><a class="more" href="/schemas/">AsyncAPI schemas <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+      <div>
+        <h3>Security schemes</h3>
+        <ul class="chips">
+          {security.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+        </ul>
+        <p class="all">
+          <a class="more" href="/schemas/v3/security/securitySchema.html">Choosing a security scheme <span aria-hidden="true">&rarr;</span></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card registry">
+      <div>
+        <h3>JSON Schema registry for editors, CI and AI agents</h3>
+        <p>
+          Machine-readable schemas for AsyncAPI 3.0 and 3.1 documents, every binding version and every security scheme. Paste a URL into
+          your IDE, your pipeline or an agent's prompt.
+        </p>
+      </div>
+      <code>https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3.0.0/asyncapi</code>
+      <div class="actions">
+        <a class="btn btn-ghost" href="/schemas/registry.html">How to use it</a>
+        <a class="btn btn-ghost" href="https://schemas.asyncapi.pavelon.dev">Browse the registry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+  .brokers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  }
+  .brokers a {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--ink);
+    height: 100%;
+  }
+  .brokers a:hover {
+    border-color: var(--accent);
+  }
+  .name {
+    font-weight: 600;
+  }
+  .ver {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .all {
+    margin: 16px 0 0;
+  }
+  .two {
+    display: grid;
+    gap: 40px;
+    margin: 56px 0;
+  }
+  @media (min-width: 860px) {
+    .two {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .registry {
+    display: grid;
+    gap: 16px;
+    padding: 28px;
+  }
+  .registry h3 {
+    margin-bottom: 8px;
+  }
+  .registry p {
+    margin: 0;
+    color: var(--muted);
+  }
+  .registry code {
+    display: block;
+    padding: 10px 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+</style>

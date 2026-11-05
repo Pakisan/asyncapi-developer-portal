@@ -1,0 +1,91 @@
+---
+const sides = [
+  {
+    label: 'From source code',
+    title: 'JetBrains plugin',
+    text: 'Generates the AsyncAPI document from Spring Messaging code and flags listener mistakes in the editor. When the code changes, you review the difference.',
+    href: '/jetbrains-plugin/',
+    cta: 'See the plugin',
+  },
+  {
+    label: 'The contract',
+    title: 'One AsyncAPI document',
+    text: 'The single place that says what your system does, validated against the AsyncAPI JSON Schemas by editors, CI pipelines and AI agents.',
+    href: '/schemas/registry.html',
+    cta: 'Use the schema registry',
+  },
+  {
+    label: 'From brokers and queues',
+    title: 'Kurkik',
+    text: 'Reads a live Kafka, Pulsar, SNS or SQS system, shows where it differs from the document, and applies fixes only as a plan you approve.',
+    href: 'https://kurkik.pavelon.dev',
+    cta: 'Read about Kurkik',
+  },
+]
+---
+
+<section class="section" id="drift">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Self-maintaining AsyncAPI</span>
+      <h2>Drift, caught from both sides</h2>
+      <p>
+        An AsyncAPI document is a promise. Code changes, topics get added, queues get reconfigured, and the promise quietly stops being
+        true. These tools compare the declaration with what actually runs.
+      </p>
+    </div>
+    <ol class="flow">
+      {
+        sides.map((s, i) => (
+          <li class:list={['card', { middle: i === 1 }]}>
+            <span class="label">{s.label}</span>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+            <a class="more" href={s.href}>
+              {s.cta} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .flow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 900px) {
+    .flow {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .middle {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+  }
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+    flex: 1;
+  }
+</style>

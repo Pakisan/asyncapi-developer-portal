@@ -6,7 +6,7 @@ head:
     attrs:
       name: keywords
       content: AsyncAPI, SASL Plain, Simple Authentication and Security Layer, username/password authentication, Kafka authentication, MQTT security, AMQP authentication, messaging security, plaintext authentication, TLS security
-heading: "{SASL Plain Authentication"
+heading: "SASL Plain Authentication"
 ---
 
 ## What is SASL Plain Authentication in API?

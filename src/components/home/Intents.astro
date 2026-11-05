@@ -1,0 +1,49 @@
+---
+import { intents } from '../../data/home'
+---
+
+<section class="section" id="start">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What are you working on?</h2>
+      <p>Start from the task. Each card goes to the page that answers it.</p>
+    </div>
+    <ul class="grid">
+      {
+        intents.map((i) => (
+          <li class="card">
+            <h3>{i.title}</h3>
+            <p>{i.text}</p>
+            <a class="more" href={i.href}>
+              {i.cta} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+    flex: 1;
+  }
+</style>
