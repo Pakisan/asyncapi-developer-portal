@@ -199,20 +199,3 @@ app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
 ```
-
-The AsyncAPI specification for OAuth2 Scopes follows this JSON Schema:
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2Scopes.json",
-  "type": "object",
-  "additionalProperties": {
-    "type": "string"
-  }
-}
-```
-
-This schema defines an object where:
-- The property names are the scope identifiers (e.g., "read:messages")
-- The property values are strings describing what each scope allows (e.g., "Read messages from the broker")

@@ -2,6 +2,8 @@
 // Generated sections at the end of a broker page: version history, the latest fields, schema URLs and FAQ.
 import { changeSummary, type Hub, objectLabel } from '../../data/binding-pages'
 import { BINDING_OBJECTS, registryUrl } from '../../data/binding-schemas'
+import FieldsTable from '../FieldsTable.astro'
+import Questions from '../Questions.astro'
 
 interface Props {
   hub: Hub
@@ -10,7 +12,6 @@ const { hub: h } = Astro.props
 
 // `code` spans in change lines, written as Markdown in the model
 const inline = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/`([^`]+)`/g, '<code>$1</code>')
-const depth = (p: string) => p.split('.').length - 1
 ---
 
 <h2 id="versions">Versions and changes</h2>
@@ -53,26 +54,7 @@ const depth = (p: string) => p.split('.').length - 1
       {h.fields.map((f) => (
         <>
           <h3 id={`fields-${f.object}`}>{objectLabel(f.object)}</h3>
-          <table class="fields">
-            <thead>
-              <tr><th>Field</th><th>Type</th><th>Description</th></tr>
-            </thead>
-            <tbody>
-              {f.fields.map((x) => (
-                <tr class={depth(x.path) ? 'nested' : undefined}>
-                  <td style={`padding-left: ${0.75 + depth(x.path)}rem`}>
-                    <code>{x.path}</code>
-                    {x.required && <span class="req">required</span>}
-                  </td>
-                  <td>
-                    {x.type}
-                    {x.values && <div class="values">{x.values.map((val) => <code>{String(val)}</code>)}</div>}
-                  </td>
-                  <td>{x.description}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <FieldsTable fields={f.fields} />
           {f.href && (
             <p>
               <a href={f.href}>{objectLabel(f.object)} {h.latest}: examples and details</a>
@@ -99,19 +81,7 @@ const depth = (p: string) => p.split('.').length - 1
   }
 </ul>
 
-{
-  h.faq.length > 0 && (
-    <>
-      <h2 id="questions">Questions</h2>
-      {h.faq.map((q) => (
-        <details class="qa">
-          <summary>{q.q}</summary>
-          <p set:html={q.a} />
-        </details>
-      ))}
-    </>
-  )
-}
+{h.faq.length > 0 && <Questions items={h.faq} />}
 
 <style>
   .versions td p {
@@ -120,8 +90,7 @@ const depth = (p: string) => p.split('.').length - 1
   .versions td p + p {
     margin-top: 0.4rem;
   }
-  .latest,
-  .req {
+  .latest {
     display: inline-block;
     margin-left: 0.4rem;
     padding: 0 0.4rem;
@@ -131,35 +100,7 @@ const depth = (p: string) => p.split('.').length - 1
     color: var(--sl-color-accent-high);
     white-space: nowrap;
   }
-  .req {
-    background: var(--sl-color-gray-6);
-    color: var(--sl-color-gray-2);
-  }
-  .fields .nested {
-    font-size: var(--sl-text-sm);
-  }
-  .values {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    margin-top: 0.25rem;
-  }
   .schemas code {
     word-break: break-all;
-  }
-  .qa {
-    border: 1px solid var(--sl-color-gray-5);
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-  }
-  .qa + .qa {
-    margin-top: 0.5rem;
-  }
-  .qa summary {
-    cursor: pointer;
-    font-weight: 600;
-  }
-  .qa p {
-    margin-top: 0.5rem;
   }
 </style>

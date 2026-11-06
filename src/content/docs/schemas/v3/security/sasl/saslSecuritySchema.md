@@ -40,18 +40,7 @@ The specific SASL mechanism you choose depends on your security requirements:
 
 ## Examples
 
-Here's how to define a SASL security scheme in AsyncAPI that allows any of the supported SASL mechanisms:
-
-```json
-{
-  "saslAuth": {
-    "type": "sasl",
-    "description": "SASL authentication for messaging"
-  }
-}
-```
-
-When you need to specify a particular SASL mechanism, you can use the specific security scheme:
+There is no generic `sasl` type: every scheme names its mechanism with `plain`, `scramSha256`, `scramSha512` or `gssapi`. To accept more than one mechanism, list several schemes in the server's `security`.
 
 ### SASL Plain Example
 
@@ -104,21 +93,3 @@ For more detailed information about specific SASL mechanisms, refer to:
 - [SASL Plain Security Schema](/schemas/v3/security/sasl/saslPlainSecuritySchema.html)
 - [SASL SCRAM Security Schema](/schemas/v3/security/sasl/saslScramSecuritySchema.html)
 - [SASL GSS-API Security Schema](/schemas/v3/security/sasl/saslGssapiSecuritySchema.html)
-
-The AsyncAPI specification for SASL security follows this JSON Schema:
-
-```json
-{
-  "oneOf": [
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslPlainSecuritySchema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslScramSecuritySchema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslGssapiSecuritySchema.json"
-    }
-  ]
-}
-```

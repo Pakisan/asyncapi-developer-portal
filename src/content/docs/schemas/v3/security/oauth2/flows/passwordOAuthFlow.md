@@ -281,32 +281,3 @@ async function callProtectedApi() {
 // Call the API
 callProtectedApi();
 ```
-
-The AsyncAPI specification for OAuth2 Password Flow follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "tokenUrl", "availableScopes" ],
-  "properties": {
-    "availableScopes": {
-      "description": "The available scopes for the OAuth2 security scheme. A map between the scope name and a short description for it.",
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2Scopes.json"
-    },
-    "refreshUrl": {
-      "description": "The URL to be used for obtaining refresh tokens. This MUST be in the form of an absolute URL.",
-      "type": "string",
-      "format": "uri"
-    },
-    "tokenUrl": {
-      "description": "The token URL to be used for this flow. This MUST be in the form of an absolute URL.",
-      "type": "string",
-      "format": "uri"
-    }
-  },
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
-  "additionalProperties": false
-}
-```

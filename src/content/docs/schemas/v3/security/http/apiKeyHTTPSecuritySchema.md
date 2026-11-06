@@ -108,32 +108,3 @@ When implementing API Key HTTP authentication in your application:
 6. For header-based keys, use a custom header (e.g., `X-API-Key`)
 7. For query parameter keys, consider the security implications of keys appearing in logs
 8. For cookie-based keys, set appropriate security attributes (HttpOnly, Secure, SameSite)
-
-The AsyncAPI specification for API Key HTTP security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type", "name", "in" ],
-  "properties": {
-    "description": {
-      "description": "A short description for security scheme. CommonMark syntax MAY be used for rich text representation.",
-      "type": "string"
-    },
-    "type": {
-      "description": "The type of the security scheme.",
-      "type": "string",
-      "enum": [ "httpApiKey" ]
-    },
-    "in": {
-      "description": "The location of the API key",
-      "type": "string",
-      "enum": [ "header", "query", "cookie" ]
-    },
-    "name": {
-      "description": "The name of the header, query or cookie parameter to be used.",
-      "type": "string"
-    }
-  }
-}
-```

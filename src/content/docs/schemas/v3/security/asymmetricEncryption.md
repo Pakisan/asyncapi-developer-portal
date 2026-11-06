@@ -84,23 +84,3 @@ When implementing Asymmetric Encryption in your application:
 4. Decrypt received messages using your private key
 5. Consider using a hybrid approach for large messages (encrypt the message with symmetric encryption, then encrypt the symmetric key with asymmetric encryption)
 6. Implement proper key rotation and management practices
-
-The AsyncAPI specification for Asymmetric Encryption security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type" ],
-  "properties": {
-    "description": {
-      "description": "A short description for security scheme.",
-      "type": "string"
-    },
-    "type": {
-      "description": "The type of the security scheme.",
-      "type": "string",
-      "enum": [ "asymmetricEncryption" ]
-    }
-  }
-}
-```

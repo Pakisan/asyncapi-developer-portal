@@ -224,3 +224,10 @@ By choosing the appropriate schema format for your specific needs, you can ensur
 For more detailed information about specific schema formats and their capabilities, refer to:
 - [Schema Object](/schemas/schema.html) - For JSON Schema-based definitions
 - [Multi-Format Schema Object](/schemas/multiFormatSchema.html) - For using alternative schema formats
+
+## Guides
+
+- [JSON Schema in AsyncAPI](/schemas/formats/json-schema.html): examples, maps, conditionally required fields and `$ref`
+- [Avro schemas in AsyncAPI](/schemas/formats/avro.html): inline or `.avsc`, `schemaFormat` vs `contentType`, Kafka schema registry
+- [Protobuf schemas in AsyncAPI](/schemas/formats/protobuf.html): `.proto` payloads and parser support
+- [Security schemes](/schemas/v3/security/securitySchema.html): bearer, API keys, SASL/SCRAM, OAuth 2.0, OpenID Connect and X.509, each in a whole AsyncAPI 3.0 and 2.6 document

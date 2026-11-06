@@ -73,7 +73,8 @@ Here are examples of how to use different security schemes in AsyncAPI:
 {
   "apiKeyAuth": {
     "type": "apiKey",
-    "description": "API key authentication"
+    "in": "user",
+    "description": "API key sent as the username"
   }
 }
 ```
@@ -111,12 +112,13 @@ Here are examples of how to use different security schemes in AsyncAPI:
     "flows": {
       "implicit": {
         "authorizationUrl": "https://example.com/oauth/authorize",
-        "scopes": {
+        "availableScopes": {
           "read:messages": "Read messages",
           "write:messages": "Write messages"
         }
       }
     },
+    "scopes": ["read:messages"],
     "description": "OAuth 2.0 authentication"
   }
 }
@@ -159,39 +161,3 @@ For more detailed information about specific security schemes, refer to:
 - [OAuth 2.0 Security Schema](/schemas/v3/security/oauth2/oauth2.html)
 - [OpenID Connect Security Schema](/schemas/v3/security/openIdConnect.html)
 - [SASL Security Schema](/schemas/v3/security/sasl/saslSecuritySchema.html)
-
-The AsyncAPI specification for security schemes follows this JSON Schema:
-
-```json
-{
-  "oneOf": [
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/userPassword.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/apiKey.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/X509.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/symmetricEncryption.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/asymmetricEncryption.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/http/httpSecuritySchema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/oauth2/oauth2.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/openIdConnect.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/sasl/saslSecuritySchema.json"
-    }
-  ]
-}
-```

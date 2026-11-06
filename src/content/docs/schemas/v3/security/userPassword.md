@@ -93,21 +93,3 @@ When implementing Username and Password Authentication in your application:
 6. Use HTTPS/TLS for all authentication requests
 7. Implement proper session management if maintaining sessions
 8. Consider using password strength meters during registration
-
-The AsyncAPI specification for Username and Password Authentication security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type" ],
-  "properties": {
-    "description": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string",
-      "enum": [ "userPassword" ]
-    }
-  }
-}
-```

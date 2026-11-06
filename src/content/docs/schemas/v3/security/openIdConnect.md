@@ -93,35 +93,3 @@ When implementing OpenID Connect in your application:
 5. Extract user information from the ID token claims
 6. Use access tokens for accessing protected resources
 7. Implement proper token refresh and validation mechanisms
-
-The AsyncAPI specification for OpenID Connect security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type", "openIdConnectUrl" ],
-  "properties": {
-    "description": {
-      "description": "A short description for security scheme. CommonMark syntax MAY be used for rich text representation.",
-      "type": "string"
-    },
-    "type": {
-      "description": "The type of the security scheme.",
-      "type": "string",
-      "enum": [ "openIdConnect" ]
-    },
-    "openIdConnectUrl": {
-      "description": "OpenId Connect URL to discover OAuth2 configuration values. This MUST be in the form of an absolute URL.",
-      "type": "string",
-      "format": "uri"
-    },
-    "scopes": {
-      "description": "List of the needed scope names. An empty array means no scopes are needed.",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  }
-}
-```

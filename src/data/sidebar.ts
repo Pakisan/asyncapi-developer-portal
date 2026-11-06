@@ -1034,6 +1034,24 @@ export const sidebarTopics: StarlightSidebarTopicsUserConfig = [
         ]
       },
       {
+        "label": "Payload formats",
+        "collapsed": false,
+        "items": [
+          {
+            "label": "JSON Schema",
+            "slug": "schemas/formats/json-schema"
+          },
+          {
+            "label": "Avro",
+            "slug": "schemas/formats/avro"
+          },
+          {
+            "label": "Protobuf",
+            "slug": "schemas/formats/protobuf"
+          }
+        ]
+      },
+      {
         "label": "Security Schemas",
         "collapsed": false,
         "items": [

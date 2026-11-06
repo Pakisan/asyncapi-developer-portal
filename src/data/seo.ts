@@ -1,6 +1,8 @@
 // Head tags and schema.org JSON-LD for every page. One place builds them, so canonical, Open Graph and structured data
 // always agree. Only describe what the page shows: Google penalises markup that does not match visible content.
 import { HUB_ID, hub } from './binding-pages'
+import { formatFaq } from './format-faq'
+import { securityPage } from './security-schemes'
 import { faq } from './home'
 import { faq as pluginFaq } from './jetbrains-plugin'
 import { marketplace, supportedIdes } from './marketplace'
@@ -196,6 +198,9 @@ export function docGraph(m: PageMeta, id: string, crumbs: Crumb[]) {
   if (id === 'schemas/registry') graph.push(registryDataset())
   const brokerHub = HUB_ID.test(id) ? hub(id.split('/')[1]) : undefined
   if (brokerHub) graph.push(...brokerNodes(brokerHub, m.url))
+  const security = securityPage(id)
+  if (security?.faq.length) graph.push(faqPage(security.faq))
+  if (formatFaq[id]) graph.push(faqPage(formatFaq[id]))
   if (crumbs.length > 1) graph.push(breadcrumbList(crumbs))
   return { '@context': 'https://schema.org', '@graph': graph }
 }

@@ -124,27 +124,3 @@ props.put("sasl.jaas.config",
 
 KafkaProducer<String, String> producer = new KafkaProducer<>(props);
 ```
-
-The AsyncAPI specification for SASL SCRAM security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type" ],
-  "properties": {
-    "description": {
-      "description": "A short description for security scheme.",
-      "type": "string"
-    },
-    "type": {
-      "description": "The type of the security scheme.",
-      "type": "string",
-      "enum": [ "scramSha256", "scramSha512" ]
-    }
-  },
-  "patternProperties": {
-    "^x-[\\w\\d\\.\\x2d_]+$": true
-  },
-  "additionalProperties": false
-}
-```

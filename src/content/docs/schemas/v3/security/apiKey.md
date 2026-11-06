@@ -86,28 +86,3 @@ When implementing API Key authentication in your application:
 3. Validate the API key with each request
 4. Implement rate limiting based on the API key
 5. Provide a mechanism to revoke and regenerate keys
-
-The AsyncAPI specification for API Key security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type", "in" ],
-  "properties": {
-    "description": {
-      "description": "A short description for security scheme. CommonMark syntax MAY be used for rich text representation.",
-      "type": "string"
-    },
-    "type": {
-      "description": "The type of the security scheme",
-      "type": "string",
-      "enum": [ "apiKey" ]
-    },
-    "in": {
-      "description": "The location of the API key.",
-      "type": "string",
-      "enum": [ "user", "password" ]
-    }
-  }
-}
-```

@@ -186,37 +186,16 @@ curl -X GET https://api.example.com/resource \
 
 ### What is Mutual Authentication?
 
-Mutual Authentication in HTTP is a process where both the client and server authenticate each other. This is typically implemented using TLS client certificates, where the server verifies the client's certificate in addition to the client verifying the server's certificate.
+`mutual` is the HTTP authentication scheme of RFC 8120. The user still logs in with a password, but client and server each prove to the other that they know it, and the password itself never crosses the wire. It protects against phishing servers that only pretend to know the account.
+
+It is not mutual TLS. If your server checks client certificates, describe it with the [`X509` security scheme](/schemas/v3/security/X509.html).
 
 ### When to Use Mutual Authentication
 
-Mutual Authentication is suitable for:
+- The server must prove its identity to the user, not only the other way round
+- Password login is a requirement, but the password must not be sent
 
-- High-security environments requiring strong client verification
-- Financial and healthcare applications with strict compliance requirements
-- Enterprise applications with controlled client access
-- IoT devices that need secure, certificate-based authentication
-- Systems requiring non-repudiation and identity verification
-- Environments with established PKI (Public Key Infrastructure)
-- Applications where the identity of both parties must be cryptographically verified
-
-### Pros and Cons
-
-#### Pros
-- **Strong Security**: Both parties are authenticated cryptographically
-- **Certificate-Based**: Uses X.509 certificates for authentication
-- **Non-repudiation**: Provides cryptographic proof of identity
-- **No Password Transmission**: Eliminates risks associated with password transmission
-- **Integration with PKI**: Works with existing certificate infrastructure
-- **Resistance to MITM**: Strong protection against man-in-the-middle attacks
-
-#### Cons
-- **Complexity**: More complex to set up and maintain
-- **Certificate Management**: Requires infrastructure for issuing and managing certificates
-- **User Experience**: Can be challenging for end-users to manage certificates
-- **Implementation Overhead**: Requires proper TLS configuration
-- **Performance Impact**: Certificate validation adds computational overhead
-- **Deployment Challenges**: Distributing and installing client certificates can be difficult
+Few clients and servers implement RFC 8120, so check that yours do before relying on it.
 
 ### Example
 
@@ -224,17 +203,8 @@ Mutual Authentication is suitable for:
 {
   "type": "http",
   "scheme": "mutual",
-  "description": "Mutual TLS authentication requiring client certificates"
+  "description": "RFC 8120 Mutual authentication"
 }
-```
-
-#### Curl Example
-
-```bash
-curl -X GET https://api.example.com/resource \
-  --cert client.crt \
-  --key client.key \
-  --cacert ca.crt
 ```
 
 ## NTLM Authentication
@@ -406,6 +376,20 @@ curl -X GET https://api.example.com/resource \
   -H "Authorization: SCRAM-SHA-256 c=biws,r=fyko+d2lbbFgONRv9qkxdawL3rfcNHYJY1ZVvWVs7j,p=v0X8v3Bz2T0CJGbJQyF0X+HI4Ts="
 ```
 
+## Digest vs NTLM
+
+Both are challenge-response schemes that avoid sending the password itself, but they come from different worlds:
+
+| | Digest | NTLM |
+|---|---|---|
+| Defined by | IETF, RFC 7616 | Microsoft, proprietary (documented as MS-NLMP) |
+| What it authenticates | Each request | The TCP connection, after a three-message handshake |
+| Accounts | Any user store holding the password or its hash | Windows domain or local accounts |
+| Proxies and load balancers | Work, every request carries its own credentials | Need connection affinity, or the handshake breaks |
+| Status | Usable over TLS, with SHA-256 rather than MD5 | Deprecated by Microsoft in favour of Kerberos (`negotiate`) |
+
+In AsyncAPI both are `type: http`, with `scheme: digest` or `scheme: ntlm`. For new Windows-integrated services, prefer `scheme: negotiate`, which carries Kerberos.
+
 ## Implementation Best Practices
 
 When implementing HTTP authentication schemes:
@@ -418,31 +402,3 @@ When implementing HTTP authentication schemes:
 6. **Implement proper logging**: Log authentication attempts without recording sensitive information
 7. **Consider additional security layers**: Authentication should be part of a defense-in-depth strategy
 8. **Keep implementations updated**: Security vulnerabilities are discovered regularly, keep your implementations patched
-
-## AsyncAPI Schema for Non-Bearer HTTP Security Schemas
-
-The AsyncAPI specification for Non-Bearer HTTP security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "scheme", "type" ],
-  "properties": {
-    "description": {
-      "description": "A short description for security scheme.",
-      "type": "string"
-    },
-    "type": {
-      "description": "The type of the security scheme.",
-      "type": "string",
-      "enum": [ "http" ]
-    },
-    "scheme": {
-      "description": "The name of the HTTP Authorization scheme to be used in the Authorization header as defined in RFC7235.",
-      "type": "string"
-    }
-  }
-}
-```
-
-Note that this schema explicitly excludes the "bearer" scheme through a "not" condition in the full schema definition.

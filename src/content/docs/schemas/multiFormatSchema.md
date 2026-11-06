@@ -25,6 +25,8 @@ Apache Avro is a data serialization system that provides rich data structures, a
 
 In AsyncAPI, Avro schemas can be used to define message payloads with precise type definitions and efficient serialization.
 
+For a whole document, `.avsc` references and Kafka schema registry settings, see [Avro schemas in AsyncAPI](/schemas/formats/avro.html).
+
 ### 1.9.0
 
 - **ApplicationEvent** - Defines an event structure with application-specific information ([JSON](/examples/schemas/multiformat/avro/1.9.0/vnd.apache.avro/ApplicationEvent.json), [YAML](/examples/schemas/multiformat/avro/1.9.0/vnd.apache.avro/ApplicationEvent.yaml))
@@ -181,7 +183,7 @@ In AsyncAPI, Avro schemas can be used to define message payloads with precise ty
 
 JSON Schema is a vocabulary that allows you to annotate and validate JSON documents. It's the foundation for AsyncAPI's Schema Object and provides a way to describe the structure and validation requirements of your JSON data.
 
-In AsyncAPI, JSON Schema (draft-07) can be used to define message payloads with validation rules and documentation.
+In AsyncAPI, JSON Schema (draft-07) can be used to define message payloads with validation rules and documentation. See [JSON Schema in AsyncAPI](/schemas/formats/json-schema.html) for examples, maps, conditional fields and references.
 
 ### Draft-07
 
@@ -365,6 +367,8 @@ Protocol Buffers (Protobuf) is Google's language-neutral, platform-neutral, exte
 
 - **application/vnd.google.protobuf;version=2** - Protobuf version 2 schema format
 - **application/vnd.google.protobuf;version=3** - Protobuf version 3 schema format
+
+See [Protobuf schemas in AsyncAPI](/schemas/formats/protobuf.html) for a whole document and the parser's rules.
 
 ## Special Cases
 

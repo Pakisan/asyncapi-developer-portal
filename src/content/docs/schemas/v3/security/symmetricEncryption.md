@@ -88,21 +88,3 @@ When implementing Symmetric Encryption in your application:
 5. Implement proper key rotation and management practices
 6. Consider using a key derivation function to generate session keys
 7. Store encryption keys securely, never in plaintext
-
-The AsyncAPI specification for Symmetric Encryption security follows this JSON Schema:
-
-```json
-{
-  "type": "object",
-  "required": [ "type" ],
-  "properties": {
-    "description": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string",
-      "enum": [ "symmetricEncryption" ]
-    }
-  }
-}
-```

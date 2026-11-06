@@ -87,33 +87,3 @@ Here are examples of how to use different HTTP security schemes in AsyncAPI:
   "description": "Digest authentication with improved security"
 }
 ```
-
-## AsyncAPI Schema for HTTP Security Schema
-
-The AsyncAPI specification for HTTP security follows this JSON Schema:
-
-```json
-{
-  "oneOf": [
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/http/nonBearerHTTPSecuritySchema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/http/bearerHTTPSecuritySchema.json"
-    },
-    {
-      "$ref": "https://asyncapi.pavelon.dev/schemas/v3/security/http/apiKeyHTTPSecuritySchema.json"
-    }
-  ]
-}
-```
-
-This schema indicates that an HTTP security scheme must be one of the following:
-- A non-Bearer HTTP security scheme (Basic, Digest, etc.)
-- A Bearer HTTP security scheme
-- An API Key HTTP security scheme
-
-For more detailed information about each specific HTTP security scheme, refer to:
-- [Bearer HTTP Security Schema](/schemas/v3/security/http/bearerHTTPSecuritySchema.html)
-- [API Key HTTP Security Schema](/schemas/v3/security/http/apiKeyHTTPSecuritySchema.html)
-- [Non-Bearer HTTP Security Schemas](/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html)

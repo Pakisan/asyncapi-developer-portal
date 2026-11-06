@@ -2,6 +2,8 @@
 import type { APIRoute, GetStaticPaths } from 'astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
 import { HUB_ID, hub, hubMarkdown, versionMarkdown, versionPage } from '../data/binding-pages'
+import { formatFaq } from '../data/format-faq'
+import { faqMarkdown, securityMarkdown, securityPage } from '../data/security-schemes'
 
 export const getStaticPaths = (async () => {
   const docs = await getCollection('docs')
@@ -13,14 +15,17 @@ export const getStaticPaths = (async () => {
 
 export const GET: APIRoute<{ entry: CollectionEntry<'docs'> }> = ({ props: { entry } }) => {
   const { title, description } = entry.data
-  // Bindings pages get the same generated sections as their HTML (version note, history, fields, FAQ).
+  // Bindings and security scheme pages get the same generated sections as their HTML (examples, fields, FAQ).
   const brokerHub = HUB_ID.test(entry.id) ? hub(entry.id.split('/')[1]) : undefined
   const version = versionPage(entry.id)
+  const security = securityPage(entry.id)
   const text = [
     `# ${title}\n\n${description ? `> ${description}\n\n` : ''}`,
     version ? `${versionMarkdown(version)}\n` : '',
     entry.body ?? '',
     brokerHub ? hubMarkdown(brokerHub) : '',
+    security ? securityMarkdown(security) : '',
+    formatFaq[entry.id] ? faqMarkdown(formatFaq[entry.id]) : '',
   ].join('')
   return new Response(text, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } })
 }

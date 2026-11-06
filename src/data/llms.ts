@@ -16,6 +16,10 @@ export const llmsDetails = `**Tools**
 - [AsyncAPI bindings](https://asyncapi.pavelon.dev/bindings/): 20 brokers, every binding version, with examples.
 - [AsyncAPI schemas](https://asyncapi.pavelon.dev/schemas/): Schema Object, multi-format schemas (Avro, Protobuf, JSON Schema) and security schemes.
 - [AsyncAPI JSON Schema Registry: how to use it](https://asyncapi.pavelon.dev/schemas/registry.html)
+- [JSON Schema in AsyncAPI](https://asyncapi.pavelon.dev/schemas/formats/json-schema.html): payloads, examples, maps, conditional fields, $ref
+- [Avro schemas in AsyncAPI](https://asyncapi.pavelon.dev/schemas/formats/avro.html): schemaFormat, .avsc references, Kafka schema registry
+- [Protobuf schemas in AsyncAPI](https://asyncapi.pavelon.dev/schemas/formats/protobuf.html): .proto payloads and parser support
+- [AsyncAPI security schemes](https://asyncapi.pavelon.dev/schemas/v3/security/securitySchema.html): every scheme type with AsyncAPI 3.0 and 2.6 examples
 
 **JSON Schema registry (for validation and generation)**
 

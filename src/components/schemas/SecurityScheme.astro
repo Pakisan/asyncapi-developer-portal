@@ -1,0 +1,49 @@
+---
+// Generated sections at the end of a security scheme page: the scheme in a whole document, its fields, schema URL, FAQ.
+import { Code, TabItem, Tabs } from '@astrojs/starlight/components'
+import type { SecurityPage } from '../../data/security-schemes'
+import FieldsTable from '../FieldsTable.astro'
+import Questions from '../Questions.astro'
+
+interface Props {
+  page: SecurityPage
+}
+const { page: p } = Astro.props
+const types = p.types.map((t) => `type: ${t}`).join(', ')
+---
+
+<h2 id="in-a-document">In an AsyncAPI document</h2>
+<p>
+  Define the scheme (<code>{types}</code>) under <code>components.securitySchemes</code> and reference it from every server that needs it. In AsyncAPI 3.0 a
+  server's <code>security</code> lists the schemes themselves; in 2.x it lists requirement objects by name, with the scopes they need.
+</p>
+<Tabs syncKey="asyncapi-version">
+  <TabItem label="AsyncAPI 3.0">
+    <Code code={p.asyncapi3} lang="yaml" title="asyncapi.yaml" />
+  </TabItem>
+  <TabItem label="AsyncAPI 2.6">
+    <Code code={p.asyncapi2} lang="yaml" title="asyncapi.yaml" />
+  </TabItem>
+</Tabs>
+
+{
+  p.fields.length > 0 && (
+    <>
+      <h2 id="fields">Fields</h2>
+      <FieldsTable fields={p.fields} />
+    </>
+  )
+}
+
+<h2 id="json-schema">Validate with JSON Schema</h2>
+<p>
+  The {p.title} JSON Schema from the <a href="/schemas/registry.html">AsyncAPI JSON Schema registry</a>: <a href={p.schema}><code>{p.schema}</code></a>
+</p>
+
+{p.faq.length > 0 && <Questions items={p.faq} />}
+
+<style>
+  a code {
+    word-break: break-all;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+// Questions at the end of a reference page, the same ones its FAQPage JSON-LD carries. Answers are trusted HTML.
+interface Props {
+  items: { q: string; a: string }[]
+}
+const { items } = Astro.props
+---
+
+<h2 id="questions">Questions</h2>
+{
+  items.map((q) => (
+    <details class="qa">
+      <summary>{q.q}</summary>
+      <p set:html={q.a} />
+    </details>
+  ))
+}
+
+<style>
+  .qa {
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .qa + .qa {
+    margin-top: 0.5rem;
+  }
+  .qa summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .qa p {
+    margin-top: 0.5rem;
+  }
+</style>
