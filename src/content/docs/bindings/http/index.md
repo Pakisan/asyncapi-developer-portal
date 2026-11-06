@@ -37,14 +37,6 @@ The HTTP bindings allow you to map AsyncAPI concepts to synchronous HTTP interac
 | **Message Binding** | Header & Status Code Configuration | Defines the schema for HTTP headers and the expected HTTP status code for a response message. |
 | **Server Binding** | (Placeholder) | Marks the server as an HTTP-based server. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.3.0** | Latest | Adds `statusCode` to the message binding for defining response codes. |
-| **0.2.0** | Legacy | Older version. |
-| **0.1.0** | Legacy | Initial version. |
-
 ## Core HTTP Concepts in AsyncAPI
 
 ### Defining a Webhook
@@ -86,17 +78,3 @@ operations:
       messages:
         - $ref: '#/messages/userResponse'
 ```
-
-## Binding Documentation
-
-### Channel Bindings
-- [HTTP Channel Binding v0.3.0](/bindings/http/0.3.0/channel.html)
-
-### Operation Bindings
-- [HTTP Operation Binding v0.3.0](/bindings/http/0.3.0/operation.html)
-
-### Message Bindings
-- [HTTP Message Binding v0.3.0](/bindings/http/0.3.0/message.html)
-
-### Server Bindings
-- [HTTP Server Binding v0.3.0](/bindings/http/0.3.0/server.html) 

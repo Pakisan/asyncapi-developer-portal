@@ -1,6 +1,7 @@
 // Every docs page as Markdown for AI agents and LLM tools: `/bindings/amqp/0.2.0/channel.md`, `/bindings/amqp/index.md`.
 import type { APIRoute, GetStaticPaths } from 'astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
+import { HUB_ID, hub, hubMarkdown, versionMarkdown, versionPage } from '../data/binding-pages'
 
 export const getStaticPaths = (async () => {
   const docs = await getCollection('docs')
@@ -12,6 +13,14 @@ export const getStaticPaths = (async () => {
 
 export const GET: APIRoute<{ entry: CollectionEntry<'docs'> }> = ({ props: { entry } }) => {
   const { title, description } = entry.data
-  const text = `# ${title}\n\n${description ? `> ${description}\n\n` : ''}${entry.body ?? ''}`
+  // Bindings pages get the same generated sections as their HTML (version note, history, fields, FAQ).
+  const brokerHub = HUB_ID.test(entry.id) ? hub(entry.id.split('/')[1]) : undefined
+  const version = versionPage(entry.id)
+  const text = [
+    `# ${title}\n\n${description ? `> ${description}\n\n` : ''}`,
+    version ? `${versionMarkdown(version)}\n` : '',
+    entry.body ?? '',
+    brokerHub ? hubMarkdown(brokerHub) : '',
+  ].join('')
   return new Response(text, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } })
 }

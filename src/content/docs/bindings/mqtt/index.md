@@ -37,13 +37,6 @@ These bindings allow you to map AsyncAPI concepts to MQTT-specific configuration
 | **Message Binding** | Message-Level Properties | Configures message metadata like correlation data and response topics for request/reply patterns. |
 | **Server Binding** | Connection & Session Behavior | Defines connection parameters like Client ID, Clean Session, Session Expiry, and the Last Will and Testament. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.2.0** | Latest | Comprehensive support for features from MQTT v3 and v5, including QoS, retain, LWT, and session management. |
-| **0.1.0** | Legacy | Basic MQTT support. |
-
 ## Core MQTT Concepts in AsyncAPI
 
 ### Topics and Channels
@@ -118,17 +111,3 @@ operations:
 
 - **Use these generic MQTT bindings** when you need to support a range of MQTT versions or when your requirements are covered by the common features of v3 and v5. They provide the most flexibility.
 - **Use the [MQTT 5.0 specific bindings](/bindings/mqtt5/)** only if you need to enforce that an application *must* use MQTT 5.0 and there are v5-specific properties that are not yet available in the generic binding.
-
-## Binding Documentation
-
-### Channel Bindings
-- [MQTT Channel Binding v0.2.0](/bindings/mqtt/0.2.0/channel.html) - Topic configuration
-
-### Operation Bindings
-- [MQTT Operation Binding v0.2.0](/bindings/mqtt/0.2.0/operation.html) - QoS and retain flag configuration
-
-### Message Bindings
-- [MQTT Message Binding v0.2.0](/bindings/mqtt/0.2.0/message.html) - Correlation and response topic configuration
-
-### Server Bindings
-- [MQTT Server Binding v0.2.0](/bindings/mqtt/0.2.0/server.html) - Session, LWT, and connection configuration 

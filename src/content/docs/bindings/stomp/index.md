@@ -36,12 +36,6 @@ AsyncAPI STOMP bindings define how your API specification maps to STOMP protocol
 | **Message Binding** | Message-level configurations | Defines message representation in STOMP protocol |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific STOMP configurations |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Full STOMP support with basic configuration |
-
 ## Key STOMP Concepts
 
 ### STOMP Frames
@@ -220,17 +214,3 @@ servers:
 - [Apache ActiveMQ Documentation](https://activemq.apache.org/stomp.html)
 - [RabbitMQ STOMP Plugin](https://www.rabbitmq.com/stomp.html)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [STOMP Channel Binding v0.1.0](/bindings/stomp/0.1.0/channel.html) - Destination and routing configuration
-
-### Operation Bindings
-- [STOMP Operation Binding v0.1.0](/bindings/stomp/0.1.0/operation.html) - Message operation configuration
-
-### Message Bindings
-- [STOMP Message Binding v0.1.0](/bindings/stomp/0.1.0/message.html) - Message representation in STOMP protocol
-
-### Server Bindings
-- [STOMP Server Binding v0.1.0](/bindings/stomp/0.1.0/server.html) - Server-level STOMP configurations

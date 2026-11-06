@@ -34,12 +34,6 @@ The AMQP 1.0 bindings for AsyncAPI allow you to describe how your API interacts 
 | **Message Binding** | Specifies message-level configurations. | Reserved for future use. |
 | **Server Binding** | Defines AMQP 1.0-specific server configurations. | Reserved for future use. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Initial support for AMQP 1.0 bindings. All bindings are reserved for future use. |
-
 ## Use Cases
 
 AMQP 1.0 is well-suited for a variety of use cases, including:
@@ -106,17 +100,3 @@ components:
 
 - [OASIS AMQP 1.0 Standard](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=amqp)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [AMQP 1.0 Channel Binding v0.1.0](/bindings/amqp1/0.1.0/channel.html) - Reserved for future use.
-
-### Operation Bindings
-- [AMQP 1.0 Operation Binding v0.1.0](/bindings/amqp1/0.1.0/operation.html) - Reserved for future use.
-
-### Message Bindings
-- [AMQP 1.0 Message Binding v0.1.0](/bindings/amqp1/0.1.0/message.html) - Reserved for future use.
-
-### Server Bindings
-- [AMQP 1.0 Server Binding v0.1.0](/bindings/amqp1/0.1.0/server.html) - Reserved for future use.

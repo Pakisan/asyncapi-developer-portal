@@ -37,12 +37,6 @@ AsyncAPI Redis bindings define how your API specification maps to Redis concepts
 | **Message Binding** | Message-level configurations | Defines message representation in Redis protocol |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific Redis configurations |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Full Redis support with basic configuration |
-
 ## Key Redis Concepts
 
 ### Redis Data Structures
@@ -263,17 +257,3 @@ servers:
 - [Redis Pub/Sub Guide](https://redis.io/topics/pubsub)
 - [Redis Data Types](https://redis.io/topics/data-types)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [Redis Channel Binding v0.1.0](/bindings/redis/0.1.0/channel.html) - Channel and pub/sub configuration
-
-### Operation Bindings
-- [Redis Operation Binding v0.1.0](/bindings/redis/0.1.0/operation.html) - Message operation configuration
-
-### Message Bindings
-- [Redis Message Binding v0.1.0](/bindings/redis/0.1.0/message.html) - Message representation in Redis protocol
-
-### Server Bindings
-- [Redis Server Binding v0.1.0](/bindings/redis/0.1.0/server.html) - Server-level Redis configurations

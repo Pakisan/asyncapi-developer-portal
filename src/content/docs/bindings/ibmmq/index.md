@@ -36,12 +36,6 @@ The IBM MQ bindings allow you to map AsyncAPI concepts to specific IBM MQ config
 | **Message Binding** | Message Format & Headers | Specifies the message type (e.g., `string`, `jms`, `binary`) and other message-level properties like expiry. |
 | **Server Binding** | Queue Manager Connection | Defines the connection to a queue manager, including high-availability settings, and security (`cipherSpec`). |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Provides comprehensive support for defining IBM MQ queues, topics, message types, and detailed server connection properties. |
-
 ## Core IBM MQ Concepts in AsyncAPI
 
 ### Destinations and Channels
@@ -83,17 +77,3 @@ servers:
 ### Message Types
 
 The `message` binding allows you to specify the `type` of the message payload, which can be `string`, `jms`, or `binary`. This helps consumers correctly interpret the message body.
-
-## Binding Documentation
-
-### Channel Bindings
-- [IBM MQ Channel Binding v0.1.0](/bindings/ibmmq/0.1.0/channel.html) - Queue and Topic configuration.
-
-### Operation Bindings
-- [IBM MQ Operation Binding v0.1.0](/bindings/ibmmq/0.1.0/operation.html) - Placeholder for future operation settings.
-
-### Message Bindings
-- [IBM MQ Message Binding v0.1.0](/bindings/ibmmq/0.1.0/message.html) - Message type, headers, and expiry configuration.
-
-### Server Bindings
-- [IBM MQ Server Binding v0.1.0](/bindings/ibmmq/0.1.0/server.html) - Queue Manager connection and HA configuration. 

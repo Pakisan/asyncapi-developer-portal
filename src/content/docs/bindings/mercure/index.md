@@ -36,12 +36,6 @@ The Mercure bindings for AsyncAPI map its core concepts to Mercure-specific patt
 | **Message Binding** | Event Data | Represents the data payload of a Server-Sent Event. |
 | **Server Binding** | Hub Connection | Defines the connection details for the Mercure Hub. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Initial placeholder bindings for Mercure. These bindings are informational and do not yet contain configurable properties. |
-
 ## Core Mercure Concepts in AsyncAPI
 
 ### Topics and Channels
@@ -96,17 +90,3 @@ operations:
 The publisher would send a `POST` request to `https://hub.example.com/.well-known/mercure` with the following form data:
 - `topic`: The URL of the target topic (e.g., `https://example.com/greetings`).
 - `data`: The message payload (e.g., `{"message": "Hello, world!"}`).
-
-## Binding Documentation
-
-### Channel Bindings
-- [Mercure Channel Binding v0.1.0](/bindings/mercure/0.1.0/channel.html) - Topic URL configuration.
-
-### Operation Bindings
-- [Mercure Operation Binding v0.1.0](/bindings/mercure/0.1.0/operation.html) - Placeholder for publish operation configuration.
-
-### Message Bindings
-- [Mercure Message Binding v0.1.0](/bindings/mercure/0.1.0/message.html) - Placeholder for SSE data payload configuration.
-
-### Server Bindings
-- [Mercure Server Binding v0.1.0](/bindings/mercure/0.1.0/server.html) - Mercure Hub connection configuration.

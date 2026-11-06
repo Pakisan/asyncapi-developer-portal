@@ -65,10 +65,12 @@ export default defineConfig({
         { tag: 'link', attrs: { rel: 'alternate', type: 'text/plain', href: '/llms.txt', title: 'llms.txt' } },
       ],
       customCss: ['./src/styles/starlight.css'],
+      routeMiddleware: './src/routeData.ts',
       components: {
         Head: './src/components/starlight/Head.astro',
         Footer: './src/components/starlight/Footer.astro',
         PageTitle: './src/components/starlight/PageTitle.astro',
+        MarkdownContent: './src/components/starlight/MarkdownContent.astro',
       },
       plugins: [
         starlightSidebarTopics(sidebarTopics, { exclude: ['/privacy', '/404'] }),

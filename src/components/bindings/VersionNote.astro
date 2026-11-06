@@ -1,0 +1,36 @@
+---
+// Top of a binding version page: says whether it is the latest, and what later versions changed in this object.
+import { Aside } from '@astrojs/starlight/components'
+import type { VersionPage } from '../../data/binding-pages'
+
+interface Props {
+  page: VersionPage
+}
+const { page: v } = Astro.props
+---
+
+{
+  v.isLatest ? (
+    <Aside type="tip" title={`Latest version`}>
+      This is the latest {v.hub.name} {v.object} binding. JSON Schema: <a href={v.schema}><code>{v.schema}</code></a>
+    </Aside>
+  ) : (
+    <Aside type="caution" title={`Not the latest version`}>
+      <p>
+        The latest {v.hub.name} binding is <a href={v.latestHref}>{v.hub.latest}</a>.
+        {v.since.length === 0 && ` Its ${v.object} binding has the same fields as ${v.version}.`}
+      </p>
+      {v.since.length > 0 && (
+        <ul>
+          {v.since.map((s) => (
+            <li>
+              {s.version}: {s.added.length > 0 && <>adds {s.added.map((f, i) => [i > 0 && ', ', <code>{f}</code>])}</>}
+              {s.added.length > 0 && s.removed.length > 0 && '; '}
+              {s.removed.length > 0 && <>removes {s.removed.map((f, i) => [i > 0 && ', ', <code>{f}</code>])}</>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </Aside>
+  )
+}

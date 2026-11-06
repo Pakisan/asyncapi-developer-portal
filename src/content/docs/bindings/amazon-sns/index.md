@@ -29,13 +29,6 @@ AsyncAPI SNS bindings map your API specification to SNS concepts:
 | **Message Binding** | Message-level configurations | Reserved for future message-specific SNS configurations. |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific SNS configurations. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.2.0** | Latest | Adds support for consumer-level identifiers. |
-| **0.1.0** | Stable | Basic support for topic configuration and subscription policies. |
-
 ## Key SNS Concepts
 
 ### Topics
@@ -87,19 +80,3 @@ operations:
             - user.created
         bindingVersion: '0.1.0'
 ```
-
-## Binding Documentation
-
-### Channel Bindings
-- [SNS Channel Binding v0.2.0](/bindings/amazon-sns/0.2.0/channel.html)
-- [SNS Channel Binding v0.1.0](/bindings/amazon-sns/0.1.0/channel.html)
-
-### Operation Bindings
-- [SNS Operation Binding v0.2.0](/bindings/amazon-sns/0.2.0/operation.html)
-- [SNS Operation Binding v0.1.0](/bindings/amazon-sns/0.1.0/operation.html)
-
-### Message Bindings
-- [SNS Message Binding v0.1.0](/bindings/amazon-sns/0.1.0/message.html)
-
-### Server Bindings
-- [SNS Server Binding v0.1.0](/bindings/amazon-sns/0.1.0/server.html)

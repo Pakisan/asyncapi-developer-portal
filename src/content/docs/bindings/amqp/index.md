@@ -35,14 +35,6 @@ AsyncAPI AMQP bindings define how your API specification maps to AMQP 0-9-1 conc
 | **Message Binding** | Message-level configurations | Defines content encoding and message types |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific AMQP configurations |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.3.0** | Latest | Full feature set with virtual host support |
-| **0.2.0** | Stable | Enhanced exchange and queue configurations |
-| **0.1.0** | Legacy | Basic exchange and queue support |
-
 ## Key AMQP Concepts
 
 ### Exchanges and Routing
@@ -137,17 +129,6 @@ messages:
         bindingVersion: '0.3.0'
 ```
 
-## Version Migration Guide
-
-### From 0.1.0 to 0.2.0
-- Added `vhost` property to exchange and queue configurations
-- Enhanced schema validation and error handling
-
-### From 0.2.0 to 0.3.0
-- No breaking changes
-- Improved documentation and examples
-- Enhanced schema validation
-
 ## Best Practices
 
 ### Channel Design
@@ -170,25 +151,3 @@ messages:
 - [AMQP 0-9-1 Specification](https://www.rabbitmq.com/amqp-0-9-1-reference.html)
 - [RabbitMQ Documentation](https://www.rabbitmq.com/documentation.html)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [AMQP Channel Binding v0.3.0](/bindings/amqp/0.3.0/channel.html) - Latest version with full feature set
-- [AMQP Channel Binding v0.2.0](/bindings/amqp/0.2.0/channel.html) - Stable version with virtual host support
-- [AMQP Channel Binding v0.1.0](/bindings/amqp/0.1.0/channel.html) - Legacy version with basic support
-
-### Operation Bindings
-- [AMQP Operation Binding v0.3.0](/bindings/amqp/0.3.0/operation.html) - Latest version with comprehensive operation controls
-- [AMQP Operation Binding v0.2.0](/bindings/amqp/0.2.0/operation.html) - Stable version with enhanced operation features
-- [AMQP Operation Binding v0.1.0](/bindings/amqp/0.1.0/operation.html) - Legacy version with basic operation support
-
-### Message Bindings
-- [AMQP Message Binding v0.3.0](/bindings/amqp/0.3.0/message.html) - Content encoding and message type configuration
-- [AMQP Message Binding v0.2.0](/bindings/amqp/0.2.0/message.html) - Content encoding and message type configuration
-- [AMQP Message Binding v0.1.0](/bindings/amqp/0.1.0/message.html) - Content encoding and message type configuration
-
-### Server Bindings
-- [AMQP Server Binding v0.3.0](/bindings/amqp/0.3.0/server.html) - Reserved for future server-level configurations
-- [AMQP Server Binding v0.2.0](/bindings/amqp/0.2.0/server.html) - Reserved for future server-level configurations
-- [AMQP Server Binding v0.1.0](/bindings/amqp/0.1.0/server.html) - Reserved for future server-level configurations

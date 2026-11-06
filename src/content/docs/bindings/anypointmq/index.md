@@ -35,12 +35,6 @@ AsyncAPI's Anypoint MQ bindings define how your API specification maps to Anypoi
 | **Message Binding** | Specifies message-level configurations. | Defines message headers and their properties. |
 | **Server Binding** | Defines Anypoint MQ-specific server configurations. | Reserved for future use. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.0.1** | Latest | Initial support for Anypoint MQ bindings. |
-
 ## Key Anypoint MQ Concepts
 
 ### Queues and Exchanges
@@ -112,17 +106,3 @@ messages:
 
 - [Anypoint MQ Documentation](https://docs.mulesoft.com/anypoint-mq/)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [v0.0.1](/bindings/anypointmq/0.0.1/channel.html)
-
-### Operation Bindings
-- [v0.0.1](/bindings/anypointmq/0.0.1/operation.html)
-
-### Message Bindings
-- [v0.0.1](/bindings/anypointmq/0.0.1/message.html)
-
-### Server Bindings
-- [v0.0.1](/bindings/anypointmq/0.0.1/server.html)

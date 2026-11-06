@@ -32,14 +32,6 @@ AsyncAPI SQS bindings map your API specification to SQS concepts:
 | **Message Binding** | Message-level configurations | Defines message attributes like delay and deduplication identifiers. |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific SQS configurations. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.3.0** | Latest | Full feature set, including tag support. |
-| **0.2.0** | Stable | Adds support for message-level identifiers. |
-| **0.1.0** | Legacy | Basic support for queue configuration. |
-
 ## Key SQS Concepts
 
 ### Queues
@@ -82,20 +74,3 @@ operations:
                 action: 'sqs:SendMessage'
         bindingVersion: '0.2.0'
 ```
-
-## Binding Documentation
-
-### Channel Bindings
-- [SQS Channel Binding v0.2.0](/bindings/amazon-sqs/0.2.0/channel.html)
-- [SQS Channel Binding v0.1.0](/bindings/amazon-sqs/0.1.0/channel.html)
-
-### Operation Bindings
-- [SQS Operation Binding v0.2.0](/bindings/amazon-sqs/0.2.0/operation.html)
-- [SQS Operation Binding v0.1.0](/bindings/amazon-sqs/0.1.0/operation.html)
-
-### Message Bindings
-- [SQS Message Binding v0.2.0](/bindings/amazon-sqs/0.2.0/message.html)
-- [SQS Message Binding v0.1.0](/bindings/amazon-sqs/0.1.0/message.html)
-
-### Server Bindings
-- [SQS Server Binding v0.1.0](/bindings/amazon-sqs/0.1.0/server.html)

@@ -35,12 +35,6 @@ AsyncAPI WebSockets bindings define how your API specification maps to WebSocket
 | **Message Binding** | Message-level configurations | Defines message representation in WebSocket protocol |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific WebSocket configurations |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Full WebSocket support with HTTP handshake configuration |
-
 ## Key WebSocket Concepts
 
 ### Connection Establishment
@@ -199,17 +193,3 @@ messages:
 - [WebSocket Protocol Specification (RFC 6455)](https://tools.ietf.org/html/rfc6455)
 - [MDN WebSocket Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [WebSockets Channel Binding v0.1.0](/bindings/websockets/0.1.0/channel.html) - Connection establishment and handshake configuration
-
-### Operation Bindings
-- [WebSockets Operation Binding v0.1.0](/bindings/websockets/0.1.0/operation.html) - Message operation configuration
-
-### Message Bindings
-- [WebSockets Message Binding v0.1.0](/bindings/websockets/0.1.0/message.html) - Message representation in WebSocket protocol
-
-### Server Bindings
-- [WebSockets Server Binding v0.1.0](/bindings/websockets/0.1.0/server.html) - Server-level WebSocket configurations

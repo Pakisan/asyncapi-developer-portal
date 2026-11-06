@@ -1,0 +1,17 @@
+---
+// Starlight's Markdown wrapper, plus the generated parts of the bindings pages (see src/data/binding-pages.ts).
+import Default from '@astrojs/starlight/components/MarkdownContent.astro'
+import BrokerHub from '../bindings/BrokerHub.astro'
+import VersionNote from '../bindings/VersionNote.astro'
+import { HUB_ID, hub, versionPage } from '../../data/binding-pages'
+
+const id = Astro.locals.starlightRoute.entry.id
+const brokerHub = HUB_ID.test(id) ? hub(id.split('/')[1]) : undefined
+const version = versionPage(id)
+---
+
+<Default>
+  {version && <VersionNote page={version} />}
+  <slot />
+  {brokerHub && <BrokerHub hub={brokerHub} />}
+</Default>

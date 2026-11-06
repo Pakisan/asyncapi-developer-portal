@@ -18,7 +18,7 @@ const byVersion = (a: string, b: string) => {
 }
 
 /** Sidebar label of every broker group, keyed by broker id. */
-function brokerNames() {
+export function brokerNames() {
   const names = new Map<string, string>()
   const topic = sidebarTopics.find((t) => 'link' in t && t.link === '/bindings/')
   const items = topic && 'items' in topic ? topic.items : []

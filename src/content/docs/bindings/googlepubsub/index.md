@@ -37,13 +37,6 @@ The Pub/Sub bindings allow you to map AsyncAPI concepts to specific Pub/Sub reso
 | **Message Binding** | Message-Level Configuration | Defines the schema for a message and allows for specifying attributes and an `orderingKey`. |
 | **Server Binding** | (Placeholder) | Marks the server as a Pub/Sub endpoint. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.2.0** | Latest | Adds `schemaSettings` to the channel binding. |
-| **0.1.0** | Legacy | Initial version with basic topic and message settings. |
-
 ## Core Google Cloud Pub/Sub Concepts in AsyncAPI
 
 ### Topics and Channels
@@ -77,17 +70,3 @@ messages:
         schema:
           name: 'projects/my-gcp-project/schemas/UserSignedUp'
 ```
-
-## Binding Documentation
-
-### Channel Bindings
-- [Google Pub/Sub Channel Binding v0.2.0](/bindings/googlepubsub/0.2.0/channel.html)
-
-### Operation Bindings
-- [Google Pub/Sub Operation Binding v0.2.0](/bindings/googlepubsub/0.2.0/operation.html)
-
-### Message Bindings
-- [Google Pub/Sub Message Binding v0.2.0](/bindings/googlepubsub/0.2.0/message.html)
-
-### Server Bindings
-- [Google Pub/Sub Server Binding v0.2.0](/bindings/googlepubsub/0.2.0/server.html) 

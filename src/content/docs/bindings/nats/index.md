@@ -36,12 +36,6 @@ AsyncAPI NATS bindings define how your API specification maps to NATS concepts:
 | **Message Binding** | Message-level configurations | Defines message representation in NATS protocol |
 | **Server Binding** | Server-level configurations | Reserved for future server-specific NATS configurations |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Full NATS support with basic queue configuration |
-
 ## Key NATS Concepts
 
 ### Subjects
@@ -257,17 +251,3 @@ servers:
 - [NATS by Example](https://natsbyexample.com/)
 - [NATS JetStream Documentation](https://docs.nats.io/jetstream/jetstream)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [NATS Channel Binding v0.1.0](/bindings/nats/0.1.0/channel.html) - Subject and channel configuration
-
-### Operation Bindings
-- [NATS Operation Binding v0.1.0](/bindings/nats/0.1.0/operation.html) - Queue and operation configuration
-
-### Message Bindings
-- [NATS Message Binding v0.1.0](/bindings/nats/0.1.0/message.html) - Message representation in NATS protocol
-
-### Server Bindings
-- [NATS Server Binding v0.1.0](/bindings/nats/0.1.0/server.html) - Server-level NATS configurations

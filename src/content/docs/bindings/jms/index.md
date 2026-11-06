@@ -37,12 +37,6 @@ The JMS bindings provide a way to map AsyncAPI concepts to specific JMS provider
 | **Message Binding** | Header & Property Configuration | Defines JMS-specific headers (like `JMSCorrelationID`) and properties for a message. |
 | **Server Binding** | Connection Factory Configuration | Specifies the JMS `ConnectionFactory` class and its properties, including the `clientID`. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.0.1** | Latest | Provides initial, comprehensive support for defining JMS destinations, messages, and connection factories. |
-
 ## Core JMS Concepts in AsyncAPI
 
 ### Destinations and Channels
@@ -90,17 +84,3 @@ servers:
         jmsConnectionFactory: 'org.apache.activemq.ActiveMQConnectionFactory'
         clientID: 'my-app-1'
 ```
-
-## Binding Documentation
-
-### Channel Bindings
-- [JMS Channel Binding v0.0.1](/bindings/jms/0.0.1/channel.html) - Destination (Queue) configuration.
-
-### Operation Bindings
-- [JMS Operation Binding v0.0.1](/bindings/jms/0.0.1/operation.html) - Placeholder for future operation settings.
-
-### Message Bindings
-- [JMS Message Binding v0.0.1](/bindings/jms/0.0.1/message.html) - JMS header and property configuration.
-
-### Server Bindings
-- [JMS Server Binding v0.0.1](/bindings/jms/0.0.1/server.html) - ConnectionFactory configuration. 

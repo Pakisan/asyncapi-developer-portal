@@ -1,9 +1,11 @@
 // Head tags and schema.org JSON-LD for every page. One place builds them, so canonical, Open Graph and structured data
 // always agree. Only describe what the page shows: Google penalises markup that does not match visible content.
+import { HUB_ID, hub } from './binding-pages'
 import { faq } from './home'
 import { faq as pluginFaq } from './jetbrains-plugin'
 import { marketplace, supportedIdes } from './marketplace'
 import { type Product, products } from './products'
+import type { Hub } from './binding-pages'
 import { DEFAULT_IMAGE, SITE_NAME, SITE_URL } from './site'
 
 export const PERSON_ID = `${SITE_URL}/#person`
@@ -192,6 +194,8 @@ export function docGraph(m: PageMeta, id: string, crumbs: Crumb[]) {
     })
   }
   if (id === 'schemas/registry') graph.push(registryDataset())
+  const brokerHub = HUB_ID.test(id) ? hub(id.split('/')[1]) : undefined
+  if (brokerHub) graph.push(...brokerNodes(brokerHub, m.url))
   if (crumbs.length > 1) graph.push(breadcrumbList(crumbs))
   return { '@context': 'https://schema.org', '@graph': graph }
 }
@@ -205,6 +209,37 @@ const faqPage = (items: { q: string; a: string }[]) => ({
     acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/href="\//g, `href="${SITE_URL}/`) },
   })),
 })
+
+/**
+ * A broker page: its binding fields as a DefinedTermSet (what each field means, for search engines and AI answers),
+ * and its questions as an FAQPage. Both are shown on the page.
+ */
+function brokerNodes(h: Hub, url: string) {
+  const nodes: Record<string, unknown>[] = []
+  const terms = h.fields.flatMap((f) =>
+    f.fields
+      .filter((x) => !x.path.includes('.') && !x.path.includes('[]') && x.description)
+      .map((x) => ({
+        '@type': 'DefinedTerm',
+        name: `${h.name} ${f.object} binding: ${x.path}`,
+        termCode: x.path,
+        description: x.description,
+        url: `${url}#fields-${f.object}`,
+        inDefinedTermSet: `${url}#terms`,
+      })),
+  )
+  if (terms.length) {
+    nodes.push({
+      '@type': 'DefinedTermSet',
+      '@id': `${url}#terms`,
+      name: `AsyncAPI ${h.name} bindings ${h.latest} fields`,
+      url: `${url}#fields`,
+      hasDefinedTerm: terms,
+    })
+  }
+  if (h.faq.length) nodes.push(faqPage(h.faq))
+  return nodes
+}
 
 /** JSON-LD for the home page: who, what tools, the registry and the FAQ shown on the page. */
 export function homeGraph(m: PageMeta) {

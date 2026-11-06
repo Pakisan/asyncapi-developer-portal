@@ -38,12 +38,6 @@ The Pulsar bindings allow you to map AsyncAPI concepts to the specific resource 
 | **Message Binding** | (Placeholder) | Reserved for future Pulsar-specific message properties. |
 | **Server Binding** | Tenant Configuration | Specifies the Pulsar tenant that the application belongs to. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.1.0** | Latest | Provides comprehensive support for defining Pulsar's hierarchical structure (tenant, namespace, topic) and key administrative policies. |
-
 ## Core Pulsar Concepts in AsyncAPI
 
 ### The Topic Hierarchy
@@ -63,17 +57,3 @@ Pulsar's power comes from its fine-grained policy control. The `channel` binding
 - **`compaction`**: Set a size threshold to trigger topic compaction for keyed topics.
 - **`deduplication`**: Enable or disable message deduplication.
 - **`geo-replication`**: List the clusters to which the topic should be replicated.
-
-## Binding Documentation
-
-### Channel Bindings
-- [Apache Pulsar Channel Binding v0.1.0](/bindings/apache-pulsar/0.1.0/channel.html)
-
-### Operation Bindings
-- [Apache Pulsar Operation Binding v0.1.0](/bindings/apache-pulsar/0.1.0/operation.html)
-
-### Message Bindings
-- [Apache Pulsar Message Binding v0.1.0](/bindings/apache-pulsar/0.1.0/message.html)
-
-### Server Bindings
-- [Apache Pulsar Server Binding v0.1.0](/bindings/apache-pulsar/0.1.0/server.html) 

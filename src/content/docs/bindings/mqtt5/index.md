@@ -37,13 +37,6 @@ AsyncAPI MQTT 5.0 bindings define how your API specification maps to MQTT 5.0 co
 | **Message Binding** | Message-level configurations | Defines message properties like expiry and content type |
 | **Server Binding** | Server-level configurations | Defines session parameters like Session Expiry Interval |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.2.0** | Latest | Support for MQTT 5.0 features, including `sessionExpiryInterval`. |
-| **0.1.0** | Legacy | Basic MQTT support. |
-
 ## Key MQTT 5.0 Concepts
 
 ### Topics
@@ -158,17 +151,3 @@ operations:
 - Always use TLS to encrypt communication.
 - Implement robust authentication and authorization on the broker.
 - Use the principle of least privilege for topic access.
-
-## Binding Documentation
-
-### Channel Bindings
-- [MQTT 5.0 Channel Binding v0.2.0](/bindings/mqtt5/0.2.0/channel.html) - Topic configuration
-
-### Operation Bindings
-- [MQTT 5.0 Operation Binding v0.2.0](/bindings/mqtt5/0.2.0/operation.html) - Publish/subscribe options
-
-### Message Bindings
-- [MQTT 5.0 Message Binding v0.2.0](/bindings/mqtt5/0.2.0/message.html) - Message property configuration
-
-### Server Bindings
-- [MQTT 5.0 Server Binding v0.2.0](/bindings/mqtt5/0.2.0/server.html) - Session configuration 

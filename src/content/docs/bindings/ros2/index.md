@@ -45,15 +45,6 @@ ROS 2 is a set of software libraries and tools for building robot applications. 
 - **OpenDDS**: Additional DDS option
 - **Custom Implementations**: Support for other RMW implementations
 
-## Available Versions
-
-### v0.1.0
-The initial release of ROS 2 bindings with support for:
-- Basic node configuration
-- QoS policy definitions
-- Middleware implementation specification
-- Domain ID configuration
-
 ## Use Cases
 
 ### Robotics Applications

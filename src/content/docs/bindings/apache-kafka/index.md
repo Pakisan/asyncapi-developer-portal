@@ -35,15 +35,6 @@ AsyncAPI Kafka bindings define how your API specification maps to Kafka concepts
 | **Message Binding**  | Specifies message-level configurations.            | Defines the message key and schema ID lookups in a Schema Registry.                                     |
 | **Server Binding**  | Defines Kafka-specific server configurations.      | Specifies the Schema Registry URL and other cluster-level properties.                                   |
 
-### Supported Versions
-
-| Version | Status   | Key Features                                       |
-|---------|----------|----------------------------------------------------|
-| **0.5.0** | Latest   | Full feature set, including topic configurations. |
-| **0.4.0** | Stable   | Introduces topic configuration properties.       |
-| **0.3.0** | Stable   | Adds schema look up from schema registry.          |
-| **0.1.0** | Legacy   | Basic support for Kafka bindings.                  |
-
 ## Key Kafka Concepts
 
 ### Topics and Partitions
@@ -146,19 +137,6 @@ servers:
         bindingVersion: '0.5.0'
 ```
 
-## Version Migration Guide
-
-### From 0.1.0 to 0.3.0
-- Added `schemaIdLocation`, `schemaIdPayloadEncoding` and `schemaLookupStrategy` to message bindings.
-- Added `schemaRegistryUrl` and `schemaRegistryVendor` to server bindings.
-
-### From 0.3.0 to 0.4.0
-- Added `topicConfiguration` to channel bindings.
-
-### From 0.4.0 to 0.5.0
-- No breaking changes.
-- Improved documentation and examples.
-
 ## Best Practices
 
 ### Topic Management
@@ -179,29 +157,3 @@ servers:
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
 - [Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/index.html)
 - [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/v3.0.0)
-
-## Binding Documentation
-
-### Channel Bindings
-- [v0.5.0](/bindings/apache-kafka/0.5.0/channel.html)
-- [v0.4.0](/bindings/apache-kafka/0.4.0/channel.html)
-- [v0.3.0](/bindings/apache-kafka/0.3.0/channel.html)
-- [v0.1.0](/bindings/apache-kafka/0.1.0/channel.html)
-
-### Operation Bindings
-- [v0.5.0](/bindings/apache-kafka/0.5.0/operation.html)
-- [v0.4.0](/bindings/apache-kafka/0.4.0/operation.html)
-- [v0.3.0](/bindings/apache-kafka/0.3.0/operation.html)
-- [v0.1.0](/bindings/apache-kafka/0.1.0/operation.html)
-
-### Message Bindings
-- [v0.5.0](/bindings/apache-kafka/0.5.0/message.html)
-- [v0.4.0](/bindings/apache-kafka/0.4.0/message.html)
-- [v0.3.0](/bindings/apache-kafka/0.3.0/message.html)
-- [v0.1.0](/bindings/apache-kafka/0.1.0/message.html)
-
-### Server Bindings
-- [v0.5.0](/bindings/apache-kafka/0.5.0/server.html)
-- [v0.4.0](/bindings/apache-kafka/0.4.0/server.html)
-- [v0.3.0](/bindings/apache-kafka/0.3.0/server.html)
-- [v0.1.0](/bindings/apache-kafka/0.1.0/server.html)

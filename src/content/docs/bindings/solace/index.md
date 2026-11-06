@@ -38,15 +38,6 @@ The Solace bindings allow you to map AsyncAPI concepts to the specific entities 
 | **Message Binding** | (Placeholder) | Reserved for future Solace-specific message properties. |
 | **Server Binding** | Connection Configuration | Specifies the Message VPN and client name for connecting to the Solace broker. |
 
-### Supported Versions
-
-| Version | Status | Key Features |
-|---------|--------|--------------|
-| **0.4.0** | Latest | Comprehensive support for defining multiple operation destinations (queues/topics), delivery modes, and topic subscriptions. |
-| **0.3.0** | Legacy | Older version. |
-| **0.2.0** | Legacy | Older version. |
-| **0.1.0** | Legacy | Initial version. |
-
 ## Core Solace Concepts in AsyncAPI
 
 ### Connecting to a Message VPN
@@ -84,17 +75,3 @@ operations:
                 - 'orders/v1/us/new'
                 - 'orders/v1/ca/new'
 ```
-
-## Binding Documentation
-
-### Channel Bindings
-- [Solace Channel Binding v0.4.0](/bindings/solace/0.4.0/channel.html)
-
-### Operation Bindings
-- [Solace Operation Binding v0.4.0](/bindings/solace/0.4.0/operation.html)
-
-### Message Bindings
-- [Solace Message Binding v0.4.0](/bindings/solace/0.4.0/message.html)
-
-### Server Bindings
-- [Solace Server Binding v0.4.0](/bindings/solace/0.4.0/server.html) 
