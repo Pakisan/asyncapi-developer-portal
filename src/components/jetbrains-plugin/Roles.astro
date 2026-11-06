@@ -1,0 +1,52 @@
+---
+import { roles } from '../../data/jetbrains-plugin'
+---
+
+<section class="section roles" id="roles">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Who it is for</span>
+      <h2>What each role gets</h2>
+    </div>
+    <ul class="grid">
+      {
+        roles.map((r) => (
+          <li class="card">
+            <h3>{r.role}</h3>
+            <p class="need">{r.need}</p>
+            <ul>
+              {r.gets.map((g) => <li>{g}</li>)}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .roles {
+    background: var(--surface-2);
+  }
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  .need {
+    color: var(--muted);
+    margin: 8px 0 14px;
+  }
+  .card ul {
+    margin: 0;
+    padding-left: 1.1em;
+    display: grid;
+    gap: 4px;
+  }
+</style>

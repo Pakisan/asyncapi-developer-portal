@@ -1,0 +1,99 @@
+---
+import { mcpTools } from '../../data/jetbrains-plugin'
+---
+
+<section class="section" id="ai-agents">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">AI agents</span>
+      <h2>Ask your agent, the plugin answers</h2>
+      <p>
+        The plugin adds ten tools to the MCP server bundled with JetBrains IDEs. Your agent gets facts the plugin already worked
+        out: topics behind Spring properties, payload types, consumer groups, what a broker holds right now.
+      </p>
+      <ol class="steps">
+        <li>Enable the server in <em>Settings → Tools → MCP Server</em> and copy its configuration into your agent.</li>
+        <li>Run <em>Tools → Install AsyncAPI Agent Skill</em>. It writes <code>.claude/skills/asyncapi/SKILL.md</code>, which tells the agent which tool answers which question.</li>
+      </ol>
+      <p class="note">
+        Finding and validating documents is free. <code>asyncapi_connections</code> and <code>asyncapi_topology</code> are the same tools{' '}
+        <a href="https://kurkik.pavelon.dev">Kurkik</a> serves with <code>kurkik mcp</code> in a terminal.
+      </p>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr><th scope="col">Ask your agent</th><th scope="col">Tool</th></tr>
+        </thead>
+        <tbody>
+          {
+            mcpTools.map((t) => (
+              <tr>
+                <td>“{t.ask}”</td>
+                <td><code>{t.tool}</code></td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid {
+    display: grid;
+    gap: 40px;
+  }
+  @media (min-width: 980px) {
+    .grid {
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: start;
+    }
+  }
+  h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    margin-bottom: 14px;
+  }
+  p {
+    color: var(--muted);
+  }
+  .steps {
+    padding-left: 1.2em;
+    display: grid;
+    gap: 8px;
+  }
+  .note {
+    font-size: 0.93rem;
+  }
+  .table {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  tr:last-child td {
+    border-bottom: 0;
+  }
+  th {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  td code {
+    white-space: nowrap;
+  }
+</style>

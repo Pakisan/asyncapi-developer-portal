@@ -22,7 +22,6 @@ export interface Product {
   group: 'Reference' | 'IDE & editors' | 'Code & automation'
   applicationCategory: string
   operatingSystem: string
-  // TODO(confirm): public plugin version (changelog says 3.7.0, build says 4.14.0) and repo URL (Pakisan vs asyncapi org)
   softwareVersion?: string
 }
 
@@ -30,21 +29,22 @@ export const products: Product[] = [
   {
     id: 'jetbrains-plugin',
     name: 'AsyncAPI plugin for JetBrains IDEs',
-    tagline: 'Keep AsyncAPI in step with your Spring code, inside IntelliJ IDEA, WebStorm, PyCharm and Android Studio',
+    tagline: 'An AsyncAPI editor for IntelliJ IDEA and every JetBrains IDE, that also generates documents from Spring code and live brokers',
     summary:
-      'Generate AsyncAPI documentation straight from your Spring Messaging code and catch drift between the document and the implementation as you work. Also a complete AsyncAPI editor: validate while you type and preview the result.',
+      'Validate, complete and preview AsyncAPI 2.x and 3.x documents in IntelliJ IDEA, WebStorm, PyCharm, GoLand and other JetBrains IDEs. Generate documents from Spring Messaging code or a live Kafka, Pulsar, SNS or SQS system, and see where the document, the code and the broker disagree.',
     status: 'freemium',
     statusLabel: 'Free + Pro',
-    audience: 'Teams documenting event-driven systems, Spring developers, API designers',
+    audience: 'Spring developers, API designers and architects, platform engineers, teams using AI agents',
     features: [
-      'Live validation, completion and quick fixes for AsyncAPI 2.x and 3.x',
-      'Instant preview, templates and resolution of references across files',
-      'Spectral and Redocly linting without leaving the editor',
-      'Generate AsyncAPI documents from Spring Messaging code: Kafka, JMS, Amazon SNS and SQS, Pulsar, STOMP, SSE',
-      'Inspect a single server, channel, message or operation in isolation',
+      'Live validation, completion and preview for AsyncAPI 2.0.0 to 3.1.0',
+      'Generate AsyncAPI documents from Spring code: Kafka, Pulsar, SQS, SNS and JMS',
+      'Export AsyncAPI from a live Kafka or Pulsar cluster, or an SNS or SQS account',
+      'Drift between the document, the source code and the broker',
+      'Ten MCP tools for AI agents, Spectral and Redocly linting',
     ],
     page: '/jetbrains-plugin/',
     installUrl: 'https://plugins.jetbrains.com/plugin/15673-asyncapi',
+    repoUrl: 'https://github.com/asyncapi/jasyncapi-idea-plugin',
     group: 'IDE & editors',
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Windows, macOS, Linux',

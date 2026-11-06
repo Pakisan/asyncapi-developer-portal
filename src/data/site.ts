@@ -12,3 +12,6 @@ export const GA_ID = 'G-G03BQZSMD1'
 export const CONSENT_MAX_AGE_DAYS = 180
 
 export const REPO_URL = 'https://github.com/Pakisan/asyncapi-developer-portal'
+
+/** Landing pages built from `src/pages/<id>/index.astro` and served at `/<id>/`, like the docs index pages. */
+export const LANDING_INDEX_IDS = ['jetbrains-plugin']

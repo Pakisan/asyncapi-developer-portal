@@ -17,14 +17,17 @@ export const indexIds = (docsDir) =>
     .map((f) => path.relative(docsDir, path.dirname(f)).split(path.sep).join('/'))
     .filter(Boolean)
 
-/** @returns {import('astro').AstroIntegration} */
-export default function indexUrls({ docsDir, site }) {
+/**
+ * @param {{ docsDir: string, site: string, extraIds?: string[] }} options `extraIds`: index pages that are Astro pages, not docs
+ * @returns {import('astro').AstroIntegration}
+ */
+export default function indexUrls({ docsDir, site, extraIds = [] }) {
   return {
     name: 'asyncapi:index-urls',
     hooks: {
       'astro:build:done': ({ dir, logger }) => {
         const out = fileURLToPath(dir)
-        const ids = indexIds(docsDir).sort((a, b) => b.length - a.length)
+        const ids = [...indexIds(docsDir), ...extraIds].sort((a, b) => b.length - a.length)
 
         for (const id of ids) {
           const from = path.join(out, `${id}.html`)

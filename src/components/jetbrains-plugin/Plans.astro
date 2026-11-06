@@ -1,0 +1,130 @@
+---
+import { free, pro, support } from '../../data/jetbrains-plugin'
+import { MARKETPLACE_URL, marketplace, supportedIdes } from '../../data/marketplace'
+---
+
+<section class="section plans" id="plans">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Free and Pro</span>
+      <h2>A free AsyncAPI editor, and Pro for code, brokers and drift</h2>
+      <p>
+        Everything you need to write and check AsyncAPI documents is free, with no account. Pro starts with a {marketplace.trialDays}-day
+        trial, and a licence keeps solo development sustainable. <a href="/jetbrains-plugin/freemium-model.html">Why freemium</a>.
+      </p>
+    </div>
+    <div class="cols">
+      <div class="card">
+        <h3>Free <span class="badge badge-ok">No account</span></h3>
+        <ul>{free.map((f) => <li>{f}</li>)}</ul>
+        <a class="btn btn-ghost" href={MARKETPLACE_URL}>Install</a>
+      </div>
+      <div class="card pro">
+        <h3>Pro <span class="badge badge-accent">{marketplace.trialDays}-day trial</span></h3>
+        <p class="also">Everything in Free, plus:</p>
+        <ul>{pro.map((f) => <li>{f}</li>)}</ul>
+        <a class="btn btn-primary" href={MARKETPLACE_URL}>Start the trial</a>
+      </div>
+    </div>
+    <p class="all"><a class="more" href="/jetbrains-plugin/features.html#whats-free--whats-pro">Every feature, Free and Pro <span aria-hidden="true">&rarr;</span></a></p>
+
+    <div class="support" id="support">
+      <h2>Supported IDEs, versions and protocols</h2>
+      <dl>
+        <div>
+          <dt>JetBrains IDEs</dt>
+          <dd>{supportedIdes.join(', ')}. Version 2026.1 or later.</dd>
+        </div>
+        <div>
+          <dt>AsyncAPI versions</dt>
+          <dd>{support.versions}, in YAML and JSON</dd>
+        </div>
+        <div>
+          <dt>Protocol bindings</dt>
+          <dd>
+            {support.protocols.join(', ')}. See the <a href="/bindings/">bindings reference</a>.
+          </dd>
+        </div>
+        <div>
+          <dt>Schema formats</dt>
+          <dd>
+            {support.schemaFormats.join(', ')}. See <a href="/schemas/multiFormatSchema.html">multi-format schemas</a>.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<style>
+  .plans {
+    background: var(--surface-2);
+  }
+  .cols {
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 860px) {
+    .cols {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+  .pro {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+  }
+  h3 {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .also {
+    margin: 0;
+    color: var(--muted);
+  }
+  ul {
+    margin: 0 0 8px;
+    padding-left: 1.1em;
+    display: grid;
+    gap: 6px;
+  }
+  .all {
+    margin: 20px 0 0;
+  }
+  .support {
+    margin-top: 64px;
+  }
+  .support h2 {
+    font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+    margin-bottom: 16px;
+  }
+  dl {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+  }
+  @media (min-width: 860px) {
+    dl div {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 20px;
+    }
+  }
+  dt {
+    font-weight: 600;
+  }
+  dd {
+    margin: 0;
+    color: var(--muted);
+  }
+</style>

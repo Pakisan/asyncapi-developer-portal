@@ -6,7 +6,7 @@ export const llmsDescription =
 
 export const llmsDetails = `**Tools**
 
-- [AsyncAPI plugin for JetBrains IDEs](https://asyncapi.pavelon.dev/jetbrains-plugin/): write, validate and preview AsyncAPI; generate AsyncAPI from Spring Messaging code (Kafka, JMS, SNS, SQS, Pulsar, STOMP, SSE). Free core, paid extras.
+- [AsyncAPI plugin for JetBrains IDEs](https://asyncapi.pavelon.dev/jetbrains-plugin/): a free AsyncAPI editor (validate, complete, preview 2.0.0 to 3.1.0) for IntelliJ IDEA and every JetBrains IDE. Pro generates AsyncAPI from Spring code (Kafka, Pulsar, SQS, SNS, JMS) or a live Kafka, Pulsar, SNS or SQS system, detects drift, and adds MCP tools for AI agents. Full list: https://asyncapi.pavelon.dev/jetbrains-plugin/features.html
 - [Kurkik](https://kurkik.pavelon.dev): Early Access. Documents live Kafka, Pulsar, SNS and SQS systems as AsyncAPI 3.0 and detects drift.
 - [JAsyncAPI](https://asyncapi.pavelon.dev/jasyncapi/): free Apache-2.0 JVM library for AsyncAPI documents.
 - [AsyncAPI Language Server](https://asyncapi.pavelon.dev/language-server.html): in development, for VS Code, Zed and Sublime Text.

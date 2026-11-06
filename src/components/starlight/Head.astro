@@ -3,6 +3,7 @@
 // (it would say /bindings/amqp.html instead of /bindings/amqp/). seo.ts writes those, plus the JSON-LD.
 import StructuredData from '../StructuredData.astro'
 import { absolute, breadcrumbs, defaultImage, docGraph, docUrl, metaTags } from '../../data/seo'
+import { LANDING_INDEX_IDS } from '../../data/site'
 
 const { head, entry, lastUpdated } = Astro.locals.starlightRoute
 
@@ -11,7 +12,11 @@ const replaced = (tag: string, attrs: Record<string, unknown> = {}) =>
   (tag === 'meta' && (attrs.name === 'description' || /^(og:|twitter:)/.test(String(attrs.property ?? attrs.name ?? ''))))
 
 const indexFiles = import.meta.glob('/src/content/docs/**/index.md')
-const indexIds = new Set(Object.keys(indexFiles).map((f) => f.replace(/^\/src\/content\/docs\//, '').replace(/\/index\.md$/, '')))
+// Landing pages are directory pages too: they are breadcrumb ancestors of their docs.
+const indexIds = new Set([
+  ...Object.keys(indexFiles).map((f) => f.replace(/^\/src\/content\/docs\//, '').replace(/\/index\.md$/, '')),
+  ...LANDING_INDEX_IDS,
+])
 
 const id = entry.id
 const isIndex = indexIds.has(id)

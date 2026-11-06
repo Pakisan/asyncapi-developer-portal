@@ -1,6 +1,8 @@
 // Head tags and schema.org JSON-LD for every page. One place builds them, so canonical, Open Graph and structured data
 // always agree. Only describe what the page shows: Google penalises markup that does not match visible content.
 import { faq } from './home'
+import { faq as pluginFaq } from './jetbrains-plugin'
+import { marketplace, supportedIdes } from './marketplace'
 import { type Product, products } from './products'
 import { DEFAULT_IMAGE, SITE_NAME, SITE_URL } from './site'
 
@@ -105,6 +107,9 @@ const SEGMENT_LABELS: Record<string, string> = {
   bindings: 'Bindings',
   schemas: 'Schemas',
   'jetbrains-plugin': 'JetBrains Plugin',
+  frameworks: 'Spring Messaging',
+  linters: 'Linters',
+  'typed-components': 'Typed components',
   jasyncapi: 'JAsyncAPI',
 }
 
@@ -191,6 +196,16 @@ export function docGraph(m: PageMeta, id: string, crumbs: Crumb[]) {
   return { '@context': 'https://schema.org', '@graph': graph }
 }
 
+const faqPage = (items: { q: string; a: string }[]) => ({
+  '@type': 'FAQPage',
+  // Answers are shown wherever search engines and AI answers quote them, so their links must be absolute.
+  mainEntity: items.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/href="\//g, `href="${SITE_URL}/`) },
+  })),
+})
+
 /** JSON-LD for the home page: who, what tools, the registry and the FAQ shown on the page. */
 export function homeGraph(m: PageMeta) {
   const software = products.filter((p) => p.group !== 'Reference')
@@ -215,17 +230,69 @@ export function homeGraph(m: PageMeta) {
         itemListElement: software.map((p, i) => ({ '@type': 'ListItem', position: i + 1, item: softwareApplication(p) })),
       },
       registryDataset(),
-      {
-        '@type': 'FAQPage',
-        // Answers are shown wherever search engines and AI answers quote them, so their links must be absolute.
-        mainEntity: faq.map((f) => ({
-          '@type': 'Question',
-          name: f.q,
-          acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/href="\//g, `href="${SITE_URL}/`) },
-        })),
-      },
+      faqPage(faq),
     ],
   }
 }
 
 export const defaultImage = absolute(DEFAULT_IMAGE)
+
+/**
+ * JSON-LD for the plugin landing. The SoftwareApplication carries the Marketplace's own numbers (version, rating,
+ * downloads), which the page shows too, and names Pavel as author: the Marketplace page itself has no such markup.
+ */
+export function pluginGraph(m: PageMeta, screenshots: string[]) {
+  const product = products.find((p) => p.id === 'jetbrains-plugin')!
+  const app = softwareApplication(product)
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      person,
+      website,
+      {
+        '@type': 'WebPage',
+        '@id': `${m.url}#webpage`,
+        url: m.url,
+        name: m.title,
+        description: m.description,
+        isPartOf: { '@id': WEBSITE_ID },
+        about: { '@id': app['@id'] },
+        primaryImageOfPage: m.image,
+        ...(m.modified && { dateModified: m.modified.toISOString() }),
+      },
+      {
+        ...app,
+        name: 'AsyncAPI plugin for JetBrains IDEs',
+        alternateName: ['AsyncAPI plugin for IntelliJ IDEA', 'AsyncAPI'],
+        applicationSubCategory: 'IDE plugin',
+        mainEntityOfPage: m.url,
+        image: m.image,
+        screenshot: screenshots,
+        softwareVersion: marketplace.version,
+        dateModified: marketplace.released,
+        softwareRequirements: `${supportedIdes.join(', ')} 2026.1 or later`,
+        sameAs: product.installUrl,
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: marketplace.rating.toFixed(1),
+          ratingCount: marketplace.ratingCount,
+          bestRating: 5,
+          worstRating: 1,
+        },
+        interactionStatistic: {
+          '@type': 'InteractionCounter',
+          interactionType: 'https://schema.org/DownloadAction',
+          userInteractionCount: marketplace.downloads,
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'JetBrains Plugin', item: m.url },
+        ],
+      },
+      faqPage(pluginFaq),
+    ],
+  }
+}

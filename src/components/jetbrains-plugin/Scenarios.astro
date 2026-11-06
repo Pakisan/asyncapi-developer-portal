@@ -1,0 +1,274 @@
+---
+import { Image } from 'astro:assets'
+import springWindow from '../../assets/jetbrains-plugin/scanner-preview.png'
+import { scenarios } from '../../data/jetbrains-plugin'
+
+const tierClass = { Free: 'badge-ok', Pro: 'badge-accent', 'Free + Pro': 'badge-soon' } as const
+
+// Illustrations for the scenarios without a screenshot: what the result looks like, with made-up example data.
+const exported = [
+  ['k', 'servers:'],
+  ['', '  prod-kafka:'],
+  ['', '    host: kafka-1.prod:9092'],
+  ['', '    protocol: kafka'],
+  ['k', 'channels:'],
+  ['', '  orders.created:'],
+  ['', '    address: orders.created'],
+  ['m', '    bindings:'],
+  ['m', '      kafka:'],
+  ['m', '        partitions: 12'],
+  ['m', '        replicas: 3'],
+  ['m', '        topicConfiguration:'],
+  ['m', '          retention.ms: 604800000'],
+]
+const diff = [
+  { state: 'ok', channel: 'orders.created', note: 'matches' },
+  { state: 'bad', channel: 'payments.settled', note: 'partitions: 12 declared, 6 on prod-kafka' },
+  { state: 'bad', channel: 'orders.cancelled', note: 'consumer group billing is not reading it' },
+  { state: 'unknown', channel: 'audit.events', note: 'no schema registry: payload not checked' },
+]
+---
+
+<section class="section" id="scenarios">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What you can do</span>
+      <h2>From the first document to keeping it true</h2>
+      <p>One plugin for the whole life of an AsyncAPI document: writing it, generating it from what exists, and checking it still matches.</p>
+    </div>
+    <div class="list">
+      {
+        scenarios.map((s, i) => (
+          <article class:list={['scenario', { flip: i % 2 === 1 }]} id={s.id}>
+            <div class="text">
+              <span class:list={['badge', tierClass[s.tier]]}>{s.tier}</span>
+              <h3>{s.title}</h3>
+              <p class="lead">{s.text}</p>
+              <ul>
+                {s.points.map((p) => <li>{p}</li>)}
+              </ul>
+              <p class="links">
+                {s.links.map((l) => (
+                  <a class="more" href={l.href}>
+                    {l.label} <span aria-hidden="true">&rarr;</span>
+                  </a>
+                ))}
+              </p>
+            </div>
+            <div class="media">
+              {s.media ? (
+                <video src={s.media.video} poster={s.media.poster} aria-label={s.media.alt} autoplay muted loop playsinline preload="none" width="1280" height="830" />
+              ) : s.id === 'spring' ? (
+                <Image src={springWindow} alt="The AsyncAPI: Spring tool window listing Kafka listeners and the AsyncAPI document exported from them" widths={[640, 1100]} sizes="(min-width: 980px) 560px, 100vw" />
+              ) : s.id === 'brokers' ? (
+                <figure class="mock" aria-label="Part of an AsyncAPI document exported from a Kafka cluster">
+                  <figcaption>Tools → Export AsyncAPI from a Broker… → prod-kafka</figcaption>
+                  <pre>{exported.map(([c, t]) => <span class:list={['l', c]}>{t + '\n'}</span>)}</pre>
+                </figure>
+              ) : s.id === 'drift' ? (
+                <figure class="mock" aria-label="An example AsyncAPI: Diff result, one row per channel">
+                  <figcaption>AsyncAPI: Diff · orders.yaml ↔ prod-kafka</figcaption>
+                  <ul class="diff">
+                    {diff.map((d) => (
+                      <li class={d.state}>
+                        <code>{d.channel}</code>
+                        <span>{d.note}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </figure>
+              ) : (
+                <figure class="mock" aria-label="An example question to an AI agent, answered with the plugin's MCP tools">
+                  <figcaption>Your agent, with the plugin's MCP tools</figcaption>
+                  <div class="chat">
+                    <p class="you">Which consumer groups read orders.created on prod-kafka, and which code handles it?</p>
+                    <p class="tool"><code>asyncapi_topology</code> <code>asyncapi_endpoints</code></p>
+                    <p class="agent">
+                      Two groups read it: <b>billing</b> and <b>analytics</b>. It is handled by <code>OrderEvents.onCreated</code> in the
+                      orders-service module.
+                    </p>
+                  </div>
+                </figure>
+              )}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  // Demo videos start only when visible, so the page loads none of them up front.
+  const videos = document.querySelectorAll<HTMLVideoElement>('#scenarios video')
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      const v = e.target as HTMLVideoElement
+      if (e.isIntersecting && !reduce) v.play().catch(() => {})
+      else v.pause()
+    }
+  })
+  videos.forEach((v) => {
+    v.removeAttribute('autoplay')
+    io.observe(v)
+  })
+</script>
+
+<style>
+  .list {
+    display: grid;
+    gap: 56px;
+  }
+  .scenario {
+    display: grid;
+    gap: 28px;
+    align-items: center;
+    scroll-margin-top: 80px;
+  }
+  @media (min-width: 980px) {
+    .scenario {
+      grid-template-columns: 1fr 1.1fr;
+      gap: 48px;
+    }
+    .flip .text {
+      order: 2;
+    }
+  }
+  h3 {
+    font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+    margin: 12px 0 10px;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  ul {
+    margin: 0 0 16px;
+    padding-left: 1.1em;
+    display: grid;
+    gap: 6px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    margin: 0;
+  }
+  .media {
+    min-width: 0;
+  }
+  .media video,
+  .media :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    background: var(--surface-2);
+  }
+  /* Scenarios without a screenshot: a small dark mock-up of the result */
+  .mock {
+    margin: 0;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    color: var(--code-fg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    font-size: 0.85rem;
+  }
+  .mock figcaption {
+    padding: 10px 16px;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--code-muted);
+    border-bottom: 1px solid rgb(255 255 255 / 0.06);
+  }
+  .mock pre {
+    margin: 0;
+    padding: 12px 0;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    line-height: 1.6;
+  }
+  .mock .l {
+    display: block;
+    padding: 0 16px;
+    border-left: 3px solid transparent;
+  }
+  .mock .k {
+    color: var(--code-key);
+  }
+  .mock .m {
+    background: rgb(165 180 252 / 0.09);
+    border-left-color: var(--code-key);
+  }
+  .diff {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    display: grid;
+    gap: 8px;
+  }
+  .diff li {
+    display: grid;
+    gap: 2px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border-left: 3px solid;
+  }
+  .diff code {
+    font-family: var(--font-mono);
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+  .diff span {
+    color: var(--code-muted);
+  }
+  .diff .ok {
+    border-color: #4ade80;
+    background: rgb(74 222 128 / 0.08);
+  }
+  .diff .bad {
+    border-color: #f87171;
+    background: rgb(248 113 113 / 0.09);
+  }
+  .diff .unknown {
+    border-color: var(--code-muted);
+    background: rgb(255 255 255 / 0.04);
+  }
+  .chat {
+    padding: 16px;
+    display: grid;
+    gap: 10px;
+  }
+  .chat p {
+    margin: 0;
+    padding: 10px 14px;
+    border-radius: 10px;
+    max-width: 90%;
+  }
+  .chat .you {
+    justify-self: end;
+    background: rgb(165 180 252 / 0.16);
+  }
+  .chat .tool {
+    font-size: 0.78rem;
+    color: var(--code-muted);
+    padding: 0 4px;
+    display: flex;
+    gap: 6px;
+  }
+  .chat code {
+    font-family: var(--font-mono);
+    background: rgb(255 255 255 / 0.06);
+    color: var(--code-str);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  .chat .agent {
+    background: rgb(255 255 255 / 0.05);
+  }
+</style>

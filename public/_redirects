@@ -45,9 +45,25 @@
 /kurkik/ https://kurkik.pavelon.dev 301
 
 # Renamed plugin pages
-/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.html /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html 301
-/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html 301
-/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+
+# Spring Kafka pages merged into one guide. No #anchors in targets: Netlify's _redirects treats # as a comment.
+/jetbrains-plugin/frameworks/spring/apache-kafka/servers.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-SendTo-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
+/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.md /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
 
 # 404s reported by Google Search Console: relative links resolved against the wrong directory
 # A security scheme name at the root, e.g. /saslPlainSecuritySchema

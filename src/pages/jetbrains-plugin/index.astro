@@ -1,0 +1,42 @@
+---
+// The plugin's own landing: what it does by task and by role, Free and Pro, and the Marketplace's numbers. It targets
+// "asyncapi editor", "asyncapi intellij", "intellij asyncapi plugin" and "view asyncapi in intellij". Every feature
+// detail lives in the docs (/jetbrains-plugin/features.html); this page links there instead of repeating it.
+import { getImage } from 'astro:assets'
+import Landing from '../../layouts/Landing.astro'
+import Author from '../../components/home/Author.astro'
+import Faq from '../../components/Faq.astro'
+import Agents from '../../components/jetbrains-plugin/Agents.astro'
+import Hero from '../../components/jetbrains-plugin/Hero.astro'
+import Plans from '../../components/jetbrains-plugin/Plans.astro'
+import Roles from '../../components/jetbrains-plugin/Roles.astro'
+import Scenarios from '../../components/jetbrains-plugin/Scenarios.astro'
+import preview from '../../assets/jetbrains-plugin/preview.png'
+import springWindow from '../../assets/jetbrains-plugin/scanner-preview.png'
+import { faq } from '../../data/jetbrains-plugin'
+import { marketplace } from '../../data/marketplace'
+import { absolute, pluginGraph } from '../../data/seo'
+import { SITE_URL } from '../../data/site'
+
+const meta = {
+  title: 'AsyncAPI Plugin for IntelliJ IDEA and JetBrains IDEs: Editor, Spring and Kafka',
+  description:
+    'Free AsyncAPI editor for IntelliJ IDEA, WebStorm, PyCharm and other JetBrains IDEs: validation, completion and preview for AsyncAPI 2.x and 3.x. Pro generates AsyncAPI from Spring code and live Kafka, Pulsar, SNS and SQS.',
+  url: `${SITE_URL}/jetbrains-plugin/`,
+  image: `${SITE_URL}/jetbrains-plugin/og_image.png`,
+  modified: new Date(marketplace.released),
+  type: 'website' as const,
+}
+const screenshots = await Promise.all([preview, springWindow].map((src) => getImage({ src, width: 1600, format: 'png' })))
+const graph = pluginGraph(meta, screenshots.map((s) => absolute(s.src)))
+---
+
+<Landing meta={meta} graph={graph}>
+  <Hero />
+  <Scenarios />
+  <Roles />
+  <Agents />
+  <Plans />
+  <Faq items={faq} eyebrow="Plugin questions" title="AsyncAPI in IntelliJ IDEA: questions" />
+  <Author />
+</Landing>

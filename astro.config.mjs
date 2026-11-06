@@ -10,33 +10,33 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 import indexUrls, { indexIds } from './integrations/index-urls.mjs'
 import { llmsDescription, llmsDetails } from './src/data/llms.ts'
 import { sidebarTopics } from './src/data/sidebar.ts'
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from './src/data/site.ts'
+import { LANDING_INDEX_IDS, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from './src/data/site.ts'
 
 const docsDir = fileURLToPath(new URL('./src/content/docs/', import.meta.url))
 
-const indexes = new Set(indexIds(docsDir))
+const indexes = new Set([...indexIds(docsDir), ...LANDING_INDEX_IDS])
 /** Public URL of a page id: `bindings/amqp` -> `/bindings/amqp/`, `bindings/amqp/0.2.0/channel` -> `...channel.html`. */
 const publicUrl = (id) => `${SITE_URL}/${id === '' ? '' : indexes.has(id) ? `${id}/` : `${id}.html`}`
 
 // Pages kept out of the sitemap: they carry `noindex`, or are not reference content.
-const NOT_IN_SITEMAP = new Set(['jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels', 'privacy'].map(publicUrl))
+const NOT_IN_SITEMAP = new Set(['privacy'].map(publicUrl))
 
 /**
- * Last commit date of every docs file, keyed by public URL, for the sitemap's <lastmod>.
+ * Last commit date of every docs page and landing page, keyed by public URL, for the sitemap's <lastmod>.
  * One `git log` pass instead of one per file; on a shallow clone it simply knows fewer dates.
  */
 function lastModifiedByUrl() {
   const dates = new Map()
   let log = ''
   try {
-    log = execFileSync('git', ['log', '--format=%x00%cI', '--name-only', '--', 'src/content/docs'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
+    log = execFileSync('git', ['log', '--format=%x00%cI', '--name-only', '--', 'src/content/docs', 'src/pages'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
   } catch {
     return dates
   }
   for (const commit of log.split('\0').slice(1)) {
     const [date, ...names] = commit.trim().split('\n')
     for (const name of names) {
-      const m = name.match(/^src\/content\/docs\/(.+)\.mdx?$/)
+      const m = name.match(/^src\/content\/docs\/(.+)\.mdx?$/) ?? name.match(/^src\/pages\/(.+)\.astro$/)
       if (!m) continue
       const url = publicUrl(m[1].replace(/(^|\/)index$/, ''))
       if (!dates.has(url)) dates.set(url, date)
@@ -72,13 +72,13 @@ export default defineConfig({
       },
       plugins: [
         starlightSidebarTopics(sidebarTopics, { exclude: ['/privacy', '/404'] }),
-        starlightLinksValidator({ errorOnRelativeLinks: true, errorOnInvalidHashes: false }),
+        // Landing pages are Astro pages, not Starlight docs, so the validator does not know them.
+        starlightLinksValidator({ errorOnRelativeLinks: true, errorOnInvalidHashes: false, exclude: LANDING_INDEX_IDS.map((id) => `/${id}/`) }),
         starlightLlmsTxt({
           projectName: SITE_NAME,
           description: llmsDescription,
           details: llmsDetails,
           promote: ['bindings/index*', 'schemas/index*', 'schemas/registry*'],
-          exclude: ['jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels'],
           customSets: [
             { label: 'Bindings', description: 'AsyncAPI protocol bindings for 20 brokers, every version', paths: ['bindings/**'] },
             { label: 'Schemas', description: 'AsyncAPI schema objects, multi-format schemas and security schemes', paths: ['schemas/**'] },
@@ -97,6 +97,6 @@ export default defineConfig({
       },
     }),
     // Must stay last: rewrites links in what the integrations above generated (sitemap, llms.txt).
-    indexUrls({ docsDir, site: SITE_URL }),
+    indexUrls({ docsDir, site: SITE_URL, extraIds: LANDING_INDEX_IDS }),
   ],
 })

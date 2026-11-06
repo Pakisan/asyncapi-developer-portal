@@ -1166,7 +1166,11 @@ export const sidebarTopics: StarlightSidebarTopicsUserConfig = [
         "items": [
           {
             "label": "Overview",
-            "slug": "jetbrains-plugin"
+            "link": "/jetbrains-plugin/"
+          },
+          {
+            "label": "All features",
+            "slug": "jetbrains-plugin/features"
           },
           {
             "label": "Freemium model",
@@ -1229,7 +1233,7 @@ export const sidebarTopics: StarlightSidebarTopicsUserConfig = [
         ]
       },
       {
-        "label": "Frameworks 💳",
+        "label": "Spring Messaging",
         "collapsed": false,
         "items": [
           {
@@ -1237,100 +1241,12 @@ export const sidebarTopics: StarlightSidebarTopicsUserConfig = [
             "slug": "jetbrains-plugin/frameworks"
           },
           {
-            "label": "Spring",
-            "collapsed": false,
-            "items": [
-              {
-                "label": "Apache Kafka",
-                "collapsed": false,
-                "items": [
-                  {
-                    "label": "Overview",
-                    "slug": "jetbrains-plugin/frameworks/spring/apache-kafka"
-                  },
-                  {
-                    "label": "Inspections 🛠️",
-                    "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/inspections"
-                  },
-                  {
-                    "label": "Servers",
-                    "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/servers"
-                  },
-                  {
-                    "label": "Channels",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "label": "KafkaAdmin 🛠️",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels"
-                      },
-                      {
-                        "label": "Class Level @KafkaListeners",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels"
-                      },
-                      {
-                        "label": "Class Level @KafkaListener",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels"
-                      },
-                      {
-                        "label": "Method Level @KafkaListeners 🆕",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-channels"
-                      },
-                      {
-                        "label": "Method Level @KafkaListener 🆕",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels"
-                      }
-                    ]
-                  },
-                  {
-                    "label": "Receive Operations",
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "label": "Class Level @KafkaListeners",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations"
-                      },
-                      {
-                        "label": "Class Level @KafkaListener",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations"
-                      },
-                      {
-                        "label": "Method Level @KafkaListeners 🆕",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-operations"
-                      },
-                      {
-                        "label": "Method Level @KafkaListener 🆕",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations"
-                      }
-                    ]
-                  },
-                  {
-                    "label": "Receive & Reply Operations",
-                    "collapsed": false,
-                    "items": [
-                      {
-                        "label": "Class Level @SendTo",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations"
-                      },
-                      {
-                        "label": "Method Level @SendTo 🆕",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/method-level-SendTo-operations"
-                      }
-                    ]
-                  },
-                  {
-                    "label": "Send Operations 🆕",
-                    "collapsed": false,
-                    "items": [
-                      {
-                        "label": "KafkaTemplate",
-                        "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "label": "Spring Kafka to AsyncAPI 💳",
+            "slug": "jetbrains-plugin/frameworks/spring/apache-kafka"
+          },
+          {
+            "label": "Kafka inspections",
+            "slug": "jetbrains-plugin/frameworks/spring/apache-kafka/inspections"
           }
         ]
       }

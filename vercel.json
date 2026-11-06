@@ -203,17 +203,87 @@
     },
     {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.html",
-      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
     {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html",
-      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
     {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html",
-      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/servers.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-SendTo-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.md",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
     {

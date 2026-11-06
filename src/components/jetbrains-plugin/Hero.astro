@@ -1,0 +1,111 @@
+---
+import { Image } from 'astro:assets'
+import preview from '../../assets/jetbrains-plugin/preview.png'
+import { hero } from '../../data/jetbrains-plugin'
+import { MARKETPLACE_URL, marketplace, roundedDownloads } from '../../data/marketplace'
+
+// Each fact is a Marketplace number the JSON-LD repeats, so what people see and what search engines read agree.
+const facts = [
+  { value: roundedDownloads(marketplace.downloads), label: 'downloads' },
+  { value: `${marketplace.rating.toFixed(1)} ★`, label: `from ${marketplace.ratingCount} ratings` },
+  { value: marketplace.version, label: `released ${new Date(marketplace.released).toLocaleDateString('en', { month: 'short', day: 'numeric', year: 'numeric' })}` },
+]
+---
+
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <span class="eyebrow">{hero.eyebrow}</span>
+      <h1>{hero.title}</h1>
+      <p class="lead">{hero.lead}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href={MARKETPLACE_URL}>Install from JetBrains Marketplace</a>
+        <a class="btn btn-ghost" href="#plans">What is free</a>
+      </div>
+      <dl class="facts">
+        {
+          facts.map((f) => (
+            <div>
+              <dt>{f.label}</dt>
+              <dd>{f.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+    <figure class="shot">
+      <Image
+        src={preview}
+        alt="IntelliJ IDEA with an AsyncAPI 3.0 document on the left and its rendered documentation preview on the right"
+        widths={[640, 1100, 1600]}
+        sizes="(min-width: 1160px) 1100px, 100vw"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </figure>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 64px 0 40px;
+    background:
+      radial-gradient(50% 40% at 50% 0%, var(--accent-soft), transparent 70%),
+      linear-gradient(to bottom, transparent, var(--bg));
+  }
+  .copy {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(2.1rem, 5vw, 3.3rem);
+  }
+  .lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin: 20px auto 28px;
+    max-width: 700px;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 16px clamp(20px, 6vw, 56px);
+    margin: 36px 0 0;
+  }
+  /* Value above its label (dt must come first in the markup) */
+  .facts div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .facts dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    font-weight: 600;
+  }
+  .facts dt {
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  .shot {
+    margin: 48px auto 0;
+    max-width: 1100px;
+  }
+  .shot :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+</style>
