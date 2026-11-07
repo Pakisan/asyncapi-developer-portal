@@ -55,13 +55,15 @@ export default defineConfig({
     starlight({
       title: SITE_NAME,
       description: SITE_DESCRIPTION,
-      favicon: '/favicon.ico',
+      favicon: '/icon.svg',
       logo: { src: './public/icon.svg', alt: '' },
       lastUpdated: true,
       editLink: { baseUrl: 'https://github.com/Pakisan/asyncapi-developer-portal/edit/master/' },
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Pakisan/asyncapi-developer-portal' }],
       head: [
         { tag: 'meta', attrs: { name: 'yandex-verification', content: 'ed012648c88cacbb' } },
+        { tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico', sizes: '32x32' } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' } },
         { tag: 'link', attrs: { rel: 'alternate', type: 'text/plain', href: '/llms.txt', title: 'llms.txt' } },
       ],
       customCss: ['./src/styles/starlight.css'],
