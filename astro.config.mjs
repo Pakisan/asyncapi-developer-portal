@@ -23,12 +23,16 @@ const NOT_IN_SITEMAP = new Set(['privacy'].map(publicUrl))
 
 /**
  * Last commit date of every docs page and landing page, keyed by public URL, for the sitemap's <lastmod>.
- * One `git log` pass instead of one per file; on a shallow clone it simply knows fewer dates.
+ * One `git log` pass instead of one per file. On a shallow clone it knows fewer dates, so it says so: on Vercel, set
+ * `VERCEL_DEEP_CLONE=true` (see README).
  */
 function lastModifiedByUrl() {
   const dates = new Map()
   let log = ''
   try {
+    if (execFileSync('git', ['rev-parse', '--is-shallow-repository'], { encoding: 'utf8' }).trim() === 'true') {
+      console.warn('[lastmod] shallow git clone: sitemap <lastmod> dates will be missing or wrong. On Vercel, set VERCEL_DEEP_CLONE=true.')
+    }
     log = execFileSync('git', ['log', '--format=%x00%cI', '--name-only', '--', 'src/content/docs', 'src/pages'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
   } catch {
     return dates

@@ -9,7 +9,6 @@
     "dev": "node scripts/fetch-schemas.mjs && astro dev",
     "build": "node scripts/vercel-config.mjs --check && node scripts/registry-head.mjs --check && node scripts/fetch-schemas.mjs && astro build",
     "preview": "astro preview",
-    "check": "astro check",
     "check:urls": "node scripts/check-urls.mjs",
     "astro": "astro",
     "vercel:config": "node scripts/vercel-config.mjs",
@@ -30,7 +29,6 @@
     "starlight-sidebar-topics": "0.9.0"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.12",
     "path-to-regexp": "6.3.0",
     "typescript": "6.0.3"
   }

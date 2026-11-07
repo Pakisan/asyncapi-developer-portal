@@ -14,7 +14,9 @@ Sending is a manual step, run from your machine after a production deploy: `scri
   the key by serving it at `https://asyncapi.pavelon.dev/<key>.txt`. Every request names the key, and engines fetch
   that file to check it.
 - **What gets sent** comes from the sitemap of the **live** site, so a page is only sent once it is deployed. Each
-  page's `lastmod` is the date of the last commit that touched its source.
+  page's `lastmod` is the date of the last commit that touched its source. That needs the full git history in the
+  build: set `VERCEL_DEEP_CLONE=true` in the Vercel project, or a shallow clone leaves pages without dates and the
+  script can't tell what changed.
 - **`indexnow.json`** (committed) remembers the `lastmod` of every page sent. The next run sends only pages that are
   new or whose `lastmod` changed since.
 
