@@ -4,9 +4,18 @@
 // difference that can't change it. Either way the first differing line is printed.
 import fs from 'node:fs'
 
+/** The same JSON, whatever the formatting: Vercel minifies vercel.json in its build checkout. */
+function sameJson(a, b) {
+  try {
+    return JSON.stringify(JSON.parse(a)) === JSON.stringify(JSON.parse(b))
+  } catch {
+    return false
+  }
+}
+
 export function checkFresh(file, expected, command) {
   const current = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : ''
-  if (current === expected) return
+  if (current === expected || (file.endsWith('.json') && sameJson(current, expected))) return
   const a = current.split('\n')
   const b = expected.split('\n')
   const i = a.findIndex((line, n) => line !== b[n])
