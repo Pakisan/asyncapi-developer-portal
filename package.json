@@ -2,6 +2,9 @@
   "name": "asyncapi-developer-network",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/vercel-config.mjs --check && node scripts/registry-head.mjs --check && astro build",

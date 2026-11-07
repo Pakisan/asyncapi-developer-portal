@@ -1,5 +1,6 @@
-# Netlify redirects. Files win over these rules, so only missing URLs are redirected.
-# Generated rules for index pages (/bindings/amqp.html -> /bindings/amqp/) are appended at build time.
+# Redirects, one per line: <from> <to> [status, default 301]. scripts/vercel-config.mjs turns them into vercel.json.
+# On Vercel redirects win over files, so a rule must never match a page that exists (check-urls.mjs fails if it does).
+# Rules for index pages (/bindings/amqp.html -> /bindings/amqp/) are added by vercel-config.mjs.
 
 # Old /schemes/* paths from the first version of the site
 /schemes/v3/security/symmetricencryption /schemas/v3/security/symmetricEncryption.html 301
@@ -49,7 +50,7 @@
 /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
 /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
 
-# Spring Kafka pages merged into one guide. No #anchors in targets: Netlify's _redirects treats # as a comment.
+# Spring Kafka pages merged into one guide.
 /jetbrains-plugin/frameworks/spring/apache-kafka/servers.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
 /jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301
 /jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.html /jetbrains-plugin/frameworks/spring/apache-kafka/ 301

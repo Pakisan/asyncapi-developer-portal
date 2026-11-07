@@ -69,7 +69,7 @@ ${script}
 if (process.argv.includes('--check')) {
   const current = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : ''
   if (current !== html) {
-    console.error(`${OUT} is out of date: run \`bun run registry:head\` and commit it.`)
+    console.error(`${OUT} is out of date: run \`npm run registry:head\` and commit it.`)
     process.exit(1)
   }
 } else {

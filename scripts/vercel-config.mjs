@@ -1,8 +1,7 @@
-// Writes vercel.json from public/_redirects (the one list of redirect rules) and the docs index pages.
+// Writes vercel.json from redirects.txt (the one list of redirect rules) and the docs index pages.
 // `--check` fails when vercel.json is out of date; the build runs it, so a stale config never deploys.
 //
-// Vercel applies redirects BEFORE looking at files (Netlify does it after), so placeholders that stand for a version
-// get a pattern: `/bindings/:version/:file` must not catch `/bindings/amqp/channelBinding.json`.
+// Vercel applies redirects BEFORE looking at files, so placeholders that stand for a version get a pattern: `/bindings/:version/:file` must not catch `/bindings/amqp/channelBinding.json`.
 import fs from 'node:fs'
 import path from 'node:path'
 import { indexIds } from '../integrations/index-urls.mjs'
@@ -11,7 +10,7 @@ const VERSION = '\\d+\\.\\d+\\.\\d+'
 const CSP =
   "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src https://github.com https://plugins.jetbrains.com; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'"
 
-/** Netlify source -> path-to-regexp source understood by Vercel. */
+/** redirects.txt source -> path-to-regexp source understood by Vercel. */
 function source(from) {
   return from
     .replace(/\.\*$/, '\\.(.*)') // `/jetbrains-plugin.*`: a literal dot, then anything
@@ -21,7 +20,7 @@ function source(from) {
 }
 
 function redirects() {
-  const lines = fs.readFileSync('public/_redirects', 'utf8').split('\n').map((l) => l.trim())
+  const lines = fs.readFileSync('redirects.txt', 'utf8').split('\n').map((l) => l.trim())
   const out = { redirects: [], rewrites: [] }
   for (const line of lines) {
     if (!line || line.startsWith('#')) continue
@@ -45,8 +44,8 @@ const { redirects: redirectRules, rewrites } = redirects()
 const config = {
   $schema: 'https://openapi.vercel.sh/vercel.json',
   framework: 'astro',
-  installCommand: 'bun install',
-  buildCommand: 'bun run build',
+  installCommand: 'npm ci',
+  buildCommand: 'npm run build',
   outputDirectory: 'dist',
   cleanUrls: false,
   redirects: redirectRules,
@@ -71,7 +70,7 @@ const text = `${JSON.stringify(config, null, 2)}\n`
 if (process.argv.includes('--check')) {
   const current = fs.existsSync('vercel.json') ? fs.readFileSync('vercel.json', 'utf8') : ''
   if (current !== text) {
-    console.error('vercel.json is out of date: run `bun run vercel:config` and commit it.')
+    console.error('vercel.json is out of date: run `npm run vercel:config` and commit it.')
     process.exit(1)
   }
 } else {
