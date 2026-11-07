@@ -1,6 +1,0 @@
-{
-  "is": "routingKey",
-  "exchange": {
-    "name": "minimal-exchange"
-  }
-}

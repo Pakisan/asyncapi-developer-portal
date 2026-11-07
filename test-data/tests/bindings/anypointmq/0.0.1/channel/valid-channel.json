@@ -1,5 +1,0 @@
-{
-  "destination": "order-events-exchange",
-  "destinationType": "exchange",
-  "bindingVersion": "0.0.1"
-}

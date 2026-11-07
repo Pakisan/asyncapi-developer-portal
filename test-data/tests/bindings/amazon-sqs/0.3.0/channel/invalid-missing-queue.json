@@ -1,9 +1,0 @@
-{
-  "deadLetterQueue": {
-    "name": "dlq-without-main-queue",
-    "fifoQueue": false,
-    "visibilityTimeout": 60,
-    "messageRetentionPeriod": 345600
-  },
-  "bindingVersion": "0.3.0"
-}

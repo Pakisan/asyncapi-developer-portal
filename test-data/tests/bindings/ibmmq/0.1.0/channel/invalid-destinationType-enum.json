@@ -1,7 +1,0 @@
-{
-  "destinationType": "stream",
-  "topic": {
-    "objectName": "myTopicName"
-  },
-  "bindingVersion": "0.1.0"
-} 

@@ -1,6 +1,0 @@
-{
-  "sessionExpiryInterval": {
-    "$ref": "#/components/schemas/SessionExpiry"
-  },
-  "bindingVersion": "0.2.0"
-} 

@@ -1,7 +1,0 @@
-{
-  "correlationData": {
-    "$ref": "#/components/schemas/CorrelationId"
-  },
-  "responseTopic": "responses/{correlationId}",
-  "bindingVersion": "0.2.0"
-} 

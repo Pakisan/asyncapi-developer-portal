@@ -1,4 +1,0 @@
-{
-  "jmsConnectionFactory": "org.apache.activemq.ActiveMQConnectionFactory",
-  "x-region": "us-east-1"
-} 

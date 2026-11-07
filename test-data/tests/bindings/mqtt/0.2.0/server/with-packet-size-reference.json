@@ -1,9 +1,0 @@
-{
-  "clientId": "reference-client",
-  "cleanSession": false,
-  "keepAlive": 45,
-  "maximumPacketSize": {
-    "$ref": "#/components/schemas/PacketSize"
-  },
-  "bindingVersion": "0.2.0"
-} 

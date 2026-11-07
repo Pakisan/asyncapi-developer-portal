@@ -1,7 +1,0 @@
-{
-  "sessionExpiryInterval": {
-    "type": "string",
-    "description": "This should be an integer, not a string"
-  },
-  "bindingVersion": "0.2.0"
-} 

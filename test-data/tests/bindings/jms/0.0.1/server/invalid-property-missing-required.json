@@ -1,6 +1,0 @@
-{
-  "jmsConnectionFactory": "org.apache.activemq.ActiveMQConnectionFactory",
-  "properties": [
-    { "value": false }
-  ]
-} 

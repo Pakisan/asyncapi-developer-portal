@@ -1,7 +1,0 @@
-{
-  "query": {
-    "type": "string",
-    "description": "This should be an object, not a string"
-  },
-  "bindingVersion": "0.2.0"
-} 

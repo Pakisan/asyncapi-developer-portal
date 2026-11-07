@@ -1,5 +1,0 @@
-{
-  "destination": "order-events",
-  "destinationType": "topic",
-  "bindingVersion": "0.0.1"
-}
