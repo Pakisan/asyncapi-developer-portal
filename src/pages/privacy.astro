@@ -1,16 +1,15 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
-import { GA_ID } from '../data/site'
 ---
 
-<StarlightPage frontmatter={{ title: 'Privacy', description: 'What asyncapi.pavelon.dev collects about visitors, and how to change your choice.', tableOfContents: false }}>
+<StarlightPage frontmatter={{ title: 'Privacy', description: 'What asyncapi.pavelon.dev collects about visitors, and how to change your choice.', tableOfContents: false, template: 'splash' }}>
   <p>
     This site is run by Pavel Bodiachevskii. It has no accounts, no forms and no advertising. It is served by Vercel, which
     keeps standard web server logs (IP address, requested page, browser) to operate and protect the service.
   </p>
   <h2 id="cookies">Cookies and analytics</h2>
   <p>
-    The site uses Google Analytics ({GA_ID}) to count visits and see which pages and tools people use. It is loaded only
+    The site uses Google Analytics to count visits and see which pages and tools people use. It is loaded only
     after you click <strong>Accept</strong> in the cookie banner; until then nothing is requested from Google. Google
     signals and ad personalisation are turned off.
   </p>
