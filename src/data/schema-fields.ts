@@ -11,7 +11,7 @@ export interface Field {
   values?: (string | number | boolean)[]
 }
 
-/** Loads a schema that a reference points to in another file; return undefined to leave the reference as it is. */
+/** Loads the schema at an absolute URL; return undefined to leave the reference as it is. */
 export type Resolve = (ref: string) => Schema | undefined
 
 interface Ctx {
@@ -20,22 +20,39 @@ interface Ctx {
 }
 
 /**
- * Follows references into the same file: `#/definitions/queue`, or the same written with the schema's own `$id` in
- * front (`https://…/channel.json#/definitions/queue`). References to other files go through `resolve`, if given.
+ * Follows references into the same file: `#/definitions/queue`, or the same written against the schema's own `$id`
+ * (`channel#/definitions/queue`, `https://…/channel#/definitions/queue`). References to other files are resolved against
+ * the `$id` (`../oauth2scopes`) and go through `resolve`, if given.
  */
 function deref(node: Schema, ctx: Ctx, seen = new Set<string>()): Schema {
   const raw = node?.$ref
   if (typeof raw !== 'string' || seen.has(raw)) return node
   const { root } = ctx
-  const ref = root.$id && raw.startsWith(`${root.$id}#`) ? raw.slice(root.$id.length) : raw
+  const url = root.$id ? new URL(raw, root.$id) : undefined
+  const local = raw.startsWith('#') || (url && url.href.replace(/#.*$/, '') === String(root.$id).replace(/#.*$/, ''))
   const { $ref: _, ...rest } = node
   seen.add(raw)
-  if (ref.startsWith('#/')) {
-    const target = ref.slice(2).split('/').reduce((n: Schema, k) => n?.[k], root) ?? {}
+  if (local) {
+    const fragment = raw.startsWith('#') ? raw : (url?.hash ?? '')
+    const target = fragment.replace(/^#\/?/, '').split('/').filter(Boolean).reduce((n: Schema, k) => n?.[k], root) ?? {}
     return deref({ ...target, ...rest }, ctx, seen)
   }
-  const external = ctx.resolve?.(ref)
-  return external ? { ...external, ...rest } : node
+  const target = url ? external(url, ctx) : undefined
+  return target ? { ...target, ...rest } : node
+}
+
+/** A schema in another file, at the fragment the URL names, with its own references made absolute against its `$id`. */
+function external(url: URL, ctx: Ctx): Schema | undefined {
+  const doc = ctx.resolve?.(url.href.replace(/#.*$/, ''))
+  if (!doc) return undefined
+  const base = doc.$id ?? url.href
+  const absolute = (n: unknown): unknown =>
+    Array.isArray(n)
+      ? n.map(absolute)
+      : n && typeof n === 'object'
+        ? Object.fromEntries(Object.entries(n).map(([k, v]) => [k, k === '$ref' && typeof v === 'string' ? new URL(v, base).href : absolute(v)]))
+        : n
+  return url.hash.replace(/^#\/?/, '').split('/').filter(Boolean).reduce((n: Schema, k) => n?.[k], absolute(doc) as Schema)
 }
 
 /** Plain text: the schemas use Markdown links and long whitespace runs. */

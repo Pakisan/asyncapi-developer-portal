@@ -1,16 +1,14 @@
 // What the security scheme pages (`/schemas/v3/security/**`) add to their hand-written text: the scheme inside a whole
-// AsyncAPI 3.0 and 2.6 document, its fields read from the JSON Schema in json-schemas/schemas (the file the registry serves),
+// AsyncAPI 3.0 and 2.6 document, its fields read from its JSON Schema in the registry (fetched before the build by scripts/fetch-schemas.mjs),
 // the registry URL and the questions people search for. One model feeds the HTML (components/schemas), the table of
 // contents (routeData.ts), the Markdown copy for agents and the JSON-LD.
 import fs from 'node:fs'
-import path from 'node:path'
+import { cacheFile } from '../../scripts/fetch-schemas.mjs'
 import { type Qa, securityFaq } from './security-faq'
 import { type Field, schemaFields } from './schema-fields'
 
 type Scheme = Record<string, any>
 
-const ROOT = path.resolve('json-schemas')
-const SCHEMA_ID = 'https://asyncapi.pavelon.dev/'
 const REGISTRY = 'https://schemas.asyncapi.pavelon.dev/draft-07/'
 
 export const SECURITY_ID = /^schemas\/v3\/security\/(.+)$/
@@ -110,10 +108,10 @@ const PAGES: Record<string, PageSpec> = {
   'oauth2/flows/passwordOAuthFlow': { server: WS, schemes: { oauth: flow('password', { tokenUrl: TOKEN, refreshUrl: TOKEN }) } },
 }
 
-/** Loads a security schema from json-schemas/, by its `$id`. */
-function load(id: string): Scheme | undefined {
-  if (!id.startsWith(SCHEMA_ID)) return undefined
-  const file = path.join(ROOT, id.slice(SCHEMA_ID.length).replace(/#.*$/, ''))
+/** Loads a registry schema by its URL (the registry lowercases paths), from the copy fetched before the build. */
+function load(url: string): Scheme | undefined {
+  if (!url.startsWith(REGISTRY)) return undefined
+  const file = cacheFile(url.replace(/#.*$/, '').toLowerCase())
   return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : undefined
 }
 
@@ -198,7 +196,7 @@ export function securityPage(id: string): SecurityPage | undefined {
   if (!key) return undefined
   if (pages.has(key)) return pages.get(key)
   const spec = PAGES[key]
-  const schema = load(`${SCHEMA_ID}schemas/v3/security/${key}.json`)
+  const schema = load(`${REGISTRY}schemas/v3/security/${key}`)
   const result: SecurityPage | undefined =
     spec && schema
       ? {

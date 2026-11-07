@@ -1,8 +1,9 @@
-// What every binding version actually contains, read from the JSON Schemas in json-schemas/bindings (the same files the
-// registry serves). Version history and field lists on the broker pages come from here, so they cannot drift from the
+// What every binding version actually contains, read from the binding JSON Schemas in the registry
+// (scripts/fetch-schemas.mjs downloads them before the build). Version history and field lists on the broker pages come from here, so they cannot drift from the
 // schemas the way hand-written "what changed" notes did.
 import fs from 'node:fs'
 import path from 'node:path'
+import { CACHE } from '../../scripts/fetch-schemas.mjs'
 import { type Field, schemaFields } from './schema-fields'
 
 export type { Field }
@@ -10,7 +11,7 @@ export type { Field }
 export const BINDING_OBJECTS = ['server', 'channel', 'operation', 'message'] as const
 export type BindingObject = (typeof BINDING_OBJECTS)[number]
 
-const ROOT = path.resolve('json-schemas/bindings')
+const ROOT = path.join(CACHE, 'draft-07/bindings')
 const REGISTRY = 'https://schemas.asyncapi.pavelon.dev/draft-07/bindings'
 
 type Schema = Record<string, any>
