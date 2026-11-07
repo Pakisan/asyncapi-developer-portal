@@ -21,7 +21,7 @@ function securityPages() {
       if (entry.isDirectory()) walk(file)
       else if (entry.name.endsWith('.md')) {
         const rel = path.relative(path.join(DOCS, 'schemas'), file).replace(/\.md$/, '').split(path.sep).join('/')
-        pages[rel.toLowerCase()] = `/schemas/${rel}.html`
+        pages[rel.toLowerCase()] = `/schemas/${rel}`
       }
     }
   }
@@ -29,7 +29,7 @@ function securityPages() {
   return Object.fromEntries(Object.entries(pages).sort())
 }
 
-const pages = { schema: '/schemas/schema.html', multiformatschema: '/schemas/multiFormatSchema.html', ...securityPages() }
+const pages = { schema: '/schemas/schema', multiformatschema: '/schemas/multiFormatSchema', ...securityPages() }
 
 const script = `(function () {
   var DOCS = 'https://asyncapi.pavelon.dev';
@@ -37,7 +37,7 @@ const script = `(function () {
   var p = location.pathname.replace(/\\/+$/, '').replace(/\\.json$/, '').toLowerCase();
   var m, href;
   if ((m = p.match(/^\\/draft-07\\/bindings\\/([^/]+)\\/(\\d+\\.\\d+\\.\\d+)\\/(server|channel|operation|message)$/))) {
-    href = '/bindings/' + m[1] + '/' + m[2] + '/' + m[3] + '.html';
+    href = '/bindings/' + m[1] + '/' + m[2] + '/' + m[3];
   } else if ((m = p.match(/^\\/draft-07\\/bindings\\/([^/]+)/))) {
     href = '/bindings/' + m[1] + '/';
   } else if (p === '/draft-07/bindings') {
@@ -45,7 +45,7 @@ const script = `(function () {
   } else if ((m = p.match(/^\\/draft-07\\/schemas\\/(.+)$/)) && PAGES[m[1]]) {
     href = PAGES[m[1]];
   } else {
-    href = '/schemas/registry.html';
+    href = '/schemas/registry';
   }
   var link = document.createElement('link');
   link.rel = 'help';
@@ -54,7 +54,7 @@ const script = `(function () {
   document.addEventListener('DOMContentLoaded', function () {
     var a = document.createElement('a');
     a.href = DOCS + href;
-    a.textContent = href === '/schemas/registry.html' ? 'How to use the registry' : 'Read the documentation';
+    a.textContent = href === '/schemas/registry' ? 'How to use the registry' : 'Read the documentation';
     a.style.cssText = 'position:fixed;right:1rem;bottom:1rem;z-index:1030;padding:.5rem .9rem;border-radius:999px;background:#0d6efd;color:#fff;font:600 14px/1.2 system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.2)';
     document.body.appendChild(a);
   });

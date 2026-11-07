@@ -4,155 +4,335 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "cleanUrls": false,
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/schemes/v3/security/symmetricencryption",
-      "destination": "/schemas/v3/security/symmetricEncryption.html",
+      "destination": "/schemas/v3/security/symmetricEncryption",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/symmetricencryption/",
+      "destination": "/schemas/v3/security/symmetricEncryption",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/sasl/saslsecurityscheme",
-      "destination": "/schemas/v3/security/sasl/saslSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslsecurityscheme/",
+      "destination": "/schemas/v3/security/sasl/saslSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/sasl/saslSecurityScheme.json",
-      "destination": "/schemas/v3/security/sasl/saslSecuritySchema.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3/security/sasl/saslSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslSecurityScheme.json/",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3/security/sasl/saslSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/sasl/saslscramsecurityscheme",
-      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslscramsecurityscheme/",
+      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/sasl/saslgssapisecurityscheme",
-      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslgssapisecurityscheme/",
+      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/sasl/saslplainsecurityscheme",
-      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/sasl/saslplainsecurityscheme/",
+      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/userpassword",
-      "destination": "/schemas/v3/security/userPassword.html",
+      "destination": "/schemas/v3/security/userPassword",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/userpassword/",
+      "destination": "/schemas/v3/security/userPassword",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/securityscheme",
-      "destination": "/schemas/v3/security/securitySchema.html",
+      "destination": "/schemas/v3/security/securitySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/securityscheme/",
+      "destination": "/schemas/v3/security/securitySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/http/httpsecurityscheme",
-      "destination": "/schemas/v3/security/http/httpSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/httpSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/httpsecurityscheme/",
+      "destination": "/schemas/v3/security/http/httpSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/http/httpSecurityScheme.json",
-      "destination": "/schemas/v3/security/http/httpSecuritySchema.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3/security/http/httpSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/httpSecurityScheme.json/",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3/security/http/httpSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/http/bearerhttpsecurityscheme",
-      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/bearerhttpsecurityscheme/",
+      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/http/apikeyhttpsecurityscheme",
-      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/apikeyhttpsecurityscheme/",
+      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/http/nonbearerhttpsecurityscheme",
-      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/http/nonbearerhttpsecurityscheme/",
+      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/openidconnect",
-      "destination": "/schemas/v3/security/openIdConnect.html",
+      "destination": "/schemas/v3/security/openIdConnect",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/openidconnect/",
+      "destination": "/schemas/v3/security/openIdConnect",
       "permanent": true
     },
     {
       "source": "/schemes/schema",
-      "destination": "/schemas/schema.html",
+      "destination": "/schemas/schema",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/schema/",
+      "destination": "/schemas/schema",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2/oauth2",
-      "destination": "/schemas/v3/security/oauth2/oauth2.html",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/oauth2/",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2.html",
-      "destination": "/schemas/v3/security/oauth2/oauth2.html",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2.html/",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2/oauth2scopes",
-      "destination": "/schemas/v3/security/oauth2/oauth2Scopes.html",
+      "destination": "/schemas/v3/security/oauth2/oauth2Scopes",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/oauth2scopes/",
+      "destination": "/schemas/v3/security/oauth2/oauth2Scopes",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/implicitOAuthFlow.html",
-      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/implicitOAuthFlow",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/implicitOAuthFlow.html/",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2/flows/implicitoauthflow",
-      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/implicitoauthflow/",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2/flows/clientcredentialsoauthflow",
-      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/clientcredentialsoauthflow/",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/clientCredentialsOAuthFlow.html",
-      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/clientCredentialsOAuthFlow",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/clientCredentialsOAuthFlow.html/",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/passwordOAuthFlow.html",
-      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/passwordOAuthFlow",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/passwordOAuthFlow.html/",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2/flows/passwordoauthflow",
-      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/passwordoauthflow/",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow",
-      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow/",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/authorizationCodeOAuthFlow.html",
-      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/authorizationCodeOAuthFlow",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/authorizationCodeOAuthFlow.html/",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/apikey",
-      "destination": "/schemas/v3/security/apiKey.html",
+      "destination": "/schemas/v3/security/apiKey",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/apikey/",
+      "destination": "/schemas/v3/security/apiKey",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/x509",
-      "destination": "/schemas/v3/security/X509.html",
+      "destination": "/schemas/v3/security/X509",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/x509/",
+      "destination": "/schemas/v3/security/X509",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security/asymmetricencryption",
-      "destination": "/schemas/v3/security/asymmetricEncryption.html",
+      "destination": "/schemas/v3/security/asymmetricEncryption",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security/asymmetricencryption/",
+      "destination": "/schemas/v3/security/asymmetricEncryption",
       "permanent": true
     },
     {
       "source": "/schemes/v3/security.html",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/schemes/v3/security.html/",
       "destination": "/schemas/",
       "permanent": true
     },
@@ -172,6 +352,16 @@
       "permanent": true
     },
     {
+      "source": "/schemes",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/schemes.html/",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
       "source": "/schemes/:splat*",
       "destination": "/schemas/:splat*",
       "permanent": true
@@ -182,7 +372,27 @@
       "permanent": true
     },
     {
+      "source": "/security-schemes",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/security-schemes.html/",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
       "source": "/schemas.html",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/schemas",
+      "destination": "/schemas/",
+      "permanent": true
+    },
+    {
+      "source": "/schemas.html/",
       "destination": "/schemas/",
       "permanent": true
     },
@@ -192,7 +402,27 @@
       "permanent": true
     },
     {
+      "source": "/bindings",
+      "destination": "/bindings/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings.html/",
+      "destination": "/bindings/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin.html",
+      "destination": "/jetbrains-plugin/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin",
+      "destination": "/jetbrains-plugin/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin.html/",
       "destination": "/jetbrains-plugin/",
       "permanent": true
     },
@@ -207,7 +437,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -217,7 +467,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/servers.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/servers",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/servers.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -227,7 +497,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaAdmin-channels.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-channels.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -237,7 +527,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-channels.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-channels.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -247,7 +557,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-channels",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-channels.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -257,7 +587,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListeners-operations.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListener-operations.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -267,7 +617,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-KafkaListeners-operations.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-SendTo-operations.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -277,7 +647,27 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-SendTo-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/method-level-SendTo-operations.html/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/KafkaTemplate-operations.html/",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -287,147 +677,297 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka/class-level-KafkaListener-operations.md/",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/X509",
-      "destination": "/schemas/v3/security/X509.html",
+      "destination": "/schemas/v3/security/X509",
+      "permanent": true
+    },
+    {
+      "source": "/X509/",
+      "destination": "/schemas/v3/security/X509",
       "permanent": true
     },
     {
       "source": "/apiKey",
-      "destination": "/schemas/v3/security/apiKey.html",
+      "destination": "/schemas/v3/security/apiKey",
+      "permanent": true
+    },
+    {
+      "source": "/apiKey/",
+      "destination": "/schemas/v3/security/apiKey",
       "permanent": true
     },
     {
       "source": "/apiKeyHTTPSecuritySchema",
-      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/apiKeyHTTPSecuritySchema/",
+      "destination": "/schemas/v3/security/http/apiKeyHTTPSecuritySchema",
       "permanent": true
     },
     {
       "source": "/asymmetricEncryption",
-      "destination": "/schemas/v3/security/asymmetricEncryption.html",
+      "destination": "/schemas/v3/security/asymmetricEncryption",
+      "permanent": true
+    },
+    {
+      "source": "/asymmetricEncryption/",
+      "destination": "/schemas/v3/security/asymmetricEncryption",
       "permanent": true
     },
     {
       "source": "/authorizationCodeOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/authorizationCodeOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
       "permanent": true
     },
     {
       "source": "/bearerHTTPSecuritySchema",
-      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/bearerHTTPSecuritySchema/",
+      "destination": "/schemas/v3/security/http/bearerHTTPSecuritySchema",
       "permanent": true
     },
     {
       "source": "/clientCredentialsOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/clientCredentialsOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
       "permanent": true
     },
     {
       "source": "/httpSecuritySchema",
-      "destination": "/schemas/v3/security/http/httpSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/httpSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/httpSecuritySchema/",
+      "destination": "/schemas/v3/security/http/httpSecuritySchema",
       "permanent": true
     },
     {
       "source": "/implicitOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/implicitOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
       "permanent": true
     },
     {
       "source": "/nonBearerHTTPSecuritySchema",
-      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema.html",
+      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/nonBearerHTTPSecuritySchema/",
+      "destination": "/schemas/v3/security/http/nonBearerHTTPSecuritySchema",
       "permanent": true
     },
     {
       "source": "/oauth2",
-      "destination": "/schemas/v3/security/oauth2/oauth2.html",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
+      "permanent": true
+    },
+    {
+      "source": "/oauth2/",
+      "destination": "/schemas/v3/security/oauth2/oauth2",
       "permanent": true
     },
     {
       "source": "/oauth2Scopes",
-      "destination": "/schemas/v3/security/oauth2/oauth2Scopes.html",
+      "destination": "/schemas/v3/security/oauth2/oauth2Scopes",
+      "permanent": true
+    },
+    {
+      "source": "/oauth2Scopes/",
+      "destination": "/schemas/v3/security/oauth2/oauth2Scopes",
       "permanent": true
     },
     {
       "source": "/openIdConnect",
-      "destination": "/schemas/v3/security/openIdConnect.html",
+      "destination": "/schemas/v3/security/openIdConnect",
+      "permanent": true
+    },
+    {
+      "source": "/openIdConnect/",
+      "destination": "/schemas/v3/security/openIdConnect",
       "permanent": true
     },
     {
       "source": "/passwordOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/passwordOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
       "permanent": true
     },
     {
       "source": "/saslGssapiSecuritySchema",
-      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/saslGssapiSecuritySchema/",
+      "destination": "/schemas/v3/security/sasl/saslGssapiSecuritySchema",
       "permanent": true
     },
     {
       "source": "/saslPlainSecuritySchema",
-      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/saslPlainSecuritySchema/",
+      "destination": "/schemas/v3/security/sasl/saslPlainSecuritySchema",
       "permanent": true
     },
     {
       "source": "/saslScramSecuritySchema",
-      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/saslScramSecuritySchema/",
+      "destination": "/schemas/v3/security/sasl/saslScramSecuritySchema",
       "permanent": true
     },
     {
       "source": "/saslSecuritySchema",
-      "destination": "/schemas/v3/security/sasl/saslSecuritySchema.html",
+      "destination": "/schemas/v3/security/sasl/saslSecuritySchema",
+      "permanent": true
+    },
+    {
+      "source": "/saslSecuritySchema/",
+      "destination": "/schemas/v3/security/sasl/saslSecuritySchema",
       "permanent": true
     },
     {
       "source": "/securitySchema",
-      "destination": "/schemas/v3/security/securitySchema.html",
+      "destination": "/schemas/v3/security/securitySchema",
+      "permanent": true
+    },
+    {
+      "source": "/securitySchema/",
+      "destination": "/schemas/v3/security/securitySchema",
       "permanent": true
     },
     {
       "source": "/symmetricEncryption",
-      "destination": "/schemas/v3/security/symmetricEncryption.html",
+      "destination": "/schemas/v3/security/symmetricEncryption",
+      "permanent": true
+    },
+    {
+      "source": "/symmetricEncryption/",
+      "destination": "/schemas/v3/security/symmetricEncryption",
       "permanent": true
     },
     {
       "source": "/userPassword",
-      "destination": "/schemas/v3/security/userPassword.html",
+      "destination": "/schemas/v3/security/userPassword",
       "permanent": true
     },
     {
-      "source": "/oauth2",
-      "destination": "/schemas/v3/security/oauth2/oauth2.html",
+      "source": "/userPassword/",
+      "destination": "/schemas/v3/security/userPassword",
       "permanent": true
     },
     {
       "source": "/flows/clientCredentialsOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/flows/clientCredentialsOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow",
       "permanent": true
     },
     {
       "source": "/flows/authorizationCodeOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/flows/authorizationCodeOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow",
       "permanent": true
     },
     {
       "source": "/flows/implicitOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/flows/implicitOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/implicitOAuthFlow",
       "permanent": true
     },
     {
       "source": "/flows/passwordOAuthFlow",
-      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow.html",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
+      "permanent": true
+    },
+    {
+      "source": "/flows/passwordOAuthFlow/",
+      "destination": "/schemas/v3/security/oauth2/flows/passwordOAuthFlow",
       "permanent": true
     },
     {
       "source": "/schema.html",
-      "destination": "/schemas/schema.html",
+      "destination": "/schemas/schema",
+      "permanent": true
+    },
+    {
+      "source": "/schema",
+      "destination": "/schemas/schema",
+      "permanent": true
+    },
+    {
+      "source": "/schema.html/",
+      "destination": "/schemas/schema",
       "permanent": true
     },
     {
       "source": "/multiFormatSchema.html",
-      "destination": "/schemas/multiFormatSchema.html",
+      "destination": "/schemas/multiFormatSchema",
+      "permanent": true
+    },
+    {
+      "source": "/multiFormatSchema",
+      "destination": "/schemas/multiFormatSchema",
+      "permanent": true
+    },
+    {
+      "source": "/multiFormatSchema.html/",
+      "destination": "/schemas/multiFormatSchema",
       "permanent": true
     },
     {
       "source": "/amazon-sns",
+      "destination": "/bindings/amazon-sns/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon-sns/",
       "destination": "/bindings/amazon-sns/",
       "permanent": true
     },
@@ -437,7 +977,17 @@
       "permanent": true
     },
     {
+      "source": "/amazon-sqs/",
+      "destination": "/bindings/amazon-sqs/",
+      "permanent": true
+    },
+    {
       "source": "/amqp",
+      "destination": "/bindings/amqp/",
+      "permanent": true
+    },
+    {
+      "source": "/amqp/",
       "destination": "/bindings/amqp/",
       "permanent": true
     },
@@ -447,7 +997,17 @@
       "permanent": true
     },
     {
+      "source": "/amqp1/",
+      "destination": "/bindings/amqp1/",
+      "permanent": true
+    },
+    {
       "source": "/anypointmq",
+      "destination": "/bindings/anypointmq/",
+      "permanent": true
+    },
+    {
+      "source": "/anypointmq/",
       "destination": "/bindings/anypointmq/",
       "permanent": true
     },
@@ -457,7 +1017,17 @@
       "permanent": true
     },
     {
+      "source": "/apache-kafka/",
+      "destination": "/bindings/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/apache-pulsar",
+      "destination": "/bindings/apache-pulsar/",
+      "permanent": true
+    },
+    {
+      "source": "/apache-pulsar/",
       "destination": "/bindings/apache-pulsar/",
       "permanent": true
     },
@@ -467,7 +1037,17 @@
       "permanent": true
     },
     {
+      "source": "/googlepubsub/",
+      "destination": "/bindings/googlepubsub/",
+      "permanent": true
+    },
+    {
       "source": "/http",
+      "destination": "/bindings/http/",
+      "permanent": true
+    },
+    {
+      "source": "/http/",
       "destination": "/bindings/http/",
       "permanent": true
     },
@@ -477,7 +1057,17 @@
       "permanent": true
     },
     {
+      "source": "/ibmmq/",
+      "destination": "/bindings/ibmmq/",
+      "permanent": true
+    },
+    {
       "source": "/jms",
+      "destination": "/bindings/jms/",
+      "permanent": true
+    },
+    {
+      "source": "/jms/",
       "destination": "/bindings/jms/",
       "permanent": true
     },
@@ -487,7 +1077,17 @@
       "permanent": true
     },
     {
+      "source": "/mercure/",
+      "destination": "/bindings/mercure/",
+      "permanent": true
+    },
+    {
       "source": "/mqtt",
+      "destination": "/bindings/mqtt/",
+      "permanent": true
+    },
+    {
+      "source": "/mqtt/",
       "destination": "/bindings/mqtt/",
       "permanent": true
     },
@@ -497,7 +1097,17 @@
       "permanent": true
     },
     {
+      "source": "/mqtt5/",
+      "destination": "/bindings/mqtt5/",
+      "permanent": true
+    },
+    {
       "source": "/nats",
+      "destination": "/bindings/nats/",
+      "permanent": true
+    },
+    {
+      "source": "/nats/",
       "destination": "/bindings/nats/",
       "permanent": true
     },
@@ -507,7 +1117,17 @@
       "permanent": true
     },
     {
+      "source": "/redis/",
+      "destination": "/bindings/redis/",
+      "permanent": true
+    },
+    {
       "source": "/ros2",
+      "destination": "/bindings/ros2/",
+      "permanent": true
+    },
+    {
+      "source": "/ros2/",
       "destination": "/bindings/ros2/",
       "permanent": true
     },
@@ -517,12 +1137,27 @@
       "permanent": true
     },
     {
+      "source": "/solace/",
+      "destination": "/bindings/solace/",
+      "permanent": true
+    },
+    {
       "source": "/stomp",
       "destination": "/bindings/stomp/",
       "permanent": true
     },
     {
+      "source": "/stomp/",
+      "destination": "/bindings/stomp/",
+      "permanent": true
+    },
+    {
       "source": "/websockets",
+      "destination": "/bindings/websockets/",
+      "permanent": true
+    },
+    {
+      "source": "/websockets/",
       "destination": "/bindings/websockets/",
       "permanent": true
     },
@@ -637,7 +1272,17 @@
       "permanent": true
     },
     {
+      "source": "/message/",
+      "destination": "/bindings/",
+      "permanent": true
+    },
+    {
       "source": "/server",
+      "destination": "/bindings/",
+      "permanent": true
+    },
+    {
+      "source": "/server/",
       "destination": "/bindings/",
       "permanent": true
     },
@@ -647,7 +1292,17 @@
       "permanent": true
     },
     {
+      "source": "/operation/",
+      "destination": "/bindings/",
+      "permanent": true
+    },
+    {
       "source": "/channel",
+      "destination": "/bindings/",
+      "permanent": true
+    },
+    {
+      "source": "/channel/",
       "destination": "/bindings/",
       "permanent": true
     },
@@ -667,32 +1322,42 @@
       "permanent": true
     },
     {
-      "source": "/bindings/:protocol/:version(\\d+\\.\\d+\\.\\d+)/:file([^/.]+)",
-      "destination": "/bindings/:protocol/:version/:file.html",
+      "source": "/schemas/v3/asyncapi-:release(\\d+\\.\\d+\\.\\d+):rest(-bundled.*)?\\.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v:release/asyncapi",
       "permanent": true
     },
     {
-      "source": "/schemas/schema",
-      "destination": "/schemas/schema.html",
+      "source": "/schemas/v3/:part(channels|servers|operations|components)/:name(channel|channels|server|servers|operation|operations|operationTrait|operationTraits|components):rest(-bundled.*)?\\.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3.0.0/:part/:name",
       "permanent": true
     },
     {
-      "source": "/schemas/multiFormatSchema",
-      "destination": "/schemas/multiFormatSchema.html",
+      "source": "/schemas/v3/channels/messages/:name(channelMessage|channelMessages|channelMessageTrait|channelMessageTraits):rest(-bundled.*)?\\.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3.0.0/channels/messages/:name",
       "permanent": true
     },
     {
-      "source": "/jetbrains-plugin/freemium-model",
-      "destination": "/jetbrains-plugin/freemium-model.html",
+      "source": "/schemas/:path(.*):rest(-bundled.*)\\.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/:path",
       "permanent": true
     },
     {
-      "source": "/jetbrains-plugin/typed-components/operation",
-      "destination": "/jetbrains-plugin/typed-components/operation.html",
+      "source": "/bindings/:path(.*)\\.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/bindings/:path",
+      "permanent": true
+    },
+    {
+      "source": "/schemas/:path(.*)\\.json",
+      "destination": "https://schemas.asyncapi.pavelon.dev/draft-07/schemas/:path",
       "permanent": true
     },
     {
       "source": "/bindings/amazon-sns.html",
+      "destination": "/bindings/amazon-sns/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/amazon-sns",
       "destination": "/bindings/amazon-sns/",
       "permanent": true
     },
@@ -702,7 +1367,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/amazon-sqs",
+      "destination": "/bindings/amazon-sqs/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/amqp.html",
+      "destination": "/bindings/amqp/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/amqp",
       "destination": "/bindings/amqp/",
       "permanent": true
     },
@@ -712,7 +1387,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/amqp1",
+      "destination": "/bindings/amqp1/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/anypointmq.html",
+      "destination": "/bindings/anypointmq/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/anypointmq",
       "destination": "/bindings/anypointmq/",
       "permanent": true
     },
@@ -722,7 +1407,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/apache-kafka",
+      "destination": "/bindings/apache-kafka/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/apache-pulsar.html",
+      "destination": "/bindings/apache-pulsar/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/apache-pulsar",
       "destination": "/bindings/apache-pulsar/",
       "permanent": true
     },
@@ -732,7 +1427,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/googlepubsub",
+      "destination": "/bindings/googlepubsub/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/http.html",
+      "destination": "/bindings/http/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/http",
       "destination": "/bindings/http/",
       "permanent": true
     },
@@ -742,7 +1447,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/ibmmq",
+      "destination": "/bindings/ibmmq/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/jms.html",
+      "destination": "/bindings/jms/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/jms",
       "destination": "/bindings/jms/",
       "permanent": true
     },
@@ -752,7 +1467,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/mercure",
+      "destination": "/bindings/mercure/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/mqtt.html",
+      "destination": "/bindings/mqtt/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/mqtt",
       "destination": "/bindings/mqtt/",
       "permanent": true
     },
@@ -762,7 +1487,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/mqtt5",
+      "destination": "/bindings/mqtt5/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/nats.html",
+      "destination": "/bindings/nats/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/nats",
       "destination": "/bindings/nats/",
       "permanent": true
     },
@@ -772,7 +1507,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/redis",
+      "destination": "/bindings/redis/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/ros2.html",
+      "destination": "/bindings/ros2/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/ros2",
       "destination": "/bindings/ros2/",
       "permanent": true
     },
@@ -782,7 +1527,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/solace",
+      "destination": "/bindings/solace/",
+      "permanent": true
+    },
+    {
       "source": "/bindings/stomp.html",
+      "destination": "/bindings/stomp/",
+      "permanent": true
+    },
+    {
+      "source": "/bindings/stomp",
       "destination": "/bindings/stomp/",
       "permanent": true
     },
@@ -792,7 +1547,17 @@
       "permanent": true
     },
     {
+      "source": "/bindings/websockets",
+      "destination": "/bindings/websockets/",
+      "permanent": true
+    },
+    {
       "source": "/jasyncapi.html",
+      "destination": "/jasyncapi/",
+      "permanent": true
+    },
+    {
+      "source": "/jasyncapi",
       "destination": "/jasyncapi/",
       "permanent": true
     },
@@ -802,7 +1567,17 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/frameworks",
+      "destination": "/jetbrains-plugin/frameworks/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/frameworks/spring/apache-kafka.html",
+      "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/frameworks/spring/apache-kafka",
       "destination": "/jetbrains-plugin/frameworks/spring/apache-kafka/",
       "permanent": true
     },
@@ -812,7 +1587,17 @@
       "permanent": true
     },
     {
+      "source": "/jetbrains-plugin/linters",
+      "destination": "/jetbrains-plugin/linters/",
+      "permanent": true
+    },
+    {
       "source": "/jetbrains-plugin/typed-components.html",
+      "destination": "/jetbrains-plugin/typed-components/",
+      "permanent": true
+    },
+    {
+      "source": "/jetbrains-plugin/typed-components",
       "destination": "/jetbrains-plugin/typed-components/",
       "permanent": true
     }

@@ -1,5 +1,5 @@
 // What the security scheme pages (`/schemas/v3/security/**`) add to their hand-written text: the scheme inside a whole
-// AsyncAPI 3.0 and 2.6 document, its fields read from the JSON Schema in public/schemas (the file the registry serves),
+// AsyncAPI 3.0 and 2.6 document, its fields read from the JSON Schema in json-schemas/schemas (the file the registry serves),
 // the registry URL and the questions people search for. One model feeds the HTML (components/schemas), the table of
 // contents (routeData.ts), the Markdown copy for agents and the JSON-LD.
 import fs from 'node:fs'
@@ -9,7 +9,7 @@ import { type Field, schemaFields } from './schema-fields'
 
 type Scheme = Record<string, any>
 
-const ROOT = path.resolve('public')
+const ROOT = path.resolve('json-schemas')
 const SCHEMA_ID = 'https://asyncapi.pavelon.dev/'
 const REGISTRY = 'https://schemas.asyncapi.pavelon.dev/draft-07/'
 
@@ -110,7 +110,7 @@ const PAGES: Record<string, PageSpec> = {
   'oauth2/flows/passwordOAuthFlow': { server: WS, schemes: { oauth: flow('password', { tokenUrl: TOKEN, refreshUrl: TOKEN }) } },
 }
 
-/** Loads a security schema from public/, by its `$id`. */
+/** Loads a security schema from json-schemas/, by its `$id`. */
 function load(id: string): Scheme | undefined {
   if (!id.startsWith(SCHEMA_ID)) return undefined
   const file = path.join(ROOT, id.slice(SCHEMA_ID.length).replace(/#.*$/, ''))

@@ -27,16 +27,25 @@ function redirects() {
     const [from, to, status = '301'] = line.split(/\s+/)
     if (status === '200') out.rewrites.push({ source: from, destination: to })
     else {
-      // `/x/:file -> /x/:file.html` adds the extension, so `:file` must be a bare page name, never `channel.html`
-      const src = to.endsWith(':file.html') ? source(from).replace(/:file$/, ':file([^/.]+)') : source(from)
-      out.redirects.push({ source: src, destination: to.replace(/:splat\b/, ':splat*'), permanent: status === '301' })
+      const rule = { destination: to.replace(/:splat\b/, ':splat*'), permanent: status === '301' }
+      out.redirects.push({ source: source(from), ...rule })
+      // cleanUrls may turn /old.html into /old before this rule is reached, so /old needs the rule too
+      if (from.endsWith('.html')) out.redirects.push({ source: source(from.slice(0, -'.html'.length)), ...rule })
+      // Vercel matches strictly: `/mqtt` does not catch `/mqtt/`, so plain paths get their slash form (unless it is
+      // the destination itself)
+      if (/^\/[\w./-]*[\w-]$/.test(from) && `${from}/` !== to) out.redirects.push({ source: `${from}/`, ...rule })
     }
   }
-  // `build.format: 'file'` names for index pages, e.g. /bindings/amqp.html -> /bindings/amqp/
+  // `build.format: 'file'` names for index pages, e.g. /bindings/amqp.html and /bindings/amqp -> /bindings/amqp/
   const known = new Set(out.redirects.map((r) => r.source))
   for (const id of indexIds(path.resolve('src/content/docs')).sort()) {
-    if (!known.has(`/${id}.html`)) out.redirects.push({ source: `/${id}.html`, destination: `/${id}/`, permanent: true })
+    for (const from of [`/${id}.html`, `/${id}`]) {
+      if (!known.has(from)) out.redirects.push({ source: from, destination: `/${id}/`, permanent: true })
+    }
   }
+  // Duplicates (the same source from a rule and from its .html copy): the first one wins on Vercel anyway
+  const seen = new Set()
+  out.redirects = out.redirects.filter((r) => !seen.has(r.source) && seen.add(r.source))
   return out
 }
 
@@ -47,7 +56,8 @@ const config = {
   installCommand: 'npm ci',
   buildCommand: 'npm run build',
   outputDirectory: 'dist',
-  cleanUrls: false,
+  // /x is served from x.html, and /x.html redirects to /x
+  cleanUrls: true,
   redirects: redirectRules,
   rewrites,
   headers: [

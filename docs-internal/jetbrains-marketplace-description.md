@@ -11,7 +11,7 @@ Edit at <https://plugins.jetbrains.com/plugin/15673-asyncapi/edit>. Nothing belo
 | Field | Now | Set to |
 | --- | --- | --- |
 | Website | empty | `https://asyncapi.pavelon.dev/jetbrains-plugin/` |
-| Documentation | `https://asyncapi.pavelon.dev/jetbrains-plugin/` | `https://asyncapi.pavelon.dev/jetbrains-plugin/features.html` |
+| Documentation | `https://asyncapi.pavelon.dev/jetbrains-plugin/` | `https://asyncapi.pavelon.dev/jetbrains-plugin/features` |
 
 ## 2. Vendor profile
 
@@ -52,7 +52,7 @@ After the **For engineers working with Spring applications** heading:
 After **Catch messaging bugs before they ship — Free**:
 
 ```html
-<p>Every inspection, with code: <a href="https://asyncapi.pavelon.dev/jetbrains-plugin/frameworks/spring/apache-kafka/inspections.html">Kafka inspections</a>.</p>
+<p>Every inspection, with code: <a href="https://asyncapi.pavelon.dev/jetbrains-plugin/frameworks/spring/apache-kafka/inspections">Kafka inspections</a>.</p>
 ```
 
 After **Lint with Spectral or Redocly — Pro**:
@@ -66,13 +66,13 @@ After the **Supported protocols, bindings &amp; components** list:
 ```html
 <p>What every binding field means, per broker and version:
   <a href="https://asyncapi.pavelon.dev/bindings/">AsyncAPI bindings reference</a>.
-  The JSON Schemas the plugin validates with: <a href="https://asyncapi.pavelon.dev/schemas/registry.html">AsyncAPI JSON Schema registry</a>.</p>
+  The JSON Schemas the plugin validates with: <a href="https://asyncapi.pavelon.dev/schemas/registry">AsyncAPI JSON Schema registry</a>.</p>
 ```
 
 After the **What's free / What's Pro** list:
 
 ```html
-<p>Why there is a Pro tier: <a href="https://asyncapi.pavelon.dev/jetbrains-plugin/freemium-model.html">the freemium model</a>.</p>
+<p>Why there is a Pro tier: <a href="https://asyncapi.pavelon.dev/jetbrains-plugin/freemium-model">the freemium model</a>.</p>
 ```
 
 ## 5. Keep in sync
