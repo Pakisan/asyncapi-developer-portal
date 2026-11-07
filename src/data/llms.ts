@@ -30,4 +30,4 @@ Machine-readable AsyncAPI JSON Schemas (draft-07), served as application/schema+
 - Binding for one broker and version, e.g. Kafka 0.5.0 channel: https://schemas.asyncapi.pavelon.dev/draft-07/bindings/apache-kafka/0.5.0/channel
 - Browse everything: https://schemas.asyncapi.pavelon.dev
 
-Every docs page is also available as Markdown: add \`.md\` to its URL, for example \`/bindings/amqp/0.3.0/channel.md\` (for \`dir/\` pages, use \`dir/index.md\`).`
+Every docs page is also available as Markdown: replace \`.html\` with \`.md\` (for \`dir/\` pages, use \`dir/index.md\`).`

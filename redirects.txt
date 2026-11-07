@@ -1,39 +1,37 @@
 # Redirects, one per line: <from> <to> [status, default 301]. scripts/vercel-config.mjs turns them into vercel.json.
-# Pages have no .html: Vercel's cleanUrls serves /x from x.html and redirects /x.html to /x. A rule whose source ends
-# in .html also gets a copy without it, since cleanUrls may strip the extension before the rule is reached.
 # On Vercel redirects win over files, so a rule must never match a page that exists (check-urls.mjs fails if it does).
 # Rules for index pages (/bindings/amqp.html -> /bindings/amqp/) are added by vercel-config.mjs.
 
 # Old /schemes/* paths from the first version of the site
-/schemes/v3/security/symmetricencryption /schemas/v3/security/symmetricEncryption 301
-/schemes/v3/security/sasl/saslsecurityscheme /schemas/v3/security/sasl/saslSecuritySchema 301
+/schemes/v3/security/symmetricencryption /schemas/v3/security/symmetricEncryption.html 301
+/schemes/v3/security/sasl/saslsecurityscheme /schemas/v3/security/sasl/saslSecuritySchema.html 301
 /schemes/v3/security/sasl/saslSecurityScheme.json https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3/security/sasl/saslSecuritySchema 301
-/schemes/v3/security/sasl/saslscramsecurityscheme /schemas/v3/security/sasl/saslScramSecuritySchema 301
-/schemes/v3/security/sasl/saslgssapisecurityscheme /schemas/v3/security/sasl/saslGssapiSecuritySchema 301
-/schemes/v3/security/sasl/saslplainsecurityscheme /schemas/v3/security/sasl/saslPlainSecuritySchema 301
-/schemes/v3/security/userpassword /schemas/v3/security/userPassword 301
-/schemes/v3/security/securityscheme /schemas/v3/security/securitySchema 301
-/schemes/v3/security/http/httpsecurityscheme /schemas/v3/security/http/httpSecuritySchema 301
+/schemes/v3/security/sasl/saslscramsecurityscheme /schemas/v3/security/sasl/saslScramSecuritySchema.html 301
+/schemes/v3/security/sasl/saslgssapisecurityscheme /schemas/v3/security/sasl/saslGssapiSecuritySchema.html 301
+/schemes/v3/security/sasl/saslplainsecurityscheme /schemas/v3/security/sasl/saslPlainSecuritySchema.html 301
+/schemes/v3/security/userpassword /schemas/v3/security/userPassword.html 301
+/schemes/v3/security/securityscheme /schemas/v3/security/securitySchema.html 301
+/schemes/v3/security/http/httpsecurityscheme /schemas/v3/security/http/httpSecuritySchema.html 301
 /schemes/v3/security/http/httpSecurityScheme.json https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3/security/http/httpSecuritySchema 301
-/schemes/v3/security/http/bearerhttpsecurityscheme /schemas/v3/security/http/bearerHTTPSecuritySchema 301
-/schemes/v3/security/http/apikeyhttpsecurityscheme /schemas/v3/security/http/apiKeyHTTPSecuritySchema 301
-/schemes/v3/security/http/nonbearerhttpsecurityscheme /schemas/v3/security/http/nonBearerHTTPSecuritySchema 301
-/schemes/v3/security/openidconnect /schemas/v3/security/openIdConnect 301
-/schemes/schema /schemas/schema 301
-/schemes/v3/security/oauth2/oauth2 /schemas/v3/security/oauth2/oauth2 301
-/schemes/v3/security/oauth2.html /schemas/v3/security/oauth2/oauth2 301
-/schemes/v3/security/oauth2/oauth2scopes /schemas/v3/security/oauth2/oauth2Scopes 301
-/schemes/v3/security/implicitOAuthFlow.html /schemas/v3/security/oauth2/flows/implicitOAuthFlow 301
-/schemes/v3/security/oauth2/flows/implicitoauthflow /schemas/v3/security/oauth2/flows/implicitOAuthFlow 301
-/schemes/v3/security/oauth2/flows/clientcredentialsoauthflow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow 301
-/schemes/v3/security/clientCredentialsOAuthFlow.html /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow 301
-/schemes/v3/security/passwordOAuthFlow.html /schemas/v3/security/oauth2/flows/passwordOAuthFlow 301
-/schemes/v3/security/oauth2/flows/passwordoauthflow /schemas/v3/security/oauth2/flows/passwordOAuthFlow 301
-/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow 301
-/schemes/v3/security/authorizationCodeOAuthFlow.html /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow 301
-/schemes/v3/security/apikey /schemas/v3/security/apiKey 301
-/schemes/v3/security/x509 /schemas/v3/security/X509 301
-/schemes/v3/security/asymmetricencryption /schemas/v3/security/asymmetricEncryption 301
+/schemes/v3/security/http/bearerhttpsecurityscheme /schemas/v3/security/http/bearerHTTPSecuritySchema.html 301
+/schemes/v3/security/http/apikeyhttpsecurityscheme /schemas/v3/security/http/apiKeyHTTPSecuritySchema.html 301
+/schemes/v3/security/http/nonbearerhttpsecurityscheme /schemas/v3/security/http/nonBearerHTTPSecuritySchema.html 301
+/schemes/v3/security/openidconnect /schemas/v3/security/openIdConnect.html 301
+/schemes/schema /schemas/schema.html 301
+/schemes/v3/security/oauth2/oauth2 /schemas/v3/security/oauth2/oauth2.html 301
+/schemes/v3/security/oauth2.html /schemas/v3/security/oauth2/oauth2.html 301
+/schemes/v3/security/oauth2/oauth2scopes /schemas/v3/security/oauth2/oauth2Scopes.html 301
+/schemes/v3/security/implicitOAuthFlow.html /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/implicitoauthflow /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/clientcredentialsoauthflow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/schemes/v3/security/clientCredentialsOAuthFlow.html /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/schemes/v3/security/passwordOAuthFlow.html /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/passwordoauthflow /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/schemes/v3/security/oauth2/flows/authorizationcodeoauthflow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/schemes/v3/security/authorizationCodeOAuthFlow.html /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/schemes/v3/security/apikey /schemas/v3/security/apiKey.html 301
+/schemes/v3/security/x509 /schemas/v3/security/X509.html 301
+/schemes/v3/security/asymmetricencryption /schemas/v3/security/asymmetricEncryption.html 301
 /schemes/v3/security.html /schemas/ 301
 /schemes/v3/security/ /schemas/ 301
 /schemes/ /schemas/ 301
@@ -70,34 +68,34 @@
 
 # 404s reported by Google Search Console: relative links resolved against the wrong directory
 # A security scheme name at the root, e.g. /saslPlainSecuritySchema
-/X509 /schemas/v3/security/X509 301
-/apiKey /schemas/v3/security/apiKey 301
-/apiKeyHTTPSecuritySchema /schemas/v3/security/http/apiKeyHTTPSecuritySchema 301
-/asymmetricEncryption /schemas/v3/security/asymmetricEncryption 301
-/authorizationCodeOAuthFlow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow 301
-/bearerHTTPSecuritySchema /schemas/v3/security/http/bearerHTTPSecuritySchema 301
-/clientCredentialsOAuthFlow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow 301
-/httpSecuritySchema /schemas/v3/security/http/httpSecuritySchema 301
-/implicitOAuthFlow /schemas/v3/security/oauth2/flows/implicitOAuthFlow 301
-/nonBearerHTTPSecuritySchema /schemas/v3/security/http/nonBearerHTTPSecuritySchema 301
-/oauth2 /schemas/v3/security/oauth2/oauth2 301
-/oauth2Scopes /schemas/v3/security/oauth2/oauth2Scopes 301
-/openIdConnect /schemas/v3/security/openIdConnect 301
-/passwordOAuthFlow /schemas/v3/security/oauth2/flows/passwordOAuthFlow 301
-/saslGssapiSecuritySchema /schemas/v3/security/sasl/saslGssapiSecuritySchema 301
-/saslPlainSecuritySchema /schemas/v3/security/sasl/saslPlainSecuritySchema 301
-/saslScramSecuritySchema /schemas/v3/security/sasl/saslScramSecuritySchema 301
-/saslSecuritySchema /schemas/v3/security/sasl/saslSecuritySchema 301
-/securitySchema /schemas/v3/security/securitySchema 301
-/symmetricEncryption /schemas/v3/security/symmetricEncryption 301
-/userPassword /schemas/v3/security/userPassword 301
-/oauth2 /schemas/v3/security/oauth2/oauth2 301
-/flows/clientCredentialsOAuthFlow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow 301
-/flows/authorizationCodeOAuthFlow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow 301
-/flows/implicitOAuthFlow /schemas/v3/security/oauth2/flows/implicitOAuthFlow 301
-/flows/passwordOAuthFlow /schemas/v3/security/oauth2/flows/passwordOAuthFlow 301
-/schema.html /schemas/schema 301
-/multiFormatSchema.html /schemas/multiFormatSchema 301
+/X509 /schemas/v3/security/X509.html 301
+/apiKey /schemas/v3/security/apiKey.html 301
+/apiKeyHTTPSecuritySchema /schemas/v3/security/http/apiKeyHTTPSecuritySchema.html 301
+/asymmetricEncryption /schemas/v3/security/asymmetricEncryption.html 301
+/authorizationCodeOAuthFlow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/bearerHTTPSecuritySchema /schemas/v3/security/http/bearerHTTPSecuritySchema.html 301
+/clientCredentialsOAuthFlow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/httpSecuritySchema /schemas/v3/security/http/httpSecuritySchema.html 301
+/implicitOAuthFlow /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/nonBearerHTTPSecuritySchema /schemas/v3/security/http/nonBearerHTTPSecuritySchema.html 301
+/oauth2 /schemas/v3/security/oauth2/oauth2.html 301
+/oauth2Scopes /schemas/v3/security/oauth2/oauth2Scopes.html 301
+/openIdConnect /schemas/v3/security/openIdConnect.html 301
+/passwordOAuthFlow /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/saslGssapiSecuritySchema /schemas/v3/security/sasl/saslGssapiSecuritySchema.html 301
+/saslPlainSecuritySchema /schemas/v3/security/sasl/saslPlainSecuritySchema.html 301
+/saslScramSecuritySchema /schemas/v3/security/sasl/saslScramSecuritySchema.html 301
+/saslSecuritySchema /schemas/v3/security/sasl/saslSecuritySchema.html 301
+/securitySchema /schemas/v3/security/securitySchema.html 301
+/symmetricEncryption /schemas/v3/security/symmetricEncryption.html 301
+/userPassword /schemas/v3/security/userPassword.html 301
+/oauth2 /schemas/v3/security/oauth2/oauth2.html 301
+/flows/clientCredentialsOAuthFlow /schemas/v3/security/oauth2/flows/clientCredentialsOAuthFlow.html 301
+/flows/authorizationCodeOAuthFlow /schemas/v3/security/oauth2/flows/authorizationCodeOAuthFlow.html 301
+/flows/implicitOAuthFlow /schemas/v3/security/oauth2/flows/implicitOAuthFlow.html 301
+/flows/passwordOAuthFlow /schemas/v3/security/oauth2/flows/passwordOAuthFlow.html 301
+/schema.html /schemas/schema.html 301
+/multiFormatSchema.html /schemas/multiFormatSchema.html 301
 # A broker name at the root, e.g. /amqp/
 /amazon-sns /bindings/amazon-sns/ 301
 /amazon-sqs /bindings/amazon-sqs/ 301
@@ -152,12 +150,17 @@
 /jetbrains-plugin.* /jetbrains-plugin/ 301
 
 # Binding pages without .html, or with a trailing slash (Vercel serves pages only at .html)
+/bindings/:protocol/:version/:file /bindings/:protocol/:version/:file.html 301
 # Other pages Google asked for without .html
+/schemas/schema /schemas/schema.html 301
+/schemas/multiFormatSchema /schemas/multiFormatSchema.html 301
+/jetbrains-plugin/freemium-model /jetbrains-plugin/freemium-model.html 301
+/jetbrains-plugin/typed-components/operation /jetbrains-plugin/typed-components/operation.html 301
 
 # Search consoles know the sitemap as /sitemap.xml; serve the index there too
 /sitemap.xml /sitemap-index.xml 200
 
-# JSON Schemas moved to the registry. The site no longer serves them. Most keep their path there; the document schemas
+# JSON Schemas live in the registry; the site no longer serves them. Most keep their path there; the document schemas
 # and the parts that differ per AsyncAPI version live under v<version>/, and the registry has no -bundled copies.
 /schemas/v3/asyncapi-:release(\d+\.\d+\.\d+):rest(-bundled.*)?\.json https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v:release/asyncapi 301
 /schemas/v3/:part(channels|servers|operations|components)/:name(channel|channels|server|servers|operation|operations|operationTrait|operationTraits|components):rest(-bundled.*)?\.json https://schemas.asyncapi.pavelon.dev/draft-07/schemas/v3.0.0/:part/:name 301

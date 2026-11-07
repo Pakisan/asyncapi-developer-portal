@@ -1,8 +1,6 @@
-// `build.format: 'file'` writes `bindings/amqp/0.2.0/channel.html`, which Vercel serves at `/bindings/amqp/0.2.0/channel`
-// (cleanUrls). It also turns every index page into `bindings/amqp.html`; those pages have always lived at
-// `/bindings/amqp/`, so after the build this moves them back to `bindings/amqp/index.html`. Then it rewrites every link
-// in the generated files (pages, sitemap, canonicals, JSON-LD, llms.txt, Markdown copies) to the URL that is served:
-// `/bindings/amqp/` for index pages, `/bindings/amqp/0.2.0/channel` without `.html` for the others.
+// `build.format: 'file'` keeps the URLs search engines know (`/bindings/amqp/0.2.0/channel.html`), but it also turns
+// every index page into `bindings/amqp.html`. Those pages have always lived at `/bindings/amqp/`, so after the build
+// this moves them back to `bindings/amqp/index.html` and rewrites every link to them in the generated files.
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -52,27 +50,7 @@ export default function indexUrls({ docsDir, site, extraIds = [] }) {
           }
         }
 
-        // "/bindings/amqp/0.2.0/channel.html" -> "/bindings/amqp/0.2.0/channel", only for pages that exist, so a
-        // code sample that mentions some other .html file keeps it
-        const pages = walk(out, ['.html'])
-          .map((f) => '/' + path.relative(out, f).split(path.sep).join('/'))
-          .filter((p) => !p.endsWith('/index.html') && p !== '/404.html')
-          .map((p) => p.slice(0, -'.html'.length))
-          .sort((a, b) => b.length - a.length)
-        // The lookahead takes `\` too: in JSON-LD answers a link's closing quote is written `\"`. The home page is `/`.
-        const clean = new RegExp(`(["'(]|${escape(site)})(${pages.map(escape).join('|')})\\.html(?=["'#?)<\\s\\\\])`, 'g')
-        const home = new RegExp(`(["'(]|${escape(site)})/index\\.html(?=["'#?)<\\s\\\\])`, 'g')
-        let cleaned = 0
-        for (const file of walk(out, ['.html', '.xml', '.txt', '.md'])) {
-          const text = fs.readFileSync(file, 'utf8')
-          const fixed = text.replace(clean, '$1$2').replace(home, '$1/')
-          if (fixed !== text) {
-            fs.writeFileSync(file, fixed)
-            cleaned++
-          }
-        }
-
-        logger.info(`moved ${ids.length} index pages to dir/ URLs, rewrote links in ${files} files; removed .html from links in ${cleaned} files`)
+        logger.info(`moved ${ids.length} index pages to dir/ URLs, rewrote links in ${files} files`)
       },
     },
   }
