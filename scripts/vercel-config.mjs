@@ -1,10 +1,11 @@
 // Writes vercel.json from redirects.txt (the one list of redirect rules) and the docs index pages.
-// `--check` fails when vercel.json is out of date; the build runs it, so a stale config never deploys.
+// `--check` fails when vercel.json is out of date (see check-fresh.mjs); the build runs it.
 //
 // Vercel applies redirects BEFORE looking at files, so placeholders that stand for a version get a pattern: `/bindings/:version/:file` must not catch `/bindings/amqp/channelBinding.json`.
 import fs from 'node:fs'
 import path from 'node:path'
 import { indexIds } from '../integrations/index-urls.mjs'
+import { checkFresh } from './check-fresh.mjs'
 
 const VERSION = '\\d+\\.\\d+\\.\\d+'
 const CSP =
@@ -68,11 +69,7 @@ const config = {
 
 const text = `${JSON.stringify(config, null, 2)}\n`
 if (process.argv.includes('--check')) {
-  const current = fs.existsSync('vercel.json') ? fs.readFileSync('vercel.json', 'utf8') : ''
-  if (current !== text) {
-    console.error('vercel.json is out of date: run `npm run vercel:config` and commit it.')
-    process.exit(1)
-  }
+  checkFresh('vercel.json', text, 'npm run vercel:config')
 } else {
   fs.writeFileSync('vercel.json', text)
   console.log(`vercel.json: ${redirectRules.length} redirects, ${rewrites.length} rewrites`)

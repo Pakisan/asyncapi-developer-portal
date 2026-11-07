@@ -7,6 +7,7 @@
 //   node scripts/registry-head.mjs --check  fail if the file is out of date (run by `build`)
 import fs from 'node:fs'
 import path from 'node:path'
+import { checkFresh } from './check-fresh.mjs'
 
 const OUT = 'registry/head.html'
 const DOCS = 'src/content/docs'
@@ -67,11 +68,7 @@ ${script}
 `
 
 if (process.argv.includes('--check')) {
-  const current = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : ''
-  if (current !== html) {
-    console.error(`${OUT} is out of date: run \`npm run registry:head\` and commit it.`)
-    process.exit(1)
-  }
+  checkFresh(OUT, html, 'npm run registry:head')
 } else {
   fs.mkdirSync(path.dirname(OUT), { recursive: true })
   fs.writeFileSync(OUT, html)
