@@ -13,7 +13,8 @@
     "check:urls": "node scripts/check-urls.mjs",
     "astro": "astro",
     "vercel:config": "node scripts/vercel-config.mjs",
-    "registry:head": "node scripts/registry-head.mjs"
+    "registry:head": "node scripts/registry-head.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
